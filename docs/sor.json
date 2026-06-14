@@ -1,5 +1,6 @@
 {
   "$schema": "gtcx://docs/sor/v1",
+  "schema": "gtcx.docs.sor.v1",
   "repo": "ecosystem-os",
   "repoKind": "fleet-documentation",
   "updated": "2026-06-14",
@@ -24,6 +25,15 @@
     "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md"
   },
   "upstream": {
+    "canon": {
+      "repo": "canon-os",
+      "path": "../canon-os",
+      "role": "constitution and protocols — link do not fork"
+    },
+    "constitution": {
+      "repo": "canon-os",
+      "path": "../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md"
+    },
     "standards": {
       "repo": "canon-os",
       "path": "../canon-os",

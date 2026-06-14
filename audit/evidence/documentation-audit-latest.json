@@ -4,17 +4,17 @@
   "repoKind": "product",
   "date": "2026-06-14",
   "auditType": "documentation-pillar",
-  "ok": false,
-  "composite100": 77,
+  "ok": true,
+  "composite100": 86,
   "pillars": {
     "compliance": {
-      "score100": 75,
-      "openP1": 2,
+      "score100": 100,
+      "openP1": 0,
       "source": "documentation-pack"
     },
     "technicalExcellence": {
-      "score100": 87,
-      "score100Raw": 87,
+      "score100": 90,
+      "score100Raw": 90,
       "packTe100": 100,
       "capped": false,
       "source": "pack+forensic-links"
@@ -31,10 +31,10 @@
       "source": "forensic-doc-standard"
     },
     "worldClass": {
-      "score100": 71,
-      "documentationQuality100": 67,
+      "score100": 73,
+      "documentationQuality100": 69,
       "worldClassBar100": 95,
-      "gap100": 28,
+      "gap100": 26,
       "gapLabel": "competitive",
       "references": [
         "Stripe docs",
@@ -47,55 +47,25 @@
   "forensic": {
     "axes": {
       "structural": 100,
-      "naming": 82,
+      "naming": 81,
       "frontmatter": 100,
-      "links": 0,
+      "links": 6,
       "agentic": 55
     },
-    "score100": 67,
+    "score100": 68,
     "signals": {
       "competingRoots": [],
       "docsHub": "docs",
-      "markdownFileCount": 554,
-      "brokenLinks": 143,
+      "markdownFileCount": 472,
+      "brokenLinks": 94,
       "scaffoldFileCount": 0,
       "aiSlopFileCount": 0
     }
   },
   "pack": {
-    "score100": 75,
-    "openP1": 2,
+    "score100": 100,
+    "openP1": 0,
     "violations": [
-      {
-        "packId": "CORE-P32",
-        "itemId": "tier-b-conduct",
-        "severity": "P2",
-        "detail": "missing one of: docs/operations/repo/CODE_OF_CONDUCT.md, 01-docs/operations/repo/CODE_OF_CONDUCT.md"
-      },
-      {
-        "packId": "JURISDICTION-SOR",
-        "itemId": "sor-schema",
-        "severity": "P1",
-        "detail": "invalid sor at /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/sor.json"
-      },
-      {
-        "packId": "JURISDICTION-SOR",
-        "itemId": "canon-upstream-pointer",
-        "severity": "P2",
-        "detail": "missing canon-os/gtcx-docs upstream in sor.json"
-      },
-      {
-        "packId": "ONBOARD-PACK",
-        "itemId": "contributing",
-        "severity": "P1",
-        "detail": "missing one of: docs/operations/repo/CONTRIBUTING.md, 01-docs/operations/repo/CONTRIBUTING.md, CONTRIBUTING.md"
-      },
-      {
-        "packId": "ONBOARD-PACK",
-        "itemId": "contributing-sections",
-        "severity": "P2",
-        "detail": "missing CONTRIBUTING"
-      },
       {
         "packId": "GTM-PACK",
         "itemId": "gtm-dod",
