@@ -1,0 +1,40 @@
+{
+  "$schema": "gtcx://bridge-os/product-goals/v1",
+  "version": "1.0.0",
+  "repo": "ecosystem-os",
+  "tier": "fleet-documentation",
+  "updated": "2026-06-14",
+  "vision": {
+    "statement": "Fleet-facing documentation and onboarding published from a single GitBook home",
+    "horizon": "2026-2028"
+  },
+  "mission": "Publish fleet GitBook, GTM onboarding, and operator journeys abstracted from canon-os",
+  "northStarMetric": {
+    "name": "Published doc surfaces fresh",
+    "target": "GitBook publish register green",
+    "witness": "pm/publish-register.json"
+  },
+  "valueProposition": {
+    "for": "GTCX fleet operators and integrator pilots",
+    "who": "Need one documentation entry point across repos",
+    "product": "Fleet documentation hub",
+    "that": "Centralizes GitBook publish + onboarding paths",
+    "unlike": "Scattered canon-os copies per repo",
+    "we": "Witness-only product-goals SoR for fleet-documentation tier"
+  },
+  "activeMilestone": {
+    "id": "ECO-DOC-001",
+    "title": "Fleet GitBook publish register operational",
+    "shippableOutcome": "pm/publish-register.json tracks live GitBook surfaces with fresh publish witness",
+    "targetDate": "2026-Q2",
+    "programmeId": "PROG-FLEET-DOCUMENTATION",
+    "prdRefs": [],
+    "headStoryId": null,
+    "acceptanceChecks": []
+  },
+  "definitionOfDone": {
+    "story": ["publish witness", "auditNotes on done"],
+    "milestone": ["publish-register green"],
+    "forbidden": ["done without publish witness"]
+  }
+}
