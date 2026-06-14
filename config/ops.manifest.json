@@ -1,0 +1,62 @@
+{
+  "$schema": "gtcx://ops/manifest/v14",
+  "schema": "gtcx.ops.manifest.v14",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-14",
+  "layoutVersion": "v5",
+  "protocol": "https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/protocols/29-agent-workspace-domains/protocol.md",
+  "layout": "docs/operations/workspace/ecosystem-repo-layout-v5.md",
+  "hubs": {
+    "archive": "archive",
+    "docs": "docs",
+    "ops": "ops",
+    "platform": "platform",
+    "audit": "audit",
+    "deploy": "deploy",
+    "workstream": "workstream",
+    "agentic": "agentic",
+    "pm": "pm"
+  },
+  "domains": {
+    "pm": "ops/pm",
+    "gtm": "ops/gtm",
+    "operations": "ops",
+    "coordination": "ops/coordination",
+    "compliance": "ops/compliance",
+    "attestation": "ops/attestation",
+    "security": "ops/security",
+    "assurance": "ops/assurance",
+    "legal": "ops/legal",
+    "witness": "ops/attestation/witness",
+    "audit": "ops/attestation/witness"
+  },
+  "code": {
+    "archive": "archive",
+    "docs": "docs",
+    "platform": "platform",
+    "scripts": "platform/scripts",
+    "ship": "deploy",
+    "deploy": "deploy",
+    "auditEntry": "audit",
+    "workstream": "workstream"
+  },
+  "commands": {
+    "check": "pnpm ops:check",
+    "validate": "pnpm validate",
+    "publishRegister": "pnpm publish:register:check"
+  },
+  "docs": {
+    "map": "docs/README.md",
+    "index": "docs/INDEX.md",
+    "gitbook": "docs/gitbook/",
+    "publishGuide": "docs/gitbook/PUBLISH.md"
+  },
+  "legacyHubAliases": {
+    "01-docs": "docs",
+    "02-ops": "ops",
+    "03-platform": "platform",
+    "04-deploy": "deploy",
+    "05-audit": "audit",
+    "06-workstream": "workstream"
+  }
+}

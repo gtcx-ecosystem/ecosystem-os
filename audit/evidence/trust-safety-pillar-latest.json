@@ -1,0 +1,49 @@
+{
+  "schema": "gtcx://audit/trust-safety-pillar/v1",
+  "repo": "ecosystem-os",
+  "date": "2026-06-14",
+  "score100": 48,
+  "published": true,
+  "metrics": {
+    "evidence-coverage": {
+      "score100": 25,
+      "weight": 25,
+      "signals": {
+        "hasAuditOutput": false,
+        "hasSnapshot": false,
+        "hasStrategic": false,
+        "hasFivePillar": false,
+        "hasComposite": false
+      }
+    },
+    "confidence-grade": {
+      "score100": 95,
+      "weight": 20,
+      "grades": [],
+      "publishBlocked": false
+    },
+    "anti-hallucination": {
+      "score100": 30,
+      "weight": 20
+    },
+    "audit-trail": {
+      "score100": 55,
+      "weight": 20,
+      "freshFivePillar": false,
+      "versionBloatHits": 0
+    },
+    "independent-replay": {
+      "score100": 35,
+      "weight": 15,
+      "opsCheck": false
+    }
+  },
+  "mode": "envelope-cap",
+  "rubricSpec": "pm/spec/trust-safety-rubric.json",
+  "rubricVersion": "1.0.0",
+  "publishGate": {
+    "minConfidence": "B",
+    "minTrust100": 70,
+    "blocked": true
+  }
+}

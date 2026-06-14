@@ -1,0 +1,14 @@
+{
+  "kind": "fleet-documentation",
+  "emphasis": [
+    "docs/gitbook/",
+    "docs/reference/gitbooks/",
+    "ops/gtm/",
+    "pm/publish-register.json"
+  ],
+  "deemphasis": ["platform/mcp", "deploy"],
+  "migrationTier": "stable",
+  "notes": "Fleet documentation home — GitBook source, GTM catalog, onboarding narratives.",
+  "p22Owner": "bridge-os",
+  "uxSorOptional": true
+}
