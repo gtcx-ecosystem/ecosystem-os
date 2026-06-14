@@ -1,0 +1,28 @@
+{
+  "$schema": "gtcx://agentic/bridge/v1",
+  "schema": "gtcx.agentic.bridge.v1",
+  "repo": "ecosystem-os",
+  "role": "fleet-documentation-home",
+  "updated": "2026-06-14",
+  "baseline": {
+    "provider": "baseline-os",
+    "resolvedAt": "../baseline-os"
+  },
+  "bridge-os": {
+    "provider": "bridge-os",
+    "resolvedAt": "../bridge-os",
+    "role": "ecosystem-program-office",
+    "verbs": {
+      "agent:next-work": "pnpm --dir ../bridge-os agent:next-work",
+      "ecosystem:p35:check": "pnpm --dir ../bridge-os ecosystem:p35:check -- --repo ecosystem-os"
+    }
+  },
+  "upstream": {
+    "canon-os": "../canon-os",
+    "note": "Constitution and protocols — read-only"
+  },
+  "protocols": {
+    "P22": "delegated — bridge-os",
+    "P35": "fleet-documentation repo — unnumbered docs/ and ops/ hubs"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "gtcx://layout-contract/v5-pointer",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-14",
+  "layoutVersion": "v5",
+  "sor": {
+    "engine": "bridge-os",
+    "bridge-osRoot": "../bridge-os",
+    "contract": "../bridge-os/config/ecosystem-layout-contract.json",
+    "prose": "../bridge-os/docs/ecosystem-layout-v5.md"
+  },
+  "note": "Fleet documentation repo — P35 v5 unnumbered hubs only."
+}

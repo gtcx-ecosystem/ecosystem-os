@@ -1,0 +1,24 @@
+{
+  "name": "ecosystem-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtcx-ecosystem/ecosystem-os.git"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=9.15.0"
+  },
+  "type": "module",
+  "scripts": {
+    "ops:check": "node platform/scripts/ops-check.mjs",
+    "agent:next-work": "node ../bridge-os/platform/scripts/agent-next-work.mjs",
+    "agent:work-selection:check": "node ../bridge-os/platform/scripts/check-agent-work-selection.mjs",
+    "layout:check": "node ../bridge-os/platform/scripts/workspace/p35-layout-check.mjs --repo ecosystem-os",
+    "pm:folder:check": "node ../bridge-os/platform/scripts/workspace/pm-folder-check.mjs"
+  }
+}

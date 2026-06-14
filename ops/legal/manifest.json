@@ -1,0 +1,6 @@
+{
+  "$schema": "gtcx://ops/legal/manifest/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-14",
+  "reviewWorkflow": "ops/legal/legal-review.md"
+}

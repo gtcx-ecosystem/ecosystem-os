@@ -1,0 +1,6 @@
+{
+  "$schema": "gtcx://ops/coordination/manifest/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-14",
+  "note": "Hub coordination witness remains canon-os/bridge-os; this repo holds doc-fleet inbounds only."
+}

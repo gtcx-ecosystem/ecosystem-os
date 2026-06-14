@@ -1,0 +1,35 @@
+{
+  "$schema": "gtcx://docs/sor/v1",
+  "repo": "ecosystem-os",
+  "repoKind": "fleet-documentation",
+  "updated": "2026-06-14",
+  "role": "ecosystem-documentation-publish",
+  "narrativeRoot": "docs/",
+  "paths": {
+    "gitbookEcosystem": "docs/gitbook/ecosystem/",
+    "gitbookGettingStarted": "docs/gitbook/getting-started/",
+    "gitbookApi": "docs/gitbook/api/",
+    "gitbookMirrors": "docs/reference/gitbooks/",
+    "onboarding": "docs/onboarding/",
+    "overview": "docs/overview/",
+    "architecture": "docs/architecture/",
+    "gtm": "ops/gtm/",
+    "legal": "ops/legal/",
+    "publishRegister": "pm/publish-register.json",
+    "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md"
+  },
+  "upstream": {
+    "constitution": {
+      "repo": "canon-os",
+      "path": "../canon-os",
+      "constitution": "../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md",
+      "protocols": "../canon-os/docs/governance/protocols/",
+      "role": "normative law — read-only, link do not fork"
+    },
+    "layout": {
+      "repo": "bridge-os",
+      "path": "../bridge-os",
+      "contract": "../bridge-os/config/ecosystem-layout-contract.json"
+    }
+  }
+}
