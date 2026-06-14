@@ -16,7 +16,8 @@ review_cycle: weekly
 
 | Repo | GitBook | GTM slice | API/SDK docs | Onboarding | Hub publish row | Owner inbound |
 | ---- | ------- | --------- | ------------ | ---------- | --------------- | ------------- |
-| canon-os | 🟡 ecosystem + dev hub | 🟡 ops/gtm | 🟡 fleet dev matrix | 🟡 org + agent | ✅ | — |
+| canon-os | constitution + audit rubric | — | audit-framework | — | — |
+| ecosystem-os | 🟡 ecosystem + dev hub | 🟡 ops/gtm | 🟡 fleet dev matrix | 🟡 onboarding + agent | ✅ | — |
 | gtcx-protocols | ✅ synced hub | ⬜ | ✅ REST/MCP/SDK | ⬜ | ✅ | — |
 | compliance-os | ⬜ planned | ⬜ | ⬜ | ⬜ | ⬜ | 📋 [gitbook S45](../../ops/gtm/inbound-tickets/to-compliance-os-gitbook-sync-contract-2026-06-13.md) |
 | gtcx-mobile | ⬜ planned | ⬜ | ⬜ | ⬜ | ⬜ | 📋 [gitbook S45](../../ops/gtm/inbound-tickets/to-gtcx-mobile-gitbook-sync-contract-2026-06-13.md) |

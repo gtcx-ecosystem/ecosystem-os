@@ -35,8 +35,8 @@ gtcx-os           Trade core monorepo — platform/protocols, mobile, core, …
 | Topic | Path |
 | ----- | ---- |
 | Protocol specs GitBook | [`../reference/gitbooks/gtcx-protocols/`](../reference/gitbooks/gtcx-protocols/) |
-| Engineering architecture (canon-os) | [`../../../canon-os/docs/engineering/architecture/`](../../../canon-os/docs/engineering/architecture/) |
-| Organizational architecture | [`../../../canon-os/docs/operations/organization/gtcx-organizational-architecture.md`](../../../canon-os/docs/operations/organization/gtcx-organizational-architecture.md) |
+| Engineering architecture | [`../engineering/architecture/`](../engineering/architecture/) |
+| Organizational architecture | [`../operations/organization/gtcx-organizational-architecture.md`](../operations/organization/gtcx-organizational-architecture.md) |
 | bridge-os north star | [`../../../bridge-os/docs/architecture-north-star-2026-06-08.md`](../../../bridge-os/docs/architecture-north-star-2026-06-08.md) |
 
 ## GitBook product authoring (v5)

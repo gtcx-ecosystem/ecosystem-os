@@ -27,8 +27,8 @@ A multi-repo product fleet where:
 | Topic | Owner | Path |
 | ----- | ----- | ---- |
 | Constitution | canon-os | [GTCX Constitution](../../../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md) |
-| Developer manifesto | canon-os | [Developer Manifesto](../../../canon-os/docs/engineering/authoritative/ethos/manifesto/DEVELOPER-MANIFESTO.md) |
-| 30 principles | canon-os | [Principles](../../../canon-os/docs/engineering/authoritative/ethos/principles/PRINCIPLES.md) |
+| Developer manifesto | ecosystem-os | [Developer Manifesto](../engineering/authoritative/ethos/manifesto/DEVELOPER-MANIFESTO.md) |
+| 30 principles | ecosystem-os | [Principles](../engineering/authoritative/ethos/principles/PRINCIPLES.md) |
 | Protocols index | canon-os | [Protocols README](../../../canon-os/docs/governance/protocols/README.md) |
 | Fleet GitBook | ecosystem-os | [Ecosystem GitBook](../gitbook/ecosystem/README.md) |
 

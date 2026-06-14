@@ -8,7 +8,7 @@
 * [GTCX Constitution](../../../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md)
 * [AI Acceptable Use](../../../canon-os/docs/governance/ai-acceptable-use-charter.md)
 * [Protocols index](../../../canon-os/docs/governance/protocols/README.md)
-* [Agent init canon](../../../canon-os/docs/agents/provisioning/AGENT-INIT-CANON.md)
+* [Agent init canon](../agents/provisioning/AGENT-INIT-CANON.md)
 * [Organizational AI language (Lang)](organizational-ai-language.md)
 * [Govern — ActiveRecord (SIS / DFI)](govern-active-record-sis-dfi.md)
 * [Hub scope enforcement](../../../canon-os/ops/coordination/hub-narrative/hub-scope-enforcement.md)

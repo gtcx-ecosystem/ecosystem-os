@@ -6,25 +6,31 @@
   "role": "ecosystem-documentation-publish",
   "narrativeRoot": "docs/",
   "paths": {
+    "gitbook": "docs/gitbook/",
     "gitbookEcosystem": "docs/gitbook/ecosystem/",
-    "gitbookGettingStarted": "docs/gitbook/getting-started/",
-    "gitbookApi": "docs/gitbook/api/",
-    "gitbookMirrors": "docs/reference/gitbooks/",
-    "onboarding": "docs/onboarding/",
     "overview": "docs/overview/",
+    "onboarding": "docs/onboarding/",
     "architecture": "docs/architecture/",
+    "engineeringArchitecture": "docs/engineering/architecture/",
+    "ethos": "docs/engineering/authoritative/ethos/",
+    "referenceGitbooks": "docs/reference/gitbooks/",
+    "referenceGuides": "docs/reference/guides/",
+    "referenceFundraising": "docs/reference/fundraising/",
+    "referenceGlossary": "docs/reference/glossary/",
+    "agentProvisioning": "docs/agents/provisioning/",
     "gtm": "ops/gtm/",
     "legal": "ops/legal/",
     "publishRegister": "pm/publish-register.json",
     "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md"
   },
   "upstream": {
-    "constitution": {
+    "standards": {
       "repo": "canon-os",
       "path": "../canon-os",
-      "constitution": "../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md",
       "protocols": "../canon-os/docs/governance/protocols/",
-      "role": "normative law — read-only, link do not fork"
+      "templates": "../canon-os/docs/reference/templates/",
+      "constitution": "../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md",
+      "role": "normative law and doc standards — link do not fork"
     },
     "layout": {
       "repo": "bridge-os",
