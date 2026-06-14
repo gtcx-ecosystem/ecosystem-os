@@ -2,7 +2,7 @@
   "schema": "gtcx://audit/compliance-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-14",
-  "score100": 42,
+  "score100": 48,
   "published": false,
   "provisional": true,
   "blockedBy": "below-threshold",
@@ -64,7 +64,7 @@
     "governance-spine-p33": {
       "label": "Governance spine (P33)",
       "weight": 7,
-      "score100": 85,
+      "score100": 100,
       "protocol": "P33",
       "items": [
         {
@@ -125,12 +125,12 @@
         {
           "id": "tier-b-governance-docs",
           "label": "Tier-B repo governance docs",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 15,
           "severity": "P2",
           "optional": false,
-          "detail": "0/1 present",
+          "detail": "3/1 present",
           "protocol": "P33"
         }
       ],
@@ -139,7 +139,7 @@
     "ops-domains-p29": {
       "label": "Operational domains (P29)",
       "weight": 6,
-      "score100": 25,
+      "score100": 50,
       "protocol": "P29",
       "items": [
         {
@@ -156,12 +156,12 @@
         {
           "id": "ops-manifest",
           "label": "config/ops.manifest.json",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 25,
           "severity": "P2",
           "optional": false,
-          "detail": "missing config/ops.manifest.json",
+          "detail": "config/ops.manifest.json",
           "protocol": "P29"
         },
         {
@@ -605,7 +605,7 @@
     "agentic-product-team": {
       "label": "World-class agentic product team signals",
       "weight": 8,
-      "score100": 40,
+      "score100": 60,
       "items": [
         {
           "id": "persona-profiles",
@@ -630,12 +630,12 @@
         {
           "id": "zenhub-or-pm-standard",
           "label": "ZenHub PM standard or pm/zenhub linkage",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 20,
           "severity": "P2",
           "optional": false,
-          "detail": "0/1 present"
+          "detail": "1/1 present"
         },
         {
           "id": "five-pillar-or-five-core-runbook",
@@ -739,7 +739,7 @@
     "audit-evidence-index": {
       "label": "Audit & evidence index",
       "weight": 6,
-      "score100": 50,
+      "score100": 75,
       "items": [
         {
           "id": "audit-evidence-dir",
@@ -754,8 +754,8 @@
         {
           "id": "five-pillar-witness",
           "label": "audit/evidence/five-pillar-latest.json",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 25,
           "severity": "P2",
           "optional": false,
@@ -815,7 +815,7 @@
     "fabric-consumption-p44": {
       "label": "Fabric consumption (P44)",
       "weight": 4,
-      "score100": 67,
+      "score100": 100,
       "protocol": "P44",
       "items": [
         {
@@ -843,12 +843,12 @@
         {
           "id": "ops-compliance-manifest",
           "label": "ops/compliance/manifest.json",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 33,
           "severity": "P2",
           "optional": false,
-          "detail": "missing ops/compliance/manifest.json",
+          "detail": "ops/compliance/manifest.json",
           "protocol": "P44"
         }
       ],
@@ -871,25 +871,11 @@
       "detail": "opsCheck"
     },
     {
-      "id": "tier-b-governance-docs",
-      "categoryId": "governance-spine-p33",
-      "label": "Tier-B repo governance docs",
-      "severity": "P2",
-      "detail": "0/1 present"
-    },
-    {
       "id": "ops-check-pass",
       "categoryId": "ops-domains-p29",
       "label": "pnpm ops:check exit 0",
       "severity": "P1",
       "detail": "opsCheck"
-    },
-    {
-      "id": "ops-manifest",
-      "categoryId": "ops-domains-p29",
-      "label": "config/ops.manifest.json",
-      "severity": "P2",
-      "detail": "missing config/ops.manifest.json"
     },
     {
       "id": "audit-entry-doc",
@@ -1046,13 +1032,6 @@
       "detail": "missing pm/roadmap/initiatives.json"
     },
     {
-      "id": "zenhub-or-pm-standard",
-      "categoryId": "agentic-product-team",
-      "label": "ZenHub PM standard or pm/zenhub linkage",
-      "severity": "P2",
-      "detail": "0/1 present"
-    },
-    {
       "id": "five-pillar-or-five-core-runbook",
       "categoryId": "agentic-product-team",
       "label": "Five-pillar or five-core audit runbook",
@@ -1088,13 +1067,6 @@
       "detail": "gitleaks witness or CI workflow"
     },
     {
-      "id": "five-pillar-witness",
-      "categoryId": "audit-evidence-index",
-      "label": "audit/evidence/five-pillar-latest.json",
-      "severity": "P2",
-      "detail": "audit/evidence/five-pillar-latest.json"
-    },
-    {
       "id": "composite-or-five-core",
       "categoryId": "audit-evidence-index",
       "label": "composite-audit or five-core witnesses",
@@ -1107,13 +1079,6 @@
       "label": "pm/ci/gates.json settlement gates",
       "severity": "P2",
       "detail": "pm ci gates or manifest"
-    },
-    {
-      "id": "ops-compliance-manifest",
-      "categoryId": "fabric-consumption-p44",
-      "label": "ops/compliance/manifest.json",
-      "severity": "P2",
-      "detail": "missing ops/compliance/manifest.json"
     }
   ],
   "itemTotal": 66,

@@ -2,17 +2,17 @@
   "schema": "gtcx://audit/trust-safety-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-14",
-  "score100": 48,
+  "score100": 62,
   "published": true,
   "metrics": {
     "evidence-coverage": {
-      "score100": 25,
+      "score100": 50,
       "weight": 25,
       "signals": {
         "hasAuditOutput": false,
         "hasSnapshot": false,
         "hasStrategic": false,
-        "hasFivePillar": false,
+        "hasFivePillar": true,
         "hasComposite": false
       }
     },
@@ -27,9 +27,9 @@
       "weight": 20
     },
     "audit-trail": {
-      "score100": 55,
+      "score100": 95,
       "weight": 20,
-      "freshFivePillar": false,
+      "freshFivePillar": true,
       "versionBloatHits": 0
     },
     "independent-replay": {
