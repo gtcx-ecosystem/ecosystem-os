@@ -1,10 +1,13 @@
 ---
-title: Fleet naming reconciliation glossary
+title: 'Fleet naming reconciliation glossary'
 status: current
 date: 2026-06-12
 owner: canon-os
+tier: operating
+tags: [['glossary', 'naming', 'fleet']]
+review_cycle: on-change
+document_type: protocol
 promotionManifestId: DOC-NAMING-RECONCILIATION
-tags: ['glossary', 'naming', 'fleet']
 ---
 
 # Fleet naming reconciliation glossary

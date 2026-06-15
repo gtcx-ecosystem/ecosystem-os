@@ -1,11 +1,13 @@
 ---
 title: 'GTCX Cloud vs GTCX Sovereign'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['deployment', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['deployment', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
 ---
 
 # GTCX Cloud vs GTCX Sovereign

@@ -1,11 +1,13 @@
 ---
 title: 'Compatibility Matrix — v0.4.4'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['release', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['release', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
 ---
 
 # Compatibility matrix — v0.4.4

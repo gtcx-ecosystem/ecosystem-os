@@ -1,11 +1,13 @@
 ---
 title: 'gtcx-core npm packages (@gtcx/*)'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['supply-chain', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['supply-chain', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
 ---
 
 # gtcx-core npm packages (`@gtcx/*`)

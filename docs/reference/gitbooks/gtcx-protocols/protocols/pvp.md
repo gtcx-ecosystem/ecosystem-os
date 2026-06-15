@@ -1,12 +1,14 @@
 ---
 title: 'PvP — Payment versus Physical'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-protocol_spec_version: '3.2.0'
-tags: ['protocol', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['protocol', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
+protocol_spec_version: 3.2.0
 ---
 
 # PvP — payment versus physical settlement

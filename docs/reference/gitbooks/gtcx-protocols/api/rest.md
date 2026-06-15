@@ -1,11 +1,13 @@
 ---
 title: 'REST API'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['api', 'rest', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['api', 'rest', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
 ---
 
 # REST API

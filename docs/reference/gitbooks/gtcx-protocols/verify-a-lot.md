@@ -1,11 +1,13 @@
 ---
 title: 'Verify a Lot — DFI and Auditor UAT'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['uat', 'dfi', 'gitbook']
-review_cycle: 'on-release'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['uat', 'dfi', 'gitbook']]
+review_cycle: on-release
+document_type: protocol
+version: 0.4.4
 ---
 
 # Verify a lot — DFI and auditor UAT
