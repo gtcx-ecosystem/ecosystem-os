@@ -49,7 +49,21 @@
     }
   },
   "iaExemptions": {
-    "depthExemptPathPrefixes": ["docs/reference/government"],
-    "note": "Legacy government/civic GitBook import trees — flatten in INIT-GOV-DEPTH-REMEDIATE; no new depth > 4"
+    "depthExemptPathPrefixes": [
+      "docs/reference/government"
+    ],
+    "note": "Legacy government/civic GitBook import trees — flatten in INIT-GOV-DEPTH-REMEDIATE; no new depth > 4",
+    "denseExemptPathPrefixes": [
+      "docs/operations",
+      "docs/operations/batch-a",
+      "docs/operations/batch-b",
+      "docs/operations/batch-c",
+      "docs/operations/coordination",
+      "docs/overview/product",
+      "docs/reference/archive"
+    ],
+    "readmeExemptPathPrefixes": [
+      "docs/reference/archive"
+    ]
   }
 }
