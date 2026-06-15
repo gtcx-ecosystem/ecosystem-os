@@ -1,14 +1,13 @@
 ---
-
 title: 'Enterprise Via Vxa Overview'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['guides', 'how-to']
-review_cycle: 'on-change'
-
+tags: [['guides', 'how-to']]
+review_cycle: on-change
+document_type: onboarding
+role: protocol-architect
 ---
 
 # Enterprise VIA/VXA Overview

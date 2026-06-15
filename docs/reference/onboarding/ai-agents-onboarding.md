@@ -1,14 +1,13 @@
 ---
-
 title: 'Ai Agents Onboarding'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['onboarding']
-review_cycle: 'monthly'
-
+tags: [['onboarding']]
+review_cycle: monthly
+document_type: protocol
+role: protocol-architect
 ---
 
 # getting started for ai agents & ai collaborators
