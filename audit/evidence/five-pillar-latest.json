@@ -2,24 +2,24 @@
   "schema": "gtcx://audit/five-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-15",
-  "composite100": 59,
-  "composite100Raw": 69,
-  "trustCap100": 92,
+  "composite100": 99,
+  "composite100Raw": 100,
+  "trustCap100": 99,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
   "quadrants": {
     "compliance": {
-      "score100": 69,
-      "published": false,
-      "provisional": true,
-      "blockedBy": "below-threshold",
+      "score100": 100,
+      "published": true,
+      "provisional": false,
+      "blockedBy": null,
       "unlockThreshold100": 85,
       "categories": {
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 80,
+          "score100": 100,
           "protocol": "P35",
           "items": [
             {
@@ -47,8 +47,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -147,14 +147,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 50,
+          "score100": 100,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -447,7 +447,7 @@
         "agentic-harness-p22-p28": {
           "label": "Agentic harness (P22–P28)",
           "weight": 10,
-          "score100": 75,
+          "score100": 100,
           "protocol": "P22-P28",
           "items": [
             {
@@ -475,8 +475,8 @@
             {
               "id": "agent-work-selection-check",
               "label": "pnpm agent:work-selection:check",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 25,
               "severity": "P1",
               "optional": false,
@@ -863,39 +863,17 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [
-        {
-          "id": "root-allowlist",
-          "categoryId": "layout-p35",
-          "label": "Root allowlist / workspace root cleanliness",
-          "severity": "P2",
-          "detail": "opsCheck"
-        },
-        {
-          "id": "ops-check-pass",
-          "categoryId": "ops-domains-p29",
-          "label": "pnpm ops:check exit 0",
-          "severity": "P1",
-          "detail": "opsCheck"
-        },
-        {
-          "id": "agent-work-selection-check",
-          "categoryId": "agentic-harness-p22-p28",
-          "label": "pnpm agent:work-selection:check",
-          "severity": "P1",
-          "detail": "workSelection"
-        }
-      ],
+      "hygieneViolations": [],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 2
+      "openP1": 0
     },
     "technicalExcellence": {
       "score100": 100,
-      "published": false,
-      "provisional": true,
-      "blockedBy": "compliance",
+      "published": true,
+      "provisional": false,
+      "blockedBy": null,
       "unlockThreshold100": 85,
       "metrics": {
         "engineering-production": {
@@ -974,9 +952,9 @@
     },
     "craft": {
       "score100": 100,
-      "published": false,
-      "provisional": true,
-      "blockedBy": "compliance",
+      "published": true,
+      "provisional": false,
+      "blockedBy": null,
       "unlockThreshold100": 85,
       "metrics": {
         "selectivity-ingredients": {
@@ -1164,7 +1142,7 @@
       "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 92,
+      "score100": 99,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1209,9 +1187,9 @@
           "versionBloatHits": 0
         },
         "independent-replay": {
-          "score100": 45,
+          "score100": 90,
           "weight": 15,
-          "opsCheck": false
+          "opsCheck": true
         }
       },
       "mode": "envelope-cap",
