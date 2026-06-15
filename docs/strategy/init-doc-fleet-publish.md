@@ -13,7 +13,7 @@ review_cycle: quarterly
 **Authority:** canon-os (Layer 0 documentation services)  
 **Mission:** World-class, crafted, maintained, refreshed, audited, protocoled, standardized documentation and publishing across the GTCX fleet.
 
-**Status:** **Reopened v3** 2026-06-15 — P0 intake pillar 5 honest bar **NO** (scaffold PASS, quality gap 95). Prior hub seal 2026-06-13 retained as witness only; [`INIT-DOC-QUALITY-V3`](../governance/documentation-program-quality-bar.md) supersedes exit criteria until quality-bar fleet gate green.
+**Status:** **Reopened v3** 2026-06-15 — P0 intake pillar 5 honest bar **NO** (scaffold PASS, quality gap 95). Prior hub seal 2026-06-13 retained as witness only; **INIT-DOC-QUALITY-V3** (canon-os `docs/governance/documentation-program-quality-bar.md`) supersedes exit criteria until quality-bar fleet gate green.
 
 **Not:** Product implementation in owner repos. **Is:** Publish register, GitBook canon, GTM index, developer surface matrix, doc promotion, audit cadence, owner inbounds for source gaps.
 
