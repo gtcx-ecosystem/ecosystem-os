@@ -1,0 +1,59 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1610 >>
+stream
+BT /F1 12 Tf
+72 750 Td (Fidelity AI and realized potential) Tj
+72 734 Td ( ) Tj
+72 718 Td (Fidelity AI and realized potential) Tj
+72 702 Td (White paper WP-001 · BaselineOS · 2026) Tj
+72 686 Td (Abstract) Tj
+72 670 Td (Most enterprise AI deployments remain suggestion-tier experiences — structural assists tha) Tj
+72 654 Td (1. The buyer dream) Tj
+72 638 Td (Every procurement cycle starts with the same aspiration:) Tj
+72 622 Td (- Unleash AI across the organization) Tj
+72 606 Td (- Immediate operational value) Tj
+72 590 Td (- Scale without proportional headcount) Tj
+72 574 Td (- Intelligence that compounds session over session) Tj
+72 558 Td (Typical outcomes at month twelve:) Tj
+72 542 Td (- Chat suggestions and copy-paste loops) Tj
+72 526 Td (- Prompt engineering tax every session) Tj
+72 510 Td (- Human cleanup on every "AI-generated" artifact) Tj
+72 494 Td (- Context re-explained every session) Tj
+72 478 Td (This is suggestion-tier AI at scale — not a failure of models, but a failure of organizati) Tj
+72 462 Td (> Unleash AI. Get things done. Immediate value.) Tj
+72 446 Td (That dream is valid. The industry default outcome is not.) Tj
+72 430 Td (2. Suggestion-tier vs production-default) Tj
+72 414 Td (| Dimension | Suggestion-tier AI | Production-default AI |) Tj
+72 398 Td (| --------- | ------------------ | --------------------- |) Tj
+72 382 Td (| Operator experience | "AI assists here" | "This IS the workflow" |) Tj
+72 366 Td (| Context | Re-explained each session | Indexed organizational reality |) Tj
+72 350 Td (| Output | Draft + cleanup | First-pass at org standard |) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000232 00000 n 
+0000001894 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1964
+%%EOF
