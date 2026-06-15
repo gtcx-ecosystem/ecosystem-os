@@ -2,15 +2,12 @@
 title: 'Repo hygiene protocol — ecosystem-os'
 status: current
 date: 2026-06-14
-owner: 'ecosystem-os'
-role: protocol-architect
+owner: ecosystem-os
 tier: standard
-tags: ['operations', 'repo-hygiene']
+tags: [['operations', 'repo-hygiene']]
 review_cycle: on-change
-related:
-  - ./root-allowlist.json
-  - https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/protocols/31-ecosystem-root-allowlist/protocol.md
-  - https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/protocols/33-ecosystem-repo-governance-spine/protocol.md
+document_type: runbook
+role: protocol-architect
 ---
 
 # Repo hygiene protocol — ecosystem-os

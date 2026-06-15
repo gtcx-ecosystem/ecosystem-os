@@ -2,11 +2,12 @@
 title: 'Code of Conduct'
 status: current
 date: 2026-06-14
-owner: 'ecosystem-os'
-role: protocol-architect
+owner: ecosystem-os
 tier: strategic
-tags: ['governance', 'conduct']
+tags: [['governance', 'conduct']]
 review_cycle: annual
+document_type: runbook
+role: protocol-architect
 ---
 
 # Code of Conduct

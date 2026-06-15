@@ -2,11 +2,12 @@
 title: 'Contributing Guidelines'
 status: current
 date: 2026-06-14
-owner: 'ecosystem-os'
-role: protocol-architect
+owner: ecosystem-os
 tier: standard
-tags: ['governance', 'contributing']
+tags: [['governance', 'contributing']]
 review_cycle: on-change
+document_type: runbook
+role: protocol-architect
 ---
 
 # Contributing to ecosystem-os

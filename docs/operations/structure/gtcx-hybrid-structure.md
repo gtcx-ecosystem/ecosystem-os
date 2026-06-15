@@ -1,7 +1,12 @@
 ---
 title: 'GTCX Hybrid Structure: Commercial Products + User-Owned Exchange'
-status: 'current'
-date: '2026-05-26'
+status: current
+date: 2026-05-26
+owner: canon-os
+tier: operating
+tags: ['runbook', 'documentation']
+review_cycle: on-change
+document_type: runbook
 ---
 
 # GTCX Hybrid Structure: Commercial Products + User-Owned Exchange

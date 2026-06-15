@@ -1,8 +1,12 @@
 ---
-title: Layout v5 pointer — ecosystem-os
+title: 'Layout v5 pointer — ecosystem-os'
 status: current
 date: 2026-06-14
 owner: ecosystem-os
+tier: operating
+tags: ['runbook', 'documentation']
+review_cycle: on-change
+document_type: runbook
 ---
 
 # Layout v5 — local SoR pointer

@@ -1,12 +1,13 @@
 ---
 title: 'Implementation Truth'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['strategy']
-review_cycle: 'bi-weekly'
+tags: [['strategy']]
+review_cycle: bi-weekly
+document_type: protocol
+role: protocol-architect
 ---
 
 # Implementation Truth Report

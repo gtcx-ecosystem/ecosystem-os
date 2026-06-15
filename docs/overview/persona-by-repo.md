@@ -1,12 +1,13 @@
 ---
 title: 'Agent Persona by Repo — Quick Reference'
-status: 'current'
-date: '2026-05-24'
-owner: 'chief-of-staff'
-role: 'chief-of-staff'
-tier: 'operating'
-tags: ['testing']
-review_cycle: 'annual'
+status: current
+date: 2026-05-24
+owner: chief-of-staff
+tier: operating
+tags: [['testing']]
+review_cycle: annual
+document_type: protocol
+role: chief-of-staff
 ---
 
 # Agent Persona by Repo — Quick Reference

@@ -1,9 +1,12 @@
 ---
 title: Overview
 status: current
+date: 2026-06-15
 owner: gtcx-docs
 tier: operating
+tags: ['protocol', 'documentation']
 review_cycle: quarterly
+document_type: protocol
 ---
 
 # Overview

@@ -1,13 +1,14 @@
 ---
-title: Agent Work Selection Manifest
+title: 'Agent Work Selection Manifest'
 status: current
 date: 2026-06-15
 owner: ecosystem-os
-document_id: OPS-AWS-001
-role: protocol-engineer
 tier: standard
-tags: [protocol-22, protocol-26, protocol-27, protocol-28, agents]
+tags: [[protocol-22, protocol-26, protocol-27, protocol-28, agents]]
 review_cycle: on-change
+document_type: runbook
+role: protocol-engineer
+document_id: OPS-AWS-001
 protocol: canon-os/docs/governance/protocols/22-agent-work-selection/protocol.md
 ---
 

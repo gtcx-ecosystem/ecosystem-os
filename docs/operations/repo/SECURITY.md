@@ -2,11 +2,12 @@
 title: 'Security Policy'
 status: current
 date: 2026-06-14
-owner: 'ecosystem-os'
-role: security-engineer
+owner: ecosystem-os
 tier: controlled
-tags: ['security', 'disclosure']
+tags: [['security', 'disclosure']]
 review_cycle: quarterly
+document_type: runbook
+role: security-engineer
 ---
 
 # Security policy
