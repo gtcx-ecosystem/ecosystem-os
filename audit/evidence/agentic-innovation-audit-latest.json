@@ -1,0 +1,73 @@
+{
+  "schema": "gtcx://audit/core-witness/v2",
+  "coreId": "A3-AGENTIC-INNOVATION",
+  "slug": "agentic-innovation",
+  "repo": "ecosystem-os",
+  "date": "2026-06-15",
+  "score10": 10,
+  "score100": 100,
+  "score100Raw": 100,
+  "status": "rubric-driven",
+  "source": "run-five-core-audit",
+  "metrics": {
+    "ai-maturity": {
+      "score100": 100,
+      "weight": 9,
+      "confidence": "A",
+      "source": "audit-output"
+    },
+    "hallucination-resilience": {
+      "score100": 100,
+      "weight": 10,
+      "confidence": "A",
+      "source": "audit-output"
+    }
+  },
+  "gates": [
+    {
+      "id": "agent-protocol-wiring",
+      "label": "AGENTS.md + agent:next-work or work-selection",
+      "pass": true,
+      "severity": "P1",
+      "cap100": 75
+    },
+    {
+      "id": "baseline-session-ok",
+      "label": "Baseline session or agentic manifest",
+      "pass": true,
+      "severity": "P2",
+      "cap100": 80
+    }
+  ],
+  "capsFired": [],
+  "openP0": 0,
+  "openP1": 0,
+  "rubricSource": "audit-output",
+  "rubricSourcePath": "audit/audit-output-2026-06-15.json",
+  "checks": {
+    "agenticManifest": {
+      "ok": true,
+      "detail": "agentic/manifest.json"
+    },
+    "agentsMd": {
+      "ok": true,
+      "detail": "AGENTS.md"
+    },
+    "nextWork": {
+      "ok": true,
+      "code": 0,
+      "out": "> ecosystem-os@0.1.0 agent:next-work /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\n> node ../bridge-os/platform/scripts/agent-next-work.mjs \"--json\""
+    },
+    "workSelection": {
+      "ok": true,
+      "code": 0,
+      "out": "> ecosystem-os@0.1.0 agent:work-selection:check /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\n> node ../bridge-os/platform/scripts/checks/check-agent-work-selection.mjs\n\nAgent protocols adoption check passed (P22, P24, P26, P27, P28 · v5 hub).\n[protocols-adoption] warn: GTM/legal layout check deferred for v5 hub (ops/ not under docs/)"
+    },
+    "mcpHub": {
+      "ok": true,
+      "detail": "MCP hub, hub repo, or agentic consumer"
+    }
+  },
+  "gaps": [],
+  "runbook": "audit/runbooks/A3-agentic-innovation.md"
+}

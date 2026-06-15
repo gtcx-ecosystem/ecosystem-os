@@ -2,7 +2,7 @@
   "schema": "gtcx://audit/documentation-audit/v1",
   "repo": "ecosystem-os",
   "repoKind": "product",
-  "date": "2026-06-14",
+  "date": "2026-06-15",
   "auditType": "documentation-pillar",
   "ok": true,
   "composite100": 86,
@@ -47,17 +47,17 @@
   "forensic": {
     "axes": {
       "structural": 100,
-      "naming": 81,
-      "frontmatter": 100,
-      "links": 6,
+      "naming": 80,
+      "frontmatter": 99,
+      "links": 7,
       "agentic": 55
     },
     "score100": 68,
     "signals": {
       "competingRoots": [],
       "docsHub": "docs",
-      "markdownFileCount": 472,
-      "brokenLinks": 94,
+      "markdownFileCount": 475,
+      "brokenLinks": 93,
       "scaffoldFileCount": 0,
       "aiSlopFileCount": 0
     }

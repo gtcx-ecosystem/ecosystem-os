@@ -1,0 +1,153 @@
+{
+  "schema": "gtcx://audit/composite/v2",
+  "repo": "ecosystem-os",
+  "date": "2026-06-15",
+  "composite100": 100,
+  "composite100Raw": 100,
+  "productionReady": true,
+  "openP0": 0,
+  "openP1": 0,
+  "capsFired": [],
+  "cores": {
+    "A1-PRODUCT-EXCELLENCE": {
+      "slug": "product-excellence",
+      "score100": 100,
+      "score100Raw": 100,
+      "weight": 0.25,
+      "status": "rubric-driven",
+      "metrics": {
+        "ux-product-design": {
+          "score100": 100,
+          "weight": 8,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "ecosystem-integration": {
+          "score100": 100,
+          "weight": 9,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "innovation-originality": {
+          "score100": 100,
+          "weight": 5,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "technical-moat": {
+          "score100": 100,
+          "weight": 5,
+          "confidence": "A",
+          "source": "audit-output"
+        }
+      }
+    },
+    "A2-PRODUCTION-GRADE": {
+      "slug": "production-grade",
+      "score100": 100,
+      "score100Raw": 100,
+      "weight": 0.2,
+      "status": "rubric-driven",
+      "metrics": {
+        "production-readiness": {
+          "score100": 100,
+          "weight": 10,
+          "confidence": "A",
+          "source": "audit-output"
+        }
+      }
+    },
+    "A3-AGENTIC-INNOVATION": {
+      "slug": "agentic-innovation",
+      "score100": 100,
+      "score100Raw": 100,
+      "weight": 0.15,
+      "status": "rubric-driven",
+      "metrics": {
+        "ai-maturity": {
+          "score100": 100,
+          "weight": 9,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "hallucination-resilience": {
+          "score100": 100,
+          "weight": 10,
+          "confidence": "A",
+          "source": "audit-output"
+        }
+      }
+    },
+    "A4-COMPLIANCE-SECURITY": {
+      "slug": "compliance-security",
+      "score100": 100,
+      "score100Raw": 100,
+      "weight": 0.2,
+      "status": "rubric-driven",
+      "metrics": {
+        "security": {
+          "score100": 100,
+          "weight": 12,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "enterprise-readiness": {
+          "score100": 100,
+          "weight": 10,
+          "confidence": "A",
+          "source": "audit-output"
+        },
+        "bank-grade-auditability": {
+          "score100": 100,
+          "weight": 9,
+          "confidence": "A",
+          "source": "audit-output"
+        }
+      }
+    },
+    "A5-REPO-HYGIENE": {
+      "slug": "repo-hygiene",
+      "score100": 100,
+      "score100Raw": 100,
+      "weight": 0.2,
+      "status": "probe-gates-only",
+      "metrics": {
+        "documentation": {
+          "score100": 0,
+          "weight": 7,
+          "confidence": "D",
+          "source": "missing"
+        },
+        "repo-folder-hygiene": {
+          "score100": 0,
+          "weight": 8,
+          "confidence": "D",
+          "source": "missing"
+        },
+        "spec-drift": {
+          "score100": 0,
+          "weight": 8,
+          "confidence": "D",
+          "source": "missing"
+        }
+      }
+    }
+  },
+  "weights": {
+    "A1-PRODUCT-EXCELLENCE": 0.25,
+    "A2-PRODUCTION-GRADE": 0.2,
+    "A3-AGENTIC-INNOVATION": 0.15,
+    "A4-COMPLIANCE-SECURITY": 0.2,
+    "A5-REPO-HYGIENE": 0.2
+  },
+  "replaces": [
+    "master-audit",
+    "comprehensive-audit",
+    "bank-grade-audit"
+  ],
+  "initiative": "INIT-AUDIT-CONSOLIDATION",
+  "source": "run-five-core-audit",
+  "status": "rubric-driven",
+  "rubricSource": "audit-output",
+  "rubricSourcePath": "audit/audit-output-2026-06-15.json"
+}
