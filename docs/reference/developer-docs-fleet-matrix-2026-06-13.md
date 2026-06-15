@@ -3,10 +3,12 @@ title: 'Developer docs fleet matrix (API/SDK/onboarding)'
 status: current
 date: 2026-06-13
 owner: canon-os
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: weekly
+document_type: protocol
 initiative: INIT-DOC-FLEET-PUBLISH
 sprint: 46
-tier: operating
-review_cycle: weekly
 ---
 
 # Developer docs fleet matrix

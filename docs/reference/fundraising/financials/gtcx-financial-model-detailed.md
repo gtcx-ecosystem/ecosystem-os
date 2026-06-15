@@ -1,9 +1,12 @@
 ---
-
-title: "GTCX Product Financials: Standalone Analysis"
-status: "current"
-date: "2026-05-26"
-
+title: 'GTCX Product Financials: Standalone Analysis'
+status: current
+date: 2026-05-26
+owner: quality-evidence-lead
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # GTCX Product Financials: Standalone Analysis

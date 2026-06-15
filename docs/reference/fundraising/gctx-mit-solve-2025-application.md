@@ -1,9 +1,12 @@
 ---
-
-title: "GCTX MIT Solve 2025 Application"
-status: "current"
-date: "2026-05-26"
-
+title: 'GCTX MIT Solve 2025 Application'
+status: current
+date: 2026-05-26
+owner: quality-evidence-lead
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # GCTX MIT Solve 2025 Application
