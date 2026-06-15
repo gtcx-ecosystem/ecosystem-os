@@ -1,15 +1,16 @@
 ---
 title: 'GTCX Documentation Visual System'
-status: 'current'
-date: '2026-05-27'
-owner: 'gtcx-docs'
-role: 'protocol-architect'
-agent_id: 'agent://canon-os/2026-05-27/session-backfill'
-trust_score: 60
-autonomy_level: 'permissioned'
+status: current
+date: 2026-05-27
+owner: gtcx-docs
 tier: operating
-tags: ['documentation', 'reference']
-review_cycle: 'on-change'
+tags: [['documentation', 'reference']]
+review_cycle: on-change
+document_type: protocol
+role: protocol-architect
+agent_id: agent://canon-os/2026-05-27/session-backfill
+trust_score: 60
+autonomy_level: permissioned
 ---
 
 # GTCX Documentation Visual System

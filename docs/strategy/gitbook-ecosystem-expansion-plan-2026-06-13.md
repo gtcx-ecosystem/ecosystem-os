@@ -3,9 +3,12 @@ title: 'GitBook ecosystem expansion plan (S45-01)'
 status: current
 date: 2026-06-13
 owner: canon-os
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 initiative: INIT-DOC-FLEET-PUBLISH
 sprint: 45
-review_cycle: on-change
 ---
 
 # GitBook ecosystem expansion plan

@@ -1,8 +1,12 @@
 ---
-title: Canon-os abstraction complete
+title: 'Canon-os abstraction complete'
 status: current
 date: 2026-06-14
 owner: ecosystem-os
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # canon-os abstraction (2026-06-14)

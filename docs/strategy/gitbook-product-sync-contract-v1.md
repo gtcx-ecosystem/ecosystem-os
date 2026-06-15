@@ -3,8 +3,11 @@ title: 'GitBook product sync contract v1'
 status: current
 date: 2026-06-13
 owner: canon-os
-initiative: INIT-DOC-FLEET-PUBLISH
+tier: operating
+tags: ['protocol', 'documentation']
 review_cycle: on-change
+document_type: protocol
+initiative: INIT-DOC-FLEET-PUBLISH
 ---
 
 # GitBook product sync contract v1

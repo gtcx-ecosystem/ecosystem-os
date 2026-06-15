@@ -1,11 +1,12 @@
 ---
 title: 'Retired repositories'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-docs'
-tier: 'operating'
-tags: ['documentation', 'reference', 'ecosystem']
-review_cycle: 'on-change'
+status: current
+date: 2026-06-01
+owner: gtcx-docs
+tier: operating
+tags: [['documentation', 'reference', 'ecosystem']]
+review_cycle: on-change
+document_type: protocol
 ---
 
 # Retired repositories
