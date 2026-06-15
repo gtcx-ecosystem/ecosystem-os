@@ -33,17 +33,17 @@ role: protocol-architect
 **Development Environment Setup:**
 
 ```bash
-# Mobile development frameworks
+## Mobile development frameworks
 
 npm install -g react-native-cli expo-cli
 
-# Cryptography and security
+## Cryptography and security
 npm install crypto-js ed25519 @noble/secp256k1
 
-# Computer vision and AI
+## Computer vision and AI
 pip install opencv-python tensorflow-lite
 
-# Offline storage and sync
+## Offline storage and sync
 npm install sqlite3 realm react-native-sqlite-storage
 ```
 

@@ -70,14 +70,14 @@ Cross-cutting:         gtcx-design, compliance-os, sensei-ai, gtcx-hardware, gtc
 ### 1. Environment Understanding
 
 ```bash
-# Root directory containing all repos
+## Root directory containing all repos
 
 cd /Users/amanianai/Sites/gtcx-ecosystem/
 
-# Navigate to a specific repo
+## Navigate to a specific repo
 cd gtcx-core/         # or gtcx-protocols/, gtcx-agentic/, etc.
 
-# Build and test any repo
+## Build and test any repo
 pnpm install
 pnpm build
 pnpm test
@@ -94,12 +94,12 @@ pnpm lint
 ### 3. AI-Optimized Navigation
 
 ```bash
-# From the ecosystem root, search across all repos
+## From the ecosystem root, search across all repos
 grep -rl "protocol" gtcx-*/01-docs/ --include="*.md"     # Find protocol-related docs
 grep -rl "security" gtcx-*/01-docs/ --include="*.md"     # Find security-related docs
 grep -rl "compliance" gtcx-*/01-docs/ --include="*.md"   # Find compliance docs
 
-# List all architecture overviews
+## List all architecture overviews
 ls gtcx-*/01-docs/architecture/*-architecture-overview.md
 ```
 
@@ -161,61 +161,61 @@ ls gtcx-*/01-docs/architecture/*-architecture-overview.md
 ### File Operations
 
 ```bash
-# Read file contents
+## Read file contents
 read_file target_file path start_line end_line
 
-# Search for content
+## Search for content
 grep_search query pattern
 
-# List directory contents
+## List directory contents
 list_dir relative_workspace_path
 
-# Search for files
+## Search for files
 file_search query
 ```
 
 ### Code Operations
 
 ```bash
-# Edit files
+## Edit files
 edit_file target_file instructions code_edit
 
-# Search and replace
+## Search and replace
 search_replace file_path old_string new_string
 
-# Run terminal commands
+## Run terminal commands
 run_terminal_cmd command is_background
 ```
 
 ### Build Operations (all repos use pnpm)
 
 ```bash
-# Install dependencies
+## Install dependencies
 pnpm install
 
-# Build all packages
+## Build all packages
 pnpm build
 
-# Run tests
+## Run tests
 pnpm test
 
-# Lint
+## Lint
 pnpm lint
 ```
 
 ### Git Operations
 
 ```bash
-# Check status
+## Check status
 git status
 
-# Add changes
+## Add changes
 git add .
 
-# Commit changes
+## Commit changes
 git commit -m "message"
 
-# Push to GitHub
+## Push to GitHub
 git push origin main
 ```
 

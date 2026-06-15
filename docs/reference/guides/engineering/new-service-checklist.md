@@ -50,10 +50,10 @@ If you are unsure, default to `services/` for anything with a runtime and `03-pl
 ## Step 2: Scaffold
 
 ```bash
-# Create the directory
+## Create the directory
 mkdir -p services/\<service-name\>/src
 
-# Initialize package.json
+## Initialize package.json
 cd services/\<service-name\>
 pnpm init
 ```
@@ -142,11 +142,11 @@ Create a worker entry point that connects to Redis and processes jobs. Include g
 ### AI/ML Service -- Python FastAPI
 
 ```bash
-# Use a separate Python project structure within the monorepo
+## Use a separate Python project structure within the monorepo
 mkdir -p services/\<service-name\>/{src,tests}
 cd services/\<service-name\>
 
-# Create pyproject.toml or requirements.txt
+## Create pyproject.toml or requirements.txt
 python -m venv .venv
 source .venv/bin/activate
 pip install fastapi uvicorn
@@ -174,7 +174,7 @@ The new service inherits pipeline tasks from `turbo.json` as long as its `packag
 Verify:
 
 ```bash
-# Should include the new service
+## Should include the new service
 pnpm turbo build --dry-run
 ```
 
@@ -201,7 +201,7 @@ cd services/\<service-name\>
 pnpm add @prisma/client
 pnpm add -D prisma
 
-# Initialize Prisma
+## Initialize Prisma
 pnpm exec prisma init
 ```
 
@@ -251,7 +251,7 @@ mkdir -p "01-docs/specs/${SERVICE_GROUP}/${SERVICE_NAME}"/{01_context,02_vision,
 Write the initial README at `01-docs/specs/\<group\>/\<service\>/README.md`:
 
 ```markdown
-# \<Service Name\>
+## \<Service Name\>
 
 ## Purpose
 
@@ -288,7 +288,7 @@ Draft | In Development | Production
 Create a `Dockerfile` in the service directory:
 
 ```dockerfile
-# Build stage
+## Build stage
 FROM node:20-alpine AS builder
 RUN corepack enable
 WORKDIR /app
@@ -300,7 +300,7 @@ RUN pnpm install --frozen-lockfile
 COPY services/\<service-name\> services/\<service-name\>/
 RUN pnpm --filter @gtcx/\<service-name\> build
 
-# Production stage
+## Production stage
 FROM node:20-alpine AS runner
 RUN addgroup -g 1001 -S app && adduser -S app -u 1001
 WORKDIR /app

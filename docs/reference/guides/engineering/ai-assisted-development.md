@@ -171,11 +171,11 @@ Watch for tests that:
 Before committing any AI-suggested dependency:
 
 ```bash
-# npm
+## npm
 npm search \<package-name\>
 npm info \<package-name\> version
 
-# Python
+## Python
 pip index versions \<package-name\>
 ```
 

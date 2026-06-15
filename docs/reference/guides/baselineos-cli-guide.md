@@ -87,7 +87,7 @@ Example:
 
 ```bash
 baseline help studio
-# → Shows all Studio commands with descriptions
+## → Shows all Studio commands with descriptions
 ```
 
 ---

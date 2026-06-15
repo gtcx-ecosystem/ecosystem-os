@@ -53,7 +53,7 @@ Good: "Create the NestJS content module with CRUD endpoints matching the spec at
 Before any large autonomous work, create a briefing:
 
 ```markdown
-# Agent Briefing — {task-name}
+## Agent Briefing — {task-name}
 
 ## Objective
 

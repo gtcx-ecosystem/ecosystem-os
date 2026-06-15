@@ -41,7 +41,7 @@ The reader should know what the document is about and why they care within the f
 \*_Good:_
 
 ```markdown
-# Trade Matching Algorithm
+## Trade Matching Algorithm
 
 Matches buy and sell orders for commodity trades using a price-time priority queue.
 
@@ -53,7 +53,7 @@ The exchange processes approximately 10,000 trades per day...
 \*_Bad:_
 
 ```markdown
-# Trade Matching Algorithm
+## Trade Matching Algorithm
 
 ## Background
 
@@ -179,7 +179,7 @@ A folder README should contain:
 Example:
 
 ```markdown
-# Architecture
+## Architecture
 
 System design documents, diagrams, and architectural decision records.
 

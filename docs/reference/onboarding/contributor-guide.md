@@ -44,7 +44,7 @@ Complete the Developer Setup (see CLAUDE.md at repo root) before contributing. E
 | `test/`     | Adding or updating tests                | `test/add-orchestrator-edge-cases` |
 
 ```bash
-# Create a new branch
+## Create a new branch
 
 git checkout main
 git pull origin main
@@ -126,16 +126,16 @@ feat(api)!: change agent task response shape
 `
 
 ```bash
-# Check linting
+## Check linting
 pnpm lint
 
-# Auto-fix lint issues
+## Auto-fix lint issues
 pnpm lint --fix
 
-# Format code
+## Format code
 pnpm format
 
-# Check formatting without writing
+## Check formatting without writing
 pnpm format:check
 ```
 

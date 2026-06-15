@@ -90,7 +90,7 @@ Customize checklists for any standard or framework.
 **Protocol Builder:**
 
 ```yaml
-# Example: Custom Mining Inspection Protocol
+## Example: Custom Mining Inspection Protocol
 
 protocol:
   name: 'Ghana Mining Compliance v2.1'

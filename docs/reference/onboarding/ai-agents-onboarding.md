@@ -80,14 +80,14 @@ gtcx/
 ### 1. environment understanding
 
 ```bash
-# current working directory
+## current working directory
 
 pwd: /Users/amanianai/Sites/gtcx
 
-# workspace configuration
+## workspace configuration
 cat pnpm-workspace.yaml
 
-# available packages
+## available packages
 ls 03-platform/packages/
 ```
 
@@ -101,13 +101,13 @@ ls 03-platform/packages/
 ### 3. ai-optimized navigation
 
 ```bash
-# find protocol specs
+## find protocol specs
 find protocols -name "SPEC.md"
 
-# find typescript definitions
+## find typescript definitions
 find 03-platform/packages/types -name "*.ts"
 
-# find documentation
+## find documentation
 find docs -name "*.md"
 ```
 

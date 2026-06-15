@@ -32,11 +32,11 @@ Before starting, confirm you have:
 ## Step 1: Create Repository
 
 ```bash
-# Create the repo on GitHub and clone it
+## Create the repo on GitHub and clone it
 gh repo create [org-name]/\<repo-name\> --private --clone
 cd \<repo-name\>
 
-# Initial commit
+## Initial commit
 git commit --allow-empty -m "chore: initial commit"
 git push -u origin main
 ```
@@ -73,10 +73,10 @@ trim_trailing_whitespace = false
 Add the foundational files:
 
 ```bash
-# .nvmrc
+## .nvmrc
 echo "20" > .nvmrc
 
-# .gitignore (use GitHub's Node template as a base, then add project-specific entries)
+## .gitignore (use GitHub's Node template as a base, then add project-specific entries)
 curl -sL https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore > .gitignore
 echo -e "\n# Project\n.env\n.env.*\n!.env.example\ndist/\ncoverage/" >> .gitignore
 ```
@@ -102,20 +102,20 @@ Add a `LICENSE` file appropriate for the project (private repos typically use `U
 Configure branch protection and conventional commits:
 
 ```bash
-# Install commitlint and husky
+## Install commitlint and husky
 pnpm add -D @commitlint/cli @commitlint/config-conventional husky
 
-# Set up husky
+## Set up husky
 pnpm exec husky init
 
-# Configure commitlint
+## Configure commitlint
 cat > commitlint.config.js << 'EOF'
 module.exports = {
   extends: ['@commitlint/config-conventional'],
 };
 EOF
 
-# Add commit-msg hook
+## Add commit-msg hook
 echo 'pnpm exec commitlint --edit "$1"' > .husky/commit-msg
 chmod +x .husky/commit-msg
 ```
@@ -129,10 +129,10 @@ Set up branch protection via GitHub (or `gh api`):
 ### Code Standards
 
 ```bash
-# Install linting and formatting
+## Install linting and formatting
 pnpm add -D eslint prettier typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier
 
-# Create tsconfig.json
+## Create tsconfig.json
 cat > tsconfig.json << 'EOF'
 {
   "compilerOptions": {
@@ -153,7 +153,7 @@ cat > tsconfig.json << 'EOF'
 }
 EOF
 
-# Create .prettierrc
+## Create .prettierrc
 cat > .prettierrc << 'EOF'
 {
   "semi": true,
@@ -250,7 +250,7 @@ See [1-protocols/docs-structure/protocol.md](../../../governance/protocols/1-doc
 If this repo will contain multiple packages or services:
 
 ```bash
-# pnpm workspace config
+## pnpm workspace config
 cat > pnpm-workspace.yaml << 'EOF'
 packages:
   - 'apps/*'
@@ -258,7 +258,7 @@ packages:
   - '03-platform/packages/*'
 EOF
 
-# Turborepo
+## Turborepo
 pnpm add -D turbo
 
 cat > turbo.json << 'EOF'
@@ -294,16 +294,16 @@ Create shared config packages in `03-platform/packages/config/` for shared tscon
 Scaffold the first application or service:
 
 ```bash
-# Example: a NestJS API service
+## Example: a NestJS API service
 mkdir -p services/my-api/src
 cd services/my-api
 
 pnpm init
-# Edit package.json: set name to @gtcx/my-api, add scripts
-# Add framework dependencies
-# Create tsconfig.json extending the shared config
-# Add vitest.config.ts
-# Write a health check endpoint
+## Edit package.json: set name to @gtcx/my-api, add scripts
+## Add framework dependencies
+## Create tsconfig.json extending the shared config
+## Add vitest.config.ts
+## Write a health check endpoint
 ```
 
 Wire it into the Turbo pipeline by ensuring the `package.json` scripts match the task names in `turbo.json` (`build`, `lint`, `test`, `typecheck`).
@@ -351,8 +351,8 @@ gh pr create --title "chore: initial repository setup" --body "Sets up repo per 
 > **template-token for future automation.** A CLI tool or script that runs Steps 2-3 automatically is planned. For now, follow the manual steps above.
 
 ```bash
-# Future: npx @gtcx/create-repo my-new-repo
-# This does not exist yet. Follow the steps above manually.
+## Future: npx @gtcx/create-repo my-new-repo
+## This does not exist yet. Follow the steps above manually.
 ```
 
 ---
