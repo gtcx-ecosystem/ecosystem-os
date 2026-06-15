@@ -1,12 +1,13 @@
 ---
 title: 'Ai Native Gtcx Architecture And Agentic Automation'
-status: 'current'
-date: '2026-05-22'
-owner: 'product-lead'
-role: 'product-lead'
+status: current
+date: 2026-05-22
+owner: product-lead
 tier: operating
-tags: ['product', 'feature']
-review_cycle: 'monthly'
+tags: [['product', 'feature']]
+review_cycle: monthly
+document_type: protocol
+role: product-lead
 ---
 
 > **Status:** Current
