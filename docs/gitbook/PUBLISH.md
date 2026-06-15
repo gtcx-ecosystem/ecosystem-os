@@ -3,13 +3,11 @@ title: 'GitBook publish guide — ecosystem-os'
 status: current
 date: 2026-06-14
 owner: ecosystem-os
-role: protocol-architect
 tier: standard
-tags: ['gitbook', 'publish', 'documentation']
+tags: [['gitbook', 'publish', 'documentation']]
 review_cycle: on-change
-related:
-  - ../../pm/publish-register.json
-  - ../strategy/gitbook-product-sync-contract-v1.md
+document_type: gitbook-chapter
+role: protocol-architect
 ---
 
 # GitBook publish guide
