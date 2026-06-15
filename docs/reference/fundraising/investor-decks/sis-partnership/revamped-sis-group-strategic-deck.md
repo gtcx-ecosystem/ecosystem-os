@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Revamped Sis Group Strategic Deck
+
 ## Artifacts / Files
 
 - slide-1.jpg

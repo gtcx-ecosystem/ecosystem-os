@@ -37,7 +37,7 @@ version: 0.4.4
 
 ```bash
 pnpm add @gtcx/sdk@^0.4.0
-# or
+## or
 npm install @gtcx/sdk@^0.4.0
 ```
 

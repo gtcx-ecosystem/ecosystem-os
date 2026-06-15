@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Investment Pitch Deck Strategy
+
 ## Artifacts / Files
 
 - None

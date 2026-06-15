@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Wtc Deck Forensic Analysis And Ranking
+
 ## Artifacts / Files
 
 - None

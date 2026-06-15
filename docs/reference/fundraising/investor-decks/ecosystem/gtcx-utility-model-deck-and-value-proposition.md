@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Utility Model Deck And Value Proposition
+
 ## Artifacts / Files
 
 - Screenshot 2026-01-01 at 8.59.24 PM.png

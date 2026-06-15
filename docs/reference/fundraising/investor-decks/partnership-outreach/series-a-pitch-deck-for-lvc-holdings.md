@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Series A Pitch Deck For Lvc Holdings
+
 ## Artifacts / Files
 
 - None

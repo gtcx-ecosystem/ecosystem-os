@@ -100,7 +100,7 @@ Package maintainers can generate TypeDoc locally:
 
 ```bash
 pnpm --filter @gtcx/sdk docs
-# output: 03-platform/packages/sdk-typescript/api-docs/
+## output: 03-platform/packages/sdk-typescript/api-docs/
 ```
 
 Hosted reference: published to docs.gtcx.trade on each release (target).

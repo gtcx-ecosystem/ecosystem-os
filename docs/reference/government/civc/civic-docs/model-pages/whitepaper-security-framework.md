@@ -140,7 +140,7 @@ Automated scans and runtime checks validate security posture 24×7:
 All internal services use mutual TLS (mTLS):
 
 ```yaml
-# Service certificate configuration
+## Service certificate configuration
 tls:
   mode: MUTUAL
   clientCertificate: /certs/client.crt
@@ -243,7 +243,7 @@ tls:
 Sensitive fields encrypted before storage:
 
 ```python
-# Fields requiring field-level encryption
+## Fields requiring field-level encryption
 ENCRYPTED_FIELDS = [
     "operator.national_id",
     "operator.phone_number",
@@ -251,8 +251,8 @@ ENCRYPTED_FIELDS = [
     "location.precise_coordinates",
 ]
 
-# Encryption uses envelope encryption
-# Data key encrypted with master key in HSM
+## Encryption uses envelope encryption
+## Data key encrypted with master key in HSM
 ```
 
 ---

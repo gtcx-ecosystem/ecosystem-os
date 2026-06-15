@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Wtc Miami Partnership Formalization And Board Structure
+
 ## Artifacts / Files
 
 - unknown

@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Collateral Management Demo Preparation
+
 ## Artifacts / Files
 
 - unknown

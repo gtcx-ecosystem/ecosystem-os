@@ -13,6 +13,11 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Cryptographic Verification
+
+
+## Overview
+
 ### **The Question Everyone Asks**
 
 _"Why didn't you just use blockchain for commodity verification?"_

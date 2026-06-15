@@ -46,7 +46,7 @@ By the end of this phase, you will have:
 **Option A: Government Cloud**
 
 ```bash
-# Requirements
+## Requirements
 - Isolated VPC (no public internet egress)
 - 4 vCPU, 16GB RAM, 100GB SSD (minimum)
 - PostgreSQL 15+ compatible database
@@ -57,7 +57,7 @@ By the end of this phase, you will have:
 **Option B: On-Premise**
 
 ```bash
-# Requirements
+## Requirements
 - Dedicated server or VM cluster
 - Same compute requirements as above
 - Network isolation from production systems
@@ -71,20 +71,20 @@ By the end of this phase, you will have:
 **Task:** Deploy GTCX core services using provided containers
 
 ```bash
-# 1. Pull deployment bundle
+## 1. Pull deployment bundle
 wget https://deploy.gtcx.org/sandbox/v1.2.0/bundle.tar.gz
 
-# 2. Verify checksum
+## 2. Verify checksum
 sha256sum -c bundle.tar.gz.sha256
 
-# 3. Extract and configure
+## 3. Extract and configure
 tar -xzf bundle.tar.gz
 cd gtcx-sandbox
 cp .env.example .env
 
-# 4. Edit configuration
+## 4. Edit configuration
 nano .env
-# Set: DATABASE_URL, REDIS_URL, JWT_SECRET, ADMIN_EMAIL
+## Set: DATABASE_URL, REDIS_URL, JWT_SECRET, ADMIN_EMAIL
 ```
 
 **Service Stack:**
@@ -100,16 +100,16 @@ nano .env
 **Task:** Verify all services communicate correctly
 
 ```bash
-# Run health checks
+## Run health checks
 ./03-platform/scripts/health-check.sh
 
-# Expected output:
-# ✓ Database connection: OK
-# ✓ Redis connection: OK
-# ✓ API Gateway: OK
-# ✓ Rules Engine: OK
-# ✓ Audit Service: OK
-# ✓ Admin Dashboard: OK
+## Expected output:
+## ✓ Database connection: OK
+## ✓ Redis connection: OK
+## ✓ API Gateway: OK
+## ✓ Rules Engine: OK
+## ✓ Audit Service: OK
+## ✓ Admin Dashboard: OK
 ```
 
 **Troubleshooting:**
@@ -164,10 +164,10 @@ nano .env
 **Loading Command:**
 
 ```bash
-# Load synthetic dataset
+## Load synthetic dataset
 ./03-platform/scripts/load-synthetic-data.sh --dataset=gold-asm-v1
 
-# Verify record counts
+## Verify record counts
 ./03-platform/scripts/verify-data.sh
 ```
 
@@ -223,10 +223,10 @@ nano .env
 | Export System    | API (bidirectional) | Sandbox instance if available |
 
 ```bash
-# Configure mock integrations
+## Configure mock integrations
 ./03-platform/scripts/setup-mocks.sh
 
-# Test integration endpoints
+## Test integration endpoints
 ./03-platform/scripts/test-integrations.sh
 ```
 

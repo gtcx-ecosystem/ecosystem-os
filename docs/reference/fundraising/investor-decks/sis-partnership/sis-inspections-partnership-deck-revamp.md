@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Sis Inspections Partnership Deck Revamp
+
 ## Artifacts / Files
 
 - GTCX_SIS_Partnership_Deck.jsx

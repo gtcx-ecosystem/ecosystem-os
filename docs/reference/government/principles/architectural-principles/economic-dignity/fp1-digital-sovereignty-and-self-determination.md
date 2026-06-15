@@ -11,6 +11,9 @@ document_type: protocol
 
 # FP1: Digital Sovereignty and Self Determination
 
+
+## Overview
+
 ---
 
 ### `FP1` Digital Sovereignty and Self Determination&#x20;

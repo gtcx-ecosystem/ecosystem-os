@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Product Portfolio Presentation Update
+
 ## Artifacts / Files
 
 - R94_Partnership_Deck_Enhanced (1).jsx
