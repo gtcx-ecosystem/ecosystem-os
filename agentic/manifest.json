@@ -44,5 +44,11 @@
   "protocols": {
     "P22": "delegated — bridge-os",
     "P35": "fleet-documentation repo — unnumbered docs/ and ops/ hubs"
+  },
+  "auditModel": {
+    "id": "multi-pillar-11pr",
+    "agentIndex": "../canon-os/docs/governance/audit/multi-pillar-agent-index.md",
+    "normativeSpec": "../baseline-os/docs/specs/audit/fractal-multi-pillar-audit.md",
+    "fleetRunbook": "../bridge-os/audit/runbooks/MULTI-PILLAR.md"
   }
 }
