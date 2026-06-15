@@ -1,12 +1,13 @@
 ---
 title: 'Guide: Autonomous Agent Workflow'
-status: 'current'
-date: '2026-05-24'
-owner: 'engineering-lead'
-role: 'engineering-lead'
-tier: 'operating'
-tags: ['agentic', 'testing']
-review_cycle: 'annual'
+status: current
+date: 2026-05-24
+owner: engineering-lead
+tier: operating
+tags: [['agentic', 'testing']]
+review_cycle: annual
+document_type: onboarding
+role: engineering-lead
 ---
 
 # Guide: Autonomous Agent Workflow

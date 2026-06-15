@@ -1,15 +1,16 @@
 ---
 title: 'BaselineOS CLI Guide'
-status: 'current'
-date: '2026-05-28'
-owner: 'gtcx-docs'
-role: 'protocol-architect'
-agent_id: 'agent://canon-os/2026-05-28/cli-guide'
-trust_score: 85
-autonomy_level: 'sovereign'
+status: current
+date: 2026-05-28
+owner: gtcx-docs
 tier: operating
-tags: ['documentation', 'cli', 'baselineos', 'reference']
-review_cycle: 'on-change'
+tags: [['documentation', 'cli', 'baselineos', 'reference']]
+review_cycle: on-change
+document_type: onboarding
+role: protocol-architect
+agent_id: agent://canon-os/2026-05-28/cli-guide
+trust_score: 85
+autonomy_level: sovereign
 ---
 
 # BaselineOS CLI Guide
