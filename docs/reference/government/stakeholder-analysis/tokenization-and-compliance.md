@@ -11,6 +11,9 @@ document_type: protocol
 
 # Tokenization & Compliance
 
+
+## Overview
+
 - Regulatory Classification: Are AGX tokens “virtual assets” under FATF definitions? If so, AGX must register as a Virtual Asset Service Provider (VASP) and enforce KYC/AML. Token transfers should be allowed only between approved accounts, or using identity-layer integrations. Paxos, for instance, only allows the minting of PAXG by KYC’d clients.
 - Cross-Border Flow: Trading gold tokens across borders could trigger forex controls. AGX might restrict conversions to fiat to specific jurisdictions or use licensed brokers. It must comply with each country’s export/import laws for currency and commodities.
 - Tax Compliance: How is capital gains tax or import/export duty applied? AGX should calculate taxes on trades and ideally remit them to governments, avoiding loopholes. A built-in tax accounting system could simplify compliance.

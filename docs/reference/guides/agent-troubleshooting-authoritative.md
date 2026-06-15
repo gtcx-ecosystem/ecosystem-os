@@ -29,20 +29,20 @@ If an agent is struggling or stuck, work through these steps systematically:
 ### 1. environment check
 
 ```bash
-# check current directory
+## check current directory
 
 pwd
 
-# check git status
+## check git status
 git status
 
-# check for uncommitted changes
+## check for uncommitted changes
 git diff
 
-# check current branch
+## check current branch
 git branch --show-current
 
-# check if files exist
+## check if files exist
 ls -la
 ```
 
@@ -51,10 +51,10 @@ ls -la
 #### issue: "file not found" errors
 
 ```bash
-# verify you're in the right directory
+## verify you're in the right directory
 cd /Users/amanianai/Sites/gtcx
 
-# check the structure
+## check the structure
 ls -la 03-platform/packages/
 ls -la protocols/
 ls -la platforms/
@@ -63,7 +63,7 @@ ls -la platforms/
 #### issue: git conflicts or push failures
 
 ```bash
-# safe reset approach
+## safe reset approach
 git stash -u                    # save all changes
 git fetch origin
 git reset --hard origin/main    # reset to remote
@@ -73,27 +73,27 @@ git stash pop                   # restore changes (optional)
 #### issue: pnpm/node problems
 
 ```bash
-# clear pnpm cache
+## clear pnpm cache
 pnpm store prune
 
-# remove node_modules and reinstall
+## remove node_modules and reinstall
 rm -rf node_modules
 pnpm install
 
-# check node version (requires 18+)
+## check node version (requires 18+)
 node --version
 ```
 
 #### issue: permission denied
 
 ```bash
-# check file permissions
+## check file permissions
 ls -la
 
-# fix script permissions
+## fix script permissions
 chmod +x 03-platform/scripts/*.sh
 
-# fix directory ownership
+## fix directory ownership
 sudo chown -R $USER:$USER .
 ```
 
@@ -102,7 +102,7 @@ sudo chown -R $USER:$USER .
 If the agent seems confused about state:
 
 ```bash
-# show the current context
+## show the current context
 echo "=== current state ==="
 echo "directory: $(pwd)"
 echo "branch: $(git branch --show-current)"
@@ -121,10 +121,10 @@ If you're stuck, follow these steps:
 ### step 1: establish clean state
 
 ```bash
-# go to the monorepo root
+## go to the monorepo root
 cd /Users/amanianai/Sites/gtcx
 
-# check where you are
+## check where you are
 pwd
 ls -la
 ```
@@ -164,7 +164,7 @@ gtcx/                            # monorepo root
 ```bash
 git checkout main
 git pull origin main
-# make your changes
+## make your changes
 git add -A
 git commit -m "feat: your change description"
 git push origin main
@@ -209,10 +209,10 @@ git pull origin main
 3. **use explicit paths:**
 
 ```bash
-# instead of relative paths
+## instead of relative paths
 cd ../../somewhere
 
-# use absolute paths
+## use absolute paths
 cd /Users/amanianai/Sites/gtcx/03-platform/packages/types
 ```
 
@@ -221,7 +221,7 @@ cd /Users/amanianai/Sites/gtcx/03-platform/packages/types
 **if you can't push to git:**
 
 ```bash
-# you might be on a detached head
+## you might be on a detached head
 git checkout main
 git pull origin main
 git push origin main
@@ -230,7 +230,7 @@ git push origin main
 **if pnpm won't install:**
 
 ```bash
-# clear and reinstall
+## clear and reinstall
 rm -rf node_modules pnpm-lock.yaml
 pnpm install
 ```
@@ -238,9 +238,9 @@ pnpm install
 **if you see merge conflicts:**
 
 ```bash
-# don't try to resolve manually
+## don't try to resolve manually
 git reset --hard origin/main
-# then redo your changes
+## then redo your changes
 ```
 
 ## key principles for success
@@ -275,14 +275,14 @@ git reset --hard origin/main
 If everything is broken:
 
 ```bash
-# nuclear option - start completely fresh
+## nuclear option - start completely fresh
 cd /Users/amanianai/Sites
 mv gtcx gtcx.backup
 git clone https://github.com/gtcx-ecosystem/gtcx.git
 cd gtcx
 pnpm install
 
-# or just reset
+## or just reset
 cd /Users/amanianai/Sites/gtcx
 git fetch origin
 git reset --hard origin/main

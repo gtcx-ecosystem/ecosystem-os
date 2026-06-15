@@ -120,7 +120,7 @@ role: protocol-architect
 ### MCP Server Specifications
 
 ```yaml
-# gtx-sources.yaml
+## gtx-sources.yaml
 name: gtx-sources
 version: 1.0.0
 description: News, government portals, and market data ingestion
@@ -157,7 +157,7 @@ tools:
 `
 `
 `````yaml
-# gtx-regintel.yaml
+## gtx-regintel.yaml
 name: gtx-regintel
 version: 1.0.0
 description: Regulatory intelligence database access
@@ -200,7 +200,7 @@ tools:
 `
 `
 ````yaml
-# gtx-analytics.yaml
+## gtx-analytics.yaml
 name: gtx-analytics
 version: 1.0.0
 description: Engagement metrics and content performance
@@ -237,7 +237,7 @@ tools:
 `
 `
 ````yaml
-# gtx-distribution.yaml
+## gtx-distribution.yaml
 name: gtx-distribution
 version: 2.0.0
 description: Multi-channel content distribution for Global South
@@ -310,7 +310,7 @@ tools:
 `
 `
 ````yaml
-# gtx-i18n.yaml
+## gtx-i18n.yaml
 name: gtx-i18n
 version: 1.0.0
 description: Translation and localization engine

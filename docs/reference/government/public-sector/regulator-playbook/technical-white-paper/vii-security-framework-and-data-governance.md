@@ -11,6 +11,9 @@ document_type: protocol
 
 # VII – Security Framework and Data Governance
 
+
+## Overview
+
 **Section VII — Security Framework & Data Governance**
 
 > **Purpose:** Present a comprehensive security and data‑governance blueprint that demonstrates how GTCX safeguards sensitive information, enforces regulatory mandates, and maintains continuous assurance across its multi‑tenant, cloud‑native architecture. This section is intended for CISOs, regulators, auditors, and enterprise security architects.

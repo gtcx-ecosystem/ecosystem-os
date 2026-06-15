@@ -13,6 +13,11 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Universal Compliance Model
+
+
+## Overview
+
 ### Core Proposition
 
 **A standards‑driven trust layer that any regulator can adopt—without ceding sovereignty—delivering real‑time compliance, portable legitimacy, and transparent audit-ability across all commodity supply chains.**

@@ -11,6 +11,9 @@ document_type: protocol
 
 # V — Component Breakdown & Technical Specifications
 
+
+## Overview
+
 **Section V — Component Breakdown & Technical Specifications**
 
 > **Objective:** Provide a deep technical dive into each core component of the Global Trust & Compliance Exchange (GTCX). This section is intended for solution architects, security reviewers, and regulator IT teams who need granular insight into how the platform is engineered\

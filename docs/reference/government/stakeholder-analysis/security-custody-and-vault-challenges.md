@@ -11,6 +11,9 @@ document_type: protocol
 
 # Security, Custody & Vault Challenges
 
+
+## Overview
+
 ###
 
 - Vault Standards: AGX needs trustworthy vault operators. Vaults should meet international security standards (e.g. LLMA’s Responsible Gold Guidance) and be insured. Third-party audits (e.g. KPMG) should verify inventories and reconcile them to tokens regularly. As DMCC did, each gold bar could carry unique IDs and certifications.

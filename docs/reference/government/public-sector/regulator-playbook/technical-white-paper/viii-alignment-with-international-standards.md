@@ -11,6 +11,9 @@ document_type: protocol
 
 # VIII — Alignment with International Standards
 
+
+## Overview
+
 **Section VIII — Alignment with International Standards**
 
 > **Purpose:** Provide regulators, auditors, and institutional partners with a clear, evidence‑based demonstration that the Global Trust & Compliance Exchange (GTCX) adheres to—and, where possible, extends—globally recognised regulatory, ESG, security, and data‑protection frameworks. This section explains the alignment methodology, presents detailed cross‑mapping tables, and outlines the continuous assurance processes that keep GTCX compliant as standards evolve.

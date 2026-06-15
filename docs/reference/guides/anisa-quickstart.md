@@ -73,10 +73,10 @@ GTCX Compliance → Final Response
 ### Installation
 
 ```bash
-# Install ANISA agent library
+## Install ANISA agent library
 pip install anisa-agent
 
-# Import ANISA agent client
+## Import ANISA agent client
 from anisa_agent import ANISAAgentClient
 ```
 
@@ -85,14 +85,14 @@ from anisa_agent import ANISAAgentClient
 ```python
 from anisa_agent import ANISAAgentClient, CulturalRegion
 
-# Initialize ANISA agent client
+## Initialize ANISA agent client
 anisa_client = ANISAAgentClient(
     api_key="your_api_key",
     cultural_region=CulturalRegion.WEST_AFRICA,
     gtcx_integration=True
 )
 
-# Test connection
+## Test connection
 await anisa_client.test_connection()
 ```
 

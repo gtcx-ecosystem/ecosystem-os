@@ -170,7 +170,7 @@ GTX Markets adapts content delivery based on 6 connection profiles (from GTCX Pr
 ### USSD Response Format (160 char max)
 
 ```
-# Headlines Response (158 chars)
+## Headlines Response (158 chars)
 
 1.Ghana export rules change-Feb1
 2.Gold hits $2100
@@ -180,7 +180,7 @@ Reply 1-3 for details or *GTX*1*[num]#
 `
 ```
 
-# Price Response (142 chars)
+## Price Response (142 chars)
 
 GOLD 27Jan
 LBMA: $2,089/oz (+0.3%)

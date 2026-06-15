@@ -11,6 +11,9 @@ document_type: protocol
 
 # Stakeholder Perspectives
 
+
+## Overview
+
 - Governments & Regulators: Their top concerns will be sovereignty and revenue. They will ask: Does AGX complement or usurp national gold boards? (Ghana’s example: proposed law makes the Gold Board sole buyer.) If AGX wants to operate, it should align with such boards or get their buy-in by guaranteeing royalties/taxes are paid on every trade. Governments will also demand AML compliance and may even want veto rights on trading certain gold (e.g. from conflict zones). AGX should frame itself as a tool to increase state revenue by reducing smuggling.<br>
 - Miners (Artisanal & Large): Miners want fair prices and reliable payment. AGX can promise transparent spot-linked pricing and quicker payments than informal buyers. But miners will worry about fees, trust in the platform, and technical barriers. AGX must ensure an easy onboarding (e.g. simple smartphone app), low fees (or subsidize initially), and perhaps an educational program (like Mesfin’s claim of helping miners fix tailings, but beyond gold trading). For ASM, partnering with existing cooperatives or NGOs (like Fairmined) could help enroll and certify miners. Large mines will scrutinize security and flexibility; offering them tailor-made services (bulk contracts, insurance) would gain their participation.<br>
 - Vault Providers: These are mainly private companies offering gold storage. They will scrutinize liability, operational cost, and integration effort. AGX’s model should clearly define how vaults get paid (maybe a percentage of transactions stored) and who is liable for loss. Vaults will demand detailed audits and may only join if volume is assured. To attract them, AGX could promise to funnel business (as DMCC did by partnering with Comtech to boost vault use). It should also certify vaults to high standards (for example, following LBMA guidance).<br>

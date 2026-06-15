@@ -11,6 +11,9 @@ document_type: protocol
 
 # Questions and Answers
 
+
+## Overview
+
 ### Critical Stakeholder Questions and Answers
 
 - “How do you verify the gold’s source?” Governments and buyers will demand chain-of-custody proof. AGX must use unique IDs or tags on each batch of gold (e.g. sealed envelopes, laser-engraved bar codes, or chemical “fingerprinting” of gold ore). Each batch should be logged on the blockchain with miner identity and certificate. Like Ghana’s plan, AGX could require every batch to have a “unique digital code” linked to a miner’s license. Field audits and random inspections (as Fenix’s experience showed) are critical to deter false claims. Partnering with certification programs (e.g. Fairmined) can help: Fairmined’s third-party audits and premiums reinforce correct sourcing, although AGX must be wary of weak “certifications” that lack rigorous checks.

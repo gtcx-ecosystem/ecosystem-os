@@ -280,7 +280,7 @@ class GlobalSouthAgent:
 ### Dependencies
 
 ```python
-# Agentic AI frameworks
+## Agentic AI frameworks
 
 langchain==0.1.0
 langchain-openai==0.0.2
@@ -289,12 +289,12 @@ langchain-community==0.0.10
 langgraph==0.0.20
 langchain-core==0.1.10
 
-# Vector database and embeddings
+## Vector database and embeddings
 chromadb==0.4.18
 sentence-transformers==2.2.2
 faiss-cpu==1.7.4
 
-# Advanced AI tools
+## Advanced AI tools
 transformers==4.35.2
 torch==2.1.1
 accelerate==0.24.1
@@ -303,7 +303,7 @@ accelerate==0.24.1
 ### Configuration
 
 ```python
-# AI Orchestrator Configuration
+## AI Orchestrator Configuration
 AI_ORCHESTRATOR_CONFIG = {
     'memory_max_messages': 50,
     'knowledge_base_path': './chroma_db',
@@ -312,7 +312,7 @@ AI_ORCHESTRATOR_CONFIG = {
     'max_context_length': 10
 }
 
-# Cultural Agent Configuration
+## Cultural Agent Configuration
 CULTURAL_AGENT_CONFIG = {
     'supported_regions': ['west_africa', 'east_africa', 'south_asia', 'southeast_asia', 'latin_america'],
     'expertise_areas': ['languages', 'business_practices', 'communication_style', 'common_topics', 'taboos'],

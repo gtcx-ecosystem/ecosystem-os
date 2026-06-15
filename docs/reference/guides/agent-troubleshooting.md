@@ -29,20 +29,20 @@ If an agent is struggling or stuck, work through these steps systematically:
 ### 1. Environment Check
 
 ```bash
-# Check current directory
+## Check current directory
 
 pwd
 
-# Check git status
+## Check git status
 git status
 
-# Check for uncommitted changes
+## Check for uncommitted changes
 git diff
 
-# Check current branch
+## Check current branch
 git branch --show-current
 
-# Check if files exist
+## Check if files exist
 ls -la
 ```
 
@@ -51,10 +51,10 @@ ls -la
 #### Issue: "File not found" errors
 
 ```bash
-# Verify you're in the right directory
+## Verify you're in the right directory
 cd /Users/amanianai/Sites/gtcx-ecosystem-ecosystem
 
-# Check if it's a nested repo issue
+## Check if it's a nested repo issue
 ls -la gtcx-ecosystem-cognitive/
 ls -la gtcx-ecosystem-platforms/
 ls -la gtcx-ecosystem-protocols/
@@ -63,7 +63,7 @@ ls -la gtcx-ecosystem-protocols/
 #### Issue: Git conflicts or push failures
 
 ```bash
-# Safe reset approach
+## Safe reset approach
 git stash -u                    # Save all changes
 git fetch origin
 git reset --hard origin/main    # Reset to remote
@@ -73,28 +73,28 @@ git stash pop                    # Restore changes (optional)
 #### Issue: Docker/container problems
 
 ```bash
-# Check Docker status
+## Check Docker status
 docker ps -a
 docker compose ps
 
-# Clean restart
+## Clean restart
 docker compose down -v           # Remove everything
 docker compose up -d --build     # Fresh start
 
-# Check logs
+## Check logs
 docker compose logs --tail=50
 ```
 
 #### Issue: Permission denied
 
 ```bash
-# Check file permissions
+## Check file permissions
 ls -la
 
-# Fix script permissions
+## Fix script permissions
 chmod +x 03-platform/scripts/*.sh
 
-# Fix directory ownership
+## Fix directory ownership
 sudo chown -R $USER:$USER .
 ```
 
@@ -103,7 +103,7 @@ sudo chown -R $USER:$USER .
 If the agent seems confused about state:
 
 ```bash
-# Show them the current context
+## Show them the current context
 echo "=== Current State ==="
 echo "Directory: $(pwd)"
 echo "Branch: $(git branch --show-current)"
@@ -123,10 +123,10 @@ If you're stuck, follow these steps:
 ### Step 1: Establish Clean State
 
 ```bash
-# Go to the monorepo root
+## Go to the monorepo root
 cd /Users/amanianai/Sites/gtcx-ecosystem-ecosystem
 
-# Check where you are
+## Check where you are
 pwd
 ls -la
 ```
@@ -153,7 +153,7 @@ gtcx-ecosystem-ecosystem/           # Monorepo root
 cd gtcx-ecosystem-cognitive
 git checkout main
 git pull origin main
-# Make your changes
+## Make your changes
 git add -A
 git commit -m "feat: your change description"
 git push origin main
@@ -197,10 +197,10 @@ git pull origin main
 3. **Use explicit paths:**
 
 ```bash
-# Instead of relative paths
+## Instead of relative paths
 cd ../../somewhere
 
-# Use absolute paths
+## Use absolute paths
 cd /Users/amanianai/Sites/gtcx-ecosystem-ecosystem/gtcx-ecosystem-cognitive
 ```
 
@@ -209,7 +209,7 @@ cd /Users/amanianai/Sites/gtcx-ecosystem-ecosystem/gtcx-ecosystem-cognitive
 **If you can't push to git:**
 
 ```bash
-# You might be on a detached HEAD
+## You might be on a detached HEAD
 git checkout main
 git pull origin main
 git push origin main
@@ -218,19 +218,19 @@ git push origin main
 **If Docker won't start:**
 
 ```bash
-# Check if Docker Desktop is running
+## Check if Docker Desktop is running
 docker version
 
-# If not, tell the user:
+## If not, tell the user:
 echo "Please start Docker Desktop"
 ```
 
 **If you see merge conflicts:**
 
 ```bash
-# Don't try to resolve manually
+## Don't try to resolve manually
 git reset --hard origin/main
-# Then redo your changes
+## Then redo your changes
 ```
 
 ## Key Principles for Success
@@ -265,13 +265,13 @@ git reset --hard origin/main
 If everything is broken:
 
 ```bash
-# Nuclear option - start completely fresh
+## Nuclear option - start completely fresh
 cd /Users/amanianai/Sites
 mv gtcx-ecosystem-ecosystem gtcx-ecosystem-ecosystem.backup
 git clone https://github.com/gtcx-ecosystem/gtcx-ecosystem-cognitive.git
 cd gtcx-ecosystem-cognitive
 
-# Or just reset the cognitive repo
+## Or just reset the cognitive repo
 cd /Users/amanianai/Sites/gtcx-ecosystem-ecosystem/gtcx-ecosystem-cognitive
 git fetch origin
 git reset --hard origin/main

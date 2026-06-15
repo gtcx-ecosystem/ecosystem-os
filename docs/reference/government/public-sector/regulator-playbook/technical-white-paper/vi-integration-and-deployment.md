@@ -11,6 +11,9 @@ document_type: protocol
 
 # VI — Integration & Deployment
 
+
+## Overview
+
 **Section VI — Integration & Deployment**
 
 > **Objective:** Provide a practitioner‑level blueprint for connecting external systems to GTCX and rolling the platform into production—whether as a sovereign‑hosted cloud stack, on‑prem installation, or hybrid edge deployment. This section covers integration patterns, deployment topologies, environment hardening, and an end‑to‑end rollout playbook.

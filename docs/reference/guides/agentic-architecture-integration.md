@@ -126,7 +126,7 @@ Breaking Alert Detected
 ### Text-to-Speech Configuration
 
 ```yaml
-# Voice models (from GTCX Protocol ADR-0020)
+## Voice models (from GTCX Protocol ADR-0020)
 voices:
   en-male:
     model: piper/en-us-lessac-medium
