@@ -1,9 +1,12 @@
 ---
-
-title: "GTCX Digital Membership & Governance Infrastructure"
-status: "current"
-date: "2026-05-26"
-
+title: 'GTCX Digital Membership & Governance Infrastructure'
+status: current
+date: 2026-05-26
+owner: canon-os
+tier: operating
+tags: ['protocol', 'documentation', 'governance']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # GTCX Digital Membership & Governance Infrastructure

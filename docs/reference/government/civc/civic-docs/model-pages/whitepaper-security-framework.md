@@ -1,9 +1,12 @@
 ---
-
-title: "Section VII: Security Framework and Data Governance"
-status: "current"
-date: "2026-05-26"
-
+title: 'Section VII: Security Framework and Data Governance'
+status: current
+date: 2026-05-26
+owner: quality-evidence-lead
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # Section VII: Security Framework and Data Governance
