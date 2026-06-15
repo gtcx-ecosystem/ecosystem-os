@@ -24,7 +24,7 @@ GTCX builds **AI-native infrastructure** for regulated markets. We adopt [Anthro
 | Anthropic concept | GTCX adaptation |
 | ----------------- | ----------------- |
 | [**Constitutional AI**](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback) — train and steer models with explicit principles, not only ad-hoc corrections | **Protocols + this constitution** are the principle set every GTCX agent reads before acting |
-| [**Responsible Scaling Policy (RSP)**](https://www.anthropic.com/responsible-scaling-policy) — capability thresholds trigger stronger safeguards; living document; public accountability | **Responsible Execution Policy (REP)** — five-pillar thresholds, Class S gates, witnesses before fleet scale |
+| **Responsible Scaling Policy (RSP)** — capability thresholds trigger stronger safeguards; living document; public accountability | **Responsible Execution Policy (REP)** — multi-pillar (foundation + transformational) thresholds, Class S gates, witnesses before fleet scale |
 | **AI Safety Levels (ASL)** — proportional safeguards to demonstrated capability | **Execution Safety Levels ESL-1..4** + **Authority classes S/A/R** (Protocol 28) |
 | **Capability thresholds → required safeguards** | `capability-thresholds.json` — CT-* signals raise ESL before action |
 | **Risk Reports & external review** — systematic disclosure; independent scrutiny | **Audit witnesses** + `audit/evidence/*-latest.json`; hostile replay (Trust pillar) |
@@ -82,7 +82,7 @@ When a threshold is crossed, **upgrade safeguards before proceeding** — parall
 | **Autonomy** | Agent can merge, deploy, or attest without human | Class **A** evidence + [Protocol 28](../protocols/agent-authority-classification/protocol.md) |
 | **Fleet blast radius** | Change affects ≥2 repos or production | [Protocol 24](../protocols/cross-repo-coordination/protocol.md) handoff + witness |
 | **Assurance** | Money movement, PII, sovereign crypto | Class **S** register; implement queue continues per [human gates](../../operations/human-gate-navigation.md) |
-| **Quality** | Publishing pillar scores or shipping pilot | Five-pillar **unlock** ≥85 prior pillar ([bridge-os spec](https://github.com/gtcx-ecosystem/bridge-os/blob/main/pm/spec/five-pillar-evaluation.json)) |
+| **Quality** | Publishing pillar scores or shipping pilot | Foundation-tier (F-PiLLAR) **unlock** ≥85 on prerequisite pillars ([multi-pillar spec](https://github.com/gtcx-ecosystem/baseline-os/blob/main/docs/specs/audit/fractal-multi-pillar-audit.md)) |
 | **Documentation** | External GitBook / customer-facing narrative | canon-os PublishaaS; local `docs/gitbook/` remains SoR |
 
 ### III.1b Execution Safety Levels (ESL)
@@ -92,11 +92,11 @@ Anthropic **ASL** maps to GTCX **ESL** — engineering execution tiers, not mode
 | ESL | Anthropic analogue | GTCX scope | Min P28 class |
 | --- | ------------------ | ---------- | ------------- |
 | **ESL-1** | ASL-1 | Single-repo Class R — ops check, compliance witness | R |
-| **ESL-2** | ASL-2 | Custody — settlement gates, git safety, five-pillar witness | A |
+| **ESL-2** | ASL-2 | Custody — settlement gates, git safety, foundation-tier witness (`five-pillar-latest.json`) | A |
 | **ESL-3** | ASL-3 | Fleet — cross-repo P24, trust replay, audit cadence | A |
 | **ESL-4** | ASL-3+ sovereign | Production, money/PII — human gates + independent review | S |
 
-**Five-pillar publish gates:** compliance/TE/trust → ESL-1; craft → ESL-2; world-class → ESL-3.
+**Foundation-tier publish gates:** compliance/TE/trust → ESL-1; craft → ESL-2; world-class → ESL-3. Transformational tier (T-PiLLAR) publishes after F-PiLLAR prerequisites unlock.
 
 Spec: [execution-safety-levels.json](https://github.com/gtcx-ecosystem/bridge-os/blob/main/pm/spec/execution-safety-levels.json) · `pnpm ecosystem:esl:check`
 
@@ -183,7 +183,7 @@ Spec: [documentation-jurisdiction.json](https://github.com/gtcx-ecosystem/bridge
 
 ## Article VIII — Evidence, quality, and trust
 
-Anthropic emphasizes **eval-driven** quality and **independent verification**. GTCX uses the **five-pillar model**:
+Anthropic emphasizes **eval-driven** quality and **independent verification**. GTCX uses the **multi-pillar model** (11PR: F-PiLLAR + T-PiLLAR):
 
 | Pillar | Question | Anthropic parallel |
 | ------ | -------- | ------------------ |
@@ -226,7 +226,7 @@ SCALE       Safeguards before capability (REP / RSP shape)
 AUTHORITY   S > A > R — safety beats speed
 WORK        P22 → P26 → P27 → witness
 DOCS        canon = service; repos = home
-QUALITY     Five pillars; trust caps all
+QUALITY     Multi-pillar (F-PiLLAR + T-PiLLAR); trust caps all
 ```
 
 **Machine index:** `config/gtcx-constitution.json`  

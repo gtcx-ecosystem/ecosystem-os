@@ -1,6 +1,6 @@
 {
   "$schema": "./root-allowlist.schema.json",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "schema_version": "5.0.0",
   "updated": "2026-06-15",
   "description": "P35 v5 closed-world repo root — REQUIRED / ALLOWED / PERMISSIBLE_ON_APPROVAL / FORBIDDEN. Spec: bridge-os/docs/root-allowlist-spec-v5.md",
@@ -23,23 +23,24 @@
     "pm"
   ],
   "allowed_files": [
-    "CHANGELOG.md",
-    "Cargo.toml",
     "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "package.json",
+    "pnpm-workspace.yaml",
+    "pnpm-lock.yaml",
+    "turbo.json",
+    "tsconfig.json",
+    "eslint.config.js",
+    "commitlint.config.js",
+    "baseline.config.ts",
+    "baseline.config.json",
+    "hygiene.config.json",
+    "pyproject.toml",
+    "Cargo.toml",
     "Makefile",
     "Makefile.local",
-    "NOTICE",
-    "commitlint.config.js",
-    "eslint.config.js",
-    "hygiene.config.json",
-    "baseline.config.json",
-    "lighthouserc.js",
-    "package.json",
-    "pnpm-lock.yaml",
-    "pnpm-workspace.yaml",
-    "pyproject.toml",
-    "tsconfig.json",
-    "turbo.json"
+    "lighthouserc.js"
   ],
   "allowed_directories": [
     "archive",
@@ -113,6 +114,5 @@
     "audits": "audit/",
     "repo_policy": "docs/operations/repo/",
     "p29_domains": "ops/"
-  },
-  "transitional_allowed_directories": {}
+  }
 }
