@@ -1,7 +1,7 @@
 ---
 title: 'INIT-DOC-FLEET-PUBLISH — Fleet documentation & publishing program'
-status: sealed
-date: 2026-06-13
+status: reopened
+date: 2026-06-15
 owner: canon-os
 initiative: INIT-DOC-FLEET-PUBLISH
 tier: operating
@@ -13,7 +13,7 @@ review_cycle: quarterly
 **Authority:** canon-os (Layer 0 documentation services)  
 **Mission:** World-class, crafted, maintained, refreshed, audited, protocoled, standardized documentation and publishing across the GTCX fleet.
 
-**Status:** **Hub phase sealed** 2026-06-13 (Sprints 44–47). Witness: [`init-doc-fleet-publish-sealed-2026-06-13.json`](../audit/evidence/init-doc-fleet-publish-sealed-2026-06-13.json). Fleet owner extension continues per [`documentation-quarterly-refresh-protocol.md`](../governance/documentation-quarterly-refresh-protocol.md).
+**Status:** **Reopened v3** 2026-06-15 — P0 intake pillar 5 honest bar **NO** (scaffold PASS, quality gap 95). Prior hub seal 2026-06-13 retained as witness only; [`INIT-DOC-QUALITY-V3`](../governance/documentation-program-quality-bar.md) supersedes exit criteria until quality-bar fleet gate green.
 
 **Not:** Product implementation in owner repos. **Is:** Publish register, GitBook canon, GTM index, developer surface matrix, doc promotion, audit cadence, owner inbounds for source gaps.
 
