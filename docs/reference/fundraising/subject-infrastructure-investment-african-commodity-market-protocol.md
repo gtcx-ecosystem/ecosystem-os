@@ -1,9 +1,12 @@
 ---
-
-title: "Subject: Infrastructure Investment - African Commodity Market Protocol"
-status: "current"
-date: "2026-05-26"
-
+title: 'Subject: Infrastructure Investment - African Commodity Market Protocol'
+status: current
+date: 2026-05-26
+owner: quality-evidence-lead
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # Subject: Infrastructure Investment - African Commodity Market Protocol
