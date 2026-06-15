@@ -31,3 +31,7 @@ pnpm ops:check
 ## Product GitBook sync
 
 Owner repos author at `docs/gitbook/` (v5). Hub mirrors land in `docs/reference/gitbooks/<product>/` via sync — do not hand-edit synced trees.
+
+## Multi-pillar evaluation (RAG/MCP)
+
+GTCX uses **multi-pillar** evaluation (Foundation **F-PiLLAR** + Transformational **T-PiLLAR**). Read [`docs/reference/evaluation/multi-pillar-audit.md`](docs/reference/evaluation/multi-pillar-audit.md). Fleet index: [canon-os](https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/audit/multi-pillar-agent-index.md). Do **not** cite "five pillars" as the full model.

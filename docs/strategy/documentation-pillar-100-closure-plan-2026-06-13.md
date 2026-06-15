@@ -69,7 +69,7 @@ initiative: INIT-DOC-FLEET-PUBLISH
 
 | Action | Exit |
 | ------ | ---- |
-| Fresh five-pillar + doc audit witnesses same date | `audit-trail` **100** |
+| Fresh multi-pillar foundation witnesses + doc audit witnesses same date | `audit-trail` **100** |
 | All dimension confidence **A** after link + craft closure | `confidence-grade` **100** |
 | No craft ai-slop cap | `anti-hallucination` **≥ 95** |
 
@@ -86,7 +86,7 @@ initiative: INIT-DOC-FLEET-PUBLISH
 
 ## Fleet extension (post hub seal)
 
-Each fleet repo must pass the same five pillar scores before INIT-DOC-FLEET-PUBLISH seals:
+Each fleet repo must pass **foundation-tier (F-PiLLAR)** pillar scores before INIT-DOC-FLEET-PUBLISH seals (full model: [multi-pillar agent index](https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/audit/multi-pillar-agent-index.md)):
 
 ```bash
 pnpm --dir ../bridge-os ecosystem:documentation-audit:check:fleet --write
@@ -117,4 +117,4 @@ pnpm --dir ../bridge-os ecosystem:documentation-audit:check --repo canon-os --wr
 pnpm --dir ../bridge-os audit:five-pillar:run -- --repo canon-os --write
 ```
 
-**Definition of done:** all five pillar scores in `documentation-audit-latest.json` ≥ **100** (world-class quality ≥ **95** with gap **0**) · trust pillar ≥ **98** in `five-pillar-latest.json`.
+**Definition of done:** foundation-tier scores in `documentation-audit-latest.json` ≥ **100** (world-class quality ≥ **95** with gap **0**) · trust pillar ≥ **98** in `five-pillar-latest.json`.
