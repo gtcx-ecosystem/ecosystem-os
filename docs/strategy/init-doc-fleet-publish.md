@@ -3,9 +3,11 @@ title: 'INIT-DOC-FLEET-PUBLISH — Fleet documentation & publishing program'
 status: reopened
 date: 2026-06-15
 owner: canon-os
-initiative: INIT-DOC-FLEET-PUBLISH
 tier: operating
+tags: ['protocol', 'documentation']
 review_cycle: quarterly
+document_type: protocol
+initiative: INIT-DOC-FLEET-PUBLISH
 ---
 
 # INIT-DOC-FLEET-PUBLISH

@@ -1,11 +1,13 @@
 ---
-title: Agent initialization canon
+title: 'Agent initialization canon'
 status: current
 date: 2026-06-12
 owner: canon-os
-document_id: AGENT-INIT-001
 tier: critical
+tags: ['onboarding', 'documentation']
 review_cycle: on-change
+document_type: onboarding
+document_id: AGENT-INIT-001
 ---
 
 # Agent initialization canon
