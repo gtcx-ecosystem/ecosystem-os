@@ -1,3 +1,14 @@
+---
+title: 'GTCX Ecosystem GitBook'
+status: current
+date: 2026-06-15
+owner: quality-evidence-lead
+tier: operating
+tags: ['gitbook-chapter', 'documentation']
+review_cycle: on-change
+document_type: gitbook-chapter
+goals: 'Hub documentation — gitbook-chapter'
+---
 # GTCX Ecosystem GitBook
 
 ## Fleet & governance

@@ -3,8 +3,11 @@ title: 'Govern — ActiveRecord for governance (SIS / DFI reference)'
 status: current
 date: 2026-06-13
 owner: canon-os
-gitbook_space: gtcx-ecosystem
+tier: operating
+tags: ['gitbook-chapter', 'documentation']
 review_cycle: quarterly
+document_type: gitbook-chapter
+gitbook_space: gtcx-ecosystem
 sourceOfRecord: baseline-os
 ticket: XR-CANON-GOVERN-GTM-001
 canonicalSoR: https://github.com/gtcx-ecosystem/baseline-os/blob/main/docs/specs/_project/go-to-market/govern/00-sis-dfi-golden-day.md

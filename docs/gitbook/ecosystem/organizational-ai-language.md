@@ -1,10 +1,13 @@
 ---
-title: Organizational AI language (Lang)
+title: 'Organizational AI language (Lang)'
 status: current
 date: 2026-06-12
 owner: canon-os
-gitbook_space: gtcx-ecosystem
+tier: operating
+tags: ['gitbook-chapter', 'documentation']
 review_cycle: quarterly
+document_type: gitbook-chapter
+gitbook_space: gtcx-ecosystem
 sourceOfRecord: baseline-os
 ---
 

@@ -1,15 +1,16 @@
 ---
-title: 'Webhooks'
-status: 'current'
-date: '2026-05-27'
-owner: 'gtcx-docs'
-role: 'engineering-agent'
-agent_id: 'agent://canon-os/2026-05-27/session-backfill'
-trust_score: 60
-autonomy_level: 'permissioned'
+title: Webhooks
+status: current
+date: 2026-05-27
+owner: gtcx-docs
 tier: operating
-tags: ['documentation', 'gitbook']
-review_cycle: 'on-change'
+tags: [['documentation', 'gitbook']]
+review_cycle: on-change
+document_type: gitbook-chapter
+role: engineering-agent
+agent_id: agent://canon-os/2026-05-27/session-backfill
+trust_score: 60
+autonomy_level: permissioned
 ---
 
 ---

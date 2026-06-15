@@ -3,11 +3,13 @@ title: 'Developer documentation — fleet entry'
 status: current
 date: 2026-06-13
 owner: canon-os
+tier: operating
+tags: ['gitbook-chapter', 'documentation']
+review_cycle: monthly
+document_type: gitbook-chapter
 gitbook_space: gtcx-ecosystem
 initiative: INIT-DOC-FLEET-PUBLISH
 story: S46-03
-tier: operating
-review_cycle: monthly
 ---
 
 # Developer documentation
