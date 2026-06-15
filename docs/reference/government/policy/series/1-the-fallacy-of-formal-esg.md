@@ -1,9 +1,12 @@
 ---
-
-title: "Policy Series 1: The Fallacy of Formal ESG"
-status: "current"
-date: "2026-05-26"
-
+title: 'Policy Series 1: The Fallacy of Formal ESG'
+status: current
+date: 2026-05-26
+owner: quality-evidence-lead
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: on-change
+document_type: protocol
 ---
 
 # Policy Series 1: The Fallacy of Formal ESG
