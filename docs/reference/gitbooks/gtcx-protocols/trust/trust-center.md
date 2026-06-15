@@ -1,12 +1,14 @@
 ---
 title: 'Trust Center'
-status: 'current'
-date: '2026-06-01'
-owner: 'gtcx-protocols'
-version: '0.4.4'
-tags: ['trust', 'gitbook']
-review_cycle: 'quarterly'
-publication_target: 'https://trust.gtcx.trade'
+status: current
+date: 2026-06-01
+owner: gtcx-protocols
+tier: operating
+tags: [['trust', 'gitbook']]
+review_cycle: quarterly
+document_type: protocol
+version: 0.4.4
+publication_target: https://trust.gtcx.trade
 ---
 
 # Trust center

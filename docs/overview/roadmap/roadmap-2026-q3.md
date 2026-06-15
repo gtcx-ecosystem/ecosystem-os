@@ -1,12 +1,13 @@
 ---
 title: 'Roadmap 2026 Q3'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['roadmap', 'planning']
-review_cycle: 'bi-weekly'
+tags: [['roadmap', 'planning']]
+review_cycle: bi-weekly
+document_type: protocol
+role: protocol-architect
 ---
 
 # GTCX Agentic — Q3 2026 Roadmap: From 9.4 to 10.0

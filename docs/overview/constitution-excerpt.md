@@ -1,22 +1,14 @@
 ---
-title: GTCX Ecosystem Constitution
+title: 'GTCX Ecosystem Constitution'
 status: current
 date: 2026-06-12
 owner: canon-os
+tier: operating
+tags: ['protocol', 'documentation']
+review_cycle: quarterly
+document_type: protocol
 document_id: CONSTITUTION-001
 classification: internal
-review_cycle: quarterly
-primary_references:
-  - title: Anthropic Constitutional AI
-    url: https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback
-  - title: Anthropic Responsible Scaling Policy (RSP v3.0)
-    url: https://www.anthropic.com/responsible-scaling-policy
-  - title: Anthropic RSP v3.0 (full text)
-    url: https://anthropic.com/responsible-scaling-policy/rsp-v3-0
-related:
-  - ../ai-acceptable-use-charter.md
-  - ../protocols/README.md
-  - ../../engineering/authoritative/ethos/manifesto/DEVELOPER-MANIFESTO.md
 ---
 
 # GTCX Ecosystem Constitution

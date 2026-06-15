@@ -328,12 +328,12 @@ const result = await withResilience(() => api.verify(claim), {
 **Key Implementation Pattern:**
 
 ```yaml
-# Same manifest, different overlays
-# 04-ship/kubernetes/overlays/
-#   development/
-#   staging/
-#   production/
-#   air-gapped/  # Works without internet
+## Same manifest, different overlays
+## 04-ship/kubernetes/overlays/
+## development/
+## staging/
+## production/
+## air-gapped/  # Works without internet
 ```
 
 ---
@@ -562,7 +562,7 @@ interface SettlementMessage {
 **Key Implementation Pattern:**
 
 ```yaml
-# Horizontal scaling built-in
+## Horizontal scaling built-in
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 spec:

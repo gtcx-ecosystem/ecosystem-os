@@ -1,12 +1,13 @@
 ---
 title: 'Roadmap 2026 Q2'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['roadmap', 'planning']
-review_cycle: 'bi-weekly'
+tags: [['roadmap', 'planning']]
+review_cycle: bi-weekly
+document_type: protocol
+role: protocol-architect
 ---
 
 # GTCX Agentic — Sprint-Based Remediation Roadmap

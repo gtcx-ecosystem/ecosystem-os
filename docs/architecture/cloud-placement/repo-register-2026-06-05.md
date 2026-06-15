@@ -1,12 +1,15 @@
 ---
-title: "GTCX ecosystem cloud placement — per-repo register"
+title: 'GTCX ecosystem cloud placement — per-repo register'
 status: current
 date: 2026-06-05
 owner: gtcx-docs
+tier: operating
+tags: ['architecture', 'documentation']
+review_cycle: quarterly
+document_type: architecture
 document_id: OPS-CLOUD-PLACE-002
 supersedes: informal chat / audit notes only
 parent: gtcx-ecosystem-2026-06-05.md
-review_cycle: quarterly
 ---
 
 # Per-repo cloud placement register

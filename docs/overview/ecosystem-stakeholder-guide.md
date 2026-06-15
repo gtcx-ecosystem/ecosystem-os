@@ -1,12 +1,13 @@
 ---
 title: 'GTCX Agentic — Enterprise Overview & Stakeholder Guide'
-status: 'current'
-date: '2026-05-22'
-owner: 'protocol-architect'
-role: 'protocol-architect'
+status: current
+date: 2026-05-22
+owner: protocol-architect
 tier: operating
-tags: ['overview', 'enterprise', 'gtm', 'architecture', 'agentic']
-review_cycle: 'bi-weekly'
+tags: [['overview', 'enterprise', 'gtm', 'architecture', 'agentic']]
+review_cycle: bi-weekly
+document_type: protocol
+role: protocol-architect
 ---
 
 # GTCX Agentic — Enterprise Overview & Stakeholder Guide
