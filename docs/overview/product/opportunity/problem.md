@@ -1,12 +1,13 @@
 ---
 title: 'Problem Statement'
-status: 'current'
-date: '2026-05-24'
-owner: 'chief-of-staff'
-role: 'chief-of-staff'
-tier: 'operating'
-tags: ['documentation']
-review_cycle: 'annual'
+status: current
+date: 2026-05-24
+owner: chief-of-staff
+tier: operating
+tags: [['documentation']]
+review_cycle: annual
+document_type: protocol
+role: chief-of-staff
 ---
 
 # Problem Statement
