@@ -11,6 +11,9 @@ document_type: protocol
 
 # Appendix C — In‑Depth Sample Implementation Scenarios
 
+
+## Overview
+
 **Appendix C — In‑Depth Sample Implementation Scenarios**
 
 > **Purpose:** Provide regulators, donors, and implementation partners with concrete, step‑by‑step deployment blueprints illustrating how GTCX can be rolled out in real‑world contexts. Each scenario includes project phases, stakeholder roles, technical footprints, cost envelopes, and success metrics.

@@ -11,6 +11,9 @@ document_type: protocol
 
 # Appendix B — Comprehensive Compliance Alignment Matrix
 
+
+## Overview
+
 **Appendix B — Comprehensive Compliance Alignment Matrix**
 
 > **Purpose:** Demonstrate how each functional component of the Global Trust & Compliance Exchange (GTCX) directly supports, satisfies, or extends recognised international regulatory and compliance frameworks.

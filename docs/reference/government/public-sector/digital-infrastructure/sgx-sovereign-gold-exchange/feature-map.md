@@ -11,6 +11,9 @@ document_type: protocol
 
 # Feature Map
 
+
+## Overview
+
 #### Integration Highlights
 
 1. **TradePass™ Miner ID** ties each individual miner to their operator account.

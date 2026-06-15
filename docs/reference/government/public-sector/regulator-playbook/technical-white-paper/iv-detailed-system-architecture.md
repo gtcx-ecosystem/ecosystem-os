@@ -11,6 +11,9 @@ document_type: protocol
 
 # IV – Detailed System Architecture
 
+
+## Overview
+
 **Section IV — Detailed System Architecture**
 
 > **Purpose:** Offer a deep architectural view of GTCX, illustrating how regulatory interfaces, compliance services, and field‑level infrastructure interact across secure, scalable tiers. This document provides diagrams, data‑flow explanations, and fault‑tolerance design patterns required by regulator IT teams and third‑party auditors.

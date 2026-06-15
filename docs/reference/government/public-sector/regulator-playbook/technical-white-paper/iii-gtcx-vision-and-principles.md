@@ -11,6 +11,9 @@ document_type: protocol
 
 # III – GTCX Vision and Principles
 
+
+## Overview
+
 **Section III — GTCX Vision & Principles**
 
 > **Purpose:** Articulate the foundational vision that drives the Global Trust & Compliance Exchange (GTCX) and define the guiding principles that inform every technical, governance, and product decision. This narrative is intended to give regulators, partners, and funders a crisp understanding of why GTCX exists, what it aims to accomplish, and how its core values translate into measurable outcomes.

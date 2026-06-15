@@ -11,6 +11,9 @@ document_type: protocol
 
 # Page
 
+
+## Overview
+
 ### 1 | What Changes (and What Doesn’t)
 
 <table data-header-hidden><thead><tr><th width="129.2421875"></th><th width="189.25"></th><th></th></tr></thead><tbody><tr><td>Aspect</td><td>“Oracle” in a Blockchain World</td><td><strong>PANX Oracle™ in a Non-Blockchain GTCX</strong></td></tr><tr><td><strong>Destination</strong></td><td>Smart-contract storage variables</td><td>Postgres/BigQuery tables, Kafka topics, REST/GraphQL endpoints</td></tr><tr><td><strong>Immutability</strong></td><td>Guaranteed by consensus &#x26; blocks</td><td>Achieved via: ① append-only, hash-chained log (e.g., AWS QLDB, Merkle Trees) ② periodic hash anchors to a public timestamping service (optional)</td></tr><tr><td><strong>Execution Triggers</strong></td><td>Solidity / Move / Rust on-chain functions</td><td>Micro­services, Lambda/Cloud Run workers, SGX settlement engine, compliance score recalculators</td></tr><tr><td><strong>Incentives</strong></td><td>Crypto staking &#x26; slashing</td><td>Contractual SLAs + fiat bonds + signed audit attestations; same economic logic, different instruments</td></tr></tbody></table>

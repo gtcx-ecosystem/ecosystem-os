@@ -11,6 +11,9 @@ document_type: protocol
 
 # Page 3
 
+
+## Overview
+
 ### 1 | Core Objectives
 
 <table><thead><tr><th width="168.140625">Goal</th><th>What It Means in Practice</th></tr></thead><tbody><tr><td><strong>Total Capture</strong></td><td>Ingest <em>all</em> structured and unstructured data—sensor JSON, PDF permits, Slack threads, Figma files, versioned code, KPI spreadsheets.</td></tr><tr><td><strong>Context Awareness</strong></td><td>Link every fact to its spec, owner, timestamp, location, compliance status, and related project.</td></tr><tr><td><strong>Single Source of Truth</strong></td><td>Guarantee append-only history and tamper evidence (hash chain / QLDB) across the entire corpus.</td></tr><tr><td><strong>Instant Retrieval &#x26; Reasoning</strong></td><td>Natural-language + API access that returns answers, citations, and raw objects in ≤ 300 ms.</td></tr><tr><td><strong>Self-Improving</strong></td><td>Continuous fine-tuning / re-embedding so new documents and sensor streams are queryable within minutes.</td></tr></tbody></table>

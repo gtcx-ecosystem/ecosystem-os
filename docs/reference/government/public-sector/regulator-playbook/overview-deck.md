@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Overview Deck
+
 #### **Slide 1: Title Slide**
 
 - **Title:** Introducing the Global Trust & Compliance Exchange (GTCX)

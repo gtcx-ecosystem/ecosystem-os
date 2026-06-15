@@ -11,6 +11,9 @@ document_type: protocol
 
 # Appendix D — API & Integration Guidelines
 
+
+## Overview
+
 **Appendix D — API & Integration Guidelines**
 
 > **Purpose:** Provide developers, system integrators, and regulatory IT teams with explicit technical guidance for integrating external systems with the Global Trust & Compliance Exchange (GTCX). This appendix covers authentication, versioning, endpoint catalogues, data schemas, and reference workflows.

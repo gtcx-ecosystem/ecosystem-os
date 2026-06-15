@@ -11,6 +11,9 @@ document_type: protocol
 
 # Appendix A · Detailed Technical Specifications
 
+
+## Overview
+
 ### 1. System Architecture Diagrams
 
 ```

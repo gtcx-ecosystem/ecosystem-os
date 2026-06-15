@@ -13,6 +13,11 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Our Mission
+
+
+## Overview
+
 ### What is GTCX?
 
 GTCX is a next-generation public infrastructure designed to transform the African gold trade by embedding trust, traceability, and financial access into every stage of the value chain. From artisanal miners to international buyers, AGX creates a shared infrastructure that digitizes identity, automates compliance, secures custody, and unlocks finance—turning every gram of gold into a verifiable, bankable, and investable asset.

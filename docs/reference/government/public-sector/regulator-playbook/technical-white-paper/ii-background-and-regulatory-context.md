@@ -11,6 +11,9 @@ document_type: protocol
 
 # II — Background & Regulatory Context
 
+
+## Overview
+
 **Section II — Background & Regulatory Context**
 
 > **Objective:** Offer regulators, policy analysts, and industry partners a concise yet comprehensive overview of the historical backdrop, present‑day pressures, and impending regulatory horizons that frame the need for the Global Trust & Compliance Exchange (GTCX).

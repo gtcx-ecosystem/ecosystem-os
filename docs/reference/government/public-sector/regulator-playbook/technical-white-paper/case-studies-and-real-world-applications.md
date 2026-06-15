@@ -11,6 +11,9 @@ document_type: protocol
 
 # Case Studies and Real-World Applications
 
+
+## Overview
+
 **Section IX — Case Studies & Real‑World Applications**
 
 > **Objective:** Demonstrate the tangible impact of GTCX through detailed, data‑driven case studies. Each study follows a consistent format—Context, Challenge, GTCX Deployment, Quantitative Results, Qualitative Feedback, and Lessons Learned—allowing regulators and stakeholders to compare outcomes across sectors and jurisdictions.

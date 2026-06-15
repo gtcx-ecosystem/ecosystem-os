@@ -11,6 +11,9 @@ document_type: protocol
 
 # Planning
 
+
+## Overview
+
 1. **Ingest licensed operators** directly from the registry
 2. **On-chain/tagged lot management** (attach each export batch to a registered operator)
 3. **Compliance gating** (apply your GCI™ or custom risk checks before export sign-off)

@@ -15,6 +15,9 @@ autonomy_level: permissioned
 
 # Security as Architecture
 
+
+## Overview
+
 ---
 
 ### Cryptographic Sovereignty

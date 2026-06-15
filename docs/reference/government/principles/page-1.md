@@ -11,6 +11,9 @@ document_type: protocol
 
 # Page 1
 
+
+## Overview
+
 #### An Accessible Modular, Scalable Framework&#x20;
 
 The GTCX ecosystem operates through distinct but integrated layers that provide clarity for stakeholder engagement while enabling systematic scaling across geographic markets and commodity sectors.&#x20;

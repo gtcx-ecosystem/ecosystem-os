@@ -11,6 +11,9 @@ document_type: protocol
 
 # Implementation Roadmap
 
+
+## Overview
+
 **Section X — GTCX Implementation Roadmap**
 
 > **Objective:** Translate GTCX’s strategic vision into an actionable, time‑bound roadmap focused on near‑term deliverables (0‑12 months) and future enhancements (12‑36 months). The roadmap emphasises three critical vectors: (1) expansion to additional commodity sectors, (2) infusion of predictive compliance analytics driven by AI, and (3) compatibility across an increasingly interconnected global regulatory ecosystem.

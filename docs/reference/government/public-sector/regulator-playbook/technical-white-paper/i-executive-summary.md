@@ -11,6 +11,9 @@ document_type: protocol
 
 # I — Executive Summary
 
+
+## Overview
+
 **Executive Summary — Global Trust & Compliance Exchange (GTCX)**
 
 > **Purpose:** Provide senior regulators, policymakers, investors, and multilateral funders with a concise, high‑impact overview of why GTCX matters, the problems it solves, and the measurable value it delivers.

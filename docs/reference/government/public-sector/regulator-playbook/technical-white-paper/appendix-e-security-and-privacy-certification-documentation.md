@@ -11,6 +11,9 @@ document_type: protocol
 
 # Appendix E — Security & Privacy Certification Documentation
 
+
+## Overview
+
 **Appendix E — Security & Privacy Certification Documentation**
 
 > **Purpose:** Present regulators, auditors, and enterprise partners with clear evidence of GTCX’s security posture, privacy controls, and formal certification roadmap. This appendix consolidates third‑party attestations, audit results, and the continuous assurance program that underpins the platform.
