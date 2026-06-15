@@ -16,9 +16,11 @@
   "type": "module",
   "scripts": {
     "ops:check": "node platform/scripts/ops-check.mjs",
+    "test": "node --test platform/scripts/ops-check.test.mjs",
+    "test:smoke": "pnpm test",
     "agent:next-work": "node ../bridge-os/platform/scripts/agent-next-work.mjs",
-    "agent:work-selection:check": "node ../bridge-os/platform/scripts/check-agent-work-selection.mjs",
-    "layout:check": "node ../bridge-os/platform/scripts/workspace/p35-layout-check.mjs --repo ecosystem-os",
+    "agent:work-selection:check": "node ../bridge-os/platform/scripts/checks/check-agent-work-selection.mjs",
+    "layout:check": "node ../bridge-os/platform/scripts/workspace/p35-layout-check.mjs --repo ecosystem-os --strict",
     "pm:folder:check": "node ../bridge-os/platform/scripts/workspace/pm-folder-check.mjs",
     "agent:conduct:check": "node ../bridge-os/platform/scripts/checks/check-agent-conduct-local.mjs",
     "agent:auto-dev:check": "node ../bridge-os/platform/scripts/checks/check-agent-auto-dev-local.mjs"

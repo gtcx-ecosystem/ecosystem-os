@@ -1,0 +1,14 @@
+{
+  "$schema": "gtcx://pm/backlog/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-15",
+  "stories": [
+    {
+      "id": "ECO-DOCS-001",
+      "title": "PTM-R5-03 — fleet five-pillar lift for ecosystem-os",
+      "status": "in_progress",
+      "owner": "ecosystem-os",
+      "points": 5
+    }
+  ]
+}

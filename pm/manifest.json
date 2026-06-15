@@ -1,0 +1,17 @@
+{
+  "$schema": "gtcx://pm/manifest/v1",
+  "schemaVersion": 2,
+  "repo": "ecosystem-os",
+  "layoutVersion": "v5",
+  "updated": "2026-06-15",
+  "role": "fleet-documentation-home",
+  "sor": {
+    "publishRegister": "pm/publish-register.json",
+    "readinessSnapshot": "pm/readiness-snapshot.json",
+    "executionRoadmap": "pm/execution-roadmap.md"
+  },
+  "programOffice": {
+    "repo": "bridge-os",
+    "path": "../bridge-os"
+  }
+}

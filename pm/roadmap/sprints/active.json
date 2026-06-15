@@ -1,0 +1,14 @@
+{
+  "$schema": "gtcx://pm/sprint-active/v1",
+  "schemaVersion": 1,
+  "repo": "ecosystem-os",
+  "sprintId": "SPR-2026-06",
+  "updated": "2026-06-08",
+  "description": "Scrum Master INPUT — active sprint plan: tasks, owners, UAT links. Generated proposals land via roadmap/generated/proposal.json first.",
+  "goals": [],
+  "tasks": [],
+  "uat": {
+    "matrixRef": "pm/roadmap/uat/",
+    "scenarios": []
+  }
+}

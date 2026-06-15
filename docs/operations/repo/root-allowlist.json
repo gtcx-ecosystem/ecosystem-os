@@ -2,7 +2,7 @@
   "$schema": "./root-allowlist.schema.json",
   "version": "4.0.0",
   "schema_version": "5.0.0",
-  "updated": "2026-06-14",
+  "updated": "2026-06-15",
   "description": "P35 v5 closed-world repo root — REQUIRED / ALLOWED / PERMISSIBLE_ON_APPROVAL / FORBIDDEN. Spec: bridge-os/docs/root-allowlist-spec-v5.md",
   "migration_tier": "stable",
   "required_files": [
@@ -32,6 +32,7 @@
     "commitlint.config.js",
     "eslint.config.js",
     "hygiene.config.json",
+    "baseline.config.json",
     "lighthouserc.js",
     "package.json",
     "pnpm-lock.yaml",
@@ -111,9 +112,7 @@
   "relocate_hints": {
     "audits": "audit/",
     "repo_policy": "docs/operations/repo/",
-    "p29_domains": "ops/",
-    "gitbook": "docs/gitbook/",
-    "publish_register": "pm/publish-register.json"
+    "p29_domains": "ops/"
   },
   "transitional_allowed_directories": {}
 }

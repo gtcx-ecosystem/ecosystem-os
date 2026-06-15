@@ -1,0 +1,41 @@
+{
+  "$schema": "gtcx://pm/initiatives/v1",
+  "schemaVersion": 1,
+  "repo": "ecosystem-os",
+  "updated": "2026-06-15",
+  "initiatives": [
+    {
+      "id": "INIT-ECOSYSTEM-DOCS",
+      "title": "Fleet documentation home — GitBook, onboarding, GTM publish registry",
+      "status": "in_progress",
+      "ownerBaselineId": "protocol-engineer",
+      "completionPercent": 65,
+      "deployReadinessPercent": 55,
+      "evidence": "pm/ci/readiness-snapshot-latest.json",
+      "epics": [
+        {
+          "id": "EPIC-P35-PM-LIFT",
+          "title": "P35 v5 + PM folder R1 + ops:check for fleet documentation repo",
+          "dimensionId": "compliance",
+          "targetScore100": 100,
+          "currentScore100": 59,
+          "completionPercent": 60,
+          "features": [
+            {
+              "id": "FEAT-P35-LAYOUT",
+              "title": "P35 strict + baseline config + root allowlist",
+              "status": "in_progress",
+              "completionPercent": 80
+            },
+            {
+              "id": "FEAT-PM-FOLDER-R1",
+              "title": "pm/ roadmap + manifest + folder check GREEN",
+              "status": "in_progress",
+              "completionPercent": 70
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

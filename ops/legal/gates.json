@@ -1,0 +1,8 @@
+{
+  "$schema": "gtcx://legal/gates-lens/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-15",
+  "attestationGates": "ops/attestation/gates.local.json",
+  "authorityClass": "S",
+  "note": "Legal sign-off is Class S — update attestation gates; do not self-approve DPAs"
+}
