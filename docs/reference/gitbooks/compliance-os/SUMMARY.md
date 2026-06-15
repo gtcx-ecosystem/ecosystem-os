@@ -1,3 +1,14 @@
+---
+title: 'Table of Contents'
+status: current
+date: 2026-06-15
+owner: compliance-os
+tier: operating
+tags: [['gitbook']]
+review_cycle: on-release
+document_type: gitbook-chapter
+---
+
 # Summary
 
 - [Overview](README.md)

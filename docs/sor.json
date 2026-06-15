@@ -3,7 +3,7 @@
   "schema": "gtcx.docs.sor.v1",
   "repo": "ecosystem-os",
   "repoKind": "fleet-documentation",
-  "updated": "2026-06-14",
+  "updated": "2026-06-15",
   "role": "ecosystem-documentation-publish",
   "narrativeRoot": "docs/",
   "paths": {
@@ -47,5 +47,9 @@
       "path": "../bridge-os",
       "contract": "../bridge-os/config/ecosystem-layout-contract.json"
     }
+  },
+  "iaExemptions": {
+    "depthExemptPathPrefixes": ["docs/reference/government"],
+    "note": "Legacy government/civic GitBook import trees — flatten in INIT-GOV-DEPTH-REMEDIATE; no new depth > 4"
   }
 }
