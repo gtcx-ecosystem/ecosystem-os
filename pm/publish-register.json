@@ -33,6 +33,17 @@
       "refreshCycle": "on-owner-release"
     },
     {
+      "id": "apex-engine",
+      "provider": "gitbook",
+      "sourcePath": "baseline-os/docs/gitbook/apex-engine/",
+      "summary": "baseline-os/docs/gitbook/SUMMARY.md",
+      "status": "pointer",
+      "targetStatus": "synced",
+      "ownerRepo": "baseline-os",
+      "inbound": "bridge-os/docs/operations/coordination/from-baseline-os-apex-engine-program-2026-06-14.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
       "id": "compliance-os",
       "provider": "gitbook",
       "sourcePath": "docs/reference/gitbooks/compliance-os/",
@@ -175,11 +186,11 @@
     },
     {
       "repo": "baseline-os",
-      "gitbook": "planned",
+      "gitbook": "apex-engine",
       "gtm": "pending",
       "devDocs": "owner",
       "onboarding": "owner",
-      "status": "gap"
+      "status": "pointer"
     },
     {
       "repo": "gtcx-agentic",
