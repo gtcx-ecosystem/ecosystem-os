@@ -5,7 +5,7 @@
   "date": "2026-06-15",
   "auditType": "documentation-pillar",
   "ok": true,
-  "composite100": 86,
+  "composite100": 82,
   "pillars": {
     "compliance": {
       "score100": 100,
@@ -13,15 +13,15 @@
       "source": "documentation-pack"
     },
     "technicalExcellence": {
-      "score100": 90,
-      "score100Raw": 90,
+      "score100": 83,
+      "score100Raw": 83,
       "packTe100": 100,
       "capped": false,
       "source": "pack+forensic-links"
     },
     "craft": {
-      "score100": 78,
-      "score100Raw": 78,
+      "score100": 77,
+      "score100Raw": 77,
       "capped": false,
       "capReasons": [],
       "craftFlags": {
@@ -31,10 +31,10 @@
       "source": "forensic-doc-standard"
     },
     "worldClass": {
-      "score100": 73,
-      "documentationQuality100": 69,
+      "score100": 68,
+      "documentationQuality100": 65,
       "worldClassBar100": 95,
-      "gap100": 26,
+      "gap100": 30,
       "gapLabel": "competitive",
       "references": [
         "Stripe docs",
@@ -47,17 +47,17 @@
   "forensic": {
     "axes": {
       "structural": 100,
-      "naming": 80,
+      "naming": 73,
       "frontmatter": 99,
-      "links": 7,
+      "links": 0,
       "agentic": 55
     },
-    "score100": 68,
+    "score100": 65,
     "signals": {
       "competingRoots": [],
       "docsHub": "docs",
-      "markdownFileCount": 475,
-      "brokenLinks": 93,
+      "markdownFileCount": 521,
+      "brokenLinks": 374,
       "scaffoldFileCount": 0,
       "aiSlopFileCount": 0
     }
