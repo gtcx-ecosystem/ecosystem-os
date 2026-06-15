@@ -1,0 +1,369 @@
+{
+  "schema": "gtcx://audit/documentation-links/v1",
+  "ok": false,
+  "filesScanned": 521,
+  "brokenCount": 374,
+  "advisoryCount": 59,
+  "internalBrokenCount": 374,
+  "results": [
+    {
+      "file": "docs/INDEX.md",
+      "broken": [
+        {
+          "href": "./onboarding/",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/README.md",
+      "broken": [
+        {
+          "href": "./onboarding/",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": [
+        {
+          "href": "../canon-os/docs/governance/",
+          "reason": "sibling-ecosystem"
+        }
+      ]
+    },
+    {
+      "file": "docs/agents/provisioning/AGENT-INIT-CANON.md",
+      "broken": [
+        {
+          "href": "../../governance/constitution/GTCX-CONSTITUTION.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../governance/ai-acceptable-use-charter.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/agents/provisioning/README.md",
+      "broken": [
+        {
+          "href": "./FOLDER-SPEC.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/architecture/README.md",
+      "broken": [
+        {
+          "href": "../reference/templates/.gtcx/decisions/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/architecture/adr/README.md",
+      "broken": [
+        {
+          "href": "./FOLDER-SPEC.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/architecture/cloud-placement/repo-register-2026-06-05.md",
+      "broken": [
+        {
+          "href": "../../../ops/coordination/hub-narrative/coordination-inventory-2026-06-03.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/architecture/external-access-credential-plane.md",
+      "broken": [
+        {
+          "href": "../governance/protocols/external-access-credentials/protocol.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../governance/protocols/external-access-credentials/implementation-guide.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/engineering/architecture/README.md",
+      "broken": [
+        {
+          "href": "ai-native-cadastre-platform-architecture.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "backend-technology-comparison-analysis.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "biometric-security-fingerprint-implementation.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "ffi-rco-integration-framework-launch.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "frontier-markets-exchange-database-for-gtcx.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gctx-telegram-bot-development.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "geopass-global-trade-platform.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-architectural-solutions-framework.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-development-roadmap-and-architecture.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-rails-to-nestjs-migration-decision.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-security-architecture-strategy.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-technical-architecture-correction.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "gtcx-technical-architecture-updates-and-competitive-positioning.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "nillion-private-data-browser-extension-2.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "platform-security-vulnerability-inquiry.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "software-development-macro-architecture.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "tradepass-and-geotag-data-architecture.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "tradepass-multi-stack-identity-system.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "untitled-79.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/engineering/authoritative/README.md",
+      "broken": [
+        {
+          "href": "./FOLDER-SPEC.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/engineering/authoritative/ethos/design-goals/design-principles.md",
+      "broken": [
+        {
+          "href": "../../../../reference/research/academic/core-theory/architectural-principles.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/README.md",
+      "broken": [
+        {
+          "href": "../reference/guides/agentic-ai-architecture.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../reference/guides/via-vxa-overview.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../reference/integrations/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/ecosystem/SUMMARY.md",
+      "broken": [
+        {
+          "href": "../agents/provisioning/AGENT-INIT-CANON.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../onboarding/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": [
+        {
+          "href": "../../../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/governance/ai-acceptable-use-charter.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/governance/protocols/README.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/ops/coordination/hub-narrative/hub-scope-enforcement.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/governance/doc-promotion/protocol.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/reference/agent-sops/1-onboarding/developer-quickstart.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/reference/guides/engineering/docs-writing-guide.md",
+          "reason": "sibling-ecosystem"
+        },
+        {
+          "href": "../../../canon-os/docs/reference/guides/engineering/new-repo-checklist.md",
+          "reason": "sibling-ecosystem"
+        }
+      ]
+    },
+    {
+      "file": "docs/gitbook/ecosystem/developer-docs.md",
+      "broken": [
+        {
+          "href": "../../reference/agent-sops/1-onboarding/developer-quickstart.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../reference/organization/onboarding/README.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../engineering/system-design/system-design-template.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../governance/doc-promotion/protocol.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/ecosystem/govern-active-record-sis-dfi.md",
+      "broken": [
+        {
+          "href": "../../governance/institutional/lexicon/README.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../governance/institutional/deliverables/README.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../governance/institutional/personas/compliance-officer.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/ecosystem/organizational-ai-language.md",
+      "broken": [
+        {
+          "href": "../../governance/institutional/lexicon/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/glossary/glossary.md",
+      "broken": [
+        {
+          "href": "../../governance/institutional/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/publish/gitbook-readme-template.md",
+      "broken": [
+        {
+          "href": "./getting-started/README.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../reference/organization/onboarding/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/gitbook/research/desk-research/industry-landscape.md",
+      "broken": [
+        {
+          "href": "../../../reference/research/academic/core-theory/README.md",
+          "reason": "missing target"
+        },
+        {
+          "href": "../../../reference/research/academic/core-theory/README.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    },
+    {
+      "file": "docs/operations/repo/README.md",
+      "broken": [
+        {
+          "href": "./FOLDER-SPEC.md",
+          "reason": "missing target"
+        }
+      ],
+      "advisory": []
+    }
+  ],
+  "repo": "ecosystem-os"
+}
