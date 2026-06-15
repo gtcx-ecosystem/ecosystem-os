@@ -108,7 +108,7 @@ Core protocols can be customized across multiple dimensions:
 ### Commodity Configuration
 
 ```yaml
-# Example: Gold vs. Cocoa configuration differences
+## Example: Gold vs. Cocoa configuration differences
 gold:
   verification:
     assay_required: true
@@ -131,7 +131,7 @@ cocoa:
 ### Regional Configuration
 
 ```yaml
-# Example: Ghana vs. Kenya configuration differences
+## Example: Ghana vs. Kenya configuration differences
 ghana:
   regulatory_body: Ghana Minerals Commission
   license_types: [small_scale, community_mining, reconnaissance]

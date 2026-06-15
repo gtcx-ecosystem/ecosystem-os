@@ -11,6 +11,9 @@ document_type: protocol
 
 # Pitch Deck
 
+
+## Overview
+
 ### Pitch Deck Outline
 
 - #### Slide 1: **The Challenge – Exclusion in Frontier Mining**

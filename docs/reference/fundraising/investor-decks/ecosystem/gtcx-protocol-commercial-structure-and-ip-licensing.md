@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Protocol Commercial Structure And Ip Licensing
+
 ## Artifacts / Files
 
 - GTCXUtilityDeck_v2.jsx

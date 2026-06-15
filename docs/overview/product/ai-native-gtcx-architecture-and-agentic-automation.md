@@ -10,6 +10,8 @@ document_type: protocol
 role: product-lead
 ---
 
+# Ai Native Gtcx Architecture And Agentic Automation
+
 > **Status:** Current
 > **Date:** 2026-05-22
 > **Owner:** Protocol Architect

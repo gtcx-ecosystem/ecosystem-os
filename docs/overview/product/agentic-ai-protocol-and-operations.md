@@ -10,6 +10,8 @@ document_type: protocol
 role: product-lead
 ---
 
+# Agentic Ai Protocol And Operations
+
 > **Status:** Current
 > **Date:** 2026-05-22
 > **Owner:** Product Lead

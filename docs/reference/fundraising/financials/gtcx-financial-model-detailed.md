@@ -23,7 +23,7 @@ document_type: protocol
 
 ---
 
-# TRADEPASS™ STANDALONE
+## TRADEPASS™ STANDALONE
 
 ## 18-Month Budget: $3.5M (Comfortable Scenario)
 
@@ -273,7 +273,7 @@ document_type: protocol
 
 ---
 
-# GEOTAG™ STANDALONE
+## GEOTAG™ STANDALONE
 
 ## 18-Month Budget: $3.2M (Comfortable Scenario)
 
@@ -518,7 +518,7 @@ document_type: protocol
 
 ---
 
-# COMBINED SCENARIO: TRADEPASS + GEOTAG
+## COMBINED SCENARIO: TRADEPASS + GEOTAG
 
 ## 18-Month Budget: $5.5M
 
@@ -558,7 +558,7 @@ document_type: protocol
 
 ---
 
-# RISK-ADJUSTED SCENARIOS
+## RISK-ADJUSTED SCENARIOS
 
 ## Scenario Analysis
 
@@ -595,7 +595,7 @@ document_type: protocol
 
 ---
 
-# WHAT'S NOT INCLUDED
+## WHAT'S NOT INCLUDED
 
 These budgets assume:
 
@@ -619,7 +619,7 @@ These budgets assume:
 
 ---
 
-# FUNDRAISING RECOMMENDATION
+## FUNDRAISING RECOMMENDATION
 
 ## For TradePass Standalone
 
@@ -658,7 +658,7 @@ For DFI/catalytic capital:
 
 ---
 
-# APPENDIX: MONTHLY BURN RATE
+## APPENDIX: MONTHLY BURN RATE
 
 ## TradePass Monthly Burn by Phase
 

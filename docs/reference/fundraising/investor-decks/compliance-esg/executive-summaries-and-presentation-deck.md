@@ -3238,7 +3238,7 @@ Result: T+0 settlement, 1% total fees, full transparency
 **Step 1: Build Basic API (2 weeks)**
 
 ```python
-# Your current verification system
+## Your current verification system
 GET /api/verify/gold-shipment/12345
 Response: {
   "verified": true,
@@ -3747,7 +3747,7 @@ You become the bridge between physical and digital gold
 ### The Brilliant Architecture
 
 ```python
-# How simple Stellar integration would be
+## How simple Stellar integration would be
 from stellar_sdk import Server, Asset, TransactionBuilder
 
 class GTCXGoldToken:
@@ -4097,14 +4097,14 @@ What's Missing:
 ### Paxos's "Compliance"
 
 ```python
-# This is literally their entire verification
+## This is literally their entire verification
 def verify_gold(gold_bar):
     if gold_bar.refiner in ["Valcambi", "PAMP", "Argor-Heraeus"]:
         if gold_bar.serial_number.exists_in_database():
             return "APPROVED"
     return "REJECTED"
 
-# That's it. No actual verification of origin.
+## That's it. No actual verification of origin.
 ```
 
 ### The Questions They Can't Answer
@@ -4615,21 +4615,21 @@ Exporter to Refinery: WHERE BLOCKCHAIN ACTUALLY STARTS
 **1. Garbage In, Garbage Out**
 
 ```python
-# What blockchain evangelists think happens:
+## What blockchain evangelists think happens:
 blockchain.add({
     "miner": "John_GPS_verified",
     "location": "Confirmed_mine_site",
     "amount": "10g_verified_by_inspector"
 })
 
-# What actually happens:
+## What actually happens:
 blockchain.add({
     "miner": "whatever_name_I_made_up",
     "location": "somewhere_in_Ghana",
     "amount": "whatever_I_claim"
 })
 
-# Blockchain makes the lie permanent, not true
+## Blockchain makes the lie permanent, not true
 ```
 
 **2. The Connectivity Fantasy**

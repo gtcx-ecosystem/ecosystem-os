@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Global Technology Ecosystem Presentation Design
+
 ## Artifacts / Files
 
 - opencadastre-presentation-final.jsx

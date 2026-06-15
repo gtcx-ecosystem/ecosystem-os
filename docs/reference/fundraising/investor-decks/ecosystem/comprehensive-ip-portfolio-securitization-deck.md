@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Comprehensive Ip Portfolio Securitization Deck
+
 ## Artifacts / Files
 
 - Screenshot 2025-12-26 at 9.34.58 AM.png

@@ -92,7 +92,7 @@ role: product-lead
 ### Offline-First Architecture
 
 ```python
-# Conceptual edge agent architecture
+## Conceptual edge agent architecture
 class EdgeVerificationAgent:
     def __init__(self):
         self.local_model = load_quantized_model("phi-3-mini-4k-q4")
@@ -264,7 +264,7 @@ This is where the sovereignty proposition becomes tangible. Each participating c
 ### Key Open Source Components
 
 ```yaml
-# Core Infrastructure
+## Core Infrastructure
 inference:
   - vllm: High-throughput LLM serving
   - triton: Multi-model orchestration

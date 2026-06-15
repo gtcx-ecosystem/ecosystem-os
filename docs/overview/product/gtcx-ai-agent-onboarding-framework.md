@@ -10,6 +10,8 @@ document_type: protocol
 role: product-lead
 ---
 
+# Gtcx Ai Agent Onboarding Framework
+
 > **Status:** Current
 > **Date:** 2026-05-22
 > **Owner:** Protocol Architect

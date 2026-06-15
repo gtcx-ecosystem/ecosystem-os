@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Economic Transformation Strategy
+
 ## Artifacts / Files
 
 - unknown

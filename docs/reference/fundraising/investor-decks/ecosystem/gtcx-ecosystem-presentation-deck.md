@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Ecosystem Presentation Deck
+
 ## Artifacts / Files
 
 - None

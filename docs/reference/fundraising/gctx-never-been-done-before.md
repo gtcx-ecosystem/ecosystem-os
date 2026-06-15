@@ -11,6 +11,9 @@ document_type: protocol
 
 # GCTX - Never Been Done Before
 
+
+## Overview
+
 _A Motivation Manifesto for the Team_
 
 ---

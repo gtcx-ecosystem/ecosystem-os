@@ -103,13 +103,13 @@ document_type: runbook
 **The Transaction-Based Formula:**
 
 ```python
-# Monthly distribution from reserved pool
+## Monthly distribution from reserved pool
 monthly_distribution = min(
     reserved_pool_remaining * 0.02,  # Max 2% of remaining pool per month
     1_000_000  # Cap at 1M units/month
 )
 
-# Distribution by transaction contribution
+## Distribution by transaction contribution
 for member in active_members:
     member_share = (
         member.verified_transactions / total_verified_transactions

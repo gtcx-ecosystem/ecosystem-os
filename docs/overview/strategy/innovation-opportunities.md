@@ -127,7 +127,7 @@ Prioritization decisions happen but are not recorded. When a decision is made ("
 Every significant cross-repo prioritization decision becomes an ADR in `_sop/reference/archive/legacy-authoritative/_archive/decisions/`. The format is simple:
 
 ```markdown
-# ADR-XXX: Build 6-platforms AGX before 7-mobile
+## ADR-XXX: Build 6-platforms AGX before 7-mobile
 
 **Status:** Accepted
 **Date:** 2026-03-09

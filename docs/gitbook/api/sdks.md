@@ -47,14 +47,14 @@ from org_markets import Client
 
 client = Client(api_key="YOUR_API_KEY")
 
-# Get [Index A] scores
+## Get [Index A] scores
 countries = client.index_a.list_countries()
 ghana = client.index_a.get_country("GH")
 
-# Get alerts
+## Get alerts
 alerts = client.alerts.list(jurisdiction="GH", limit=10)
 
-# Subscribe to webhooks
+## Subscribe to webhooks
 client.webhooks.create(
     url="https://your-server.com/webhook",
     events=["alert.created", "[index-a].updated"]

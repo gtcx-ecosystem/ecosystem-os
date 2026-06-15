@@ -359,7 +359,7 @@ class MarketAdvocateAgent {
 #### Local Model Configuration
 
 ```yaml
-# TradePass Edge Model Stack
+## TradePass Edge Model Stack
 models:
   voice:
     transcription:
@@ -387,7 +387,7 @@ models:
       model: mobilevit-small
       size: 25MB
 
-# Memory budget on mid-range device (4GB RAM)
+## Memory budget on mid-range device (4GB RAM)
 memory_allocation:
   system_reserved: 1.5GB
   app_baseline: 500MB

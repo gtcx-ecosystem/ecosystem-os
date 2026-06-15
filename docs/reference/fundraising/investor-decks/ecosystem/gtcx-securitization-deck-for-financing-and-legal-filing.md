@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+# Gtcx Securitization Deck For Financing And Legal Filing
+
 ## Artifacts / Files
 
 - None
