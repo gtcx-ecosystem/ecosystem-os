@@ -1,15 +1,16 @@
 ---
 title: 'Credential Management — Ecosystem Architecture'
-status: 'current'
-date: '2026-05-28'
-owner: 'gtcx-docs'
-role: 'protocol-architect'
-agent_id: 'agent://canon-os/2026-05-28/doc-organization'
-trust_score: 60
-autonomy_level: 'permissioned'
+status: current
+date: 2026-05-28
+owner: gtcx-docs
 tier: operating
-tags: ['documentation', 'architecture', 'security', 'credentials']
-review_cycle: 'on-change'
+tags: [['documentation', 'architecture', 'security', 'credentials']]
+review_cycle: on-change
+document_type: architecture
+role: protocol-architect
+agent_id: agent://canon-os/2026-05-28/doc-organization
+trust_score: 60
+autonomy_level: permissioned
 ---
 
 # Credential Management — Ecosystem Architecture

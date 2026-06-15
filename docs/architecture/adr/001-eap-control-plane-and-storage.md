@@ -1,15 +1,14 @@
 ---
 title: 'ADR-001: EAP Control Plane and Secret Storage'
-status: 'accepted'
-date: '2026-06-02'
-owner: 'gtcx-docs'
+status: accepted
+date: 2026-06-02
+owner: gtcx-docs
+tier: critical
+tags: [['adr', 'eap', 'architecture', 'credentials']]
+review_cycle: on-change
+document_type: architecture
 deciders: ['protocol-architect', 'security', 'platform']
-tier: 'critical'
-tags: ['adr', 'eap', 'architecture', 'credentials']
 supersedes: null
-related:
-  - ../external-access-credential-plane.md
-  - ../../governance/protocols/external-access-credentials/protocol.md
 ---
 
 # ADR-001: EAP control plane and secret storage

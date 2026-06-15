@@ -1,15 +1,16 @@
 ---
 title: 'External Access Credential Plane — Research & Target Architecture'
-status: 'current'
-date: '2026-06-02'
-owner: 'gtcx-docs'
-role: 'protocol-architect'
-tier: 'critical'
-tags: ['architecture', 'security', 'api-keys', 'tradepass', 'credentials', 'research']
-review_cycle: 'on-change'
-journey_phase: 'Agentic Ops'
-feature_id: 'AGT-F-004'
-exr_id: 'EXR-pending-external-access-issuance'
+status: current
+date: 2026-06-02
+owner: gtcx-docs
+tier: critical
+tags: [['architecture', 'security', 'api-keys', 'tradepass', 'credentials', 'research']]
+review_cycle: on-change
+document_type: architecture
+role: protocol-architect
+journey_phase: Agentic Ops
+feature_id: AGT-F-004
+exr_id: EXR-pending-external-access-issuance
 ---
 
 # External Access Credential Plane — Research & Target Architecture

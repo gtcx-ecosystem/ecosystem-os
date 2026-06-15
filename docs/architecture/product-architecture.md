@@ -1,14 +1,13 @@
 ---
-
-title: "GTCX Product Architecture Pattern"
-status: "current"
-date: "2026-05-24"
-owner: "quality-evidence-lead"
-role: "quality-evidence-lead"
-tier: "operating"
-tags: ["architecture", "testing"]
-review_cycle: "annual"
-
+title: 'GTCX Product Architecture Pattern'
+status: current
+date: 2026-05-24
+owner: quality-evidence-lead
+tier: operating
+tags: [["architecture", "testing"]]
+review_cycle: annual
+document_type: architecture
+role: quality-evidence-lead
 ---
 
 # GTCX Product Architecture Pattern

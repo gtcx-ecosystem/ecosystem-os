@@ -1,11 +1,14 @@
 ---
-title: "GTCX ecosystem cloud placement — AWS control plane + GCP ML plane"
+title: 'GTCX ecosystem cloud placement — AWS control plane + GCP ML plane'
 status: current
 date: 2026-06-05
 owner: gtcx-docs
+tier: operating
+tags: ['architecture', 'documentation']
+review_cycle: quarterly
+document_type: architecture
 document_id: OPS-CLOUD-PLACE-001
 canonical: true
-review_cycle: quarterly
 ---
 
 # GTCX ecosystem cloud placement
