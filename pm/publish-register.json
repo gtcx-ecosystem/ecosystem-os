@@ -4,7 +4,7 @@
   "updated": "2026-06-14",
   "ownerRepo": "ecosystem-os",
   "initiative": "INIT-DOC-FLEET-PUBLISH",
-  "initiativeStatus": "hub-sealed",
+  "initiativeStatus": "reopened-v3",
   "programCharter": "docs/strategy/init-doc-fleet-publish.md",
   "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md",
   "spaces": [
