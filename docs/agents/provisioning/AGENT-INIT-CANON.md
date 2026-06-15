@@ -26,7 +26,7 @@ document_id: AGENT-INIT-001
 
 ## Session sequence (normative)
 
-1. **Constitution** — purpose, responsible execution (REP/ESL), five-pillar evaluation.
+1. **Constitution** — purpose, responsible execution (REP/ESL), multi-pillar evaluation (F-PiLLAR + T-PiLLAR).
 2. **Acceptable use** — boundaries for agent behavior.
 3. **This document** — init canon + GitBook ecosystem entry.
 4. **Repo ops reads** — `docs/operations/agent-universal-instructions.md`, human-gate-navigation (owner repo).

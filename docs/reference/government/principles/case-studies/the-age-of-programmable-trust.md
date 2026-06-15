@@ -13,6 +13,8 @@ trust_score: 60
 autonomy_level: permissioned
 ---
 
+> **Terminology (2026-06):** GTM "five pillars" in this narrative describes **protocol capabilities** for programmable trust — not the fleet **multi-pillar audit** model (F-PiLLAR + T-PiLLAR). Fleet evaluation: [multi-pillar agent index](https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/audit/multi-pillar-agent-index.md).
+
 # The Age of Programmable Trust
 
 
