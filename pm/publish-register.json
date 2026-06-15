@@ -37,10 +37,21 @@
       "provider": "gitbook",
       "sourcePath": "baseline-os/docs/gitbook/apex-engine/",
       "summary": "baseline-os/docs/gitbook/SUMMARY.md",
-      "status": "pointer",
+      "status": "synced",
       "targetStatus": "synced",
       "ownerRepo": "baseline-os",
       "inbound": "bridge-os/docs/operations/coordination/from-baseline-os-apex-engine-program-2026-06-14.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "baselineos",
+      "provider": "gitbook",
+      "sourcePath": "baseline-os/docs/gitbook/",
+      "summary": "baseline-os/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "live",
+      "ownerRepo": "baseline-os",
+      "inbound": "bridge-os/docs/operations/coordination/from-baseline-os-docs-product-roadmap-2026-06-15.md",
       "refreshCycle": "on-owner-release"
     },
     {
@@ -186,11 +197,11 @@
     },
     {
       "repo": "baseline-os",
-      "gitbook": "apex-engine",
+      "gitbook": "baselineos",
       "gtm": "pending",
-      "devDocs": "owner",
+      "devDocs": "baseline-os/docs/gitbook/",
       "onboarding": "owner",
-      "status": "pointer"
+      "status": "partial"
     },
     {
       "repo": "gtcx-agentic",
