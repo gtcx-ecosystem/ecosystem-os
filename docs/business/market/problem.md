@@ -1,71 +1,16 @@
 ---
-title: 'Problem Statement'
-status: current
-date: 2026-05-24
-owner: chief-of-staff
+title: 'problem — pointer'
+status: pointer
+date: 2026-06-16
+owner: ecosystem-os
+document_type: overview
 tier: operating
-tags: [['documentation']]
-review_cycle: annual
-document_type: protocol
-role: chief-of-staff
+tags: ['documentation', 'cross-reference']
+review_cycle: on-change
 ---
 
-# Problem Statement
+# problem
 
-> What market failure or gap does [Organization Name] exist to solve?
+**Canonical SoR:** [`../business/market/problem.md`](../business/market/problem.md)
 
----
-
-## The Core Problem
-
-[One paragraph. Describe the structural failure in the market. Be specific about what is broken, who it affects, and why existing solutions do not fix it.]
-
----
-
-## Why It Exists
-
-[Explain the root cause. Is this an information gap? A coordination failure? A trust deficit? A missing infrastructure layer? Connect cause to symptom.]
-
----
-
-## Who It Affects
-
-| Stakeholder | How They Are Affected |
-| ----------- | --------------------- |
-| [Segment 1] | [Specific pain]       |
-| [Segment 2] | [Specific pain]       |
-| [Segment 3] | [Specific pain]       |
-
----
-
-## The Scale
-
-[Quantify the problem where possible. Market size, volume of transactions affected, number of people impacted, cost of the gap. Be specific — vague scale claims are unconvincing.]
-
----
-
-## Why Now
-
-[What is changing in the market that makes this problem solvable now? Regulatory shifts? New technology? Growing stakeholder awareness? This section justifies urgency.]
-
----
-
-## What the Problem Is Not
-
-[Clarify scope. Explicitly state what you are NOT solving. This prevents scope creep and helps investors/partners understand boundaries.]
-
----
-
-## Evidence
-
-- [Source or data point supporting the problem claim]
-- [Source or data point]
-- [Source or data point]
-
----
-
-## References
-
-- [solution.md](./solution.md) — How [Organization Name] addresses this problem
-- [core-audiences.md](../../../overview/product/customers/core-audiences.md) — Who is affected
-- [strategy.md](../strategy/strategy.md) — Go-to-market approach
+> Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.

@@ -1,5 +1,5 @@
 ---
-title: 'primary — pointer'
+title: 'secondary-market — pointer'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,8 +9,8 @@ tags: ['documentation', 'cross-reference']
 review_cycle: on-change
 ---
 
-# primary
+# secondary-market
 
-**Canonical SoR:** [`../../business/market/primary.md`](../../business/market/primary.md)
+**Canonical SoR:** [`../business/market/secondary-market.md`](../business/market/secondary-market.md)
 
 > Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.
