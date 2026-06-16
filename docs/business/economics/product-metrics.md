@@ -1,5 +1,5 @@
 ---
-title: 'business-model — pointer'
+title: 'product-metrics — pointer'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,8 +9,8 @@ tags: ['documentation', 'cross-reference']
 review_cycle: on-change
 ---
 
-# business-model
+# product-metrics
 
-**Canonical SoR:** [`../business/economics/business-model.md`](../business/economics/business-model.md)
+**Canonical SoR:** [`../business/economics/product-metrics.md`](../business/economics/product-metrics.md)
 
 > Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.
