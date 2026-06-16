@@ -31,6 +31,12 @@
     "docs:architecture:check": "node platform/scripts/docs-architecture-check.mjs",
     "docs:architecture:check:write": "node platform/scripts/docs-architecture-check.mjs --write",
     "docs:product:check": "node platform/scripts/docs-product-check.mjs",
-    "docs:product:check:write": "node platform/scripts/docs-product-check.mjs --write"
+    "docs:product:check:write": "node platform/scripts/docs-product-check.mjs --write",
+    "docs:roadmap:check": "node platform/scripts/docs-roadmap-check.mjs",
+    "docs:roadmap:check:write": "node platform/scripts/docs-roadmap-check.mjs --write",
+    "docs:operations:check": "node platform/scripts/docs-operations-check.mjs",
+    "docs:operations:check:write": "node platform/scripts/docs-operations-check.mjs --write",
+    "docs:agents:check": "node platform/scripts/docs-agents-check.mjs",
+    "docs:agents:check:write": "node platform/scripts/docs-agents-check.mjs --write"
   }
 }

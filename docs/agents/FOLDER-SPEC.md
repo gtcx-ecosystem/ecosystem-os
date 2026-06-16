@@ -22,3 +22,5 @@ Agent provisioning, personas, startup paths for **ecosystem-os**.
 1. Read parent `docs/FOLDER-SPEC.md` before adding files
 2. Set `document_type` in frontmatter
 3. Update `docs/CHANGELOG.md` on structural changes
+
+Normative pack: [`../../pm/spec/docs-agents-pack.json`](../../pm/spec/docs-agents-pack.json)
