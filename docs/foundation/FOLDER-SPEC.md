@@ -14,4 +14,4 @@ review_cycle: on-change
 
 > Parent: [`docs/FOLDER-SPEC.md`](../FOLDER-SPEC.md)
 
-Required: eight pack files + README with freshness table. Mirror changes in `pm/spec/product-goals.json`.
+Required: foundation pack files + README with product doctrine, architecture, and 11PR audit pointers. Mirror material changes in `pm/spec/product-goals.json` when the machine SoR changes.

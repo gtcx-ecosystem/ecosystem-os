@@ -16,19 +16,27 @@ review_cycle: on-change
 
 ## Active program
 
-### G1 — Fleet GitBook publish register operational
+### G1 — Ecosystem OS product architecture defined
 
-**Outcome:** pm/publish-register.json tracks live GitBook surfaces with fresh publish witness; docs/ops:check green; P35 v5 + PM folder R1 complete
+**Outcome:** Foundation, business, and research packs define Ecosystem OS as an AI-native company operating system.
 
-**Measure:** GitBook publish register green
+**Measure:** Kernel, Graph, Ledger, Surface, Ethos, Venture, Agency, Bridge, Agile, Fabric, and Assurance have clear boundaries.
 
-### G2 — Foundation IA (fleet)
+### G2 — Company Graph and Ledger thesis ready
 
-**Outcome:** `docs/foundation/` eight-file pack (`INIT-DOCS-FOUNDATION-IA-V1`).
+**Outcome:** Research and architecture docs define how Graph connects to RAG/MCP and how Ledger captures evidence.
 
-**Witness:** `pnpm docs:foundation:check`
+**Witness:** `docs/research/graph-rag-mcp.md` and `docs/foundation/product-architecture.md`
+
+### G3 — Business portfolio ready
+
+**Outcome:** Business docs describe the product modules, packaging, commercial thesis, and open-source strategy.
+
+**Witness:** `docs/business/portfolio/product-portfolio.md`
 
 ## Definition of done
 
-- publish witness
-- auditNotes on done
+- Product boundaries are explicit.
+- Canon publishing boundary is explicit.
+- 11PR architecture audit exists.
+- Research landscape records competitors, frameworks, and open questions.

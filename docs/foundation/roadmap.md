@@ -14,15 +14,24 @@ review_cycle: on-change
 
 > **Execution SoR:** [`pm/execution-roadmap.md`](../../pm/execution-roadmap.md) · [`pm/roadmap/initiatives.json`](../../pm/roadmap/initiatives.json)
 
-## Now — foundation IA
+## Now — product doctrine
 
-1. **`docs/foundation/`** — mandatory agent pack (**shipped**)
-2. **`docs/business/`** — next wave (migrate from `docs/overview/product/` where present)
+1. **`docs/foundation/`** — Ecosystem OS doctrine, product architecture, 11PR audit
+2. **`docs/business/`** — portfolio, commercial thesis, open-source product strategy
+3. **`docs/research/`** — market landscape, Graph/RAG/MCP research, research agenda
 
-## Active milestone — ECO-DOC-001
+## Active milestone — ECO-OS-001
 
-pm/publish-register.json tracks live GitBook surfaces with fresh publish witness; docs/ops:check green; P35 v5 + PM folder R1 complete
+Ecosystem OS reframed from fleet documentation hub to AI-native company operating system.
 
-## Fleet coordination
+## Next
 
-- Rollout: [`../../canon-os/pm/spec/docs-foundation-ia-rollout.json`](../../canon-os/pm/spec/docs-foundation-ia-rollout.json)
+1. Define Kernel schemas for identity, authority, policy, events, and module contracts.
+2. Define Company Graph entities and edges.
+3. Define Ledger witness envelope and replay model.
+4. Define Surface command map and operator console.
+5. Convert Bridge, Agile, Fabric, and Assurance into product modules under the portfolio model.
+
+## Coordination
+
+Canon OS remains the publishing OS. Ecosystem OS owns operating architecture.

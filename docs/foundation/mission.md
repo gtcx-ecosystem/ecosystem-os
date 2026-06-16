@@ -12,11 +12,11 @@ review_cycle: on-change
 
 # ecosystem-os — mission
 
-Publish fleet GitBook, GTM onboarding, and operator journeys abstracted from canon-os
+Operate the AI-native company: connect humans, agents, products, services, work, evidence, doctrine, and market expression into one governed platform.
 
 ## Value proposition
 
-**For** GTCX fleet operators and integrator pilots **who** Need one documentation entry point across repos, **Fleet documentation hub** **that** Centralizes GitBook publish + onboarding paths. **Unlike** Scattered canon-os copies per repo, **we** Witness-only product-goals SoR for fleet-documentation tier.
+**For** founders, operators, product teams, agent teams, and ecosystem builders **who** need to run complex human-agent organizations, **Ecosystem OS** provides the operating substrate for intelligence, coordination, delivery, services, assurance, human doctrine, innovation, and market expression. **Unlike** standalone PM, RPA, AI-agent, wiki, and workflow tools, **Ecosystem OS** connects Graph, Kernel, Ledger, and Surface into one company operating platform.
 
 ## Machine mirror
 

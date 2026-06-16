@@ -14,7 +14,7 @@ review_cycle: on-change
 
 ## Statement
 
-Fleet-facing documentation and onboarding published from a single GitBook home
+Ecosystem OS becomes the umbrella platform for running an AI-native company or ecosystem.
 
 ## Horizon
 
@@ -22,9 +22,9 @@ Fleet-facing documentation and onboarding published from a single GitBook home
 
 ## North star
 
-**Published doc surfaces fresh** — GitBook publish register green
+**An operator can ask what should happen next, route the work to humans and agents, execute through governed tools, verify outcomes, and publish proof.**
 
-**Witness:** pm/publish-register.json
+**Witness:** Graph state + Ledger evidence + Assurance score + Surface command trace.
 
 ## Machine mirror
 

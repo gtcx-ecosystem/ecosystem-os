@@ -12,28 +12,28 @@ review_cycle: on-change
 
 # ecosystem-os — milestones
 
-## Active: ECO-DOC-001
+## Active: ECO-OS-001
 
-**Title:** Fleet GitBook publish register operational
+**Title:** Ecosystem OS product architecture
 
-**Shippable outcome:** pm/publish-register.json tracks live GitBook surfaces with fresh publish witness; docs/ops:check green; P35 v5 + PM folder R1 complete
+**Shippable outcome:** Foundation, business, and research docs define Ecosystem OS as the AI-native company operating system.
 
 **Target:** 2026-Q3
 
-### publish-register-live
+### doctrine-current
 
-- **Label:** pm/publish-register.json lists all live GitBook spaces with status and ownerRepo
-- **Witness:** pm/publish-register.json
+- **Label:** Foundation doctrine reflects Ecosystem OS operating-platform role
+- **Witness:** docs/foundation/ecosystem-os-doctrine.md
 
-### ops-check-green
+### portfolio-current
 
-- **Label:** pnpm ops:check passes without manual witness re-seal
-- **Witness:** ops:check
+- **Label:** Business docs define Graph, Ethos, Venture, Agency, Bridge, Agile, Fabric, Assurance
+- **Witness:** docs/business/portfolio/product-portfolio.md
 
-### pm-folder-r1
+### research-current
 
-- **Label:** pm/ folder meets R1 shipping-culture requirements
-- **Witness:** pm:folder:check
+- **Label:** Research docs record competitors, frameworks, papers, and open questions
+- **Witness:** docs/research/README.md
 
 
 ## Machine mirror

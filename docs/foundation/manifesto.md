@@ -14,14 +14,20 @@ review_cycle: on-change
 
 ## Declaration
 
-Fleet-facing documentation and onboarding published from a single GitBook home
+AI-native companies need an operating system, not a pile of SaaS tools and agent scripts.
+
+Ecosystem OS exists to make company operations legible, coordinated, agent-ready, evidence-backed, and publishable.
 
 ## Principles
 
-1. **Proof over permission** — witnesses and gates, not narrative consensus.
-2. **PRD traceability** — stories link to product-goals and active milestone.
-3. **Fleet integration** — protocol clients and harness, not standalone silos.
+1. **Graph over guesswork** — the system should know people, agents, repos, products, services, work, risks, evidence, and revenue relationships.
+2. **Ledger over claims** — important work produces replayable evidence.
+3. **Kernel over convention** — identity, authority, policy, events, and contracts are explicit.
+4. **Surface over sprawl** — operators need one command center across work, agents, services, and assurance.
+5. **Human doctrine matters** — Ethos preserves culture, judgment, ethics, leadership, and real human profiles.
+6. **Creation is first-class** — Venture and Agency belong beside delivery and operations.
+7. **Agents need operating rails** — MCP tools, RAG context, permissions, handoffs, and evidence are product surfaces.
 
 ## Related
 
-- [vision.md](./vision.md) · [mission.md](./mission.md)
+- [ecosystem-os-doctrine.md](./ecosystem-os-doctrine.md) · [product-architecture.md](./product-architecture.md)
