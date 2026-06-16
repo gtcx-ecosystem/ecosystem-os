@@ -1,14 +1,14 @@
 ---
-title: 'pointer — relocated to business layer'
+title: 'fundraising — relocated'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
-document_type: overview
+document_type: pointer
 review_cycle: on-change
 ---
 
 # Relocated
 
-**Canonical SoR:** [`business/research/fundraising/`](../../business/research/fundraising/)
+**Canonical SoR:** [`../../../../fundraising/`](../../../../fundraising/)
 
-Fundraising research → business/research/fundraising/
+Fundraising research moved to the root-level `fundraising/` package.
