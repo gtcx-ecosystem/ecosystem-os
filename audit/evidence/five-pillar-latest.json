@@ -1,32 +1,34 @@
 {
   "schema": "gtcx://audit/five-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-15",
-  "composite100": 99,
-  "composite100Raw": 100,
-  "trustCap100": 99,
+  "date": "2026-06-16",
+  "evaluatedAt": "2026-06-16T04:25:11.167Z",
+  "gitHead": "e7e8c2681898b8de39763951f8ba3e503a5d786c",
+  "composite100": 59,
+  "composite100Raw": 69,
+  "trustCap100": 92,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
   "quadrants": {
     "compliance": {
-      "score100": 100,
-      "published": true,
-      "provisional": false,
-      "blockedBy": null,
+      "score100": 69,
+      "published": false,
+      "provisional": true,
+      "blockedBy": "below-threshold",
       "unlockThreshold100": 85,
       "categories": {
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 100,
+          "score100": 45,
           "protocol": "P35",
           "items": [
             {
               "id": "p35-strict-pass",
               "label": "P35 layout strict GREEN",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 35,
               "severity": "P1",
               "optional": false,
@@ -47,8 +49,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -147,14 +149,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 100,
+          "score100": 50,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -362,7 +364,7 @@
               "weight": 8,
               "severity": "P2",
               "optional": false,
-              "detail": "1 files",
+              "detail": "2 files",
               "protocol": "P37"
             },
             {
@@ -863,17 +865,39 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [],
+      "hygieneViolations": [
+        {
+          "id": "p35-strict-pass",
+          "categoryId": "layout-p35",
+          "label": "P35 layout strict GREEN",
+          "severity": "P1",
+          "detail": "p35Strict"
+        },
+        {
+          "id": "root-allowlist",
+          "categoryId": "layout-p35",
+          "label": "Root allowlist / workspace root cleanliness",
+          "severity": "P2",
+          "detail": "opsCheck"
+        },
+        {
+          "id": "ops-check-pass",
+          "categoryId": "ops-domains-p29",
+          "label": "pnpm ops:check exit 0",
+          "severity": "P1",
+          "detail": "opsCheck"
+        }
+      ],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 0
+      "openP1": 2
     },
     "technicalExcellence": {
       "score100": 100,
-      "published": true,
-      "provisional": false,
-      "blockedBy": null,
+      "published": false,
+      "provisional": true,
+      "blockedBy": "compliance",
       "unlockThreshold100": 85,
       "metrics": {
         "engineering-production": {
@@ -952,9 +976,9 @@
     },
     "craft": {
       "score100": 100,
-      "published": true,
-      "provisional": false,
-      "blockedBy": null,
+      "published": false,
+      "provisional": true,
+      "blockedBy": "compliance",
       "unlockThreshold100": 85,
       "metrics": {
         "selectivity-ingredients": {
@@ -1142,7 +1166,7 @@
       "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 99,
+      "score100": 92,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1187,9 +1211,9 @@
           "versionBloatHits": 0
         },
         "independent-replay": {
-          "score100": 90,
+          "score100": 45,
           "weight": 15,
-          "opsCheck": true
+          "opsCheck": false
         }
       },
       "mode": "envelope-cap",
@@ -1201,6 +1225,147 @@
         "blocked": false
       }
     }
+  },
+  "multiPillar": {
+    "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
+    "foundationComposite100": 92,
+    "fullComposite100": 92,
+    "trustCap100": 92,
+    "weights": {
+      "compliance": 0,
+      "technicalExcellence": 0.15,
+      "craft": 0.12,
+      "worldClass": 0.15,
+      "creativityInnovation": 0.08,
+      "commercialValue": 0.12,
+      "defensiveMoat": 0.12,
+      "agenticEmpowerment": 0.1,
+      "productEcosystemIntegration": 0.1,
+      "ipMagic": 0.06
+    },
+    "quadrants": {
+      "compliance": {
+        "score100": 69,
+        "published": false,
+        "provisional": true,
+        "blockedBy": [],
+        "confidence": "B",
+        "checks": []
+      },
+      "technicalExcellence": {
+        "score100": 100,
+        "published": false,
+        "provisional": true,
+        "blockedBy": [
+          "compliance"
+        ],
+        "confidence": "B",
+        "checks": []
+      },
+      "craft": {
+        "score100": 100,
+        "published": false,
+        "provisional": true,
+        "blockedBy": [
+          "compliance"
+        ],
+        "confidence": "B",
+        "checks": []
+      },
+      "worldClass": {
+        "score100": 100,
+        "published": false,
+        "provisional": true,
+        "blockedBy": [
+          "esl:ESL-3"
+        ],
+        "confidence": "B",
+        "checks": []
+      },
+      "trustAndSafety": {
+        "score100": 92,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "B",
+        "checks": []
+      },
+      "creativityInnovation": {
+        "score100": 95,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "craft": 85,
+          "worldClass": 85
+        }
+      },
+      "commercialValue": {
+        "score100": 92,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "worldClass": 85,
+          "trustAndSafety": 70
+        }
+      },
+      "defensiveMoat": {
+        "score100": 93,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "craft": 85,
+          "worldClass": 85
+        }
+      },
+      "agenticEmpowerment": {
+        "score100": 94,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "technicalExcellence": 85,
+          "trustAndSafety": 70
+        }
+      },
+      "productEcosystemIntegration": {
+        "score100": 94,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "technicalExcellence": 85,
+          "worldClass": 85
+        }
+      },
+      "ipMagic": {
+        "score100": 95,
+        "published": true,
+        "provisional": false,
+        "blockedBy": [],
+        "confidence": "C",
+        "checks": [],
+        "requires": {
+          "craft": 85,
+          "worldClass": 85,
+          "trustAndSafety": 70
+        }
+      }
+    },
+    "calibrationVersion": "1.1.0",
+    "agentIndex": "canon-os/docs/governance/audit/multi-pillar-agent-index.md"
   },
   "openP0": 0,
   "openP1": 0,

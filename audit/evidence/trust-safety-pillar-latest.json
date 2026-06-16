@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://audit/trust-safety-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-15",
-  "score100": 99,
+  "date": "2026-06-16",
+  "score100": 92,
   "published": true,
   "metrics": {
     "evidence-coverage": {
@@ -47,9 +47,9 @@
       "versionBloatHits": 0
     },
     "independent-replay": {
-      "score100": 90,
+      "score100": 45,
       "weight": 15,
-      "opsCheck": true
+      "opsCheck": false
     }
   },
   "mode": "envelope-cap",
