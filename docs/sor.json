@@ -3,7 +3,7 @@
   "schema": "gtcx.docs.sor.v1",
   "repo": "ecosystem-os",
   "repoKind": "fleet-documentation",
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "role": "ecosystem-documentation-publish",
   "narrativeRoot": "docs/",
   "paths": {
@@ -65,5 +65,9 @@
     "readmeExemptPathPrefixes": [
       "docs/reference/archive"
     ]
-  }
+  },
+  "allowedTopLevel": [
+    "foundation",
+    "business"
+  ]
 }
