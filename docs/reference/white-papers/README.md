@@ -1,12 +1,14 @@
-# DOC-PROGRAM-001 white paper PDF artifacts
+---
+title: 'pointer — relocated to business layer'
+status: pointer
+date: 2026-06-16
+owner: ecosystem-os
+document_type: overview
+review_cycle: on-change
+---
 
-Fleet publish output for **WP-001..005** — generated from baseline-os markdown via bridge-os rollout.
+# Relocated
 
-| Command | Owner |
-| ------- | ----- |
-| `pnpm ecosystem:doc-program:white-papers:write` | bridge-os |
-| `pnpm ecosystem:doc-program:white-papers:check` | bridge-os |
+**Canonical SoR:** [`business/research/white-papers/`](../../business/research/white-papers/)
 
-**Register:** `bridge-os/pm/spec/doc-program-white-paper-publish.json`
-
-Normative source remains in `baseline-os/docs/specs/_project/documentation/white-papers/`.
+White papers → business/research/white-papers/
