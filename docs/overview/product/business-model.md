@@ -1,5 +1,5 @@
 ---
-title: 'idea-customer-profile — pointer'
+title: 'business-model — pointer'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,8 +9,8 @@ tags: ['documentation', 'cross-reference']
 review_cycle: on-change
 ---
 
-# idea-customer-profile
+# business-model
 
-**Canonical SoR:** [`../../business/customers/idea-customer-profile.md`](../../business/customers/idea-customer-profile.md)
+**Canonical SoR:** [`../business/economics/business-model.md`](../business/economics/business-model.md)
 
 > Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.

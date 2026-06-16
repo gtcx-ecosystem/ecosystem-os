@@ -1,5 +1,5 @@
 ---
-title: 'idea-customer-profile — pointer'
+title: 'core-audiences — pointer'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,8 +9,8 @@ tags: ['documentation', 'cross-reference']
 review_cycle: on-change
 ---
 
-# idea-customer-profile
+# core-audiences
 
-**Canonical SoR:** [`../../business/customers/idea-customer-profile.md`](../../business/customers/idea-customer-profile.md)
+**Canonical SoR:** [`../business/customers/core-audiences.md`](../business/customers/core-audiences.md)
 
 > Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.
