@@ -25,6 +25,8 @@
     "agent:conduct:check": "node ../bridge-os/platform/scripts/checks/check-agent-conduct-local.mjs",
     "agent:auto-dev:check": "node ../bridge-os/platform/scripts/checks/check-agent-auto-dev-local.mjs",
     "docs:foundation:check": "node platform/scripts/docs-foundation-check.mjs",
-    "docs:foundation:check:write": "node platform/scripts/docs-foundation-check.mjs --write"
+    "docs:foundation:check:write": "node platform/scripts/docs-foundation-check.mjs --write",
+    "docs:business:check": "node platform/scripts/docs-business-check.mjs",
+    "docs:business:check:write": "node platform/scripts/docs-business-check.mjs --write"
   }
 }
