@@ -1,24 +1,9 @@
 ---
-title: 'specs/ — folder provisioning'
-status: current
-date: 2026-06-15
-owner: ecosystem-os
-document_type: folder-spec
-tier: operating
-tags: ['documentation', 'specs']
+title: 'FOLDER-SPEC — pointer'
+status: pointer
+date: 2026-06-16
+document_type: architecture
 review_cycle: on-change
 ---
 
-# `docs/specs/` — provisioning
-
-> **Parent:** [`docs/FOLDER-SPEC.md`](../FOLDER-SPEC.md)
-
-## Purpose
-
-specs/ narrative and specs for ecosystem-os.
-
-## Agent rules
-
-1. Read `docs/INDEX.md` and parent `FOLDER-SPEC.md` first
-2. Set `document_type` per canon-os `docs-document-types.json`
-3. Log structural changes in `docs/CHANGELOG.md`
+**Canonical SoR:** [`../../architecture/specs/FOLDER-SPEC.md`](../../architecture/specs/FOLDER-SPEC.md)
