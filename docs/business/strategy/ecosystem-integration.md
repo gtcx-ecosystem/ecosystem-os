@@ -1,5 +1,5 @@
 ---
-title: 'strategy — pointer'
+title: 'ecosystem-integration — pointer'
 status: pointer
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,8 +9,8 @@ tags: ['documentation', 'cross-reference']
 review_cycle: on-change
 ---
 
-# strategy
+# ecosystem-integration
 
-**Canonical SoR:** [`../../business/strategy/strategy.md`](../../business/strategy/strategy.md)
+**Canonical SoR:** [`../business/strategy/ecosystem-integration.md`](../business/strategy/ecosystem-integration.md)
 
 > Decomposed per [`canon-os/pm/spec/docs-layer-cross-reference.json`](../../canon-os/pm/spec/docs-layer-cross-reference.json) — do not edit here.
