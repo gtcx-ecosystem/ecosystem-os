@@ -29,7 +29,7 @@ Fleet-facing documentation **removed from canon-os active paths** and consolidat
 | Vision / mission / stakeholder | `docs/overview/` + `docs/engineering/authoritative/ethos/` |
 | Architecture narratives | `docs/architecture/` + `docs/engineering/architecture/` |
 | Onboarding | `docs/onboarding/` + `docs/agents/provisioning/` |
-| GTM | `ops/gtm/` + `docs/reference/fundraising/` |
+| GTM | `ops/gtm/` + `fundraising/` |
 | Product GitBook mirrors | `docs/reference/gitbooks/` |
 | Operator guides | `docs/reference/guides/` |
 | Publish register | `pm/publish-register.json` |
