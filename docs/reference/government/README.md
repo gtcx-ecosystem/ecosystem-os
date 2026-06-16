@@ -1,19 +1,14 @@
 ---
-
-title: "Government"
-status: "current"
-date: "2026-05-26"
-
+title: 'pointer — relocated to business layer'
+status: pointer
+date: 2026-06-16
+owner: ecosystem-os
+document_type: overview
+review_cycle: on-change
 ---
 
-# Government
+# Relocated
 
-## Contents
+**Canonical SoR:** [`business/domain/government/`](../../business/domain/government/)
 
-- [Civc](civc/)
-- [Governance](governance/)
-- [Policy](policy/)
-- [Principles](principles/)
-- [Public Sector](public-sector/)
-- [Stakeholder Analysis](stakeholder-analysis/)
-- [Strategic Outlook](../archive/legacy-government-strategic-outlook/strategic-outlook/README.md)
+Fleet government narrative → business/domain/government/
