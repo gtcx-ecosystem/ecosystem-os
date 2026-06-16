@@ -2,7 +2,7 @@
   "$schema": "./root-allowlist.schema.json",
   "version": "5.0.0",
   "schema_version": "5.0.0",
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "description": "P35 v5 closed-world repo root — REQUIRED / ALLOWED / PERMISSIBLE_ON_APPROVAL / FORBIDDEN. Spec: bridge-os/docs/root-allowlist-spec-v5.md",
   "migration_tier": "stable",
   "required_files": [
@@ -20,6 +20,7 @@
     "workstream",
     "config",
     "agentic",
+    "fundraising",
     "pm"
   ],
   "allowed_files": [
