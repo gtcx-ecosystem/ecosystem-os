@@ -1,29 +1,34 @@
 ---
-
-title: "Architecture"
-status: "current"
-date: "2026-05-24"
-owner: "quality-evidence-lead"
-role: "quality-evidence-lead"
-tier: "operating"
-tags: ["architecture"]
-review_cycle: "annual"
-
+title: 'architecture/ — system design SoR'
+status: current
+date: 2026-06-16
+owner: ecosystem-os
+document_type: architecture
+tier: critical
+tags: ['documentation', 'architecture']
+review_cycle: on-change
 ---
 
-# Architecture
+# `docs/architecture/` — ecosystem-os
 
-Architecture documentation, patterns, and system design for the GTCX ecosystem.
+> **Pack:** [`../../canon-os/pm/spec/docs-architecture-pack.json`](../../canon-os/pm/spec/docs-architecture-pack.json)  
+> **Foundation:** [`../foundation/`](../foundation/) · **Business:** [`../business/`](../business/)
 
----
+## Cross-reference
 
-## Contents
+| Layer | Path | Role |
+| ----- | ---- | ---- |
+| Foundation | `docs/foundation/` | Why — charter, vision, goals |
+| Business | `docs/business/` | Market and customer context |
+| **Architecture** | `docs/architecture/` | How — specs, ADRs, integration |
+| Reference | `docs/reference/` | Templates only (post-decomposition) |
 
-| Document                                             | Purpose                             |
-| ---------------------------------------------------- | ----------------------------------- |
-| [`product-architecture.md`](product-architecture.md) | Universal three-layer product model |
-| [`cloud-placement/README.md`](cloud-placement/README.md) | **SoR** — AWS control plane + GCP ML plane (OPS-CLOUD-PLACE-001/002) |
+## Subfolders
 
----
-
-Architecture Decision Records (ADRs) live in [`reference/templates/.gtcx/decisions/`](../reference/templates/.gtcx/decisions/README.md).
+| Folder | Contents |
+| ------ | -------- |
+| `specs/` | Backend, frontend, data, design, testing specs |
+| `decisions/` | ADR-* architecture decision records |
+| `integration/` | Cross-service and fleet integration |
+| `pillars/` | 11-pillar audit narrative |
+| `security/` | Threat models (link `ops/security/`) |
