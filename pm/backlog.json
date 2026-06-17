@@ -213,7 +213,9 @@
     {
       "id": "ECO-AGY-006",
       "title": "Brand system scaffold — tokens, typography, slide + one-pager templates",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "pm/agency/brand/tokens.json + templates/one-pager.md + slides.md; agency:check brandScaffold gate",
       "owner": "ecosystem-os",
       "points": 8,
       "priority": "P2",
@@ -230,7 +232,9 @@
     {
       "id": "ECO-AGY-007",
       "title": "Campaign review workflow — brief → generate → review → register → publish",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "workflow.md documents 5 stages with gate/witness per stage",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P2",

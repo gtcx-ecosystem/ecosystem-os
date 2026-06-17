@@ -1,6 +1,6 @@
 # Agency check
 
-- Updated: `2026-06-17T14:01:53.784Z`
+- Updated: `2026-06-17T15:00:39.153Z`
 - OK: **true**
 
 ## tools
@@ -18,6 +18,11 @@
 ## resources
 
 - Path: `/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/agency/catalogs/resources.json`
+- OK: **true**
+- Issues: **0**
+
+## brandScaffold
+
 - OK: **true**
 - Issues: **0**
 

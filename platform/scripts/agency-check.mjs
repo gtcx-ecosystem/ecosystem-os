@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 function nowIso() {
@@ -71,6 +71,33 @@ function checkCatalog({ id, filePath, items, itemLabel, requiredFields }) {
   return { ok: issues.length === 0, issues, filePath };
 }
 
+function checkBrandScaffold(root) {
+  const issues = [];
+  const paths = {
+    tokens: join(root, 'pm/agency/brand/tokens.json'),
+    onePager: join(root, 'pm/agency/templates/one-pager.md'),
+    slides: join(root, 'pm/agency/templates/slides.md'),
+    workflow: join(root, 'docs/gitbook/business/agency/workflow.md'),
+  };
+
+  for (const [id, filePath] of Object.entries(paths)) {
+    if (!existsSync(filePath)) {
+      issues.push({ severity: 'error', code: 'missing-scaffold', message: `brand: missing ${id} at ${filePath}` });
+    }
+  }
+
+  if (existsSync(paths.tokens)) {
+    const tokens = readJson(paths.tokens);
+    for (const key of ['colors', 'typography', 'spacing', 'voice']) {
+      if (!tokens[key]) {
+        issues.push({ severity: 'error', code: 'incomplete-tokens', message: `brand: tokens.json missing ${key}` });
+      }
+    }
+  }
+
+  return { ok: issues.length === 0, issues, filePath: paths.tokens };
+}
+
 function summarizeMd({ witness }) {
   const lines = [];
   lines.push(`# Agency check`);
@@ -93,6 +120,13 @@ function summarizeMd({ witness }) {
       }
       if (cat.issues.length > 50) lines.push(`| … | … | ${cat.issues.length - 50} more |`);
     }
+    lines.push('');
+  }
+  if (witness.brandScaffold) {
+    lines.push(`## brandScaffold`);
+    lines.push('');
+    lines.push(`- OK: **${witness.brandScaffold.ok ? 'true' : 'false'}**`);
+    lines.push(`- Issues: **${witness.brandScaffold.issues.length}**`);
     lines.push('');
   }
   return lines.join('\n');
@@ -133,16 +167,22 @@ const results = [
   }),
 ];
 
+const brandScaffold = checkBrandScaffold(root);
+
 const witness = {
   schema: 'gtcx://ecosystem-os/agency-check/v1',
   updated: nowIso(),
-  ok: results.every((r) => r.ok),
+  ok: results.every((r) => r.ok) && brandScaffold.ok,
   catalogs: results.map((r, idx) => ({
     id: ['tools', 'assets', 'resources'][idx],
     path: r.filePath,
     ok: r.ok,
     issues: r.issues,
   })),
+  brandScaffold: {
+    ok: brandScaffold.ok,
+    issues: brandScaffold.issues,
+  },
 };
 
 if (write) {

@@ -58,8 +58,8 @@
       "title": "Agency module — brand, campaigns, catalogs, governed market expression",
       "status": "in_progress",
       "ownerBaselineId": "creative-director",
-      "completionPercent": 65,
-      "deployReadinessPercent": 50,
+      "completionPercent": 90,
+      "deployReadinessPercent": 75,
       "evidence": "pm/ci/agency-check-latest.json",
       "epics": [
         {
@@ -95,8 +95,8 @@
           "title": "Campaign packs + brand system + templates",
           "dimensionId": "craft",
           "targetScore100": 90,
-          "currentScore100": 55,
-          "completionPercent": 45,
+          "currentScore100": 85,
+          "completionPercent": 85,
           "features": [
             {
               "id": "FEAT-AGY-GR-T2-PACK",
@@ -107,8 +107,8 @@
             {
               "id": "FEAT-AGY-BRAND-SYSTEM",
               "title": "Brand tokens + one-pager/slide template scaffold",
-              "status": "open",
-              "completionPercent": 0
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         }

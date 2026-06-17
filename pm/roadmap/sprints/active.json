@@ -15,7 +15,8 @@
     { "id": "ECO-AGY-002", "owner": "ecosystem-os", "status": "done" },
     { "id": "ECO-AGY-003", "owner": "ecosystem-os", "status": "done" },
     { "id": "ECO-AGY-004", "owner": "ecosystem-os", "status": "done" },
-    { "id": "ECO-AGY-005", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-006", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-007", "owner": "ecosystem-os", "status": "done" }
   ],
   "uat": {
     "matrixRef": "pm/roadmap/uat/",
