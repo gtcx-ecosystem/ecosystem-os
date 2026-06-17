@@ -1,28 +1,14 @@
 ---
-title: 'roadmap/ — single home for roadmaps'
-status: current
-date: 2026-06-16
+title: 'docs/roadmap — pointer'
+status: pointer
+date: 2026-06-17
 owner: ecosystem-os
-document_type: roadmap
-tier: critical
-tags: ['documentation', 'roadmap']
+document_type: pointer
 review_cycle: on-change
 ---
 
-# `docs/roadmap/` — ecosystem-os
+# docs/roadmap — relocated
 
-## Lanes
+**Canonical path:** [`agile/roadmaps/`](../agile/roadmaps/)
 
-- technical/
-- ux-design/
-- gtm/
-- legal/
-- compliance/
-- partnerships/
-
-## Pointer rules
-
-- technical → `docs/architecture/specs/` + `pm/`
-- ux-design → `docs/product/`
-- gtm → `ops/gtm/` + `docs/business/`
-- legal/compliance → `ops/` + `docs/operations/`
+P0 legacy scrub — do not add new files here.
