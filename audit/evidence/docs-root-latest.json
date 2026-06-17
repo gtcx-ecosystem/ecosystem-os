@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://canon-os/docs-root-check/v1",
   "repo": "ecosystem-os",
-  "at": "2026-06-17T13:48:20.054Z",
+  "at": "2026-06-17T17:56:36.361Z",
   "ok": true,
   "gates": [
     {
@@ -85,9 +85,9 @@
       "detail": "absent"
     },
     {
-      "id": "forbidden:absent:onboarding",
+      "id": "forbidden:pointer:onboarding",
       "ok": true,
-      "detail": "absent"
+      "detail": "pointer-only or remove"
     },
     {
       "id": "forbidden:absent:api",
