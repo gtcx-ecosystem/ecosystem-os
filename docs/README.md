@@ -7,12 +7,15 @@ owner: ecosystem-os
 
 # Docs — ecosystem-os
 
-Narrative and publish-facing documentation for the GTCX fleet.
+Product, business, research, and operating documentation for Ecosystem OS as the AI-native company operating system.
 
-**Normative protocols and constitution** live in [`canon-os`](../canon-os/docs/governance/) — link, do not duplicate.
+Canon OS owns documentation publishing surfaces. Ecosystem OS owns operating architecture and product doctrine.
 
 | Area | Path |
 | ---- | ---- |
+| Foundation | [`foundation/`](./foundation/) |
+| Business | [`business/`](./business/) |
+| Research | [`research/`](./research/) |
 | GitBook source | [`gitbook/`](./gitbook/) |
 | Vision / mission | [`overview/`](./overview/) |
 | Onboarding | [`onboarding/`](./onboarding/) |
@@ -28,4 +31,3 @@ GTCX evaluation is **multi-pillar** (F-PiLLAR gates T-PiLLAR). **Do not** descri
 | -------- | ---- |
 | **This repo pointer** | [`reference/evaluation/multi-pillar-audit.md`](./reference/evaluation/multi-pillar-audit.md) |
 | **Fleet agent index** | [canon-os](https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/audit/multi-pillar-agent-index.md) |
-
