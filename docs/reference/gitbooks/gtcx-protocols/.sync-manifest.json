@@ -1,9 +1,0 @@
-{
-  "syncedAt": "2026-06-14T00:00:00.000Z",
-  "sourceRepo": "gtcx-os",
-  "sourceSlice": "platform/protocols",
-  "sourcePath": "platform/protocols/docs/gitbook",
-  "destinationRepo": "ecosystem-os",
-  "destinationPath": "docs/reference/gitbooks/gtcx-protocols",
-  "note": "Pending owner migration from legacy 01-docs/gitbook — see bridge-os #28"
-}
