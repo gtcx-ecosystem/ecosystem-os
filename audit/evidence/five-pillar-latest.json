@@ -2,17 +2,17 @@
   "schema": "gtcx://audit/five-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-17",
-  "evaluatedAt": "2026-06-17T14:07:02.619Z",
-  "gitHead": "63cdc9ab1f652171a18635fb31403d911c556ea4",
-  "composite100": 78,
-  "composite100Raw": 100,
-  "trustCap100": 78,
+  "evaluatedAt": "2026-06-17T17:56:23.903Z",
+  "gitHead": "55d7801cdfaeff4355c0423918416695641701b2",
+  "composite100": 74,
+  "composite100Raw": 96,
+  "trustCap100": 74,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
   "quadrants": {
     "compliance": {
-      "score100": 100,
+      "score100": 96,
       "published": true,
       "provisional": false,
       "blockedBy": null,
@@ -21,7 +21,7 @@
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 100,
+          "score100": 80,
           "protocol": "P35",
           "items": [
             {
@@ -49,8 +49,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -149,14 +149,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 100,
+          "score100": 50,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -865,11 +865,26 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [],
+      "hygieneViolations": [
+        {
+          "id": "root-allowlist",
+          "categoryId": "layout-p35",
+          "label": "Root allowlist / workspace root cleanliness",
+          "severity": "P2",
+          "detail": "opsCheck"
+        },
+        {
+          "id": "ops-check-pass",
+          "categoryId": "ops-domains-p29",
+          "label": "pnpm ops:check exit 0",
+          "severity": "P1",
+          "detail": "opsCheck"
+        }
+      ],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 0
+      "openP1": 1
     },
     "technicalExcellence": {
       "score100": 38,
@@ -1144,7 +1159,7 @@
       "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 78,
+      "score100": 74,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1180,9 +1195,9 @@
           "versionBloatHits": 0
         },
         "independent-replay": {
-          "score100": 75,
+          "score100": 45,
           "weight": 15,
-          "opsCheck": true
+          "opsCheck": false
         }
       },
       "mode": "envelope-cap",
@@ -1197,9 +1212,9 @@
   },
   "multiPillar": {
     "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
-    "foundationComposite100": 55,
+    "foundationComposite100": 54,
     "fullComposite100": 39,
-    "trustCap100": 78,
+    "trustCap100": 74,
     "weights": {
       "compliance": 0,
       "technicalExcellence": 0.15,
@@ -1214,7 +1229,7 @@
     },
     "quadrants": {
       "compliance": {
-        "score100": 100,
+        "score100": 96,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1250,7 +1265,7 @@
         "checks": []
       },
       "trustAndSafety": {
-        "score100": 78,
+        "score100": 74,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1331,7 +1346,7 @@
         }
       },
       "ipMagic": {
-        "score100": 57,
+        "score100": 55,
         "published": false,
         "provisional": true,
         "blockedBy": [
