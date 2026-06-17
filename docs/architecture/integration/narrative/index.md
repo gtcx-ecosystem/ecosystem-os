@@ -1,14 +1,10 @@
 ---
-title: Architecture
-status: current
-date: 2026-06-15
-owner: gtcx-docs
-tier: operating
-tags: ['architecture', 'documentation']
-review_cycle: on-change
+title: 'index — pointer'
+status: pointer
+date: 2026-06-16
+owner: ecosystem-os
 document_type: architecture
+review_cycle: on-change
 ---
 
-# Architecture
-
-See [README](./README.md).
+**Canonical SoR:** [`./specs/index.md`](./specs/index.md)
