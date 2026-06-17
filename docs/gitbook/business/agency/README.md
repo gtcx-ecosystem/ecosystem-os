@@ -28,8 +28,11 @@ It produces brand systems, campaigns, visual media, templates, and communication
 - **Agency → Canon**: Agency creates campaign assets and narratives. Canon publishes official knowledge surfaces.
 
 See:
+- [`workflow.md`](./workflow.md)
 - [`module-contract.md`](./module-contract.md)
 - [`quality-bar.md`](./quality-bar.md)
+- `pm/agency/brand/tokens.json` — design tokens
+- `pm/agency/templates/` — one-pager + slide scaffolds
 - `pm/agency/catalogs/` (tools + stock + resources registries)
 - `pm/agency/packs/gr-t2/` (GR‑T2 campaign pack spec)
 
