@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://audit/gtm-readiness/v1",
   "repo": "ecosystem-os",
-  "assessedAt": "2026-06-17T13:23:16.647Z",
+  "assessedAt": "2026-06-17T18:17:54.917Z",
   "source": "machine-inference",
   "stage": "S2",
   "stageName": "Pilot Ready",
