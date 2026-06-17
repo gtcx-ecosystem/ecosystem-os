@@ -1,22 +1,17 @@
 ---
-title: 'Cross-Repo Coordination'
+title: 'Cross-repo coordination (Protocol 24)'
 status: current
-date: 2026-06-15
+date: 2026-06-17
 owner: ecosystem-os
-tier: operating
-tags: ['runbook', 'documentation']
-review_cycle: on-change
 document_type: runbook
+tier: critical
+tags: [[protocol-24, coordination, operations]]
+review_cycle: on-change
 ---
 
-# Cross-Repo Coordination — ecosystem-os
+# Cross-repo coordination (Protocol 24)
 
-**Protocol 24** — durable handoffs when work spans repos.
+Protocol 24 governs cross-repo handoffs, blockers, and coordination hygiene.
 
-| Step | Action |
-| ---- | ------ |
-| 1 | File inbound/outbound under `ops/coordination/` when blocked on a sibling |
-| 2 | Link owner-repo evidence — do not duplicate normative protocol text |
-| 3 | Hub coordination witness lives in `bridge-os` / `baseline-os` |
+Source of truth (maintained): `docs/operations/runbooks/cross-repo-coordination.md`
 
-**Never ask the operator to choose** between repos when P22 names an owner.

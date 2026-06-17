@@ -1,42 +1,8 @@
 {
-  "projectRoot": ".",
-  "name": "ecosystem-os",
-  "knowledge": [
-    "./docs",
-    "./platform",
-    "./ops",
-    "./pm",
-    "./audit",
-    "./workstream",
-    "./deploy",
-    "./README.md",
-    "./AGENTS.md"
-  ],
-  "include": [
-    "**/*.md",
-    "**/*.json",
-    "**/*.mjs",
-    "**/*.yml",
-    "**/*.yaml"
-  ],
-  "exclude": [
-    "**/node_modules/**",
-    "**/.git/**",
-    "**/audit/evidence/**",
-    "archive/**"
-  ],
-  "paths": {
-    "data": ".baseline",
-    "index": ".baseline/index",
-    "checkpoints": ".baseline/checkpoints"
-  },
-  "rag": {
-    "budget": { "maxTokens": 1200 },
-    "topology": "local"
-  },
-  "metadata": {
-    "initializedBy": "ptm-r5-03-five-pillar-lift",
-    "ecosystem": "gtcx",
-    "role": "fleet-documentation-home"
+  "$schema": "gtcx://baseline-os/config/v1",
+  "organization": {
+    "name": "ecosystem-os",
+    "voice": "professional and clear",
+    "formality": "neutral"
   }
 }

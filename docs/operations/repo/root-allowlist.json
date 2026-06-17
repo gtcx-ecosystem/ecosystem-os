@@ -19,8 +19,10 @@
     "audit",
     "workstream",
     "config",
+    "agents",
     "agentic",
     "fundraising",
+    "venture-os",
     "pm"
   ],
   "allowed_files": [
@@ -52,7 +54,10 @@
     "audit",
     "workstream",
     "config",
+    "agents",
     "agentic",
+    "fundraising",
+    "venture-os",
     "pm"
   ],
   "allowed_dot_directories": [

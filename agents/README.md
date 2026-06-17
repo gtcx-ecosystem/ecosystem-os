@@ -1,32 +1,22 @@
-# agents/ — ecosystem-os terminal index
+---
+title: 'agents/ (hub pointer)'
+status: current
+date: 2026-06-17
+owner: ecosystem-os
+document_type: pointer
+tier: standard
+tags: ['agents', 'pointer']
+review_cycle: on-change
+---
 
-**Start here** for fleet documentation and publish-surface agent guidance. Universal protocols stay in canon-os; repo operations stay in `ops/` + `docs/`.
+# agents/
 
-## Which file for my terminal?
+This hub is a lightweight pointer for P35 v5 layout resolution.
 
-| Terminal | Read first | Config location |
-| -------- | ---------- | --------------- |
-| **Any** | [`AGENTS.md`](../../AGENTS.md) | P22–P29 session card |
-| **Cursor** | [`.cursor/`](../../.cursor/) | Workspace rules when present |
-| **Claude Code** | [`.claude/CLAUDE.md`](../../.claude/CLAUDE.md) | When present |
+Canonical documentation lives under:
 
-## Layer map
+- `docs/agents/`
 
-| Layer | Path | Role |
-| ----- | ---- | ---- |
-| **Operational** | [`ops/`](../../ops/) | P29 domains, manifests, gates |
-| **Narrative** | [`docs/`](../) | GitBook, GTM, onboarding, publish register |
-| **Publish** | [`deploy/`](../../deploy/) | Static GitBook and deploy artifacts |
-| **PM SoR** | [`pm/`](../../pm/) | Publish register, readiness snapshot |
+Legacy materials were relocated under:
 
-## Session commands
-
-```bash
-pnpm ops:check
-pnpm agent:next-work
-```
-
-
-> **Pack:** [`../../canon-os/pm/spec/docs-agents-pack.json`](../../canon-os/pm/spec/docs-agents-pack.json)  
-> **Execution spine:** [`../operations/agent-spine/`](../operations/agent-spine/) · **Session runtime:** [`../../workstream/sessions/`](../../workstream/sessions/)
-
+- `docs/agents/_root-agents/`
