@@ -1,0 +1,252 @@
+[
+  {
+    "id": "africa_business_heroes",
+    "name": "Africa's Business Heroes",
+    "url": "https://africabusinessheroes.org/",
+    "category": "challenge",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["african_founder_exposure", "grant_prize", "mentor_network"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "tony_elumelu_foundation",
+    "name": "Tony Elumelu Foundation Entrepreneurship Programme",
+    "url": "https://www.tonyelumelufoundation.org/",
+    "category": "entrepreneurship_program",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["pan_africa_network", "seed_capital", "entrepreneurship"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "google_startups_accelerator_africa",
+    "name": "Google for Startups Accelerator Africa",
+    "url": "https://startup.google.com/programs/accelerator/africa/",
+    "category": "accelerator",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["ai", "cloud_credits", "technical_mentorship", "africa_exposure"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "gitex_africa",
+    "name": "GITEX Africa / North Star Africa",
+    "url": "https://gitexafrica.com/",
+    "category": "event",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["investor_exposure", "startup_competition", "africa_tech"],
+    "route_to": "Investor Pipeline"
+  },
+  {
+    "id": "africarena",
+    "name": "AfricArena / AfricArise",
+    "url": "https://www.africarena.com/",
+    "category": "event_network",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["investor_matching", "pitch_exposure", "africa_startups"],
+    "route_to": "Investor Pipeline"
+  },
+  {
+    "id": "catalyst_fund",
+    "name": "Catalyst Fund",
+    "url": "https://www.thecatalystfund.com/",
+    "category": "venture_builder",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["climate_resilience", "fintech", "agriculture", "africa"],
+    "route_to": "Investor Pipeline"
+  },
+  {
+    "id": "gsma_innovation_fund",
+    "name": "GSMA Innovation Fund",
+    "url": "https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/",
+    "category": "grant_program",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["mobile", "nyota", "financial_inclusion", "field_distribution"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "fsd_africa",
+    "name": "FSD Africa",
+    "url": "https://fsdafrica.org/",
+    "category": "financial_sector_development",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["financial_markets", "insurance", "regulatory_sandbox", "dfi_network"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "tia_south_africa",
+    "name": "Technology Innovation Agency South Africa",
+    "url": "https://www.tia.org.za/",
+    "category": "south_africa_public_innovation",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["johannesburg", "ict", "natural_resources", "innovation_funding"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "sab_foundation",
+    "name": "SAB Foundation",
+    "url": "https://www.sabfoundation.co.za/",
+    "category": "south_africa_foundation",
+    "tier": "P2",
+    "cadence": "monthly",
+    "fit": ["social_innovation", "rural", "women_youth_disabled", "south_africa"],
+    "route_to": "Catalytic Capital"
+  },
+  {
+    "id": "afdb",
+    "name": "African Development Bank",
+    "url": "https://www.afdb.org/",
+    "category": "dfi",
+    "tier": "P1",
+    "cadence": "daily",
+    "fit": ["africa_infrastructure", "digital_trade", "procurement", "private_sector"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "afreximbank",
+    "name": "Afreximbank",
+    "url": "https://www.afreximbank.com/",
+    "category": "trade_finance",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["afcfta", "trade_finance", "commodities", "market_infrastructure"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "trademark_africa",
+    "name": "TradeMark Africa",
+    "url": "https://www.trademarkafrica.com/",
+    "category": "trade_infrastructure",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["trade_facilitation", "digital_trade", "corridors", "procurement"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "afcfta_secretariat",
+    "name": "AfCFTA Secretariat",
+    "url": "https://au-afcfta.org/",
+    "category": "pan_african_trade_body",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["afcfta", "digital_trade", "continental_expansion"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "smart_africa",
+    "name": "Smart Africa",
+    "url": "https://smartafrica.org/",
+    "category": "digital_public_infrastructure",
+    "tier": "P1",
+    "cadence": "weekly",
+    "fit": ["digital_public_infrastructure", "policy", "country_network"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "responsible_minerals_initiative",
+    "name": "Responsible Minerals Initiative",
+    "url": "https://www.responsiblemineralsinitiative.org/",
+    "category": "commodity_standards",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["responsible_minerals", "traceability", "buyers", "audit"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "lbma_responsible_sourcing",
+    "name": "LBMA Responsible Sourcing",
+    "url": "https://www.lbma.org.uk/responsible-sourcing",
+    "category": "gold_standards",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["gold", "refineries", "responsible_sourcing", "buyer_credibility"],
+    "route_to": "Revenue Deals"
+  },
+  {
+    "id": "dmcc",
+    "name": "Dubai Multi Commodities Centre",
+    "url": "https://www.dmcc.ae/",
+    "category": "commodity_hub",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["dubai", "gold", "trading", "vaulting", "buyers"],
+    "route_to": "Revenue Deals"
+  },
+  {
+    "id": "mining_indaba",
+    "name": "Mining Indaba",
+    "url": "https://miningindaba.com/",
+    "category": "event",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["mining", "dfi", "government", "investors", "buyers"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "africa_tech_summit",
+    "name": "Africa Tech Summit",
+    "url": "https://www.africatechsummit.com/",
+    "category": "event",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["investors", "startups", "africa_tech"],
+    "route_to": "Investor Pipeline"
+  },
+  {
+    "id": "africa_fintech_summit",
+    "name": "Africa Fintech Summit",
+    "url": "https://africafintechsummit.com/",
+    "category": "event",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["fintech", "banks", "regulators", "investors"],
+    "route_to": "Partnerships & Pilots"
+  },
+  {
+    "id": "aws_activate",
+    "name": "AWS Activate",
+    "url": "https://aws.amazon.com/startups/credits",
+    "category": "tech_credits",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["cloud_credits", "runway_extension", "infrastructure"],
+    "route_to": "Revenue Deals"
+  },
+  {
+    "id": "google_cloud_startups",
+    "name": "Google Cloud Startup Program",
+    "url": "https://cloud.google.com/startup",
+    "category": "tech_credits",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["cloud_credits", "ai", "runway_extension"],
+    "route_to": "Revenue Deals"
+  },
+  {
+    "id": "microsoft_startups",
+    "name": "Microsoft for Startups Founders Hub",
+    "url": "https://www.microsoft.com/startups",
+    "category": "tech_credits",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["azure_credits", "github", "ai", "runway_extension"],
+    "route_to": "Revenue Deals"
+  },
+  {
+    "id": "nvidia_inception",
+    "name": "NVIDIA Inception",
+    "url": "https://www.nvidia.com/en-us/startups/",
+    "category": "ai_startup_program",
+    "tier": "P1",
+    "cadence": "monthly",
+    "fit": ["ai", "gpu", "technical_resources", "partner_network"],
+    "route_to": "Revenue Deals"
+  }
+]

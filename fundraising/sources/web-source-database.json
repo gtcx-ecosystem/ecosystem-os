@@ -1,0 +1,1912 @@
+[
+  {
+    "id": "ungm_procurement",
+    "name": "United Nations Global Marketplace Procurement Opportunities",
+    "url": "https://www.ungm.org/Public/Notice",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "procurement",
+      "grant",
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "un_procurement",
+      "digital",
+      "agriculture",
+      "trade",
+      "supply_chain"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "traceability",
+      "supply chain",
+      "agriculture",
+      "mining",
+      "AI"
+    ],
+    "capture_fields": [
+      "title",
+      "organization",
+      "beneficiary_country",
+      "deadline",
+      "opportunity_type",
+      "source_url"
+    ],
+    "notes": "Filter by beneficiary country, organization, and opportunity type."
+  },
+  {
+    "id": "undp_procurement_notices",
+    "name": "UNDP Procurement Notices",
+    "url": "https://procurement-notices.undp.org/",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "procurement",
+      "grant",
+      "technical_assistance"
+    ],
+    "themes": [
+      "development",
+      "innovation_challenge",
+      "digital",
+      "governance",
+      "climate"
+    ],
+    "search_terms": [
+      "Africa",
+      "innovation challenge",
+      "digital",
+      "private sector",
+      "trade",
+      "supply chain"
+    ],
+    "capture_fields": [
+      "title",
+      "country",
+      "process",
+      "deadline",
+      "reference_number",
+      "source_url"
+    ],
+    "notes": "UNDP page supports region and process filters, including Innovation Challenge."
+  },
+  {
+    "id": "world_bank_procurement",
+    "name": "World Bank Procurement Notices",
+    "url": "https://projects.worldbank.org/en/projects-operations/procurement",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "procurement",
+      "technical_assistance",
+      "research"
+    ],
+    "themes": [
+      "development",
+      "digital_public_infrastructure",
+      "trade",
+      "agriculture",
+      "governance"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "trade",
+      "supply chain",
+      "traceability",
+      "agriculture",
+      "mining"
+    ],
+    "capture_fields": [
+      "project",
+      "borrower",
+      "country",
+      "procurement_method",
+      "deadline",
+      "source_url"
+    ],
+    "notes": "Track both procurement and related project documents."
+  },
+  {
+    "id": "world_bank_econsultant",
+    "name": "World Bank Group eConsultant2",
+    "url": "https://wbgeconsult2.worldbank.org/wbgec/index.html",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "procurement",
+      "technical_assistance",
+      "research"
+    ],
+    "themes": [
+      "consulting",
+      "digital",
+      "governance",
+      "trade",
+      "financial_inclusion"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "traceability",
+      "financial inclusion",
+      "trade",
+      "compliance"
+    ],
+    "capture_fields": [
+      "selection_number",
+      "assignment_title",
+      "country",
+      "deadline",
+      "source_url"
+    ],
+    "notes": "Good fit for advisory and implementation partner opportunities."
+  },
+  {
+    "id": "afdb_procurement",
+    "name": "African Development Bank Procurement",
+    "url": "https://www.afdb.org/en/projects-and-operations/procurement",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "procurement",
+      "technical_assistance",
+      "partnership"
+    ],
+    "themes": [
+      "africa",
+      "infrastructure",
+      "trade",
+      "agriculture",
+      "digital"
+    ],
+    "search_terms": [
+      "digital",
+      "trade",
+      "agriculture",
+      "mining",
+      "private sector",
+      "supply chain"
+    ],
+    "capture_fields": [
+      "notice_title",
+      "country",
+      "deadline",
+      "project",
+      "source_url"
+    ],
+    "notes": "Core Africa DFI procurement source."
+  },
+  {
+    "id": "afdb_business_opportunities",
+    "name": "African Development Bank Business Opportunities",
+    "url": "https://www.afdb.org/en/about-us/corporate-procurement/business-opportunities",
+    "source_type": "procurement_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "procurement",
+      "technical_assistance"
+    ],
+    "themes": [
+      "corporate_procurement",
+      "digital",
+      "consulting",
+      "infrastructure"
+    ],
+    "search_terms": [
+      "software",
+      "digital",
+      "platform",
+      "data",
+      "AI",
+      "consulting"
+    ],
+    "capture_fields": [
+      "notice_title",
+      "deadline",
+      "department",
+      "source_url"
+    ],
+    "notes": "Monitor for AfDB corporate procurement and consulting work."
+  },
+  {
+    "id": "eu_funding_tenders",
+    "name": "EU Funding and Tenders Portal",
+    "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home",
+    "source_type": "grant_portal",
+    "listener_type": "page_watch",
+    "cadence": "daily",
+    "priority": 1,
+    "regions": [
+      "Europe",
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "procurement",
+      "research"
+    ],
+    "themes": [
+      "horizon_europe",
+      "digital",
+      "trade",
+      "climate",
+      "research",
+      "africa_eu"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "supply chain",
+      "traceability",
+      "raw materials",
+      "trade",
+      "AI"
+    ],
+    "capture_fields": [
+      "call_id",
+      "program",
+      "deadline",
+      "eligibility",
+      "budget",
+      "source_url"
+    ],
+    "notes": "Track Africa-EU, Horizon, digital, climate, and raw materials calls."
+  },
+  {
+    "id": "mit_solve",
+    "name": "MIT Solve Challenges",
+    "url": "https://solve.mit.edu/challenges",
+    "source_type": "challenge",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "challenge",
+      "partnership"
+    ],
+    "themes": [
+      "digital_inclusion",
+      "learning",
+      "climate",
+      "economic_prosperity",
+      "health"
+    ],
+    "search_terms": [
+      "digital inclusion",
+      "economic prosperity",
+      "climate",
+      "Africa",
+      "AI"
+    ],
+    "capture_fields": [
+      "challenge",
+      "deadline",
+      "prize",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "GTCX already has related application material."
+  },
+  {
+    "id": "global_innovation_fund",
+    "name": "Global Innovation Fund",
+    "url": "https://www.globalinnovation.fund/apply/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "grant",
+      "equity",
+      "technical_assistance"
+    ],
+    "themes": [
+      "global_development",
+      "innovation",
+      "poverty",
+      "evidence"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "trade",
+      "poverty",
+      "evidence",
+      "innovation"
+    ],
+    "capture_fields": [
+      "funding_window",
+      "stage",
+      "amount",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Monitor for fit against evidence and development impact criteria."
+  },
+  {
+    "id": "gsma_innovation_fund",
+    "name": "GSMA Innovation Fund",
+    "url": "https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-for-development/gsma-innovation-fund/",
+    "source_type": "corporate_program",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "grant",
+      "pilot",
+      "partnership"
+    ],
+    "themes": [
+      "mobile",
+      "digital_inclusion",
+      "climate",
+      "agriculture",
+      "financial_inclusion"
+    ],
+    "search_terms": [
+      "Africa",
+      "mobile",
+      "digital inclusion",
+      "agriculture",
+      "climate",
+      "financial inclusion"
+    ],
+    "capture_fields": [
+      "call_title",
+      "deadline",
+      "amount",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Strong Nyota and field/mobile relevance."
+  },
+  {
+    "id": "unicef_venture_fund",
+    "name": "UNICEF Venture Fund",
+    "url": "https://www.unicefinnovationfund.org/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "technical_assistance",
+      "partnership"
+    ],
+    "themes": [
+      "open_source",
+      "frontier_technology",
+      "children",
+      "data",
+      "ai"
+    ],
+    "search_terms": [
+      "open source",
+      "AI",
+      "data",
+      "Africa",
+      "digital public goods"
+    ],
+    "capture_fields": [
+      "call_title",
+      "deadline",
+      "amount",
+      "technology_focus",
+      "source_url"
+    ],
+    "notes": "Relevant when open-source public-good framing is appropriate."
+  },
+  {
+    "id": "wfp_innovation_accelerator",
+    "name": "WFP Innovation Accelerator",
+    "url": "https://innovation.wfp.org/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "accelerator",
+      "partnership",
+      "pilot"
+    ],
+    "themes": [
+      "food_security",
+      "supply_chain",
+      "field_operations",
+      "innovation"
+    ],
+    "search_terms": [
+      "supply chain",
+      "Africa",
+      "agriculture",
+      "field",
+      "digital",
+      "innovation"
+    ],
+    "capture_fields": [
+      "program",
+      "deadline",
+      "benefits",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Track challenge calls and accelerator windows."
+  },
+  {
+    "id": "gates_grand_challenges",
+    "name": "Grand Challenges",
+    "url": "https://gcgh.grandchallenges.org/challenges",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "research"
+    ],
+    "themes": [
+      "global_health",
+      "agriculture",
+      "ai",
+      "development",
+      "data"
+    ],
+    "search_terms": [
+      "Africa",
+      "AI",
+      "agriculture",
+      "data",
+      "digital"
+    ],
+    "capture_fields": [
+      "challenge",
+      "deadline",
+      "amount",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Useful for AI/data/global development calls."
+  },
+  {
+    "id": "mastercard_foundation",
+    "name": "Mastercard Foundation Opportunities",
+    "url": "https://mastercardfdn.org/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "grant",
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "young_africa_works",
+      "workforce",
+      "agriculture",
+      "digital",
+      "financial_inclusion"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "workforce",
+      "agriculture",
+      "entrepreneurship",
+      "partnership"
+    ],
+    "capture_fields": [
+      "program",
+      "country",
+      "deadline",
+      "partner_path",
+      "source_url"
+    ],
+    "notes": "Monitor opportunities, country programs, and partner announcements."
+  },
+  {
+    "id": "rockefeller_foundation",
+    "name": "Rockefeller Foundation",
+    "url": "https://www.rockefellerfoundation.org/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "partnership"
+    ],
+    "themes": [
+      "climate",
+      "food",
+      "energy",
+      "data",
+      "economic_opportunity"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital",
+      "climate",
+      "food systems",
+      "data",
+      "resilience"
+    ],
+    "capture_fields": [
+      "initiative",
+      "contact_path",
+      "geography",
+      "source_url"
+    ],
+    "notes": "Mostly partnership-led; monitor initiatives and calls."
+  },
+  {
+    "id": "skoll_foundation",
+    "name": "Skoll Foundation",
+    "url": "https://skoll.org/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "partnership"
+    ],
+    "themes": [
+      "social_innovation",
+      "systems_change",
+      "inclusive_markets"
+    ],
+    "search_terms": [
+      "Africa",
+      "inclusive markets",
+      "systems change",
+      "economic opportunity"
+    ],
+    "capture_fields": [
+      "program",
+      "award_window",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Track awards, grants, and partnership signals."
+  },
+  {
+    "id": "echoing_green",
+    "name": "Echoing Green Fellowship",
+    "url": "https://echoinggreen.org/fellowship/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "grant",
+      "fellowship",
+      "technical_assistance"
+    ],
+    "themes": [
+      "social_enterprise",
+      "founders",
+      "equity",
+      "economic_opportunity"
+    ],
+    "search_terms": [
+      "Africa",
+      "founder",
+      "equity",
+      "economic opportunity",
+      "fellowship"
+    ],
+    "capture_fields": [
+      "application_window",
+      "eligibility",
+      "benefits",
+      "source_url"
+    ],
+    "notes": "Founder-led social enterprise pathway."
+  },
+  {
+    "id": "black_ambition",
+    "name": "Black Ambition",
+    "url": "https://www.blackambitionprize.com/",
+    "source_type": "challenge",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 3,
+    "regions": [
+      "Black diaspora",
+      "Africa-adjacent networks"
+    ],
+    "funding_types": [
+      "grant",
+      "challenge",
+      "accelerator"
+    ],
+    "themes": [
+      "black_founders",
+      "underrepresented_founders",
+      "startup_prize"
+    ],
+    "search_terms": [
+      "Black founders",
+      "startup prize",
+      "grant",
+      "application"
+    ],
+    "capture_fields": [
+      "application_window",
+      "prize_amount",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Monthly diaspora-capital watch only; not an Africa-first daily source. Pursue only if eligibility and GTCX fit are clear."
+  },
+  {
+    "id": "visible_hands",
+    "name": "Visible Hands",
+    "url": "https://www.visiblehands.vc/",
+    "source_type": "venture_capital",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 3,
+    "regions": [
+      "Black diaspora",
+      "Underrepresented founders",
+      "Africa-adjacent networks"
+    ],
+    "funding_types": [
+      "equity",
+      "accelerator"
+    ],
+    "themes": [
+      "underrepresented_founders",
+      "pre_seed",
+      "founder_support"
+    ],
+    "search_terms": [
+      "Black founders",
+      "underrepresented founders",
+      "pre-seed",
+      "accelerator"
+    ],
+    "capture_fields": [
+      "program",
+      "application_window",
+      "check_size",
+      "source_url"
+    ],
+    "notes": "Monthly network watch only; useful for intros and underrepresented founder capital, not core Africa GTM."
+  },
+  {
+    "id": "blck_vc",
+    "name": "BLCK VC",
+    "url": "https://www.blckvc.org/",
+    "source_type": "angel_network",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 3,
+    "regions": [
+      "Black investors",
+      "Black diaspora",
+      "Global"
+    ],
+    "funding_types": [
+      "equity",
+      "partnership"
+    ],
+    "themes": [
+      "black_investors",
+      "venture_network",
+      "warm_intro"
+    ],
+    "search_terms": [
+      "Black VC",
+      "Africa",
+      "frontier markets",
+      "supply chain",
+      "fintech"
+    ],
+    "capture_fields": [
+      "member_or_event",
+      "intro_path",
+      "source_url"
+    ],
+    "notes": "Network mapping and warm-intro source; route only when an Africa/frontier-markets investor path is specific."
+  },
+  {
+    "id": "google_startups_black_founders",
+    "name": "Google for Startups Black Founders Fund",
+    "url": "https://startup.google.com/programs/black-founders-fund/",
+    "source_type": "corporate_program",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 3,
+    "regions": [
+      "Black founders",
+      "Africa",
+      "Black diaspora",
+      "Europe"
+    ],
+    "funding_types": [
+      "grant",
+      "technical_assistance",
+      "partnership"
+    ],
+    "themes": [
+      "black_founders",
+      "cloud_credits",
+      "founder_support"
+    ],
+    "search_terms": [
+      "Black Founders Fund",
+      "Africa",
+      "application",
+      "Google for Startups"
+    ],
+    "capture_fields": [
+      "region",
+      "application_window",
+      "benefits",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Monitor for Africa-specific cohorts or useful cloud/support benefits only."
+  },
+  {
+    "id": "africa_business_heroes",
+    "name": "Africa's Business Heroes",
+    "url": "https://africabusinessheroes.org/",
+    "source_type": "challenge",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "grant",
+      "challenge",
+      "partnership"
+    ],
+    "themes": [
+      "african_founders",
+      "startup_prize",
+      "entrepreneurship"
+    ],
+    "search_terms": [
+      "Africa entrepreneur",
+      "startup prize",
+      "application",
+      "founder"
+    ],
+    "capture_fields": [
+      "application_window",
+      "prize_amount",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "High-fit Africa founder prize source."
+  },
+  {
+    "id": "mest_africa",
+    "name": "MEST Africa",
+    "url": "https://meltwater.org/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "accelerator",
+      "equity",
+      "partnership"
+    ],
+    "themes": [
+      "african_startups",
+      "ghana",
+      "founder_support"
+    ],
+    "search_terms": [
+      "Africa startup",
+      "Ghana",
+      "accelerator",
+      "application"
+    ],
+    "capture_fields": [
+      "program",
+      "application_window",
+      "benefits",
+      "source_url"
+    ],
+    "notes": "Monitor programs, investments, and partnership announcements."
+  },
+  {
+    "id": "baobab_network",
+    "name": "The Baobab Network",
+    "url": "https://thebaobabnetwork.com/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "accelerator",
+      "equity"
+    ],
+    "themes": [
+      "african_startups",
+      "early_stage",
+      "venture"
+    ],
+    "search_terms": [
+      "Africa startup",
+      "accelerator",
+      "pre-seed",
+      "application"
+    ],
+    "capture_fields": [
+      "program",
+      "application_window",
+      "investment_terms",
+      "source_url"
+    ],
+    "notes": "Africa-focused early-stage capital source."
+  },
+  {
+    "id": "ventures_platform",
+    "name": "Ventures Platform",
+    "url": "https://venturesplatform.com/",
+    "source_type": "venture_capital",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "equity",
+      "partnership"
+    ],
+    "themes": [
+      "african_startups",
+      "venture",
+      "market_infrastructure"
+    ],
+    "search_terms": [
+      "Africa",
+      "fintech",
+      "infrastructure",
+      "supply chain",
+      "compliance"
+    ],
+    "capture_fields": [
+      "thesis",
+      "portfolio_fit",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Investor mapping source; not always an open application."
+  },
+  {
+    "id": "flat6labs",
+    "name": "Flat6Labs",
+    "url": "https://www.flat6labs.com/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Middle East"
+    ],
+    "funding_types": [
+      "accelerator",
+      "equity",
+      "grant"
+    ],
+    "themes": [
+      "startups",
+      "accelerator",
+      "seed"
+    ],
+    "search_terms": [
+      "Africa",
+      "accelerator",
+      "application",
+      "seed"
+    ],
+    "capture_fields": [
+      "program",
+      "country",
+      "deadline",
+      "terms",
+      "source_url"
+    ],
+    "notes": "Monitor regional program openings."
+  },
+  {
+    "id": "startupbootcamp_afritech",
+    "name": "Startupbootcamp AfriTech",
+    "url": "https://www.startupbootcamp.org/accelerator/afritech",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "accelerator",
+      "equity",
+      "partnership"
+    ],
+    "themes": [
+      "african_startups",
+      "corporate_partnerships",
+      "venture"
+    ],
+    "search_terms": [
+      "Africa startup",
+      "accelerator",
+      "application"
+    ],
+    "capture_fields": [
+      "cohort",
+      "deadline",
+      "terms",
+      "source_url"
+    ],
+    "notes": "Track applications and corporate challenge themes."
+  },
+  {
+    "id": "founders_factory_africa",
+    "name": "Founders Factory Africa",
+    "url": "https://foundersfactory.africa/",
+    "source_type": "accelerator",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "equity",
+      "accelerator",
+      "partnership"
+    ],
+    "themes": [
+      "venture_studio",
+      "african_startups",
+      "partnerships"
+    ],
+    "search_terms": [
+      "Africa",
+      "venture studio",
+      "startup",
+      "partnership"
+    ],
+    "capture_fields": [
+      "program",
+      "sector_fit",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Monitor sector theses and venture-build partnership routes."
+  },
+  {
+    "id": "seedstars",
+    "name": "Seedstars",
+    "url": "https://www.seedstars.com/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Emerging markets"
+    ],
+    "funding_types": [
+      "accelerator",
+      "equity",
+      "grant",
+      "partnership"
+    ],
+    "themes": [
+      "emerging_markets",
+      "startup_competitions",
+      "impact"
+    ],
+    "search_terms": [
+      "Africa",
+      "emerging markets",
+      "startup competition",
+      "application"
+    ],
+    "capture_fields": [
+      "program",
+      "deadline",
+      "country",
+      "benefits",
+      "source_url"
+    ],
+    "notes": "Track competitions, funds, and acceleration programs."
+  },
+  {
+    "id": "catalyst_fund",
+    "name": "Catalyst Fund",
+    "url": "https://www.thecatalystfund.com/",
+    "source_type": "venture_capital",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "equity",
+      "grant",
+      "technical_assistance"
+    ],
+    "themes": [
+      "climate",
+      "financial_inclusion",
+      "resilience",
+      "africa"
+    ],
+    "search_terms": [
+      "Africa",
+      "climate",
+      "financial inclusion",
+      "resilience"
+    ],
+    "capture_fields": [
+      "thesis",
+      "program",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "High-fit for climate/resilience/fintech adjacent pilots."
+  },
+  {
+    "id": "dfs_lab",
+    "name": "DFS Lab",
+    "url": "https://dfslab.net/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "grant",
+      "equity",
+      "accelerator",
+      "technical_assistance"
+    ],
+    "themes": [
+      "digital_finance",
+      "emerging_markets",
+      "infrastructure",
+      "fintech"
+    ],
+    "search_terms": [
+      "Africa",
+      "digital finance",
+      "fintech",
+      "infrastructure",
+      "grant"
+    ],
+    "capture_fields": [
+      "program",
+      "deadline",
+      "benefits",
+      "source_url"
+    ],
+    "notes": "Watch for venture studio, research, and accelerator calls."
+  },
+  {
+    "id": "village_capital",
+    "name": "Village Capital",
+    "url": "https://vilcap.com/",
+    "source_type": "accelerator",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global South",
+      "Global"
+    ],
+    "funding_types": [
+      "accelerator",
+      "grant",
+      "equity",
+      "technical_assistance"
+    ],
+    "themes": [
+      "impact",
+      "financial_health",
+      "climate",
+      "agriculture",
+      "inclusive_markets"
+    ],
+    "search_terms": [
+      "Africa",
+      "agriculture",
+      "climate",
+      "financial health",
+      "application"
+    ],
+    "capture_fields": [
+      "program",
+      "deadline",
+      "eligibility",
+      "source_url"
+    ],
+    "notes": "Track sector programs and applications."
+  },
+  {
+    "id": "afreximbank",
+    "name": "Afreximbank",
+    "url": "https://www.afreximbank.com/",
+    "source_type": "dfi",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "partnership",
+      "technical_assistance",
+      "revenue"
+    ],
+    "themes": [
+      "trade_finance",
+      "afcfta",
+      "commodities",
+      "market_infrastructure"
+    ],
+    "search_terms": [
+      "AfCFTA",
+      "digital trade",
+      "commodities",
+      "trade finance",
+      "platform"
+    ],
+    "capture_fields": [
+      "initiative",
+      "program",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Strategic partnership and market infrastructure source."
+  },
+  {
+    "id": "trade_mark_africa",
+    "name": "TradeMark Africa",
+    "url": "https://www.trademarkafrica.com/",
+    "source_type": "trade_body",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "grant",
+      "procurement",
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "trade",
+      "logistics",
+      "digital_trade",
+      "africa"
+    ],
+    "search_terms": [
+      "digital trade",
+      "Africa",
+      "procurement",
+      "trade facilitation",
+      "supply chain"
+    ],
+    "capture_fields": [
+      "opportunity",
+      "country",
+      "deadline",
+      "source_url"
+    ],
+    "notes": "High-fit trade facilitation source; monitor opportunities and tenders."
+  },
+  {
+    "id": "afcfta_secretariat",
+    "name": "AfCFTA Secretariat",
+    "url": "https://au-afcfta.org/",
+    "source_type": "trade_body",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "partnership",
+      "technical_assistance",
+      "pilot"
+    ],
+    "themes": [
+      "afcfta",
+      "trade",
+      "digital_trade",
+      "market_access"
+    ],
+    "search_terms": [
+      "digital trade",
+      "private sector",
+      "trade facilitation",
+      "protocol",
+      "pilot"
+    ],
+    "capture_fields": [
+      "initiative",
+      "event",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Strategic source for trade alignment and convening."
+  },
+  {
+    "id": "international_trade_centre",
+    "name": "International Trade Centre",
+    "url": "https://intracen.org/",
+    "source_type": "trade_body",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global South"
+    ],
+    "funding_types": [
+      "grant",
+      "procurement",
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "trade",
+      "smes",
+      "market_access",
+      "supply_chain",
+      "women_trade"
+    ],
+    "search_terms": [
+      "Africa",
+      "SME",
+      "digital trade",
+      "supply chain",
+      "market access"
+    ],
+    "capture_fields": [
+      "program",
+      "call",
+      "country",
+      "deadline",
+      "source_url"
+    ],
+    "notes": "Watch project calls, tenders, and SheTrades-related opportunities."
+  },
+  {
+    "id": "africa_finance_corporation",
+    "name": "Africa Finance Corporation",
+    "url": "https://www.africafc.org/",
+    "source_type": "dfi",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "partnership",
+      "equity",
+      "technical_assistance"
+    ],
+    "themes": [
+      "infrastructure",
+      "natural_resources",
+      "trade",
+      "market_infrastructure"
+    ],
+    "search_terms": [
+      "natural resources",
+      "trade",
+      "infrastructure",
+      "Africa"
+    ],
+    "capture_fields": [
+      "initiative",
+      "thesis_fit",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Monitor for infrastructure and natural resources partnership alignment."
+  },
+  {
+    "id": "africa50",
+    "name": "Africa50",
+    "url": "https://www.africa50.com/",
+    "source_type": "dfi",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "partnership",
+      "equity",
+      "technical_assistance"
+    ],
+    "themes": [
+      "infrastructure",
+      "project_development",
+      "digital_infrastructure"
+    ],
+    "search_terms": [
+      "digital infrastructure",
+      "Africa",
+      "project development",
+      "trade"
+    ],
+    "capture_fields": [
+      "initiative",
+      "investment_theme",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Strategic infra capital and partnership mapping."
+  },
+  {
+    "id": "fsd_africa",
+    "name": "FSD Africa",
+    "url": "https://fsdafrica.org/",
+    "source_type": "foundation",
+    "listener_type": "page_watch",
+    "cadence": "weekly",
+    "priority": 1,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "grant",
+      "procurement",
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "financial_markets",
+      "inclusive_finance",
+      "climate_finance",
+      "digital_finance"
+    ],
+    "search_terms": [
+      "financial markets",
+      "digital finance",
+      "Africa",
+      "climate finance",
+      "procurement"
+    ],
+    "capture_fields": [
+      "opportunity",
+      "deadline",
+      "program",
+      "source_url"
+    ],
+    "notes": "High-fit for GTX Markets and financial infrastructure narratives."
+  },
+  {
+    "id": "african_guarantee_fund",
+    "name": "African Guarantee Fund",
+    "url": "https://africanguaranteefund.com/",
+    "source_type": "dfi",
+    "listener_type": "manual_review",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "partnership",
+      "technical_assistance"
+    ],
+    "themes": [
+      "sme_finance",
+      "risk_sharing",
+      "financial_inclusion"
+    ],
+    "search_terms": [
+      "SME finance",
+      "Africa",
+      "risk sharing",
+      "financial inclusion"
+    ],
+    "capture_fields": [
+      "initiative",
+      "partner_path",
+      "source_url"
+    ],
+    "notes": "Partnership mapping for finance access and risk infrastructure."
+  },
+  {
+    "id": "responsible_minerals_initiative",
+    "name": "Responsible Minerals Initiative",
+    "url": "https://www.responsiblemineralsinitiative.org/",
+    "source_type": "commodity_body",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "themes": [
+      "responsible_minerals",
+      "traceability",
+      "audit",
+      "supply_chain"
+    ],
+    "search_terms": [
+      "responsible minerals",
+      "Africa",
+      "traceability",
+      "audit",
+      "gold"
+    ],
+    "capture_fields": [
+      "initiative",
+      "working_group",
+      "event",
+      "source_url"
+    ],
+    "notes": "Not primarily a funder; high-value standards and partnership source."
+  },
+  {
+    "id": "eiti",
+    "name": "Extractive Industries Transparency Initiative",
+    "url": "https://eiti.org/",
+    "source_type": "commodity_body",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "partnership",
+      "technical_assistance",
+      "pilot"
+    ],
+    "themes": [
+      "extractives",
+      "transparency",
+      "governance",
+      "mining"
+    ],
+    "search_terms": [
+      "Africa",
+      "mining",
+      "transparency",
+      "digital",
+      "beneficial ownership"
+    ],
+    "capture_fields": [
+      "country",
+      "initiative",
+      "event",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Partnership and public-sector positioning source."
+  },
+  {
+    "id": "lbma_responsible_sourcing",
+    "name": "LBMA Responsible Sourcing",
+    "url": "https://www.lbma.org.uk/responsible-sourcing",
+    "source_type": "commodity_body",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 1,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "themes": [
+      "gold",
+      "responsible_sourcing",
+      "refineries",
+      "compliance"
+    ],
+    "search_terms": [
+      "gold",
+      "responsible sourcing",
+      "Africa",
+      "ASM",
+      "refinery"
+    ],
+    "capture_fields": [
+      "guidance",
+      "event",
+      "member_signal",
+      "source_url"
+    ],
+    "notes": "Monitor for compliance alignment and buyer/refinery outreach."
+  },
+  {
+    "id": "world_gold_council",
+    "name": "World Gold Council",
+    "url": "https://www.gold.org/",
+    "source_type": "commodity_body",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "partnership",
+      "research",
+      "revenue"
+    ],
+    "themes": [
+      "gold",
+      "market_infrastructure",
+      "responsible_gold",
+      "data"
+    ],
+    "search_terms": [
+      "Africa",
+      "responsible gold",
+      "ASM",
+      "market infrastructure",
+      "data"
+    ],
+    "capture_fields": [
+      "report",
+      "initiative",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Market intelligence and partner mapping source."
+  },
+  {
+    "id": "oecd_responsible_business",
+    "name": "OECD Responsible Business Conduct",
+    "url": "https://mneguidelines.oecd.org/",
+    "source_type": "commodity_body",
+    "listener_type": "page_watch",
+    "cadence": "monthly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "partnership",
+      "technical_assistance",
+      "research"
+    ],
+    "themes": [
+      "responsible_business",
+      "due_diligence",
+      "minerals",
+      "supply_chain"
+    ],
+    "search_terms": [
+      "minerals",
+      "due diligence",
+      "Africa",
+      "supply chain",
+      "responsible business"
+    ],
+    "capture_fields": [
+      "program",
+      "guidance",
+      "event",
+      "source_url"
+    ],
+    "notes": "Standards and convening source for due diligence positioning."
+  },
+  {
+    "id": "openvc",
+    "name": "OpenVC",
+    "url": "https://www.openvc.app/",
+    "source_type": "media_database",
+    "listener_type": "manual_review",
+    "cadence": "weekly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global",
+      "Black founders"
+    ],
+    "funding_types": [
+      "equity"
+    ],
+    "themes": [
+      "investor_database",
+      "vc",
+      "pre_seed",
+      "seed"
+    ],
+    "search_terms": [
+      "Africa",
+      "frontier markets",
+      "fintech",
+      "supply chain",
+      "black founders"
+    ],
+    "capture_fields": [
+      "investor_name",
+      "thesis",
+      "check_size",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Use public/free investor discovery; export/import manually if terms allow."
+  },
+  {
+    "id": "signal_nfx",
+    "name": "Signal by NFX",
+    "url": "https://signal.nfx.com/",
+    "source_type": "media_database",
+    "listener_type": "manual_review",
+    "cadence": "weekly",
+    "priority": 2,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "equity"
+    ],
+    "themes": [
+      "investor_database",
+      "vc",
+      "network_mapping"
+    ],
+    "search_terms": [
+      "Africa",
+      "emerging markets",
+      "fintech",
+      "marketplace",
+      "supply chain"
+    ],
+    "capture_fields": [
+      "investor_name",
+      "thesis",
+      "intro_path",
+      "source_url"
+    ],
+    "notes": "Investor discovery and warm-intro mapping."
+  },
+  {
+    "id": "crunchbase_free_search",
+    "name": "Crunchbase Free Search",
+    "url": "https://www.crunchbase.com/",
+    "source_type": "media_database",
+    "listener_type": "manual_review",
+    "cadence": "weekly",
+    "priority": 3,
+    "regions": [
+      "Africa",
+      "Global"
+    ],
+    "funding_types": [
+      "equity",
+      "partnership"
+    ],
+    "themes": [
+      "investor_research",
+      "company_research",
+      "funding_rounds"
+    ],
+    "search_terms": [
+      "Africa startups",
+      "supply chain",
+      "commodities",
+      "fintech",
+      "compliance"
+    ],
+    "capture_fields": [
+      "organization",
+      "investor",
+      "round",
+      "contact_path",
+      "source_url"
+    ],
+    "notes": "Use only within free/allowed access; avoid automated scraping."
+  },
+  {
+    "id": "techcabal",
+    "name": "TechCabal",
+    "url": "https://techcabal.com/",
+    "source_type": "media_database",
+    "listener_type": "rss",
+    "cadence": "daily",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "equity",
+      "partnership",
+      "accelerator"
+    ],
+    "themes": [
+      "african_startups",
+      "funding_news",
+      "investors",
+      "ecosystem"
+    ],
+    "search_terms": [
+      "funding",
+      "accelerator",
+      "grant",
+      "Africa",
+      "founder"
+    ],
+    "capture_fields": [
+      "article",
+      "company",
+      "investor",
+      "source_url"
+    ],
+    "notes": "Use as signal source; create opportunities only when actionable."
+  },
+  {
+    "id": "disrupt_africa",
+    "name": "Disrupt Africa",
+    "url": "https://disruptafrica.com/",
+    "source_type": "media_database",
+    "listener_type": "rss",
+    "cadence": "daily",
+    "priority": 2,
+    "regions": [
+      "Africa"
+    ],
+    "funding_types": [
+      "equity",
+      "grant",
+      "accelerator",
+      "partnership"
+    ],
+    "themes": [
+      "african_startups",
+      "funding_news",
+      "applications",
+      "ecosystem"
+    ],
+    "search_terms": [
+      "funding",
+      "applications open",
+      "accelerator",
+      "grant",
+      "Africa"
+    ],
+    "capture_fields": [
+      "article",
+      "program",
+      "deadline",
+      "source_url"
+    ],
+    "notes": "Good for startup program announcements and funding signals."
+  }
+]

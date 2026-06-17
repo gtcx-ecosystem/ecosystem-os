@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://fundraising/lead/v1",
+  "title": "GTCX Fundraising Lead",
+  "type": "object",
+  "required": [
+    "title",
+    "source_channel",
+    "funding_type",
+    "source_url",
+    "product_matches",
+    "fit_score",
+    "stage",
+    "next_action"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Human-readable lead name, usually org + opportunity."
+    },
+    "source_channel": {
+      "type": "string",
+      "enum": [
+        "gmail",
+        "linkedin_manual",
+        "grant_portal",
+        "sam_gov",
+        "grants_gov",
+        "rss",
+        "newsletter",
+        "referral",
+        "inbound",
+        "event",
+        "manual"
+      ]
+    },
+    "funding_type": {
+      "type": "string",
+      "enum": [
+        "grant",
+        "catalytic_capital",
+        "equity",
+        "sponsorship",
+        "pilot",
+        "revenue",
+        "partnership",
+        "incubator",
+        "accelerator",
+        "challenge",
+        "technical_assistance",
+        "procurement"
+      ]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_excerpt": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email"
+    },
+    "country_region": {
+      "type": "string"
+    },
+    "product_matches": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "ComplianceOS",
+          "MarketsOS",
+          "Nyota",
+          "BaselineOS",
+          "Griot",
+          "Terminal54",
+          "LedgerUI",
+          "FabricOS",
+          "GTCX Core"
+        ]
+      }
+    },
+    "fit_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "ticket_size": {
+      "type": "number",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "inbox",
+        "qualified",
+        "outreach_ready",
+        "contacted",
+        "meeting_scheduled",
+        "diligence",
+        "proposal_submitted",
+        "won",
+        "lost_parked"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "warm_intro_path": {
+      "type": "string"
+    },
+    "gmail_thread_id": {
+      "type": "string"
+    },
+    "calendar_event_id": {
+      "type": "string"
+    },
+    "drive_folder_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "clickup_task_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,461 @@
+[
+  {
+    "id": "africa_digital_public_infrastructure_grants",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "procurement",
+      "technical_assistance"
+    ],
+    "query": "(Africa OR Ghana OR Rwanda OR Nigeria OR Kenya) (\"digital public infrastructure\" OR digital ID OR registry OR \"trust infrastructure\") (grant OR funding OR tender OR procurement OR \"call for proposals\")",
+    "route_to": "Catalytic Capital",
+    "notes": "Primary ecosystem narrative search."
+  },
+  {
+    "id": "responsible_minerals_traceability",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "partnership",
+      "pilot",
+      "revenue"
+    ],
+    "query": "(Africa OR Ghana OR DRC OR Rwanda OR Tanzania) (gold OR minerals OR mining OR ASM) (traceability OR \"responsible sourcing\" OR compliance OR due diligence) (funding OR pilot OR grant OR partnership OR RFP)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "ComplianceOS and gold/commodity proof narrative."
+  },
+  {
+    "id": "eudr_csddd_africa_supply_chain",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "query": "(EUDR OR CSDDD OR ESG) Africa (supply chain OR traceability OR compliance OR due diligence) (grant OR tender OR pilot OR procurement OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "ComplianceOS buyer, partner, and funder search."
+  },
+  {
+    "id": "afcfta_digital_trade",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "partnership",
+      "technical_assistance",
+      "pilot"
+    ],
+    "query": "(AfCFTA OR \"African Continental Free Trade Area\") (digital trade OR trade facilitation OR customs OR market access OR SME) (funding OR grant OR tender OR pilot OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Trade and public infrastructure opportunities."
+  },
+  {
+    "id": "black_founder_grants",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "accelerator",
+      "equity"
+    ],
+    "query": "(\"Black founders\" OR \"Black entrepreneurs\" OR \"underrepresented founders\") (grant OR prize OR accelerator OR fellowship OR funding) (application OR \"applications open\")",
+    "route_to": "Investor Pipeline",
+    "notes": "Black founder capital and grant windows."
+  },
+  {
+    "id": "african_founder_prizes",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "challenge",
+      "accelerator"
+    ],
+    "query": "(\"African founders\" OR \"Africa startups\" OR \"African entrepreneurs\") (prize OR challenge OR grant OR accelerator) (\"applications open\" OR deadline OR cohort)",
+    "route_to": "Catalytic Capital",
+    "notes": "Africa founder prizes and accelerators."
+  },
+  {
+    "id": "commodity_trade_finance",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "partnership",
+      "equity",
+      "pilot",
+      "revenue"
+    ],
+    "query": "(Africa OR Ghana OR Nigeria OR Kenya) (commodity finance OR trade finance OR collateral management OR settlement OR exchange) (pilot OR partnership OR investment OR RFP)",
+    "route_to": "Revenue Deals",
+    "notes": "GTX Markets and financial infrastructure search."
+  },
+  {
+    "id": "dfi_private_sector_digital_africa",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "grant",
+      "procurement",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(AfDB OR IFC OR World Bank OR FSD Africa OR Afreximbank OR TradeMark Africa) Africa (digital OR platform OR data OR AI OR traceability OR trade) (procurement OR grant OR tender OR \"call for proposals\")",
+    "route_to": "Catalytic Capital",
+    "notes": "DFI and implementation opportunity sweep."
+  },
+  {
+    "id": "un_procurement_digital_africa",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "procurement",
+      "grant",
+      "technical_assistance"
+    ],
+    "query": "(UNDP OR UNOPS OR UNICEF OR ITC OR FAO) Africa (digital OR AI OR data OR trade OR supply chain OR agriculture) (procurement OR RFP OR EOI OR \"call for proposals\")",
+    "route_to": "Catalytic Capital",
+    "notes": "UN procurement and challenge sweep."
+  },
+  {
+    "id": "ghana_mining_trade_pilots",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "procurement",
+      "revenue"
+    ],
+    "query": "Ghana (mining OR gold OR minerals OR trade OR customs) (digital OR traceability OR compliance OR licensing OR verification) (pilot OR procurement OR tender OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Country-specific priority search."
+  },
+  {
+    "id": "rwanda_trade_digital_pilots",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "procurement"
+    ],
+    "query": "Rwanda (trade OR mining OR agriculture OR digital public infrastructure OR compliance) (pilot OR procurement OR tender OR grant OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Country expansion watch."
+  },
+  {
+    "id": "ai_for_compliance_grants",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "grant",
+      "research",
+      "pilot"
+    ],
+    "query": "(AI OR \"artificial intelligence\" OR agents) (compliance OR audit OR due diligence OR evidence) (Africa OR supply chain OR trade) (grant OR challenge OR RFP OR pilot)",
+    "route_to": "Catalytic Capital",
+    "notes": "BaselineOS and ComplianceOS AI narrative."
+  },
+  {
+    "id": "whatsapp_field_agents_africa",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "grant",
+      "pilot",
+      "partnership"
+    ],
+    "query": "(WhatsApp OR mobile OR \"field agents\" OR \"extension agents\") Africa (agriculture OR mining OR SME OR trade) (grant OR pilot OR partnership OR challenge)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Nyota and field intelligence search."
+  },
+  {
+    "id": "supply_chain_resilience_africa",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "grant",
+      "procurement",
+      "pilot",
+      "partnership"
+    ],
+    "query": "Africa (\"supply chain resilience\" OR traceability OR logistics OR market access) (grant OR procurement OR challenge OR pilot OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Broad supply chain grant/procurement sweep."
+  },
+  {
+    "id": "investors_frontier_markets_infrastructure",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "equity",
+      "partnership"
+    ],
+    "query": "(\"frontier markets\" OR Africa) (venture capital OR family office OR impact investor) (infrastructure OR fintech OR supply chain OR commodities OR compliance)",
+    "route_to": "Investor Pipeline",
+    "notes": "Investor discovery and warm-intro mapping."
+  },
+  {
+    "id": "foundation_africa_economic_opportunity",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "grant",
+      "partnership"
+    ],
+    "query": "(foundation OR philanthropy) Africa (economic opportunity OR entrepreneurship OR trade OR digital OR financial inclusion) (grant OR partnership OR \"call for proposals\")",
+    "route_to": "Catalytic Capital",
+    "notes": "Foundation grants and partnership windows."
+  },
+  {
+    "id": "sovereign_minerals_regulator_pilots",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(Africa OR Ghana OR Zimbabwe OR Zambia OR DRC OR Botswana OR Namibia) (\"minerals commission\" OR \"ministry of mines\" OR \"mining cadastre\") (digital OR traceability OR verification OR compliance) (pilot OR partnership OR tender OR \"expression of interest\")",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Sovereign regulator and minerals ministry implementation path."
+  },
+  {
+    "id": "african_bank_trade_finance_pilots",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "revenue",
+      "partnership"
+    ],
+    "query": "(\"African bank\" OR \"trade finance\" OR \"corporate and investment banking\") Africa (commodities OR mining OR agriculture OR exporters) (pilot OR innovation OR partnership OR digital)",
+    "route_to": "Revenue Deals",
+    "notes": "GTX Markets and ComplianceOS bank pilot discovery."
+  },
+  {
+    "id": "dfi_commodity_finance_traceability",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "technical_assistance",
+      "partnership",
+      "pilot",
+      "catalytic_capital"
+    ],
+    "query": "(AfDB OR IFC OR FSD Africa OR Afreximbank OR TDB OR \"Africa Finance Corporation\") (commodity finance OR trade finance OR traceability OR responsible sourcing) Africa",
+    "route_to": "Catalytic Capital",
+    "notes": "DFI and development finance alignment for commodity trust infrastructure."
+  },
+  {
+    "id": "goldbod_gold_sourcing_partnership",
+    "cadence": "daily",
+    "priority": 1,
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "query": "(GoldBod OR \"Ghana gold\" OR \"Ghana Minerals Commission\") (refinery OR buyer OR traceability OR responsible sourcing OR export) (partnership OR pilot OR verified)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Ghana gold and sovereign buyer/refinery partnership path."
+  },
+  {
+    "id": "dubai_switzerland_gold_buyer_pull",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "revenue",
+      "partnership"
+    ],
+    "query": "(Dubai OR DMCC OR Switzerland OR Swiss) (gold refinery OR bullion OR vault OR family office) (Africa OR Ghana OR responsible sourcing OR traceability)",
+    "route_to": "Revenue Deals",
+    "notes": "Buyer-side pull from vaulting/refining/family office gold demand."
+  },
+  {
+    "id": "collateral_management_africa_commodities",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "query": "(\"collateral management\" OR \"stock monitoring\" OR inspection) Africa (commodities OR gold OR minerals OR warehouse OR trade finance) (bank OR trader OR insurer)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "SIS-style collateral, inspection, bank/trader partner discovery."
+  },
+  {
+    "id": "afcfta_digital_trade_sandbox",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(AfCFTA OR \"regional economic community\" OR ECOWAS OR EAC OR COMESA OR SADC) (digital trade OR trade facilitation OR customs OR market access) (pilot OR sandbox OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Regional trade infrastructure and policy-convening opportunities."
+  },
+  {
+    "id": "critical_minerals_africa_traceability",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "revenue",
+      "technical_assistance"
+    ],
+    "query": "(critical minerals OR cobalt OR copper OR lithium OR graphite OR manganese) Africa (traceability OR due diligence OR responsible sourcing OR compliance) (buyer OR DFI OR pilot OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Critical minerals expansion beyond gold."
+  },
+  {
+    "id": "women_mine_operators_gender_lens",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "catalytic_capital",
+      "partnership",
+      "pilot"
+    ],
+    "query": "(women miners OR women mine operators OR women-led mining OR gender lens) Africa (finance OR DFI OR grant OR investment OR partnership)",
+    "route_to": "Catalytic Capital",
+    "notes": "Gender-lens capital and women operator network discovery."
+  },
+  {
+    "id": "telecom_mobile_money_distribution_africa",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "query": "(MTN OR Airtel OR Safaricom OR Orange OR M-Pesa OR mobile money) Africa (SME OR agriculture OR mining OR trade OR WhatsApp) (partnership OR API OR agent network OR pilot)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Nyota/BaselineOS distribution and field agent partnerships."
+  },
+  {
+    "id": "african_financial_markets_sandbox",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "revenue"
+    ],
+    "query": "(Africa OR Ghana OR Rwanda OR Mauritius OR Kenya OR South Africa) (capital markets OR securities regulator OR fintech sandbox OR digital assets) (pilot OR tokenization OR regulatory technology)",
+    "route_to": "Revenue Deals",
+    "notes": "MarketsOS AFM regulatory adapter and sandbox path."
+  },
+  {
+    "id": "producer_cooperative_traceability",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "pilot",
+      "partnership"
+    ],
+    "query": "(cooperative OR producer network OR smallholder OR ASM) Africa (traceability OR certification OR market access OR compliance) (gold OR cocoa OR coffee OR minerals OR agriculture)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Supply-side adoption and verified production data assets."
+  },
+  {
+    "id": "responsible_sourcing_buyer_mandates",
+    "cadence": "weekly",
+    "priority": 1,
+    "funding_types": [
+      "revenue",
+      "partnership"
+    ],
+    "query": "(responsible sourcing OR supplier due diligence OR ESG audit) (Africa OR Ghana OR DRC OR cocoa OR gold OR minerals) (buyer mandate OR supplier program OR procurement policy)",
+    "route_to": "Revenue Deals",
+    "notes": "Buyer pull for ComplianceOS and verified supply integrations."
+  },
+  {
+    "id": "africa_export_agencies_digital_trade",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(export promotion OR trade ministry OR customs authority) Africa (digital trade OR exporters OR market access OR certificate of origin) (pilot OR tender OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Export agency and customs-side digital trade opportunities."
+  },
+  {
+    "id": "frontier_market_family_office_gold",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "revenue",
+      "equity",
+      "partnership"
+    ],
+    "query": "(family office OR private wealth OR bullion investor) (Africa gold OR Ghana gold OR responsible gold OR verified gold OR Dubai vault OR Swiss vault)",
+    "route_to": "Investor Pipeline",
+    "notes": "GTX Markets direct brokerage, buyer, and strategic capital path."
+  },
+  {
+    "id": "africa_insurance_trade_credit_commodities",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "partnership",
+      "revenue",
+      "pilot"
+    ],
+    "query": "(trade credit insurance OR political risk insurance OR commodity insurance) Africa (mining OR commodities OR exporters OR trade finance) (partnership OR pilot)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "Insurance and risk-transfer partners for verified commodity flows."
+  },
+  {
+    "id": "global_south_offline_ai_field_ops",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "pilot",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(\"Global South\" OR Africa) (offline AI OR low bandwidth OR USSD OR field operations) (compliance OR trade OR agriculture OR mining) (pilot OR partnership)",
+    "route_to": "Partnerships & Pilots",
+    "notes": "BaselineOS/Nyota field resilience and offline AI opportunity path."
+  },
+  {
+    "id": "african_startup_infrastructure_vc",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "equity",
+      "partnership"
+    ],
+    "query": "(Africa-focused VC OR African venture capital OR frontier markets investor) (infrastructure OR fintech OR regtech OR supply chain OR commodities) (pre-seed OR seed OR investment thesis)",
+    "route_to": "Investor Pipeline",
+    "notes": "Africa-focused venture discovery, not generic SaaS VC."
+  },
+  {
+    "id": "africa_digital_public_goods_trade",
+    "cadence": "weekly",
+    "priority": 2,
+    "funding_types": [
+      "grant",
+      "challenge",
+      "partnership",
+      "technical_assistance"
+    ],
+    "query": "(Africa OR \"Global South\") (digital public goods OR open source OR trust infrastructure OR digital public infrastructure) (trade OR commodities OR compliance OR identity) (challenge OR foundation OR partnership)",
+    "route_to": "Catalytic Capital",
+    "notes": "Selective non-dilutive programs only when tightly aligned to GTCX implementation."
+  }
+]

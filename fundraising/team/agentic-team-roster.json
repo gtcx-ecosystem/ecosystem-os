@@ -1,0 +1,142 @@
+[
+  {
+    "id": "chief_of_staff_agent",
+    "name": "Chief of Staff Agent",
+    "mission": "Orchestrate the fundraising engine and publish daily/weekly operating briefs.",
+    "authority_default": "A3",
+    "systems": ["ClickUp", "Gmail", "Calendar", "Drive"],
+    "inputs": ["pipeline_state", "daily_digest", "calendar", "inbox", "source_sweep"],
+    "outputs": ["daily_brief", "weekly_review_agenda", "escalation_list"],
+    "human_approval_required_for": ["external_sends", "submissions", "relationship_commitments"]
+  },
+  {
+    "id": "source_intelligence_agent",
+    "name": "Source Intelligence Agent",
+    "mission": "Monitor Africa/Global South funding, venture, pilot, event, buyer, DFI, and trade infrastructure sources.",
+    "authority_default": "A3",
+    "systems": ["fundraising/sources", "n8n", "changedetection", "RSS", "ClickUp"],
+    "inputs": ["web_source_database", "search_query_library", "organization_watchlist", "country_coverage"],
+    "outputs": ["source_signals", "new_source_candidates", "source_freshness_report"],
+    "human_approval_required_for": ["restricted_platform_access", "paid_database_exports"]
+  },
+  {
+    "id": "opportunity_analyst_agent",
+    "name": "Opportunity Analyst Agent",
+    "mission": "Score raw signals and route them to the right GTCX product, owner, and next action.",
+    "authority_default": "A2",
+    "systems": ["fundraising/sources", "lead_schema", "ClickUp"],
+    "inputs": ["source_signal", "gtcx_opportunity_map", "lead_schema"],
+    "outputs": ["fit_score", "routing_note", "product_match", "recommended_next_action"],
+    "human_approval_required_for": ["strategic_priority_override"]
+  },
+  {
+    "id": "crm_clickup_agent",
+    "name": "CRM / ClickUp Operations Agent",
+    "mission": "Keep the fundraising board clean, deduped, assigned, and stage-accurate.",
+    "authority_default": "A3",
+    "systems": ["ClickUp"],
+    "inputs": ["qualified_signal", "email_thread_summary", "calendar_event", "owner_update"],
+    "outputs": ["clickup_task", "field_updates", "dedupe_comment", "stale_task_report"],
+    "human_approval_required_for": ["deleting_records", "changing_closed_won_terms"]
+  },
+  {
+    "id": "inbox_calendar_agent",
+    "name": "Inbox + Calendar Agent",
+    "mission": "Manage hello@gtcx.trade labels, aliases, thread summaries, meeting prep, and calendar updates.",
+    "authority_default": "A3",
+    "systems": ["Gmail", "Google Calendar", "ClickUp"],
+    "inputs": ["hello_mailbox", "calendar_events", "gmail_labels"],
+    "outputs": ["thread_summary", "meeting_prep_task", "reply_signal", "deadline_signal"],
+    "human_approval_required_for": ["sending_email", "accepting_external_invites", "scheduling_external_meetings"]
+  },
+  {
+    "id": "outreach_drafting_agent",
+    "name": "Outreach Drafting Agent",
+    "mission": "Draft audience-specific investor, partner, buyer, DFI, and pilot outreach.",
+    "authority_default": "A1",
+    "systems": ["Gmail", "Drive", "fundraising/investor-decks", "ClickUp"],
+    "inputs": ["clickup_task", "audience_profile", "product_match", "collateral_links"],
+    "outputs": ["gmail_draft", "follow_up_draft", "intro_note"],
+    "human_approval_required_for": ["all_external_sends"]
+  },
+  {
+    "id": "capital_collateral_design_agent",
+    "name": "Capital Collateral + Design Agent",
+    "mission": "Create pitch decks, one-pagers, visual assets, branded concept notes, data-room collateral, and audience-specific capital packages.",
+    "authority_default": "A1",
+    "systems": ["fundraising/investor-decks", "Drive", "brand_assets", "product_docs", "ClickUp"],
+    "inputs": ["opportunity_context", "audience_profile", "product_match", "proof_needed", "existing_collateral", "brand_guidelines"],
+    "outputs": ["deck_outline", "pitch_deck_draft", "one_pager_draft", "concept_note_draft", "visual_asset_brief", "collateral_pack_index"],
+    "human_approval_required_for": ["external_collateral_use", "new_claims", "generated_or_stock_imagery", "brand_exceptions", "financial_claims", "legal_or_regulatory_claims"]
+  },
+  {
+    "id": "application_proposal_agent",
+    "name": "Application + Proposal Agent",
+    "mission": "Prepare applications, challenge submissions, grant packs, and pilot proposals.",
+    "authority_default": "A1",
+    "systems": ["Drive", "ClickUp", "fundraising/sources", "fundraising/investor-decks"],
+    "inputs": ["opportunity_requirements", "deadline", "existing_collateral", "product_docs"],
+    "outputs": ["submission_plan", "answer_drafts", "attachment_checklist", "proposal_draft"],
+    "human_approval_required_for": ["submitting_application", "accepting_terms", "making_certifications"]
+  },
+  {
+    "id": "finance_deal_economics_agent",
+    "name": "Finance + Deal Economics Agent",
+    "mission": "Own budgets, runway, financial models, investment economics, dilution, valuation scenarios, revenue-share structures, and deal-term analysis.",
+    "authority_default": "A2",
+    "systems": ["fundraising/financials", "ClickUp", "Drive", "spreadsheets"],
+    "inputs": ["financial_model", "budget", "term_sheet", "proposal_terms", "runway_assumptions", "pipeline_value"],
+    "outputs": ["budget_scenario", "runway_model", "term_comparison", "dilution_analysis", "economics_memo", "negotiation_options"],
+    "human_approval_required_for": ["model_assumption_changes", "external_financial_claims", "pricing", "valuation", "investment_terms", "revenue_share", "debt_or_equity_commitments"]
+  },
+  {
+    "id": "diligence_data_room_agent",
+    "name": "Diligence + Data Room Agent",
+    "mission": "Maintain diligence folders, evidence, financial attachments, and data-room readiness.",
+    "authority_default": "A3",
+    "systems": ["Drive", "ClickUp", "fundraising/financials", "fundraising/investor-decks"],
+    "inputs": ["diligence_request", "opportunity_task", "approved_documents"],
+    "outputs": ["data_room_index", "diligence_tracker", "missing_materials_list"],
+    "human_approval_required_for": ["sharing_confidential_material", "financial_claims"]
+  },
+  {
+    "id": "partnership_sovereign_desk_agent",
+    "name": "Partnership / Sovereign Desk Agent",
+    "mission": "Prepare and track DFIs, ministries, regulators, trade bodies, and pan-African institutions.",
+    "authority_default": "A2",
+    "systems": ["ClickUp", "fundraising/sources", "Drive"],
+    "inputs": ["stakeholder_signal", "country_context", "opportunity_map"],
+    "outputs": ["stakeholder_map", "partner_brief", "meeting_prep", "policy_fit_note"],
+    "human_approval_required_for": ["government_outreach", "regulator_outreach", "mou_terms"]
+  },
+  {
+    "id": "revenue_buyer_desk_agent",
+    "name": "Revenue / Buyer Desk Agent",
+    "mission": "Prepare and track buyer, refiner, trader, vault, bank, and paid-pilot opportunities.",
+    "authority_default": "A2",
+    "systems": ["ClickUp", "fundraising/investor-decks", "fundraising/sources"],
+    "inputs": ["buyer_signal", "product_match", "commercial_context"],
+    "outputs": ["buyer_brief", "pilot_proposal_outline", "commercial_ask"],
+    "human_approval_required_for": ["pricing", "revenue_share", "commercial_commitments"]
+  },
+  {
+    "id": "investor_relations_agent",
+    "name": "Investor Relations Agent",
+    "mission": "Prepare and track VCs, angels, family offices, catalytic capital, and investor updates.",
+    "authority_default": "A2",
+    "systems": ["ClickUp", "Gmail", "Drive", "fundraising/financials"],
+    "inputs": ["investor_signal", "warm_intro_path", "funding_narrative", "financials"],
+    "outputs": ["investor_brief", "intro_request_draft", "investor_update_draft"],
+    "human_approval_required_for": ["external_sends", "investment_terms", "financial_claims"]
+  },
+  {
+    "id": "claims_compliance_reviewer_agent",
+    "name": "Claims + Compliance Reviewer Agent",
+    "mission": "Review claims, source support, risk, and approval readiness before external use.",
+    "authority_default": "A2",
+    "systems": ["repo_docs", "fundraising/sources", "ClickUp"],
+    "inputs": ["draft", "source_links", "claims", "opportunity_context"],
+    "outputs": ["red_flag_note", "claim_support_check", "approval_readiness_note"],
+    "human_approval_required_for": ["final_claim_approval", "legal_or_financial_assertions"]
+  }
+]

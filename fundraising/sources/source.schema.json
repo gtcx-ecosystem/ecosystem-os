@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://fundraising/source/v1",
+  "title": "GTCX Fundraising Source",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "source_type",
+    "listener_type",
+    "cadence",
+    "priority",
+    "regions",
+    "funding_types",
+    "themes",
+    "capture_fields"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "grant_portal",
+        "procurement_portal",
+        "dfi",
+        "foundation",
+        "accelerator",
+        "incubator",
+        "venture_capital",
+        "angel_network",
+        "challenge",
+        "corporate_program",
+        "trade_body",
+        "commodity_body",
+        "government",
+        "media_database",
+        "search_engine",
+        "newsletter",
+        "manual_watchlist"
+      ]
+    },
+    "listener_type": {
+      "type": "string",
+      "enum": [
+        "api",
+        "rss",
+        "page_watch",
+        "search_query",
+        "newsletter",
+        "manual_review",
+        "form_export"
+      ]
+    },
+    "cadence": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly",
+        "monthly",
+        "deadline_driven",
+        "continuous"
+      ]
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "funding_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "grant",
+          "catalytic_capital",
+          "equity",
+          "sponsorship",
+          "pilot",
+          "revenue",
+          "partnership",
+          "incubator",
+          "accelerator",
+          "challenge",
+          "fellowship",
+          "procurement",
+          "technical_assistance",
+          "research"
+        ]
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "search_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capture_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

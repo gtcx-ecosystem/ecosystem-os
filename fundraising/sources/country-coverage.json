@@ -1,0 +1,80 @@
+[
+  {
+    "region": "West Africa",
+    "priority": 1,
+    "countries": ["Benin", "Burkina Faso", "Cape Verde", "Cote d'Ivoire", "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Liberia", "Mali", "Niger", "Nigeria", "Senegal", "Sierra Leone", "Togo"],
+    "regional_orgs": ["ECOWAS", "UEMOA", "Mano River Union", "Afreximbank", "AfCFTA Secretariat"],
+    "search_patterns": [
+      "\"{country}\" (procurement OR tender OR RFP OR EOI) (digital OR trade OR agriculture OR mining OR compliance)",
+      "\"{country}\" (grant OR \"call for proposals\" OR accelerator OR challenge) (startup OR SME OR digital OR trade)",
+      "\"{country}\" (gold OR minerals OR mining OR cocoa OR cashew OR agriculture) (traceability OR compliance OR supply chain)",
+      "\"{country}\" (AfCFTA OR customs OR trade facilitation OR market access) (pilot OR procurement OR partnership)"
+    ],
+    "notes": "Highest near-term priority because Ghana, Nigeria, Cote d'Ivoire, Senegal, Sierra Leone, Liberia, and Guinea overlap strongly with trade, minerals, agriculture, and policy channels."
+  },
+  {
+    "region": "East Africa",
+    "priority": 1,
+    "countries": ["Burundi", "Comoros", "Djibouti", "Eritrea", "Ethiopia", "Kenya", "Rwanda", "Seychelles", "Somalia", "South Sudan", "Tanzania", "Uganda"],
+    "regional_orgs": ["East African Community", "COMESA", "TradeMark Africa", "TDB Group", "Smart Africa"],
+    "search_patterns": [
+      "\"{country}\" (procurement OR tender OR RFP OR EOI) (digital OR trade OR agriculture OR mining OR compliance)",
+      "\"{country}\" (startup OR SME OR fintech OR agritech) (grant OR accelerator OR funding OR challenge)",
+      "\"{country}\" (traceability OR supply chain OR market access OR customs) (pilot OR grant OR procurement)",
+      "\"{country}\" (minerals OR coffee OR tea OR agriculture) (compliance OR ESG OR due diligence OR traceability)"
+    ],
+    "notes": "Strong fit for Rwanda and Kenya expansion, TradeMark Africa, EAC customs, digital public infrastructure, and agriculture trade."
+  },
+  {
+    "region": "Southern Africa",
+    "priority": 2,
+    "countries": ["Angola", "Botswana", "Eswatini", "Lesotho", "Madagascar", "Malawi", "Mauritius", "Mozambique", "Namibia", "South Africa", "Zambia", "Zimbabwe"],
+    "regional_orgs": ["SADC", "COMESA", "Africa Finance Corporation", "Africa50"],
+    "search_patterns": [
+      "\"{country}\" (procurement OR tender OR RFP OR EOI) (digital OR mining OR trade OR supply chain)",
+      "\"{country}\" (critical minerals OR copper OR cobalt OR diamonds OR mining) (traceability OR ESG OR responsible sourcing)",
+      "\"{country}\" (trade facilitation OR customs OR AfCFTA OR logistics) (grant OR procurement OR pilot)",
+      "\"{country}\" (startup OR innovation OR accelerator) (funding OR grant OR application)"
+    ],
+    "notes": "Strong minerals, infrastructure, and trade-corridor relevance. Prioritize Zambia, South Africa, Botswana, Namibia, Mozambique, and Angola."
+  },
+  {
+    "region": "Central Africa",
+    "priority": 2,
+    "countries": ["Cameroon", "Central African Republic", "Chad", "Republic of the Congo", "Democratic Republic of the Congo", "Equatorial Guinea", "Gabon", "Sao Tome and Principe"],
+    "regional_orgs": ["ECCAS", "CEMAC", "EITI", "Responsible Minerals Initiative"],
+    "search_patterns": [
+      "\"{country}\" (procurement OR tender OR RFP OR EOI) (mining OR digital OR trade OR compliance)",
+      "\"{country}\" (cobalt OR copper OR gold OR timber OR minerals) (traceability OR due diligence OR responsible sourcing)",
+      "\"{country}\" (EITI OR transparency OR beneficial ownership OR mining governance) (grant OR procurement OR technical assistance)",
+      "\"{country}\" (startup OR digital OR SME) (grant OR accelerator OR challenge)"
+    ],
+    "notes": "High strategic relevance for responsible minerals and governance; execution may require more partner-led routes."
+  },
+  {
+    "region": "North Africa",
+    "priority": 3,
+    "countries": ["Algeria", "Egypt", "Libya", "Mauritania", "Morocco", "Sudan", "Tunisia"],
+    "regional_orgs": ["African Development Bank", "Union for the Mediterranean", "COMESA", "Afreximbank"],
+    "search_patterns": [
+      "\"{country}\" (procurement OR tender OR RFP OR EOI) (digital OR trade OR agriculture OR logistics)",
+      "\"{country}\" (startup OR innovation OR accelerator) (funding OR grant OR application)",
+      "\"{country}\" (trade facilitation OR customs OR export) (grant OR procurement OR pilot)",
+      "\"{country}\" (phosphate OR mining OR agriculture OR logistics) (traceability OR compliance OR supply chain)"
+    ],
+    "notes": "Lower immediate priority but useful for trade, logistics, agriculture, and startup ecosystem coverage."
+  },
+  {
+    "region": "Pan-African and Diaspora",
+    "priority": 1,
+    "countries": ["Africa", "Global South", "African diaspora", "Black founders"],
+    "regional_orgs": ["African Union", "AfCFTA Secretariat", "Afreximbank", "Smart Africa", "BLCK VC", "Google for Startups Black Founders Fund"],
+    "search_patterns": [
+      "(Africa OR \"African founders\" OR \"Black founders\") (grant OR accelerator OR funding OR prize OR fellowship) (application OR deadline)",
+      "(Africa OR \"Global South\") (digital public infrastructure OR trade OR commodities OR supply chain) (grant OR procurement OR pilot OR partnership)",
+      "(\"Black founders\" OR \"African diaspora\") (venture capital OR angel investor OR grant OR accelerator) (application OR fund)",
+      "(Africa OR \"African Union\" OR AfCFTA) (digital trade OR traceability OR compliance OR market infrastructure) (pilot OR partnership OR tender)"
+    ],
+    "notes": "Used for cross-border, diaspora, Black founder, and continent-wide opportunity discovery."
+  }
+]

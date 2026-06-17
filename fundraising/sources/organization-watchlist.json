@@ -1,0 +1,834 @@
+[
+  {
+    "group": "multilateral_development_banks",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "African Development Bank",
+        "url": "https://www.afdb.org/",
+        "themes": [
+          "africa",
+          "infrastructure",
+          "procurement",
+          "private_sector"
+        ]
+      },
+      {
+        "name": "World Bank",
+        "url": "https://www.worldbank.org/",
+        "themes": [
+          "development",
+          "procurement",
+          "digital",
+          "trade"
+        ]
+      },
+      {
+        "name": "International Finance Corporation",
+        "url": "https://www.ifc.org/",
+        "themes": [
+          "private_sector",
+          "investment",
+          "financial_markets",
+          "africa"
+        ]
+      },
+      {
+        "name": "MIGA",
+        "url": "https://www.miga.org/",
+        "themes": [
+          "risk",
+          "investment",
+          "infrastructure",
+          "africa"
+        ]
+      },
+      {
+        "name": "European Investment Bank",
+        "url": "https://www.eib.org/",
+        "themes": [
+          "development_finance",
+          "climate",
+          "digital",
+          "africa"
+        ]
+      },
+      {
+        "name": "European Bank for Reconstruction and Development",
+        "url": "https://www.ebrd.com/",
+        "themes": [
+          "private_sector",
+          "trade",
+          "emerging_markets"
+        ]
+      },
+      {
+        "name": "Islamic Development Bank",
+        "url": "https://www.isdb.org/",
+        "themes": [
+          "development_finance",
+          "trade",
+          "africa"
+        ]
+      },
+      {
+        "name": "Trade and Development Bank",
+        "url": "https://www.tdbgroup.org/",
+        "themes": [
+          "trade_finance",
+          "eastern_africa",
+          "southern_africa"
+        ]
+      },
+      {
+        "name": "ECOWAS Bank for Investment and Development",
+        "url": "https://www.bidc-ebid.org/",
+        "themes": [
+          "west_africa",
+          "development_finance",
+          "trade"
+        ]
+      },
+      {
+        "name": "Africa Finance Corporation",
+        "url": "https://www.africafc.org/",
+        "themes": [
+          "infrastructure",
+          "natural_resources",
+          "trade"
+        ]
+      },
+      {
+        "name": "Africa50",
+        "url": "https://www.africa50.com/",
+        "themes": [
+          "infrastructure",
+          "project_development",
+          "digital_infrastructure"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "africa_trade_and_market_infrastructure",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "AfCFTA Secretariat",
+        "url": "https://au-afcfta.org/",
+        "themes": [
+          "afcfta",
+          "digital_trade",
+          "market_access"
+        ]
+      },
+      {
+        "name": "Afreximbank",
+        "url": "https://www.afreximbank.com/",
+        "themes": [
+          "trade_finance",
+          "commodities",
+          "afcfta"
+        ]
+      },
+      {
+        "name": "TradeMark Africa",
+        "url": "https://www.trademarkafrica.com/",
+        "themes": [
+          "trade_facilitation",
+          "digital_trade",
+          "logistics"
+        ]
+      },
+      {
+        "name": "International Trade Centre",
+        "url": "https://intracen.org/",
+        "themes": [
+          "sme_trade",
+          "market_access",
+          "women_trade"
+        ]
+      },
+      {
+        "name": "UNECA",
+        "url": "https://www.uneca.org/",
+        "themes": [
+          "africa_trade",
+          "statistics",
+          "policy"
+        ]
+      },
+      {
+        "name": "African Union",
+        "url": "https://au.int/",
+        "themes": [
+          "policy",
+          "digital_transformation",
+          "trade"
+        ]
+      },
+      {
+        "name": "COMESA",
+        "url": "https://www.comesa.int/",
+        "themes": [
+          "eastern_africa",
+          "trade",
+          "regional_integration"
+        ]
+      },
+      {
+        "name": "ECOWAS",
+        "url": "https://ecowas.int/",
+        "themes": [
+          "west_africa",
+          "trade",
+          "regional_integration"
+        ]
+      },
+      {
+        "name": "SADC",
+        "url": "https://www.sadc.int/",
+        "themes": [
+          "southern_africa",
+          "trade",
+          "regional_integration"
+        ]
+      },
+      {
+        "name": "East African Community",
+        "url": "https://www.eac.int/",
+        "themes": [
+          "east_africa",
+          "trade",
+          "customs"
+        ]
+      },
+      {
+        "name": "Smart Africa",
+        "url": "https://smartafrica.org/",
+        "themes": [
+          "digital_public_infrastructure",
+          "africa",
+          "policy"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "un_and_global_procurement",
+    "cadence": "daily",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "United Nations Global Marketplace",
+        "url": "https://www.ungm.org/Public/Notice",
+        "themes": [
+          "procurement",
+          "un",
+          "africa"
+        ]
+      },
+      {
+        "name": "UNDP Procurement",
+        "url": "https://procurement-notices.undp.org/",
+        "themes": [
+          "procurement",
+          "innovation",
+          "development"
+        ]
+      },
+      {
+        "name": "UNOPS",
+        "url": "https://www.unops.org/business-opportunities",
+        "themes": [
+          "procurement",
+          "infrastructure",
+          "implementation"
+        ]
+      },
+      {
+        "name": "UNICEF Supply",
+        "url": "https://www.unicef.org/supply/",
+        "themes": [
+          "procurement",
+          "innovation",
+          "field_operations"
+        ]
+      },
+      {
+        "name": "FAO Procurement",
+        "url": "https://www.fao.org/unfao/procurement/en/",
+        "themes": [
+          "agriculture",
+          "procurement",
+          "field_operations"
+        ]
+      },
+      {
+        "name": "WFP Procurement",
+        "url": "https://www.wfp.org/procurement",
+        "themes": [
+          "food_security",
+          "supply_chain",
+          "procurement"
+        ]
+      },
+      {
+        "name": "UNIDO Procurement",
+        "url": "https://www.unido.org/procurement",
+        "themes": [
+          "industrial_development",
+          "smes",
+          "procurement"
+        ]
+      },
+      {
+        "name": "UN Women Procurement",
+        "url": "https://www.unwomen.org/en/about-us/procurement",
+        "themes": [
+          "women_founders",
+          "economic_opportunity",
+          "procurement"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "bilateral_development_and_donor_sources",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "FCDO",
+        "url": "https://www.gov.uk/international-development-funding",
+        "themes": [
+          "development_funding",
+          "africa",
+          "trade"
+        ]
+      },
+      {
+        "name": "GIZ",
+        "url": "https://www.giz.de/en/workingwithgiz/bidding_procurement.html",
+        "themes": [
+          "procurement",
+          "digital",
+          "africa"
+        ]
+      },
+      {
+        "name": "KfW Development Bank",
+        "url": "https://www.kfw-entwicklungsbank.de/International-financing/KfW-Development-Bank/",
+        "themes": [
+          "development_finance",
+          "infrastructure",
+          "africa"
+        ]
+      },
+      {
+        "name": "Agence Francaise de Developpement",
+        "url": "https://www.afd.fr/en",
+        "themes": [
+          "development_finance",
+          "africa",
+          "climate"
+        ]
+      },
+      {
+        "name": "Expertise France",
+        "url": "https://www.expertisefrance.fr/en",
+        "themes": [
+          "technical_assistance",
+          "governance",
+          "digital"
+        ]
+      },
+      {
+        "name": "Global Affairs Canada",
+        "url": "https://www.international.gc.ca/world-monde/funding-financement/index.aspx",
+        "themes": [
+          "grants",
+          "development",
+          "africa"
+        ]
+      },
+      {
+        "name": "Norad",
+        "url": "https://www.norad.no/en/front/funding/",
+        "themes": [
+          "grants",
+          "development",
+          "private_sector"
+        ]
+      },
+      {
+        "name": "Sida",
+        "url": "https://www.sida.se/en/for-partners",
+        "themes": [
+          "development",
+          "partnership",
+          "grants"
+        ]
+      },
+      {
+        "name": "Netherlands Enterprise Agency",
+        "url": "https://english.rvo.nl/subsidies-financing",
+        "themes": [
+          "subsidies",
+          "trade",
+          "private_sector"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "foundations_and_prizes",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "Mastercard Foundation",
+        "url": "https://mastercardfdn.org/",
+        "themes": [
+          "africa",
+          "youth",
+          "workforce",
+          "financial_inclusion"
+        ]
+      },
+      {
+        "name": "Rockefeller Foundation",
+        "url": "https://www.rockefellerfoundation.org/",
+        "themes": [
+          "climate",
+          "food",
+          "data",
+          "resilience"
+        ]
+      },
+      {
+        "name": "Bill & Melinda Gates Foundation",
+        "url": "https://www.gatesfoundation.org/",
+        "themes": [
+          "agriculture",
+          "global_development",
+          "data"
+        ]
+      },
+      {
+        "name": "Grand Challenges",
+        "url": "https://gcgh.grandchallenges.org/challenges",
+        "themes": [
+          "challenges",
+          "grants",
+          "innovation"
+        ]
+      },
+      {
+        "name": "Global Innovation Fund",
+        "url": "https://www.globalinnovation.fund/apply/",
+        "themes": [
+          "evidence",
+          "global_south",
+          "innovation"
+        ]
+      },
+      {
+        "name": "Skoll Foundation",
+        "url": "https://skoll.org/",
+        "themes": [
+          "systems_change",
+          "social_enterprise"
+        ]
+      },
+      {
+        "name": "Echoing Green",
+        "url": "https://echoinggreen.org/fellowship/",
+        "themes": [
+          "founders",
+          "fellowship",
+          "social_enterprise"
+        ]
+      },
+      {
+        "name": "Cisco Foundation",
+        "url": "https://www.cisco.com/c/en/us/about/csr/community/nonprofits.html",
+        "themes": [
+          "digital",
+          "resilience",
+          "nonprofits"
+        ]
+      },
+      {
+        "name": "Google.org",
+        "url": "https://www.google.org/",
+        "themes": [
+          "ai",
+          "data",
+          "economic_opportunity"
+        ]
+      },
+      {
+        "name": "Microsoft AI for Good",
+        "url": "https://www.microsoft.com/en-us/ai/ai-for-good",
+        "themes": [
+          "ai",
+          "social_impact",
+          "data"
+        ]
+      },
+      {
+        "name": "Mozilla Foundation",
+        "url": "https://foundation.mozilla.org/",
+        "themes": [
+          "open_source",
+          "trustworthy_ai",
+          "internet_health"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "black_and_underrepresented_founder_capital",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "Black Ambition",
+        "url": "https://www.blackambitionprize.com/",
+        "themes": [
+          "black_founders",
+          "grant",
+          "prize"
+        ]
+      },
+      {
+        "name": "Google for Startups Black Founders Fund",
+        "url": "https://startup.google.com/programs/black-founders-fund/",
+        "themes": [
+          "black_founders",
+          "grant",
+          "cloud"
+        ]
+      },
+      {
+        "name": "BLCK VC",
+        "url": "https://www.blckvc.org/",
+        "themes": [
+          "black_investors",
+          "venture_network"
+        ]
+      },
+      {
+        "name": "Visible Hands",
+        "url": "https://www.visiblehands.vc/",
+        "themes": [
+          "underrepresented_founders",
+          "pre_seed"
+        ]
+      },
+      {
+        "name": "Harlem Capital",
+        "url": "https://harlem.capital/",
+        "themes": [
+          "diverse_founders",
+          "venture"
+        ]
+      },
+      {
+        "name": "Collab Capital",
+        "url": "https://collab.capital/",
+        "themes": [
+          "black_founders",
+          "venture"
+        ]
+      },
+      {
+        "name": "Backstage Capital",
+        "url": "https://backstagecapital.com/",
+        "themes": [
+          "underrepresented_founders",
+          "venture"
+        ]
+      },
+      {
+        "name": "Fearless Fund",
+        "url": "https://www.fearless.fund/",
+        "themes": [
+          "women_of_color",
+          "venture"
+        ]
+      },
+      {
+        "name": "Lightship Capital",
+        "url": "https://lightship.capital/",
+        "themes": [
+          "underrepresented_founders",
+          "venture"
+        ]
+      },
+      {
+        "name": "Kapor Capital",
+        "url": "https://www.kaporcapital.com/",
+        "themes": [
+          "impact",
+          "underrepresented_founders",
+          "venture"
+        ]
+      },
+      {
+        "name": "Camelback Ventures",
+        "url": "https://www.camelbackventures.org/",
+        "themes": [
+          "underrepresented_founders",
+          "fellowship"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "africa_startup_accelerators_and_vc",
+    "cadence": "weekly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "Africa's Business Heroes",
+        "url": "https://africabusinessheroes.org/",
+        "themes": [
+          "african_founders",
+          "prize"
+        ]
+      },
+      {
+        "name": "MEST Africa",
+        "url": "https://meltwater.org/",
+        "themes": [
+          "ghana",
+          "accelerator",
+          "african_startups"
+        ]
+      },
+      {
+        "name": "Baobab Network",
+        "url": "https://thebaobabnetwork.com/",
+        "themes": [
+          "african_startups",
+          "pre_seed"
+        ]
+      },
+      {
+        "name": "Seedstars",
+        "url": "https://www.seedstars.com/",
+        "themes": [
+          "emerging_markets",
+          "accelerator"
+        ]
+      },
+      {
+        "name": "Village Capital",
+        "url": "https://vilcap.com/",
+        "themes": [
+          "impact",
+          "accelerator",
+          "africa"
+        ]
+      },
+      {
+        "name": "DFS Lab",
+        "url": "https://dfslab.net/",
+        "themes": [
+          "digital_finance",
+          "emerging_markets"
+        ]
+      },
+      {
+        "name": "Catalyst Fund",
+        "url": "https://www.thecatalystfund.com/",
+        "themes": [
+          "climate",
+          "fintech",
+          "africa"
+        ]
+      },
+      {
+        "name": "Founders Factory Africa",
+        "url": "https://foundersfactory.africa/",
+        "themes": [
+          "venture_studio",
+          "africa"
+        ]
+      },
+      {
+        "name": "Startupbootcamp AfriTech",
+        "url": "https://www.startupbootcamp.org/accelerator/afritech",
+        "themes": [
+          "accelerator",
+          "africa"
+        ]
+      },
+      {
+        "name": "Flat6Labs",
+        "url": "https://www.flat6labs.com/",
+        "themes": [
+          "accelerator",
+          "africa",
+          "middle_east"
+        ]
+      },
+      {
+        "name": "Ventures Platform",
+        "url": "https://venturesplatform.com/",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      },
+      {
+        "name": "TLcom Capital",
+        "url": "https://tlcomcapital.com/",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      },
+      {
+        "name": "Partech Africa",
+        "url": "https://partechpartners.com/strategy/partech-africa",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      },
+      {
+        "name": "Novastar Ventures",
+        "url": "https://www.novastarventures.com/",
+        "themes": [
+          "venture",
+          "africa",
+          "impact"
+        ]
+      },
+      {
+        "name": "4DX Ventures",
+        "url": "https://www.4dxventures.com/",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      },
+      {
+        "name": "Future Africa",
+        "url": "https://www.future.africa/",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      },
+      {
+        "name": "Norrsken22",
+        "url": "https://www.norrsken22.com/",
+        "themes": [
+          "venture",
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "commodities_responsible_sourcing_and_trade_bodies",
+    "cadence": "monthly",
+    "priority": 1,
+    "organizations": [
+      {
+        "name": "Responsible Minerals Initiative",
+        "url": "https://www.responsiblemineralsinitiative.org/",
+        "themes": [
+          "responsible_minerals",
+          "traceability"
+        ]
+      },
+      {
+        "name": "LBMA Responsible Sourcing",
+        "url": "https://www.lbma.org.uk/responsible-sourcing",
+        "themes": [
+          "gold",
+          "refineries",
+          "compliance"
+        ]
+      },
+      {
+        "name": "World Gold Council",
+        "url": "https://www.gold.org/",
+        "themes": [
+          "gold",
+          "market_data",
+          "responsible_gold"
+        ]
+      },
+      {
+        "name": "Extractive Industries Transparency Initiative",
+        "url": "https://eiti.org/",
+        "themes": [
+          "extractives",
+          "transparency",
+          "governance"
+        ]
+      },
+      {
+        "name": "OECD Responsible Business Conduct",
+        "url": "https://mneguidelines.oecd.org/",
+        "themes": [
+          "due_diligence",
+          "supply_chain"
+        ]
+      },
+      {
+        "name": "Alliance for Responsible Mining",
+        "url": "https://www.responsiblemines.org/",
+        "themes": [
+          "asm",
+          "gold",
+          "formalization"
+        ]
+      },
+      {
+        "name": "Better Cotton",
+        "url": "https://bettercotton.org/",
+        "themes": [
+          "agriculture",
+          "traceability",
+          "sourcing"
+        ]
+      },
+      {
+        "name": "Global Coffee Platform",
+        "url": "https://www.globalcoffeeplatform.org/",
+        "themes": [
+          "coffee",
+          "sustainability",
+          "traceability"
+        ]
+      },
+      {
+        "name": "International Cocoa Organization",
+        "url": "https://www.icco.org/",
+        "themes": [
+          "cocoa",
+          "commodities",
+          "market_data"
+        ]
+      },
+      {
+        "name": "Extractives Hub",
+        "url": "https://www.extractiveshub.org/",
+        "themes": [
+          "extractives",
+          "knowledge",
+          "governance"
+        ]
+      }
+    ]
+  }
+]

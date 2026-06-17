@@ -1,0 +1,130 @@
+[
+  {
+    "id": "sovereign_regulator_pilot",
+    "name": "Sovereign regulator / ministry pilot",
+    "priority": 1,
+    "capital_type": ["pilot", "partnership", "technical_assistance", "revenue"],
+    "target_orgs": ["Minerals commissions", "mines ministries", "trade ministries", "customs authorities", "export promotion agencies", "central bank innovation units", "financial market regulators"],
+    "best_fit_products": ["GTCX Core", "ComplianceOS", "MarketsOS", "Nyota", "BaselineOS"],
+    "proof_needed": ["country configuration", "regulatory dashboard", "operator onboarding flow", "evidence and audit trail", "data sovereignty posture"],
+    "example_searches": [
+      "\"{country}\" \"minerals commission\" digital traceability pilot",
+      "\"{country}\" mining license registry digital verification",
+      "\"{country}\" trade ministry AfCFTA digital trade pilot",
+      "\"{country}\" central bank fintech sandbox commodity finance"
+    ],
+    "notes": "Highest-strategic-value path. Not grant-led; route to partnership, pilot, and sovereign implementation conversations."
+  },
+  {
+    "id": "african_bank_dfi_design_partner",
+    "name": "African bank / DFI design partner",
+    "priority": 1,
+    "capital_type": ["pilot", "revenue", "partnership", "technical_assistance"],
+    "target_orgs": ["Tier-2 African banks", "CIB innovation desks", "trade finance teams", "DFI portfolio teams", "credit guarantee institutions"],
+    "best_fit_products": ["MarketsOS", "ComplianceOS", "BaselineOS"],
+    "proof_needed": ["advisory desk demo", "AFM regulatory adapter", "bankability brief", "golden transaction witness", "KYC/compliance exception workflow"],
+    "example_searches": [
+      "\"African bank\" trade finance innovation pilot",
+      "\"DFI\" \"Africa\" commodity finance traceability",
+      "\"trade finance\" \"Africa\" \"compliance\" \"pilot\"",
+      "\"African capital markets\" regulatory sandbox digital assets"
+    ],
+    "notes": "Core GTX Markets buyer. Route to pilot/revenue first, catalytic capital second."
+  },
+  {
+    "id": "commodity_buyer_refiner_trader",
+    "name": "Commodity buyer, refiner, trader, or vaulting partner",
+    "priority": 1,
+    "capital_type": ["revenue", "pilot", "partnership"],
+    "target_orgs": ["Refineries", "commodity traders", "exporters", "vault operators", "collateral managers", "inspection companies", "trade finance desks", "family office precious-metals buyers"],
+    "best_fit_products": ["MarketsOS", "ComplianceOS", "GTCX Core", "Nyota"],
+    "proof_needed": ["verified lot flow", "chain-of-custody model", "counterparty confidence", "responsible sourcing alignment", "commercial fee model"],
+    "example_searches": [
+      "Dubai gold refinery African sourcing compliance partnership",
+      "Swiss refinery responsible sourcing Africa ASM gold",
+      "\"collateral management\" Africa commodities banks traders",
+      "\"verified gold\" Ghana buyer refinery partnership"
+    ],
+    "notes": "Primary route to non-dilutive revenue. Focus on verified supply, premium pricing, buyer risk reduction, and integration fees."
+  },
+  {
+    "id": "producer_network_anchor",
+    "name": "Producer network / cooperative anchor",
+    "priority": 1,
+    "capital_type": ["pilot", "partnership", "revenue"],
+    "target_orgs": ["Licensed mining associations", "cooperatives", "women-led operator networks", "agricultural boards", "commodity producer unions", "exporter associations"],
+    "best_fit_products": ["Nyota", "ComplianceOS", "GTCX Core", "BaselineOS"],
+    "proof_needed": ["offline onboarding", "local-language support", "TradePass/GeoTag/GCI flow", "training evidence", "operator value proposition"],
+    "example_searches": [
+      "\"licensed mine operators\" Ghana association",
+      "\"women miners\" Africa cooperative gold",
+      "\"{country}\" cocoa cooperative traceability digital",
+      "\"{country}\" small scale mining association compliance"
+    ],
+    "notes": "Creates the supply-side data asset. Pair with buyer/regulator demand to avoid unsupported community rollout."
+  },
+  {
+    "id": "pan_african_trade_infrastructure_partner",
+    "name": "Pan-African trade infrastructure partner",
+    "priority": 1,
+    "capital_type": ["partnership", "pilot", "technical_assistance"],
+    "target_orgs": ["AfCFTA bodies", "regional economic communities", "trade facilitation programs", "export/import agencies", "standards bodies", "digital trade alliances"],
+    "best_fit_products": ["MarketsOS", "GTCX Core", "ComplianceOS", "BaselineOS"],
+    "proof_needed": ["AfCFTA alignment", "country comparison", "interoperability map", "transaction test run", "policy-safe language"],
+    "example_searches": [
+      "AfCFTA digital trade private sector pilot",
+      "Africa trade facilitation digital supply chain call",
+      "regional economic community digital trade traceability",
+      "Africa market access standards digital compliance"
+    ],
+    "notes": "Best route for credibility, convening, and multi-country adoption."
+  },
+  {
+    "id": "africa_focused_venture_and_catalytic_capital",
+    "name": "Africa-focused venture / catalytic capital",
+    "priority": 1,
+    "capital_type": ["equity", "grant", "technical_assistance", "partnership"],
+    "target_orgs": ["Africa-focused VCs", "impact funds", "family offices", "catalytic capital funds", "gender-lens investors", "frontier market investors"],
+    "best_fit_products": ["GTCX Core", "MarketsOS", "ComplianceOS", "Nyota", "BaselineOS"],
+    "proof_needed": ["one-page investment memo", "use of funds", "pilot evidence", "commercial path", "Africa sovereignty thesis"],
+    "example_searches": [
+      "\"Africa\" \"frontier markets\" venture capital infrastructure",
+      "\"gender lens\" Africa mining finance women operators",
+      "\"catalytic capital\" Africa trade infrastructure",
+      "\"Africa\" commodity finance fintech investor"
+    ],
+    "notes": "Capital should follow pilots and proof. Prioritize investors who understand African market infrastructure, not generic SaaS funds."
+  },
+  {
+    "id": "global_south_foundation_and_challenge",
+    "name": "Global South foundation / challenge / innovation program",
+    "priority": 2,
+    "capital_type": ["grant", "challenge", "technical_assistance", "partnership"],
+    "target_orgs": ["Africa programs", "Global South innovation funds", "digital public goods funds", "economic inclusion foundations", "climate and supply-chain programs"],
+    "best_fit_products": ["Nyota", "ComplianceOS", "BaselineOS", "GTCX Core"],
+    "proof_needed": ["impact narrative", "field/offline evidence", "inclusion story", "specific country and commodity use case", "implementation partner"],
+    "example_searches": [
+      "\"Global South\" digital public infrastructure challenge Africa",
+      "\"Africa\" economic inclusion grant commodity producers",
+      "\"Africa\" digital inclusion mining agriculture challenge",
+      "\"responsible sourcing\" Africa grant foundation"
+    ],
+    "notes": "Useful, but not the center of gravity. Only pursue when the program clearly supports Africa implementation."
+  },
+  {
+    "id": "telecom_mobile_money_field_distribution",
+    "name": "Telecom / mobile money / field distribution partner",
+    "priority": 2,
+    "capital_type": ["partnership", "pilot", "revenue"],
+    "target_orgs": ["Telecom operators", "mobile money providers", "agent networks", "rural distribution networks", "device financing partners"],
+    "best_fit_products": ["Nyota", "BaselineOS", "GTCX Core"],
+    "proof_needed": ["WhatsApp/USSD flow", "offline mode", "agent-network economics", "local-language scripts", "revenue share model"],
+    "example_searches": [
+      "\"{country}\" mobile money agent network SME agriculture mining",
+      "\"Africa\" telecom digital inclusion enterprise partnership",
+      "\"WhatsApp\" commodity prices Africa farmer miner",
+      "\"USSD\" trade compliance Africa pilot"
+    ],
+    "notes": "Distribution layer for Nyota and field verification. Pair with producer networks and regulators."
+  }
+]
