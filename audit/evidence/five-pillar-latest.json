@@ -1,9 +1,9 @@
 {
   "schema": "gtcx://audit/five-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-16",
-  "evaluatedAt": "2026-06-16T04:25:11.167Z",
-  "gitHead": "e7e8c2681898b8de39763951f8ba3e503a5d786c",
+  "date": "2026-06-17",
+  "evaluatedAt": "2026-06-17T07:41:16.927Z",
+  "gitHead": "eeae6320e355e012d75ed8d8d55593a72d23457a",
   "composite100": 59,
   "composite100Raw": 69,
   "trustCap100": 92,
@@ -43,7 +43,7 @@
               "weight": 25,
               "severity": "P1",
               "optional": false,
-              "detail": "5/4 present",
+              "detail": "4/4 present",
               "protocol": "P35"
             },
             {
@@ -140,7 +140,7 @@
               "weight": 15,
               "severity": "P2",
               "optional": false,
-              "detail": "3/1 present",
+              "detail": "4/1 present",
               "protocol": "P33"
             }
           ],
@@ -196,7 +196,7 @@
           "items": [
             {
               "id": "docs-sor-manifest",
-              "label": "docs/sor.json or docs/INDEX.md or 01-docs/manifest.json",
+              "label": "docs/sor.json or docs/INDEX.md or docs/manifest.json",
               "pass": true,
               "score100": 100,
               "weight": 40,
@@ -213,7 +213,7 @@
               "weight": 30,
               "severity": "P2",
               "optional": false,
-              "detail": "2/1 present",
+              "detail": "3/1 present",
               "protocol": "P32"
             },
             {
@@ -396,7 +396,7 @@
               "weight": 20,
               "severity": "P1",
               "optional": false,
-              "detail": "1/1 present",
+              "detail": "2/1 present",
               "protocol": "shipping-culture"
             },
             {
@@ -407,7 +407,7 @@
               "weight": 20,
               "severity": "P1",
               "optional": false,
-              "detail": "1/1 present",
+              "detail": "2/1 present",
               "protocol": "shipping-culture"
             },
             {
@@ -449,14 +449,14 @@
         "agentic-harness-p22-p28": {
           "label": "Agentic harness (P22–P28)",
           "weight": 10,
-          "score100": 100,
+          "score100": 55,
           "protocol": "P22-P28",
           "items": [
             {
               "id": "agentic-manifest",
               "label": "agentic/manifest.json",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 20,
               "severity": "P1",
               "optional": false,
@@ -477,8 +477,8 @@
             {
               "id": "agent-work-selection-check",
               "label": "pnpm agent:work-selection:check",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 25,
               "severity": "P1",
               "optional": false,
@@ -615,17 +615,17 @@
         "agentic-product-team": {
           "label": "World-class agentic product team signals",
           "weight": 8,
-          "score100": 100,
+          "score100": 80,
           "items": [
             {
               "id": "persona-profiles",
               "label": "Repo persona profile in bridge-os or institutional adoption",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 20,
               "severity": "P3",
               "optional": false,
-              "detail": "agentic/manifest.json"
+              "detail": "missing pm/spec/repo-persona-profiles.json"
             },
             {
               "id": "conduct-protocol-adoption",
@@ -886,12 +886,33 @@
           "label": "pnpm ops:check exit 0",
           "severity": "P1",
           "detail": "opsCheck"
+        },
+        {
+          "id": "agentic-manifest",
+          "categoryId": "agentic-harness-p22-p28",
+          "label": "agentic/manifest.json",
+          "severity": "P1",
+          "detail": "agentic/manifest.json"
+        },
+        {
+          "id": "agent-work-selection-check",
+          "categoryId": "agentic-harness-p22-p28",
+          "label": "pnpm agent:work-selection:check",
+          "severity": "P1",
+          "detail": "workSelection"
+        },
+        {
+          "id": "persona-profiles",
+          "categoryId": "agentic-product-team",
+          "label": "Repo persona profile in bridge-os or institutional adoption",
+          "severity": "P3",
+          "detail": "missing pm/spec/repo-persona-profiles.json"
         }
       ],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 2
+      "openP1": 4
     },
     "technicalExcellence": {
       "score100": 100,

@@ -1,14 +1,17 @@
 #!/usr/bin/env node
-/** Delegates P22 selection to bridge-os program office. */
-import { spawnSync } from 'node:child_process';
+/** Delegates P22 selection to bridge-os program office (clean stdout for baseline session). */
+import { execFileSync } from 'node:child_process';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const bridge = join(dirname(fileURLToPath(import.meta.url)), '../../../../bridge-os');
+const bridgeRoot = join(dirname(fileURLToPath(import.meta.url)), '../../../../bridge-os');
+const bridgeScript = join(bridgeRoot, 'platform/scripts/agent-next-work.mjs');
 const args = process.argv.slice(2);
-const r = spawnSync('pnpm', ['agent:next-work', ...args], {
-  cwd: bridge,
+
+const out = execFileSync('node', [bridgeScript, ...args], {
+  cwd: bridgeRoot,
   encoding: 'utf8',
-  stdio: 'inherit',
+  maxBuffer: 16 * 1024 * 1024,
 });
-process.exit(r.status ?? 1);
+
+process.stdout.write(out);

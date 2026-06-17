@@ -1,73 +1,88 @@
 {
-  "schema": "gtcx://canon-os/docs-foundation-check/v1",
+  "schema": "gtcx://canon-os/docs-foundation-check/v2",
   "repo": "ecosystem-os",
-  "at": "2026-06-16T06:09:01.096Z",
-  "ok": true,
+  "at": "2026-06-17T12:29:00.057Z",
+  "ok": false,
+  "spec": {
+    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-foundation-pack.json",
+    "localIsStub": false,
+    "resolvedIsFull": true
+  },
   "gates": [
     {
-      "id": "spec",
+      "id": "spec:local-present",
       "ok": true,
-      "detail": "pm/spec/docs-foundation-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-foundation-pack.json"
+    },
+    {
+      "id": "spec:not-stub",
+      "ok": true,
+      "detail": "full local pack"
+    },
+    {
+      "id": "spec:resolved-full",
+      "ok": true,
+      "detail": "resolved full foundation pack"
+    },
+    {
+      "id": "profile",
+      "ok": true,
+      "detail": "product"
     },
     {
       "id": "file:foundation/README.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/README.md"
     },
     {
       "id": "file:foundation/constitution.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/constitution.md"
     },
     {
       "id": "file:foundation/manifesto.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/manifesto.md"
     },
     {
       "id": "file:foundation/vision.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/vision.md"
     },
     {
       "id": "file:foundation/mission.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/mission.md"
     },
     {
       "id": "file:foundation/goals.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/goals.md"
     },
     {
       "id": "file:foundation/milestones.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/milestones.md"
     },
     {
       "id": "file:foundation/roadmap.md",
-      "ok": true,
+      "ok": false,
       "detail": "docs/foundation/roadmap.md"
     },
     {
-      "id": "fleet-constitution",
-      "ok": true,
-      "detail": "../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md"
-    },
-    {
       "id": "sync:vision",
-      "ok": true,
+      "ok": false,
       "detail": "vision.md mirrors product-goals.json"
     },
     {
       "id": "sync:mission",
-      "ok": true,
+      "ok": false,
       "detail": "mission.md mirrors product-goals.json"
     },
     {
       "id": "sync:milestone",
-      "ok": true,
-      "detail": "milestones.md references ECO-DOC-001"
+      "ok": false,
+      "detail": "milestones.md references ECO-OS-SHIP-001"
     }
   ]
 }

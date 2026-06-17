@@ -10,7 +10,7 @@
     "fiveCoreRunbook": "audit/FIVE-CORE-AUDITS.md",
     "executionRoadmap": "docs/strategy/execution-roadmap.md",
     "autoDevState": "pm/auto-dev-state.md",
-    "agentsCanonical": "docs/agents/",
+    "agentsCanonical": "agents/",
     "docsIamap": "docs/README.md",
     "docsIndex": "docs/INDEX.md",
     "gitbook": "docs/gitbook/",

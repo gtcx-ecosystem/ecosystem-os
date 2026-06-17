@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-16T15:53:05.241Z",
+  "at": "2026-06-16T16:02:12.159Z",
   "ok": true,
   "gates": [
     {
@@ -149,6 +149,21 @@
       "id": "bootstrap:provider-routes-valid",
       "ok": true,
       "detail": "provider-routes shape"
+    },
+    {
+      "id": "no-forbidden-provider-trees",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "id": "no-sops-sprawl",
+      "ok": true,
+      "detail": "agents/sops/ forbidden"
+    },
+    {
+      "id": "no-loose-agents-root",
+      "ok": true,
+      "detail": "clean"
     }
   ]
 }
