@@ -24,12 +24,15 @@ Repo-scoped documentation for **ecosystem-os**. Read `INDEX.md` before creating 
 | ------ | ------- | ------------------ |
 | `agents/` | Agent provisioning, personas, startup paths | per profile |
 | `architecture/` | System design, ADRs, integration maps | per profile |
+| `business/` | Business thesis, portfolio, market, customers, economics | per profile |
 | `engineering/` | Tooling, CLI, workflows, build narratives | per profile |
+| `foundation/` | Ecosystem OS doctrine, charter, product architecture | per profile |
 | `gitbook/` | GitBook publish source (SUMMARY.md + chapters) | per profile |
 | `governance/` | Repo-scoped governance pointers | per profile |
 | `operations/` | Runbooks and ops narrative (P29 domains under ops/) | per profile |
 | `overview/` | What this repo is — strategic truth | per profile |
 | `reference/` | Templates, guides, glossary, examples | per profile |
+| `research/` | Competitive landscape, technical research, research agenda | per profile |
 | `strategy/` | Initiative charters and GTM briefs | per profile |
 
 ## Required root files
