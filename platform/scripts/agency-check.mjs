@@ -98,6 +98,84 @@ function checkBrandScaffold(root) {
   return { ok: issues.length === 0, issues, filePath: paths.tokens };
 }
 
+function resolveEcosystemRoot(cwd) {
+  return process.env.GTCX_ECOSYSTEM_ROOT || join(cwd, '..');
+}
+
+function checkDeliverables(root) {
+  const filePath = join(root, 'pm/agency/catalogs/deliverables.json');
+  const issues = [];
+  if (!existsSync(filePath)) {
+    return { ok: false, issues: [{ severity: 'error', code: 'missing-catalog', message: 'deliverables: missing catalog' }], filePath };
+  }
+  const catalog = readJson(filePath);
+  const items = catalog.items ?? [];
+  for (const it of items) {
+    for (const f of ['id', 'campaignId', 'type', 'path', 'status', 'license']) {
+      if (!it?.[f]) {
+        issues.push({ severity: 'error', code: 'missing-fields', message: `deliverables: ${it?.id ?? '(missing id)'} missing ${f}` });
+      }
+    }
+    const license = String(it?.license ?? '').trim().toLowerCase();
+    if (!license || license === 'unknown') {
+      issues.push({ severity: 'error', code: 'unknown-license', message: `deliverables: ${it?.id} unknown license` });
+    }
+    const deliverablePath = join(root, it.path);
+    if (!existsSync(deliverablePath)) {
+      issues.push({ severity: 'error', code: 'missing-file', message: `deliverables: ${it.id} path missing ${it.path}` });
+    }
+  }
+  return { ok: issues.length === 0, issues, filePath };
+}
+
+function checkWitnessResolution(root) {
+  const mapPath = join(root, 'pm/agency/packs/gr-t2/claim-witness-map.json');
+  const issues = [];
+  if (!existsSync(mapPath)) {
+    return { ok: false, issues: [{ severity: 'error', code: 'missing-map', message: 'witness: missing claim-witness-map.json' }], filePath: mapPath };
+  }
+  const map = readJson(mapPath);
+  const ecoRoot = resolveEcosystemRoot(root);
+  const claims = map.claims ?? [];
+  let resolved = 0;
+  for (const claim of claims) {
+    for (const w of claim.witnesses ?? []) {
+      const full = join(ecoRoot, w.repo, w.path);
+      if (!existsSync(full)) {
+        issues.push({
+          severity: 'error',
+          code: 'witness-missing',
+          message: `witness: ${claim.id} missing ${w.repo}/${w.path}`,
+        });
+        continue;
+      }
+      if (w.field) {
+        try {
+          const data = readJson(full);
+          const val = w.field.split('.').reduce((o, k) => o?.[k], data);
+          if (val === undefined || val === null || val === '') {
+            issues.push({
+              severity: 'error',
+              code: 'witness-field-missing',
+              message: `witness: ${claim.id} field ${w.field} empty in ${w.repo}/${w.path}`,
+            });
+            continue;
+          }
+        } catch {
+          issues.push({
+            severity: 'error',
+            code: 'witness-parse-fail',
+            message: `witness: ${claim.id} cannot read field ${w.field} from ${w.repo}/${w.path}`,
+          });
+          continue;
+        }
+      }
+      resolved += 1;
+    }
+  }
+  return { ok: issues.length === 0, issues, filePath: mapPath, resolved, total: claims.reduce((n, c) => n + (c.witnesses?.length ?? 0), 0) };
+}
+
 function summarizeMd({ witness }) {
   const lines = [];
   lines.push(`# Agency check`);
@@ -127,6 +205,21 @@ function summarizeMd({ witness }) {
     lines.push('');
     lines.push(`- OK: **${witness.brandScaffold.ok ? 'true' : 'false'}**`);
     lines.push(`- Issues: **${witness.brandScaffold.issues.length}**`);
+    lines.push('');
+  }
+  if (witness.deliverables) {
+    lines.push(`## deliverables`);
+    lines.push('');
+    lines.push(`- OK: **${witness.deliverables.ok ? 'true' : 'false'}**`);
+    lines.push(`- Issues: **${witness.deliverables.issues.length}**`);
+    lines.push('');
+  }
+  if (witness.witnessResolution) {
+    lines.push(`## witnessResolution`);
+    lines.push('');
+    lines.push(`- OK: **${witness.witnessResolution.ok ? 'true' : 'false'}**`);
+    lines.push(`- Resolved: **${witness.witnessResolution.resolved}/${witness.witnessResolution.total}**`);
+    lines.push(`- Issues: **${witness.witnessResolution.issues.length}**`);
     lines.push('');
   }
   return lines.join('\n');
@@ -168,11 +261,13 @@ const results = [
 ];
 
 const brandScaffold = checkBrandScaffold(root);
+const deliverables = checkDeliverables(root);
+const witnessResolution = checkWitnessResolution(root);
 
 const witness = {
   schema: 'gtcx://ecosystem-os/agency-check/v1',
   updated: nowIso(),
-  ok: results.every((r) => r.ok) && brandScaffold.ok,
+  ok: results.every((r) => r.ok) && brandScaffold.ok && deliverables.ok && witnessResolution.ok,
   catalogs: results.map((r, idx) => ({
     id: ['tools', 'assets', 'resources'][idx],
     path: r.filePath,
@@ -182,6 +277,16 @@ const witness = {
   brandScaffold: {
     ok: brandScaffold.ok,
     issues: brandScaffold.issues,
+  },
+  deliverables: {
+    ok: deliverables.ok,
+    issues: deliverables.issues,
+  },
+  witnessResolution: {
+    ok: witnessResolution.ok,
+    resolved: witnessResolution.resolved,
+    total: witnessResolution.total,
+    issues: witnessResolution.issues,
   },
 };
 

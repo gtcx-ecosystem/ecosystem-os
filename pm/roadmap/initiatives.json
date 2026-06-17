@@ -56,10 +56,10 @@
     {
       "id": "INIT-ECOSYSTEM-AGENCY",
       "title": "Agency module — brand, campaigns, catalogs, governed market expression",
-      "status": "in_progress",
+      "status": "done",
       "ownerBaselineId": "creative-director",
-      "completionPercent": 90,
-      "deployReadinessPercent": 75,
+      "completionPercent": 100,
+      "deployReadinessPercent": 85,
       "evidence": "pm/ci/agency-check-latest.json",
       "epics": [
         {
@@ -67,8 +67,8 @@
           "title": "Agency foundation — contract, registries, check gates",
           "dimensionId": "compliance",
           "targetScore100": 100,
-          "currentScore100": 90,
-          "completionPercent": 90,
+          "currentScore100": 100,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-AGY-CATALOGS",
@@ -95,8 +95,8 @@
           "title": "Campaign packs + brand system + templates",
           "dimensionId": "craft",
           "targetScore100": 90,
-          "currentScore100": 85,
-          "completionPercent": 85,
+          "currentScore100": 100,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-AGY-GR-T2-PACK",

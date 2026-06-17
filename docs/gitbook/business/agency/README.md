@@ -33,6 +33,6 @@ See:
 - [`quality-bar.md`](./quality-bar.md)
 - `pm/agency/brand/tokens.json` — design tokens
 - `pm/agency/templates/` — one-pager + slide scaffolds
-- `pm/agency/catalogs/` (tools + stock + resources registries)
+- `pm/agency/catalogs/` — tools, stock sources, resources, deliverables registries
 - `pm/agency/packs/gr-t2/` (GR‑T2 campaign pack spec)
 

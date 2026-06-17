@@ -1,6 +1,6 @@
 # Agency check
 
-- Updated: `2026-06-17T15:00:39.153Z`
+- Updated: `2026-06-17T15:18:13.499Z`
 - OK: **true**
 
 ## tools
@@ -24,5 +24,16 @@
 ## brandScaffold
 
 - OK: **true**
+- Issues: **0**
+
+## deliverables
+
+- OK: **true**
+- Issues: **0**
+
+## witnessResolution
+
+- OK: **true**
+- Resolved: **8/8**
 - Issues: **0**
 

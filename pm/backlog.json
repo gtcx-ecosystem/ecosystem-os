@@ -248,6 +248,62 @@
       ]
     },
     {
+      "id": "ECO-AGY-008",
+      "title": "GR-T2 deliverables catalog + filled one-pager, deck, demo script",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "pm/agency/catalogs/deliverables.json + gr-t2/deliverables/* draft assets",
+      "owner": "ecosystem-os",
+      "points": 5,
+      "priority": "P1",
+      "milestone": "ECO-AGY-001",
+      "prdRef": "prd-agency-module",
+      "initiative": "INIT-ECOSYSTEM-AGENCY",
+      "epic": "EPIC-AGY-CAMPAIGNS",
+      "feature": "FEAT-AGY-GR-T2-PACK",
+      "acceptance": [
+        "pm/agency/catalogs/deliverables.json lists GR-T2 assets",
+        "pm/agency/packs/gr-t2/deliverables/grt2-one-pager.md exists with witness-linked claims"
+      ]
+    },
+    {
+      "id": "ECO-AGY-009",
+      "title": "Fleet witness resolution — agency:check validates claim paths on disk",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "witnessResolution 8/8 resolved; claim-witness-map paths corrected to fleet SoR",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-AGY-001",
+      "prdRef": "prd-agency-module",
+      "initiative": "INIT-ECOSYSTEM-AGENCY",
+      "epic": "EPIC-AGY-FOUNDATION",
+      "feature": "FEAT-AGY-POLICY",
+      "acceptance": [
+        "agency:check witnessResolution.ok true",
+        "All claim witnesses resolve under GTCX_ECOSYSTEM_ROOT"
+      ]
+    },
+    {
+      "id": "ECO-AGY-010",
+      "title": "Seal Agency milestone ECO-AGY-001 — foundation shippable",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "agency:score shippable true; INIT-ECOSYSTEM-AGENCY sealed at 100%",
+      "owner": "ecosystem-os",
+      "points": 2,
+      "priority": "P0",
+      "milestone": "ECO-AGY-001",
+      "prdRef": "prd-agency-module",
+      "initiative": "INIT-ECOSYSTEM-AGENCY",
+      "epic": "EPIC-AGY-FOUNDATION",
+      "acceptance": [
+        "pnpm agency:score shippable true",
+        "pm/roadmap/initiatives.json INIT-ECOSYSTEM-AGENCY status done"
+      ]
+    },
+    {
       "id": "ECO-VEN-001",
       "title": "Venture module contract + GitBook pack (mirror Agency pattern)",
       "status": "in_progress",

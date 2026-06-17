@@ -89,6 +89,35 @@ function scoreWorkflow(root) {
   return clamp(Math.round((hits / stages.length) * 100), 0, 100);
 }
 
+function scoreWitnessResolution(root) {
+  const mapPath = join(root, 'pm/agency/packs/gr-t2/claim-witness-map.json');
+  if (!existsSync(mapPath)) return { score: 40, resolved: 0, total: 0 };
+  const map = readJson(mapPath);
+  const ecoRoot = process.env.GTCX_ECOSYSTEM_ROOT || join(root, '..');
+  const claims = map.claims ?? [];
+  let total = 0;
+  let resolved = 0;
+  for (const claim of claims) {
+    for (const w of claim.witnesses ?? []) {
+      total += 1;
+      const full = join(ecoRoot, w.repo, w.path);
+      if (!existsSync(full)) continue;
+      if (w.field) {
+        try {
+          const data = readJson(full);
+          const val = w.field.split('.').reduce((o, k) => o?.[k], data);
+          if (val === undefined || val === null || val === '') continue;
+        } catch {
+          continue;
+        }
+      }
+      resolved += 1;
+    }
+  }
+  const ratio = total ? resolved / total : 0;
+  return { score: clamp(Math.round(ratio * 100), 0, 100), resolved, total };
+}
+
 const root = process.cwd();
 const write = process.argv.includes('--write');
 
@@ -113,8 +142,9 @@ const technicalExcellence = Math.round((technicalTools.score + technicalAssets.s
 
 const craft = scoreBrandCraft(root);
 const claimWitness = scoreClaimWitness(root);
+const witnessResolution = scoreWitnessResolution(root);
 const workflowScore = scoreWorkflow(root);
-const trustAndSafety = Math.round(claimWitness.score * 0.7 + workflowScore * 0.3);
+const trustAndSafety = Math.round(claimWitness.score * 0.5 + witnessResolution.score * 0.3 + workflowScore * 0.2);
 const worldClass = Math.round((craft + claimWitness.score) / 2);
 const creativityInnovation = Math.round((craft + worldClass) / 2);
 const commercialValue = claimWitness.score >= 85 ? 75 : 55;
@@ -185,7 +215,7 @@ const witness = {
     compliance: { tools: complianceTools, assets: complianceAssets, resources: complianceResources },
     technicalExcellence: { tools: technicalTools, assets: technicalAssets, resources: technicalResources },
     craft: { brandScaffold: craft },
-    trustAndSafety: { claimWitness, workflow: workflowScore },
+    trustAndSafety: { claimWitness, witnessResolution, workflow: workflowScore },
     note:
       'Scoring: Compliance/Technical from catalogs; Craft from brand scaffold; Trust from claim→witness map + workflow gates.',
   },
