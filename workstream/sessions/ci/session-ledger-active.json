@@ -1,0 +1,8 @@
+{
+  "schema": "gtcx://baseline-os/session-ledger-active/v1",
+  "at": "2026-06-17T08:49:45.545Z",
+  "repo": "ecosystem-os",
+  "sessionId": "7a563195-f737-49f1-8577-b1ccd37d22c5",
+  "ledgerPath": "workstream/sessions/ledger/7a563195-f737-49f1-8577-b1ccd37d22c5.json",
+  "protocol": "51-session-forensic-synthesis"
+}

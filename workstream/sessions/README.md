@@ -1,0 +1,15 @@
+---
+title: 'workstream/sessions'
+status: current
+date: 2026-06-17
+owner: ecosystem-os
+document_type: roadmap
+tier: operating
+tags: ['documentation', 'agile', 'roadmap']
+review_cycle: on-change
+---
+
+
+# sessions
+
+See [`../README.md`](../README.md).
