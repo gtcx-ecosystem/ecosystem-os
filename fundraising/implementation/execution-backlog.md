@@ -7,11 +7,24 @@ document_type: backlog
 tier: tactical
 tags: ['fundraising', 'backlog', 'implementation', 'clickup']
 review_cycle: weekly
+pmInitiative: INIT-ECOSYSTEM-VENTURE
+pmStories:
+  - ECO-VEN-004
+  - ECO-VEN-FR-001
+  - ECO-VEN-FR-002
+  - ECO-VEN-FR-003
+  - ECO-VEN-FR-004
+  - ECO-VEN-FR-005
+  - ECO-VEN-FR-006
+  - ECO-VEN-FR-007
+  - ECO-VEN-FR-008
 ---
 
 # Fundraising Engine Execution Backlog
 
-## Epic 1: Operating Foundation
+> **PM trace:** `pm/backlog/venture-backlog.json` · parent story `ECO-VEN-004` · product handoff `ECO-VEN-005` (venture-os)
+
+## Epic 1: Operating Foundation (`ECO-VEN-FR-001`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -22,7 +35,7 @@ review_cycle: weekly
 | Load task templates | CRM ClickUp Agent | Opportunity, outreach, application, finance, collateral templates | P0 |
 | Publish authority matrix in ClickUp | Chief of Staff Agent | Approval gates visible in workflow | P0 |
 
-## Epic 2: Source Intelligence
+## Epic 2: Source Intelligence (`ECO-VEN-FR-002`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -33,7 +46,7 @@ review_cycle: weekly
 | Expand commodity source coverage | Revenue Buyer Desk Agent | Buyer/refiner/trader/vault/watchlist | P1 |
 | Build events calendar | Source Intelligence Agent | Africa/Global South event tracker | P1 |
 
-## Epic 3: Inbox And Calendar Operations
+## Epic 3: Inbox And Calendar Operations (`ECO-VEN-FR-003`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -45,7 +58,7 @@ review_cycle: weekly
 | Implement n8n Gmail to ClickUp workflow | CRM ClickUp Agent | Email-created ClickUp tasks | P1 |
 | Implement n8n Calendar to ClickUp workflow | CRM ClickUp Agent | Meeting updates in pipeline | P1 |
 
-## Epic 4: Pipeline And Qualification
+## Epic 4: Pipeline And Qualification (`ECO-VEN-FR-004`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -55,7 +68,7 @@ review_cycle: weekly
 | Run first daily triage | Chief of Staff Agent | Triage notes and owner assignments | P0 |
 | Publish weekly pipeline report | Chief of Staff Agent | KPI report | P1 |
 
-## Epic 5: Outreach And Relationship Development
+## Epic 5: Outreach And Relationship Development (`ECO-VEN-FR-005`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -65,7 +78,7 @@ review_cycle: weekly
 | Build warm-intro tracker | Investor Relations Agent | Relationship path field/view | P1 |
 | Create outreach approval queue | Chief of Staff Agent | Review/approval ClickUp view | P0 |
 
-## Epic 6: Collateral And Applications
+## Epic 6: Collateral And Applications (`ECO-VEN-FR-006`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -75,7 +88,7 @@ review_cycle: weekly
 | Draft Africa/Global South master concept note | Capital Collateral Design Agent | Reusable concept note | P1 |
 | Build audience-specific one-pagers | Capital Collateral Design Agent | Investor, DFI, sovereign, buyer, accelerator versions | P1 |
 
-## Epic 7: Finance And Deal Economics
+## Epic 7: Finance And Deal Economics (`ECO-VEN-FR-007`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |
@@ -84,7 +97,7 @@ review_cycle: weekly
 | Build pilot economics template | Finance Deal Economics Agent | Paid pilot and implementation pricing model | P1 |
 | Build runway dashboard | Finance Deal Economics Agent | Funding need and timing view | P1 |
 
-## Epic 8: Automation And App Build
+## Epic 8: Automation And App Build (`ECO-VEN-FR-008`)
 
 | Task | Owner | Output | Priority |
 | ---- | ----- | ------ | -------- |

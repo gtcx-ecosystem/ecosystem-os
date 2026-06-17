@@ -36,10 +36,75 @@
     {
       "id": "ECO-VEN-004",
       "title": "Fundraising engine backlog sync — fundraising/ → pm stories + owners",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
       "points": 5,
       "priority": "P1",
       "portfolioRow": "Venture"
+    },
+    {
+      "id": "ECO-VEN-FR-001",
+      "title": "Fundraising Epic 1 — Operating Foundation",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-002",
+      "title": "Fundraising Epic 2 — Source Intelligence",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-003",
+      "title": "Fundraising Epic 3 — Inbox And Calendar",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-004",
+      "title": "Fundraising Epic 4 — Pipeline And Qualification",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-005",
+      "title": "Fundraising Epic 5 — Outreach And Relationships",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-006",
+      "title": "Fundraising Epic 6 — Collateral And Applications",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-007",
+      "title": "Fundraising Epic 7 — Finance And Deal Economics",
+      "status": "open",
+      "points": 3,
+      "priority": "P0",
+      "parent": "ECO-VEN-004"
+    },
+    {
+      "id": "ECO-VEN-FR-008",
+      "title": "Fundraising Epic 8 — Automation And App Build",
+      "status": "open",
+      "points": 5,
+      "priority": "P1",
+      "parent": "ECO-VEN-004"
     },
     {
       "id": "ECO-VEN-005",
@@ -53,10 +118,11 @@
     {
       "id": "ECO-VEN-006",
       "title": "Innovation register — strategic bets linked to fleet repos",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
       "points": 5,
       "priority": "P2",
       "portfolioRow": "Venture"
-    }
+    },
   ]
 }

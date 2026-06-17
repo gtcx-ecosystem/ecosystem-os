@@ -362,7 +362,9 @@
     {
       "id": "ECO-VEN-004",
       "title": "Fundraising engine backlog sync — fundraising/ → pm stories + owners",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "execution-backlog.md epics traced ECO-VEN-FR-001..008; venture-backlog.json child stories",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P1",
@@ -397,7 +399,9 @@
     {
       "id": "ECO-VEN-006",
       "title": "Innovation register — strategic bets linked to fleet repos",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "docs/gitbook/business/venture/innovation-register.md — 7 bets with owner repos",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P2",

@@ -36,5 +36,6 @@ The **Venture OS product** — fundraising, growth, visibility, investor relatio
 
 See:
 - [`module-contract.md`](./module-contract.md)
+- [`innovation-register.md`](./innovation-register.md)
 - [`../portfolio/product-portfolio.md`](../portfolio/product-portfolio.md)
 - `pm/backlog/venture-backlog.json`
