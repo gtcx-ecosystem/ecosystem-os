@@ -124,6 +124,12 @@ function checkDeliverables(root) {
     if (!existsSync(deliverablePath)) {
       issues.push({ severity: 'error', code: 'missing-file', message: `deliverables: ${it.id} path missing ${it.path}` });
     }
+    if (it.exportHtml) {
+      const exportPath = join(root, it.exportHtml);
+      if (!existsSync(exportPath)) {
+        issues.push({ severity: 'error', code: 'missing-export', message: `deliverables: ${it.id} export missing ${it.exportHtml}` });
+      }
+    }
   }
   return { ok: issues.length === 0, issues, filePath };
 }
