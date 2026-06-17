@@ -31,5 +31,5 @@ See:
 - [`module-contract.md`](./module-contract.md)
 - [`quality-bar.md`](./quality-bar.md)
 - `pm/agency/catalogs/` (tools + stock + resources registries)
-- `packs/gr-t2/` (GR‑T2 campaign pack spec)
+- `pm/agency/packs/gr-t2/` (GR‑T2 campaign pack spec)
 

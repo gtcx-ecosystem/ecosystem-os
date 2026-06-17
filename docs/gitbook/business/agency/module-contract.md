@@ -1,6 +1,6 @@
 ---
 title: "Agency module contract"
-status: draft
+status: current
 date: 2026-06-17
 owner: ecosystem-os
 document_type: strategy
