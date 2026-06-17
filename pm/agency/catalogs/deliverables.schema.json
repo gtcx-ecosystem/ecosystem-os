@@ -22,6 +22,7 @@
           "status": { "type": "string", "enum": ["draft", "review", "current", "deprecated"] },
           "license": { "type": "string" },
           "claimWitnessMap": { "type": "string" },
+          "exportHtml": { "type": "string" },
           "notes": { "type": "string" }
         },
         "additionalProperties": false

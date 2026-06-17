@@ -31,7 +31,7 @@ review_cycle: on-change
 | grt2-hero-deck | slide-deck | `deliverables.grt2-integrator-hero-deck` | draft |
 | grt2-one-pager | one-pager | `deliverables.grt2-sovereign-one-pager` | draft |
 | grt2-demo-script | script | `deliverables.grt2-demo-narrative` | draft |
-| grt2-social-kit | social | — | planned |
+| grt2-social-kit | social | `deliverables.grt2-social-kit` | draft |
 | grt2-claim-sheet | internal | `deliverables.grt2-claim-witness-sheet` | current |
 
 ## Claim discipline

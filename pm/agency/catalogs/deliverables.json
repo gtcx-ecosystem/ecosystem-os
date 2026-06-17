@@ -16,6 +16,7 @@
       "campaignId": "gr-t2-integrator-pilot",
       "type": "one-pager",
       "path": "pm/agency/packs/gr-t2/deliverables/grt2-one-pager.md",
+      "exportHtml": "pm/agency/packs/gr-t2/exports/grt2-one-pager.html",
       "status": "draft",
       "license": "Proprietary (GTCX internal)",
       "claimWitnessMap": "pm/agency/packs/gr-t2/claim-witness-map.json"
@@ -25,6 +26,15 @@
       "campaignId": "gr-t2-integrator-pilot",
       "type": "script",
       "path": "pm/agency/packs/gr-t2/deliverables/grt2-demo-script.md",
+      "status": "draft",
+      "license": "Proprietary (GTCX internal)",
+      "claimWitnessMap": "pm/agency/packs/gr-t2/claim-witness-map.json"
+    },
+    {
+      "id": "grt2-social-kit",
+      "campaignId": "gr-t2-integrator-pilot",
+      "type": "social-kit",
+      "path": "pm/agency/packs/gr-t2/deliverables/grt2-social-kit.md",
       "status": "draft",
       "license": "Proprietary (GTCX internal)",
       "claimWitnessMap": "pm/agency/packs/gr-t2/claim-witness-map.json"
