@@ -7,7 +7,7 @@
     {
       "id": "ECO-AGY-001",
       "title": "Agency module contract + quality bar — promote draft to current",
-      "status": "in_progress",
+      "status": "done",
       "points": 2,
       "priority": "P1"
     },
@@ -21,21 +21,21 @@
     {
       "id": "ECO-AGY-003",
       "title": "agency:check + agency:score gates wired with CI witnesses",
-      "status": "in_progress",
+      "status": "done",
       "points": 3,
       "priority": "P0"
     },
     {
       "id": "ECO-AGY-004",
       "title": "License governance policy — attribution, restrictions, forbidden licenses",
-      "status": "open",
+      "status": "done",
       "points": 3,
       "priority": "P0"
     },
     {
       "id": "ECO-AGY-005",
       "title": "GR-T2 campaign pack — narrative arc, asset list, claim→witness map",
-      "status": "open",
+      "status": "done",
       "points": 8,
       "priority": "P1"
     },

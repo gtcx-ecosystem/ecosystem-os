@@ -11,10 +11,11 @@
     "Venture module contract + GitBook pack scaffolded"
   ],
   "tasks": [
-    { "id": "ECO-DOCS-003", "owner": "ecosystem-os", "status": "in_progress" },
+    { "id": "ECO-AGY-001", "owner": "ecosystem-os", "status": "done" },
     { "id": "ECO-AGY-002", "owner": "ecosystem-os", "status": "done" },
-    { "id": "ECO-AGY-003", "owner": "ecosystem-os", "status": "in_progress" },
-    { "id": "ECO-VEN-001", "owner": "ecosystem-os", "status": "in_progress" }
+    { "id": "ECO-AGY-003", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-004", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-005", "owner": "ecosystem-os", "status": "done" },
   ],
   "uat": {
     "matrixRef": "pm/roadmap/uat/",

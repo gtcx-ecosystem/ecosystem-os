@@ -58,8 +58,8 @@
       "title": "Agency module — brand, campaigns, catalogs, governed market expression",
       "status": "in_progress",
       "ownerBaselineId": "creative-director",
-      "completionPercent": 35,
-      "deployReadinessPercent": 30,
+      "completionPercent": 65,
+      "deployReadinessPercent": 50,
       "evidence": "pm/ci/agency-check-latest.json",
       "epics": [
         {
@@ -67,8 +67,8 @@
           "title": "Agency foundation — contract, registries, check gates",
           "dimensionId": "compliance",
           "targetScore100": 100,
-          "currentScore100": 75,
-          "completionPercent": 60,
+          "currentScore100": 90,
+          "completionPercent": 90,
           "features": [
             {
               "id": "FEAT-AGY-CATALOGS",
@@ -79,14 +79,14 @@
             {
               "id": "FEAT-AGY-CHECKS",
               "title": "agency:check + agency:score witnesses",
-              "status": "in_progress",
-              "completionPercent": 80
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-AGY-POLICY",
               "title": "License governance + claim→witness policy",
-              "status": "open",
-              "completionPercent": 0
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         },
@@ -95,14 +95,14 @@
           "title": "Campaign packs + brand system + templates",
           "dimensionId": "craft",
           "targetScore100": 90,
-          "currentScore100": 15,
-          "completionPercent": 10,
+          "currentScore100": 55,
+          "completionPercent": 45,
           "features": [
             {
               "id": "FEAT-AGY-GR-T2-PACK",
               "title": "GR-T2 campaign pack spec + asset list",
-              "status": "open",
-              "completionPercent": 0
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-AGY-BRAND-SYSTEM",

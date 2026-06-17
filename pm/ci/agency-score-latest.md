@@ -1,6 +1,6 @@
 # Agency score
 
-- Updated: `2026-06-17T09:50:39.071Z`
+- Updated: `2026-06-17T14:00:02.008Z`
 - Shippable: **false**
 - Composite: **57/100**
 
