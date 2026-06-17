@@ -1,14 +1,14 @@
 ---
-title: 'strategy — README'
-status: current
-date: 2026-06-15
+title: 'docs/strategy — pointer'
+status: pointer
+date: 2026-06-17
 owner: ecosystem-os
-document_type: overview
-tier: operating
-tags: ['documentation']
+document_type: pointer
 review_cycle: on-change
 ---
 
-# strategy
+# docs/strategy — relocated
 
-> See [`FOLDER-SPEC.md`](./FOLDER-SPEC.md) when present.
+**Canonical path:** [`docs/business/opportunity/`](../docs/business/opportunity/)
+
+P0 legacy scrub — do not add new files here.
