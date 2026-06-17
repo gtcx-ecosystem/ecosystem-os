@@ -306,7 +306,9 @@
     {
       "id": "ECO-VEN-001",
       "title": "Venture module contract + GitBook pack (mirror Agency pattern)",
-      "status": "in_progress",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "docs/gitbook/business/venture/{README,module-contract,FOLDER-SPEC}.md + witness pointers",
       "owner": "ecosystem-os",
       "points": 3,
       "priority": "P0",
@@ -323,7 +325,9 @@
     {
       "id": "ECO-VEN-002",
       "title": "Portfolio thesis backlog — product-portfolio ↔ operating modules mapped",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "product-portfolio.md#module--backlog-map + venture-backlog.json portfolioRow fields",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P1",
@@ -406,7 +410,9 @@
     {
       "id": "ECO-SHIP-001",
       "title": "Quarter GTM witness — product portfolio narrative current",
-      "status": "in_progress",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "docs/business/portfolio/product-portfolio.md witness pointer + gitbook canonical updated 2026-06-17",
       "owner": "ecosystem-os",
       "points": 3,
       "priority": "P0",
@@ -423,7 +429,9 @@
     {
       "id": "ECO-SHIP-002",
       "title": "Doctrine narrative witness — ecosystem OS architecture story",
-      "status": "in_progress",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "docs/foundation/narrative/ecosystem-os-doctrine.md pointer + substrate loop section",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P1",

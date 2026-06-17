@@ -4,34 +4,41 @@
   "initiative": "INIT-ECOSYSTEM-VENTURE",
   "updated": "2026-06-17",
   "productRepo": "venture-os",
+  "portfolioMap": "docs/gitbook/business/portfolio/product-portfolio.md#module--backlog-map",
   "stories": [
     {
       "id": "ECO-VEN-001",
       "title": "Venture module contract + GitBook pack (mirror Agency pattern)",
-      "status": "in_progress",
+      "status": "done",
+      "completedAt": "2026-06-17",
       "points": 3,
-      "priority": "P0"
+      "priority": "P0",
+      "portfolioRow": "Venture"
     },
     {
       "id": "ECO-VEN-002",
       "title": "Portfolio thesis backlog — product-portfolio ↔ operating modules mapped",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
       "points": 5,
-      "priority": "P1"
+      "priority": "P1",
+      "portfolioRow": "all operating modules"
     },
     {
       "id": "ECO-VEN-003",
       "title": "Fleet venture profiles — internal pilot client briefs per product repo",
       "status": "open",
       "points": 13,
-      "priority": "P1"
+      "priority": "P1",
+      "portfolioRow": "Surface + build-lane"
     },
     {
       "id": "ECO-VEN-004",
       "title": "Fundraising engine backlog sync — fundraising/ → pm stories + owners",
       "status": "open",
       "points": 5,
-      "priority": "P1"
+      "priority": "P1",
+      "portfolioRow": "Venture"
     },
     {
       "id": "ECO-VEN-005",
@@ -39,14 +46,16 @@
       "status": "open",
       "points": 8,
       "priority": "P1",
-      "ownerHandoff": "venture-os"
+      "ownerHandoff": "venture-os",
+      "portfolioRow": "Venture product"
     },
     {
       "id": "ECO-VEN-006",
       "title": "Innovation register — strategic bets linked to fleet repos",
       "status": "open",
       "points": 5,
-      "priority": "P2"
+      "priority": "P2",
+      "portfolioRow": "Venture"
     }
   ]
 }

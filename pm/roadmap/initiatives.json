@@ -119,8 +119,8 @@
       "title": "Venture module — portfolio thesis, fleet venture profiles, fundraising coordination",
       "status": "in_progress",
       "ownerBaselineId": "venture-strategist",
-      "completionPercent": 20,
-      "deployReadinessPercent": 15,
+      "completionPercent": 45,
+      "deployReadinessPercent": 35,
       "evidence": "docs/gitbook/business/portfolio/product-portfolio.md",
       "productRepo": "venture-os",
       "epics": [
@@ -129,14 +129,14 @@
           "title": "Venture module contract + portfolio SoR",
           "dimensionId": "commercialValue",
           "targetScore100": 90,
-          "currentScore100": 40,
-          "completionPercent": 30,
+          "currentScore100": 70,
+          "completionPercent": 55,
           "features": [
             {
               "id": "FEAT-VEN-CONTRACT",
               "title": "Venture module contract + GitBook pack",
-              "status": "in_progress",
-              "completionPercent": 50
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-VEN-FLEET-PROFILES",
@@ -175,8 +175,8 @@
       "title": "ECO-OS-SHIP-001 — quarter pillar narrative + fleet GTM proof",
       "status": "in_progress",
       "ownerBaselineId": "product-lead",
-      "completionPercent": 45,
-      "deployReadinessPercent": 40,
+      "completionPercent": 65,
+      "deployReadinessPercent": 55,
       "evidence": "pm/spec/product-goals.json",
       "epics": [
         {
@@ -184,20 +184,20 @@
           "title": "GTM + portfolio narrative witnesses",
           "dimensionId": "commercialValue",
           "targetScore100": 100,
-          "currentScore100": 55,
-          "completionPercent": 50,
+          "currentScore100": 85,
+          "completionPercent": 85,
           "features": [
             {
               "id": "FEAT-SHIP-PORTFOLIO",
               "title": "Product portfolio + business thesis current",
-              "status": "in_progress",
-              "completionPercent": 70
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-SHIP-DOCTRINE",
               "title": "Ecosystem OS doctrine narrative witness",
-              "status": "in_progress",
-              "completionPercent": 60
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         }

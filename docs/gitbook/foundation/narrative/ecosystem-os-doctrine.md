@@ -1,7 +1,7 @@
 ---
 title: 'Ecosystem OS doctrine'
 status: current
-date: 2026-06-16
+date: 2026-06-17
 owner: ecosystem-os
 document_type: overview
 tier: critical
@@ -39,6 +39,19 @@ AI-native companies need more than copilots. They need an operating system where
 7. Operate infrastructure, services, and cross-functional Ops.
 8. Verify quality, compliance, risk, and evidence.
 9. Publish the official surface through Canon OS.
+
+## Substrate loop
+
+Kernel, Graph, Ledger, and Surface form the governed substrate beneath every module:
+
+| Layer | Role in loop |
+| ----- | ------------ |
+| **Kernel** | Authority, policy, and module contracts gate every action |
+| **Graph** | Company state — entities, relationships, signals feed Know and Learn |
+| **Ledger** | Witnesses and provenance prove Verify and replay |
+| **Surface** | Operator command center exposes Coordinate and Ship |
+
+Full substrate spec: [`product-architecture.md`](./product-architecture.md#substrate).
 
 ## Operating loop
 
