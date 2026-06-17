@@ -1,0 +1,1171 @@
+{
+  "startedAt": "2026-06-17T08:49:44.706Z",
+  "repo": "ecosystem-os",
+  "ssot": "baseline-os/platform/scripts/ecosystem/repo-session-core.mjs",
+  "agentTrace": {
+    "id": "gtcx-agent-7a563195-f737-49f1-8577-b1ccd37d22c5",
+    "header": "x-gtcx-agent-trace-id",
+    "otelAttribute": "gtcx.agent_trace_id",
+    "traceparent": "00-6414e721292200329b0125969fe95531-07b46a4cf45fa635-01"
+  },
+  "nextWork": {
+    "ok": true,
+    "backlogClear": true,
+    "activePhase": "ER5",
+    "frame": "development",
+    "persona": {
+      "institutional": "platform-architect",
+      "mcp": "agile",
+      "frame": "development",
+      "docUrl": "https://gtcx-ecosystem.gitbook.io/gtcx-ecosystem/governance/institutional/personas/platform-architect",
+      "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+      "bridgeUrl": "https://github.com/gtcx-ecosystem/gtcx-protocols/blob/main/docs/operations/coordination/ecosystem-persona-bridge-2026-06.md",
+      "instruction": "Phase 4: read persona.docPath first (local canon-os); docUrl is human link-only — private repo blocks anonymous fetch.",
+      "voice": {
+        "institutional": "platform-architect",
+        "frame": "development",
+        "role": "Principal Platform Architect",
+        "tone": "Systems-oriented, reliability-focused, cost-conscious",
+        "voice": "Architecture → trade-offs → decision → implementation plan → probe",
+        "embodies": "Platform lead accountable for fleet reliability",
+        "formality": "professional",
+        "forbidden": [
+          "your move",
+          "your turn",
+          "tell me what you think",
+          "tell me which",
+          "i'll walk you through",
+          "walk you through screen by screen",
+          "hop in",
+          "give it a spin",
+          "when you're ready",
+          "feel free to",
+          "let me know what you think",
+          "ping me when",
+          "shoot me a",
+          "happy to help",
+          "no worries",
+          "awesome sauce",
+          "game-changer casual",
+          "buddy",
+          "hey there",
+          "super excited",
+          "if you want",
+          "if you'd like",
+          "want me to implement",
+          "should i implement",
+          "can implement",
+          "in the next session",
+          "happy to implement",
+          "would you like me to",
+          "we could implement",
+          "say commit",
+          "say push if you want",
+          "just run it locally"
+        ],
+        "operatorGuidance": {
+          "forbidden": [
+            "your move:",
+            "tell me when you've",
+            "open this and tell me"
+          ],
+          "required": [
+            "Operator entry:",
+            "Verification path:",
+            "execute probes in-session (P27)",
+            "report command + exit code"
+          ],
+          "demoWalkthrough": {
+            "bad": "Your move: open http://localhost:3000/login, sign in, and tell me what you think.",
+            "good": "**Operator entry:** `http://localhost:3000/login` — credentials `demo@kt.com` / `demo123`. Primary path: `/ecosystem` → `/index54`. I will verify each surface in-session and report probe results before the next layer."
+          }
+        },
+        "sessionReminder": "Embody **Principal Platform Architect** — Platform lead accountable for fleet reliability.\nTone: Systems-oriented, reliability-focused, cost-conscious\nVoice pattern: Architecture → trade-offs → decision → implementation plan → probe\nForbidden: casual delegation (\"Your move\", \"tell me what you think\", engagement bait).\nDemo guidance example: **Operator entry:** `http://localhost:3000/login` — credentials `demo@kt.com` / `demo123`. Primary path: `/ecosystem` → `/index54`. I will verify each surface in-session and report probe results before the next layer."
+      },
+      "confidence": 0.98,
+      "team": null,
+      "manifestId": null,
+      "manifestPath": null,
+      "layers": {
+        "frame": {
+          "active": [
+            "development"
+          ],
+          "tags": [
+            "['documentation', 'agents', 'provisioning']",
+            "[\"documentation\", \"index\"]",
+            "['documentation', 'architecture']",
+            "['documentation', 'cli']",
+            "['documentation']",
+            "['protocol', 'documentation']",
+            "['architecture', 'documentation']",
+            "[\"documentation\", \"architecture\"]",
+            "[[\"documentation\", \"architecture\"]]",
+            "['documentation', 'product']",
+            "['documentation', 'specs']",
+            "['protocol', 'documentation', 'governance']",
+            "[[\"documentation\", \"specs\"]]",
+            "[gtm, apex, models, routing, capability-compounding]",
+            "[gtm, autonomy, trust, sis, dfi, africa, onboarding]",
+            "[gtm, experience, interaction, onboarding, africa]",
+            "[gtm, frame, context-engineering, onboarding, africa]",
+            "[gtm, govern, sis, dfi, africa, onboarding]",
+            "[\"documentation\", \"specs\"]",
+            "[[\"gtm\", \"deployment\", \"workshop\"]]",
+            "[gtm, lang, onboarding, developer-docs, business-case]",
+            "[gtm, persona, synthesis, onboarding, africa]",
+            "[gtm, business-case, dfi, bank, operator, trade-finance, africa]",
+            "[gtm, studio, production, sep, onboarding, africa]",
+            "[[\"feature\", \"desktop\", \"ux\", \"confidence\", \"s2\"]]",
+            "[[\"feature\", \"baseline\", \"onboarding\", \"s2\"]]",
+            "[[\"feature\", \"pilot\", \"reference-deployment\", \"s2\"]]",
+            "[[\"feature\", \"studio\", \"evidence\", \"review\"]]",
+            "[[\"feature\", \"offline\", \"ussd\", \"resilience\", \"field\"]]",
+            "[[\"feature\", \"vault\", \"credentials\", \"security\"]]",
+            "[[\"feature\", \"status\", \"release\", \"trust\"]]",
+            "[[\"feature\", \"npm\", \"mcp\", \"install\", \"developer-experience\"]]",
+            "[[\"product\", \"features\", \"llm-routing\", \"cost-router\", \"tokens\"]]",
+            "[\"product\", \"features\", \"prd\", \"roadmap\"]",
+            "[[\"product\", \"features\", \"layers\", \"surfaces\", \"roadmap\"]]",
+            "[[\"product\", \"prd\", \"requirements\", \"roadmap\"]]",
+            "[documentation]",
+            "[[\"architecture\", \"agentic-maturity\", \"models\", \"apex\", \"strategy\"]]",
+            "[[\"apex\", \"research\", \"evaluation\", \"routing\", \"agentic-maturity\"]]",
+            "[[strategy, investment, engineering, milestones, gaps]]"
+          ],
+          "confidence": 0.75
+        },
+        "lang": {
+          "expressions": [
+            "docs:foundation:check",
+            "ops:check",
+            "agent:bootstrap:check",
+            "ecosystem:migration:score",
+            "test",
+            "build",
+            "Lang",
+            "produce",
+            "Platform",
+            "when",
+            "document_type:",
+            "init",
+            "bench",
+            "Protocol",
+            "Governance",
+            "run",
+            "warm",
+            "is",
+            "layer:critical-mass:report",
+            "audit:govern-pack:check",
+            "preflight",
+            "The",
+            "audit",
+            "to",
+            "verify:release",
+            "apex",
+            "audit:apex-pack:check",
+            "cost-route",
+            "exec",
+            "Autonomy:",
+            "truth",
+            "trust",
+            "autonomy:plan",
+            "experience",
+            "audit:experience-pack:check",
+            "config",
+            "experience:post-llm-gate",
+            "test:experience-ambient-smoke",
+            "test:experience-post-llm-gate",
+            "variables",
+            "in",
+            "frame",
+            "--filter",
+            "audit:frame-pack:check",
+            "compounds",
+            "govern:migrate",
+            "govern:profile",
+            "session",
+            "docs:api",
+            "kill-switch",
+            "evidence-export",
+            "configuration",
+            "definition",
+            "captured",
+            "Value",
+            "metrics",
+            "baseline:evidence:pack",
+            "baseline",
+            "lang:promote",
+            "export"
+          ],
+          "commands": [
+            "baseline start",
+            "baseline session:",
+            "Baseline session",
+            "pnpm agent:next-work",
+            "pnpm ops:check",
+            "pnpm agent:start",
+            "baseline doesn",
+            "baseline session",
+            "pnpm session:layers",
+            "baseline session:open-items",
+            "baseline experience",
+            "pnpm session:open-items",
+            "baseline items",
+            "pnpm prepends",
+            "pnpm session:layers:test",
+            "pnpm test:forensic-ai:session"
+          ]
+        },
+        "studio": {
+          "deliverables": [
+            "folder-spec",
+            "docs-integrity-pack",
+            "relocation-report"
+          ],
+          "provenanceRequired": true
+        },
+        "govern": null,
+        "experience": null,
+        "skills": [
+          "doc-standard",
+          "docs-machine-readable",
+          "compliance-audit"
+        ],
+        "knowledgeBases": [],
+        "forensicSource": "forensic-parse"
+      },
+      "spine": null,
+      "tags": [
+        "documentation-program"
+      ],
+      "source": "work-item-manifest",
+      "docUrlKind": "gitbook-stable"
+    },
+    "message": "Program office queue clear — fleet live programmes in owner repos (see fleetLiveProgrammes).",
+    "protocol": "22-agent-work-selection",
+    "agileBacklogSoR": {
+      "backlogSoR": "agile-os/pm/ecosystem-sprint-backlog.json",
+      "backlogHash": "3796302b5d5c6a86",
+      "ceremonySyncAt": "2026-06-17T07:28:03.182Z",
+      "backlogItemCount": 271
+    },
+    "programOffice": {
+      "repo": "bridge-os",
+      "queue": "execution-engine",
+      "queueClear": true,
+      "activePhase": "ER5",
+      "semantics": "bridge-os P22 queue empty for Execution Engine program office — NOT global fleet idle"
+    },
+    "fleetLiveProgrammes": [
+      {
+        "id": "PROG-SECAS-PENTEST",
+        "title": "SECAS — internal clearance sealed; remediation track (vendor report parallel)",
+        "ownerRepo": "fabric-os",
+        "headStoryId": "SECAS-S4-04",
+        "priority": "P0",
+        "status": "in_progress",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-03",
+        "p22Command": "pnpm --dir ../fabric-os agent:next-work --json",
+        "because": "Internal SecOps Class R sealed 2026-06-15; SECAS-S4-04 scaffold; vendor report BG-10-10-REPORT parallel only",
+        "initiative": null
+      },
+      {
+        "id": "PROG-CONTINENTAL-CAPITAL",
+        "title": "Continental capital + digital-rail Wave 0",
+        "ownerRepo": "markets-os",
+        "headStoryId": "AFM-REG-003",
+        "priority": "P0",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-02",
+        "p22Command": "pnpm --dir ../markets-os agent:next-work --json",
+        "because": "Sprint 86 AFM-REG-003; ADR-0007 Class A parallel; Wave 0 owner repos",
+        "initiative": "INIT-AFRICA-CAPITAL-RAIL"
+      },
+      {
+        "id": "PROG-PILOT-INNOVATION-2026",
+        "title": "60-day bank innovation pilot operating kit + golden transaction engine",
+        "ownerRepo": "markets-os",
+        "headStoryId": "PILOT-ENGINE-003",
+        "priority": "P0",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": null,
+        "p22Command": "pnpm --dir ../markets-os agent:next-work --json",
+        "because": "Pilot kit + pnpm pilot:golden-transaction shipped; weekly witness retention next",
+        "initiative": "INIT-PILOT-INNOVATION-2026"
+      },
+      {
+        "id": "PROG-AFM-REGULATORY-INTEL",
+        "title": "African Financial Markets Regulatory Adapter programme 2026",
+        "ownerRepo": "markets-os",
+        "headStoryId": "AFM-PROGRAM-002",
+        "priority": "P0",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": null,
+        "p22Command": "pnpm --dir ../markets-os agent:next-work --json",
+        "because": "AFM pillars shipped S84-91; sandbox playbook + pathway refresh + supervisor export next",
+        "initiative": "INIT-AFM-PROGRAMME-2026"
+      },
+      {
+        "id": "APEX-PROGRAM-001",
+        "title": "APEX Engine Product, Adoption, and Delivery Program",
+        "ownerRepo": "baseline-os",
+        "headStoryId": "APEX-001",
+        "priority": "P0",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-05",
+        "p22Command": "pnpm --dir ../baseline-os agent:next-work --json",
+        "because": "APEX Engine A0 sealed; baseline-os owns normative spec and implementation; bridge-os distributes fleet SoR",
+        "initiative": "INIT-APEX-ENGINE"
+      },
+      {
+        "id": "PROG-OS-LAYERS-STUDIO",
+        "title": "STUDIO-004 / OS layers full stack (Lang·Frame·Persona·Studio)",
+        "ownerRepo": "baseline-os",
+        "headStoryId": "STUDIO-004",
+        "priority": "P1",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-04",
+        "p22Command": "pnpm --dir ../baseline-os agent:next-work --json",
+        "because": "baseline-os owns STUDIO-004/PERSONA-002 implementation",
+        "initiative": null
+      },
+      {
+        "id": "PROG-COMPLIANCE-DEPLOY",
+        "title": "Compliance-os deploy gate (composite 85)",
+        "ownerRepo": "compliance-os",
+        "headStoryId": "DEPLOY-GATE-85",
+        "priority": "P1",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-04",
+        "p22Command": "pnpm --dir ../compliance-os agent:next-work --json",
+        "because": "composite100 85 deploy-ready; owner-repo deploy witnesses",
+        "initiative": null
+      },
+      {
+        "id": "DOC-PROGRAM-001",
+        "title": "World-class documentation program — fleet publish + quality bar",
+        "ownerRepo": "baseline-os",
+        "headStoryId": "DOC-D1-001",
+        "priority": "P1",
+        "status": "active",
+        "inBridgeP22": true,
+        "bridgeWitness": "ER-5-06",
+        "p22Command": "pnpm --dir ../bridge-os agent:next-work --json",
+        "because": "DOC-PROGRAM-001 D0 sealed; bridge-os owns publish pipeline + fleet doc checks; content in owner repos",
+        "initiative": "INIT-DOC-PROGRAM"
+      },
+      {
+        "id": "NITRO-PROGRAM-001",
+        "title": "Nitro AI — Model Profiles and Stackable Kits",
+        "ownerRepo": "baseline-os",
+        "headStoryId": "NITRO-007",
+        "priority": "P1",
+        "status": "active",
+        "inBridgeP22": false,
+        "bridgeWitness": "ER-5-07",
+        "p22Command": "pnpm --dir ../baseline-os agent:next-work --json",
+        "because": "NITRO-PROGRAM-001 N2 sealed; baseline-os owns profiles/kits/stacks; bridge-os fleet SoR + switchRules distribution",
+        "initiative": "INIT-NITRO-PROGRAM-001"
+      },
+      {
+        "id": "PROG-CANON-PUBLISH",
+        "title": "Doc promotion M4 + canon PublishaaS",
+        "ownerRepo": "canon-os",
+        "headStoryId": "INIT-DOC-PROMOTION-M4",
+        "priority": "P2",
+        "status": "mostly_sealed",
+        "inBridgeP22": false,
+        "bridgeWitness": null,
+        "p22Command": "pnpm --dir ../canon-os agent:next-work --json",
+        "because": "Hub doc pack sealed; publish scaffold remains canon-os owner",
+        "initiative": null
+      }
+    ],
+    "recommendedOwnerSession": {
+      "ownerRepo": "fabric-os",
+      "storyId": "SECAS-S4-04",
+      "programmeId": "PROG-SECAS-PENTEST",
+      "title": "SECAS — internal clearance sealed; remediation track (vendor report parallel)",
+      "p22Command": "pnpm --dir ../fabric-os agent:next-work --json",
+      "because": "Internal SecOps Class R sealed 2026-06-15; SECAS-S4-04 scaffold; vendor report BG-10-10-REPORT parallel only",
+      "switchWorkspace": true
+    },
+    "automatableExhausted": false,
+    "agentInstructions": [
+      "Phase 4: adopt persona **platform-architect** (development) — read local `/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md` first (docUrl link-only); adopt voice: Systems-oriented, reliability-focused, cost-conscious",
+      "Include **Active persona** + **Frame** + **Voice** in Proceed Brief (P26).",
+      "Forbidden voice: \"Your move\", \"tell me what you think\", casual walkthrough delegation — use Operator entry + P27 probes.",
+      "bridge-os backlogClear = program office only — see fleetLiveProgrammes + recommendedOwnerSession.",
+      "Fleet owner redirect (not Next work item here): pnpm --dir ../fabric-os agent:next-work --json — switch workspace to fabric-os to implement SECAS-S4-04.",
+      "complete_roadmap: sprint-backlog sealed ≠ stop — execute completionBlocks until roadmapExecutionComplete.",
+      "When nextWorkItem.switchWorkspace: true — implement in owner repo in same session; do not close at ROADMAP-COMPLETE.",
+      "Product team: **GTCX Program Office** — primary persona `protocol-engineer` — Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
+      "Goal orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "Non-engineering (security, legal, docs, audit) → parallel lanes — fabric-os / canon-os / agile-os — never product Next work item.",
+      "Use THIS repo agent:next-work next / nextWorkItem. Vendor assurance implement is fabric-os only.",
+      "Run pnpm agent:next-work (or agent:session-start) before substantive work.",
+      "Emit exactly one Proceed Brief — single Next action from P22 output.",
+      "Then implement in this repo. Do not ask operator to choose between stories or repos.",
+      "Forbidden: \"Your call\", \"Two options\", numbered 1./2. menus, \"switch to X or Y\".",
+      "Human may reply stop, correct:, or a story ID override only.",
+      "If blocked: Blocker Report — not a story menu.",
+      "baseline-os M3 external-pilot ceiling is baseline-os-only — never use as Next work item in sibling repos.",
+      "Forbidden Proceed Brief Next outside baseline-os: \"Hold at external-pilot ceiling\".",
+      "FORBIDDEN: git push in Approval needed when GATE-PUSH passes — report push in Done (Class R).",
+      "Product lead directive: decide and execute — never \"if you want implemented\" / \"next session\" / \"can implement\" closings.",
+      "Forbidden closing: offering optional implementation after Status Update or instead of executing Class R work."
+    ],
+    "progressMarkdown": "## Progress — GTCX Execution Engine\n\n> **57.5% points · 102 program remaining · 0 forward tasks · 16/16 sprints sealed**\n\n| Metric | Value |\n|--------|-------|\n| **Mode** | Complete roadmap (legacy ceremony) (`complete_roadmap` · default `complete_milestones`) |\n| **Forward queue** | **85/97** tasks (87.6%) · **0** initiatives · **0** outstanding |\n| **Sprints sealed** | **16/16** (100%) · weighted **100%** |\n| **Stories (program)** | **154/256** done (60.2%) · **0 partial** + 9 pre-done |\n| **Points (program)** | **972/1691** (57.5%) — 719 pts remain |\n| **Icebox** | **15/15** done (100%) · 0 deferred |\n| **Fleet verify** | 13/16 witness |\n| **Current sprint** | — (0/0 stories) |\n\n### Sprint bar (sealed program)\n✓ Sprint 1 — Unblock session + ops: ████████████████████ 6/6 (100%)\n✓ Sprint 2 — WIP land + v5 rename: ████████████████████ 6/6 (100%)\n✓ Sprint 3 — Layout strict + deploy proof: ████████████████████ 4/4 (100%)\n✓ Sprint 4 — P35 strict fleet compliance: ████████████████████ 3/3 (100%)\n✓ Sprint 5 — Auto-dev harness closure: ████████████████████ 3/3 (100%)\n✓ Sprint 6 — Hubs foundation (baseline-os + bridge-os): ████████████████████ 7/7 (100%)\n✓ Sprint 7 — gtcx-os + MCP/RAG + evidence rails: ████████████████████ 3/3 (100%)\n✓ Sprint 8 — Product master audit wave 1: ████████████████████ 1/1 (100%)\n✓ Sprint 9 — Product master audit wave 2 + ZenHub deps: ████████████████████ 1/1 (100%)\n✓ Sprint 10 — Production + enterprise pilot DoD: ████████████████████ 2/2 (100%)\n✓ EE-S1 — Spec + harness: ████████████████████ 3/3 (100%)\n✓ EE-S2 — ZenHub pull + assurance stub: ████████████████████ 3/3 (100%)\n✓ EE-S3 — Fleet work graph + shipping R1: ████████████████████ 2/2 (100%)\n✓ EE-S4 — Fabric assurance + delegate: ████████████████████ 3/3 (100%)\n✓ EE-S5 — Hub protocols + probe depth: ████████████████████ 2/2 (100%)\n✓ ER-4 — Roadmap successor wave: ████████████████████ 4/4 (100%)\n\n**Next work item:** story `COMPOSITE-RESTORE-100` — Restore goal-orientation composite ≥100 (STUDIO-004 + EXPERIENCE-PACK-001 runtime) (baseline-os)\n\n**Open:** INIT-FABLE-REPORTS-LANE-REFRESH, XR-FABRIC-SESSION-OPEN-004, T46, BL-TRANSCRIPT-PORT, BL-DOC-ARCH-01, DOC-PROGRAM-001, LCP-001, APEX-PROGRAM-001, NITRO-PROGRAM-001, HANDOFF-REGISTRY-001, COMPOSITE-RESTORE-100, BL-SOC2-01, INIT-EXEC-GAP, SECAS-S4-05, SECAS-S4-04, XR-MKT-RDS-VPC, XR-502, XR-501, XR-303, INIT-CANON-MATURITY, XR-CANON-LANG-PACK-001, XR-509, XR-510, XR-507, XR-516, XR-505, XR-515, XR-518, INIT-HUB-SCOPE-GUARD, INIT-DOC-FLEET-COVERAGE, INIT-GTCX-CANON-SERVICES, INIT-DOC-FLEET-PUBLISH, T01, XR-CANON-GOVERN-GTM-001, EXT-INF-013, XR-304, XR-MKT-FABRIC-001, OTLP, XR-MKT-SESSION-OPEN-001, S103-01, INIT-GTCX-INFRA, XR-FABRIC-SPRIN, XR-402, XR-403, XR-FABRIC-SPRINT-AUTH-001, XR-FABRIC-SPRINT, INIT-EXECUTIVE-GAP-PROGRA, XR-003, T0, INIT-AFRICA-CAPITAL-RAIL, INIT-DIGITAL-RAIL-WAVE-0, INIT-GOLDEN-TRANSACTION, XR-GTCX-DIGITAL-RAIL-001, XR-FABRIC-RAIL-003, XR-GTCX-PVP-RAIL-002, INIT-DIGITAL-RAIL, INIT-GOLDEN-TRANS, XR-MKT-FABRIC-00, XR-MKT-STAGING-EN, XR-MKT-STAGING-ENV-001, BL-OPERATOR-01, BL-CANON-CUTOVER-01, XR-519, INIT-SESSION-OPEN-ITEMS, XR-MKT-AGENT-D6-001, INIT-ASSURANCE-BURN-DOWN, INIT-BASELINE-2-UPGRADE, INIT-FLEET-VERSION-GOVERNANCE, INIT-PRODUCT-LEAD-DIRECTIVE, XR-TERRA-FRESH-AUDIT-001, SIG-REF-GRADE-CEILING, SIG-EXT-TERRA-001, XR-BASELINE-ROADMAP-INTAKE-001, APEX-001, APEX-002, APEX-003, APEX-004, APEX-005, APEX-006, APEX-007, APEX-008, APEX-009, APEX-010, XR-KIMI-BRIDGE-FABRIC-CLOSURE-001, INIT-DOC-QUALITY-V3, INIT-DOC-FLEET, XR-CANON-DOC-V3-001, XR-GTCX-DOC-V2-001, INIT-NAMING-REMEDIATE, INIT-DOCS-PROVISIONING-V1, INIT-DOCS-PROVISIONING-V1-W1, XR-CANON-DOCS-048-001, T53, INIT-DOCS-PROVISIONING-V1-W2, INIT-DOCS-PROVISIONING-V1-W3, INIT-DOCS-PROVISIONING, INIT-DOCS-PROVISIONING-V1-W4-HUB, XR-FABRIC-SESSION-OPEN-005, INIT-FIVE-PILLAR-FLEET-100, LEGAL-PROGRAM-01, INIT-GTCX-Q3-2026, Q3-FABRIC-03",
+    "clarityBriefMarkdown": "## Fleet clarity — 2026-06-17\n\n**North star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Bridge:** undefined · 57.5% points · 102 program remaining · 0 forward tasks · 16/16 sprints sealed\n**Assurance parallel lane (not product-team head):** `SECAS-S4-04` → `fabric-os` (in_progress)\n**Product team head (bridge P22):** `T65` → `bridge-os`\n\n| Repo | Milestone | DoD | P22 / work toward |\n|------|-----------|-----|-------------------|\n| bridge-os | ROADMAP-COMPLETE — fleet live pro… | 2/3 | ROADMAP-COMPLETE — fleet live programmes syndicated |\n| agile-os | Markets pilot+AFM forward program… | 2/2 | Markets pilot+AFM forward programme registered |\n| fabric-os | SECAS-S4-supply-chain | 2/2 | SECAS-S4-04 |\n| markets-os | M4 — golden transaction + AFM pro… | 2/3 | AFM-REG-003 |\n| baseline-os | STUDIO-004 dual-anchor + EXPERIEN… | 2/3 | STUDIO-004 |\n| compliance-os | DEPLOY-GATE-85 — composite deploy… | 3/3 | DEPLOY-GATE-85 |\n| ecosystem-os | ECO-OS-SHIP-001 — ship · surfaces… | 1/4 | ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI |\n| canon-os | INIT-DOC-PROMOTION-M4 mostly sealed | 1/2 | INIT-DOC-PROMOTION-M4 |\n| exploration-os | Staging health 2/2 for mapped ser… | 1/2 | Staging health 2/2 for mapped services |\n| sensei-os | Staging intelligence health PASS | 1/2 | Staging intelligence health PASS |\n| terra-os | Pilot-demo-ready (deploy + compos… | 3/3 | Pilot-demo-ready (deploy + composite) |\n| terminal-os | Composite 100 maintained | 1/1 | Composite 100 maintained |\n| ledger-ui | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| griot-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| veritas-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| nyota-ai | Composite ≥85 (currently ~28) | 2/2 | Composite ≥85 (currently ~28) |\n| gtcx-os | GTCX-OS-SURFACES-DOC — 8/8 surfac… | 1/2 | GTCX-OS-SURFACES-DOC — 8/8 surface matrix + deployment proof |\n\nFull report: `pnpm ecosystem:clarity:report:markdown` · witness: `pm/ci/ecosystem-clarity-report-latest.md`",
+    "autoDevMode": {
+      "resolvedMode": "complete_roadmap",
+      "defaultMode": "complete_milestones",
+      "activeMode": "complete_roadmap"
+    },
+    "execution": {
+      "mode": "complete_roadmap",
+      "label": "Complete roadmap (legacy ceremony)",
+      "verb": "Execute roadmap",
+      "scope": "program + icebox + forward queue + production wave + fleet owner P0",
+      "progressFocus": "roadmap",
+      "nextGranularity": "epic",
+      "stopWhen": "roadmap_execution_complete",
+      "program": "GTCX Execution Engine",
+      "roadmapExecutionComplete": false,
+      "milestoneExecutionComplete": null,
+      "completionBlocks": [
+        {
+          "id": "sprint-backlog",
+          "label": "Program sprint backlog",
+          "detail": "102 program stories remaining",
+          "owner": "bridge-os"
+        }
+      ],
+      "activeWaveBatch": {
+        "id": "W4-docs-IA",
+        "label": "P22-W4 docs IA fleet batch",
+        "statusUpdateMilestone": "W4-docs-IA",
+        "repos": [
+          "sensei-os",
+          "markets-os",
+          "griot-ai",
+          "nyota-ai"
+        ],
+        "repoOrder": [
+          "sensei-os",
+          "markets-os",
+          "griot-ai",
+          "nyota-ai"
+        ]
+      }
+    },
+    "progress": {
+      "sprints": "16/16 sealed (100%)",
+      "stories": "154/256 program (60.2%)",
+      "points": "972/1691 pts (57.5%)",
+      "icebox": "15/15 icebox (100%) · 0 deferred",
+      "roadmap": "169/271 roadmap (62.4%)",
+      "forwardQueue": "85/97 tasks (87.6%) · 0 initiatives · 0 outstanding",
+      "currentSprint": null,
+      "headline": "57.5% points · 102 program remaining · 0 forward tasks · 16/16 sprints sealed"
+    },
+    "nextWorkItem": {
+      "type": "task",
+      "typeLabel": "Task",
+      "id": "sprint-backlog",
+      "title": "Program sprint backlog",
+      "owner": "bridge-os",
+      "state": "open",
+      "because": "complete_roadmap — 102 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+      "notProgramOfficeIdle": true,
+      "gtmTrace": true,
+      "programmeId": "PROG-CONTINENTAL-CAPITAL",
+      "milestoneId": "Product development culture R2 fleet rollout",
+      "gtmTier": "GR-T2-partial",
+      "capabilityId": null,
+      "prdRef": null,
+      "milestoneDoD": {
+        "milestoneId": "PRODUCT-CULTURE-R2",
+        "title": "Product development culture R2 fleet rollout",
+        "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+        "acceptanceChecks": [
+          {
+            "id": "culture-check",
+            "label": "pnpm ecosystem:product-culture:check PASS",
+            "witness": "pm/ci/product-culture-fleet-latest.json"
+          }
+        ]
+      }
+    },
+    "statusUpdateSections": {
+      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 169/271 roadmap (62.4%) · Forward 85/97 tasks (87.6%) · 0 initiatives · 0 outstanding · Sprints 16/16 sealed (100%) · Stories 154/256 program (60.2%) · Points 972/1691 pts (57.5%) · Icebox 15/15 icebox (100%) · 0 deferred",
+      "nextWorkItem": "- **Type:** Task\n- **ID:** `sprint-backlog`\n- **Title:** Program sprint backlog\n- **Owner:** bridge-os\n- **Because:** complete_roadmap — 102 program stories remaining"
+    },
+    "statusUpdate": {
+      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 169/271 roadmap (62.4%) · Forward 85/97 tasks (87.6%) · 0 initiatives · 0 outstanding · Sprints 16/16 sealed (100%) · Stories 154/256 program (60.2%) · Points 972/1691 pts (57.5%) · Icebox 15/15 icebox (100%) · 0 deferred",
+      "nextWorkItem": "- **Type:** Task\n- **ID:** `sprint-backlog`\n- **Title:** Program sprint backlog\n- **Owner:** bridge-os\n- **Because:** complete_roadmap — 102 program stories remaining"
+    },
+    "roadmapCompletion": {
+      "schema": "gtcx://bridge-os/roadmap-completion/v1",
+      "mode": "complete_roadmap",
+      "completeRoadmapMode": true,
+      "sprintBacklogSealed": false,
+      "forwardQueueClear": true,
+      "forwardOutstanding": 0,
+      "openInitiatives": 0,
+      "productionWavePending": false,
+      "unregisteredProductionWaveSprints": [],
+      "fleetOwnerWorkRemaining": true,
+      "fleetRecommended": {
+        "ownerRepo": "fabric-os",
+        "storyId": "SECAS-S4-04",
+        "programmeId": "PROG-SECAS-PENTEST",
+        "title": "SECAS — internal clearance sealed; remediation track (vendor report parallel)",
+        "p22Command": "pnpm --dir ../fabric-os agent:next-work --json",
+        "because": "Internal SecOps Class R sealed 2026-06-15; SECAS-S4-04 scaffold; vendor report BG-10-10-REPORT parallel only",
+        "switchWorkspace": true
+      },
+      "productCultureClear": true,
+      "productCulture": null,
+      "roadmap": {
+        "done": 169,
+        "total": 271
+      },
+      "blocks": [
+        {
+          "id": "sprint-backlog",
+          "label": "Program sprint backlog",
+          "detail": "102 program stories remaining",
+          "owner": "bridge-os"
+        }
+      ],
+      "roadmapExecutionComplete": false,
+      "sprintBacklogOnlyComplete": false,
+      "stopSignal": "continue"
+    },
+    "roadmapExecutionComplete": false,
+    "engineeringLaneAbstraction": {
+      "applies": false,
+      "tier": "program-office",
+      "repoId": "bridge-os"
+    },
+    "personaReadGate": {
+      "ok": true,
+      "institutional": "platform-architect",
+      "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+      "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
+      "readAt": "2026-06-17T08:21:07.077Z"
+    },
+    "constitutionReadGate": {
+      "ok": true,
+      "articles": [
+        "I",
+        "III",
+        "V"
+      ],
+      "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+      "readAt": "2026-06-15T08:40:03.926Z",
+      "document": "docs/governance/constitution/GTCX-CONSTITUTION.md"
+    },
+    "ego": {
+      "schema": "gtcx://baseline-os/ego/v1",
+      "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
+      "compiledAt": "2026-06-17T08:49:44.693Z",
+      "repo": "bridge-os",
+      "storyId": {
+        "type": "task",
+        "typeLabel": "Task",
+        "id": "sprint-backlog",
+        "title": "Program sprint backlog",
+        "owner": "bridge-os",
+        "state": "open",
+        "because": "complete_roadmap — 102 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+        "notProgramOfficeIdle": true,
+        "gtmTrace": true,
+        "programmeId": "PROG-CONTINENTAL-CAPITAL",
+        "milestoneId": "Product development culture R2 fleet rollout",
+        "gtmTier": "GR-T2-partial",
+        "capabilityId": null,
+        "prdRef": null,
+        "milestoneDoD": {
+          "milestoneId": "PRODUCT-CULTURE-R2",
+          "title": "Product development culture R2 fleet rollout",
+          "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+          "acceptanceChecks": [
+            {
+              "id": "culture-check",
+              "label": "pnpm ecosystem:product-culture:check PASS",
+              "witness": "pm/ci/product-culture-fleet-latest.json"
+            }
+          ]
+        }
+      },
+      "persona": {
+        "institutional": "platform-architect",
+        "frame": "development",
+        "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+        "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703"
+      },
+      "constitution": {
+        "articles": [
+          "I",
+          "III",
+          "V"
+        ],
+        "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+        "ok": true
+      },
+      "forbiddenPatternCount": 40,
+      "mdPath": ".baseline/session/ego-latest.md",
+      "mdHash": "ab930053a02d7126bdc78cfebe1b2d7808ef21001b22fdaafbe57be7ca94d343",
+      "layers": [
+        "anti-assistant",
+        "constitution",
+        "init-canon",
+        "universal-ops",
+        "forbidden",
+        "persona",
+        "work",
+        "nitro",
+        "proceed-brief"
+      ],
+      "gates": {
+        "personaReadGate": {
+          "ok": true,
+          "institutional": "platform-architect",
+          "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+          "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
+          "readAt": "2026-06-17T08:40:27.082Z"
+        },
+        "constitutionReadGate": {
+          "ok": true,
+          "articles": [
+            "I",
+            "III",
+            "V"
+          ],
+          "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+          "readAt": "2026-06-15T08:40:03.926Z",
+          "document": "docs/governance/constitution/GTCX-CONSTITUTION.md"
+        },
+        "personaReadGateBlocked": false,
+        "constitutionReadGateBlocked": false
+      }
+    },
+    "egoPath": ".baseline/session/ego-latest.md",
+    "agentEmbodiment": {
+      "schema": "gtcx://baseline-os/ego/v1",
+      "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
+      "compiledAt": "2026-06-17T08:49:44.693Z",
+      "repo": "bridge-os",
+      "storyId": {
+        "type": "task",
+        "typeLabel": "Task",
+        "id": "sprint-backlog",
+        "title": "Program sprint backlog",
+        "owner": "bridge-os",
+        "state": "open",
+        "because": "complete_roadmap — 102 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+        "notProgramOfficeIdle": true,
+        "gtmTrace": true,
+        "programmeId": "PROG-CONTINENTAL-CAPITAL",
+        "milestoneId": "Product development culture R2 fleet rollout",
+        "gtmTier": "GR-T2-partial",
+        "capabilityId": null,
+        "prdRef": null,
+        "milestoneDoD": {
+          "milestoneId": "PRODUCT-CULTURE-R2",
+          "title": "Product development culture R2 fleet rollout",
+          "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+          "acceptanceChecks": [
+            {
+              "id": "culture-check",
+              "label": "pnpm ecosystem:product-culture:check PASS",
+              "witness": "pm/ci/product-culture-fleet-latest.json"
+            }
+          ]
+        }
+      },
+      "persona": {
+        "institutional": "platform-architect",
+        "frame": "development",
+        "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+        "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703"
+      },
+      "constitution": {
+        "articles": [
+          "I",
+          "III",
+          "V"
+        ],
+        "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+        "ok": true
+      },
+      "forbiddenPatternCount": 40,
+      "mdPath": ".baseline/session/ego-latest.md",
+      "mdHash": "ab930053a02d7126bdc78cfebe1b2d7808ef21001b22fdaafbe57be7ca94d343",
+      "layers": [
+        "anti-assistant",
+        "constitution",
+        "init-canon",
+        "universal-ops",
+        "forbidden",
+        "persona",
+        "work",
+        "nitro",
+        "proceed-brief"
+      ],
+      "gates": {
+        "personaReadGate": {
+          "ok": true,
+          "institutional": "platform-architect",
+          "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+          "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
+          "readAt": "2026-06-17T08:40:27.082Z"
+        },
+        "constitutionReadGate": {
+          "ok": true,
+          "articles": [
+            "I",
+            "III",
+            "V"
+          ],
+          "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+          "readAt": "2026-06-15T08:40:03.926Z",
+          "document": "docs/governance/constitution/GTCX-CONSTITUTION.md"
+        },
+        "personaReadGateBlocked": false,
+        "constitutionReadGateBlocked": false
+      }
+    },
+    "agentEmbodimentPath": ".baseline/session/ego-latest.md",
+    "repo": "bridge-os",
+    "proceedBrief": {
+      "activePersona": "platform-architect",
+      "frame": "development",
+      "personaDocUrl": "https://gtcx-ecosystem.gitbook.io/gtcx-ecosystem/governance/institutional/personas/platform-architect",
+      "personaDocPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+      "voice": "Systems-oriented, reliability-focused, cost-conscious",
+      "embodies": "Platform lead accountable for fleet reliability",
+      "personaConfidence": 0.98,
+      "personaSource": "work-item-manifest",
+      "goalOrientationBrief": "## Goal orientation\n**Fleet north star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Repo north star:** Fleet executes with product integrity — every owner repo PRD dictates shippable outcomes\n**Milestone:** Product development culture R2 fleet rollout\n**Shippable:** All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone\n**PRD refs:** prd-product-charter\n**Product team:** GTCX Program Office (`protocol-engineer`)"
+    },
+    "productTeam": {
+      "schema": "gtcx://bridge-os/product-team-context/v1",
+      "utilized": true,
+      "teamName": "GTCX Program Office",
+      "primary": "protocol-engineer",
+      "secondary": [
+        "platform-engineer",
+        "agile-coach"
+      ],
+      "mission": "Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
+      "frame": "regulatory-audit",
+      "profilesSoR": "pm/spec/repo-persona-profiles.json"
+    },
+    "goalOrientation": {
+      "schema": "gtcx://bridge-os/goal-orientation/v1.1",
+      "registrySoR": "pm/spec/ecosystem-fleet-goals-registry.json",
+      "registryVersion": "1.1.0",
+      "motto": "AI-native company that eats its own operating model",
+      "fleetNorthStar": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "fleetMilestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
+      "gtmTier": "GR-T2-partial",
+      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
+      "headProductRepo": "markets-os",
+      "quarterPillars": {
+        "id": "GTCX-Q3-2026",
+        "title": "Ship · surfaces · GTM · operational AI",
+        "targetDate": "2026-Q3",
+        "pillars": [
+          {
+            "id": "ship",
+            "label": "Shipping",
+            "passTest": "Named releases with demo/staging/pilot paths that run",
+            "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+          },
+          {
+            "id": "surfaces",
+            "label": "Beautiful surfaces",
+            "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
+            "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
+          },
+          {
+            "id": "gtm",
+            "label": "GTM",
+            "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
+            "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
+          },
+          {
+            "id": "operational-ai",
+            "label": "AI OS operational",
+            "passTest": "agent:next-work → execute → witness on real fleet work",
+            "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
+          }
+        ]
+      },
+      "quarterTitle": "Ship · surfaces · GTM · operational AI",
+      "quarterId": "GTCX-Q3-2026",
+      "recalibrate": "pnpm ecosystem:clarity:report:brief",
+      "northStar": "Fleet executes with product integrity — every owner repo PRD dictates shippable outcomes",
+      "activeMilestone": "Product development culture R2 fleet rollout",
+      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "prdRefs": [
+        "prd-product-charter"
+      ],
+      "programmeId": "PROG-CONTINENTAL-CAPITAL",
+      "headStoryId": "INIT-PRODUCT-DEVELOPMENT-CULTURE",
+      "workMustTraceTo": [
+        "fleet-live-programmes",
+        "owner product-goals.json"
+      ],
+      "programmeHead": null,
+      "clarityBrief": "pnpm ecosystem:clarity:report:brief",
+      "clarityWitness": "bridge-os/pm/ci/ecosystem-clarity-report-latest.json",
+      "ceremonyWitness": "bridge-os/pm/ci/agile-ceremony-sync-latest.json",
+      "openMilestoneCount": null
+    },
+    "fleetGoalsRegistry": {
+      "version": "1.1.0",
+      "updated": "2026-06-17",
+      "path": "pm/spec/ecosystem-fleet-goals-registry.json"
+    },
+    "quarterPillars": {
+      "id": "GTCX-Q3-2026",
+      "title": "Ship · surfaces · GTM · operational AI",
+      "targetDate": "2026-Q3",
+      "pillars": [
+        {
+          "id": "ship",
+          "label": "Shipping",
+          "passTest": "Named releases with demo/staging/pilot paths that run",
+          "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+        },
+        {
+          "id": "surfaces",
+          "label": "Beautiful surfaces",
+          "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
+          "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
+        },
+        {
+          "id": "gtm",
+          "label": "GTM",
+          "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
+          "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
+        },
+        {
+          "id": "operational-ai",
+          "label": "AI OS operational",
+          "passTest": "agent:next-work → execute → witness on real fleet work",
+          "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
+        }
+      ]
+    },
+    "fleetNorthStarBlock": {
+      "goal": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "gtmTier": "GR-T2-partial",
+      "evidence": "fabric-os/audit/evidence/gtm-audit-latest.json",
+      "milestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
+      "milestoneWitness": "pm/ci/pilot-readiness-report-latest.json",
+      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
+      "headProductRepo": "markets-os"
+    },
+    "engineeringLane": {
+      "role": "orchestration",
+      "abstractedLanes": {
+        "securityAssurance": "fabric-os",
+        "documentationAudit": "canon-os",
+        "legalOps": "agile-os + Parallel sovereign gates"
+      },
+      "forbiddenInNextWorkItem": [
+        "audit triage",
+        "pen-test SOW",
+        "legal approval",
+        "doc promotion implement"
+      ]
+    },
+    "goalTrace": {
+      "schema": "gtcx://bridge-os/goal-trace/v2.1",
+      "repo": "bridge-os",
+      "nextStoryId": "sprint-backlog",
+      "headStoryId": "INIT-PRODUCT-DEVELOPMENT-CULTURE",
+      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
+      "headProductRepo": "markets-os",
+      "quarterPillars": {
+        "id": "GTCX-Q3-2026",
+        "title": "Ship · surfaces · GTM · operational AI",
+        "targetDate": "2026-Q3",
+        "pillars": [
+          {
+            "id": "ship",
+            "label": "Shipping",
+            "passTest": "Named releases with demo/staging/pilot paths that run",
+            "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+          },
+          {
+            "id": "surfaces",
+            "label": "Beautiful surfaces",
+            "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
+            "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
+          },
+          {
+            "id": "gtm",
+            "label": "GTM",
+            "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
+            "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
+          },
+          {
+            "id": "operational-ai",
+            "label": "AI OS operational",
+            "passTest": "agent:next-work → execute → witness on real fleet work",
+            "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
+          }
+        ]
+      },
+      "fleetNorthStar": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "declaredTrace": "Product development culture R2 fleet rollout",
+      "programmeId": "PROG-CONTINENTAL-CAPITAL",
+      "milestone": "Product development culture R2 fleet rollout",
+      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "gtmTier": "GR-T2-partial",
+      "capabilityId": null,
+      "milestoneDoD": {
+        "milestoneId": "PRODUCT-CULTURE-R2",
+        "title": "Product development culture R2 fleet rollout",
+        "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+        "acceptanceChecks": [
+          {
+            "id": "culture-check",
+            "label": "pnpm ecosystem:product-culture:check PASS",
+            "witness": "pm/ci/product-culture-fleet-latest.json"
+          }
+        ]
+      },
+      "aligned": true,
+      "recalibrate": "pnpm ecosystem:clarity:report:brief"
+    },
+    "baselineM3CeilingScope": {
+      "schema": "gtcx://baseline-os/baseline-m3-ceiling-scope/v1",
+      "currentRepo": "ecosystem-os",
+      "vendorAssuranceExempt": true
+    },
+    "vendorAssuranceScope": {
+      "exempt": true,
+      "ownerRepo": "fabric-os"
+    },
+    "vendorGatesOmitted": {
+      "reason": "Vendor gates are fabric-os owner — witness repos omit from Status Update",
+      "ownerRepo": "fabric-os"
+    },
+    "statusUpdateRouting": {
+      "schema": "gtcx://baseline-os/vendor-assurance-status-update-routing/v3",
+      "role": "exempt",
+      "vendorAssuranceExempt": true,
+      "approvalNeeded": {
+        "omit": true
+      },
+      "parallelSovereignGates": {
+        "omit": true
+      }
+    },
+    "communicationPolicy": {
+      "protocol": "26-agent-proceed-confirmation",
+      "version": "1.2.0",
+      "rule": "Emit one Proceed Brief from agent:next-work output, then implement. No option menus. No opt-in implementation offers.",
+      "forbiddenReplyPatterns": [
+        "Your call",
+        "Two options",
+        "Which do you prefer",
+        "What would you like me to do next",
+        "Do you want me to work on",
+        "natural transition point",
+        "Either ",
+        " or ",
+        "Pick one:",
+        "Should I switch to",
+        "if you want",
+        "if you'd like",
+        "want me to",
+        "should i implement",
+        "can implement",
+        "i can implement",
+        "in the next session",
+        "next session",
+        "let me know if",
+        "happy to implement",
+        "would you like me to",
+        "do you want this",
+        "we could implement",
+        "i can start with",
+        "say commit",
+        "say push"
+      ],
+      "productLeadDirective": {
+        "soR": "pm/spec/product-lead-directive-protocol.json",
+        "pattern": "Decision → Because (pillars) → Plan → Execute → Status Update",
+        "forbidden": [
+          "if you want",
+          "if you'd like",
+          "want me to",
+          "should i implement",
+          "can implement",
+          "i can implement",
+          "in the next session",
+          "next session",
+          "let me know if",
+          "happy to implement",
+          "would you like me to",
+          "do you want this",
+          "we could implement",
+          "i can start with",
+          "say commit",
+          "say push"
+        ]
+      },
+      "proceedBriefFields": [
+        "Next",
+        "Because",
+        "Blocked until",
+        "Override"
+      ],
+      "agentInstructions": [
+        "Run pnpm agent:next-work (or agent:session-start) before substantive work.",
+        "Emit exactly one Proceed Brief — single Next action from P22 output.",
+        "Then implement in this repo. Do not ask operator to choose between stories or repos.",
+        "Forbidden: \"Your call\", \"Two options\", numbered 1./2. menus, \"switch to X or Y\".",
+        "Human may reply stop, correct:, or a story ID override only.",
+        "If blocked: Blocker Report — not a story menu.",
+        "baseline-os M3 external-pilot ceiling is baseline-os-only — never use as Next work item in sibling repos.",
+        "Forbidden Proceed Brief Next outside baseline-os: \"Hold at external-pilot ceiling\".",
+        "FORBIDDEN: git push in Approval needed when GATE-PUSH passes — report push in Done (Class R).",
+        "Product lead directive: decide and execute — never \"if you want implemented\" / \"next session\" / \"can implement\" closings.",
+        "Forbidden closing: offering optional implementation after Status Update or instead of executing Class R work."
+      ],
+      "baselineM3CeilingScope": {
+        "appliesToRepo": "baseline-os",
+        "forbiddenProceedBriefNext": [
+          "Hold at external-pilot ceiling",
+          "Class R exhausted (baseline M3)"
+        ]
+      },
+      "vendorAssuranceScope": {
+        "ownerRepo": "fabric-os",
+        "statusUpdateRule": "Vendor assurance Approval needed is fabric-os owner only — omit in bridge/agile/canon/product Status Updates."
+      }
+    },
+    "frameContext": {
+      "tiers": {
+        "company": [],
+        "space": [],
+        "task": [],
+        "deliverable": []
+      },
+      "tags": [],
+      "expression": null,
+      "graphRef": ".baseline/frame/graph.json",
+      "catalogRef": ".baseline/frame/catalog.json",
+      "wired": false,
+      "goldenPath": null,
+      "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+      "ownerRepo": "baseline-os",
+      "context": "bridge-os"
+    },
+    "personaContext": {
+      "institutional": "platform-architect",
+      "synthesized": null,
+      "skills": [],
+      "biasProfile": null,
+      "confidence": null,
+      "source": null,
+      "wired": false,
+      "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+      "ownerRepo": "baseline-os",
+      "resumeWhen": "baseline-os PERSONA-002 frame→persona resolver"
+    },
+    "studioContext": {
+      "produces": null,
+      "benchmarkId": null,
+      "fidelity": null,
+      "threshold": null,
+      "evaluation": null,
+      "catalogRef": ".baseline/studio/catalog.json",
+      "wired": false,
+      "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+      "ownerRepo": "baseline-os",
+      "resumeWhen": "baseline-os STUDIO-004 dual-anchor compose + SEP benchmarks"
+    },
+    "layerMetadata": {
+      "frame": {
+        "tiers": {
+          "company": [],
+          "space": [],
+          "task": [],
+          "deliverable": []
+        },
+        "tags": [],
+        "expression": null,
+        "graphRef": ".baseline/frame/graph.json",
+        "catalogRef": ".baseline/frame/catalog.json",
+        "wired": false,
+        "goldenPath": null,
+        "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+        "ownerRepo": "baseline-os",
+        "context": "bridge-os"
+      },
+      "persona": {
+        "institutional": "platform-architect",
+        "synthesized": null,
+        "skills": [],
+        "biasProfile": null,
+        "confidence": null,
+        "source": null,
+        "wired": false,
+        "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+        "ownerRepo": "baseline-os",
+        "resumeWhen": "baseline-os PERSONA-002 frame→persona resolver"
+      },
+      "studio": {
+        "produces": null,
+        "benchmarkId": null,
+        "fidelity": null,
+        "threshold": null,
+        "evaluation": null,
+        "catalogRef": ".baseline/studio/catalog.json",
+        "wired": false,
+        "handoffId": "XR-BRIDGE-OS-LAYERS-001",
+        "ownerRepo": "baseline-os",
+        "resumeWhen": "baseline-os STUDIO-004 dual-anchor compose + SEP benchmarks"
+      }
+    },
+    "fleetContracts": {
+      "osLayers": "pm/spec/fleet-agent-os-layers-contract.json",
+      "frameContext": "pm/spec/fleet-agent-os-layers-contract.json",
+      "osLayersHandoff": "pm/spec/os-layers-full-stack-handoff-bridge.json",
+      "langFrameHandoff": "pm/spec/frame-lang-unified-handoff-bridge.json"
+    },
+    "vendorAssuranceExempt": true,
+    "hubScopeGuard": {
+      "ok": true,
+      "applies": false
+    }
+  },
+  "modelProfile": null,
+  "nitroStack": null,
+  "nitroDiagnose": {
+    "ok": false,
+    "command": "node platform/packages/baselineos/dist/cli/bin.js nitro diagnose",
+    "witness": null,
+    "error": "baselineos CLI not built"
+  },
+  "gitChanged": 683,
+  "authorityClass": "R"
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "gtcx://baseline-os/ego/v1",
+  "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
+  "compiledAt": "2026-06-17T08:49:45.552Z",
+  "repo": "ecosystem-os",
+  "storyId": {
+    "type": "task",
+    "typeLabel": "Task",
+    "id": "sprint-backlog",
+    "title": "Program sprint backlog",
+    "owner": "bridge-os",
+    "state": "open",
+    "because": "complete_roadmap — 102 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+    "notProgramOfficeIdle": true,
+    "gtmTrace": true,
+    "programmeId": "PROG-CONTINENTAL-CAPITAL",
+    "milestoneId": "Product development culture R2 fleet rollout",
+    "gtmTier": "GR-T2-partial",
+    "capabilityId": null,
+    "prdRef": null,
+    "milestoneDoD": {
+      "milestoneId": "PRODUCT-CULTURE-R2",
+      "title": "Product development culture R2 fleet rollout",
+      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "acceptanceChecks": [
+        {
+          "id": "culture-check",
+          "label": "pnpm ecosystem:product-culture:check PASS",
+          "witness": "pm/ci/product-culture-fleet-latest.json"
+        }
+      ]
+    }
+  },
+  "persona": {
+    "institutional": "platform-architect",
+    "frame": "development",
+    "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+    "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703"
+  },
+  "constitution": {
+    "articles": [
+      "I",
+      "III",
+      "V"
+    ],
+    "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+    "ok": true
+  },
+  "forbiddenPatternCount": 40,
+  "mdPath": ".baseline/session/ego-latest.md",
+  "mdHash": "aff93a88223fa818095ba9a39eb54e8cc6edc291892fc208ce973dcfcf7eded5",
+  "layers": [
+    "anti-assistant",
+    "constitution",
+    "init-canon",
+    "universal-ops",
+    "forbidden",
+    "persona",
+    "work",
+    "nitro",
+    "proceed-brief"
+  ],
+  "gates": {
+    "personaReadGate": {
+      "ok": true,
+      "institutional": "platform-architect",
+      "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+      "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
+      "readAt": "2026-06-17T08:21:07.077Z"
+    },
+    "constitutionReadGate": {
+      "ok": false,
+      "blocked": true,
+      "articles": [
+        "I",
+        "III",
+        "V"
+      ],
+      "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
+      "reason": "no constitution read witness — run pnpm constitution:read-witness --write",
+      "witnessCommand": "pnpm constitution:read-witness --write"
+    },
+    "personaReadGateBlocked": false,
+    "constitutionReadGateBlocked": true
+  }
+}
