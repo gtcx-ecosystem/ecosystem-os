@@ -1,0 +1,444 @@
+{
+  "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
+  "discoveredAt": "2026-06-17T08:49:45.077Z",
+  "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
+  "repoId": "ecosystem-os",
+  "filesScanned": 180,
+  "orgCandidates": [
+    {
+      "name": "SIS Inspections",
+      "score": 130,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "context points to \\\"SIS Inspections\\\" — confirm or correct if needed.\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"SIS Inspections\", \"score\": 130, \"confidence",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "GTCX Cloud",
+      "score": 35,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Cloud\", \"score\": 35, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Cloud\\\", \\\"score\\\": 35, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Cloud\\\\\\\", \\\\\\\"score\\\\\\\": 35, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 28, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/frame/catalog.json",
+          "snippet": "ud\", \"name\": \"GTCX Cloud\", \"tier\": \"company\", \"descr",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/frame/catalog.json",
+          "snippet": " \"organization\": \"GTCX Cloud\", \"industry\": \"general\", ",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "GTCX Sovereign",
+      "score": 23,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Sovereign\", \"score\": 23, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Sovereign\\\", \\\"score\\\": 23, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Sovereign\\\\\\\", \\\\\\\"score\\\\\\\": 23, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 19, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
+          "snippet": "til ratified | | [**GTCX Sovereign**](deployment/cloud-vs-sovereign.md#gtx",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/SUMMARY.md",
+          "snippet": "t * [GTCX Cloud vs GTCX Sovereign](deployment/cloud-vs-sovereign.md) * [E",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "GTCX Protocols",
+      "score": 16,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Protocols\", \"score\": 16, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Protocols\\\", \\\"score\\\": 16, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Protocols\\\\\\\", \\\\\\\"score\\\\\\\": 16, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 16, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
+          "snippet": "--- title: 'GTCX Protocols — Developer Documentation' status: 'cur",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/SUMMARY.md",
+          "snippet": ".). ## Welcome * [GTCX Protocols](README.md) ## Release and versions *",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "REST API",
+      "score": 15,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"REST API\", \"score\": 15, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"REST API\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"REST API\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
+          "snippet": " release notes) | | REST API | `/v1/` — OpenAPI attached to each Git",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/api/rest.md",
+          "snippet": "--- title: 'REST API' status: current date: 2026-06-01 owner",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Country Support Packages",
+      "score": 15,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"Country Support Packages\", \"score\": 15, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Country Support Packages\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Country Support Packages\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
+          "snippet": "rotocol guides) | | Country Support Packages | `country-support-03-platform/packages",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/api/error-codes.md",
+          "snippet": "hority documents in Country Support Packages expose `gtcx.key_status`. Values other ",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Negative Scope\n\nThis",
+      "score": 12,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": "archive/legacy-docs-_archive/guides/README.md",
+          "snippet": "t v5 migration. ## Negative Scope This guide does **not** cover: - Architectu",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agent-troubleshooting-authoritative.md",
+          "snippet": " their terminal ## Negative Scope This document does **not** cover: - **Origi",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agent-troubleshooting.md",
+          "snippet": " their terminal ## Negative Scope This document does **not** cover: - **Conso",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-ai-deployment.md",
+          "snippet": "c regex filters ## Negative Scope This document does **not** cover: - **VIA m",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-architecture-overview.md",
+          "snippet": "il deleted | ## Negative Scope This document does **not** cover: - **MCP s",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agent-golddeal-assistant.md",
+          "snippet": "eals by weeks** ## Negative Scope This document does **not** cover: - **VIA c",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/anisa-advanced-usage.md",
+          "snippet": "atus:** Current ## Negative Scope This document does **not** cover: - **Insta",
+          "weight": 1
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/anisa-quickstart.md",
+          "snippet": "atus:** Current ## Negative Scope This document does **not** cover: - **Advan",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Virtual Inspection Agent",
+      "score": 12,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-ai-deployment.md",
+          "snippet": "re covered in [VXA (Virtual Inspection Agent)](vxa-tm-virtual-inspection-agent.md) -",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agent-golddeal-assistant.md",
+          "snippet": "re covered in [VXA (Virtual Inspection Agent)](vxa-tm-virtual-inspection-agent.md) -",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agents-for-compliance.md",
+          "snippet": "r Agent (VIA) and a Virtual Inspection Agent (VXA) – that run entirely offline on mo",
+          "weight": 3
+        },
+        {
+          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agents-for-compliance.md",
+          "snippet": " internet. - **VXA (Virtual Inspection Agent)** – A field tool for inspectors or tra",
+          "weight": 3
+        }
+      ]
+    }
+  ],
+  "topOrg": {
+    "name": "SIS Inspections",
+    "score": 130,
+    "confidence": "inferred",
+    "evidence": [
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "context points to \\\"SIS Inspections\\\" — confirm or correct if needed.\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": " { \"name\": \"SIS Inspections\", \"score\": 130, \"confidence",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+        "weight": 5
+      }
+    ]
+  },
+  "teamHints": [
+    "demo",
+    "gtcx-docs",
+    "bridge-os",
+    "quality-evidence-lead",
+    "prithvi",
+    "alexander",
+    "ecosystem-os",
+    "canon-os",
+    "'gtcx-docs'",
+    "compliance-os",
+    "gtcx-mobile",
+    "'gtcx-protocols'"
+  ],
+  "projectHints": [
+    "ecosystem-os",
+    "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
+    "PTM-R5-03 — fleet five-pillar lift for ecosystem-os",
+    "P35 strict layout green — ecosystem repo layout v5",
+    "PM folder R1 — PRD, UX, backlog, and capability matrix complete",
+    "Agent and agile doc scaffolding — universal, cursor, and agile roadmap"
+  ],
+  "goalHints": [
+    "to implement Protocol 22-selected work",
+    "Unblock Report — never revert to consultant mode",
+    "** Make these tests pass",
+    "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead",
+    "error on create     | Sandbox fallback, work in place                    |"
+  ],
+  "solicitOrg": false,
+  "confirmationPrompt": "Workspace context points to \"SIS Inspections\" — confirm or correct if needed.",
+  "resolution": "explicit"
+}

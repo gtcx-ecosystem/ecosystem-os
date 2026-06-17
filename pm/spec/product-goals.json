@@ -1,40 +1,74 @@
 {
   "$schema": "gtcx://bridge-os/product-goals/v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repo": "ecosystem-os",
-  "tier": "fleet-documentation",
-  "updated": "2026-06-14",
+  "tier": "ecosystem-operating-system",
+  "updated": "2026-06-17",
+  "fleetRegistry": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json",
   "vision": {
-    "statement": "Fleet-facing documentation and onboarding published from a single GitBook home",
+    "statement": "GTCX builds the AI-native company operating system and proves it by running the company on it while shipping the trade platform.",
     "horizon": "2026-2028"
   },
-  "mission": "Publish fleet GitBook, GTM onboarding, and operator journeys abstracted from canon-os",
+  "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
   "northStarMetric": {
-    "name": "Published doc surfaces fresh",
-    "target": "GitBook publish register green",
-    "witness": "pm/publish-register.json"
+    "name": "Governed operating loop complete",
+    "target": "Graph state + Ledger evidence + Assurance score + Surface command trace",
+    "witness": "docs/foundation/narrative/product-architecture.md"
   },
   "valueProposition": {
-    "for": "GTCX fleet operators and integrator pilots",
-    "who": "Need one documentation entry point across repos",
-    "product": "Fleet documentation hub",
-    "that": "Centralizes GitBook publish + onboarding paths",
-    "unlike": "Scattered canon-os copies per repo",
-    "we": "Witness-only product-goals SoR for fleet-documentation tier"
+    "for": "founders, operators, product teams, agent teams, and ecosystem builders",
+    "who": "need to run complex human-agent organizations",
+    "product": "Ecosystem OS",
+    "that": "provides the operating substrate for intelligence, coordination, delivery, services, assurance, human doctrine, innovation, and market expression",
+    "unlike": "standalone PM, RPA, AI-agent, wiki, and workflow tools",
+    "we": "connect Graph, Kernel, Ledger, and Surface into one company operating platform"
   },
   "activeMilestone": {
-    "id": "ECO-DOC-001",
-    "title": "Fleet GitBook publish register operational",
-    "shippableOutcome": "pm/publish-register.json tracks live GitBook surfaces with fresh publish witness",
-    "targetDate": "2026-Q2",
-    "programmeId": "PROG-FLEET-DOCUMENTATION",
-    "prdRefs": [],
-    "headStoryId": null,
-    "acceptanceChecks": []
+    "id": "ECO-OS-SHIP-001",
+    "title": "Ship · surfaces · GTM · operational AI",
+    "shippableOutcome": "GR-T2 pilot narrative live; Ecosystem OS category in market; fleet eats operating model while markets M4 + gtcx surfaces ship.",
+    "targetDate": "2026-Q3",
+    "programmeId": "PROG-ECOSYSTEM-OS",
+    "prdRefs": ["prd-product-charter"],
+    "headStoryId": "ECO-OS-SHIP-001",
+    "fleetQuarterPillars": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#quarterPillars",
+    "acceptanceChecks": [
+      {
+        "id": "quarter-ship",
+        "label": "Shipping — markets golden transaction + gtcx surfaces on path",
+        "witness": "../markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+      },
+      {
+        "id": "quarter-surfaces",
+        "label": "Beautiful surfaces — gtcx-os documentation matrix",
+        "witness": "../gtcx-os/pm/ci/documentation-matrix-latest.json"
+      },
+      {
+        "id": "quarter-gtm",
+        "label": "GTM — Ecosystem OS portfolio narrative current",
+        "witness": "docs/business/portfolio/product-portfolio.md"
+      },
+      {
+        "id": "quarter-operational-ai",
+        "label": "AI OS operational — agile-os P22 loop green",
+        "witness": "../agile-os/pm/ci/sprint-authority-check-latest.json"
+      }
+    ],
+    "subMilestones": [
+      {
+        "id": "ECO-OS-001",
+        "title": "Product architecture narrative (doctrine + portfolio)",
+        "witness": "docs/foundation/narrative/ecosystem-os-doctrine.md"
+      }
+    ]
   },
   "definitionOfDone": {
-    "story": ["publish witness", "auditNotes on done"],
-    "milestone": ["publish-register green"],
-    "forbidden": ["done without publish witness"]
+    "story": ["product boundary explicit", "evidence path recorded"],
+    "milestone": ["quarter pillar acceptance checks pass or explicit waiver"],
+    "forbidden": ["done on doc-only milestone without ship path"]
+  },
+  "strategicGoals": {
+    "mirrorOf": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#fleetStrategicGoals",
+    "note": "Do not edit pentad here — update fleet registry fleetStrategicGoals"
   }
 }

@@ -1,0 +1,556 @@
+{
+  "schema": "gtcx://baseline-os/forensic-parse-artifact/v1",
+  "programId": "FORENSIC-PARSE-001",
+  "parsedAt": "2026-06-17T08:49:45.023Z",
+  "repo": "ecosystem-os",
+  "corpus": {
+    "docs": {
+      "filesScanned": 400,
+      "paths": [
+        "docs/CHANGELOG.md",
+        "docs/FOLDER-SPEC.md",
+        "docs/INDEX.md",
+        "docs/README.md",
+        "docs/agents/README.md",
+        "docs/agents/_root-agents/FOLDER-SPEC.md",
+        "docs/agents/_root-agents/README.md",
+        "docs/agents/_root-agents/bootstrap/README.md",
+        "docs/agents/_root-agents/bootstrap/provider-routes.json",
+        "docs/agents/_root-agents/bootstrap/session-chain.json",
+        "docs/agents/_root-agents/capabilities/README.md",
+        "docs/agents/_root-agents/capabilities/authority-matrix.md",
+        "docs/agents/_root-agents/capabilities/forbidden-actions.md",
+        "docs/agents/_root-agents/integrations/README.md",
+        "docs/agents/_root-agents/integrations/cross-repo-handoffs.md",
+        "docs/agents/_root-agents/manifest.json",
+        "docs/agents/_root-agents/personas/README.md",
+        "docs/agents/_root-agents/pillar-scorecard.md",
+        "docs/agents/_root-agents/playbooks/README.md",
+        "docs/agents/_root-agents/provisioning/AGENT-INIT-CANON.md",
+        "docs/agents/_root-agents/provisioning/README.md",
+        "docs/agile/_root-agile/FOLDER-SPEC.md",
+        "docs/agile/_root-agile/README.md",
+        "docs/agile/_root-agile/archive/README.md",
+        "docs/agile/_root-agile/cpo.md",
+        "docs/agile/_root-agile/intake.md",
+        "docs/agile/_root-agile/pillar-scorecard.md",
+        "docs/agile/_root-agile/planning.md",
+        "docs/agile/_root-agile/qa-uat.md",
+        "docs/agile/_root-agile/requirements/README.md",
+        "docs/agile/_root-agile/requirements/trace.md",
+        "docs/agile/_root-agile/roadmaps/FOLDER-SPEC.md",
+        "docs/agile/_root-agile/roadmaps/README.md",
+        "docs/agile/_root-agile/roadmaps/compliance/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/compliance.md",
+        "docs/agile/_root-agile/roadmaps/gtm/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/gtm.md",
+        "docs/agile/_root-agile/roadmaps/legal/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/legal.md",
+        "docs/agile/_root-agile/roadmaps/migrated/pillar-scorecard.md",
+        "docs/agile/_root-agile/roadmaps/partnerships/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/partnerships.md",
+        "docs/agile/_root-agile/roadmaps/pillar-scorecard.md",
+        "docs/agile/_root-agile/roadmaps/roadmap-current.md",
+        "docs/agile/_root-agile/roadmaps/technical/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/technical.md",
+        "docs/agile/_root-agile/roadmaps/ux-design/roadmap.md",
+        "docs/agile/_root-agile/roadmaps/ux-design.md",
+        "docs/agile/_root-agile/scrum/README.md",
+        "docs/agile/_root-agile/scrum/backlog.md",
+        "docs/agile/_root-agile/scrum/definition-of-done.md",
+        "docs/agile/_root-agile/scrum/definition-of-ready.md",
+        "docs/agile/_root-agile/scrum/epic.md",
+        "docs/agile/_root-agile/scrum/retrospective.md",
+        "docs/agile/_root-agile/scrum/roadmap.md",
+        "docs/agile/_root-agile/scrum/sprint-planning.md",
+        "docs/agile/_root-agile/scrum/standup.md",
+        "docs/agile/_root-agile/scrum/story-template.md",
+        "docs/agile/_root-agile/scrum/team.md",
+        "docs/agile/_root-agile/sprints/README.md",
+        "docs/agile/_root-agile/sprints/current.md",
+        "docs/agile/_root-agile/uat/README.md",
+        "docs/agile/_root-agile/uat/uat-evidence-log.md",
+        "docs/agile/_root-agile/uat/uat-test-plan.md",
+        "docs/agile/_root-agile/zenhub.md",
+        "docs/architecture/FOLDER-SPEC.md",
+        "docs/architecture/README.md",
+        "docs/architecture/adr/001-eap-control-plane-and-storage.md",
+        "docs/architecture/adr/README.md",
+        "docs/architecture/cloud-placement/README.md",
+        "docs/architecture/cloud-placement/gtcx-ecosystem-2026-06-05.md",
+        "docs/architecture/cloud-placement/repo-register-2026-06-05.md",
+        "docs/architecture/decisions/ADR-001-ecosystem-os-architecture-baseline.md",
+        "docs/architecture/decisions/README.md",
+        "docs/architecture/diagrams/README.md",
+        "docs/architecture/integration/README.md",
+        "docs/architecture/integration/narrative/credential-management-ecosystem.md",
+        "docs/architecture/integration/narrative/external-access-credential-plane.md",
+        "docs/architecture/integration/narrative/index.md",
+        "docs/architecture/integration/narrative/product-architecture.md"
+      ],
+      "initiativeIds": [
+        "INIT-DOCS-FOUNDATION-IA-V1",
+        "INIT-DOCS-PROVISIONING-V1-W2",
+        "INIT-001",
+        "XR-510",
+        "XR-102",
+        "INIT-DOC-FLEET-PUBLISH",
+        "DOC-FLEET-PUBLISH",
+        "INIT-CANON",
+        "XR-CANON-GOVERN-GTM-001",
+        "ECO-OS-001",
+        "XR-518",
+        "ECO-OS-SHIP-001",
+        "INIT-VENTURE-OS-REPO"
+      ]
+    },
+    "sessions": {
+      "ledgerCount": 10,
+      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-ecosystem-os/agent-transcripts/4233b490-4a38-446e-a7b4-eab07f668481/4233b490-4a38-446e-a7b4-eab07f668481.jsonl",
+      "transcriptLines": 126,
+      "userQueryCount": 5
+    }
+  },
+  "layerBindings": {
+    "persona": {
+      "primary": "platform-architect",
+      "confidence": 0.98,
+      "candidates": [
+        {
+          "personaId": "platform-architect",
+          "weight": 9
+        }
+      ]
+    },
+    "frame": {
+      "active": [
+        "development"
+      ],
+      "tags": [
+        "['documentation', 'agents', 'provisioning']",
+        "[['agents', 'provisioning', 'protocol-22', 'protocol-24']]",
+        "['documentation', 'provisioning']",
+        "['documentation', 'agents']",
+        "['documentation', 'multi-pillar', 'fractal-mpr']",
+        "['onboarding', 'documentation']",
+        "['documentation']",
+        "['documentation', 'agile']",
+        "[[\"documentation\", \"sprints\"]]",
+        "['documentation', 'roadmap']",
+        "['documentation', 'roadmap', 'agile']",
+        "['documentation', 'agile', 'roadmap']",
+        "[[\"documentation\", \"sprints\", \"coordination\"]]",
+        "[[\"documentation\", \"agile\"]]",
+        "['documentation', 'architecture']",
+        "[['adr', 'eap', 'architecture', 'credentials']]",
+        "['architecture', 'documentation']",
+        "['documentation', 'product']",
+        "['documentation', 'specs']",
+        "[['documentation', 'architecture', 'security', 'credentials']]",
+        "['protocol', 'documentation']",
+        "[['architecture', 'security', 'api-keys', 'tradepass', 'credentials', 'research']]",
+        "[[\"architecture\", \"testing\"]]",
+        "[['gitbook', 'publish', 'documentation']]",
+        "['documentation', 'gitbook']",
+        "[['documentation', 'gitbook']]",
+        "['documentation', 'business']",
+        "['documentation', 'cross-reference']",
+        "['protocol', 'documentation', 'governance']",
+        "['documentation', 'government']",
+        "[['documentation', 'government']]",
+        "['business', 'portfolio', 'ai-native-company-os']",
+        "['business', 'ai-native-company-os', 'commercial']",
+        "['business', 'open-source', 'packaging']",
+        "['business', 'portfolio', 'product-architecture']",
+        "['research', 'market-landscape', 'ai-native-company-os']",
+        "['research', 'ai-native-company-os']",
+        "['research', 'graph', 'rag', 'mcp', 'ledger']",
+        "['research', 'market-landscape', 'competitors']",
+        "['research', 'agenda', 'validation']"
+      ],
+      "confidence": 0.75
+    },
+    "lang": {
+      "expressions": [
+        "docs:foundation:check",
+        "ops:check",
+        "agent:next-work",
+        "--dir",
+        "start",
+        "agent:start",
+        "agent:provisioning:check",
+        "pm:sync",
+        "agile:check",
+        "test",
+        "lint",
+        "validate",
+        "ecosystem:coordination",
+        "ecosystem:workstream:sync",
+        "updated",
+        "ecosystem:zenhub:plan",
+        "ecosystem:zenhub:apply",
+        "Vault",
+        "w2:staging-prereq-check",
+        "when",
+        "VAULT",
+        "data",
+        "results",
+        "48",
+        "based",
+        "Pilot",
+        "hardening",
+        "plus",
+        "assessment",
+        "OS",
+        "session",
+        "--filter",
+        "agent:session-start",
+        "next",
+        "gates",
+        "hub",
+        "agent:sync",
+        "ecosystem:rollout-universal:check",
+        "session:",
+        "Baseline config",
+        "init",
+        "index",
+        "banner",
+        "Baseline L1",
+        "Baseline start",
+        "doctor",
+        "install",
+        "Baseline session",
+        "chain",
+        "configuration"
+      ],
+      "commands": [
+        "baseline start",
+        "baseline session:",
+        "Baseline config",
+        "baseline init",
+        "baseline index",
+        "pnpm banner",
+        "Baseline L1",
+        "pnpm ops:check",
+        "Baseline start",
+        "baseline doctor",
+        "pnpm install",
+        "Baseline session",
+        "baseline chain",
+        "baseline test",
+        "baseline configuration"
+      ]
+    },
+    "studio": {
+      "deliverables": [
+        "folder-spec",
+        "docs-integrity-pack",
+        "relocation-report",
+        "folder-spec"
+      ],
+      "provenanceRequired": true
+    },
+    "skills": [
+      "doc-standard",
+      "docs-machine-readable"
+    ],
+    "initiatives": [
+      "DOC-FLEET-PUBLISH",
+      "ECO-OS-001",
+      "ECO-OS-SHIP-001",
+      "INIT-001",
+      "INIT-CANON",
+      "INIT-DOC-FLEET-PUBLISH",
+      "INIT-DOCS-FOUNDATION-IA-V1",
+      "INIT-DOCS-PROVISIONING-V1-W2",
+      "INIT-VENTURE-OS-REPO",
+      "XR-102",
+      "XR-510",
+      "XR-518",
+      "XR-CANON-GOVERN-GTM-001"
+    ],
+    "tags": []
+  },
+  "ingestSignals": [
+    {
+      "id": "initiative:DOC-FLEET-PUBLISH",
+      "kind": "initiative",
+      "text": "Active initiative reference: DOC-FLEET-PUBLISH",
+      "source": "docs+sessions",
+      "refs": [
+        "DOC-FLEET-PUBLISH"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:ECO-OS-001",
+      "kind": "initiative",
+      "text": "Active initiative reference: ECO-OS-001",
+      "source": "docs+sessions",
+      "refs": [
+        "ECO-OS-001"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:ECO-OS-SHIP-001",
+      "kind": "initiative",
+      "text": "Active initiative reference: ECO-OS-SHIP-001",
+      "source": "docs+sessions",
+      "refs": [
+        "ECO-OS-SHIP-001"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-001",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-001",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-001"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-CANON",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-CANON",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-CANON"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-DOC-FLEET-PUBLISH",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-DOC-FLEET-PUBLISH",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-DOC-FLEET-PUBLISH"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-DOCS-FOUNDATION-IA-V1",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-DOCS-FOUNDATION-IA-V1",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-DOCS-FOUNDATION-IA-V1"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-DOCS-PROVISIONING-V1-W2",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-DOCS-PROVISIONING-V1-W2",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-DOCS-PROVISIONING-V1-W2"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:INIT-VENTURE-OS-REPO",
+      "kind": "initiative",
+      "text": "Active initiative reference: INIT-VENTURE-OS-REPO",
+      "source": "docs+sessions",
+      "refs": [
+        "INIT-VENTURE-OS-REPO"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:XR-102",
+      "kind": "initiative",
+      "text": "Active initiative reference: XR-102",
+      "source": "docs+sessions",
+      "refs": [
+        "XR-102"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:XR-510",
+      "kind": "initiative",
+      "text": "Active initiative reference: XR-510",
+      "source": "docs+sessions",
+      "refs": [
+        "XR-510"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:XR-518",
+      "kind": "initiative",
+      "text": "Active initiative reference: XR-518",
+      "source": "docs+sessions",
+      "refs": [
+        "XR-518"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "initiative:XR-CANON-GOVERN-GTM-001",
+      "kind": "initiative",
+      "text": "Active initiative reference: XR-CANON-GOVERN-GTM-001",
+      "source": "docs+sessions",
+      "refs": [
+        "XR-CANON-GOVERN-GTM-001"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "id": "persona:platform-architect",
+      "kind": "persona",
+      "text": "Dominant persona signal: platform-architect",
+      "source": "sessions+transcript",
+      "refs": [
+        "platform-architect"
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "lang:docs:foundation:check",
+      "kind": "lang",
+      "text": "Lang expression observed: docs:foundation:check",
+      "source": "docs",
+      "refs": [
+        "docs:foundation:check"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:ops:check",
+      "kind": "lang",
+      "text": "Lang expression observed: ops:check",
+      "source": "docs",
+      "refs": [
+        "ops:check"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:agent:next-work",
+      "kind": "lang",
+      "text": "Lang expression observed: agent:next-work",
+      "source": "docs",
+      "refs": [
+        "agent:next-work"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:--dir",
+      "kind": "lang",
+      "text": "Lang expression observed: --dir",
+      "source": "docs",
+      "refs": [
+        "--dir"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:start",
+      "kind": "lang",
+      "text": "Lang expression observed: start",
+      "source": "docs",
+      "refs": [
+        "start"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:agent:start",
+      "kind": "lang",
+      "text": "Lang expression observed: agent:start",
+      "source": "docs",
+      "refs": [
+        "agent:start"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:agent:provisioning:check",
+      "kind": "lang",
+      "text": "Lang expression observed: agent:provisioning:check",
+      "source": "docs",
+      "refs": [
+        "agent:provisioning:check"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:pm:sync",
+      "kind": "lang",
+      "text": "Lang expression observed: pm:sync",
+      "source": "docs",
+      "refs": [
+        "pm:sync"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:agile:check",
+      "kind": "lang",
+      "text": "Lang expression observed: agile:check",
+      "source": "docs",
+      "refs": [
+        "agile:check"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "lang:test",
+      "kind": "lang",
+      "text": "Lang expression observed: test",
+      "source": "docs",
+      "refs": [
+        "test"
+      ],
+      "confidence": 0.7
+    },
+    {
+      "id": "query:a75e36c7",
+      "kind": "operator-intent",
+      "text": "baseline start",
+      "source": "transcript",
+      "refs": [],
+      "confidence": 0.65
+    },
+    {
+      "id": "query:9fb74898",
+      "kind": "operator-intent",
+      "text": "sesion:open-items /Users/amanianai/Sites/venture-os forensic-audit",
+      "source": "transcript",
+      "refs": [],
+      "confidence": 0.65
+    },
+    {
+      "id": "query:8ec7210f",
+      "kind": "operator-intent",
+      "text": "Wednesday, Jun 17, 2026, 10:34 AM (UTC+2)\n\np0: move folder to gtcx-ecosystem root, initialize git, continue with ui/design/app work",
+      "source": "transcript",
+      "refs": [],
+      "confidence": 0.65
+    },
+    {
+      "id": "query:e44e060e",
+      "kind": "operator-intent",
+      "text": "Wednesday, Jun 17, 2026, 10:40 AM (UTC+2)\n\nexecute_roadmap -- why do you keep stopping?",
+      "source": "transcript",
+      "refs": [],
+      "confidence": 0.65
+    },
+    {
+      "id": "query:dc9332ae",
+      "kind": "operator-intent",
+      "text": "Wednesday, Jun 17, 2026, 10:45 AM (UTC+2)\n\nHow do we handle this by continuing -- i.e. fixiing the repo blockers in order to continue vs stoping an dexiting",
+      "source": "transcript",
+      "refs": [],
+      "confidence": 0.65
+    }
+  ]
+}

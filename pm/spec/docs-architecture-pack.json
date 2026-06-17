@@ -1,6 +1,5 @@
 {
   "$schema": "gtcx://canon-os/docs-architecture-pack/v1",
-  "version": "1.1.0",
   "updated": "2026-06-16",
   "initiative": "INIT-DOCS-CORE-IA-V1",
   "title": "Docs architecture pack — ecosystem-os",
@@ -36,11 +35,32 @@
         "product": "technical product specs only — not GTM PRD prose"
       },
       "sourcePatterns": [
-        "docs/reference/specs/",
+        "docs/_archive/specs/",
         "docs/engineering/system-design/"
       ],
       "forbidden": [
         "loose *.md at specs/ root beyond README and index"
+      ]
+    },
+    "requirements": {
+      "purpose": "Functional and non-functional requirements catalog (system lens)",
+      "allowedDocTypes": [
+        "architecture",
+        "overview"
+      ],
+      "required": [
+        "README.md"
+      ],
+      "canonicalFiles": [
+        "functional-requirements.md",
+        "non-functional-requirements.md",
+        "accessibility.md"
+      ],
+      "forbiddenIn": [
+        "docs/product/requirements/"
+      ],
+      "sourcePatterns": [
+        "docs/product/requirements/"
       ]
     },
     "decisions": {
@@ -78,7 +98,7 @@
       ],
       "optional": true,
       "sourcePatterns": [
-        "docs/reference/architecture/",
+        "docs/_archive/architecture/",
         "docs/engineering/integration/"
       ]
     },
@@ -112,10 +132,50 @@
   "forbiddenAtArchitectureRoot": [
     "Loose ADR-*.md at docs/architecture/ root — use decisions/",
     "Market or GTM prose — belongs in docs/business/",
-    "Agent SOPs — belongs in docs/agents/sops/",
+    "Agent SOPs — belongs in agents/playbooks/",
     "Protocol bodies — belongs in docs/governance/protocols/",
     "Duplicate of docs/engineering/ without cross-link"
   ],
+  "contentBar": {
+    "product": {
+      "minAdrFiles": 1,
+      "specNests": [
+        "backend",
+        "frontend",
+        "data",
+        "design",
+        "testing"
+      ],
+      "minNarrativeSpecFiles": 1
+    },
+    "fleet-documentation": {
+      "minAdrFiles": 1,
+      "specNests": [
+        "backend",
+        "frontend",
+        "data",
+        "design",
+        "testing"
+      ],
+      "minNarrativeSpecFiles": 1
+    },
+    "platform": {
+      "minAdrFiles": 1,
+      "specNests": [
+        "backend",
+        "frontend",
+        "data",
+        "design",
+        "testing"
+      ],
+      "minNarrativeSpecFiles": 1
+    },
+    "constitution-standards": {
+      "minAdrFiles": 0,
+      "specNests": [],
+      "minNarrativeSpecFiles": 0
+    }
+  },
   "profiles": {
     "constitution-standards": {
       "architectureRequired": true,
@@ -135,7 +195,8 @@
       "architectureRequired": true,
       "requiredSubfolders": [
         "specs",
-        "decisions"
+        "decisions",
+        "requirements"
       ],
       "optionalSubfolders": [
         "diagrams",
@@ -160,7 +221,8 @@
       "architectureRequired": true,
       "requiredSubfolders": [
         "specs",
-        "decisions"
+        "decisions",
+        "requirements"
       ],
       "optionalSubfolders": [
         "integration",
@@ -191,26 +253,26 @@
       }
     ],
     "referenceDecompose": {
-      "docs/reference/specs/": "relocate → docs/architecture/specs/; pointer stub at reference",
-      "docs/reference/architecture/": "relocate → docs/architecture/integration/ or merge",
-      "docs/reference/audits/": "relocate → docs/governance/audit/ (not architecture)",
+      "docs/_archive/specs/": "relocate → docs/architecture/specs/; pointer stub at _archive",
+      "docs/_archive/architecture/": "relocate → docs/architecture/integration/ or merge",
+      "docs/_archive/audits/": "relocate → docs/governance/audit/ (not architecture)",
       "docs/engineering/system-design/": "cross-link from architecture/README — do not fork"
     }
   },
   "sourcePriority": [
     "docs/architecture/",
     "docs/engineering/system-design/",
-    "docs/reference/specs/ (until decomposed)",
+    "docs/_archive/specs/ (until decomposed)",
     "archive/docs-reference-legacy/"
   ],
   "afterMigration": {
-    "referenceSpecs": "pointer README only at docs/reference/specs/",
+    "referenceSpecs": "pointer README only at docs/_archive/specs/",
     "engineering": "retain for implementation detail; architecture/README links down"
   },
   "enforcement": {
     "check": "pnpm docs:architecture:check",
     "fleetCheck": "pnpm ecosystem:docs:architecture:fleet",
-    "decompose": "pnpm docs:reference:decompose",
+    "decompose": "pnpm docs:_archive:decompose",
     "witness": "audit/evidence/docs-architecture-latest.json",
     "fleetWitness": "audit/evidence/fleet-docs-architecture-latest.json",
     "stubPacksForbidden": true,
@@ -220,7 +282,8 @@
       "spec:resolved-full",
       "required subfolders per profile",
       "no loose narrative at architecture root",
-      "reference/specs decomposed"
+      "_archive/specs decomposed",
+      "contentBar: adr-min, spec-nests, narrative-spec-min"
     ]
   },
   "relatedSpecs": [
@@ -232,5 +295,139 @@
     "pm/spec/docs-folder-provisioning.json"
   ],
   "repo": "ecosystem-os",
-  "upstreamSpec": "../canon-os/pm/spec/docs-architecture-pack.json"
+  "upstreamSpec": "../canon-os/pm/spec/docs-architecture-pack.json",
+  "pillarContract": {
+    "compliance": {
+      "primary": true,
+      "artifacts": [
+        "docs/architecture/FOLDER-SPEC.md"
+      ],
+      "gates": [
+        "pnpm docs:architecture:check"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "technicalExcellence": {
+      "primary": true,
+      "artifacts": [
+        "docs/architecture/specs/",
+        "docs/architecture/decisions/"
+      ],
+      "gates": [
+        "ADR + spec nests"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "craft": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/README.md"
+      ],
+      "gates": [
+        "no loose ADR at root"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "worldClass": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/integration/"
+      ],
+      "gates": [
+        "ecosystem integration map"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "trustAndSafety": {
+      "primary": true,
+      "artifacts": [
+        "docs/architecture/threat-models/"
+      ],
+      "gates": [
+        "threat model present"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "creativityInnovation": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/decisions/"
+      ],
+      "gates": [
+        "novel patterns documented"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "commercialValue": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/README.md"
+      ],
+      "gates": [
+        "capability trace"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "defensiveMoat": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/specs/"
+      ],
+      "gates": [
+        "proprietary schemas"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "agenticEmpowerment": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/integration/"
+      ],
+      "gates": [
+        "agent/MCP surfaces"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "ecosystemIntegration": {
+      "primary": true,
+      "artifacts": [
+        "docs/architecture/integration/"
+      ],
+      "gates": [
+        "sibling repo contracts"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    },
+    "ipMagic": {
+      "secondary": true,
+      "artifacts": [
+        "docs/architecture/specs/"
+      ],
+      "gates": [
+        "signature technical artifacts"
+      ],
+      "minBar": "≥100 layer order; reference hubs 100",
+      "witness": "audit/evidence/mpr-architecture-layer-latest.json"
+    }
+  },
+  "fractalMpr": {
+    "policy": "pm/spec/docs-fractal-mpr-policy.json",
+    "layerWitness": "audit/evidence/mpr-architecture-layer-latest.json",
+    "scorecard": "docs/architecture/pillar-scorecard.md",
+    "rollupFrom": [
+      "file",
+      "folder"
+    ],
+    "scorecardIsReadOnlyRollup": true
+  }
 }

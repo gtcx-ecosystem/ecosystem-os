@@ -1,0 +1,73 @@
+{
+  "$schema": "gtcx://baseline-os/frame-graph",
+  "graphId": "graph-org-ecosystem-os",
+  "organizationRef": "org-ecosystem-os",
+  "updatedAt": "2026-06-17T08:49:45.078Z",
+  "worldModelMode": "low-public-signal",
+  "completenessProfile": "enterprise-pilot",
+  "lowPublicSignal": true,
+  "nodes": [
+    {
+      "id": "org-ecosystem-os",
+      "type": "organization",
+      "label": "ecosystem-os",
+      "confidence": "verified",
+      "provenance": {
+        "protocolId": "FRP-P1",
+        "source": "user-input",
+        "passId": "FRP-P1-entity",
+        "recordedAt": "2026-06-17T08:49:45.077Z"
+      }
+    }
+  ],
+  "edges": [],
+  "pendingQuestions": [
+    {
+      "templateId": "Q-AMBIENT-ORG-CONFIRM",
+      "prompt": "Workspace context points to \"SIS Inspections\" — confirm or correct if needed.",
+      "gapNodeTypes": [
+        "organization"
+      ],
+      "leverage": 11,
+      "status": "pending"
+    },
+    {
+      "templateId": "Q-AMBIENT-TEAM-CONFIRM",
+      "prompt": "Confirm team roster inferred from workspace: demo, gtcx-docs, bridge-os, quality-evidence-lead, prithvi, alexander.",
+      "gapNodeTypes": [
+        "role"
+      ],
+      "leverage": 8,
+      "status": "pending"
+    },
+    {
+      "templateId": "Q-CLIENT-LIST-5",
+      "prompt": "List up to five anchor clients or segments for ecosystem-os (industry: unknown).",
+      "gapNodeTypes": [
+        "client"
+      ],
+      "leverage": 8,
+      "status": "pending"
+    },
+    {
+      "templateId": "Q-COMPETITOR-CORE",
+      "prompt": "Who are the top 2–3 competitors to ecosystem-os in your market?",
+      "gapNodeTypes": [
+        "competitor"
+      ],
+      "leverage": 7,
+      "status": "pending"
+    }
+  ],
+  "lastProtocolRun": {
+    "passIds": [
+      "FRP-P1",
+      "FRP-P2",
+      "FRP-P4",
+      "FRP-P5",
+      "FRP-P6",
+      "FRP-P7"
+    ],
+    "witnessPath": "audit/evidence/forensic-ai-latest.json"
+  }
+}

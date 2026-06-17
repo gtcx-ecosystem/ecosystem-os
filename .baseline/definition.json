@@ -1,0 +1,174 @@
+{
+  "organization": {
+    "name": "ecosystem-os",
+    "voice": "technical, authoritative, institutional",
+    "industry": "Commodity Trade & Verification",
+    "size": "small",
+    "formality": "formal"
+  },
+  "terminology": {
+    "preferred": {},
+    "glossary": {},
+    "banned": []
+  },
+  "syntax": {
+    "commands": {
+      "status": {
+        "produces": "status-report",
+        "description": "System status report",
+        "aliases": [
+          "s",
+          "info"
+        ],
+        "format": "report"
+      },
+      "retro": {
+        "produces": "retrospective",
+        "description": "Sprint retrospective",
+        "aliases": [
+          "retrospective",
+          "review"
+        ],
+        "format": "document",
+        "chain": [
+          "sprint-review",
+          "reflect",
+          "sprint-insights",
+          "document"
+        ]
+      },
+      "help": {
+        "produces": "help",
+        "description": "Command reference",
+        "aliases": [
+          "h"
+        ],
+        "format": "document"
+      }
+    }
+  },
+  "templates": {},
+  "authority": {
+    "levels": {
+      "contributor": {
+        "spend_limit": 100
+      },
+      "lead": {
+        "spend_limit": 5000,
+        "approves": [
+          "deployments"
+        ]
+      }
+    }
+  },
+  "workflows": {},
+  "layers": {
+    "lang": {
+      "terminology": {},
+      "bannedTerms": [],
+      "domainIntents": [],
+      "injectionResistanceLevel": "standard",
+      "outputAttribution": true,
+      "intentConfidenceThreshold": 0.6
+    },
+    "frame": {
+      "roles": {
+        "contributor": {
+          "read": [
+            "*"
+          ],
+          "write": [],
+          "restricted": []
+        },
+        "lead": {
+          "read": [
+            "*"
+          ],
+          "write": [
+            "deployments"
+          ],
+          "restricted": []
+        }
+      },
+      "trustThresholds": {
+        "simple": 50,
+        "moderate": 60,
+        "complex": 70,
+        "epic": 85
+      },
+      "defaultAuthority": "system",
+      "frameworkComplianceEnabled": false,
+      "dependencyAuditEnabled": false,
+      "invocationTracingEnabled": true
+    },
+    "studio": {
+      "provenanceRequired": true,
+      "artifactFormats": [
+        "json",
+        "html"
+      ],
+      "templatePaths": [],
+      "hashAlgorithm": "sha256",
+      "provenanceChainEnabled": true,
+      "generationAttribution": true
+    },
+    "govern": {
+      "enabled": false,
+      "principles": [],
+      "complianceRegimes": [],
+      "auditDepth": "none"
+    },
+    "experience": {
+      "consentRequired": true,
+      "oversightThreshold": "epic",
+      "maxAutonomousComplexity": "complex",
+      "oversightMode": "optional",
+      "progressiveDisclosure": true,
+      "wcagLevel": "aa"
+    },
+    "autonomy": {
+      "defaultTrustScore": 70,
+      "trustGrowthRate": 0.02,
+      "trustDecayRate": 0.05,
+      "trustMinimum": 20,
+      "maxConcurrentAgents": 10,
+      "disabledWorkflows": [],
+      "autonomyScope": "local",
+      "humanInLoopMode": "never",
+      "escalationThreshold": 50
+    },
+    "persona": {
+      "personas": [
+        {
+          "id": "contributor",
+          "name": "Contributor",
+          "role": "contributor",
+          "domains": [],
+          "expertise": []
+        },
+        {
+          "id": "lead",
+          "name": "Lead",
+          "role": "lead",
+          "domains": [
+            "deployments"
+          ],
+          "expertise": []
+        }
+      ],
+      "defaultPersona": "system",
+      "trustBoundary": "flexible",
+      "driftThreshold": 0.3,
+      "sessionIsolation": true,
+      "crossSessionMemory": true
+    }
+  },
+  "credentials": {
+    "anthropic": {
+      "type": "api-key",
+      "envVar": "ANTHROPIC_API_KEY",
+      "provider": "anthropic"
+    }
+  },
+  "version": "1.0"
+}
