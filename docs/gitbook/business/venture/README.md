@@ -20,6 +20,8 @@ It owns strategic bets, product concepts, market theses, IP narratives, and the 
 - Product portfolio and packaging narrative
 - Strategic theses and innovation register
 - Fleet venture profiles (each product repo as a venture profile)
+
+See [`profiles/`](./profiles/README.md) for build-lane pilot briefs.
 - Fundraising engine backlog alignment
 - Handoff to **venture-os** for product implementation
 

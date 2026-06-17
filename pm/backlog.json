@@ -343,7 +343,9 @@
     {
       "id": "ECO-VEN-003",
       "title": "Fleet venture profiles — internal pilot client briefs per product repo",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "docs/gitbook/business/venture/profiles/ — 11 build-lane briefs + template",
       "owner": "ecosystem-os",
       "points": 13,
       "priority": "P1",

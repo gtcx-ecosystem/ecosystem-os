@@ -119,8 +119,8 @@
       "title": "Venture module — portfolio thesis, fleet venture profiles, fundraising coordination",
       "status": "in_progress",
       "ownerBaselineId": "venture-strategist",
-      "completionPercent": 45,
-      "deployReadinessPercent": 35,
+      "completionPercent": 65,
+      "deployReadinessPercent": 50,
       "evidence": "docs/gitbook/business/portfolio/product-portfolio.md",
       "productRepo": "venture-os",
       "epics": [
@@ -141,8 +141,8 @@
             {
               "id": "FEAT-VEN-FLEET-PROFILES",
               "title": "Internal pilot venture profiles per fleet repo",
-              "status": "open",
-              "completionPercent": 0
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         },

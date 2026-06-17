@@ -27,7 +27,8 @@
     {
       "id": "ECO-VEN-003",
       "title": "Fleet venture profiles — internal pilot client briefs per product repo",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
       "points": 13,
       "priority": "P1",
       "portfolioRow": "Surface + build-lane"
