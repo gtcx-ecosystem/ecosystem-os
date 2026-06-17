@@ -17,6 +17,8 @@
 | **Vision & mission** | [`docs/overview/README.md`](docs/overview/README.md) |
 | **Onboarding** | [`docs/onboarding/README.md`](docs/onboarding/README.md) |
 | **GTM catalog** | [`ops/gtm/fleet-catalog-index.md`](ops/gtm/fleet-catalog-index.md) |
+| **Fundraising** | [`fundraising/README.md`](fundraising/README.md) |
+| **Venture OS** | [`venture-os/README.md`](venture-os/README.md) |
 | **Publish register** | [`pm/publish-register.json`](pm/publish-register.json) |
 | **Coverage matrix** | [`docs/reference/documentation-fleet-coverage-matrix.md`](docs/reference/documentation-fleet-coverage-matrix.md) |
 
@@ -31,6 +33,8 @@ docs/onboarding/  Contributor and agent onboarding
 docs/architecture/ Fleet architecture index
 docs/reference/   GitBook mirrors, fleet matrices
 docs/governance/  Pointers to canon-os (normative law stays there)
+fundraising/      Capital strategy, investor decks, grants, sponsorship
+venture-os/       Africa-focused venture growth, fundraising, visibility, and scale OS
 ops/gtm/          Go-to-market scope and inbound tickets
 ops/legal/        Legal review workflows
 pm/               Publish register
