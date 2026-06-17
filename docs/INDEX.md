@@ -9,6 +9,9 @@ owner: ecosystem-os
 
 | Section | Path | Purpose |
 | ------- | ---- | ------- |
+| Foundation | [`foundation/`](./foundation/) | Ecosystem OS doctrine, product architecture, 11PR audit |
+| Business | [`business/`](./business/) | Business thesis, product portfolio, markets, economics |
+| Research | [`research/`](./research/) | Competitive landscape, Graph/RAG/MCP research, research agenda |
 | Overview | [`overview/`](./overview/) | Vision, mission, stakeholder entry |
 | GitBook | [`gitbook/`](./gitbook/) | Published operator canon |
 | Onboarding | [`onboarding/`](./onboarding/) | Contributors and agents |
