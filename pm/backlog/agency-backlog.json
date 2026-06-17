@@ -1,0 +1,57 @@
+{
+  "$schema": "gtcx://pm/backlog-slice/v1",
+  "domain": "agency",
+  "initiative": "INIT-ECOSYSTEM-AGENCY",
+  "updated": "2026-06-17",
+  "stories": [
+    {
+      "id": "ECO-AGY-001",
+      "title": "Agency module contract + quality bar — promote draft to current",
+      "status": "in_progress",
+      "points": 2,
+      "priority": "P1"
+    },
+    {
+      "id": "ECO-AGY-002",
+      "title": "Catalog registries — tools, assets, resources with JSON schema",
+      "status": "done",
+      "points": 5,
+      "priority": "P0"
+    },
+    {
+      "id": "ECO-AGY-003",
+      "title": "agency:check + agency:score gates wired with CI witnesses",
+      "status": "in_progress",
+      "points": 3,
+      "priority": "P0"
+    },
+    {
+      "id": "ECO-AGY-004",
+      "title": "License governance policy — attribution, restrictions, forbidden licenses",
+      "status": "open",
+      "points": 3,
+      "priority": "P0"
+    },
+    {
+      "id": "ECO-AGY-005",
+      "title": "GR-T2 campaign pack — narrative arc, asset list, claim→witness map",
+      "status": "open",
+      "points": 8,
+      "priority": "P1"
+    },
+    {
+      "id": "ECO-AGY-006",
+      "title": "Brand system scaffold — tokens, typography, slide + one-pager templates",
+      "status": "open",
+      "points": 8,
+      "priority": "P2"
+    },
+    {
+      "id": "ECO-AGY-007",
+      "title": "Campaign review workflow — brief → generate → review → register → publish",
+      "status": "open",
+      "points": 5,
+      "priority": "P2"
+    }
+  ]
+}

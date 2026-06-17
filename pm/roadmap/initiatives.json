@@ -2,24 +2,24 @@
   "$schema": "gtcx://pm/initiatives/v1",
   "schemaVersion": 1,
   "repo": "ecosystem-os",
-  "updated": "2026-06-15",
+  "updated": "2026-06-17",
   "initiatives": [
     {
       "id": "INIT-ECOSYSTEM-DOCS",
       "title": "Fleet documentation home — GitBook, onboarding, GTM publish registry",
       "status": "in_progress",
       "ownerBaselineId": "protocol-engineer",
-      "completionPercent": 65,
-      "deployReadinessPercent": 55,
-      "evidence": "pm/ci/readiness-snapshot-latest.json",
+      "completionPercent": 70,
+      "deployReadinessPercent": 60,
+      "evidence": "pm/ci/readiness-snapshot.json",
       "epics": [
         {
           "id": "EPIC-P35-PM-LIFT",
           "title": "P35 v5 + PM folder R1 + ops:check for fleet documentation repo",
           "dimensionId": "compliance",
           "targetScore100": 100,
-          "currentScore100": 59,
-          "completionPercent": 60,
+          "currentScore100": 65,
+          "completionPercent": 70,
           "features": [
             {
               "id": "FEAT-P35-LAYOUT",
@@ -31,7 +31,173 @@
               "id": "FEAT-PM-FOLDER-R1",
               "title": "pm/ roadmap + manifest + folder check GREEN",
               "status": "in_progress",
+              "completionPercent": 85
+            }
+          ]
+        },
+        {
+          "id": "EPIC-DOCS-IA-W4",
+          "title": "Fleet docs IA contract lift (W4 batch alignment)",
+          "dimensionId": "documentation",
+          "targetScore100": 80,
+          "currentScore100": 62,
+          "completionPercent": 25,
+          "features": [
+            {
+              "id": "FEAT-DOCS-IA-ECO",
+              "title": "ecosystem-os fleet IA score ≥80",
+              "status": "open",
+              "completionPercent": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INIT-ECOSYSTEM-AGENCY",
+      "title": "Agency module — brand, campaigns, catalogs, governed market expression",
+      "status": "in_progress",
+      "ownerBaselineId": "creative-director",
+      "completionPercent": 35,
+      "deployReadinessPercent": 30,
+      "evidence": "pm/ci/agency-check-latest.json",
+      "epics": [
+        {
+          "id": "EPIC-AGY-FOUNDATION",
+          "title": "Agency foundation — contract, registries, check gates",
+          "dimensionId": "compliance",
+          "targetScore100": 100,
+          "currentScore100": 75,
+          "completionPercent": 60,
+          "features": [
+            {
+              "id": "FEAT-AGY-CATALOGS",
+              "title": "tools/assets/resources catalogs + schema validation",
+              "status": "done",
+              "completionPercent": 100
+            },
+            {
+              "id": "FEAT-AGY-CHECKS",
+              "title": "agency:check + agency:score witnesses",
+              "status": "in_progress",
+              "completionPercent": 80
+            },
+            {
+              "id": "FEAT-AGY-POLICY",
+              "title": "License governance + claim→witness policy",
+              "status": "open",
+              "completionPercent": 0
+            }
+          ]
+        },
+        {
+          "id": "EPIC-AGY-CAMPAIGNS",
+          "title": "Campaign packs + brand system + templates",
+          "dimensionId": "craft",
+          "targetScore100": 90,
+          "currentScore100": 15,
+          "completionPercent": 10,
+          "features": [
+            {
+              "id": "FEAT-AGY-GR-T2-PACK",
+              "title": "GR-T2 campaign pack spec + asset list",
+              "status": "open",
+              "completionPercent": 0
+            },
+            {
+              "id": "FEAT-AGY-BRAND-SYSTEM",
+              "title": "Brand tokens + one-pager/slide template scaffold",
+              "status": "open",
+              "completionPercent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INIT-ECOSYSTEM-VENTURE",
+      "title": "Venture module — portfolio thesis, fleet venture profiles, fundraising coordination",
+      "status": "in_progress",
+      "ownerBaselineId": "venture-strategist",
+      "completionPercent": 20,
+      "deployReadinessPercent": 15,
+      "evidence": "docs/gitbook/business/portfolio/product-portfolio.md",
+      "productRepo": "venture-os",
+      "epics": [
+        {
+          "id": "EPIC-VEN-MODULE",
+          "title": "Venture module contract + portfolio SoR",
+          "dimensionId": "commercialValue",
+          "targetScore100": 90,
+          "currentScore100": 40,
+          "completionPercent": 30,
+          "features": [
+            {
+              "id": "FEAT-VEN-CONTRACT",
+              "title": "Venture module contract + GitBook pack",
+              "status": "in_progress",
+              "completionPercent": 50
+            },
+            {
+              "id": "FEAT-VEN-FLEET-PROFILES",
+              "title": "Internal pilot venture profiles per fleet repo",
+              "status": "open",
+              "completionPercent": 0
+            }
+          ]
+        },
+        {
+          "id": "EPIC-VEN-FUNDRAISE",
+          "title": "Fundraising engine ↔ pm backlog alignment",
+          "dimensionId": "ecosystem-integration",
+          "targetScore100": 85,
+          "currentScore100": 25,
+          "completionPercent": 15,
+          "features": [
+            {
+              "id": "FEAT-VEN-FUNDRAISE-SYNC",
+              "title": "fundraising/execution-backlog traced to pm stories",
+              "status": "open",
+              "completionPercent": 10
+            },
+            {
+              "id": "FEAT-VEN-OS-HANDOFF",
+              "title": "venture-os product repo coordination handoff",
+              "status": "open",
+              "completionPercent": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INIT-ECOSYSTEM-SHIP",
+      "title": "ECO-OS-SHIP-001 — quarter pillar narrative + fleet GTM proof",
+      "status": "in_progress",
+      "ownerBaselineId": "product-lead",
+      "completionPercent": 45,
+      "deployReadinessPercent": 40,
+      "evidence": "pm/spec/product-goals.json",
+      "epics": [
+        {
+          "id": "EPIC-SHIP-GTM",
+          "title": "GTM + portfolio narrative witnesses",
+          "dimensionId": "commercialValue",
+          "targetScore100": 100,
+          "currentScore100": 55,
+          "completionPercent": 50,
+          "features": [
+            {
+              "id": "FEAT-SHIP-PORTFOLIO",
+              "title": "Product portfolio + business thesis current",
+              "status": "in_progress",
               "completionPercent": 70
+            },
+            {
+              "id": "FEAT-SHIP-DOCTRINE",
+              "title": "Ecosystem OS doctrine narrative witness",
+              "status": "in_progress",
+              "completionPercent": 60
             }
           ]
         }

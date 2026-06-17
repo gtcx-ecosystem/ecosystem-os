@@ -1,0 +1,51 @@
+{
+  "$schema": "gtcx://pm/backlog-slice/v1",
+  "domain": "docs",
+  "initiative": "INIT-ECOSYSTEM-DOCS",
+  "updated": "2026-06-17",
+  "stories": [
+    {
+      "id": "ECO-DOCS-001",
+      "title": "PTM-R5-03 — fleet five-pillar lift for ecosystem-os",
+      "status": "in_progress",
+      "points": 5,
+      "priority": "P1"
+    },
+    {
+      "id": "ECO-DOCS-002",
+      "title": "P35 strict layout green — ecosystem repo layout v5",
+      "status": "open",
+      "points": 3,
+      "priority": "P1"
+    },
+    {
+      "id": "ECO-DOCS-003",
+      "title": "PM folder R1 — PRD, UX, backlog, and capability matrix complete",
+      "status": "in_progress",
+      "points": 5,
+      "priority": "P0"
+    },
+    {
+      "id": "ECO-DOCS-004",
+      "title": "Agent and agile doc scaffolding — universal, cursor, and agile roadmap",
+      "status": "open",
+      "points": 3,
+      "priority": "P1"
+    },
+    {
+      "id": "ECO-DOCS-005",
+      "title": "GitBook publish register — all fleet spaces tracked",
+      "status": "open",
+      "points": 3,
+      "priority": "P2"
+    },
+    {
+      "id": "ECO-DOCS-006",
+      "title": "Fleet docs IA lift — ecosystem-os score ≥80",
+      "status": "open",
+      "points": 8,
+      "priority": "P1",
+      "wave": "W4-docs-IA"
+    }
+  ]
+}

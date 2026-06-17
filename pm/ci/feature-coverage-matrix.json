@@ -1,6 +1,99 @@
 {
   "$schema": "gtcx://pm/feature-coverage-matrix/v1",
   "version": "1.0.0",
-  "features": [],
-  "minCoveragePercent": 90
+  "repo": "ecosystem-os",
+  "updated": "2026-06-17",
+  "minCoveragePercent": 90,
+  "features": [
+    {
+      "id": "FEAT-P35-LAYOUT",
+      "title": "P35 strict + baseline config + root allowlist",
+      "status": "in_progress",
+      "coveragePercent": 80,
+      "tests": [
+        { "type": "script", "command": "pnpm layout:check --strict" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-PM-FOLDER-R1",
+      "title": "pm/ roadmap + manifest + folder check GREEN",
+      "status": "in_progress",
+      "coveragePercent": 70,
+      "tests": [
+        { "type": "script", "command": "pnpm pm:folder:check" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-OPS-CHECK",
+      "title": "pnpm ops:check wired and green",
+      "status": "in_progress",
+      "coveragePercent": 85,
+      "tests": [
+        { "type": "script", "command": "pnpm ops:check" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-PUBLISH-REGISTER",
+      "title": "pm/publish-register.json tracks live GitBook spaces",
+      "status": "in_progress",
+      "coveragePercent": 90,
+      "tests": [
+        { "type": "witness", "path": "pm/publish-register.json" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-DOC-COVERAGE-MATRIX",
+      "title": "Fleet documentation coverage matrix maintained",
+      "status": "in_progress",
+      "coveragePercent": 60,
+      "tests": [
+        { "type": "witness", "path": "docs/reference/documentation-fleet-coverage-matrix.md" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-AGY-CATALOGS",
+      "title": "Agency catalogs validate against JSON schemas",
+      "status": "done",
+      "coveragePercent": 100,
+      "tests": [{ "type": "script", "command": "pnpm agency:check" }],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-AGY-CHECKS",
+      "title": "agency:check + agency:score witnesses",
+      "status": "in_progress",
+      "coveragePercent": 80,
+      "tests": [
+        { "type": "script", "command": "pnpm agency:check" },
+        { "type": "witness", "path": "pm/ci/agency-check-latest.json" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-VEN-CONTRACT",
+      "title": "Venture module contract + GitBook pack",
+      "status": "in_progress",
+      "coveragePercent": 50,
+      "tests": [
+        { "type": "witness", "path": "docs/gitbook/business/venture/module-contract.md" }
+      ],
+      "owner": "ecosystem-os"
+    },
+    {
+      "id": "FEAT-BACKLOG-REGISTRY",
+      "title": "pm backlog registry + domain slices",
+      "status": "in_progress",
+      "coveragePercent": 90,
+      "tests": [
+        { "type": "witness", "path": "pm/spec/backlog-registry.json" },
+        { "type": "witness", "path": "pm/backlog/README.md" }
+      ],
+      "owner": "ecosystem-os"
+    }
+  ]
 }
