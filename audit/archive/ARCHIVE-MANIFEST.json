@@ -1,0 +1,12 @@
+{
+  "schema": "gtcx.archive.manifest.v1",
+  "entries": [
+    {
+      "from": "audit/audit-output-2026-06-15.json",
+      "to": "audit/archive/2026-06-17/audit/audit-output-2026-06-15.json",
+      "reason": "stale-dated-active-tree",
+      "at": "2026-06-17T10:37:41.520Z"
+    }
+  ],
+  "updated": "2026-06-17T10:37:41.520Z"
+}
