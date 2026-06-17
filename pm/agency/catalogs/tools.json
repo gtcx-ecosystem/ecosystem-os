@@ -1,0 +1,86 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-06-17",
+  "items": [
+    {
+      "id": "gimp",
+      "name": "GIMP",
+      "category": "photo",
+      "kind": "oss",
+      "license": "GPL-3.0-or-later",
+      "status": "allowed",
+      "urls": {
+        "homepage": "https://www.gimp.org/",
+        "repo": "https://gitlab.gnome.org/GNOME/gimp"
+      },
+      "why": "Open-source raster editor for photo compositing and asset prep when Photoshop isn't available.",
+      "tradeoffs": ["UI/UX is less polished than Adobe; advanced workflows can be slower."]
+    },
+    {
+      "id": "inkscape",
+      "name": "Inkscape",
+      "category": "graphics",
+      "kind": "oss",
+      "license": "GPL-2.0-or-later",
+      "status": "recommended",
+      "urls": {
+        "homepage": "https://inkscape.org/",
+        "repo": "https://gitlab.com/inkscape/inkscape"
+      },
+      "why": "Vector design for logos, icons, diagrams, and exportable brand assets."
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "category": "3d",
+      "kind": "oss",
+      "license": "GPL-3.0-or-later",
+      "status": "recommended",
+      "urls": {
+        "homepage": "https://www.blender.org/",
+        "repo": "https://projects.blender.org/blender/blender"
+      },
+      "why": "3D renders, motion, product shots, and compositing with a strong ecosystem."
+    },
+    {
+      "id": "krita",
+      "name": "Krita",
+      "category": "graphics",
+      "kind": "oss",
+      "license": "GPL-3.0-or-later",
+      "status": "recommended",
+      "urls": {
+        "homepage": "https://krita.org/",
+        "repo": "https://invent.kde.org/graphics/krita"
+      },
+      "why": "Digital painting and illustration for bespoke visual language and campaign assets."
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve",
+      "category": "video",
+      "kind": "commercial",
+      "license": "Proprietary (Blackmagic Design EULA)",
+      "status": "recommended",
+      "urls": {
+        "homepage": "https://www.blackmagicdesign.com/products/davinciresolve"
+      },
+      "why": "High-end editing + color grading; strong default for world-class video output."
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "category": "video",
+      "kind": "oss",
+      "license": "LGPL-2.1-or-later (core); some components GPL",
+      "status": "recommended",
+      "urls": {
+        "homepage": "https://ffmpeg.org/",
+        "repo": "https://github.com/FFmpeg/FFmpeg"
+      },
+      "why": "Deterministic media transforms (transcode, caption burn-in, audio normalize) for pipeline automation.",
+      "notes": "License may vary by build configuration; ensure compliance for distribution."
+    }
+  ]
+}
+

@@ -1,0 +1,75 @@
+{
+  "schema": "gtcx://ecosystem-os/agency-score/v1",
+  "updated": "2026-06-17T09:50:13.306Z",
+  "shippable": false,
+  "hardGates": {
+    "compliance": true,
+    "trustAndSafety": false,
+    "craft": false,
+    "technicalExcellence": true
+  },
+  "weights": {
+    "compliance": 12,
+    "technicalExcellence": 12,
+    "craft": 12,
+    "trustAndSafety": 12,
+    "worldClass": 10,
+    "commercialValue": 10,
+    "creativityInnovation": 8,
+    "ecosystemIntegration": 8,
+    "agenticEmpowerment": 6,
+    "defensiveMoat": 6,
+    "ipMagic": 4
+  },
+  "scores": {
+    "compliance": 100,
+    "technicalExcellence": 100,
+    "craft": 50,
+    "worldClass": 40,
+    "trustAndSafety": 50,
+    "creativityInnovation": 45,
+    "commercialValue": 45,
+    "defensiveMoat": 40,
+    "agenticEmpowerment": 40,
+    "ecosystemIntegration": 40,
+    "ipMagic": 30
+  },
+  "composite": 57,
+  "details": {
+    "compliance": {
+      "tools": {
+        "score": 100,
+        "unknown": 0,
+        "total": 6
+      },
+      "assets": {
+        "score": 100,
+        "unknown": 0,
+        "total": 3
+      },
+      "resources": {
+        "score": 100,
+        "unknown": 0,
+        "total": 2
+      }
+    },
+    "technicalExcellence": {
+      "tools": {
+        "score": 100,
+        "missing": 0,
+        "total": 42
+      },
+      "assets": {
+        "score": 100,
+        "missing": 0,
+        "total": 24
+      },
+      "resources": {
+        "score": 100,
+        "missing": 0,
+        "total": 12
+      }
+    },
+    "note": "v0 scoring: Compliance/Technical are computed from catalogs; remaining pillars are placeholders until templates, packs, and claim→witness contracts land."
+  }
+}

@@ -39,6 +39,16 @@
     "docs:agents:check": "node platform/scripts/agents-check.mjs",
     "docs:agents:check:write": "node platform/scripts/agents-check.mjs --write",
     "agents:check": "node platform/scripts/agents-check.mjs",
-    "agents:check:write": "node platform/scripts/agents-check.mjs --write"
+    "agents:check:write": "node platform/scripts/agents-check.mjs --write",
+    "docs:agile:check": "node platform/scripts/agile-check.mjs",
+    "docs:agile:check:write": "node platform/scripts/agile-check.mjs --write",
+    "agile:check": "node platform/scripts/agile-check.mjs",
+    "agile:check:write": "node platform/scripts/agile-check.mjs --write",
+    "docs:fractal-mpr:check": "node platform/scripts/docs-fractal-mpr-check.mjs",
+    "docs:pack:pillar-contract:check": "node platform/scripts/docs-pack-pillar-contract-check.mjs",
+    "agency:check": "node platform/scripts/agency-check.mjs",
+    "agency:check:write": "node platform/scripts/agency-check.mjs --write",
+    "agency:score": "node platform/scripts/agency-score.mjs",
+    "agency:score:write": "node platform/scripts/agency-score.mjs --write"
   }
 }
