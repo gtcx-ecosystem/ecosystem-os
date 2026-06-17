@@ -49,6 +49,8 @@
     "agency:check": "node platform/scripts/agency-check.mjs",
     "agency:check:write": "node platform/scripts/agency-check.mjs --write",
     "agency:score": "node platform/scripts/agency-score.mjs",
-    "agency:score:write": "node platform/scripts/agency-score.mjs --write"
+    "agency:score:write": "node platform/scripts/agency-score.mjs --write",
+    "ops:consumption:check": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs",
+    "ops:consumption:check:write": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs --write"
   }
 }
