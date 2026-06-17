@@ -6,7 +6,7 @@
   "updated": "2026-06-17",
   "fleetRegistry": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json",
   "vision": {
-    "statement": "GTCX builds the AI-native company operating system and proves it by running the company on it while shipping the trade platform.",
+    "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
     "horizon": "2026-2028"
   },
   "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
@@ -25,11 +25,13 @@
   },
   "activeMilestone": {
     "id": "ECO-OS-SHIP-001",
-    "title": "Ship · surfaces · GTM · operational AI",
+    "title": "ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI",
     "shippableOutcome": "GR-T2 pilot narrative live; Ecosystem OS category in market; fleet eats operating model while markets M4 + gtcx surfaces ship.",
     "targetDate": "2026-Q3",
     "programmeId": "PROG-ECOSYSTEM-OS",
-    "prdRefs": ["prd-product-charter"],
+    "prdRefs": [
+      "prd-product-charter"
+    ],
     "headStoryId": "ECO-OS-SHIP-001",
     "fleetQuarterPillars": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#quarterPillars",
     "acceptanceChecks": [
@@ -63,9 +65,16 @@
     ]
   },
   "definitionOfDone": {
-    "story": ["product boundary explicit", "evidence path recorded"],
-    "milestone": ["quarter pillar acceptance checks pass or explicit waiver"],
-    "forbidden": ["done on doc-only milestone without ship path"]
+    "story": [
+      "product boundary explicit",
+      "evidence path recorded"
+    ],
+    "milestone": [
+      "quarter pillar acceptance checks pass or explicit waiver"
+    ],
+    "forbidden": [
+      "done on doc-only milestone without ship path"
+    ]
   },
   "strategicGoals": {
     "mirrorOf": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#fleetStrategicGoals",
