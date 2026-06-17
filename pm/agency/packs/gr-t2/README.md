@@ -28,11 +28,11 @@ review_cycle: on-change
 
 | ID | Type | Catalog ref | Status |
 | -- | ---- | ----------- | ------ |
-| grt2-hero-deck | slide-deck | `assets.grt2-integrator-hero-deck` | scaffold |
-| grt2-one-pager | one-pager | `assets.grt2-sovereign-one-pager` | scaffold |
-| grt2-demo-script | script | `resources.grt2-demo-narrative` | scaffold |
-| grt2-social-kit | social | `assets.grt2-social-kit` | planned |
-| grt2-claim-sheet | internal | `resources.grt2-claim-witness-sheet` | current |
+| grt2-hero-deck | slide-deck | `deliverables.grt2-integrator-hero-deck` | draft |
+| grt2-one-pager | one-pager | `deliverables.grt2-sovereign-one-pager` | draft |
+| grt2-demo-script | script | `deliverables.grt2-demo-narrative` | draft |
+| grt2-social-kit | social | — | planned |
+| grt2-claim-sheet | internal | `deliverables.grt2-claim-witness-sheet` | current |
 
 ## Claim discipline
 

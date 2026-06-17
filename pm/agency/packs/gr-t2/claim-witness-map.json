@@ -10,14 +10,14 @@
       "witnesses": [
         {
           "repo": "canon-os",
-          "path": "docs/governance/principles/architectural-principles/cryptographic-verification.md",
-          "type": "canon-principle"
+          "path": "docs/business/domain/commodities/gold/origin-story/the-age-of-programmable-trust.md",
+          "type": "canon-narrative"
         },
         {
           "repo": "ecosystem-os",
           "path": "audit/evidence/five-pillar-latest.json",
           "type": "audit-witness",
-          "field": "technicalExcellence"
+          "field": "quadrants.technicalExcellence.score100"
         }
       ],
       "status": "linked"
@@ -29,7 +29,7 @@
       "witnesses": [
         {
           "repo": "bridge-os",
-          "path": "audit/evidence/ecosystem-docs-provisioning-latest.json",
+          "path": "pm/ci/ecosystem-docs-provisioning-latest.json",
           "type": "fleet-witness"
         },
         {
@@ -48,8 +48,7 @@
         {
           "repo": "ecosystem-os",
           "path": "audit/evidence/agency-check-latest.json",
-          "type": "audit-witness",
-          "field": "ok"
+          "type": "audit-witness"
         },
         {
           "repo": "ecosystem-os",
@@ -66,9 +65,9 @@
       "witnesses": [
         {
           "repo": "bridge-os",
-          "path": "pm/spec/program-registry.json",
+          "path": "pm/ci/ecosystem-clarity-report-latest.json",
           "type": "program-registry",
-          "field": "PROG-CONTINENTAL-CAPITAL"
+          "field": "fleetNorthStar.headProgrammeId"
         },
         {
           "repo": "markets-os",
