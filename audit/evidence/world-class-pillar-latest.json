@@ -2,28 +2,28 @@
   "schema": "gtcx://audit/world-class-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-17",
-  "score100": 100,
+  "score100": 34,
   "published": false,
   "provisional": true,
   "blockedBy": "esl:ESL-3",
   "unlockThreshold100": 85,
   "metrics": {
     "documentation-world-class": {
-      "score100": 100,
+      "score100": 0,
       "weight": 8,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 95,
-      "gap100": 0,
+      "gap100": 95,
       "sourceIds": [
         "documentation"
       ]
     },
     "security-world-class": {
-      "score100": 100,
+      "score100": 0,
       "weight": 12,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 98,
-      "gap100": 0,
+      "gap100": 98,
       "sourceIds": [
         "security"
       ]
@@ -40,21 +40,21 @@
       ]
     },
     "devops-observability": {
-      "score100": 100,
+      "score100": 0,
       "weight": 12,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 95,
-      "gap100": 0,
+      "gap100": 95,
       "sourceIds": [
         "production-readiness"
       ]
     },
     "agentic-trust": {
-      "score100": 100,
+      "score100": 0,
       "weight": 10,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 95,
-      "gap100": 0,
+      "gap100": 95,
       "sourceIds": [
         "ai-maturity",
         "hallucination-resilience"
@@ -83,32 +83,32 @@
       ]
     },
     "repo-hygiene-world-class": {
-      "score100": 100,
+      "score100": 0,
       "weight": 8,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 95,
-      "gap100": 0,
+      "gap100": 95,
       "sourceIds": [
         "repo-folder-hygiene",
         "spec-drift"
       ]
     },
     "spec-truth": {
-      "score100": 100,
+      "score100": 0,
       "weight": 8,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 95,
-      "gap100": 0,
+      "gap100": 95,
       "sourceIds": [
         "spec-drift"
       ]
     },
     "global-south-resilience": {
-      "score100": 100,
+      "score100": 0,
       "weight": 8,
-      "qualityAvg100": 100,
+      "qualityAvg100": 0,
       "worldClassBar100": 90,
-      "gap100": 0,
+      "gap100": 90,
       "sourceIds": [
         "production-readiness",
         "ux-product-design"

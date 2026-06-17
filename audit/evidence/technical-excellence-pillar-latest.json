@@ -2,38 +2,38 @@
   "schema": "gtcx://audit/technical-excellence-pillar/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-17",
-  "score100": 100,
+  "score100": 38,
   "published": false,
   "provisional": true,
-  "blockedBy": "compliance",
+  "blockedBy": "below-threshold",
   "unlockThreshold100": 85,
   "metrics": {
     "engineering-production": {
-      "score100": 100,
+      "score100": 0,
       "weight": 18,
       "sourceIds": [
         "production-readiness"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "C",
+      "source": "missing"
     },
     "security-depth": {
-      "score100": 100,
+      "score100": 0,
       "weight": 16,
       "sourceIds": [
         "security"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "C",
+      "source": "missing"
     },
     "product-ux-quality": {
-      "score100": 100,
+      "score100": 0,
       "weight": 14,
       "sourceIds": [
         "ux-product-design"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "C",
+      "source": "missing"
     },
     "ecosystem-integration": {
       "score100": 100,
@@ -41,8 +41,8 @@
       "sourceIds": [
         "ecosystem-integration"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "B",
+      "source": "strategic-depth"
     },
     "innovation-ip": {
       "score100": 100,
@@ -51,18 +51,18 @@
         "innovation-originality",
         "technical-moat"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "B",
+      "source": "strategic-depth"
     },
     "ai-agentic-maturity": {
-      "score100": 100,
+      "score100": 0,
       "weight": 14,
       "sourceIds": [
         "ai-maturity",
         "hallucination-resilience"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "C",
+      "source": "missing"
     },
     "enterprise-bank-grade": {
       "score100": 100,
@@ -71,12 +71,12 @@
         "enterprise-readiness",
         "bank-grade-auditability"
       ],
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "B",
+      "source": "strategic-depth"
     }
   },
   "hasRubric": true,
-  "rubricSource": "audit-output",
+  "rubricSource": "readiness-snapshot",
   "rubricSpec": "pm/spec/technical-excellence-rubric.json",
   "rubricVersion": "1.0.0",
   "capped": false,
