@@ -94,6 +94,10 @@
     ],
     "readmeExemptPathPrefixes": [
       "docs/reference/archive"
+    ],
+    "shadowExemptPathPrefixes": [
+      "docs/reference/onboarding",
+      "docs/operations/roadmap"
     ]
   },
   "allowedTopLevel": [
