@@ -9,4 +9,6 @@ review_cycle: on-change
 document_type: architecture
 ---
 
+# product-architecture — pointer
+
 **Canonical SoR:** [`./specs/product-architecture.md`](./specs/product-architecture.md)

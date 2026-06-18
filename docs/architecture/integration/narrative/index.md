@@ -9,4 +9,6 @@ review_cycle: on-change
 document_type: architecture
 ---
 
+# index — pointer
+
 **Canonical SoR:** [`./specs/index.md`](./specs/index.md)

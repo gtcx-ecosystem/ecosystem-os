@@ -9,4 +9,6 @@ review_cycle: on-change
 document_type: architecture
 ---
 
+# external-access-credential-plane — pointer
+
 **Canonical SoR:** [`./specs/external-access-credential-plane.md`](./specs/external-access-credential-plane.md)

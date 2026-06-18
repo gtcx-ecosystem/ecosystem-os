@@ -9,4 +9,6 @@ review_cycle: on-change
 document_type: architecture
 ---
 
+# credential-management-ecosystem — pointer
+
 **Canonical SoR:** [`./specs/credential-management-ecosystem.md`](./specs/credential-management-ecosystem.md)
