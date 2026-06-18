@@ -1,5 +1,5 @@
 {
-  "schema": "gtcx://audit/documentation-audit/v1",
+  "schema": "gtcx://audit/documentation review/v1",
   "repo": "ecosystem-os",
   "repoKind": "product",
   "date": "2026-06-17",
