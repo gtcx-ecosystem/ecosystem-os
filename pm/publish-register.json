@@ -1,12 +1,12 @@
 {
   "$schema": "gtcx://ecosystem-os/publish-register/v2",
-  "version": "2.1.0",
-  "updated": "2026-06-15",
+  "version": "2.2.0",
+  "updated": "2026-06-18",
   "ownerRepo": "ecosystem-os",
   "initiative": "INIT-DOC-FLEET-PUBLISH",
-  "initiativeStatus": "reopened-v3",
+  "initiativeStatus": "active-v4",
   "programCharter": "docs/strategy/init-doc-fleet-publish.md",
-  "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md",
+  "coverageMatrix": "ops/gtm/fleet-catalog-index.md",
   "spaces": [
     {
       "id": "gtcx-ecosystem",
@@ -57,35 +57,69 @@
     {
       "id": "compliance-os",
       "provider": "gitbook",
-      "sourcePath": "docs/reference/gitbooks/compliance-os/",
+      "sourcePath": "compliance-os/docs/gitbook/",
+      "summary": "compliance-os/docs/gitbook/README.md",
       "status": "synced",
       "targetStatus": "synced",
       "ownerRepo": "compliance-os",
       "inbound": "ops/gtm/inbound-tickets/to-compliance-os-gitbook-sync-contract-2026-06-13.md",
-      "syncContract": "docs/strategy/gitbook-product-sync-contract-v1.md",
-      "refreshCycle": "on-owner-release"
-    },
-    {
-      "id": "gtcx-mobile",
-      "provider": "gitbook",
-      "sourcePath": "docs/reference/gitbooks/gtcx-mobile/",
-      "status": "synced",
-      "targetStatus": "synced",
-      "ownerRepo": "gtcx-mobile",
-      "inbound": "ops/gtm/inbound-tickets/to-gtcx-mobile-gitbook-sync-contract-2026-06-13.md",
-      "syncContract": "docs/strategy/gitbook-product-sync-contract-v1.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
       "refreshCycle": "on-owner-release"
     },
     {
       "id": "ledger-ui",
       "provider": "gitbook",
-      "sourcePath": "docs/reference/gitbooks/ledger-ui/",
+      "sourcePath": "ledger-ui/docs/gitbook/",
+      "summary": "ledger-ui/docs/gitbook/SUMMARY.md",
       "status": "synced",
       "targetStatus": "synced",
       "ownerRepo": "ledger-ui",
       "inbound": "ops/gtm/inbound-tickets/to-ledger-ui-gitbook-sync-contract-2026-06-13.md",
-      "syncContract": "docs/strategy/gitbook-product-sync-contract-v1.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
       "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "markets-os",
+      "provider": "gitbook",
+      "sourcePath": "markets-os/docs/gitbook/",
+      "summary": "markets-os/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "live",
+      "ownerRepo": "markets-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "agile-os",
+      "provider": "gitbook",
+      "sourcePath": "agile-os/docs/gitbook/",
+      "summary": "agile-os/docs/gitbook/README.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "agile-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "fabric-os",
+      "provider": "gitbook",
+      "sourcePath": "fabric-os/docs/gitbook/",
+      "summary": "fabric-os/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "fabric-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "gtcx-mobile",
+      "provider": "gitbook",
+      "sourcePath": "gtcx-mobile/docs/gitbook/",
+      "summary": "gtcx-mobile/docs/gitbook/README.md",
+      "status": "planned",
+      "targetStatus": "synced",
+      "ownerRepo": "gtcx-mobile",
+      "inbound": "ops/gtm/inbound-tickets/to-gtcx-mobile-gitbook-sync-contract-2026-06-13.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
+      "refreshCycle": "on-owner-release",
+      "notes": "Owner scaffold pending — row tracked; not live/synced until path exists"
     },
     {
       "id": "legacy-gitbook",
@@ -117,7 +151,7 @@
     },
     {
       "repo": "gtcx-os",
-      "gitbook": "platform/protocols",
+      "gitbook": "gtcx-protocols",
       "gtm": "pending",
       "devDocs": "platform/protocols/docs/gitbook/",
       "onboarding": "pending",
@@ -125,11 +159,11 @@
     },
     {
       "repo": "compliance-os",
-      "gitbook": "planned",
+      "gitbook": "compliance-os",
       "gtm": "pending",
-      "devDocs": "owner",
+      "devDocs": "compliance-os/docs/gitbook/",
       "onboarding": "owner",
-      "status": "gap"
+      "status": "synced"
     },
     {
       "repo": "gtcx-mobile",
@@ -141,11 +175,35 @@
     },
     {
       "repo": "ledger-ui",
-      "gitbook": "planned",
+      "gitbook": "ledger-ui",
       "gtm": "pending",
-      "devDocs": "owner",
+      "devDocs": "ledger-ui/docs/gitbook/",
       "onboarding": "owner",
-      "status": "gap"
+      "status": "synced"
+    },
+    {
+      "repo": "markets-os",
+      "gitbook": "markets-os",
+      "gtm": "pending",
+      "devDocs": "markets-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "agile-os",
+      "gitbook": "agile-os",
+      "gtm": "pending",
+      "devDocs": "agile-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "fabric-os",
+      "gitbook": "fabric-os",
+      "gtm": "pending",
+      "devDocs": "fabric-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
     },
     {
       "repo": "gtcx-platforms",
@@ -205,14 +263,6 @@
     },
     {
       "repo": "gtcx-agentic",
-      "gitbook": "planned",
-      "gtm": "pending",
-      "devDocs": "owner",
-      "onboarding": "owner",
-      "status": "gap"
-    },
-    {
-      "repo": "gtcx-agile",
       "gitbook": "planned",
       "gtm": "pending",
       "devDocs": "owner",

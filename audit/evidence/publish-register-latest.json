@@ -1,0 +1,99 @@
+{
+  "schema": "gtcx://ecosystem-os/publish-register-check/v1",
+  "repo": "ecosystem-os",
+  "at": "2026-06-18T09:19:15.628Z",
+  "ok": true,
+  "spaceCount": 11,
+  "liveSyncedCount": 10,
+  "rows": [
+    {
+      "id": "gtcx-ecosystem",
+      "status": "live",
+      "sourcePath": "docs/gitbook/ecosystem/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/gitbook/ecosystem/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "gtcx-protocols",
+      "status": "synced",
+      "sourcePath": "docs/reference/gitbooks/gtcx-protocols/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/reference/gitbooks/gtcx-protocols/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "apex-engine",
+      "status": "synced",
+      "sourcePath": "baseline-os/docs/gitbook/apex-engine/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/baseline-os/docs/gitbook/apex-engine/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "baselineos",
+      "status": "synced",
+      "sourcePath": "baseline-os/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/baseline-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "compliance-os",
+      "status": "synced",
+      "sourcePath": "compliance-os/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/compliance-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "ledger-ui",
+      "status": "synced",
+      "sourcePath": "ledger-ui/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/ledger-ui/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "markets-os",
+      "status": "synced",
+      "sourcePath": "markets-os/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/markets-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "agile-os",
+      "status": "synced",
+      "sourcePath": "agile-os/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/agile-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "fabric-os",
+      "status": "synced",
+      "sourcePath": "fabric-os/docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/fabric-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    },
+    {
+      "id": "gtcx-mobile",
+      "status": "planned",
+      "sourcePath": "gtcx-mobile/docs/gitbook/",
+      "resolved": null,
+      "ok": true,
+      "tracked": false
+    },
+    {
+      "id": "legacy-gitbook",
+      "status": "live",
+      "sourcePath": "docs/gitbook/",
+      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/gitbook/",
+      "ok": true,
+      "tracked": true
+    }
+  ],
+  "errors": []
+}

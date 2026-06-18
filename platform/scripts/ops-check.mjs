@@ -49,6 +49,7 @@ run('agent:work-selection:check', process.execPath, [
   '../bridge-os/platform/scripts/checks/check-agent-work-selection.mjs',
 ]);
 run('agency:check', process.execPath, ['platform/scripts/agency-check.mjs']);
+run('publish:check', process.execPath, ['platform/scripts/publish-register-check.mjs']);
 
 if (errors.length) {
   console.error('ops:check FAIL — ecosystem-os');

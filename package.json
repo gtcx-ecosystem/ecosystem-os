@@ -52,6 +52,8 @@
     "agency:score:write": "node platform/scripts/agency-score.mjs --write",
     "agency:export": "node platform/scripts/agency-export.mjs",
     "agency:export:write": "node platform/scripts/agency-export.mjs --write",
+    "publish:check": "node platform/scripts/publish-register-check.mjs",
+    "publish:check:write": "node platform/scripts/publish-register-check.mjs --write",
     "ops:consumption:check": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs",
     "ops:consumption:check:write": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs --write"
   }
