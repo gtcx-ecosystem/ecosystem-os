@@ -148,9 +148,9 @@
       "id": "MOD-DOC-05",
       "name": "Publish register",
       "prdRef": "prd-product-charter",
-      "status": "planned",
-      "coveragePercent": 40,
-      "evidence": "ECO-DOCS-005 open",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-DOCS-005 publish:check 10 live/synced",
       "ownerModule": "docs-hub",
       "pillars": ["F3", "T11"]
     },

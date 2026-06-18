@@ -91,7 +91,9 @@
     {
       "id": "ECO-DOCS-005",
       "title": "GitBook publish register — all fleet spaces tracked",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-18",
+      "auditNotes": "11 spaces tracked · 10 live/synced paths resolve · publish:check exit 0",
       "owner": "ecosystem-os",
       "points": 3,
       "priority": "P2",
@@ -412,7 +414,9 @@
     {
       "id": "ECO-VEN-005",
       "title": "venture-os handoff — product repo pm/ scaffold + coordination XR",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-18",
+      "auditNotes": "venture-os/pm/manifest.json present · XR-VENTURE-PM-001 inbound + venture-os coordination witness",
       "owner": "venture-os",
       "points": 8,
       "priority": "P1",
