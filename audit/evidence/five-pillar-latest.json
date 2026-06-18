@@ -1,18 +1,18 @@
 {
   "schema": "gtcx://audit/multi-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-17",
-  "evaluatedAt": "2026-06-17T17:56:23.903Z",
-  "gitHead": "55d7801cdfaeff4355c0423918416695641701b2",
-  "composite100": 74,
-  "composite100Raw": 96,
-  "trustCap100": 74,
+  "date": "2026-06-18",
+  "evaluatedAt": "2026-06-18T03:16:27.852Z",
+  "gitHead": "0861267137cba327c28a428e528e78680911ad06",
+  "composite100": 78,
+  "composite100Raw": 100,
+  "trustCap100": 78,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
   "quadrants": {
     "compliance": {
-      "score100": 96,
+      "score100": 100,
       "published": true,
       "provisional": false,
       "blockedBy": null,
@@ -21,7 +21,7 @@
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 80,
+          "score100": 100,
           "protocol": "P35",
           "items": [
             {
@@ -49,8 +49,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -149,14 +149,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 50,
+          "score100": 100,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -865,26 +865,11 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [
-        {
-          "id": "root-allowlist",
-          "categoryId": "layout-p35",
-          "label": "Root allowlist / workspace root cleanliness",
-          "severity": "P2",
-          "detail": "opsCheck"
-        },
-        {
-          "id": "ops-check-pass",
-          "categoryId": "ops-domains-p29",
-          "label": "pnpm ops:check exit 0",
-          "severity": "P1",
-          "detail": "opsCheck"
-        }
-      ],
+      "hygieneViolations": [],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 1
+      "openP1": 0
     },
     "technicalExcellence": {
       "score100": 38,
@@ -1159,7 +1144,7 @@
       "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 74,
+      "score100": 78,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1195,9 +1180,9 @@
           "versionBloatHits": 0
         },
         "independent-replay": {
-          "score100": 45,
+          "score100": 75,
           "weight": 15,
-          "opsCheck": false
+          "opsCheck": true
         }
       },
       "mode": "envelope-cap",
@@ -1212,9 +1197,9 @@
   },
   "multiPillar": {
     "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
-    "foundationComposite100": 54,
+    "foundationComposite100": 55,
     "fullComposite100": 39,
-    "trustCap100": 74,
+    "trustCap100": 78,
     "weights": {
       "compliance": 0,
       "technicalExcellence": 0.15,
@@ -1229,7 +1214,7 @@
     },
     "quadrants": {
       "compliance": {
-        "score100": 96,
+        "score100": 100,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1265,7 +1250,7 @@
         "checks": []
       },
       "trustAndSafety": {
-        "score100": 74,
+        "score100": 78,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1346,7 +1331,7 @@
         }
       },
       "ipMagic": {
-        "score100": 55,
+        "score100": 57,
         "published": false,
         "provisional": true,
         "blockedBy": [

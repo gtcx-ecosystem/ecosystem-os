@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://audit/compliance-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-17",
-  "score100": 96,
+  "date": "2026-06-18",
+  "score100": 100,
   "published": true,
   "provisional": false,
   "blockedBy": null,
@@ -11,7 +11,7 @@
     "layout-p35": {
       "label": "Layout & workspace (P35 v5)",
       "weight": 8,
-      "score100": 80,
+      "score100": 100,
       "protocol": "P35",
       "items": [
         {
@@ -39,8 +39,8 @@
         {
           "id": "root-allowlist",
           "label": "Root allowlist / workspace root cleanliness",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 20,
           "severity": "P2",
           "optional": false,
@@ -139,14 +139,14 @@
     "ops-domains-p29": {
       "label": "Operational domains (P29)",
       "weight": 6,
-      "score100": 50,
+      "score100": 100,
       "protocol": "P29",
       "items": [
         {
           "id": "ops-check-pass",
           "label": "pnpm ops:check exit 0",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 50,
           "severity": "P1",
           "optional": false,
@@ -855,24 +855,9 @@
       "itemCount": 3
     }
   },
-  "hygieneViolations": [
-    {
-      "id": "root-allowlist",
-      "categoryId": "layout-p35",
-      "label": "Root allowlist / workspace root cleanliness",
-      "severity": "P2",
-      "detail": "opsCheck"
-    },
-    {
-      "id": "ops-check-pass",
-      "categoryId": "ops-domains-p29",
-      "label": "pnpm ops:check exit 0",
-      "severity": "P1",
-      "detail": "opsCheck"
-    }
-  ],
+  "hygieneViolations": [],
   "itemTotal": 66,
   "rubricVersion": "1.0.0",
   "openP0": 0,
-  "openP1": 1
+  "openP1": 0
 }
