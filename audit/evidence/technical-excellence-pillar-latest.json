@@ -5,7 +5,7 @@
   "score100": 38,
   "published": false,
   "provisional": true,
-  "blockedBy": "below-threshold",
+  "blockedBy": "compliance",
   "unlockThreshold100": 85,
   "metrics": {
     "engineering-production": {
