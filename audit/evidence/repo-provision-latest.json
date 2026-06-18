@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/repo-provision-check/v1",
   "repo": "ecosystem-os",
   "profile": "fleet-documentation",
-  "at": "2026-06-18T06:03:44.201Z",
+  "at": "2026-06-18T06:11:16.513Z",
   "ok": true,
   "gates": [
     {
