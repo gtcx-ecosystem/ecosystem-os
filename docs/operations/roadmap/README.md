@@ -1,13 +1,14 @@
 ---
-title: 'operations/roadmap'
+title: 'docs/operations/roadmap — pointer'
 status: current
 date: 2026-06-15
 owner: ecosystem-os
-document_type: overview
+document_type: pointer
 tier: standard
 tags: ['documentation']
 review_cycle: on-change
 ---
 
-# operations/roadmap
+# Pointer
 
+> **Canonical layer:** see top-level folder per four-layer IA initiative.

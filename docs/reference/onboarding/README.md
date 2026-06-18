@@ -1,14 +1,14 @@
 ---
-title: 'Onboarding (reference)'
+title: 'docs/reference/onboarding — pointer'
 status: current
-date: 2026-06-17
+date: 2026-06-15
 owner: ecosystem-os
-document_type: index
+document_type: pointer
 tier: standard
-tags: ['reference', 'onboarding']
+tags: ['documentation']
 review_cycle: on-change
 ---
 
-# Onboarding
+# Pointer
 
-Reference onboarding materials for the Ecosystem OS documentation hub.
+> **Canonical layer:** see top-level folder per four-layer IA initiative.
