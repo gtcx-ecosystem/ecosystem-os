@@ -129,7 +129,9 @@
     {
       "id": "ECO-DOCS-006",
       "title": "Fleet docs IA lift — ecosystem-os score ≥80",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-18",
+      "auditNotes": "bridge ecosystem:docs:provisioning:check ia=98/GREEN contract=1.3.0",
       "owner": "ecosystem-os",
       "points": 8,
       "priority": "P1",
