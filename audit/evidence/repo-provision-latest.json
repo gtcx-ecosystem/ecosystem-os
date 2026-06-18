@@ -2,8 +2,8 @@
   "schema": "gtcx://canon-os/repo-provision-check/v1",
   "repo": "ecosystem-os",
   "profile": "fleet-documentation",
-  "at": "2026-06-18T03:06:26.724Z",
-  "ok": true,
+  "at": "2026-06-18T03:14:59.993Z",
+  "ok": false,
   "gates": [
     {
       "id": "L0:docs",
@@ -62,8 +62,8 @@
     },
     {
       "id": "L0:forbidden:agentic",
-      "ok": true,
-      "detail": "agentic/ absent or manifest-only bridge stub"
+      "ok": false,
+      "detail": "agentic/ absent"
     },
     {
       "id": "L1:workstream/README.md",
