@@ -34,7 +34,7 @@
     "ecosystemIntegration": 75,
     "ipMagic": 40
   },
-  "composite": 88,
+  "rollup": 88,
   "details": {
     "compliance": {
       "tools": {
