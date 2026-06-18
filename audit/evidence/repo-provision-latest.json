@@ -2,8 +2,8 @@
   "schema": "gtcx://canon-os/repo-provision-check/v1",
   "repo": "ecosystem-os",
   "profile": "fleet-documentation",
-  "at": "2026-06-18T03:14:59.993Z",
-  "ok": false,
+  "at": "2026-06-18T03:34:13.550Z",
+  "ok": true,
   "gates": [
     {
       "id": "L0:docs",
@@ -62,7 +62,7 @@
     },
     {
       "id": "L0:forbidden:agentic",
-      "ok": false,
+      "ok": true,
       "detail": "agentic/ absent"
     },
     {
