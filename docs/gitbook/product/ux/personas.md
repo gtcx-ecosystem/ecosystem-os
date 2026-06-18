@@ -3,8 +3,10 @@ title: 'personas — pointer'
 status: pointer
 date: 2026-06-17
 owner: ecosystem-os
-document_type: product
+tier: operating
+tags: ['product', 'documentation']
 review_cycle: on-change
+document_type: product
 ---
 
 # personas.md — relocated
