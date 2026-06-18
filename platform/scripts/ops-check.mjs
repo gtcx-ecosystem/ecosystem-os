@@ -19,6 +19,7 @@ const required = [
   'docs/overview/README.md',
   'pm/publish-register.json',
   'ops/gtm/fleet-catalog-index.md',
+  'agents/manifest.json',
   'agentic/manifest.json',
   'config/ops.manifest.json',
   'config/baseline/baseline.config.json',

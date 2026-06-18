@@ -2,7 +2,7 @@
 /**
  * repo:provision:check — L0 eleven hubs + L1 required stubs (draft-final specs)
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { repoRootFromImportMeta } from './lib/repo-root.mjs';
 import { profileKeyFromTier, readProductTier } from './lib/resolve-docs-pack.mjs';
@@ -31,6 +31,18 @@ function hubProfile(repoName) {
   return profileKeyFromTier(readProductTier(REPO));
 }
 
+function agenticAbsentOrStub(root) {
+  const agenticPath = join(root, 'agentic');
+  if (!existsSync(agenticPath)) return true;
+  let entries;
+  try {
+    entries = readdirSync(agenticPath);
+  } catch {
+    return false;
+  }
+  return entries.every((name) => name === 'manifest.json' || name === 'README.md');
+}
+
 function main() {
   const gates = [];
   const repoName = JSON.parse(readFileSync(join(REPO, 'package.json'), 'utf8')).name;
@@ -40,7 +52,7 @@ function main() {
     gates.push(gate(`L0:${hub}`, existsSync(join(REPO, hub)), hub));
   }
 
-  gates.push(gate('L0:forbidden:agentic', !existsSync(join(REPO, 'agentic')), 'agentic/ absent'));
+  gates.push(gate('L0:forbidden:agentic', agenticAbsentOrStub(REPO), 'agentic/ absent or manifest-only bridge stub'));
 
   const l1Checks = [
     { id: 'L1-workstream', files: ['workstream/README.md', 'workstream/FOLDER-SPEC.md', 'workstream/sprints/current.md'] },

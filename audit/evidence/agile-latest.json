@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agile-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-17T02:00:30.238Z",
+  "at": "2026-06-18T03:03:25.024Z",
   "ok": true,
   "gates": [
     {
@@ -194,6 +194,11 @@
       "id": "ops-manifest:agileDocs",
       "ok": true,
       "detail": "ops/pm/manifest.json local.agileDocs = agile"
+    },
+    {
+      "id": "absent:docs-agile",
+      "ok": true,
+      "detail": "absent"
     }
   ]
 }

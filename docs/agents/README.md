@@ -7,6 +7,8 @@ document_type: pointer
 review_cycle: on-change
 ---
 
-# docs/agents — relocated
+# docs/agents — pointer
 
-**Canonical path:** repo-root `agents/`
+**Canonical hub:** [`../../agents/README.md`](../../agents/README.md)
+
+P35 v5 agent harness lives at repo-root `agents/` — not under `docs/`.

@@ -32,7 +32,7 @@
     "fundraising": "fundraising/",
     "ventureOs": "venture-os/",
     "referenceGlossary": "docs/reference/glossary/",
-    "agentProvisioning": "docs/agents/provisioning/",
+    "agentProvisioning": "agents/provisioning/",
     "gtm": "ops/gtm/",
     "legal": "ops/legal/",
     "publishRegister": "pm/publish-register.json",

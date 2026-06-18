@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-16T16:02:12.159Z",
+  "at": "2026-06-18T03:03:27.217Z",
   "ok": true,
   "gates": [
     {
@@ -31,9 +31,9 @@
       "detail": "agents/ at repo root"
     },
     {
-      "id": "migration:no-docs-agents-sprawl",
+      "id": "migration:no-docs-agents",
       "ok": true,
-      "detail": "docs/agents/ must be pointer-only after rehome"
+      "detail": "absent"
     },
     {
       "id": "root:agents/README.md",
