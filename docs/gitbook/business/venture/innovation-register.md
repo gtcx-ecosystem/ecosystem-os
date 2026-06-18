@@ -11,6 +11,9 @@ review_cycle: on-change
 
 # Innovation register
 
+
+## Overview
+
 Strategic bets linked to fleet repos and evidence paths. Parent story: `ECO-VEN-006`.
 
 | Bet ID | Title | Owner repo | Evidence path | Status |

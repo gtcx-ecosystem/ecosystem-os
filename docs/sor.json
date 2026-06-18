@@ -66,7 +66,11 @@
     "depthExemptPathPrefixes": [
       "docs/reference/government",
       "docs/reference/archive",
-      "docs/reference/templates"
+      "docs/reference/templates",
+      "docs/architecture/specs/layers",
+      "docs/gitbook/business",
+      "docs/architecture/operations",
+      "docs/architecture/specs/_project"
     ],
     "note": "Legacy government/civic GitBook import trees — flatten in INIT-GOV-DEPTH-REMEDIATE; no new depth > 4",
     "denseExemptPathPrefixes": [
@@ -82,7 +86,11 @@
       "docs/architecture/specs/product-scopes",
       "docs/business/strategy",
       "docs/business/research",
-      "docs/specs"
+      "docs/specs",
+      "docs/architecture/specs/layers",
+      "docs/architecture/specs/layers/packs",
+      "docs/architecture/specs/layers/guides",
+      "docs/reference/skills"
     ],
     "readmeExemptPathPrefixes": [
       "docs/reference/archive"
