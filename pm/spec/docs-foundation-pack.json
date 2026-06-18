@@ -40,8 +40,9 @@
     }
   ],
   "machineMirror": {
-    "path": "pm/spec/product-goals.json",
-    "schema": "gtcx://bridge-os/product-goals/v1"
+    "path": "pm/canon/strategy.json",
+    "schema": "gtcx://canon-os/product-canon-strategy/v1",
+    "syncRule": "pnpm canon:synthesize"
   },
   "fleetConstitution": {
     "repo": "canon-os",
