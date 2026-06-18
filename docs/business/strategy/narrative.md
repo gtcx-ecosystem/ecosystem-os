@@ -12,12 +12,22 @@ review_cycle: monthly
 
 # Ecosystem OS — narrative
 
-**Thesis:** The next institutional stack is not another dashboard — it is an **operating system** where every claim has a witness, every agent has an authority class, and every repo knows its module.
+## Thesis
 
-**Problem:** Trade and capital platforms ship features; compliance and coordination ship spreadsheets. AI agents amplify the gap — fast execution without proof is liability.
+The next institutional stack is not another dashboard — it is an **operating system** where every claim has a witness, every agent has an authority class, and every repo knows its module.
 
-**Solution:** Ecosystem OS defines the **Know → Judge → Invent → Express → Coordinate → Ship → Operate → Verify → Publish → Learn** loop across seven modules and four substrate layers. Documentation is product; GitBook is the buyer surface.
+## Problem
 
-**Proof:** GTCX dogfoods the loop fleet-wide — bridge-os P22, agile-os backlog, fabric-os gates, canon-os rubric, ecosystem-os venture/agency SoR.
+Trade and capital platforms ship features; compliance and coordination ship spreadsheets. AI agents amplify the gap — fast execution without proof is liability.
 
-**Ask:** Read the product-scopes spine and feature matrix; align your programme to module boundaries and witness contracts.
+## Solution
+
+Ecosystem OS defines the **Know → Judge → Invent → Express → Coordinate → Ship → Operate → Verify → Publish → Learn** loop across seven modules and four substrate layers. Documentation is product; GitBook is the buyer surface.
+
+## Proof
+
+GTCX dogfoods the loop fleet-wide — bridge-os P22, agile-os backlog, fabric-os gates, canon-os rubric, ecosystem-os venture/agency SoR.
+
+## Ask
+
+Read the product-scopes spine and feature matrix; align your programme to module boundaries and witness contracts.

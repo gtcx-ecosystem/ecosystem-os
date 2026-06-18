@@ -14,6 +14,8 @@ canonical: true
 
 Typed events across the operating loop. Emitted to Ledger; consumed by Graph and Bridge.
 
+## Event catalog
+
 | Event ID | Producer | Consumers | Witness contract |
 | -------- | -------- | ----------- | ---------------- |
 | `eco.strategy.bet.registered` | Venture | Agile, Agency, Bridge | `pm/backlog/venture-backlog.json` row |
@@ -27,4 +29,6 @@ Typed events across the operating loop. Emitted to Ledger; consumed by Graph and
 | `eco.fleet.handoff.opened` | Bridge | owner repos | XR tickets in bridge coordination |
 | `eco.publish.surface.promoted` | Canon | Agency, Surface | canon-os promotion witnesses |
 
-**Authority:** Protocol 24 cross-repo handoffs · Protocol 28 class on each emission path.
+## Authority
+
+Protocol 24 cross-repo handoffs · Protocol 28 class on each emission path.
