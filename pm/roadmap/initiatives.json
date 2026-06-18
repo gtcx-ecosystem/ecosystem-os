@@ -9,8 +9,8 @@
       "title": "Fleet documentation home — GitBook, onboarding, GTM publish registry",
       "status": "in_progress",
       "ownerBaselineId": "protocol-engineer",
-      "completionPercent": 70,
-      "deployReadinessPercent": 60,
+      "completionPercent": 85,
+      "deployReadinessPercent": 75,
       "evidence": "pm/ci/readiness-snapshot.json",
       "epics": [
         {

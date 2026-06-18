@@ -31,7 +31,9 @@
     {
       "id": "ECO-DOCS-002",
       "title": "P35 strict layout green — ecosystem repo layout v5",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "root allowlist + agentic bridge stub + agile/agents hubs; layout:check --strict exit 0",
       "owner": "ecosystem-os",
       "points": 3,
       "priority": "P1",
@@ -48,7 +50,9 @@
     {
       "id": "ECO-DOCS-003",
       "title": "PM folder R1 — PRD, UX, backlog, and capability matrix complete",
-      "status": "in_progress",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "pm:folder:check exit 0; backlog-registry + venture/agency slices",
       "owner": "ecosystem-os",
       "points": 5,
       "priority": "P0",
@@ -67,7 +71,9 @@
     {
       "id": "ECO-DOCS-004",
       "title": "Agent and agile doc scaffolding — universal, cursor, and agile roadmap",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-17",
+      "auditNotes": "repo-root agents/ + agile/ hubs; agile:check + agents:check exit 0",
       "owner": "ecosystem-os",
       "points": 3,
       "priority": "P1",
@@ -77,9 +83,9 @@
       "epic": "EPIC-P35-PM-LIFT",
       "feature": "FEAT-PM-FOLDER-R1",
       "acceptance": [
-        "docs/agents/universal/README.md exists",
-        "docs/agents/cursor/README.md exists",
-        "docs/agile/roadmap.md exists"
+        "agents/bootstrap/provider-routes.json exists",
+        "agile/ hub at repo root with roadmap.md",
+        "pnpm agents:check and agile:check exit 0"
       ]
     },
     {
