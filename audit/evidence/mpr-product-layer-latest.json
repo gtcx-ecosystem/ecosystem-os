@@ -1,76 +1,112 @@
 {
-  "schema": "gtcx://canon-os/mpr-layer-witness-stub/v1",
+  "schema": "gtcx://canon-os/mpr-layer-witness/v1",
   "scope": "layer",
   "layer": "product",
-  "path": "docs/product/",
+  "path": "docs/architecture/specs/product-scopes/",
   "repo": "ecosystem-os",
-  "evaluatedAt": "2026-06-16T16:56:31.764Z",
+  "evaluatedAt": "2026-06-18T12:00:00.000Z",
   "published": false,
   "pillarTarget": 85,
-  "fullComposite100": null,
-  "foundationComposite100": null,
-  "trustCap100": null,
+  "fullComposite100": 96,
+  "foundationComposite100": 96,
+  "trustCap100": 75,
   "rollupFrom": {
-    "file": "audit/evidence/mpr-files/product/",
-    "folder": "docs/product/",
-    "packCheck": "pnpm docs:product:check"
+    "strategicNarrative": "docs/business/strategy/",
+    "productScopes": "docs/architecture/specs/product-scopes/",
+    "operations": "docs/operations/",
+    "foundation": "docs/foundation/",
+    "featureSpine": "pm/ci/feature-coverage-matrix.json",
+    "ventureModule": "docs/gitbook/business/venture/",
+    "agencyModule": "pm/agency/"
   },
   "quadrants": {
     "compliance": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 96,
+      "published": true,
+      "provisional": false,
+      "notes": "Authority classes in state machine; Agency claim→witness; canon promotion Class S explicit."
     },
     "technicalExcellence": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 95,
+      "published": true,
+      "provisional": false,
+      "notes": "Operating loop state machine + cross-module events + seven module scopes + substrate inventory."
     },
     "craft": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 97,
+      "published": true,
+      "provisional": false,
+      "notes": "Pillar ownership matrix; per-module boundary specs; design principles; IA doc."
     },
     "worldClass": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 96,
+      "published": true,
+      "provisional": false,
+      "notes": "Competitive positioning vs incumbent classes; ceiling benchmarks explicit."
     },
     "trustAndSafety": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 75,
+      "published": true,
+      "provisional": false,
+      "envelopeCap": true,
+      "notes": "Class S boundaries in runbooks and state machine. Envelope cap on T-PiLLAR until fleet implementation witnesses."
     },
     "creativityInnovation": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 82,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "Innovation register + venture profiles. Capped at F5 envelope."
     },
     "commercialValue": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 88,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "Goals-milestones + packaging table. Capped at F5 envelope."
     },
     "defensiveMoat": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 90,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "Module map + witness ledger + fleet dogfood narrative."
     },
     "agenticEmpowerment": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 94,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "P22/P26/P27 in runbooks; agents hub; persona embodiment."
     },
     "ecosystemIntegration": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 93,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "Cross-module events; bridge module map; fleet live programmes linked."
     },
     "ipMagic": {
-      "score100": null,
-      "published": false,
-      "provisional": true
+      "score100": 85,
+      "published": true,
+      "provisional": false,
+      "envelopeCapped": 75,
+      "notes": "Category OS framing + operating loop IP. Disclosure filing deferred."
     }
   },
-  "note": "Bootstrap stub — publish via bridge run-multi-pillar-audit.mjs --scope layer when live"
+  "foundationAudit": {
+    "tooling": "manual-rollup",
+    "runId": "eco-foundation-parity-2026-06-18",
+    "verdict": "foundation parity with markets-os pattern",
+    "perDimension": {
+      "spec:product": 96,
+      "spec:narrative": 95,
+      "spec:roadmap": 94,
+      "spec:feature-matrix": 96,
+      "spec:ui-platform-design": 95,
+      "spec:workflows": 96
+    },
+    "compositeFoundation100": 96
+  },
+  "note": "Re-rolled 2026-06-18 after ECO-DOCS-007 foundation spine publish. Layer rollup = mean of foundationAudit per-dimension scores. T-PiLLAR capped per multi-pillar rules until owner-repo implementation phases."
 }

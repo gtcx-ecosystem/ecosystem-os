@@ -1,7 +1,7 @@
 {
   "$schema": "gtcx://pm/backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "registry": "pm/spec/backlog-registry.json",
   "slices": [
     "pm/backlog/docs-backlog.json",
@@ -103,6 +103,27 @@
       "acceptance": [
         "pm/publish-register.json lists every live GitBook space",
         "publish paths resolve to docs/gitbook/ sources"
+      ]
+    },
+    {
+      "id": "ECO-DOCS-007",
+      "title": "Foundation product-scopes spine — markets-os parity publish",
+      "status": "done",
+      "completedAt": "2026-06-18",
+      "auditNotes": "17 product-scopes specs + strategy pack + operator runbooks + feature matrix + mpr witness re-roll",
+      "owner": "ecosystem-os",
+      "points": 8,
+      "priority": "P0",
+      "milestone": "ECO-DOC-001",
+      "prdRef": "prd-product-charter",
+      "initiative": "INIT-ECOSYSTEM-DOCS",
+      "epic": "EPIC-FOUNDATION-PARITY",
+      "feature": "FEAT-PRODUCT-SCOPES-SPINE",
+      "acceptance": [
+        "docs/architecture/specs/product-scopes/ index + 7 module scopes + cross specs",
+        "docs/business/strategy/ product-spec narrative goals feature-matrix journeys",
+        "audit/evidence/mpr-product-layer-latest.json foundationAudit.perDimension",
+        "pm/ci/feature-coverage-matrix.json aggregate ≥90%"
       ]
     },
     {
