@@ -21,6 +21,8 @@ Mandatory agent and operator narrative for **Ecosystem OS**. Read before `pnpm a
 
 Fleet law: [`../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md`](../canon-os/docs/governance/constitution/GTCX-CONSTITUTION.md)
 
+**Business layer:** GTM, customers, and fleet operator narratives — [`../business/README.md`](../business/README.md)
+
 ## Pack (8 files)
 
 | File | Role |
