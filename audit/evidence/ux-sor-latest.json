@@ -4,10 +4,10 @@
   "repoKind": "product",
   "pilotDeep": false,
   "ok": false,
-  "score100": 63,
+  "score100": 75,
   "openP1": 2,
-  "openP2": 1,
-  "itemsPass": 5,
+  "openP2": 0,
+  "itemsPass": 6,
   "itemsTotal": 8,
   "violations": [
     {
@@ -21,13 +21,7 @@
       "itemId": "exr-pack-valid",
       "severity": "P1",
       "detail": "no exr-pack.yaml"
-    },
-    {
-      "packId": "UX-P21-CORE",
-      "itemId": "journey-spine",
-      "severity": "P2",
-      "detail": "missing one of: docs/specs/operator-journey-map.md, docs/architecture/specs/in-repo/operator-journey-map.md, docs/specs/operator-journey-map.md"
     }
   ],
-  "at": "2026-06-17T15:51:26.691Z"
+  "at": "2026-06-19T02:27:03.030Z"
 }
