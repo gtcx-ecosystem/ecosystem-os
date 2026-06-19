@@ -39,7 +39,7 @@
         "README.md"
       ]
     },
-    "agent-spine": {
+    "agent-init": {
       "purpose": "Agent universal instructions, P22 brief, git workflow prose",
       "allowedDocTypes": [
         "runbook",
@@ -90,7 +90,7 @@
       "requiredSubfolders": [
         "runbooks",
         "deployment",
-        "agent-spine"
+        "agent-init"
       ],
       "optionalSubfolders": [
         "remediation",
@@ -101,7 +101,7 @@
       "operationsRequired": true,
       "requiredSubfolders": [
         "runbooks",
-        "agent-spine",
+        "agent-init",
         "coordination"
       ],
       "optionalSubfolders": [
@@ -118,7 +118,7 @@
       "requiredSubfolders": [
         "runbooks",
         "deployment",
-        "agent-spine"
+        "agent-init"
       ],
       "optionalSubfolders": [
         "remediation",
@@ -196,7 +196,7 @@
     "trustAndSafety": {
       "primary": true,
       "artifacts": [
-        "docs/operations/agent-spine/"
+        "docs/operations/agent-init/"
       ],
       "gates": [
         "P27 execution obligation"
@@ -235,7 +235,7 @@
     "agenticEmpowerment": {
       "primary": true,
       "artifacts": [
-        "docs/operations/agent-spine/"
+        "docs/operations/agent-init/"
       ],
       "gates": [
         "agent ops narrative"
@@ -264,7 +264,7 @@
   "fractalMpr": {
     "policy": "pm/spec/docs-fractal-mpr-policy.json",
     "layerWitness": "audit/evidence/mpr-operations-layer-latest.json",
-    "scorecard": "docs/operations/pillar-scorecard.md",
+    "scorecard": "docs/operations/scorecard.md",
     "rollupFrom": [
       "file",
       "folder"
