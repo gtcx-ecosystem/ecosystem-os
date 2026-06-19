@@ -35,6 +35,13 @@ pmStories:
 | Load task templates | CRM ClickUp Agent | Opportunity, outreach, application, finance, collateral templates | P0 |
 | Publish authority matrix in ClickUp | Chief of Staff Agent | Approval gates visible in workflow | P0 |
 
+Repo readiness witness:
+[`operating-foundation-readiness.md`](./operating-foundation-readiness.md)
+maps the operating foundation to repo evidence, private runtime variables, and
+the live activation checklist. Repo-owned contracts are ready; live activation
+requires private Gmail, Calendar, Drive, and ClickUp IDs plus a smoke-test
+record outside the repo.
+
 ## Epic 2: Source Intelligence (`ECO-VEN-FR-002`)
 
 | Task | Owner | Output | Priority |

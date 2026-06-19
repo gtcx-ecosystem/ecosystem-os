@@ -22,4 +22,5 @@ review_cycle: on-change
 | [`pipeline-deliverables-matrix.md`](./pipeline-deliverables-matrix.md) | Status gates, required fields, required artifacts, and ClickUp operating views |
 | [`google-workspace-clickup-integration.md`](./google-workspace-clickup-integration.md) | ClickUp + Gmail + Calendar + Drive integration plan |
 | [`clickup-setup-contract.md`](./clickup-setup-contract.md) | ClickUp Space, Folder, List, status, field, form, and view contract |
+| [`../implementation/operating-foundation-readiness.md`](../implementation/operating-foundation-readiness.md) | ECO-VEN-FR-001 repo readiness witness and private runtime activation checklist |
 | [`n8n/`](./n8n/) | Self-hosted n8n implementation specs |

@@ -1,21 +1,21 @@
 ---
-title: 'strategy/ — folder provisioning'
+title: 'architecture/integration/narrative/ — folder provisioning'
 status: current
 date: 2026-06-15
 owner: ecosystem-os
 document_type: folder-spec
 tier: operating
-tags: ['documentation', 'strategy']
+tags: ['documentation', 'architecture/integration/narrative']
 review_cycle: on-change
 ---
 
-# `docs/strategy/` — provisioning
+# `docs/architecture/integration/narrative/` — provisioning
 
 > **Parent:** [`docs/FOLDER-SPEC.md`](../FOLDER-SPEC.md)
 
 ## Purpose
 
-strategy/ narrative and specs for ecosystem-os.
+architecture/integration/narrative/ narrative and specs for ecosystem-os.
 
 ## Agent rules
 
