@@ -119,5 +119,10 @@
   "rubricSpec": "pm/spec/world-class-rubric.json",
   "rubricVersion": "1.0.0",
   "eslRequired": "ESL-3",
-  "eslActive": "ESL-2"
+  "eslActive": "ESL-2",
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
+  }
 }
