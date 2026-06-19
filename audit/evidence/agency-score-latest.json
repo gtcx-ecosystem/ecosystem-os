@@ -87,5 +87,10 @@
       "workflow": 100
     },
     "note": "Scoring: Compliance/Technical from catalogs; Craft from brand scaffold; Trust from claim→witness map + workflow gates."
+  },
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
   }
 }
