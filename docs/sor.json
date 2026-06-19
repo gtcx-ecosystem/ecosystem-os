@@ -70,7 +70,10 @@
       "docs/architecture/specs/layers",
       "docs/gitbook/business",
       "docs/architecture/operations",
-      "docs/architecture/specs/_project"
+      "docs/architecture/specs/_project",
+      "docs/architecture/specs/layers/packs",
+      "docs/operations/compliance/evidence",
+      "docs/reference/archived"
     ],
     "note": "Legacy government/civic GitBook import trees — flatten in INIT-GOV-DEPTH-REMEDIATE; no new depth > 4",
     "denseExemptPathPrefixes": [
@@ -90,7 +93,9 @@
       "docs/architecture/specs/layers",
       "docs/architecture/specs/layers/packs",
       "docs/architecture/specs/layers/guides",
-      "docs/reference/skills"
+      "docs/reference/skills",
+      "docs/architecture/specs/_project",
+      "docs/reference/archived"
     ],
     "readmeExemptPathPrefixes": [
       "docs/reference/archive"
@@ -106,5 +111,11 @@
     "research",
     "fundraising",
     "venture-os"
+  ],
+  "deprecatedTopLevel": [
+    "specs",
+    "strategy",
+    "overview",
+    "engineering"
   ]
 }
