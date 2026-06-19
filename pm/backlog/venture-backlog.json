@@ -2,7 +2,7 @@
   "$schema": "gtcx://pm/backlog-slice/v1",
   "domain": "venture",
   "initiative": "INIT-ECOSYSTEM-VENTURE",
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "productRepo": "venture-os",
   "portfolioMap": "docs/gitbook/business/portfolio/product-portfolio.md#module--backlog-map",
   "stories": [
@@ -45,7 +45,8 @@
     {
       "id": "ECO-VEN-FR-001",
       "title": "Fundraising Epic 1 — Operating Foundation",
-      "status": "open",
+      "status": "in_progress",
+      "auditNotes": "fundraising/implementation/operating-foundation-readiness.md + audit/evidence/fundraising-operating-foundation-latest.json; runtime IDs pending private activation",
       "points": 3,
       "priority": "P0",
       "parent": "ECO-VEN-004"
@@ -109,7 +110,8 @@
     {
       "id": "ECO-VEN-005",
       "title": "venture-os handoff — product repo pm/ scaffold + coordination XR",
-      "status": "open",
+      "status": "done",
+      "completedAt": "2026-06-18",
       "points": 8,
       "priority": "P1",
       "ownerHandoff": "venture-os",
@@ -123,6 +125,6 @@
       "points": 5,
       "priority": "P2",
       "portfolioRow": "Venture"
-    },
+    }
   ]
 }

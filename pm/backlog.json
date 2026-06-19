@@ -412,6 +412,156 @@
       ]
     },
     {
+      "id": "ECO-VEN-FR-001",
+      "title": "Fundraising Epic 1 — Operating Foundation",
+      "status": "in_progress",
+      "auditNotes": "Repo readiness witness added; live Gmail/Calendar/Drive/ClickUp activation pending private runtime IDs and smoke-test record",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/operating-foundation-readiness.md maps all foundation tasks to repo evidence and private runtime variables",
+        "audit/evidence/fundraising-operating-foundation-latest.json records repo-ready-runtime-pending witness",
+        "fundraising/workflows/clickup-setup-contract.md defines Space, list, statuses, fields, views, and automations",
+        "fundraising/workflows/google-workspace-clickup-integration.md defines Gmail, Calendar, Drive, and n8n flows",
+        "fundraising/team/authority-matrix.md defines approval gates",
+        "fundraising/team/clickup-task-templates.md defines templates to load into ClickUp",
+        "Live ClickUp, Gmail, and Drive IDs are recorded in private runtime config, not repo"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-002",
+      "title": "Fundraising Epic 2 — Source Intelligence",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 2 source intelligence scope",
+        "Source lists and scoring workflow are mapped to repo-owned fundraising docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-003",
+      "title": "Fundraising Epic 3 — Inbox And Calendar",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 3 inbox and calendar scope",
+        "Inbox and calendar workflow contracts are mapped to operating docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-004",
+      "title": "Fundraising Epic 4 — Pipeline And Qualification",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 4 pipeline and qualification scope",
+        "Pipeline stages and qualification gates are mapped to operating docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-005",
+      "title": "Fundraising Epic 5 — Outreach And Relationships",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 5 outreach and relationship scope",
+        "Outreach sequences and relationship tasks are mapped to fundraising docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-006",
+      "title": "Fundraising Epic 6 — Collateral And Applications",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 6 collateral and application scope",
+        "Collateral and application artifacts are mapped to fundraising docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-007",
+      "title": "Fundraising Epic 7 — Finance And Deal Economics",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 3,
+      "priority": "P0",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 7 finance and deal economics scope",
+        "Finance model and deal economics work are mapped to fundraising docs"
+      ]
+    },
+    {
+      "id": "ECO-VEN-FR-008",
+      "title": "Fundraising Epic 8 — Automation And App Build",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "points": 5,
+      "priority": "P1",
+      "milestone": "ECO-VEN-001",
+      "prdRef": "prd-venture-module",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "epic": "EPIC-VEN-FUNDRAISE",
+      "feature": "FEAT-VEN-FUNDRAISE-SYNC",
+      "parent": "ECO-VEN-004",
+      "acceptance": [
+        "fundraising/implementation/execution-backlog.md defines Epic 8 automation and app build scope",
+        "Automation and application build work are mapped to fundraising docs"
+      ]
+    },
+    {
       "id": "ECO-VEN-005",
       "title": "venture-os handoff — product repo pm/ scaffold + coordination XR",
       "status": "done",
