@@ -1,14 +1,14 @@
 ---
 title: 'docs/roadmap — pointer'
 status: pointer
-date: 2026-06-18
+date: 2026-06-17
 owner: ecosystem-os
 document_type: pointer
-tier: standard
-tags: ['documentation']
 review_cycle: on-change
 ---
 
-# `docs/roadmap/` — pointer
+# docs/roadmap — relocated
 
-> **Canonical SoR:** [`../../agile/roadmaps/README.md`](../../agile/roadmaps/README.md)
+**Canonical path:** [`agile/roadmaps/`](../agile/roadmaps/)
+
+P0 legacy scrub — do not add new files here.
