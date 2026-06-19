@@ -108,5 +108,10 @@
     },
     "compositeFoundation100": 96
   },
-  "note": "Re-rolled 2026-06-18 after ECO-DOCS-007 foundation spine publish. Layer rollup = mean of foundationAudit per-dimension scores. T-PiLLAR capped per multi-pillar rules until owner-repo implementation phases."
+  "note": "Re-rolled 2026-06-18 after ECO-DOCS-007 foundation spine publish. Layer rollup = mean of foundationAudit per-dimension scores. T-PiLLAR capped per multi-pillar rules until owner-repo implementation phases.",
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
+  }
 }
