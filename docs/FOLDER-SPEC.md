@@ -1,50 +1,26 @@
 ---
 title: 'Docs root — folder provisioning spec'
 status: current
-date: 2026-06-15
+date: 2026-06-19
 owner: ecosystem-os
 document_type: folder-spec
 tier: critical
-tags: ['documentation', 'agents', 'provisioning']
+tags: ['documentation', 'provisioning']
 review_cycle: on-change
-goals: 'Agents provision docs/ without random folders — fleet-documentation profile'
+goals: 'Agents provision docs/ without random folders — product profile'
 ---
 
 # `docs/` — root provisioning (ecosystem-os)
 
-> **Profile:** `fleet-documentation` · **Registry:** `canon-os/pm/spec/docs-folder-provisioning.json`
+> **Profile:** `product` · **Registry:** `canon-os/pm/spec/docs-folder-provisioning.json`
 
 ## Purpose
 
-Repo-scoped documentation for **ecosystem-os**. Read `INDEX.md` before creating paths.
-
-## Top-level folders (current)
-
-| Folder | Purpose | `document_type` |
-| ------ | ------- | ------------------ |
-| `agents/` | Agent provisioning, personas, startup paths | per profile |
-| `architecture/` | System design, ADRs, integration maps | per profile |
-| `business/` | Business thesis, portfolio, market, customers, economics | per profile |
-| `engineering/` | Tooling, CLI, workflows, build narratives | per profile |
-| `foundation/` | Ecosystem OS doctrine, charter, product architecture | per profile |
-| `gitbook/` | GitBook publish source (SUMMARY.md + chapters) | per profile |
-| `governance/` | Repo-scoped governance pointers | per profile |
-| `operations/` | Runbooks and ops narrative (P29 domains under ops/) | per profile |
-| `overview/` | What this repo is — strategic truth | per profile |
-| `reference/` | Templates, guides, glossary, examples | per profile |
-| `research/` | Competitive landscape, technical research, research agenda | per profile |
-| `strategy/` | Initiative charters and GTM briefs | per profile |
+Fleet operator documentation for **Ecosystem OS** — product, business, architecture, GitBook source.
 
 ## Required root files
 
 `README.md` · `INDEX.md` · `sor.json` · `conventions.md` · `CHANGELOG.md` · `FOLDER-SPEC.md`
-
-## Forbidden
-
-- New top-level folders without `CHANGELOG.md` entry + profile check
-- P29 ops domains under `docs/` (`compliance/`, `gtm/`, `security/`) — use `ops/`
-- Version path tokens (`-v2`, `v3/`) — Protocol 47
-- Numbered segments (`01-agents/`) — relocate to canonical names
 
 ## Agent rules
 

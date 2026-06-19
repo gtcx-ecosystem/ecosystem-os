@@ -1,15 +1,15 @@
 ---
-title: 'pillar-scorecard — docs/architecture/'
+title: 'scorecard — docs/primitives/architecture/'
 status: current
 date: 2026-06-16
 owner: ecosystem-os
-tier: operating
-tags: [['documentation', 'multi-pillar', 'fractal-mpr']]
-review_cycle: on-change
 document_type: folder-spec
+tier: operating
+tags: ['documentation', 'multi-pillar', 'fractal-mpr']
+review_cycle: on-change
 ---
 
-# Pillar scorecard — `docs/architecture/`
+# Pillar scorecard — `docs/primitives/architecture/`
 
 **Read-only rollup** — scores come from published MPR witnesses, not manual entry.
 

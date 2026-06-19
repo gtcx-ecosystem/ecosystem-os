@@ -1,12 +1,12 @@
 ---
-title: 'pillar-scorecard — docs/product/'
+title: 'scorecard — docs/product/'
 status: current
 date: 2026-06-16
 owner: ecosystem-os
-tier: operating
-tags: [['documentation', 'multi-pillar', 'fractal-mpr']]
-review_cycle: on-change
 document_type: folder-spec
+tier: operating
+tags: ['documentation', 'multi-pillar', 'fractal-mpr']
+review_cycle: on-change
 ---
 
 # Pillar scorecard — `docs/product/`
@@ -29,7 +29,7 @@ document_type: folder-spec
 | creativityInnovation | N/A | pack contract | MPR witness rollup | 85 |
 | commercialValue | primary | pack contract | MPR witness rollup | 85 |
 | defensiveMoat | secondary | pack contract | MPR witness rollup | 85 |
-| agenticEmpowerment | secondary | pack contract | MPR witness rollup | 85 |
+| agenticEmpowerment | primary | pack contract | MPR witness rollup | 85 |
 | ecosystemIntegration | secondary | pack contract | MPR witness rollup | 85 |
 | ipMagic | primary | pack contract | MPR witness rollup | 85 |
 

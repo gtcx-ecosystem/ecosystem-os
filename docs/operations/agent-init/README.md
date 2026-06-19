@@ -1,5 +1,5 @@
 ---
-title: 'operations/agent-spine'
+title: 'operations/agent-init'
 status: current
 date: 2026-06-16
 owner: ecosystem-os
@@ -10,6 +10,6 @@ review_cycle: on-change
 ---
 
 
-# Agent spine
+# Agent init
 
 Universal agent instructions and P22 brief prose.
