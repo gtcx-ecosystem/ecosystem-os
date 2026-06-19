@@ -5,7 +5,7 @@
   "$schema": "gtcx://canon-os/product-canon-strategy/v1",
   "productId": "ecosystem-os",
   "repo": "ecosystem-os",
-  "updated": "2026-06-18",
+  "updated": "2026-06-19",
   "vision": {
     "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
     "horizon": "2026-2028"
