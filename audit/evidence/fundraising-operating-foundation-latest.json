@@ -58,5 +58,10 @@
     "Private Google Workspace alias, label, calendar, and Drive IDs are not stored in repo.",
     "Private ClickUp workspace, Space, list, and field IDs are not stored in repo.",
     "A live smoke-test record must be captured after private runtime configuration is complete."
-  ]
+  ],
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
+  }
 }

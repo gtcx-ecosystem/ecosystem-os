@@ -3,5 +3,10 @@
   "at": "2026-06-15T00:00:00.000Z",
   "ok": true,
   "source": "ptm-r5-03-scaffold",
-  "note": "No .env committed; CI security gate wired in .github/workflows/ci.yml"
+  "note": "No .env committed; CI security gate wired in .github/workflows/ci.yml",
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
+  }
 }

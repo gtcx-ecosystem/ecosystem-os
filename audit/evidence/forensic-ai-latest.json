@@ -223,5 +223,10 @@
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/.baseline/persona/graph.json",
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/config/baseline/baseline.config.json",
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/.baseline/frame/question-catalog.json"
-  ]
+  ],
+  "migrationRecord": {
+    "policy": "T67",
+    "scrubbedAt": "2026-06-19",
+    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
+  }
 }
