@@ -28,5 +28,5 @@ pnpm agent:next-work
 
 
 > **Pack:** [`../../canon-os/pm/spec/docs-agents-pack.json`](../../canon-os/pm/spec/docs-agents-pack.json)  
-> **Execution spine:** [`../operations/agent-spine/`](../operations/agent-spine/) · **Session runtime:** [`../../workstream/sessions/`](../../workstream/sessions/)
+> **Agent init:** [`../operations/agent-init/`](../operations/agent-init/) · **Session runtime:** [`../../workstream/sessions/`](../../workstream/sessions/)
 

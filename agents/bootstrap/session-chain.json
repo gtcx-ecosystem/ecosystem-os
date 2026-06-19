@@ -4,6 +4,6 @@
     "docs/foundation/README.md",
     "agents/bootstrap/README.md",
     "agents/capabilities/authority-matrix.md",
-    "docs/operations/agent-spine/agent-universal-instructions.md"
+    "docs/operations/agent-init/agent-universal-instructions.md"
   ]
 }
