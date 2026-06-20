@@ -40,7 +40,7 @@
       ]
     },
     "agent-init": {
-      "purpose": "Agent universal instructions, P22 brief, git workflow prose",
+      "purpose": "Repo agent entry — session start, P22/P27 prose, git workflow. Fleet init → canon-os AGENT-INIT-CANON.",
       "allowedDocTypes": [
         "runbook",
         "overview"
@@ -77,6 +77,20 @@
       ],
       "optional": true,
       "hubNote": "canon-os + bridge-os host fleet coordination indexes"
+    },
+    "compliance": {
+      "purpose": "Platform-runtime typed compliance instance artifacts — see docs-operations-compliance-nest.json",
+      "allowedDocTypes": [
+        "runbook",
+        "overview",
+        "assessment"
+      ],
+      "required": [
+        "README.md"
+      ],
+      "optional": true,
+      "platformRuntimeOnly": true,
+      "nestSpec": "pm/spec/docs-operations-compliance-nest.json"
     }
   },
   "forbiddenAtOperationsRoot": [
@@ -94,7 +108,12 @@
       ],
       "optionalSubfolders": [
         "remediation",
-        "coordination"
+        "coordination",
+        "workspace",
+        "repo",
+        "protocols",
+        "templates",
+        "compliance"
       ]
     },
     "fleet-documentation": {
@@ -122,8 +141,34 @@
       ],
       "optionalSubfolders": [
         "remediation",
-        "coordination"
+        "coordination",
+        "workspace",
+        "repo",
+        "protocols",
+        "templates",
+        "compliance"
       ]
+    },
+    "platform-runtime": {
+      "operationsRequired": true,
+      "extends": "platform",
+      "requiredSubfolders": [
+        "runbooks",
+        "deployment",
+        "agent-init",
+        "compliance"
+      ],
+      "optionalSubfolders": [
+        "remediation",
+        "coordination",
+        "workspace",
+        "repo",
+        "protocols",
+        "templates",
+        "compliance"
+      ],
+      "complianceNestSpec": "pm/spec/docs-operations-compliance-nest.json",
+      "complianceNestCheck": "pnpm docs:compliance-nest:check"
     }
   },
   "crossReference": {

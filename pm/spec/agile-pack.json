@@ -36,7 +36,7 @@
       "artifacts": [
         "agile/intake.md",
         "agile/zenhub.md",
-        "agile/pillar-scorecard.md"
+        "agile/scorecard.md"
       ],
       "gates": [
         "pnpm agile:check",
@@ -75,7 +75,7 @@
       "secondary": true,
       "artifacts": [
         "agile/planning.md",
-        "agile/pillar-scorecard.md"
+        "agile/scorecard.md"
       ],
       "gates": [
         "prioritization rubric present",
@@ -170,7 +170,7 @@
       "role": "CPO connection — agile-os charter link + repo sprint authority boundary"
     },
     {
-      "path": "agile/pillar-scorecard.md",
+      "path": "agile/scorecard.md",
       "role": "11-pillar self-assessment for this agile layer"
     },
     {
@@ -398,7 +398,7 @@
     "bootstrap": "node platform/scripts/fleet-agile-bootstrap.mjs --write --all",
     "requiredGates": [
       "pillarContract:complete",
-      "pillar-scorecard:eleven-pillars",
+      "scorecard:eleven-pillars",
       "cpo:charter-link",
       "ceremony-surface:complete"
     ],

@@ -103,6 +103,11 @@
     "shadowExemptPathPrefixes": [
       "docs/reference/onboarding",
       "docs/operations/roadmap"
+    ],
+    "folderSpecExemptPathPrefixes": [
+      "docs/engineering",
+      "docs/strategy",
+      "docs/roadmap"
     ]
   },
   "allowedTopLevel": [

@@ -4,7 +4,7 @@
   "initiative": "INIT-DOCS-CORE-IA-V1",
   "title": "Docs roadmap pack — ecosystem-os",
   "canonicalPath": "agile/roadmaps",
-  "principle": "Roadmap lane narratives live under agile/roadmaps/. Executive lens: docs/foundation/roadmap.md. Legacy docs/roadmap/ → pointer-only.",
+  "principle": "Lane narratives → agile/roadmaps/. Executable plan SoR → docs/product/roadmap/ (P57). Legacy docs/roadmap/ → pointer-only.",
   "requiredRootFiles": [
     {
       "path": "agile/roadmaps/README.md",
@@ -236,7 +236,7 @@
   "fractalMpr": {
     "policy": "pm/spec/docs-fractal-mpr-policy.json",
     "layerWitness": "audit/evidence/mpr-roadmap-layer-latest.json",
-    "scorecard": "docs/roadmap/scorecard.md",
+    "scorecard": "agile/roadmaps/scorecard.md",
     "rollupFrom": [
       "file",
       "folder"

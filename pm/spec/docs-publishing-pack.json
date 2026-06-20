@@ -37,7 +37,7 @@
   "fractalMpr": {
     "policy": "pm/spec/docs-fractal-mpr-policy.json",
     "layerWitness": "audit/evidence/mpr-publishing-layer-latest.json",
-    "scorecard": "docs/publishing/scorecard.md",
+    "scorecard": "docs/gitbook/publish/scorecard.md",
     "rollupFrom": [
       "file",
       "folder"

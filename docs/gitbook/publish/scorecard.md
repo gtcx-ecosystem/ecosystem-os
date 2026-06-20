@@ -1,5 +1,5 @@
 ---
-title: 'scorecard — agile/'
+title: 'scorecard — docs/gitbook/publish/'
 status: current
 date: 2026-06-16
 owner: ecosystem-os
@@ -9,13 +9,13 @@ tags: ['documentation', 'multi-pillar', 'fractal-mpr']
 review_cycle: on-change
 ---
 
-# Pillar scorecard — `agile/`
+# Pillar scorecard — `docs/gitbook/publish/`
 
 **Read-only rollup** — scores come from published MPR witnesses, not manual entry.
 
 - Policy: [`../../canon-os/pm/spec/docs-fractal-mpr-policy.json`](../../canon-os/pm/spec/docs-fractal-mpr-policy.json)
-- Pack: [`../../pm/spec/agile-pack.json`](../../pm/spec/agile-pack.json#pillarContract)
-- **Layer witness (SoR):** [`audit/evidence/mpr-agile-layer-latest.json`](audit/evidence/mpr-agile-layer-latest.json)
+- Pack: [`../../pm/spec/docs-publishing-pack.json`](../../pm/spec/docs-publishing-pack.json#pillarContract)
+- **Layer witness (SoR):** [`audit/evidence/mpr-publishing-layer-latest.json`](audit/evidence/mpr-publishing-layer-latest.json)
 
 **Composite target:** **85/100** per profile at layer audit order.
 
@@ -27,9 +27,9 @@ review_cycle: on-change
 | worldClass | secondary | pack contract | MPR witness rollup | 85 |
 | trustAndSafety | secondary | pack contract | MPR witness rollup | 85 |
 | creativityInnovation | N/A | pack contract | MPR witness rollup | 85 |
-| commercialValue | primary | pack contract | MPR witness rollup | 85 |
+| commercialValue | secondary | pack contract | MPR witness rollup | 85 |
 | defensiveMoat | secondary | pack contract | MPR witness rollup | 85 |
-| agenticEmpowerment | primary | pack contract | MPR witness rollup | 85 |
+| agenticEmpowerment | secondary | pack contract | MPR witness rollup | 85 |
 | ecosystemIntegration | primary | pack contract | MPR witness rollup | 85 |
 | ipMagic | N/A | pack contract | MPR witness rollup | 85 |
 
@@ -37,8 +37,8 @@ review_cycle: on-change
 
 | Scope | Witness |
 | ----- | ------- |
-| File | `audit/evidence/mpr-files/agile/*.json` (planned) |
+| File | `audit/evidence/mpr-files/publishing/*.json` (planned) |
 | Folder | child file witnesses |
-| Layer | `audit/evidence/mpr-agile-layer-latest.json` |
+| Layer | `audit/evidence/mpr-publishing-layer-latest.json` |
 | Repo | `audit/evidence/five-pillar-latest.json` |
 
