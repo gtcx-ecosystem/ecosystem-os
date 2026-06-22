@@ -6,9 +6,18 @@
   "updated": "2026-06-15",
   "role": "fleet-documentation-home",
   "sor": {
-    "publishRegister": "pm/publish-register.json",
-    "readinessSnapshot": "pm/readiness-snapshot.json",
-    "executionRoadmap": "pm/execution-roadmap.md"
+    "publishRegister": "machine/publish-register.json",
+    "readinessSnapshot": "machine/readiness-snapshot.json",
+    "executionRoadmap": "machine/execution-roadmap.md"
+  },
+  "local": {
+    "agileDocs": "agile",
+    "executionRoadmap": "machine/execution-roadmap.md"
+  },
+  "sync": {
+    "command": "pnpm machine:sync",
+    "output": "operations/machine/backlog.json",
+    "nextWorkScript": null
   },
   "programOffice": {
     "repo": "bridge-os",

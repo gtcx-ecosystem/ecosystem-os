@@ -17,8 +17,10 @@ Board hygiene and label contract for workspace **GTCX**.
 
 | Artifact | Path |
 | -------- | ---- |
+| Fleet standard | [`../agile-os/pm/spec/pm-zenhub-standard.json`](../agile-os/pm/spec/pm-zenhub-standard.json) |
 | Fleet plan SoR | [`../agile-os/pm/zenhub-plan.json`](../agile-os/pm/zenhub-plan.json) |
 | Label registry | [`../bridge-os/config/zenhub-ecosystem-registry.json`](../bridge-os/config/zenhub-ecosystem-registry.json) |
+| Workspace | **GTCX** |
 | Repo plan | (none — inherit fleet plan) |
 
 ## Label contract
@@ -29,6 +31,16 @@ Board hygiene and label contract for workspace **GTCX**.
 | Initiative | Project | Product Backlog |
 | Epic | Epic | Product Backlog |
 | Story / Task | Issue | Sprint Backlog |
+
+## Story fields (per fleet standard)
+
+Required on every story in `machine/backlog.json`: `id`, `title`, `owner`, `priority`, `type`, `status`, `acceptance`.
+
+Recommended: `parentId`, `gtcxLevel`, `zenhubIssueNumber`.
+
+Status enum: `open` · `in_progress` · `done` · `blocked` · `cancelled`.
+
+Pipelines: Sprint Backlog · Product Backlog · Review/QA · Icebox · Done · In Progress · New Issues.
 
 ## Hygiene rules
 

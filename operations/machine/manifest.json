@@ -1,19 +1,27 @@
 {
-  "schema": "gtcx.ops.domain.manifest.v1",
+  "$schema": "gtcx://ops/pm/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-16",
-  "status": "scaffold",
+  "updated": "2026-06-22",
+  "status": "current",
   "local": {
-    "agileDocs": "agile"
+    "agileDocs": "agile",
+    "executionRoadmap": "machine/execution-roadmap.md",
+    "workSelection": "docs/operations/agent-work-selection.md",
+    "autoDevState": "machine/auto-dev-state.md",
+    "nextWorkScript": null
+  },
+  "sync": {
+    "command": "pnpm machine:sync",
+    "output": "operations/machine/backlog.json",
+    "nextWorkScript": null
   },
   "agileReference": {
     "hub": "agile-os",
     "referenceImpl": "../agile-os/agile",
     "fleetBacklog": "../agile-os/pm/ecosystem-sprint-backlog.json",
-    "strategy": "../agile-os/docs/strategy/fleet-agile-hub.md"
+    "strategy": "../agile-os/docs/strategy/fleet-agile-hub.md",
+    "zenhubStandard": "../agile-os/pm/spec/pm-zenhub-standard.json",
+    "zenhubRegistry": "../bridge-os/config/zenhub-ecosystem-registry.json"
   },
-  "sync": {
-    "command": "pnpm pm:sync",
-    "output": "machine/backlog.json"
-  }
+  "note": "P29 slice — syncs machine/backlog.json to operations/machine/backlog.json for fabric consumption"
 }

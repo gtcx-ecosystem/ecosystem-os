@@ -14,7 +14,7 @@
     {
       "id": "shipping-culture",
       "label": "Shipping culture PM",
-      "subtitle": "pm/ R1 folder",
+      "subtitle": "machine/ R1 folder",
       "progressPct": 50,
       "statusNote": "INIT-SHIPPING-CULTURE rollout"
     },
@@ -28,12 +28,12 @@
   ],
   "narrative": {
     "currentPhase": "execution engine — product repo executes ZenHub graph",
-    "nextMilestone": "pm:folder:check R1 + pm:shipping:report in status updates"
+    "nextMilestone": "machine folder R1 + shipping report in status updates"
   },
   "bottomLine": {
     "position": "Fleet gates green; product GA depth in progress.",
-    "gatingWork": "Align pm/ folder to pm-folder-requirements R1.",
-    "nextStrategicMove": "pnpm pm:sync && pnpm agent:next-work",
+    "gatingWork": "Align machine/ folder to pm-folder-requirements R1.",
+    "nextStrategicMove": "pnpm product:compile && pnpm machine:sync && pnpm agent:next-work",
     "auditComposite100": 100
   },
   "fiveCoreSyncedAt": "2026-06-15"

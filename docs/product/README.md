@@ -21,12 +21,14 @@ review_cycle: on-change
 | Foundation | `docs/foundation/` | Why — charter, vision, goals |
 | Business | `docs/business/` | Market, ICP, economics |
 | **Product** | `docs/product/ux/` | Users, JTBD, journeys, workflows (UX only) |
+| **Roadmap** | `docs/product/roadmap/` | Executable plan — initiatives, features, stories (`pnpm product:compile`) |
 | Architecture | `docs/architecture/` | Requirements, specs, ADRs |
 | Ceremony | `agile/` | Scrum, planning, UAT, roadmap lanes |
-| Machine | `pm/` | PRDs, backlog, CI |
+| Machine | `machine/` | PRDs, backlog, CI (compiled — do not hand-edit backlog) |
 
 ## Subfolders
 
 | Folder | Contents |
 | ------ | -------- |
-| `ux/` | Users, JTBD, journeys, flows — **only** subfolder allowed |
+| `ux/` | Users, JTBD, journeys, flows |
+| `roadmap/` | Executable plan — initiatives, features, stories |

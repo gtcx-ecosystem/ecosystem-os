@@ -1,0 +1,17 @@
+{
+  "$schema": "gtcx://ops/pm-backlog/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-22",
+  "syncSource": "pnpm pm:sync",
+  "active": {
+    "title": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
+    "status": "open",
+    "owner": "canon-os",
+    "tier": "task-intake-item"
+  },
+  "backlogClear": false,
+  "stories": [],
+  "crossRepoRefs": [],
+  "agileHub": null,
+  "roadmapPath": "machine/execution-roadmap.md"
+}

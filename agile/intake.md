@@ -17,8 +17,10 @@ Repo-local inbound work before P22 selection.
 
 | Source | Path | Role |
 | ------ | ---- | ---- |
-| Human inbox | `pm/_intake/` | Operator-raised items awaiting triage |
-| Machine slice | `ops/pm/backlog.json` | Refresh: `pnpm pm:sync` |
+| Human inbox | `machine/_intake/` | Operator-raised items awaiting triage |
+| Author plane | `docs/product/roadmap/` | Initiatives, features, stories — compile via `pnpm product:compile` |
+| P22 queue | `machine/backlog.json` | Compiled output — **never hand-edit** |
+| P29 ops slice | `operations/machine/backlog.json` | Refresh: `pnpm machine:sync` |
 | Fleet backlog | [`../agile-os/pm/ecosystem-sprint-backlog.json`](../agile-os/pm/ecosystem-sprint-backlog.json) | Cross-repo programme SoR |
 | Bridge handoffs | `docs/operations/coordination/` | Promoted coordination items |
 
