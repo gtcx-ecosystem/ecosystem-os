@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-architecture-check/v2",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:01:21.301Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T20:41:12.871Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-architecture-pack.json",
@@ -28,7 +28,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:docs/architecture/README.md",
@@ -56,39 +56,24 @@
       "detail": "FOLDER-SPEC cites pack"
     },
     {
-      "id": "subfolder:specs",
+      "id": "subfolder:integration",
       "ok": true,
-      "detail": "docs/architecture/specs/"
+      "detail": "docs/architecture/integration/"
     },
     {
-      "id": "subfolder-file:specs/README.md",
+      "id": "subfolder-file:integration/README.md",
       "ok": true,
-      "detail": "docs/architecture/specs/README.md"
+      "detail": "docs/architecture/integration/README.md"
     },
     {
-      "id": "subfolder-file:specs/index.md",
+      "id": "subfolder:pillars",
       "ok": true,
-      "detail": "docs/architecture/specs/index.md"
+      "detail": "docs/architecture/pillars/"
     },
     {
-      "id": "subfolder:decisions",
+      "id": "subfolder-file:pillars/README.md",
       "ok": true,
-      "detail": "docs/architecture/decisions/"
-    },
-    {
-      "id": "subfolder-file:decisions/README.md",
-      "ok": true,
-      "detail": "docs/architecture/decisions/README.md"
-    },
-    {
-      "id": "subfolder:requirements",
-      "ok": true,
-      "detail": "docs/architecture/requirements/"
-    },
-    {
-      "id": "subfolder-file:requirements/README.md",
-      "ok": true,
-      "detail": "docs/architecture/requirements/README.md"
+      "detail": "docs/architecture/pillars/README.md"
     },
     {
       "id": "no-loose-narrative-at-root",

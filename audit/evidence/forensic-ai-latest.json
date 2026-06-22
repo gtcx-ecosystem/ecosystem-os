@@ -1,7 +1,7 @@
 {
   "programId": "FORENSIC-AI-001",
   "storyId": "FORENSIC-AI-001",
-  "updatedAt": "2026-06-17T08:49:45.079Z",
+  "updatedAt": "2026-06-22T20:01:05.329Z",
   "companyName": "ecosystem-os",
   "orgSource": "explicit",
   "ambient": {
@@ -61,25 +61,22 @@
       "alexander",
       "ecosystem-os",
       "canon-os",
-      "'gtcx-docs'",
-      "compliance-os",
-      "gtcx-mobile",
-      "'gtcx-protocols'"
+      "protocol-architect",
+      "chief-of-staff",
+      "'product-lead'",
+      "'protocol-architect'"
     ],
     "projectHints": [
       "ecosystem-os",
       "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
-      "PTM-R5-03 — fleet multi-pillar lift for ecosystem-os",
-      "P35 strict layout green — ecosystem repo layout v5",
-      "PM folder R1 — PRD, UX, backlog, and capability matrix complete",
-      "Agent and agile doc scaffolding — universal, cursor, and agile roadmap"
+      "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface"
     ],
     "goalHints": [
+      "orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals",
       "to implement Protocol 22-selected work",
       "Unblock Report — never revert to consultant mode",
       "** Make these tests pass",
-      "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead",
-      "error on create     | Sandbox fallback, work in place                    |"
+      "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead"
     ],
     "filesScanned": 180,
     "solicitOrg": false
@@ -169,51 +166,51 @@
     {
       "passId": "FRP-P0-ambient",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     },
     {
       "passId": "FRP-P1-entity",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-17T08:49:45.079Z",
+      "completedAt": "2026-06-22T20:01:05.329Z",
       "nodeCount": 1
     },
     {
       "passId": "FRP-P2-vertical",
       "protocolId": "FRP-P2",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     },
     {
       "passId": "FRP-P4-regulatory",
       "protocolId": "FRP-P4",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     },
     {
       "passId": "FRP-P5-org-shape",
       "protocolId": "FRP-P5",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     },
     {
       "passId": "FRP-P6-gaps",
       "protocolId": "FRP-P6",
-      "completedAt": "2026-06-17T08:49:45.079Z",
+      "completedAt": "2026-06-22T20:01:05.329Z",
       "questionCount": 4
     },
     {
       "passId": "FRP-P7-merge",
       "protocolId": "FRP-P7",
-      "completedAt": "2026-06-17T08:49:45.079Z",
+      "completedAt": "2026-06-22T20:01:05.329Z",
       "nodeCount": 1,
       "edgeCount": 0
     },
     {
       "passId": "hydrate-layers",
       "protocolId": "hydrate",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     },
     {
       "passId": "complete",
       "protocolId": "complete",
-      "completedAt": "2026-06-17T08:49:45.079Z"
+      "completedAt": "2026-06-22T20:01:05.329Z"
     }
   ],
   "hydratedPaths": [
@@ -223,10 +220,5 @@
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/.baseline/persona/graph.json",
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/config/baseline/baseline.config.json",
     "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/.baseline/frame/question-catalog.json"
-  ],
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  ]
 }

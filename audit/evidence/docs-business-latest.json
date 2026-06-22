@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-business-check/v2",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:01:21.259Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T20:41:12.829Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-business-pack.json",
@@ -29,7 +29,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:docs/business/README.md",
@@ -117,71 +117,6 @@
       "detail": "docs/business/customers/early-stage-adopter.md"
     },
     {
-      "id": "subfolder:economics",
-      "ok": true,
-      "detail": "docs/business/economics/"
-    },
-    {
-      "id": "subfolder-readme:economics",
-      "ok": true,
-      "detail": "docs/business/economics/README.md"
-    },
-    {
-      "id": "canonical:economics/business-model.md",
-      "ok": true,
-      "detail": "docs/business/economics/business-model.md"
-    },
-    {
-      "id": "canonical:economics/pricing.md",
-      "ok": true,
-      "detail": "docs/business/economics/pricing.md"
-    },
-    {
-      "id": "canonical:economics/revenue-streams.md",
-      "ok": true,
-      "detail": "docs/business/economics/revenue-streams.md"
-    },
-    {
-      "id": "canonical:economics/product-metrics.md",
-      "ok": true,
-      "detail": "docs/business/economics/product-metrics.md"
-    },
-    {
-      "id": "canonical:economics/analytics-registry.md",
-      "ok": true,
-      "detail": "docs/business/economics/analytics-registry.md"
-    },
-    {
-      "id": "subfolder:strategy",
-      "ok": true,
-      "detail": "docs/business/strategy/"
-    },
-    {
-      "id": "subfolder-readme:strategy",
-      "ok": true,
-      "detail": "docs/business/strategy/README.md"
-    },
-    {
-      "id": "canonical:strategy/executive-summary.md",
-      "ok": true,
-      "detail": "docs/business/strategy/executive-summary.md"
-    },
-    {
-      "id": "canonical:strategy/solution.md",
-      "ok": true,
-      "detail": "docs/business/strategy/solution.md"
-    },
-    {
-      "id": "canonical:strategy/ecosystem-integration.md",
-      "ok": true,
-      "detail": "docs/business/strategy/ecosystem-integration.md"
-    },
-    {
-      "id": "canonical:strategy/implementation-truth.md",
-      "ok": true,
-      "detail": "docs/business/strategy/implementation-truth.md"
-    },
-    {
       "id": "subfolder:research",
       "ok": true,
       "detail": "docs/business/research/"
@@ -220,6 +155,16 @@
       "id": "canonical:research/research-portfolio-blueprint.md",
       "ok": true,
       "detail": "docs/business/research/research-portfolio-blueprint.md"
+    },
+    {
+      "id": "subfolder:domain",
+      "ok": true,
+      "detail": "docs/business/domain/"
+    },
+    {
+      "id": "subfolder-readme:domain",
+      "ok": true,
+      "detail": "docs/business/domain/README.md"
     },
     {
       "id": "no-loose-research-at-root",

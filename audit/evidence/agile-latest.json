@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/agile-check/v1",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:22:41.614Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T20:41:12.984Z",
   "ok": true,
   "gates": [
     {
@@ -23,7 +23,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:agile/README.md",
@@ -111,59 +111,24 @@
       "detail": "FOLDER-SPEC cites pack"
     },
     {
-      "id": "subfolder:scrum",
+      "id": "optional-subfolder:scrum",
       "ok": true,
-      "detail": "agile/scrum/"
+      "detail": "agile/scrum/ present"
     },
     {
-      "id": "subfolder-file:scrum/README.md",
+      "id": "optional-file:scrum/README.md",
       "ok": true,
       "detail": "agile/scrum/README.md"
     },
     {
-      "id": "subfolder-file:scrum/definition-of-done.md",
+      "id": "optional-file:scrum/definition-of-done.md",
       "ok": true,
       "detail": "agile/scrum/definition-of-done.md"
     },
     {
-      "id": "subfolder-file:scrum/definition-of-ready.md",
+      "id": "optional-file:scrum/definition-of-ready.md",
       "ok": true,
       "detail": "agile/scrum/definition-of-ready.md"
-    },
-    {
-      "id": "subfolder:roadmaps",
-      "ok": true,
-      "detail": "agile/roadmaps/"
-    },
-    {
-      "id": "subfolder-file:roadmaps/README.md",
-      "ok": true,
-      "detail": "agile/roadmaps/README.md"
-    },
-    {
-      "id": "subfolder-file:roadmaps/technical.md",
-      "ok": true,
-      "detail": "agile/roadmaps/technical.md"
-    },
-    {
-      "id": "subfolder-file:roadmaps/gtm.md",
-      "ok": true,
-      "detail": "agile/roadmaps/gtm.md"
-    },
-    {
-      "id": "subfolder:requirements",
-      "ok": true,
-      "detail": "agile/requirements/"
-    },
-    {
-      "id": "subfolder-file:requirements/README.md",
-      "ok": true,
-      "detail": "agile/requirements/README.md"
-    },
-    {
-      "id": "subfolder-file:requirements/trace.md",
-      "ok": true,
-      "detail": "agile/requirements/trace.md"
     },
     {
       "id": "optional-subfolder:sprints",

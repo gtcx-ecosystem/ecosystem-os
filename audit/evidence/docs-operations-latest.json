@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-operations-check/v1",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:01:21.450Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T20:41:13.022Z",
   "ok": true,
   "gates": [
     {
@@ -23,7 +23,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:docs/operations/README.md",
@@ -61,16 +61,6 @@
       "detail": "docs/operations/runbooks/README.md"
     },
     {
-      "id": "subfolder:deployment",
-      "ok": true,
-      "detail": "docs/operations/deployment/"
-    },
-    {
-      "id": "subfolder-file:deployment/README.md",
-      "ok": true,
-      "detail": "docs/operations/deployment/README.md"
-    },
-    {
       "id": "subfolder:agent-init",
       "ok": true,
       "detail": "docs/operations/agent-init/"
@@ -84,6 +74,16 @@
       "id": "canonical:agent-init/agent-universal-instructions.md",
       "ok": true,
       "detail": "docs/operations/agent-init/agent-universal-instructions.md"
+    },
+    {
+      "id": "subfolder:coordination",
+      "ok": true,
+      "detail": "docs/operations/coordination/"
+    },
+    {
+      "id": "subfolder-file:coordination/README.md",
+      "ok": true,
+      "detail": "docs/operations/coordination/README.md"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-roadmap-check/v1",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:01:21.377Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T20:41:12.946Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-roadmap-pack.json",
@@ -29,7 +29,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "canonical:agile/roadmaps",
