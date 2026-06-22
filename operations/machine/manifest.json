@@ -14,6 +14,6 @@
   },
   "sync": {
     "command": "pnpm pm:sync",
-    "output": "ops/pm/backlog.json"
+    "output": "machine/backlog.json"
   }
 }
