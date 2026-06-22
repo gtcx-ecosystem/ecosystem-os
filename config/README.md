@@ -26,3 +26,16 @@ Machine config only — narrative index lives in [`docs/sor.json`](../docs/sor.j
 Standards SoR: [`../canon-os/config/ecosystem-central-sor.json`](../canon-os/config/ecosystem-central-sor.json)
 
 **Gates:** `pnpm docs:ia:check` · `pnpm docs:pack:pillar-contract:check` · `pnpm canon:synthesize:check` · `pnpm canon:contracts:check`
+
+## Baseline-os runtime (fixture — spec authority is canon-os)
+
+| Artifact | Role |
+| -------- | ---- |
+| [`agent-consumption-contract.json`](./agent-consumption-contract.json) | Session spine wiring — bin, shims, legacy path detection |
+| [`../baseline-os`](../baseline-os) | AI runtime provider + reference fixture (not spec SoR) |
+
+**Session spine:** `pnpm session` · `pnpm next` · `pnpm gates` · `pnpm hub` · `pnpm mcp` / `pnpm serve`
+
+**Drift gate:** `pnpm agent:consumption:check` — fails on contract `legacyPathFragments` (stale baseline bin/shim paths)
+
+**Fixture copy (PHASE-*):** mirror baseline shapes from contract `fixtureCopyTargets`; adapt domains; standards resolve via [`canon-os-consumption.json`](./canon-os-consumption.json).
