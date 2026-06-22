@@ -3,7 +3,7 @@
   "schema": "gtcx.agentic.bridge.v1",
   "repo": "ecosystem-os",
   "role": "fleet-documentation-home",
-  "updated": "2026-06-15",
+  "updated": "2026-06-23",
   "baseline": {
     "provider": "baseline-os",
     "resolvedAt": "../baseline-os",

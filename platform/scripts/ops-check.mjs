@@ -20,7 +20,7 @@ const required = [
   'pm/publish-register.json',
   'ops/gtm/fleet-catalog-index.md',
   'agents/manifest.json',
-  'agentic/manifest.json',
+  'agents/manifest.json',
   'config/ops.manifest.json',
   'config/baseline/baseline.config.json',
   'baseline.config.json',
