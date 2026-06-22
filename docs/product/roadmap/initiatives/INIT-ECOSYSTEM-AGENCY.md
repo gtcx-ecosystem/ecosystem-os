@@ -4,6 +4,11 @@ title: 'INIT-ECOSYSTEM-AGENCY — Agency module'
 status: done
 priority: P1
 owner: ecosystem-os
+document_type: product
+date: 2026-06-22
+tier: critical
+tags: ['roadmap', 'initiative', 'agency']
+review_cycle: on-change
 ---
 
 # INIT-ECOSYSTEM-AGENCY — Agency module

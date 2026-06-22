@@ -6,6 +6,11 @@ title: 'STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface
 status: in_progress
 priority: P1
 owner: ecosystem-os
+document_type: product
+date: 2026-06-22
+tier: critical
+tags: ['roadmap', 'story', 'agile']
+review_cycle: on-change
 ---
 
 # STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface

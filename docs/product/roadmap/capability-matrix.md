@@ -4,6 +4,7 @@ status: current
 date: 2026-06-22
 owner: ecosystem-os
 document_type: product
+tier: critical
 tags: ['roadmap', 'capabilities']
 review_cycle: on-change
 ---

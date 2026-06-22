@@ -1,14 +1,14 @@
 {
   "schema": "gtcx://canon-os/docs-tree-witness/v1",
-  "generatedAt": "2026-06-22T17:31:51.995Z",
+  "generatedAt": "2026-06-22T22:28:43.106Z",
   "repo": "ecosystem-os",
   "strict": true,
   "structureOnly": false,
-  "profile": "product",
+  "profile": "fleet-documentation",
   "pass": true,
   "metrics": {
-    "mdFiles": 629,
-    "folders": 146,
+    "mdFiles": 643,
+    "folders": 150,
     "missingReadme": 0,
     "missingFrontmatter": 0,
     "missingDocumentType": 0,
@@ -23,7 +23,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:README.md",
@@ -237,206 +237,6 @@
     },
     {
       "id": "layer:root-sprawl:business",
-      "ok": true,
-      "detail": "clean"
-    },
-    {
-      "id": "layer:required:architecture",
-      "ok": true,
-      "detail": "docs/architecture"
-    },
-    {
-      "id": "pack:required:docs/architecture/README.md",
-      "ok": true,
-      "detail": "docs/architecture/README.md"
-    },
-    {
-      "id": "pack:required:docs/architecture/FOLDER-SPEC.md",
-      "ok": true,
-      "detail": "docs/architecture/FOLDER-SPEC.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/specs",
-      "ok": true,
-      "detail": "docs/architecture/specs/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/specs",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/requirements",
-      "ok": true,
-      "detail": "docs/architecture/requirements/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/requirements",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/decisions",
-      "ok": true,
-      "detail": "docs/architecture/decisions/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/decisions",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/diagrams",
-      "ok": true,
-      "detail": "docs/architecture/diagrams/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/diagrams",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/integration",
-      "ok": true,
-      "detail": "docs/architecture/integration/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/integration",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/security",
-      "ok": true,
-      "detail": "docs/architecture/security/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/security",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:architecture/pillars",
-      "ok": true,
-      "detail": "docs/architecture/pillars/"
-    },
-    {
-      "id": "pack:subfolder-readme:architecture/pillars",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "layer:root-sprawl:architecture",
-      "ok": true,
-      "detail": "clean"
-    },
-    {
-      "id": "layer:required:product",
-      "ok": true,
-      "detail": "docs/product"
-    },
-    {
-      "id": "pack:required:docs/product/README.md",
-      "ok": true,
-      "detail": "docs/product/README.md"
-    },
-    {
-      "id": "pack:required:docs/product/FOLDER-SPEC.md",
-      "ok": true,
-      "detail": "docs/product/FOLDER-SPEC.md"
-    },
-    {
-      "id": "pack:subfolder:product/ux",
-      "ok": true,
-      "detail": "docs/product/ux/"
-    },
-    {
-      "id": "pack:subfolder-readme:product/ux",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "layer:root-sprawl:product",
-      "ok": true,
-      "detail": "clean"
-    },
-    {
-      "id": "layer:required:operations",
-      "ok": true,
-      "detail": "docs/operations"
-    },
-    {
-      "id": "pack:required:docs/operations/README.md",
-      "ok": true,
-      "detail": "docs/operations/README.md"
-    },
-    {
-      "id": "pack:required:docs/operations/FOLDER-SPEC.md",
-      "ok": true,
-      "detail": "docs/operations/FOLDER-SPEC.md"
-    },
-    {
-      "id": "pack:subfolder:operations/runbooks",
-      "ok": true,
-      "detail": "docs/operations/runbooks/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/runbooks",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:operations/deployment",
-      "ok": true,
-      "detail": "docs/operations/deployment/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/deployment",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:operations/agent-init",
-      "ok": true,
-      "detail": "docs/operations/agent-init/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/agent-init",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:operations/remediation",
-      "ok": true,
-      "detail": "docs/operations/remediation/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/remediation",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:operations/coordination",
-      "ok": true,
-      "detail": "docs/operations/coordination/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/coordination",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "pack:subfolder:operations/compliance",
-      "ok": true,
-      "detail": "docs/operations/compliance/"
-    },
-    {
-      "id": "pack:subfolder-readme:operations/compliance",
-      "ok": true,
-      "detail": "README.md"
-    },
-    {
-      "id": "layer:root-sprawl:operations",
       "ok": true,
       "detail": "clean"
     },

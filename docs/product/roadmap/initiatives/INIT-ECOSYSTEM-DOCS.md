@@ -4,6 +4,11 @@ title: 'INIT-ECOSYSTEM-DOCS — Fleet documentation home'
 status: in_progress
 priority: P0
 owner: ecosystem-os
+document_type: product
+date: 2026-06-22
+tier: critical
+tags: ['roadmap', 'initiative', 'docs']
+review_cycle: on-change
 ---
 
 # INIT-ECOSYSTEM-DOCS — Fleet documentation home

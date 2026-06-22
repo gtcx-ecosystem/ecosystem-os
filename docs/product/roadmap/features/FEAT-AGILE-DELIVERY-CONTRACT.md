@@ -5,6 +5,11 @@ title: 'FEAT-AGILE-DELIVERY-CONTRACT — agile-os delivery + ZenHub surface'
 status: in_progress
 priority: P1
 owner: ecosystem-os
+document_type: product
+date: 2026-06-22
+tier: critical
+tags: ['roadmap', 'feature', 'agile']
+review_cycle: on-change
 ---
 
 # FEAT-AGILE-DELIVERY-CONTRACT — agile-os delivery + ZenHub surface
