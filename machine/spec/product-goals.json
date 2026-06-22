@@ -2,7 +2,7 @@
   "$schema": "gtcx://bridge-os/product-goals/v1",
   "version": "1.1.0",
   "repo": "ecosystem-os",
-  "tier": "ecosystem-operating-system",
+  "tier": "fleet-documentation",
   "updated": "2026-06-17",
   "fleetRegistry": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json",
   "vision": {

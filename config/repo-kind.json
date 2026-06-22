@@ -3,8 +3,8 @@
   "emphasis": [
     "docs/gitbook/",
     "docs/reference/gitbooks/",
-    "ops/gtm/",
-    "pm/publish-register.json"
+    "operations/gtm/",
+    "machine/publish-register.json"
   ],
   "deemphasis": ["platform/mcp", "deploy"],
   "migrationTier": "stable",

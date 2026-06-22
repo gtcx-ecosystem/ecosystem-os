@@ -2,7 +2,7 @@
   "$schema": "gtcx://docs/sor/v1",
   "schema": "gtcx.docs.sor.v1",
   "repo": "ecosystem-os",
-  "repoKind": "ecosystem-operating-system",
+  "repoKind": "fleet-documentation",
   "updated": "2026-06-16",
   "role": "ai-native-company-operating-system",
   "narrativeRoot": "docs/",
@@ -33,9 +33,9 @@
     "ventureOs": "venture-os/",
     "referenceGlossary": "docs/reference/glossary/",
     "agentProvisioning": "agents/provisioning/",
-    "gtm": "ops/gtm/",
-    "legal": "ops/legal/",
-    "publishRegister": "pm/publish-register.json",
+    "gtm": "operations/gtm/",
+    "legal": "operations/legal/",
+    "publishRegister": "machine/publish-register.json",
     "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md"
   },
   "upstream": {

@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/docs-ia-check/v1",
-  "generatedAt": "2026-06-22T18:01:21.612Z",
+  "generatedAt": "2026-06-22T19:48:10.062Z",
   "repo": "ecosystem-os",
   "ok": true,
   "strict": false,
@@ -20,21 +20,21 @@
       "script": "docs-business-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 44/44 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-business-latest.json"
+      "detail": " | PASS — 33/33 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-business-latest.json"
     },
     {
       "gateId": "docs:architecture:check",
       "script": "docs-architecture-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 25/25 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-architecture-latest.json"
+      "detail": " | PASS — 22/22 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-architecture-latest.json"
     },
     {
       "gateId": "docs:product:check",
       "script": "docs-product-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 27/27 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-product-latest.json"
+      "detail": " | PASS — 21/21 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-product-latest.json"
     },
     {
       "gateId": "docs:roadmap:check",
@@ -48,14 +48,14 @@
       "script": "agile-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": "OK absent:docs-agile — absent |  | PASS — 38/38"
+      "detail": "OK absent:docs-agile — absent |  | PASS — 31/31"
     },
     {
       "gateId": "docs:operations:check",
       "script": "docs-operations-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": "OK canonical:agent-init/agent-universal-instructions.md — docs/operations/agent-init/agent-universal-instructions.md |  | PASS — 16/16"
+      "detail": "OK subfolder-file:coordination/README.md — docs/operations/coordination/README.md |  | PASS — 16/16"
     },
     {
       "gateId": "docs:compliance-nest:check",

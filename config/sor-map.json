@@ -3,13 +3,15 @@
   "repo": "ecosystem-os",
   "repoKind": "fleet-documentation",
   "migrationTier": "stable",
+  "updated": "2026-06-22",
+  "canonConsumption": "config/canon-os-consumption.json",
   "paths": {
     "auditEntry": "audit/AGENT-START.md",
     "auditEvidence": "audit/evidence/",
     "auditNarrativeIndex": "audit/",
     "fiveCoreRunbook": "audit/FIVE-CORE-AUDITS.md",
     "executionRoadmap": "docs/strategy/execution-roadmap.md",
-    "autoDevState": "pm/auto-dev-state.md",
+    "autoDevState": "machine/auto-dev-state.md",
     "agentsCanonical": "agents/",
     "docsIamap": "docs/README.md",
     "docsIndex": "docs/INDEX.md",
@@ -20,18 +22,22 @@
     "overview": "docs/overview/",
     "onboarding": "docs/onboarding/",
     "architecture": "docs/architecture/",
-    "gtm": "ops/gtm/",
-    "legal": "ops/legal/",
-    "publishRegister": "pm/publish-register.json",
+    "gtm": "operations/gtm/",
+    "legal": "operations/legal/",
+    "publishRegister": "machine/publish-register.json",
     "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md",
     "platformScripts": "platform/scripts/",
-    "opsDomains": "ops/",
+    "opsDomains": "operations/",
     "workstream": "workstream/",
     "sorMap": "config/sor-map.json",
     "repoKind": "config/repo-kind.json",
     "opsManifest": "config/ops.manifest.json",
     "layoutContract": "config/layout-contract.json",
-    "docsSor": "docs/sor.json"
+    "docsSor": "docs/sor.json",
+    "canonStandardsSoR": "../canon-os/config/ecosystem-central-sor.json"
   },
-  "deprecated": {}
+  "deprecated": {
+    "ops/gtm/": "operations/gtm/",
+    "pm/publish-register.json": "machine/publish-register.json"
+  }
 }

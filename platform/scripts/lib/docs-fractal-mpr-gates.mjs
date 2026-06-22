@@ -3,6 +3,7 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { resolveDocsPack } from './resolve-docs-pack.mjs';
 
 export const PILLAR_IDS = [
   'compliance',
@@ -42,6 +43,13 @@ export function loadPolicy(repoRoot) {
 }
 
 export function loadPack(repoRoot, packRel) {
+  const fileName = packRel.replace(/^(pm|machine)\/spec\//, '');
+  if (fileName.endsWith('-pack.json')) {
+    const resolution = resolveDocsPack(repoRoot, fileName);
+    if (resolution.resolvedIsFull && resolution.resolved) {
+      return resolution.resolved;
+    }
+  }
   const local = join(repoRoot, packRel);
   const canon = join(repoRoot, '../canon-os/pm/spec', packRel.replace(/^pm\/spec\//, ''));
   const path = existsSync(local) ? local : existsSync(canon) ? canon : null;

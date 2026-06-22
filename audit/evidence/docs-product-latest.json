@@ -1,13 +1,13 @@
 {
   "schema": "gtcx://canon-os/docs-product-check/v1",
   "repo": "ecosystem-os",
-  "profile": "product",
-  "at": "2026-06-22T18:01:21.338Z",
+  "profile": "fleet-documentation",
+  "at": "2026-06-22T19:48:09.780Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-product-pack.json",
     "localIsStub": false,
-    "upstreamPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/pm/spec/docs-product-pack.json",
+    "upstreamPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/machine/spec/docs-product-pack.json",
     "resolvedIsFull": true
   },
   "gates": [
@@ -29,7 +29,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "product"
+      "detail": "fleet-documentation"
     },
     {
       "id": "root:docs/product/README.md",
@@ -52,6 +52,11 @@
       "detail": "FOLDER-SPEC must cite docs-product-pack.json"
     },
     {
+      "id": "subfolder:roadmap",
+      "ok": true,
+      "detail": "docs/product/roadmap/"
+    },
+    {
       "id": "subfolder:ux",
       "ok": true,
       "detail": "docs/product/ux/"
@@ -62,44 +67,9 @@
       "detail": "docs/product/ux/README.md"
     },
     {
-      "id": "canonical:ux/users.md",
-      "ok": true,
-      "detail": "docs/product/ux/users.md"
-    },
-    {
-      "id": "canonical:ux/northern-stars.md",
-      "ok": true,
-      "detail": "docs/product/ux/northern-stars.md"
-    },
-    {
-      "id": "canonical:ux/job-to-be-done.md",
-      "ok": true,
-      "detail": "docs/product/ux/job-to-be-done.md"
-    },
-    {
-      "id": "canonical:ux/information-architecture.md",
-      "ok": true,
-      "detail": "docs/product/ux/information-architecture.md"
-    },
-    {
-      "id": "canonical:ux/user-flow-diagrams.md",
-      "ok": true,
-      "detail": "docs/product/ux/user-flow-diagrams.md"
-    },
-    {
-      "id": "canonical:ux/critical-workflows.md",
-      "ok": true,
-      "detail": "docs/product/ux/critical-workflows.md"
-    },
-    {
-      "id": "canonical:ux/user-journey-maps.md",
-      "ok": true,
-      "detail": "docs/product/ux/user-journey-maps.md"
-    },
-    {
       "id": "forbid:product-roadmap",
       "ok": true,
-      "detail": "ok"
+      "detail": "P57 — docs/product/roadmap/ is required SoR"
     },
     {
       "id": "forbid:product-requirements",
