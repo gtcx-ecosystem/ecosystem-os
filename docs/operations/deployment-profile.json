@@ -1,12 +1,1 @@
-{
-  "$schema": "gtcx://bridge-os/deployment-profile/v1",
-  "repo": "ecosystem-os",
-  "deployMode": "static",
-  "environments": [
-    "staging"
-  ],
-  "readinessCommand": "pnpm ops:consumption:check",
-  "infraMatrixRef": "INF-PER-REPO-001#ecosystem-os",
-  "costClass": "scheduled",
-  "owner": "ecosystem-os"
-}
+deployment/deployment-profile.json

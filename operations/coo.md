@@ -18,6 +18,6 @@ review_cycle: on-change
 | Fleet COO | [`../fabric-os/docs/strategy/fleet-ops-hub.md`](../fabric-os/docs/strategy/fleet-ops-hub.md) |
 | Ops authority | [`../bridge-os/pm/spec/ops-authority.json`](../bridge-os/pm/spec/ops-authority.json) |
 | Fleet ops backlog | [`../fabric-os/pm/ecosystem-ops-backlog.json`](../fabric-os/pm/ecosystem-ops-backlog.json) |
-| **This repo runtime** | `pm/` + [`docs/operations/deployment-profile.json`](../docs/operations/deployment-profile.json) |
+| **This repo runtime** | `machine/` + [`docs/operations/deployment/deployment-profile.json`](../docs/operations/deployment/deployment-profile.json) |
 
 Do not fork friction registers or ops lane policy — intake promotes to fabric-os; execution stays in owner repo.
