@@ -1,6 +1,6 @@
 {
   "$schema": "gtcx://baseline-os/experience-forensic-solicitation/v1",
-  "updatedAt": "2026-06-17T08:49:45.078Z",
+  "updatedAt": "2026-06-22T20:01:05.326Z",
   "programId": "FORENSIC-AI-001",
   "moveSet": "forensic-onboarding",
   "prompts": [
@@ -46,7 +46,7 @@
       "id": "forensic-inform-goals",
       "type": "inform",
       "priority": 5,
-      "message": "Inferred goals: to implement Protocol 22-selected work"
+      "message": "Inferred goals: orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals"
     }
   ]
 }

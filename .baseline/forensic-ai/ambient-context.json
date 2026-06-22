@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
-  "discoveredAt": "2026-06-17T08:49:45.077Z",
+  "discoveredAt": "2026-06-22T20:01:05.323Z",
   "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
   "repoId": "ecosystem-os",
   "filesScanned": 180,
@@ -53,28 +53,201 @@
       ]
     },
     {
-      "name": "GTCX Cloud",
-      "score": 35,
+      "name": "GTCX Agentic",
+      "score": 23,
       "confidence": "inferred",
       "evidence": [
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Cloud\", \"score\": 35, \"confidence\"",
+          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 22, \"confidence\"",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Cloud\\\", \\\"score\\\": 35, \\\"confidence\\\"\", ",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 22, \\\"confidence\\\"\", ",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Cloud\\\\\\\", \\\\\\\"score\\\\\\\": 35, \\\\\\\"confidence\\",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 22, \\\\\\\"confidence\\",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 28, \\\\\\",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 22, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "--- title: 'GTCX Agentic — Enterprise Overview & Stakeholder Gui",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "ol-architect --- # GTCX Agentic — Enterprise Overview & Stakeholder Gui",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Negative Scope This",
+      "score": 15,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"Negative Scope This\", \"score\": 15, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Negative Scope This\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Negative Scope This\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 15, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\"* - version 2.0 ## Negative Scope This document does **not** cover: - Topics \\",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Commodity Trade",
+      "score": 14,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/definition.json",
+          "snippet": "\", \"industry\": \"Commodity Trade & Verification\", \"size\": \"small\", ",
+          "weight": 6
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"Commodity Trade\", \"score\": 14, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\", \\\"industry\\\": \\\"Commodity Trade & Verification\\\", \\\"size\\\": \\\"small\\\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Commodity Trade\\\", \\\"score\\\": 12, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\"industry\\\\\\\": \\\\\\\"Commodity Trade & Verification\\\\\\\", \\\\\\\"size\\\\\\\": \\\\\\\"s",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Commodity Trade\\\\\\\", \\\\\\\"score\\\\\\\": 10, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "ry\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Commodity Trade & Verification\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"size\\\\\\",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Negative Scope\n\nThis",
+      "score": 14,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/ai-agents-onboarding.md",
+          "snippet": "* - version 2.0 ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/contributor-guide.md",
+          "snippet": "k for guidance. ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/getting-started-ai-agents.md",
+          "snippet": "* - Version 2.0 ## Negative Scope This guide does **not** cover: - Deep archi",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
+          "snippet": "ring tests --- ## Negative Scope This document does **not** cover: - **Go-to",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/gtm-q2-africa.md",
+          "snippet": "hardcoded. --- ## Negative Scope This document does **not** cover: - **Techn",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
+          "snippet": "path repo. --- ## Negative Scope This document does **not** cover: - **Strat",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
+          "snippet": " platform. --- ## Negative Scope This document does **not** cover: - **Curre",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/product/README.md",
+          "snippet": "t v5 migration. ## Negative Scope This product document does **not** cover: -",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "name": "GTCX Cloud",
+      "score": 11,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Cloud\", \"score\": 11, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Cloud\\\", \\\"score\\\": 11, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Cloud\\\\\\\", \\\\\\\"score\\\\\\\": 11, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 11, \\\\\\",
           "weight": 1
         },
         {
@@ -100,264 +273,51 @@
       ]
     },
     {
-      "name": "GTCX Sovereign",
-      "score": 23,
+      "name": "Executive Summary\n\nThis",
+      "score": 5,
       "confidence": "inferred",
       "evidence": [
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Sovereign\", \"score\": 23, \"confidence\"",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/getting-started-ai-agents.md",
+          "snippet": "ed Onboarding** ## Executive Summary This guide provides AI agents and collaborat",
           "weight": 1
         },
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Sovereign\\\", \\\"score\\\": 23, \\\"confidence\\\"\", ",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Sovereign\\\\\\\", \\\\\\\"score\\\\\\\": 23, \\\\\\\"confidence\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 19, \\\\\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Sovereign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
-          "snippet": "til ratified | | [**GTCX Sovereign**](deployment/cloud-vs-sovereign.md#gtx",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/roadmap/README.md",
+          "snippet": "r GTCX Agentic. ## Executive Summary This directory contains strategic roadmaps a",
           "weight": 3
         },
         {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/SUMMARY.md",
-          "snippet": "t * [GTCX Cloud vs GTCX Sovereign](deployment/cloud-vs-sovereign.md) * [E",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/roadmap/roadmap-2026-q2.md",
+          "snippet": "prompt.md` --- ## Executive Summary This roadmap captured all remaining internal",
           "weight": 1
         }
       ]
     },
     {
-      "name": "GTCX Protocols",
-      "score": 16,
+      "name": "GTCX Ecosystem",
+      "score": 4,
       "confidence": "inferred",
       "evidence": [
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Protocols\", \"score\": 16, \"confidence\"",
+          "path": ".baseline/frame/catalog.json",
+          "snippet": "cx\", \"name\": \"GTCX Ecosystem\", \"tier\": \"company\", \"descr",
           "weight": 1
         },
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Protocols\\\", \\\"score\\\": 16, \\\"confidence\\\"\", ",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — cross-repo integration architecture *",
           "weight": 1
         },
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Protocols\\\\\\\", \\\\\\\"score\\\\\\\": 16, \\\\\\\"confidence\\",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — all repos **Method:** Direct codebase",
           "weight": 1
         },
         {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 16, \\\\\\",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — strategic blindspots, low-hanging fru",
           "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Protocols\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
-          "snippet": "--- title: 'GTCX Protocols — Developer Documentation' status: 'cur",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/SUMMARY.md",
-          "snippet": ".). ## Welcome * [GTCX Protocols](README.md) ## Release and versions *",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "name": "REST API",
-      "score": 15,
-      "confidence": "inferred",
-      "evidence": [
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"REST API\", \"score\": 15, \"confidence\"",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"REST API\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"REST API\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"REST API\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
-          "snippet": " release notes) | | REST API | `/v1/` — OpenAPI attached to each Git",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/api/rest.md",
-          "snippet": "--- title: 'REST API' status: current date: 2026-06-01 owner",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "name": "Country Support Packages",
-      "score": 15,
-      "confidence": "inferred",
-      "evidence": [
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"Country Support Packages\", \"score\": 15, \"confidence\"",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"Country Support Packages\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Country Support Packages\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Country Support Packages\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/README.md",
-          "snippet": "rotocol guides) | | Country Support Packages | `country-support-03-platform/packages",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/gitbooks/gtcx-protocols/api/error-codes.md",
-          "snippet": "hority documents in Country Support Packages expose `gtcx.key_status`. Values other ",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "name": "Negative Scope\n\nThis",
-      "score": 12,
-      "confidence": "inferred",
-      "evidence": [
-        {
-          "path": "archive/legacy-docs-_archive/guides/README.md",
-          "snippet": "t v5 migration. ## Negative Scope This guide does **not** cover: - Architectu",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agent-troubleshooting-authoritative.md",
-          "snippet": " their terminal ## Negative Scope This document does **not** cover: - **Origi",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agent-troubleshooting.md",
-          "snippet": " their terminal ## Negative Scope This document does **not** cover: - **Conso",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-ai-deployment.md",
-          "snippet": "c regex filters ## Negative Scope This document does **not** cover: - **VIA m",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-architecture-overview.md",
-          "snippet": "il deleted | ## Negative Scope This document does **not** cover: - **MCP s",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agent-golddeal-assistant.md",
-          "snippet": "eals by weeks** ## Negative Scope This document does **not** cover: - **VIA c",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/anisa-advanced-usage.md",
-          "snippet": "atus:** Current ## Negative Scope This document does **not** cover: - **Insta",
-          "weight": 1
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/anisa-quickstart.md",
-          "snippet": "atus:** Current ## Negative Scope This document does **not** cover: - **Advan",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "name": "Virtual Inspection Agent",
-      "score": 12,
-      "confidence": "inferred",
-      "evidence": [
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/agentic-ai-deployment.md",
-          "snippet": "re covered in [VXA (Virtual Inspection Agent)](vxa-tm-virtual-inspection-agent.md) -",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agent-golddeal-assistant.md",
-          "snippet": "re covered in [VXA (Virtual Inspection Agent)](vxa-tm-virtual-inspection-agent.md) -",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agents-for-compliance.md",
-          "snippet": "r Agent (VIA) and a Virtual Inspection Agent (VXA) – that run entirely offline on mo",
-          "weight": 3
-        },
-        {
-          "path": "archive/legacy-docs-_archive/guides/agentic-ai/ai-agents-for-compliance.md",
-          "snippet": " internet. - **VXA (Virtual Inspection Agent)** – A field tool for inspectors or tra",
-          "weight": 3
         }
       ]
     }
@@ -418,25 +378,22 @@
     "alexander",
     "ecosystem-os",
     "canon-os",
-    "'gtcx-docs'",
-    "compliance-os",
-    "gtcx-mobile",
-    "'gtcx-protocols'"
+    "protocol-architect",
+    "chief-of-staff",
+    "'product-lead'",
+    "'protocol-architect'"
   ],
   "projectHints": [
     "ecosystem-os",
     "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
-    "PTM-R5-03 — fleet multi-pillar lift for ecosystem-os",
-    "P35 strict layout green — ecosystem repo layout v5",
-    "PM folder R1 — PRD, UX, backlog, and capability matrix complete",
-    "Agent and agile doc scaffolding — universal, cursor, and agile roadmap"
+    "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface"
   ],
   "goalHints": [
+    "orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals",
     "to implement Protocol 22-selected work",
     "Unblock Report — never revert to consultant mode",
     "** Make these tests pass",
-    "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead",
-    "error on create     | Sandbox fallback, work in place                    |"
+    "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead"
   ],
   "solicitOrg": false,
   "confirmationPrompt": "Workspace context points to \"SIS Inspections\" — confirm or correct if needed.",

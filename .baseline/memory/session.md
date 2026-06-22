@@ -3,11 +3,11 @@ session_id: '2026-06-17-session'
 agent: 'terminal'
 ---
 
-## Session bootstrap (2026-06-17 08:49:44 UTC)
+## Session bootstrap (2026-06-22 20:01:03 UTC)
 
 - **Command:** `agent start` (baseline-os repo-session-core)
 - **Repo:** ecosystem-os
-- **Next work:** unknown
+- **Next work:** unknown — docs:ia:check fleet uplift — frontmatter, README depth, allowlists
 - **Blocked:** no
-- **Git:** 683 changed path(s)
+- **Git:** 40 changed path(s)
 
