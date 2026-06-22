@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-18T03:03:27.217Z",
+  "at": "2026-06-22T18:01:21.525Z",
   "ok": true,
   "gates": [
     {
@@ -165,10 +165,5 @@
       "ok": true,
       "detail": "clean"
     }
-  ],
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  ]
 }

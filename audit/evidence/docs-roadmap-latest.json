@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/docs-roadmap-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-17T02:00:30.266Z",
+  "at": "2026-06-22T18:01:21.377Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-roadmap-pack.json",
@@ -72,11 +72,6 @@
       "detail": "agile/roadmaps/compliance.md"
     },
     {
-      "id": "legacy:docs-roadmap-pointer",
-      "ok": true,
-      "detail": "docs/roadmap/ must be pointer-only → agile/roadmaps/"
-    },
-    {
       "id": "no-roadmap-outside:docs/strategy",
       "ok": true,
       "detail": "no roadmap narrative under docs/strategy/ (lanes → agile/roadmaps/)"
@@ -101,10 +96,5 @@
       "ok": true,
       "detail": "docs/foundation/roadmap.md must link executive lens → agile/roadmaps/"
     }
-  ],
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  ]
 }

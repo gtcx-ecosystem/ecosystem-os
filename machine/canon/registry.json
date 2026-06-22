@@ -6,10 +6,10 @@
   "productId": "ecosystem-os",
   "version": "0.1.0",
   "status": "draft",
-  "updated": "2026-06-20",
+  "updated": "2026-06-22",
   "owner": "ecosystem-os",
-  "goalsRef": "pm/canon/strategy.json",
-  "strategyRef": "pm/canon/strategy.json",
+  "goalsRef": "machine/canon/strategy.json",
+  "strategyRef": "machine/canon/strategy.json",
   "milestones": [],
   "composition": {
     "features": [],

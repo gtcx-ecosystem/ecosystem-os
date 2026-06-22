@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agile-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-18T03:03:25.024Z",
+  "at": "2026-06-22T18:01:21.413Z",
   "ok": true,
   "gates": [
     {
@@ -41,9 +41,9 @@
       "detail": "agile/cpo.md"
     },
     {
-      "id": "root:agile/pillar-scorecard.md",
+      "id": "root:agile/scorecard.md",
       "ok": true,
-      "detail": "agile/pillar-scorecard.md"
+      "detail": "agile/scorecard.md"
     },
     {
       "id": "root:agile/intake.md",
@@ -86,17 +86,17 @@
       "detail": "README cites CPO connection"
     },
     {
-      "id": "root-readme:pillar-scorecard",
+      "id": "root-readme:scorecard",
       "ok": true,
-      "detail": "README links pillar scorecard"
+      "detail": "README links scorecard"
     },
     {
-      "id": "pillar-scorecard:eleven-pillars",
+      "id": "scorecard:eleven-pillars",
       "ok": true,
       "detail": "all 11 pillars listed"
     },
     {
-      "id": "pillar-scorecard:target",
+      "id": "scorecard:target",
       "ok": true,
       "detail": "pillar target 85/100 documented"
     },
@@ -191,19 +191,9 @@
       "detail": "agile/archive/README.md"
     },
     {
-      "id": "ops-manifest:agileDocs",
-      "ok": true,
-      "detail": "ops/pm/manifest.json local.agileDocs = agile"
-    },
-    {
       "id": "absent:docs-agile",
       "ok": true,
       "detail": "absent"
     }
-  ],
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  ]
 }
