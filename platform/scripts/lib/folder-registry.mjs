@@ -16,6 +16,7 @@ import { dirname, join, resolve } from 'node:path';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REGISTRY_PATH = resolve(HERE, '../../../config/folders.json');
+const REPO_ROOT = resolve(REGISTRY_PATH, '../..');
 
 let _registry = null;
 function load() {
@@ -56,3 +57,26 @@ export function foldersByGroup() {
 }
 
 export const registryGroups = () => load().groups;
+
+/** Resolve a folder path from a sibling repo's config/folders.json (cross-repo — no hardcoded paths). */
+export function remoteFolderPath(siblingRepoRel, idOrAlias) {
+  const regPath = resolve(REPO_ROOT, siblingRepoRel, 'config/folders.json');
+  const raw = JSON.parse(readFileSync(regPath, 'utf8'));
+  const aliasIndex = {};
+  for (const [id, f] of Object.entries(raw.folders ?? {})) {
+    aliasIndex[id] = id;
+    for (const a of f.aliases ?? []) aliasIndex[a] = id;
+  }
+  const id = aliasIndex[idOrAlias];
+  if (!id) {
+    throw new Error(
+      `folder-registry: unknown folder "${idOrAlias}" in ${siblingRepoRel}/config/folders.json`,
+    );
+  }
+  return raw.folders[id].path;
+}
+
+/** Absolute path to a folder in a sibling repo via its folder registry. */
+export function remoteFolderAbs(fromRepoRoot, siblingRepoRel, idOrAlias) {
+  return join(fromRepoRoot, siblingRepoRel, remoteFolderPath(siblingRepoRel, idOrAlias));
+}

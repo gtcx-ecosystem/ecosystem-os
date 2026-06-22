@@ -32,6 +32,7 @@
     "CANON-PRODUCT-CANON-V1": "config/product-canon-contract.json"
   },
   "gates": [
+    "pnpm canon:consumption:check",
     "pnpm docs:ia:check",
     "pnpm docs:pack:pillar-contract:check",
     "pnpm canon:synthesize:check",
