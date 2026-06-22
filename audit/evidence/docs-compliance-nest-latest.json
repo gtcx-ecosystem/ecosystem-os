@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://canon-os/docs-compliance-nest-check/v1",
-  "generatedAt": "2026-06-22T20:41:13.055Z",
+  "generatedAt": "2026-06-22T20:55:39.781Z",
   "repo": "ecosystem-os",
   "ok": true,
   "gates": [
