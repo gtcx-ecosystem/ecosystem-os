@@ -64,6 +64,35 @@
       }
     ]
   },
+  "productGoals": [
+    {
+      "id": "PG1",
+      "title": "Fleet documentation home",
+      "outcome": "Operators find current fleet docs without owner-repo drift",
+      "measure": "ops:check green + publish register current",
+      "witness": "pm/publish-register.json"
+    }
+  ],
+  "gtmGoals": [
+    {
+      "id": "GTM1",
+      "title": "Ecosystem OS portfolio narrative",
+      "outcome": "GR-T2 pilot narrative live in market",
+      "measure": "Portfolio doc current + quarter GTM check",
+      "motion": "Category product"
+    }
+  ],
+  "shippingGoals": {
+    "schema": "gtcx://pm/shipping-goals/v1",
+    "goals": [
+      {
+        "id": "SG1",
+        "label": "Ops health",
+        "target": "pnpm ops:check green",
+        "witness": "pnpm ops:check"
+      }
+    ]
+  },
   "definitionOfDone": {
     "story": [
       "product boundary explicit",

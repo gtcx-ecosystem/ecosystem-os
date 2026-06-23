@@ -1,9 +1,9 @@
 {
   "schema": "gtcx://canon-os/gtm-readiness-witness/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-23T14:33:29.815Z",
+  "generatedAt": "2026-06-23T15:06:10.435Z",
   "status": "pass",
-  "score100": 85,
+  "score100": 100,
   "source": "gtm-readiness-check-write",
   "profile": "product"
 }

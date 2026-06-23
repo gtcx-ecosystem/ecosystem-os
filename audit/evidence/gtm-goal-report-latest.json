@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://canon-os/gtm-goal-report/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-23T14:33:29.815Z",
+  "generatedAt": "2026-06-23T15:06:10.434Z",
   "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
   "vision": {
     "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
@@ -12,8 +12,24 @@
     "target": "Graph state + Ledger evidence + Assurance score + Surface command trace",
     "witness": "docs/foundation/narrative/product-architecture.md"
   },
-  "gtmGoals": [],
-  "productGoals": [],
+  "gtmGoals": [
+    {
+      "id": "GTM1",
+      "title": "Ecosystem OS portfolio narrative",
+      "outcome": "GR-T2 pilot narrative live in market",
+      "measure": "Portfolio doc current + quarter GTM check",
+      "motion": "Category product"
+    }
+  ],
+  "productGoals": [
+    {
+      "id": "PG1",
+      "title": "Fleet documentation home",
+      "outcome": "Operators find current fleet docs without owner-repo drift",
+      "measure": "ops:check green + publish register current",
+      "witness": "pm/publish-register.json"
+    }
+  ],
   "milestones": [
     {
       "id": "ECO-OS-SHIP-001",
@@ -57,5 +73,5 @@
       ]
     }
   ],
-  "orphanWorkCount": 15
+  "orphanWorkCount": 13
 }

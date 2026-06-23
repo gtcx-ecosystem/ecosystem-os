@@ -11,6 +11,34 @@ review_cycle: on-change
 
 # PRD — ecosystem-os product charter
 
+## Vision
+
+Ecosystem OS is the fleet documentation and publishing home — one governed surface for onboarding, GTM, architecture narratives, and GitBook spaces without normative protocol forks.
+
+## Mission
+
+Make proof, coordination, and delivery discoverable for humans and agents across the GTCX fleet — evidence-linked publishing over ad-hoc doc sprawl.
+
+## Product goals
+
+| Goal | Outcome | Measure |
+| ---- | ------- | ------- |
+| PG1 Fleet docs home | Current fleet docs without owner drift | ops:check + publish register |
+
+## Shipping goals
+
+| ID | Target | Witness |
+| -- | ------ | ------- |
+| SG1 | ops:check green | CI |
+
+## Features
+
+| Capability | Description |
+| ---------- | ----------- |
+| CAP-ECO-PUBLISH | GitBook publish register and mirror contracts |
+| CAP-ECO-ONBOARD | Fleet onboarding and contributor guides |
+| CAP-ECO-GTM | GTM catalog and partnership doc lanes |
+
 ## Problem
 
 The GTCX fleet ships documentation across 20+ repositories. Operators, agents, and external stakeholders cannot reliably find the current version of:

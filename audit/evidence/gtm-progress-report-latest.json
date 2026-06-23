@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://canon-os/gtm-progress-report/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-23T14:33:29.815Z",
+  "generatedAt": "2026-06-23T15:06:10.434Z",
   "activeMilestone": {
     "id": "ECO-OS-SHIP-001",
     "title": "ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI",
@@ -43,7 +43,15 @@
       }
     ]
   },
-  "gtmGoals": [],
+  "gtmGoals": [
+    {
+      "id": "GTM1",
+      "title": "Ecosystem OS portfolio narrative",
+      "outcome": "GR-T2 pilot narrative live in market",
+      "measure": "Portfolio doc current + quarter GTM check",
+      "motion": "Category product"
+    }
+  ],
   "roadmap": {
     "initiatives": 4,
     "features": 14,
@@ -59,6 +67,6 @@
   },
   "readinessSummary": {
     "status": "pass",
-    "score100": 85
+    "score100": 100
   }
 }

@@ -79,6 +79,12 @@
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",
     "ops:consumption:check": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs",
-    "ops:consumption:check:write": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs --write"
+    "ops:consumption:check:write": "node ../bridge-os/platform/scripts/ecosystem/ops-consumption-check.mjs --write",
+    "ceremony:check": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-check.mjs --repo .",
+    "ceremony:check:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-check.mjs --write --init --repo .",
+    "ceremony:close:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-close.mjs --repo .",
+    "ceremony:critique:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-critique.mjs --write --repo .",
+    "ceremony:checkpoint:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-checkpoint.mjs --write --repo .",
+    "ceremony:contract:verify": "node ../baseline-os/platform/scripts/ecosystem/verify-ceremony-contract.mjs --repo ."
   }
 }

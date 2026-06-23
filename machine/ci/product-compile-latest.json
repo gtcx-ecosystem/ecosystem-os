@@ -1,21 +1,23 @@
 {
   "schema": "gtcx://canon-os/product-compile/v1",
-  "generatedAt": "2026-06-22T18:22:59.629Z",
+  "generatedAt": "2026-06-23T15:03:20.928Z",
   "repo": "ecosystem-os",
   "protocol": "P57-product-delivery-compile",
-  "pass": false,
+  "pass": true,
   "counts": {
     "initiativesCompiled": 2,
     "storiesCompiled": 1,
     "initiativeTotal": 4,
-    "storyTotal": 1
+    "storyTotal": 1,
+    "backlogClear": false,
+    "openStories": 1,
+    "executableGaps": 0
   },
   "hashes": {
-    "initiatives": "74049381f13c2a8dca1797764cc66ac301240efe39dd13d6b84d3cf51c4cd975",
-    "backlog": "066f333c06e9d4771bd2b3289e7dc7e64e52f8b98a4b2979df183778d5f531b8"
+    "initiatives": "6bb1483f737db9ccbe2dd4409bf877e6152f67b7034c43a0c2b82ffbe5b322d4",
+    "backlog": "33f39352072b67f237d1474321f3cf84ab2943fc49b1a793c45bddba54a86268"
   },
+  "executableGaps": [],
   "featureSync": [],
-  "stale": [
-    "backlog"
-  ]
+  "stale": []
 }
