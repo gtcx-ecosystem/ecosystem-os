@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://canon-os/gtm-status-report/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-23T14:24:42.281Z",
+  "generatedAt": "2026-06-23T14:33:29.815Z",
   "features": [
     {
       "featureId": "_rollup",
       "personaCoverage": "complete",
       "jtbdLinked": true,
       "e2eWorkflowId": null,
-      "deployGate": "red",
-      "uatStatus": "pending",
-      "productionReady": false
+      "deployGate": "green",
+      "uatStatus": "pass",
+      "productionReady": true
     }
   ],
   "rollup": {
-    "productionReadyPct": 36,
+    "productionReadyPct": 85,
     "personaCompletePct": 100,
     "e2eLinkedPct": 0,
     "featureCount": 22
