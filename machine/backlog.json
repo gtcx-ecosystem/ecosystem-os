@@ -1,13 +1,15 @@
 {
   "$schema": "gtcx://ops/pm-backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "syncSource": "pnpm product:compile",
   "active": {
-    "title": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
-    "status": "open",
-    "owner": "canon-os",
-    "tier": "task-intake-item"
+    "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+    "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+    "status": "in_progress",
+    "owner": "ecosystem-os",
+    "priority": "P1",
+    "tier": "in_progress"
   },
   "backlogClear": false,
   "stories": [
@@ -30,6 +32,23 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-22T18:22:59.628Z"
+    "at": "2026-06-23T06:47:19.291Z"
+  },
+  "execution": {
+    "backlogClear": false,
+    "active": {
+      "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "in_progress",
+      "owner": "ecosystem-os",
+      "priority": "P1",
+      "tier": "in_progress"
+    },
+    "openCount": 1,
+    "totalCount": 1,
+    "doneCount": 0,
+    "openIds": [
+      "STORY-AGILE-ZENHUB-CONTRACT"
+    ]
   }
 }

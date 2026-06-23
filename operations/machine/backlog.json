@@ -1,17 +1,59 @@
 {
   "$schema": "gtcx://ops/pm-backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-22",
-  "syncSource": "pnpm pm:sync",
+  "updated": "2026-06-23",
+  "syncSource": "pnpm product:compile",
   "active": {
-    "title": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
-    "status": "open",
-    "owner": "canon-os",
-    "tier": "task-intake-item"
+    "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+    "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+    "status": "in_progress",
+    "owner": "ecosystem-os",
+    "priority": "P1",
+    "tier": "in_progress"
   },
   "backlogClear": false,
-  "stories": [],
+  "stories": [
+    {
+      "id": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "in_progress",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-AGILE-DELIVERY-CONTRACT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md"
+    }
+  ],
   "crossRepoRefs": [],
   "agileHub": null,
-  "roadmapPath": "machine/execution-roadmap.md"
+  "roadmapPath": "machine/execution-roadmap.md",
+  "_generated": {
+    "by": "product-compile.mjs",
+    "protocol": "P57-product-delivery-compile",
+    "at": "2026-06-23T06:47:19.291Z"
+  },
+  "execution": {
+    "backlogClear": false,
+    "active": {
+      "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "in_progress",
+      "owner": "ecosystem-os",
+      "priority": "P1",
+      "tier": "in_progress"
+    },
+    "openCount": 1,
+    "totalCount": 1,
+    "doneCount": 0,
+    "openIds": [
+      "STORY-AGILE-ZENHUB-CONTRACT"
+    ]
+  },
+  "_mirror": {
+    "of": "machine/backlog.json",
+    "at": "2026-06-23T06:57:04.106Z",
+    "note": "Shim only — P22 and gates read machine/backlog.json"
+  }
 }
