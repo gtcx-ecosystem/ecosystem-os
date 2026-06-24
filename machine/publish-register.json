@@ -394,84 +394,96 @@
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "exploration-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "fabric-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "griot-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "gtcx-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "ledger-ui",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "markets-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "nyota-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "sensei-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "terminal-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "terra-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       },
       {
         "repo": "veritas-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold"
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
       }
     ]
   }
