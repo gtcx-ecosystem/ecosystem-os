@@ -2,8 +2,8 @@
   "schema": "gtcx://audit/fleet-diagnostic-snapshot/v1",
   "repo": "ecosystem-os",
   "tier": "ecosystem-operating-system",
-  "refreshedAt": "2026-06-17T18:17:54.918Z",
-  "sessionPhase": "close",
+  "refreshedAt": "2026-06-24T09:02:17.910Z",
+  "sessionPhase": null,
   "diagnostics": {
     "engineering": {
       "score100": 85,
@@ -15,24 +15,24 @@
       "deepCommand": "full-audit skill in owner repo workspace"
     },
     "multiPillar": {
-      "composite100": 74,
+      "composite100": 59,
       "trustCap100": 74,
-      "compliance100": 96,
+      "compliance100": 69,
       "published": false,
-      "witnessPath": "audit/evidence/multi-pillar-latest.json",
-      "evaluatedAt": "2026-06-17T17:56:23.903Z",
-      "ageHours": 0.3585994816080729,
+      "witnessPath": "audit/evidence/five-pillar-latest.json",
+      "evaluatedAt": "2026-06-22T23:22:52.933Z",
+      "ageHours": 33.656926260579425,
       "stale": false,
-      "refreshCommand": "pnpm review:multi-pillar:run --repo <repo> --write"
+      "refreshCommand": "pnpm audit:multi-pillar:run --repo <repo> --write"
     },
     "master": {
       "score10": 10,
       "score100": 100,
       "productionReady": true,
       "gaps": [],
-      "witnessPath": "audit/evidence/rollup-audit-latest.json",
-      "ageHours": 52.107901775580515,
-      "stale": false,
+      "witnessPath": "audit/evidence/composite-audit-latest.json",
+      "ageHours": 107.40493510409885,
+      "stale": true,
       "refreshCommand": "pnpm ecosystem:master:audit --repo <repo> --write"
     },
     "gtm": {
@@ -75,14 +75,9 @@
     }
   },
   "rollup": {
-    "avgScore100": 74,
+    "avgScore100": 70,
     "anyStale": true,
     "pilotReady": false,
     "deployBarMet": false
-  },
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
   }
 }

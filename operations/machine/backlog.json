@@ -32,7 +32,7 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-23T06:47:19.291Z"
+    "at": "2026-06-23T15:03:20.927Z"
   },
   "execution": {
     "backlogClear": false,
@@ -53,7 +53,7 @@
   },
   "_mirror": {
     "of": "machine/backlog.json",
-    "at": "2026-06-23T06:57:04.106Z",
+    "at": "2026-06-23T15:03:20.931Z",
     "note": "Shim only — P22 and gates read machine/backlog.json"
   }
 }

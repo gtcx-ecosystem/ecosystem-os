@@ -3,7 +3,7 @@
   "repo": "ecosystem-os",
   "repoKind": "product",
   "isPilot": false,
-  "date": "2026-06-17",
+  "date": "2026-06-23",
   "ok": true,
   "score100": 100,
   "pillar": "compliance",
@@ -71,7 +71,7 @@
           "label": "docs/agents/README.md or agent index",
           "severity": "P2",
           "pass": true,
-          "detail": "docs/agents/README.md"
+          "detail": "agents/README.md"
         }
       ]
     },
@@ -133,14 +133,14 @@
       "label": "GTM / demo / deploy narrative",
       "pillar": "compliance",
       "required": true,
-      "score100": 0,
+      "score100": 100,
       "items": [
         {
           "id": "gtm-dod",
           "label": "demo-walkthrough or deployment-profile",
           "severity": "P2",
-          "pass": false,
-          "detail": "missing demo-walkthrough or deployment-profile"
+          "pass": true,
+          "detail": "docs/operations/deployment-profile.json"
         }
       ]
     },
@@ -179,7 +179,7 @@
           "label": "Broken internal links in docs/ ≤25",
           "severity": "P2",
           "pass": false,
-          "detail": "132 broken / 423 files"
+          "detail": "108 broken / 647 files"
         }
       ]
     },
@@ -200,19 +200,7 @@
       ]
     }
   ],
-  "violations": [
-    {
-      "packId": "GTM-PACK",
-      "itemId": "gtm-dod",
-      "severity": "P2",
-      "detail": "missing demo-walkthrough or deployment-profile"
-    }
-  ],
+  "violations": [],
   "openP0": 0,
-  "openP1": 0,
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  "openP1": 0
 }

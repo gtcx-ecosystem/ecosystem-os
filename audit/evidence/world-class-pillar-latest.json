@@ -119,5 +119,5 @@
   "rubricSpec": "pm/spec/world-class-rubric.json",
   "rubricVersion": "1.0.0",
   "eslRequired": "ESL-3",
-  "eslActive": "ESL-1"
+  "eslActive": "ESL-2"
 }
