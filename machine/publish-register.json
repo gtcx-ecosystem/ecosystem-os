@@ -1,7 +1,7 @@
 {
   "$schema": "gtcx://ecosystem-os/publish-register/v2",
-  "version": "2.2.0",
-  "updated": "2026-06-18",
+  "version": "2.3.0",
+  "updated": "2026-06-24",
   "ownerRepo": "ecosystem-os",
   "initiative": "INIT-DOC-FLEET-PUBLISH",
   "initiativeStatus": "active-v4",
@@ -341,5 +341,138 @@
       "onboarding": "owner",
       "status": "gap"
     }
-  ]
+  ],
+  "printLane": {
+    "$schema": "gtcx://ecosystem-os/publish-register-print-lane/v1",
+    "version": "1.0.0",
+    "updated": "2026-06-24",
+    "spec": "canon-os/machine/spec/fleet-print-publishing-architecture.json",
+    "roadmap": "canon-os/machine/spec/fleet-print-publishing-roadmap.json",
+    "engine": "canon-os/machine/spec/publishing-engine.json",
+    "command": "pnpm publish:print",
+    "fleetCommand": "pnpm --dir bridge-os ecosystem:print:publish",
+    "fleetRows": [
+      {
+        "repo": "canon-os",
+        "profile": "constitution-hub",
+        "instances": "docs/reference/templates/formal/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "kits": ["jlcorp-bwg", "teemane-k3"]
+      },
+      {
+        "repo": "ecosystem-os",
+        "profile": "ecosystem-operator",
+        "instances": "—",
+        "output": "—",
+        "status": "n/a"
+      },
+      {
+        "repo": "bridge-os",
+        "profile": "program-office",
+        "instances": "—",
+        "output": "audit/evidence/",
+        "status": "witness"
+      },
+      {
+        "repo": "agile-os",
+        "profile": "program-office",
+        "instances": "—",
+        "output": "audit/evidence/",
+        "status": "witness"
+      },
+      {
+        "repo": "baseline-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "scaffold",
+        "note": "FEAT-PRINT-R6 reference impl"
+      },
+      {
+        "repo": "compliance-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "exploration-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "fabric-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "griot-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "gtcx-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "ledger-ui",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "markets-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "nyota-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "sensei-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "terminal-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "terra-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      },
+      {
+        "repo": "veritas-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "gap"
+      }
+    ]
+  }
 }
