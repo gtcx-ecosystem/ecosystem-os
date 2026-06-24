@@ -386,92 +386,92 @@
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "scaffold",
-        "note": "FEAT-PRINT-R6 reference impl"
+        "status": "live",
+        "note": "FEAT-PRINT-R6 reference impl + sample render"
       },
       {
         "repo": "compliance-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "exploration-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "fabric-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "griot-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "gtcx-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "ledger-ui",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "markets-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "nyota-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "sensei-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "terminal-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "terra-os",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       },
       {
         "repo": "veritas-ai",
         "profile": "product",
         "instances": "docs/reference/templates/formal/instances/",
         "output": "documents/print/output/deals/",
-        "status": "gap"
+        "status": "scaffold"
       }
     ]
   }
