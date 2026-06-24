@@ -5,7 +5,7 @@
   "score100": 64,
   "published": false,
   "provisional": true,
-  "blockedBy": "esl:ESL-2",
+  "blockedBy": "compliance",
   "unlockThreshold100": 85,
   "metrics": {
     "selectivity-ingredients": {
@@ -70,7 +70,5 @@
   "craftFlags": {
     "interchangeable": false,
     "aiSlop": false
-  },
-  "eslRequired": "ESL-2",
-  "eslActive": "ESL-1"
+  }
 }

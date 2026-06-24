@@ -1,10 +1,10 @@
 {
   "schema": "gtcx://canon-os/docs-foundation-check/v2",
   "repo": "ecosystem-os",
-  "at": "2026-06-22T22:28:48.376Z",
-  "ok": true,
+  "at": "2026-06-24T00:41:54.911Z",
+  "ok": false,
   "spec": {
-    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-foundation-pack.json",
+    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-foundation-pack.json",
     "localIsStub": false,
     "resolvedIsFull": true
   },
@@ -12,7 +12,7 @@
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-foundation-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-foundation-pack.json"
     },
     {
       "id": "spec:not-stub",
@@ -86,8 +86,8 @@
     },
     {
       "id": "canon:synthesize:check",
-      "ok": true,
-      "detail": "docs → pm/canon fresh"
+      "ok": false,
+      "detail": "run pnpm canon:synthesize"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "startedAt": "2026-06-22T20:01:03.877Z",
+  "startedAt": "2026-06-22T23:38:00.198Z",
   "repo": "ecosystem-os",
   "ssot": "baseline-os/platform/scripts/ecosystem/repo-session-core.mjs",
   "agentTrace": {
-    "id": "gtcx-agent-aff2e7c0-ab3c-4bc4-bbb8-52ff448df476",
+    "id": "gtcx-agent-861937f3-bf36-46f9-b41b-8888c55f4c8f",
     "header": "x-gtcx-agent-trace-id",
     "otelAttribute": "gtcx.agent_trace_id",
-    "traceparent": "00-2f63b665a1601cfb4178a76c73ebdea4-f08a3b24f211e203-01"
+    "traceparent": "00-9f6f39339a7dabc81aae9eb8285c5184-0cb87370696fafdc-01"
   },
   "nextWork": {
     "ok": true,
@@ -202,43 +202,44 @@
           "commands": [
             "baseline start",
             "baseline context",
+            "pnpm ops:check",
             "pnpm agent:conduct:check",
             "pnpm agent:auto-dev:check",
-            "pnpm ops:check",
+            "Baseline loaded",
             "pnpm agent:next-work",
-            "pnpm web:dev",
-            "pnpm agent:verify-ladder",
-            "pnpm pm:forensic-audit",
-            "pnpm pm:feature-registry:full",
-            "pnpm pm:feature-list:status",
-            "pnpm docs:fractal-mpr:publish:write",
-            "pnpm docs:fractal-mpr:check",
-            "pnpm docs:pack:pillar-contract:check",
-            "pnpm canon:synthesize:check",
-            "pnpm agile:check",
-            "pnpm agents:check",
-            "pnpm pm:sync",
-            "pnpm audit:pm-reconcile",
-            "pnpm run",
             "pnpm --dir",
+            "pnpm fabric:ops-contracts:check",
+            "pnpm ecosystem:five-core-audits:check",
             "pnpm operations:check",
-            "pnpm machine:sync",
             "pnpm docs:ia:check",
             "pnpm docs:tree:check",
-            "pnpm canon:synthesize",
+            "baseline layered",
+            "pnpm fabric:ops:check",
+            "pnpm fabric:ops:check:strict",
             "pnpm operations:consumption:check",
+            "pnpm legalops:check",
+            "pnpm ecosystem:ops-authority:check",
+            "pnpm agile:check",
+            "pnpm product:compile",
+            "pnpm machine:sync",
+            "pnpm docs:product:check",
+            "pnpm product:compile:check",
+            "pnpm canon:contracts:check:write",
+            "pnpm docs:pack:pillar-contract:check",
+            "pnpm canon:synthesize:check",
             "pnpm session",
             "pnpm next",
             "pnpm gates",
             "pnpm hub",
             "pnpm mcp",
             "baseline to",
-            "baseline template",
-            "baseline session",
-            "baseline serve",
             "pnpm serve",
+            "baseline CLI",
             "pnpm agent:consumption:check",
-            "pnpm canon:consumption:check"
+            "baseline requires",
+            "baseline CLI:",
+            "pnpm --filter",
+            "pnpm repo:provision:check"
           ]
         },
         "studio": {
@@ -263,8 +264,7 @@
       "spine": null,
       "tags": [
         "docs/business",
-        "docs/foundation",
-        "documentation-program"
+        "docs/foundation"
       ],
       "source": "work-item-manifest",
       "docUrlKind": "gitbook-stable"
@@ -279,7 +279,10 @@
     },
     "selection": {
       "tier": "task-intake-item",
-      "reason": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists"
+      "reason": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
+      "criteria": [
+        "program-priority"
+      ]
     },
     "agentInstructions": [
       "Persona read gate BLOCKED: persona read witness stale (>24h). Run `pnpm persona:read-witness --write` after reading persona doc.",
@@ -459,7 +462,7 @@
     "agileBacklogSoR": {
       "backlogSoR": "agile-os/pm/ecosystem-sprint-backlog.json",
       "backlogHash": "2994aa9500d68c5a",
-      "ceremonySyncAt": "2026-06-22T19:14:37.007Z",
+      "ceremonySyncAt": "2026-06-19T02:34:03.392Z",
       "backlogItemCount": 291
     },
     "programOffice": {
@@ -572,7 +575,7 @@
       "switchWorkspace": true
     },
     "progressMarkdown": "## Progress — GTCX Execution Engine\n\n> **55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed**\n\n| Metric | Value |\n|--------|-------|\n| **Mode** | Complete roadmap (legacy ceremony) (`complete_roadmap` · default `complete_milestones`) |\n| **Forward queue** | **86/100** tasks (86%) · **0** initiatives · **2** outstanding |\n| **Sprints sealed** | **17/17** (100%) · weighted **100%** |\n| **Stories (program)** | **162/276** done (58.7%) · **0 partial** + 9 pre-done |\n| **Points (program)** | **1010/1819** (55.5%) — 809 pts remain |\n| **Icebox** | **15/15** done (100%) · 0 deferred |\n| **Fleet verify** | 13/16 witness |\n| **Current sprint** | — (0/0 stories) |\n\n### Sprint bar (sealed program)\n✓ Sprint 1 — Unblock session + ops: ████████████████████ 6/6 (100%)\n✓ Sprint 2 — WIP land + v5 rename: ████████████████████ 6/6 (100%)\n✓ Sprint 3 — Layout strict + deploy proof: ████████████████████ 4/4 (100%)\n✓ Sprint 4 — P35 strict fleet compliance: ████████████████████ 3/3 (100%)\n✓ Sprint 5 — Auto-dev harness closure: ████████████████████ 3/3 (100%)\n✓ Sprint 6 — Hubs foundation (baseline-os + bridge-os): ████████████████████ 7/7 (100%)\n✓ Sprint 7 — gtcx-os + MCP/RAG + evidence rails: ████████████████████ 3/3 (100%)\n✓ Sprint 8 — Product master audit wave 1: ████████████████████ 1/1 (100%)\n✓ Sprint 9 — Product master audit wave 2 + ZenHub deps: ████████████████████ 1/1 (100%)\n✓ Sprint 10 — Production + enterprise pilot DoD: ████████████████████ 2/2 (100%)\n✓ EE-S1 — Spec + harness: ████████████████████ 3/3 (100%)\n✓ EE-S2 — ZenHub pull + assurance stub: ████████████████████ 3/3 (100%)\n✓ EE-S3 — Fleet work graph + shipping R1: ████████████████████ 2/2 (100%)\n✓ EE-S4 — Fabric assurance + delegate: ████████████████████ 3/3 (100%)\n✓ EE-S5 — Hub protocols + probe depth: ████████████████████ 2/2 (100%)\n✓ ER-4 — Roadmap successor wave: ████████████████████ 4/4 (100%)\n✓ W4 — Docs IA fleet batch: ████████████████████ 6/6 (100%)\n\n**Next work item:** task `T46` — INIT-WORLD-CLASS-SECOPS — Gap list (what to build next) (fabric-os)\n\n**Open:** INIT-FABLE-REPORTS-LANE-REFRESH, XR-FABRIC-SESSION-OPEN-004, T46, BL-TRANSCRIPT-PORT, BL-DOC-ARCH-01, DOC-PROGRAM-001, LCP-001, APEX-PROGRAM-001, NITRO-PROGRAM-001, HANDOFF-REGISTRY-001, BL-SOC2-01, INIT-EXEC-GAP, SECAS-S4-05, XR-MKT-RDS-VPC, XR-502, XR-501, XR-303, INIT-CANON-MATURITY, XR-CANON-LANG-PACK-001, XR-509, XR-510, XR-507, XR-516, XR-505, XR-515, XR-518, INIT-HUB-SCOPE-GUARD, INIT-DOC-FLEET-COVERAGE, INIT-GTCX-CANON-SERVICES, INIT-DOC-FLEET-PUBLISH, T01, XR-CANON-GOVERN-GTM-001, EXT-INF-013, XR-304, XR-MKT-FABRIC-001, OTLP, XR-MKT-SESSION-OPEN-001, S103-01, INIT-GTCX-INFRA, XR-FABRIC-SPRIN, XR-402, XR-403, XR-FABRIC-SPRINT-AUTH-001, XR-FABRIC-SPRINT, INIT-EXECUTIVE-GAP-PROGRA, XR-003, T0, INIT-AFRICA-CAPITAL-RAIL, INIT-DIGITAL-RAIL-WAVE-0, INIT-GOLDEN-TRANSACTION, XR-GTCX-DIGITAL-RAIL-001, XR-FABRIC-RAIL-003, XR-GTCX-PVP-RAIL-002, INIT-DIGITAL-RAIL, INIT-GOLDEN-TRANS, XR-MKT-FABRIC-00, XR-MKT-STAGING-EN, XR-MKT-STAGING-ENV-001, BL-OPERATOR-01, BL-CANON-CUTOVER-01, XR-519, INIT-SESSION-OPEN-ITEMS, XR-MKT-AGENT-D6-001, INIT-ASSURANCE-BURN-DOWN, INIT-BASELINE-2-UPGRADE, INIT-FLEET-VERSION-GOVERNANCE, INIT-PRODUCT-LEAD-DIRECTIVE, XR-TERRA-FRESH-AUDIT-001, SIG-REF-GRADE-CEILING, SIG-EXT-TERRA-001, XR-BASELINE-ROADMAP-INTAKE-001, APEX-001, APEX-002, APEX-003, APEX-004, APEX-005, APEX-006, APEX-007, APEX-008, APEX-009, APEX-010, XR-KIMI-BRIDGE-FABRIC-CLOSURE-001, INIT-DOC-QUALITY-V3, INIT-DOC-FLEET, XR-CANON-DOC-V3-001, XR-GTCX-DOC-V2-001, INIT-NAMING-REMEDIATE, INIT-DOCS-PROVISIONING-V1, INIT-DOCS-PROVISIONING-V1-W1, XR-CANON-DOCS-048-001, T53, INIT-DOCS-PROVISIONING-V1-W2, INIT-DOCS-PROVISIONING-V1-W3, INIT-DOCS-PROVISIONING, INIT-DOCS-PROVISIONING-V1-W4-HUB, XR-FABRIC-SESSION-OPEN-005, INIT-FIVE-PILLAR-FLEET-100, LEGAL-PROGRAM-01, INIT-GTCX-Q3-2026, Q3-FABRIC-03, INIT-DOCS-FOUNDATION-IA-V1, INIT-DOCS-CORE-IA-V1, INIT-DOCS-CORE-IA, INIT-CONCEPT-PROTOCOL, INIT-CANON-PROMOTION-V1, INIT-PRODUCT-CANON-V1, INIT-ECOSYSTEM-OS-MIGRATION, XR-FABRIC, INIT-001, BASELINE-PLATFORM-ROADMAP-001, ARL-PROGRAM-001, BACKLOG-CLEAR-APPROACH-001, DOJO-PROGRAM-001, INIT-PRODUCT-TEAM-MODEL-R7",
-    "clarityBriefMarkdown": "## Fleet clarity — 2026-06-22\n\n**North star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Bridge:** undefined · 55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed\n**Product team head (bridge P22):** `INIT-EXECUTIVE-GAP-PROGRAM` → `bridge-os`\n\n| Repo | Milestone | DoD | P22 / work toward |\n|------|-----------|-----|-------------------|\n| bridge-os | ROADMAP-COMPLETE — fleet live pro… | 2/3 | ROADMAP-COMPLETE — fleet live programmes syndicated |\n| agile-os | Markets pilot+AFM forward program… | 2/2 | Markets pilot+AFM forward programme registered |\n| fabric-os | SECAS-S4-supply-chain | 1/2 | SECAS-S4-supply-chain |\n| markets-os | M4 — golden transaction + AFM pro… | 2/3 | AFM-REG-003 |\n| baseline-os | STUDIO-004 dual-anchor + EXPERIEN… | 2/3 | STUDIO-004 |\n| compliance-os | DEPLOY-GATE-85 — composite deploy… | 3/3 | DEPLOY-GATE-85 — composite deploy threshold |\n| ecosystem-os | ECO-OS-SHIP-001 — ship · surfaces… | 3/4 | ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI |\n| canon-os | INIT-DOC-PROMOTION-M4 mostly sealed | 1/2 | INIT-DOC-PROMOTION-M4 |\n| exploration-os | Staging health 2/2 for mapped ser… | 1/2 | Staging health 2/2 for mapped services |\n| sensei-os | Staging intelligence health PASS | 1/2 | Staging intelligence health PASS |\n| terra-os | Pilot-demo-ready (deploy + compos… | 3/3 | Pilot-demo-ready (deploy + composite) |\n| terminal-os | M3-institutional-scale | 0/0 | AFM-REG-003 |\n| ledger-ui | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| griot-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| veritas-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| nyota-ai | Composite ≥85 (currently ~28) | 2/2 | Composite ≥85 (currently ~28) |\n\nFull report: `pnpm ecosystem:clarity:report:markdown` · witness: `pm/ci/ecosystem-clarity-report-latest.md`",
+    "clarityBriefMarkdown": "## Fleet clarity — 2026-06-22\n\n**North star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Bridge:** undefined · 55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed\n**Product team head (bridge P22):** `INIT-EXECUTIVE-GAP-PROGRAM` → `bridge-os`\n\n| Repo | Milestone | DoD | P22 / work toward |\n|------|-----------|-----|-------------------|\n| bridge-os | ROADMAP-COMPLETE — fleet live pro… | 2/3 | ROADMAP-COMPLETE — fleet live programmes syndicated |\n| agile-os | Markets pilot+AFM forward program… | 2/2 | Markets pilot+AFM forward programme registered |\n| fabric-os | SECAS-S4-supply-chain | 2/2 | SECAS-S4-supply-chain |\n| markets-os | M4 — golden transaction + AFM pro… | 3/3 | AFM-REG-003 |\n| baseline-os | STUDIO-004 dual-anchor + EXPERIEN… | 2/3 | STUDIO-004 |\n| compliance-os | DEPLOY-GATE-85 — composite deploy… | 3/3 | DEPLOY-GATE-85 — composite deploy threshold |\n| ecosystem-os | ECO-OS-SHIP-001 — ship · surfaces… | 3/4 | ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI |\n| canon-os | INIT-DOC-PROMOTION-M4 mostly sealed | 1/2 | INIT-DOC-PROMOTION-M4 |\n| exploration-os | Staging health 2/2 for mapped ser… | 1/2 | Staging health 2/2 for mapped services |\n| terra-os | Pilot-demo-ready (deploy + compos… | 3/3 | Pilot-demo-ready (deploy + composite) |\n| terminal-os | M3-institutional-scale | 0/0 | AFM-REG-003 |\n| griot-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| veritas-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| nyota-ai | Composite ≥85 (currently ~28) | 2/2 | Composite ≥85 (currently ~28) |\n\nFull report: `pnpm ecosystem:clarity:report:markdown` · witness: `pm/ci/ecosystem-clarity-report-latest.md`",
     "autoDevMode": {
       "resolvedMode": "complete_roadmap",
       "defaultMode": "complete_milestones",
@@ -751,7 +754,7 @@
     "ego": {
       "schema": "gtcx://baseline-os/ego/v1",
       "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-      "compiledAt": "2026-06-22T20:01:03.845Z",
+      "compiledAt": "2026-06-22T23:38:00.174Z",
       "repo": "bridge-os",
       "storyId": "T66",
       "persona": {
@@ -769,9 +772,9 @@
         "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
         "ok": true
       },
-      "forbiddenPatternCount": 32,
+      "forbiddenPatternCount": 40,
       "mdPath": ".baseline/session/ego-latest.md",
-      "mdHash": "a21ff18542b34997c580af0f1449acb667ffd9624e4c1cb3e39ea3e76bddf882",
+      "mdHash": "34c500da77053283cd1cb17ada0ec07e10c778e057aed3202afb5f464a3437a4",
       "layers": [
         "anti-assistant",
         "constitution",
@@ -789,7 +792,7 @@
           "institutional": "platform-architect",
           "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
           "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-          "readAt": "2026-06-22T19:58:54.353Z"
+          "readAt": "2026-06-22T11:39:35.707Z"
         },
         "constitutionReadGate": {
           "ok": true,
@@ -810,7 +813,7 @@
     "agentEmbodiment": {
       "schema": "gtcx://baseline-os/ego/v1",
       "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-      "compiledAt": "2026-06-22T20:01:03.845Z",
+      "compiledAt": "2026-06-22T23:38:00.174Z",
       "repo": "bridge-os",
       "storyId": "T66",
       "persona": {
@@ -828,9 +831,9 @@
         "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
         "ok": true
       },
-      "forbiddenPatternCount": 32,
+      "forbiddenPatternCount": 40,
       "mdPath": ".baseline/session/ego-latest.md",
-      "mdHash": "a21ff18542b34997c580af0f1449acb667ffd9624e4c1cb3e39ea3e76bddf882",
+      "mdHash": "34c500da77053283cd1cb17ada0ec07e10c778e057aed3202afb5f464a3437a4",
       "layers": [
         "anti-assistant",
         "constitution",
@@ -848,7 +851,7 @@
           "institutional": "platform-architect",
           "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
           "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-          "readAt": "2026-06-22T19:58:54.353Z"
+          "readAt": "2026-06-22T11:39:35.707Z"
         },
         "constitutionReadGate": {
           "ok": true,
@@ -1143,6 +1146,6 @@
     "witness": null,
     "error": "baselineos CLI not built"
   },
-  "gitChanged": 40,
+  "gitChanged": 39,
   "authorityClass": "R"
 }

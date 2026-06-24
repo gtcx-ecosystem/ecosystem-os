@@ -2,10 +2,10 @@
   "schema": "gtcx://canon-os/docs-product-check/v1",
   "repo": "ecosystem-os",
   "profile": "fleet-documentation",
-  "at": "2026-06-22T22:28:49.928Z",
+  "at": "2026-06-24T00:41:55.031Z",
   "ok": true,
   "spec": {
-    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-product-pack.json",
+    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-product-pack.json",
     "localIsStub": false,
     "upstreamPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/machine/spec/docs-product-pack.json",
     "resolvedIsFull": true
@@ -14,7 +14,7 @@
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-product-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-product-pack.json"
     },
     {
       "id": "spec:not-stub",

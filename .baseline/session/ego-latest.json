@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://baseline-os/ego/v1",
   "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-  "compiledAt": "2026-06-22T20:01:06.321Z",
+  "compiledAt": "2026-06-22T23:38:02.749Z",
   "repo": "ecosystem-os",
   "storyId": "T66",
   "persona": {
@@ -19,9 +19,9 @@
     "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
     "ok": true
   },
-  "forbiddenPatternCount": 32,
+  "forbiddenPatternCount": 40,
   "mdPath": ".baseline/session/ego-latest.md",
-  "mdHash": "4d86fe7abfd808aeacfb49161680bff7951ab5574805d66d9bf37aa69c18ecbc",
+  "mdHash": "89b6b3dc5a5b8d1376e9700931b435d10fb0691eb8fb37b0374b79e5cefe246d",
   "layers": [
     "anti-assistant",
     "constitution",

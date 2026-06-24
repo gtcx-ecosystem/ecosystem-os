@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
-  "discoveredAt": "2026-06-22T20:01:05.323Z",
+  "discoveredAt": "2026-06-22T23:38:01.453Z",
   "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
   "repoId": "ecosystem-os",
   "filesScanned": 180,
@@ -59,22 +59,22 @@
       "evidence": [
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 22, \"confidence\"",
+          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 23, \"confidence\"",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 22, \\\"confidence\\\"\", ",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 23, \\\"confidence\\\"\", ",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 22, \\\\\\\"confidence\\",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 23, \\\\\\\"confidence\\",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 22, \\\\\\",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 23, \\\\\\",
           "weight": 1
         },
         {
@@ -131,7 +131,7 @@
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\"* - version 2.0 ## Negative Scope This document does **not** cover: - Topics \\",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
           "weight": 1
         }
       ]
@@ -158,7 +158,7 @@
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"Commodity Trade\\\", \\\"score\\\": 12, \\\"confidence\\\"\", ",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Commodity Trade\\\", \\\"score\\\": 14, \\\"confidence\\\"\", ",
           "weight": 1
         },
         {
@@ -168,7 +168,7 @@
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Commodity Trade\\\\\\\", \\\\\\\"score\\\\\\\": 10, \\\\\\\"confidence\\",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Commodity Trade\\\\\\\", \\\\\\\"score\\\\\\\": 14, \\\\\\\"confidence\\",
           "weight": 1
         },
         {
