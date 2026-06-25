@@ -44,7 +44,13 @@ Tracks user acceptance testing (UAT) evidence for features and sprints. Updated 
 
 ## Active Log
 
-<!-- Add UAT evidence entries below as sprints close -->
+### [2026-06-24] Reconcile — PM + GTM population
+
+**Type:** Feature UAT / gate regression
+**Tested by:** platform-architect (agent)
+**Status:** Partial
+**Evidence:** `machine/ci/product-compile-latest.json` · `pm/ci/gtm-readiness-check-latest.json`
+**Notes:** FEAT/STORY bodies populated (14 features, 6 stories); gates re-run post-reconcile
 
 ---
 

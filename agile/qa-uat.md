@@ -1,217 +1,40 @@
 ---
-title: 'UAT Test Plan — {Feature / Release}'
+title: 'QA / UAT — ecosystem-os'
 status: current
-date: 2026-05-27
+date: 2026-06-24
 owner: ecosystem-os
 tier: standard
-tags: [["documentation", "sprints"]]
+tags: ['documentation', 'qa', 'uat']
 review_cycle: on-change
 document_type: protocol
-role: protocol-architect
-agent_id: agent://ecosystem-os/2026-05-27/session-backfill
-trust_score: 60
-autonomy_level: permissioned
+---
 
+# QA / UAT — ecosystem-os
+
+Fleet documentation repo — acceptance is gate-driven, not runtime UI.
 
 ## QA gates (pre-UAT)
 
-- [ ] `pnpm test` — all tests pass
-- [ ] `pnpm lint` — zero errors
-- [ ] `pnpm validate` (or repo equivalent) — green
-- [ ] No secrets or credentials in diff
-- [ ] Definition of Done satisfied per `planning.md`
+| Gate | Command | Expect |
+| ---- | ------- | ------ |
+| Ops health | `pnpm ops:check` | exit 0 |
+| Product compile | `pnpm product:compile:check` | pass |
+| GTM readiness | `pnpm gtm:readiness:check` | composite ≥ 80 |
+| Docs IA | `pnpm docs:ia:check` | exit 0 |
+| Agency module | `pnpm agency:check` | exit 0 |
+| Agile ceremony | `pnpm agile:check` | exit 0 |
+| Publish register | `pnpm publish:register:check` | exit 0 |
+| Agent protocols | `pnpm agent:work-selection:check` | exit 0 |
 
----
+## UAT scenarios (documentation home)
 
+| ID | Scenario | Pass criteria |
+| -- | -------- | ------------- |
+| UAT-ECO-01 | Operator finds fleet GTM index | `ops/gtm/fleet-catalog-index.md` current |
+| UAT-ECO-02 | Publish register resolves | all live/synced paths exist on disk |
+| UAT-ECO-03 | P22 queue compiled | `machine/backlog.json` has open stories with planRef |
+| UAT-ECO-04 | Institutional narrative | regulator playbook + govern chapter reachable from GitBook SUMMARY |
 
----
+## Evidence
 
-# UAT Test Plan — {Feature / Release}
-
-**UAT Lead:** {name}
-**Business users:** {names or roles}
-**Stakeholders:** {names}
-**Date:** {YYYY-MM-DD}
-
----
-
-## UAT Objectives
-
-- Validate the system meets business requirements
-- Confirm end users can complete their tasks
-- Verify business processes work as expected
-- Validate data integrity and accuracy
-
-### Success criteria
-- [ ] All critical business scenarios pass
-- [ ] All high-priority user workflows function correctly
-- [ ] Business users can complete their tasks without assistance
-- [ ] System performance meets business expectations
-
----
-
-## UAT Scope
-
-### In scope
-- {business process 1}
-- {business process 2}
-- {user workflow 1}
-
-### Out of scope
-- {item and reason}
-
----
-
-## UAT Team
-
-| Role | Name | Responsibilities |
-|------|------|------------------|
-| UAT Lead | {name} | Coordinate activities, manage schedule, escalate issues |
-| Business Analyst | {name} | Review test scenarios, validate business logic |
-| Subject Matter Expert | {name} | Domain expertise, approve UAT results |
-| End Users | {names} | Execute test scenarios, provide feedback |
-| Technical Support | {name} | Environment issues, data setup |
-
----
-
-## Test Scenarios
-
-### Business Process: {Process Name}
-
-**Process owner:** {name}
-**Priority:** High / Medium / Low
-**Business impact:** {what breaks if this fails}
-
-**Process flow:**
-1. {step}
-2. {step}
-3. {step}
-
-**Test cases:**
-- [ ] {test case}
-- [ ] {test case}
-
-**Success criteria:**
-- {measurable outcome}
-
----
-
-### User Workflow: {Workflow Name}
-
-**User type:** {role}
-**Frequency:** {how often in production}
-**Business value:** {why this matters}
-
-**Workflow steps:**
-1. {step}
-2. {step}
-
-**Test scenarios:**
-- [ ] Happy path: {normal execution, expected outcomes}
-- [ ] Error path: {error conditions handled gracefully}
-- [ ] Boundary: {edge cases and limits enforced}
-
-**Expected outcomes:**
-- {outcome}
-
----
-
-## UAT Environment
-
-| Environment | URL | Access |
-|-------------|-----|--------|
-| UAT | {url} | {credentials/method} |
-
-**Test data:** {sources, privacy handling, volume needed}
-**Access requirements:** {user accounts, permissions}
-
----
-
-## UAT Schedule
-
-| Phase | Duration | Activities |
-|-------|----------|------------|
-| UAT planning | {duration} | Finalize scenarios, set up environment |
-| UAT preparation | {duration} | Train users, load test data |
-| UAT execution | {duration} | Run test scenarios, log issues |
-| UAT closure | {duration} | Resolve issues, sign-off |
-
----
-
-## Issue Management
-
-### Severity levels
-
-| Severity | Definition |
-|----------|------------|
-| Critical | Business process blocked; no workaround |
-| High | Major workflow impaired; workaround exists |
-| Medium | Minor process friction; acceptable workaround |
-| Low | Cosmetic or edge case |
-
-### Issue report template
-
-```
-Issue ID: UAT-{NNN}
-Title: {clear title}
-Category: Functional / Usability / Performance / Data
-Severity: Critical / High / Medium / Low
-Business process: {which process is affected}
-
-Description: {what is wrong}
-Business impact: {how this affects operations}
-
-Steps to reproduce:
-1. {step}
-2. {step}
-
-Expected: {what should happen}
-Actual: {what actually happened}
-
-Screenshots: {attach}
-```
-
----
-
-## UAT Metrics
-
-| Metric | Value |
-|--------|-------|
-| Scenarios executed | {n} / {total} |
-| Scenarios passed | {n} |
-| Issues found | {n} |
-| Critical issues open | 0 at exit |
-
----
-
-## Exit Criteria
-
-- [ ] All critical business scenarios pass
-- [ ] All critical and high issues resolved
-- [ ] Business users confirm they can complete their tasks
-- [ ] Sign-off received from all required stakeholders
-
-**Go criteria:** {criteria for proceeding}
-**No-Go criteria:** {criteria for blocking}
-
----
-
-## UAT Sign-Off
-
-| Role | Name | Date | Status |
-|------|------|------|--------|
-| Business users | | | [ ] Approved |
-| Subject matter experts | | | [ ] Approved |
-| UAT Lead | | | [ ] Approved |
-| Project stakeholder | | | [ ] Approved |
-
----
-
-## Deliverables
-
-- [ ] UAT plan (this document)
-- [ ] Test scenarios
-- [ ] Execution results
-- [ ] Issue reports
-- [ ] UAT summary report
-- [ ] Signed completion record
+Log results in [`../uat/uat-evidence-log.md`](../uat/uat-evidence-log.md) at sprint close.
