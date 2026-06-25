@@ -1,10 +1,10 @@
 ---
 title: 'Cross-Repo Coordination'
 status: current
-date: 2026-06-15
+date: 2026-06-24
 owner: ecosystem-os
 tier: operating
-tags: ['runbook', 'documentation']
+tags: ['runbook', 'documentation', 'protocol-24']
 review_cycle: on-change
 document_type: runbook
 ---
@@ -15,7 +15,7 @@ document_type: runbook
 
 | Step | Action |
 | ---- | ------ |
-| 1 | File inbound/outbound under `ops/coordination/` when blocked on a sibling |
+| 1 | File inbound/outbound under `ops/gtm/inbound-tickets/` when blocked on a sibling |
 | 2 | Link owner-repo evidence — do not duplicate normative protocol text |
 | 3 | Hub coordination witness lives in `bridge-os` / `baseline-os` |
 

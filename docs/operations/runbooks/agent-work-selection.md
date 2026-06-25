@@ -1,7 +1,7 @@
 ---
 title: 'Agent Work Selection Manifest'
 status: current
-date: 2026-06-15
+date: 2026-06-24
 owner: ecosystem-os
 tier: standard
 tags: [[protocol-22, protocol-26, protocol-27, protocol-28, agents]]
@@ -41,9 +41,9 @@ Protocol 22 (work selection), Protocol 24 (cross-repo coordination), Protocol 26
 | Purpose | Path |
 | ------- | ---- |
 | Work-selection manifest | `docs/operations/agent-work-selection.md` |
-| Selection delegate | `platform/scripts/agent/agent-next-work.mjs` |
+| Selection delegate | `platform/scripts/agent-next-work.mjs` |
 | Auto-dev state | `pm/auto-dev-state.md` |
-| Roadmap initiatives | `pm/roadmap/initiatives.json` |
+| Roadmap initiatives | `machine/roadmap/initiatives.json` |
 | Publish register | `pm/publish-register.json` |
 
 ## Commands
