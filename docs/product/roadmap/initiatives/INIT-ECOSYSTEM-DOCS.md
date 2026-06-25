@@ -1,7 +1,7 @@
 ---
 initiative: INIT-ECOSYSTEM-DOCS
 title: 'INIT-ECOSYSTEM-DOCS — Fleet documentation home'
-status: in_progress
+status: done
 priority: P0
 owner: ecosystem-os
 document_type: product

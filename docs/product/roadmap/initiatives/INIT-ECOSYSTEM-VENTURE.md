@@ -1,7 +1,7 @@
 ---
 initiative: INIT-ECOSYSTEM-VENTURE
 title: 'INIT-ECOSYSTEM-VENTURE — Venture module + fundraising coordination'
-status: in_progress
+status: done
 priority: P1
 owner: ecosystem-os
 document_type: product

@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://canon-os/product-compile/v1",
-  "generatedAt": "2026-06-25T00:13:40.457Z",
+  "generatedAt": "2026-06-25T00:46:16.250Z",
   "repo": "ecosystem-os",
   "protocol": "P57-product-delivery-compile",
   "pass": true,
@@ -14,7 +14,7 @@
     "executableGaps": 0
   },
   "hashes": {
-    "initiatives": "5cb045eae86cb1d1c8b6b7c86f9ef01b885d0458be375bc2d19cfcdcdf794668",
+    "initiatives": "2a42bd35f0049055a64bf36bce78e64e8c091c2d7f9e22a8d5beaf42831d0889",
     "backlog": "410bb66b61553dd3df34bfcdd874271ea653cdcce9a0d63a3bed756784fa6526"
   },
   "executableGaps": [],

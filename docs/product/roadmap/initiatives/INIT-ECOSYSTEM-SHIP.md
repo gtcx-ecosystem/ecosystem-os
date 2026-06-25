@@ -1,7 +1,7 @@
 ---
 initiative: INIT-ECOSYSTEM-SHIP
 title: 'INIT-ECOSYSTEM-SHIP — quarter pillar narrative + fleet GTM proof'
-status: in_progress
+status: done
 priority: P1
 owner: ecosystem-os
 document_type: product

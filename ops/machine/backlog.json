@@ -1,22 +1,15 @@
 {
   "$schema": "gtcx://ops/pm-backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "syncSource": "pnpm product:compile",
-  "active": {
-    "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
-    "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
-    "status": "in_progress",
-    "owner": "ecosystem-os",
-    "priority": "P1",
-    "tier": "in_progress"
-  },
-  "backlogClear": false,
+  "active": null,
+  "backlogClear": true,
   "stories": [
     {
       "id": "STORY-AGILE-ZENHUB-CONTRACT",
       "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P1",
       "owner": "ecosystem-os",
       "initiativeId": "INIT-ECOSYSTEM-DOCS",
@@ -40,7 +33,7 @@
     {
       "id": "STORY-P35-LAYOUT",
       "title": "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P0",
       "owner": "ecosystem-os",
       "initiativeId": "INIT-ECOSYSTEM-DOCS",
@@ -64,7 +57,7 @@
     {
       "id": "STORY-VEN-FUNDRAISE-SYNC",
       "title": "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
-      "status": "open",
+      "status": "done",
       "priority": "P1",
       "owner": "ecosystem-os",
       "initiativeId": "INIT-ECOSYSTEM-VENTURE",
@@ -92,30 +85,19 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-24T17:25:20.891Z"
+    "at": "2026-06-25T00:46:16.250Z"
   },
   "execution": {
-    "backlogClear": false,
-    "active": {
-      "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
-      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
-      "status": "in_progress",
-      "owner": "ecosystem-os",
-      "priority": "P1",
-      "tier": "in_progress"
-    },
-    "openCount": 3,
+    "backlogClear": true,
+    "active": null,
+    "openCount": 0,
     "totalCount": 6,
-    "doneCount": 3,
-    "openIds": [
-      "STORY-AGILE-ZENHUB-CONTRACT",
-      "STORY-P35-LAYOUT",
-      "STORY-VEN-FUNDRAISE-SYNC"
-    ]
+    "doneCount": 6,
+    "openIds": []
   },
   "_mirror": {
     "of": "machine/backlog.json",
-    "at": "2026-06-24T17:25:20.926Z",
+    "at": "2026-06-25T00:46:16.252Z",
     "note": "Shim only — P22 and gates read machine/backlog.json"
   }
 }

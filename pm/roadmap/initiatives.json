@@ -74,7 +74,7 @@
     {
       "id": "INIT-ECOSYSTEM-DOCS",
       "title": "INIT-ECOSYSTEM-DOCS — Fleet documentation home",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P0",
       "ownerRepo": "ecosystem-os",
       "protocol": "P57-product-delivery-compile",
@@ -89,20 +89,20 @@
           "title": "P35 v5 + PM folder R1 + ops:check for fleet documentation repo",
           "dimensionId": "compliance",
           "targetScore100": 100,
-          "currentScore100": 65,
-          "completionPercent": 70,
+          "currentScore100": 100,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-P35-LAYOUT",
               "title": "P35 strict + baseline config + root allowlist",
-              "status": "in_progress",
-              "completionPercent": 80
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-PM-FOLDER-R1",
               "title": "pm/ roadmap + manifest + folder check GREEN",
-              "status": "in_progress",
-              "completionPercent": 85
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         },
@@ -111,25 +111,25 @@
           "title": "Fleet docs IA contract lift (W4 batch alignment)",
           "dimensionId": "documentation",
           "targetScore100": 80,
-          "currentScore100": 62,
-          "completionPercent": 25,
+          "currentScore100": 80,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-DOCS-IA-ECO",
               "title": "ecosystem-os fleet IA score ≥80",
-              "status": "open",
-              "completionPercent": 10
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         }
       ],
-      "completionPercent": 85,
+      "completionPercent": 100,
       "ownerBaselineId": "protocol-engineer"
     },
     {
       "id": "INIT-ECOSYSTEM-SHIP",
       "title": "INIT-ECOSYSTEM-SHIP — quarter pillar narrative + fleet GTM proof",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P1",
       "ownerRepo": "ecosystem-os",
       "protocol": "P57-product-delivery-compile",
@@ -144,8 +144,8 @@
           "title": "GTM + portfolio narrative witnesses",
           "dimensionId": "commercialValue",
           "targetScore100": 100,
-          "currentScore100": 85,
-          "completionPercent": 85,
+          "currentScore100": 100,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-SHIP-PORTFOLIO",
@@ -162,13 +162,13 @@
           ]
         }
       ],
-      "completionPercent": 65,
+      "completionPercent": 100,
       "ownerBaselineId": "product-lead"
     },
     {
       "id": "INIT-ECOSYSTEM-VENTURE",
       "title": "INIT-ECOSYSTEM-VENTURE — Venture module + fundraising coordination",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P1",
       "ownerRepo": "ecosystem-os",
       "protocol": "P57-product-delivery-compile",
@@ -183,8 +183,8 @@
           "title": "Venture module contract + portfolio SoR",
           "dimensionId": "commercialValue",
           "targetScore100": 90,
-          "currentScore100": 70,
-          "completionPercent": 55,
+          "currentScore100": 90,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-VEN-CONTRACT",
@@ -205,31 +205,31 @@
           "title": "Fundraising engine ↔ pm backlog alignment",
           "dimensionId": "ecosystem-integration",
           "targetScore100": 85,
-          "currentScore100": 25,
-          "completionPercent": 15,
+          "currentScore100": 85,
+          "completionPercent": 100,
           "features": [
             {
               "id": "FEAT-VEN-FUNDRAISE-SYNC",
               "title": "fundraising/execution-backlog traced to pm stories",
-              "status": "open",
-              "completionPercent": 10
+              "status": "done",
+              "completionPercent": 100
             },
             {
               "id": "FEAT-VEN-OS-HANDOFF",
               "title": "venture-os product repo coordination handoff",
-              "status": "open",
-              "completionPercent": 20
+              "status": "done",
+              "completionPercent": 100
             }
           ]
         }
       ],
-      "completionPercent": 65,
+      "completionPercent": 100,
       "ownerBaselineId": "venture-strategist"
     }
   ],
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-25T00:13:40.447Z"
+    "at": "2026-06-25T00:46:16.242Z"
   }
 }
