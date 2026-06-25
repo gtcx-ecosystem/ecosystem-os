@@ -36,6 +36,12 @@
     "allowlist": "docs/operations/repo/root-allowlist.json (permissible_on_approval)"
   },
   "backlogClear": true,
+  "initiativesComplete": {
+    "INIT-ECOSYSTEM-AGENCY": "done",
+    "INIT-ECOSYSTEM-DOCS": "done",
+    "INIT-ECOSYSTEM-SHIP": "done",
+    "INIT-ECOSYSTEM-VENTURE": "done"
+  },
   "nextStoryId": null,
-  "nextAction": "Local roadmap execution complete — backlog clear, all gates green incl docs:tree:check:strict 48/48, working tree committed. Program office queue (sprint-backlog) owned by bridge-os."
+  "nextAction": "Local roadmap execution complete — 4/4 initiatives done, 6/6 stories done, all gates green incl docs:tree:check:strict 48/48, working tree committed. Program queue (sprint-backlog) owned by bridge-os; escalated via ops/gtm/inbound-tickets/to-bridge-os-roadmap-complete-handoff-2026-06-25.md."
 }
