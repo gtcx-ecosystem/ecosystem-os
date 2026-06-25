@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://canon-os/gtm-progress-report/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-23T15:06:10.434Z",
+  "generatedAt": "2026-06-24T17:42:26.273Z",
   "activeMilestone": {
     "id": "ECO-OS-SHIP-001",
     "title": "ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI",
@@ -54,13 +54,13 @@
   ],
   "roadmap": {
     "initiatives": 4,
-    "features": 14,
-    "stories": 1,
+    "features": 15,
+    "stories": 6,
     "tasks": 0,
-    "uatLinked": 2
+    "uatLinked": 7
   },
   "backlog": {
-    "totalItems": 1,
+    "totalItems": 6,
     "gtmTaggedPct": 0,
     "estimatedPct": 100,
     "ownerAssignedPct": 100

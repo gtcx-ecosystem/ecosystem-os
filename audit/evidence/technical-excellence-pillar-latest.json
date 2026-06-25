@@ -1,11 +1,11 @@
 {
   "schema": "gtcx://audit/technical-excellence-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-22",
+  "date": "2026-06-25",
   "score100": 38,
   "published": false,
   "provisional": true,
-  "blockedBy": "compliance",
+  "blockedBy": "below-threshold",
   "unlockThreshold100": 85,
   "metrics": {
     "engineering-production": {
