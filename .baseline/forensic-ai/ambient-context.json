@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
-  "discoveredAt": "2026-06-22T23:38:01.453Z",
+  "discoveredAt": "2026-06-25T00:24:33.858Z",
   "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
   "repoId": "ecosystem-os",
   "filesScanned": 180,
@@ -54,27 +54,27 @@
     },
     {
       "name": "GTCX Agentic",
-      "score": 23,
+      "score": 22,
       "confidence": "inferred",
       "evidence": [
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 23, \"confidence\"",
+          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 22, \"confidence\"",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 23, \\\"confidence\\\"\", ",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 22, \\\"confidence\\\"\", ",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 23, \\\\\\\"confidence\\",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 22, \\\\\\\"confidence\\",
           "weight": 1
         },
         {
           "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 23, \\\\\\",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 22, \\\\\\",
           "weight": 1
         },
         {
@@ -386,14 +386,19 @@
   "projectHints": [
     "ecosystem-os",
     "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
-    "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface"
+    "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+    "STORY-DOCS-IA-ECO — Fleet docs IA lift",
+    "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+    "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+    "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
+    "STORY-VEN-OS-HANDOFF — venture-os inbound handoff"
   ],
   "goalHints": [
-    "orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals",
     "to implement Protocol 22-selected work",
     "Unblock Report — never revert to consultant mode",
-    "** Make these tests pass",
-    "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead"
+    "** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+    "** Fleet program office — intake, witness, P22 routing, never product implement",
+    "** Make these tests pass"
   ],
   "solicitOrg": false,
   "confirmationPrompt": "Workspace context points to \"SIS Inspections\" — confirm or correct if needed.",

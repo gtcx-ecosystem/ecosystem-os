@@ -1,18 +1,17 @@
 {
-  "startedAt": "2026-06-22T23:38:00.198Z",
+  "startedAt": "2026-06-25T00:24:33.475Z",
   "repo": "ecosystem-os",
   "ssot": "baseline-os/platform/scripts/ecosystem/repo-session-core.mjs",
   "agentTrace": {
-    "id": "gtcx-agent-861937f3-bf36-46f9-b41b-8888c55f4c8f",
+    "id": "gtcx-agent-cf53a2d5-6f6e-4d72-85cc-b905d136a4e9",
     "header": "x-gtcx-agent-trace-id",
     "otelAttribute": "gtcx.agent_trace_id",
-    "traceparent": "00-9f6f39339a7dabc81aae9eb8285c5184-0cb87370696fafdc-01"
+    "traceparent": "00-bec09209426966e83911a21ab4930587-81f1a76e481a0a9a-01"
   },
   "nextWork": {
     "ok": true,
-    "backlogClear": false,
-    "protocol": "22-agent-work-selection",
-    "activePhase": "ecosystem",
+    "backlogClear": true,
+    "activePhase": "ER5",
     "frame": "development",
     "persona": {
       "institutional": "platform-architect",
@@ -201,52 +200,53 @@
           ],
           "commands": [
             "baseline start",
-            "baseline context",
-            "pnpm ops:check",
+            "pnpm operations:check",
             "pnpm agent:conduct:check",
             "pnpm agent:auto-dev:check",
-            "Baseline loaded",
-            "pnpm agent:next-work",
-            "pnpm --dir",
-            "pnpm fabric:ops-contracts:check",
-            "pnpm ecosystem:five-core-audits:check",
-            "pnpm operations:check",
-            "pnpm docs:ia:check",
-            "pnpm docs:tree:check",
-            "baseline layered",
-            "pnpm fabric:ops:check",
-            "pnpm fabric:ops:check:strict",
-            "pnpm operations:consumption:check",
-            "pnpm legalops:check",
-            "pnpm ecosystem:ops-authority:check",
-            "pnpm agile:check",
+            "pnpm constitution:read-witness",
             "pnpm product:compile",
-            "pnpm machine:sync",
-            "pnpm docs:product:check",
-            "pnpm product:compile:check",
-            "pnpm canon:contracts:check:write",
-            "pnpm docs:pack:pillar-contract:check",
-            "pnpm canon:synthesize:check",
+            "baseline session",
             "pnpm session",
+            "baseline next",
             "pnpm next",
+            "baseline gates",
             "pnpm gates",
+            "baseline hub",
             "pnpm hub",
-            "pnpm mcp",
-            "baseline to",
-            "pnpm serve",
-            "baseline CLI",
-            "pnpm agent:consumption:check",
-            "baseline requires",
-            "baseline CLI:",
-            "pnpm --filter",
-            "pnpm repo:provision:check"
+            "baseline lanes",
+            "pnpm ops-prd-routing:check:write",
+            "pnpm maturity-lane:check:write",
+            "pnpm central-assurance:check:write",
+            "pnpm ecosystem:fleet:diagnostic:refresh:write",
+            "pnpm daas:fleet:health",
+            "pnpm --dir",
+            "pnpm maturity-lane:check",
+            "pnpm central-assurance:check",
+            "pnpm fabric:operations:check",
+            "pnpm ecosystem:fleet-diagnostic:refresh:write",
+            "baseline tests",
+            "baseline maturity-lane",
+            "pnpm ecosystem:sprint-lane:check:write",
+            "pnpm ecosystem:sprint-lane:test",
+            "pnpm ecosystem:gtm-progress-lane:report:write",
+            "pnpm ecosystem:progress:report",
+            "baseline spec",
+            "pnpm ecosystem:fleet-diagnostic:refresh",
+            "pnpm ecosystem:repo:report-work",
+            "baseline cost-route",
+            "pnpm generate:roadmap",
+            "pnpm fleet-ops-assurance:check:write",
+            "pnpm complianceops:check:write",
+            "pnpm mlops:check:write",
+            "pnpm fleet:risk:check:write"
           ]
         },
         "studio": {
           "deliverables": [
             "folder-spec",
             "relocation-report",
-            "docs-integrity-pack"
+            "docs-integrity-pack",
+            "deliverable"
           ],
           "provenanceRequired": true
         },
@@ -269,207 +269,19 @@
       "source": "work-item-manifest",
       "docUrlKind": "gitbook-stable"
     },
-    "next": {
-      "id": "T66",
-      "title": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
-      "status": "open",
-      "owner": "canon-os",
-      "implementationClass": "code",
-      "type": "task"
-    },
-    "selection": {
-      "tier": "task-intake-item",
-      "reason": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
-      "criteria": [
-        "program-priority"
-      ]
-    },
-    "agentInstructions": [
-      "Persona read gate BLOCKED: persona read witness stale (>24h). Run `pnpm persona:read-witness --write` after reading persona doc.",
-      "Phase 4: adopt persona **platform-architect** (development) — read local `/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md` first (docUrl link-only); adopt voice: Systems-oriented, reliability-focused, cost-conscious",
-      "Include **Active persona** + **Frame** + **Voice** in Proceed Brief (P26).",
-      "Forbidden voice: \"Your move\", \"tell me what you think\", casual walkthrough delegation — use Operator entry + P27 probes.",
-      "Mark T66 in_progress in pm/ecosystem-sprint-backlog.json or pm/_tasks before coding.",
-      "Status Update: Execution mode + Progress + Next work item (type/id) — not \"Next priority\".",
-      "Include Active persona + Frame in Proceed Brief (P26).",
-      "Do not ask the user which story to pick.",
-      "Product team: **GTCX Program Office** — primary persona `protocol-engineer` — Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
-      "Goal orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
-      "Non-engineering (security, legal, docs, audit) → parallel lanes — fabric-os / canon-os / agile-os — never product Next work item.",
-      "bridge-os backlogClear = program office only — see fleetLiveProgrammes + recommendedOwnerSession.",
-      "Fleet owner redirect (not Next work item here): pnpm --dir ../markets-os agent:next-work --json — switch workspace to markets-os to implement AFM-REG-003.",
-      "complete_roadmap: sprint-backlog sealed ≠ stop — execute completionBlocks until roadmapExecutionComplete.",
-      "When nextWorkItem.switchWorkspace: true — implement in owner repo in same session; do not close at ROADMAP-COMPLETE.",
-      "Use THIS repo agent:next-work next / nextWorkItem. Vendor assurance implement is fabric-os only.",
-      "Run pnpm agent:next-work (or agent:session-start) before substantive work.",
-      "Emit exactly one Proceed Brief — single Next action from P22 output.",
-      "Then implement in this repo. Do not ask operator to choose between stories or repos.",
-      "Forbidden: \"Your call\", \"Two options\", numbered 1./2. menus, \"switch to X or Y\".",
-      "Human may reply stop, correct:, or a story ID override only.",
-      "If blocked: Blocker Report — not a story menu.",
-      "baseline-os M3 external-pilot ceiling is baseline-os-only — never use as Next work item in sibling repos.",
-      "Forbidden Proceed Brief Next outside baseline-os: \"Hold at external-pilot ceiling\".",
-      "FORBIDDEN: git push in Approval needed when GATE-PUSH passes — report push in Done (Class R).",
-      "Product lead directive: decide and execute — never \"if you want implemented\" / \"next session\" / \"can implement\" closings.",
-      "Forbidden closing: offering optional implementation after Status Update or instead of executing Class R work."
-    ],
-    "repo": "bridge-os",
-    "proceedBrief": {
-      "activePersona": "platform-architect",
-      "frame": "development",
-      "personaDocUrl": "https://gtcx-ecosystem.gitbook.io/gtcx-ecosystem/governance/institutional/personas/platform-architect",
-      "personaDocPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
-      "voice": "Systems-oriented, reliability-focused, cost-conscious",
-      "embodies": "Platform lead accountable for fleet reliability",
-      "personaConfidence": 0.98,
-      "personaSource": "work-item-manifest",
-      "goalOrientationBrief": "## Goal orientation\n**Fleet north star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Repo north star:** Fleet program office — intake, witness, P22 routing, never product implement\n**Milestone:** ROADMAP-COMPLETE — fleet live programmes syndicated\n**Shippable:** All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone\n**PRD refs:** prd-product-charter\n**Product team:** GTCX Program Office (`protocol-engineer`)"
-    },
-    "productTeam": {
-      "schema": "gtcx://bridge-os/product-team-context/v1",
-      "utilized": true,
-      "teamName": "GTCX Program Office",
-      "primary": "protocol-engineer",
-      "secondary": [
-        "platform-engineer",
-        "agile-coach"
-      ],
-      "mission": "Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
-      "frame": "regulatory-audit",
-      "profilesSoR": "pm/spec/repo-persona-profiles.json"
-    },
-    "goalOrientation": {
-      "schema": "gtcx://bridge-os/goal-orientation/v1.1",
-      "registrySoR": "pm/spec/ecosystem-fleet-goals-registry.json",
-      "registryVersion": "1.1.0",
-      "motto": "AI-native company that eats its own operating model",
-      "fleetNorthStar": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
-      "fleetMilestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
-      "gtmTier": "GR-T2-partial",
-      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
-      "headProductRepo": "markets-os",
-      "quarterPillars": {
-        "id": "GTCX-Q3-2026",
-        "title": "Ship · surfaces · GTM · operational AI",
-        "targetDate": "2026-Q3",
-        "pillars": [
-          {
-            "id": "ship",
-            "label": "Shipping",
-            "passTest": "Named releases with demo/staging/pilot paths that run",
-            "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
-          },
-          {
-            "id": "surfaces",
-            "label": "Beautiful surfaces",
-            "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
-            "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
-          },
-          {
-            "id": "gtm",
-            "label": "GTM",
-            "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
-            "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
-          },
-          {
-            "id": "operational-ai",
-            "label": "AI OS operational",
-            "passTest": "agent:next-work → execute → witness on real fleet work",
-            "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
-          }
-        ]
-      },
-      "quarterTitle": "Ship · surfaces · GTM · operational AI",
-      "quarterId": "GTCX-Q3-2026",
-      "recalibrate": "pnpm ecosystem:clarity:report:brief",
-      "northStar": "Fleet program office — intake, witness, P22 routing, never product implement",
-      "activeMilestone": "ROADMAP-COMPLETE — fleet live programmes syndicated",
-      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
-      "prdRefs": [
-        "prd-product-charter"
-      ],
-      "programmeId": "PROG-CONTINENTAL-CAPITAL",
-      "headStoryId": "INIT-PRODUCT-DEVELOPMENT-CULTURE",
-      "workMustTraceTo": [
-        "fleet-live-programmes",
-        "owner product-goals.json"
-      ],
-      "programmeHead": null,
-      "clarityBrief": "pnpm ecosystem:clarity:report:brief",
-      "clarityWitness": "bridge-os/pm/ci/ecosystem-clarity-report-latest.json",
-      "ceremonyWitness": "bridge-os/pm/ci/agile-ceremony-sync-latest.json",
-      "openMilestoneCount": null
-    },
-    "fleetGoalsRegistry": {
-      "version": "1.1.0",
-      "updated": "2026-06-17",
-      "path": "pm/spec/ecosystem-fleet-goals-registry.json"
-    },
-    "quarterPillars": {
-      "id": "GTCX-Q3-2026",
-      "title": "Ship · surfaces · GTM · operational AI",
-      "targetDate": "2026-Q3",
-      "pillars": [
-        {
-          "id": "ship",
-          "label": "Shipping",
-          "passTest": "Named releases with demo/staging/pilot paths that run",
-          "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
-        },
-        {
-          "id": "surfaces",
-          "label": "Beautiful surfaces",
-          "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
-          "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
-        },
-        {
-          "id": "gtm",
-          "label": "GTM",
-          "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
-          "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
-        },
-        {
-          "id": "operational-ai",
-          "label": "AI OS operational",
-          "passTest": "agent:next-work → execute → witness on real fleet work",
-          "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
-        }
-      ]
-    },
-    "fleetNorthStarBlock": {
-      "goal": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
-      "gtmTier": "GR-T2-partial",
-      "evidence": "fabric-os/audit/evidence/gtm-audit-latest.json",
-      "milestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
-      "milestoneWitness": "pm/ci/pilot-readiness-report-latest.json",
-      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
-      "headProductRepo": "markets-os"
-    },
-    "engineeringLane": {
-      "role": "orchestration",
-      "abstractedLanes": {
-        "securityAssurance": "fabric-os",
-        "documentationAudit": "canon-os",
-        "legalOps": "agile-os + Parallel sovereign gates"
-      },
-      "forbiddenInNextWorkItem": [
-        "audit triage",
-        "pen-test SOW",
-        "legal approval",
-        "doc promotion implement"
-      ]
-    },
+    "message": "Program office queue clear — fleet live programmes in owner repos (see fleetLiveProgrammes).",
+    "protocol": "22-agent-work-selection",
     "agileBacklogSoR": {
       "backlogSoR": "agile-os/pm/ecosystem-sprint-backlog.json",
-      "backlogHash": "2994aa9500d68c5a",
-      "ceremonySyncAt": "2026-06-19T02:34:03.392Z",
-      "backlogItemCount": 291
+      "backlogHash": "e191698518091fec",
+      "ceremonySyncAt": "2026-06-25T00:23:52.275Z",
+      "backlogItemCount": 337
     },
     "programOffice": {
       "repo": "bridge-os",
       "queue": "execution-engine",
-      "queueClear": false,
-      "activePhase": "ecosystem",
+      "queueClear": true,
+      "activePhase": "ER5",
       "semantics": "bridge-os P22 queue empty for Execution Engine program office — NOT global fleet idle"
     },
     "fleetLiveProgrammes": [
@@ -574,8 +386,33 @@
       "because": "Sprint 86 AFM-REG-003; ADR-0007 Class A parallel; Wave 0 owner repos",
       "switchWorkspace": true
     },
-    "progressMarkdown": "## Progress — GTCX Execution Engine\n\n> **55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed**\n\n| Metric | Value |\n|--------|-------|\n| **Mode** | Complete roadmap (legacy ceremony) (`complete_roadmap` · default `complete_milestones`) |\n| **Forward queue** | **86/100** tasks (86%) · **0** initiatives · **2** outstanding |\n| **Sprints sealed** | **17/17** (100%) · weighted **100%** |\n| **Stories (program)** | **162/276** done (58.7%) · **0 partial** + 9 pre-done |\n| **Points (program)** | **1010/1819** (55.5%) — 809 pts remain |\n| **Icebox** | **15/15** done (100%) · 0 deferred |\n| **Fleet verify** | 13/16 witness |\n| **Current sprint** | — (0/0 stories) |\n\n### Sprint bar (sealed program)\n✓ Sprint 1 — Unblock session + ops: ████████████████████ 6/6 (100%)\n✓ Sprint 2 — WIP land + v5 rename: ████████████████████ 6/6 (100%)\n✓ Sprint 3 — Layout strict + deploy proof: ████████████████████ 4/4 (100%)\n✓ Sprint 4 — P35 strict fleet compliance: ████████████████████ 3/3 (100%)\n✓ Sprint 5 — Auto-dev harness closure: ████████████████████ 3/3 (100%)\n✓ Sprint 6 — Hubs foundation (baseline-os + bridge-os): ████████████████████ 7/7 (100%)\n✓ Sprint 7 — gtcx-os + MCP/RAG + evidence rails: ████████████████████ 3/3 (100%)\n✓ Sprint 8 — Product master audit wave 1: ████████████████████ 1/1 (100%)\n✓ Sprint 9 — Product master audit wave 2 + ZenHub deps: ████████████████████ 1/1 (100%)\n✓ Sprint 10 — Production + enterprise pilot DoD: ████████████████████ 2/2 (100%)\n✓ EE-S1 — Spec + harness: ████████████████████ 3/3 (100%)\n✓ EE-S2 — ZenHub pull + assurance stub: ████████████████████ 3/3 (100%)\n✓ EE-S3 — Fleet work graph + shipping R1: ████████████████████ 2/2 (100%)\n✓ EE-S4 — Fabric assurance + delegate: ████████████████████ 3/3 (100%)\n✓ EE-S5 — Hub protocols + probe depth: ████████████████████ 2/2 (100%)\n✓ ER-4 — Roadmap successor wave: ████████████████████ 4/4 (100%)\n✓ W4 — Docs IA fleet batch: ████████████████████ 6/6 (100%)\n\n**Next work item:** task `T46` — INIT-WORLD-CLASS-SECOPS — Gap list (what to build next) (fabric-os)\n\n**Open:** INIT-FABLE-REPORTS-LANE-REFRESH, XR-FABRIC-SESSION-OPEN-004, T46, BL-TRANSCRIPT-PORT, BL-DOC-ARCH-01, DOC-PROGRAM-001, LCP-001, APEX-PROGRAM-001, NITRO-PROGRAM-001, HANDOFF-REGISTRY-001, BL-SOC2-01, INIT-EXEC-GAP, SECAS-S4-05, XR-MKT-RDS-VPC, XR-502, XR-501, XR-303, INIT-CANON-MATURITY, XR-CANON-LANG-PACK-001, XR-509, XR-510, XR-507, XR-516, XR-505, XR-515, XR-518, INIT-HUB-SCOPE-GUARD, INIT-DOC-FLEET-COVERAGE, INIT-GTCX-CANON-SERVICES, INIT-DOC-FLEET-PUBLISH, T01, XR-CANON-GOVERN-GTM-001, EXT-INF-013, XR-304, XR-MKT-FABRIC-001, OTLP, XR-MKT-SESSION-OPEN-001, S103-01, INIT-GTCX-INFRA, XR-FABRIC-SPRIN, XR-402, XR-403, XR-FABRIC-SPRINT-AUTH-001, XR-FABRIC-SPRINT, INIT-EXECUTIVE-GAP-PROGRA, XR-003, T0, INIT-AFRICA-CAPITAL-RAIL, INIT-DIGITAL-RAIL-WAVE-0, INIT-GOLDEN-TRANSACTION, XR-GTCX-DIGITAL-RAIL-001, XR-FABRIC-RAIL-003, XR-GTCX-PVP-RAIL-002, INIT-DIGITAL-RAIL, INIT-GOLDEN-TRANS, XR-MKT-FABRIC-00, XR-MKT-STAGING-EN, XR-MKT-STAGING-ENV-001, BL-OPERATOR-01, BL-CANON-CUTOVER-01, XR-519, INIT-SESSION-OPEN-ITEMS, XR-MKT-AGENT-D6-001, INIT-ASSURANCE-BURN-DOWN, INIT-BASELINE-2-UPGRADE, INIT-FLEET-VERSION-GOVERNANCE, INIT-PRODUCT-LEAD-DIRECTIVE, XR-TERRA-FRESH-AUDIT-001, SIG-REF-GRADE-CEILING, SIG-EXT-TERRA-001, XR-BASELINE-ROADMAP-INTAKE-001, APEX-001, APEX-002, APEX-003, APEX-004, APEX-005, APEX-006, APEX-007, APEX-008, APEX-009, APEX-010, XR-KIMI-BRIDGE-FABRIC-CLOSURE-001, INIT-DOC-QUALITY-V3, INIT-DOC-FLEET, XR-CANON-DOC-V3-001, XR-GTCX-DOC-V2-001, INIT-NAMING-REMEDIATE, INIT-DOCS-PROVISIONING-V1, INIT-DOCS-PROVISIONING-V1-W1, XR-CANON-DOCS-048-001, T53, INIT-DOCS-PROVISIONING-V1-W2, INIT-DOCS-PROVISIONING-V1-W3, INIT-DOCS-PROVISIONING, INIT-DOCS-PROVISIONING-V1-W4-HUB, XR-FABRIC-SESSION-OPEN-005, INIT-FIVE-PILLAR-FLEET-100, LEGAL-PROGRAM-01, INIT-GTCX-Q3-2026, Q3-FABRIC-03, INIT-DOCS-FOUNDATION-IA-V1, INIT-DOCS-CORE-IA-V1, INIT-DOCS-CORE-IA, INIT-CONCEPT-PROTOCOL, INIT-CANON-PROMOTION-V1, INIT-PRODUCT-CANON-V1, INIT-ECOSYSTEM-OS-MIGRATION, XR-FABRIC, INIT-001, BASELINE-PLATFORM-ROADMAP-001, ARL-PROGRAM-001, BACKLOG-CLEAR-APPROACH-001, DOJO-PROGRAM-001, INIT-PRODUCT-TEAM-MODEL-R7",
-    "clarityBriefMarkdown": "## Fleet clarity — 2026-06-22\n\n**North star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Bridge:** undefined · 55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed\n**Product team head (bridge P22):** `INIT-EXECUTIVE-GAP-PROGRAM` → `bridge-os`\n\n| Repo | Milestone | DoD | P22 / work toward |\n|------|-----------|-----|-------------------|\n| bridge-os | ROADMAP-COMPLETE — fleet live pro… | 2/3 | ROADMAP-COMPLETE — fleet live programmes syndicated |\n| agile-os | Markets pilot+AFM forward program… | 2/2 | Markets pilot+AFM forward programme registered |\n| fabric-os | SECAS-S4-supply-chain | 2/2 | SECAS-S4-supply-chain |\n| markets-os | M4 — golden transaction + AFM pro… | 3/3 | AFM-REG-003 |\n| baseline-os | STUDIO-004 dual-anchor + EXPERIEN… | 2/3 | STUDIO-004 |\n| compliance-os | DEPLOY-GATE-85 — composite deploy… | 3/3 | DEPLOY-GATE-85 — composite deploy threshold |\n| ecosystem-os | ECO-OS-SHIP-001 — ship · surfaces… | 3/4 | ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI |\n| canon-os | INIT-DOC-PROMOTION-M4 mostly sealed | 1/2 | INIT-DOC-PROMOTION-M4 |\n| exploration-os | Staging health 2/2 for mapped ser… | 1/2 | Staging health 2/2 for mapped services |\n| terra-os | Pilot-demo-ready (deploy + compos… | 3/3 | Pilot-demo-ready (deploy + composite) |\n| terminal-os | M3-institutional-scale | 0/0 | AFM-REG-003 |\n| griot-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| veritas-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| nyota-ai | Composite ≥85 (currently ~28) | 2/2 | Composite ≥85 (currently ~28) |\n\nFull report: `pnpm ecosystem:clarity:report:markdown` · witness: `pm/ci/ecosystem-clarity-report-latest.md`",
+    "automatableExhausted": false,
+    "agentInstructions": [
+      "Phase 4: adopt persona **platform-architect** (development) — read local `/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md` first (docUrl link-only); adopt voice: Systems-oriented, reliability-focused, cost-conscious",
+      "Include **Active persona** + **Frame** + **Voice** in Proceed Brief (P26).",
+      "Forbidden voice: \"Your move\", \"tell me what you think\", casual walkthrough delegation — use Operator entry + P27 probes.",
+      "bridge-os backlogClear = program office only — see fleetLiveProgrammes + recommendedOwnerSession.",
+      "Fleet owner redirect (not Next work item here): pnpm --dir ../markets-os agent:next-work --json — switch workspace to markets-os to implement AFM-REG-003.",
+      "complete_roadmap: sprint-backlog sealed ≠ stop — execute completionBlocks until roadmapExecutionComplete.",
+      "When nextWorkItem.switchWorkspace: true — implement in owner repo in same session; do not close at ROADMAP-COMPLETE.",
+      "Product team: **GTCX Program Office** — primary persona `protocol-engineer` — Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
+      "Goal orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "Non-engineering (security, legal, docs, audit) → parallel lanes — fabric-os / canon-os / agile-os — never product Next work item.",
+      "Use THIS repo agent:next-work next / nextWorkItem. Vendor assurance implement is fabric-os only.",
+      "Run pnpm agent:next-work (or agent:session-start) before substantive work.",
+      "Emit exactly one Proceed Brief — single Next action from P22 output.",
+      "Then implement in this repo. Do not ask operator to choose between stories or repos.",
+      "Forbidden: \"Your call\", \"Two options\", numbered 1./2. menus, \"switch to X or Y\".",
+      "Human may reply stop, correct:, or a story ID override only.",
+      "If blocked: Blocker Report — not a story menu.",
+      "baseline-os M3 external-pilot ceiling is baseline-os-only — never use as Next work item in sibling repos.",
+      "Forbidden Proceed Brief Next outside baseline-os: \"Hold at external-pilot ceiling\".",
+      "FORBIDDEN: git push in Approval needed when GATE-PUSH passes — report push in Done (Class R).",
+      "Product lead directive: decide and execute — never \"if you want implemented\" / \"next session\" / \"can implement\" closings.",
+      "Forbidden closing: offering optional implementation after Status Update or instead of executing Class R work."
+    ],
+    "progressMarkdown": "## Progress — GTCX Execution Engine\n\n> **56.6% points · 145 program remaining · 0 forward tasks · 16/17 sprints sealed**\n\n### Engineering maturity\n\n- **Integrator pilot ship-ready:** no (engineering + integrator milestones only)\n- **Lane policy:** GS-MATURITY-LANE-001\n- **Integrator milestones:** 3/4 green\n\n### Parallel assurance (fabric-os owner — does not block engineering)\n\n- `LEGAL-H05-EXT-INF-002` · fabric-os · sow-approved · blocksIR: false\n- `SECAS-S2-01` · fabric-os · internal_closure_complete · blocksIR: —\n\n### Enterprise procurement (parallel — US/EU deal qualification only)\n\n- **Enterprise tier (open track):** below-GR-T2\n- SOC2 / DPA / SSO / FedRAMP gates live in fleet diagnostic `enterpriseProcurementGtm` — not in pilot ship-ready\n\n| Metric | Value |\n|--------|-------|\n| **Mode** | Complete roadmap (legacy ceremony) (`complete_roadmap` · default `complete_milestones`) |\n| **Forward queue** | **88/100** tasks (88%) · **0** initiatives · **0** outstanding |\n| **Sprints sealed** | **16/17** (94.1%) · weighted **99.5%** |\n| **Stories (program)** | **177/322** done (55%) · **0 partial** + 9 pre-done |\n| **Points (program)** | **1062/1876** (56.6%) — 814 pts remain |\n| **Icebox** | **15/15** done (100%) · 0 deferred |\n| **Fleet verify** | 13/16 witness |\n| **Current sprint** | W4 — Docs IA fleet batch (10/11 stories) |\n\n### Sprint bar (sealed program)\n✓ Sprint 1 — Unblock session + ops: ████████████████████ 6/6 (100%)\n✓ Sprint 2 — WIP land + v5 rename: ████████████████████ 6/6 (100%)\n✓ Sprint 3 — Layout strict + deploy proof: ████████████████████ 4/4 (100%)\n✓ Sprint 4 — P35 strict fleet compliance: ████████████████████ 3/3 (100%)\n✓ Sprint 5 — Auto-dev harness closure: ████████████████████ 3/3 (100%)\n✓ Sprint 6 — Hubs foundation (baseline-os + bridge-os): ████████████████████ 7/7 (100%)\n✓ Sprint 7 — gtcx-os + MCP/RAG + evidence rails: ████████████████████ 3/3 (100%)\n✓ Sprint 8 — Product master audit wave 1: ████████████████████ 1/1 (100%)\n✓ Sprint 9 — Product master audit wave 2 + ZenHub deps: ████████████████████ 1/1 (100%)\n✓ Sprint 10 — Production + enterprise pilot DoD: ████████████████████ 2/2 (100%)\n✓ EE-S1 — Spec + harness: ████████████████████ 3/3 (100%)\n✓ EE-S2 — ZenHub pull + assurance stub: ████████████████████ 3/3 (100%)\n✓ EE-S3 — Fleet work graph + shipping R1: ████████████████████ 2/2 (100%)\n✓ EE-S4 — Fabric assurance + delegate: ████████████████████ 3/3 (100%)\n✓ EE-S5 — Hub protocols + probe depth: ████████████████████ 2/2 (100%)\n✓ ER-4 — Roadmap successor wave: ████████████████████ 4/4 (100%)\n→ W4 — Docs IA fleet batch: ██████████████████░░ 10/11 (90.9%)\n\n**Next work item:** story `DOCS-W4-IA-baseline-os` — W4 docs IA — baseline-os fleet provisioning contract (baseline-os)\n\n**Open:** INIT-FABLE-REPORTS-LANE-REFRESH, XR-FABRIC-SESSION-OPEN-004, T46, BL-TRANSCRIPT-PORT, BL-DOC-ARCH-01, DOC-PROGRAM-001, LCP-001, APEX-PROGRAM-001, NITRO-PROGRAM-001, HANDOFF-REGISTRY-001, BL-SOC2-01, INIT-EXEC-GAP, SECAS-S4-05, XR-MKT-RDS-VPC, XR-502, XR-501, XR-303, INIT-CANON-MATURITY, XR-CANON-LANG-PACK-001, XR-509, XR-510, XR-507, XR-516, XR-505, XR-515, XR-518, INIT-HUB-SCOPE-GUARD, INIT-DOC-FLEET-COVERAGE, INIT-GTCX-CANON-SERVICES, INIT-DOC-FLEET-PUBLISH, T01, XR-CANON-GOVERN-GTM-001, EXT-INF-013, XR-304, XR-MKT-FABRIC-001, OTLP, XR-MKT-SESSION-OPEN-001, S103-01, INIT-GTCX-INFRA, XR-FABRIC-SPRIN, XR-402, XR-403, XR-FABRIC-SPRINT-AUTH-001, XR-FABRIC-SPRINT, INIT-EXECUTIVE-GAP-PROGRA, XR-003, T0, INIT-AFRICA-CAPITAL-RAIL, INIT-DIGITAL-RAIL-WAVE-0, INIT-GOLDEN-TRANSACTION, XR-GTCX-DIGITAL-RAIL-001, XR-FABRIC-RAIL-003, XR-GTCX-PVP-RAIL-002, INIT-DIGITAL-RAIL, INIT-GOLDEN-TRANS, XR-MKT-FABRIC-00, XR-MKT-STAGING-EN, XR-MKT-STAGING-ENV-001, BL-OPERATOR-01, BL-CANON-CUTOVER-01, XR-519, INIT-SESSION-OPEN-ITEMS, XR-MKT-AGENT-D6-001, INIT-ASSURANCE-BURN-DOWN, INIT-BASELINE-2-UPGRADE, INIT-FLEET-VERSION-GOVERNANCE, INIT-PRODUCT-LEAD-DIRECTIVE, XR-TERRA-FRESH-AUDIT-001, SIG-REF-GRADE-CEILING, SIG-EXT-TERRA-001, XR-BASELINE-ROADMAP-INTAKE-001, APEX-001, APEX-002, APEX-003, APEX-004, APEX-005, APEX-006, APEX-007, APEX-008, APEX-009, APEX-010, XR-KIMI-BRIDGE-FABRIC-CLOSURE-001, INIT-DOC-QUALITY-V3, INIT-DOC-FLEET, XR-CANON-DOC-V3-001, XR-GTCX-DOC-V2-001, INIT-NAMING-REMEDIATE, INIT-DOCS-PROVISIONING-V1, INIT-DOCS-PROVISIONING-V1-W1, XR-CANON-DOCS-048-001, T53, INIT-DOCS-PROVISIONING-V1-W2, INIT-DOCS-PROVISIONING-V1-W3, INIT-DOCS-PROVISIONING, INIT-DOCS-PROVISIONING-V1-W4-HUB, XR-FABRIC-SESSION-OPEN-005, INIT-FIVE-PILLAR-FLEET-100, LEGAL-PROGRAM-01, INIT-GTCX-Q3-2026, Q3-FABRIC-03, INIT-DOCS-FOUNDATION-IA-V1, INIT-DOCS-CORE-IA-V1, INIT-DOCS-CORE-IA, INIT-CONCEPT-PROTOCOL, INIT-CANON-PROMOTION-V1, INIT-PRODUCT-CANON-V1, INIT-ECOSYSTEM-OS-MIGRATION, XR-FABRIC, INIT-001, BASELINE-PLATFORM-ROADMAP-001, ARL-PROGRAM-001, BACKLOG-CLEAR-APPROACH-001, DOJO-PROGRAM-001, INIT-PRODUCT-TEAM-MODEL-R7, DOCS-W4-IA-baseline-os, SHIP-GATE-SVC-EDGE-01, SHIP-GATE-INTEL-API-03, SHIP-GATE-PROTO-OPS-03, SHIP-GATE-MOB-F01, SHIP-GATE-MOB-F02, SHIP-GATE-MOB-F03, SHIP-GATE-MOB-F04, SHIP-GATE-MOB-F05, SHIP-GATE-MOB-F06, SHIP-GATE-MOB-F07, SHIP-GATE-MOB-F08, SHIP-GATE-MOB-F09, SHIP-GATE-MOB-F10, SHIP-GATE-MOB-F11, SHIP-GATE-MOB-F12, SHIP-GATE-MOB-F13, SHIP-GATE-MOB-F14, SHIP-GATE-MOB-F15, SHIP-GATE-MOB-F16, SHIP-GATE-MOB-F17, SHIP-GATE-MOB-F18, SHIP-GATE-MOB-F19, SHIP-GATE-MOB-F20, SHIP-GATE-MOB-F21, SHIP-GATE-MOB-F22, SHIP-GATE-MOB-F23, SHIP-GATE-MOB-F24, SHIP-GATE-MOB-F25, SHIP-GATE-MOB-F26, SHIP-GATE-MOB-F27",
+    "clarityBriefMarkdown": "## Fleet clarity — 2026-06-25\n\n**North star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Bridge:** undefined · 56.6% points · 145 program remaining · 0 forward tasks · 16/17 sprints sealed\n**Product team head (bridge P22):** `DOCS-W4-IA-bridge-os` → `bridge-os`\n\n| Repo | Milestone | DoD | P22 / work toward |\n|------|-----------|-----|-------------------|\n| bridge-os | W8-INSTITUTIONAL-ADOPTION sealed … | 4/5 | W8-INSTITUTIONAL-ADOPTION sealed — maturity lane + institutional 90-day programme office |\n| agile-os | Markets pilot+AFM forward program… | 2/2 | Markets pilot+AFM forward programme registered |\n| fabric-os | SECAS-S4-supply-chain | 2/2 | SECAS-S4-supply-chain |\n| markets-os | M4 — golden transaction + AFM pro… | 3/3 | AFM-REG-003 |\n| baseline-os | STUDIO-004 dual-anchor + EXPERIEN… | 3/3 | STUDIO-004 |\n| compliance-os | DEPLOY-GATE-85 — composite deploy… | 3/3 | DEPLOY-GATE-85 — composite deploy threshold |\n| ecosystem-os | ECO-OS-SHIP-001 — ship · surfaces… | 3/4 | ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI |\n| canon-os | INIT-DOC-PROMOTION-M4 mostly sealed | 1/2 | INIT-DOC-PROMOTION-M4 |\n| exploration-os | Staging health 2/2 for mapped ser… | 1/2 | Staging health 2/2 for mapped services |\n| terra-os | Pilot-demo-ready (deploy + compos… | 3/3 | Pilot-demo-ready (deploy + composite) |\n| terminal-os | M3-institutional-scale | 0/0 | AFM-REG-003 |\n| griot-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| veritas-ai | Composite 100 maintained | 0/1 | Composite 100 maintained |\n| nyota-ai | Composite ≥85 (currently ~28) | 2/2 | Composite ≥85 (currently ~28) |\n\nFull report: `pnpm ecosystem:clarity:report:markdown` · witness: `pm/ci/ecosystem-clarity-report-latest.md`",
     "autoDevMode": {
       "resolvedMode": "complete_roadmap",
       "defaultMode": "complete_milestones",
@@ -596,56 +433,52 @@
         {
           "id": "sprint-backlog",
           "label": "Program sprint backlog",
-          "detail": "114 program stories remaining",
-          "owner": "bridge-os"
-        },
-        {
-          "id": "forward-queue",
-          "label": "Forward queue (pm/_tasks / intake)",
-          "detail": "2 outstanding tasks · 0 open initiatives",
+          "detail": "145 program stories remaining",
           "owner": "bridge-os"
         }
       ],
       "activeWaveBatch": {
-        "id": "W4-docs-IA",
-        "label": "P22-W4 docs IA fleet batch",
-        "statusUpdateMilestone": "W4-docs-IA",
+        "id": "W7-SESSION-CEREMONY",
+        "label": "PHASE-SESSION-CEREMONY fleet batch",
+        "statusUpdateMilestone": "W7-SESSION-CEREMONY",
         "repos": [
-          "sensei-os",
-          "markets-os",
-          "griot-ai",
-          "nyota-ai"
+          "agile-os",
+          "baseline-os",
+          "canon-os"
         ],
         "repoOrder": [
-          "sensei-os",
-          "markets-os",
-          "griot-ai",
-          "nyota-ai"
+          "canon-os",
+          "agile-os",
+          "baseline-os"
         ]
       }
     },
     "progress": {
-      "sprints": "17/17 sealed (100%)",
-      "stories": "162/276 program (58.7%)",
-      "points": "1010/1819 pts (55.5%)",
+      "sprints": "16/17 sealed (94.1%)",
+      "stories": "177/322 program (55%)",
+      "points": "1062/1876 pts (56.6%)",
       "icebox": "15/15 icebox (100%) · 0 deferred",
-      "roadmap": "177/291 roadmap (60.8%)",
-      "forwardQueue": "86/100 tasks (86%) · 0 initiatives · 2 outstanding",
-      "currentSprint": null,
-      "headline": "55.5% points · 114 program remaining · 2 forward tasks · 17/17 sprints sealed"
+      "roadmap": "192/337 roadmap (57%)",
+      "forwardQueue": "88/100 tasks (88%) · 0 initiatives · 0 outstanding",
+      "currentSprint": {
+        "id": "SPRINT-W4-DOCS-IA",
+        "name": "W4 — Docs IA fleet batch",
+        "stories": {
+          "done": 10,
+          "total": 11
+        },
+        "pct": 90.9
+      },
+      "headline": "56.6% points · 145 program remaining · 0 forward tasks · 16/17 sprints sealed"
     },
     "nextWorkItem": {
       "type": "task",
       "typeLabel": "Task",
-      "id": "T66",
-      "title": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists",
-      "owner": "canon-os",
-      "sprint": null,
-      "priority": null,
-      "pipeline": null,
+      "id": "sprint-backlog",
+      "title": "Program sprint backlog",
+      "owner": "bridge-os",
       "state": "open",
-      "selectionTier": "task-intake-item",
-      "because": "docs:ia:check fleet uplift — frontmatter, README depth, allowlists · traces PROG-CONTINENTAL-CAPITAL",
+      "notProgramOfficeIdle": true,
       "gtmTrace": true,
       "programmeId": "PROG-CONTINENTAL-CAPITAL",
       "milestoneId": "ROADMAP-COMPLETE — fleet live programmes syndicated",
@@ -663,23 +496,31 @@
             "witness": "pm/ci/product-culture-fleet-latest.json"
           }
         ]
-      }
+      },
+      "gtmContribution": "AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial",
+      "valueCreated": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams",
+      "scopeId": "own-in-scope",
+      "scopeLabel": "Own repo — in scope",
+      "scope": "own-in-scope — Own repo — in scope",
+      "lane": null,
+      "p22Reason": "complete_roadmap — 145 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+      "workDescription": "Program sprint backlog · All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams · own-in-scope — Own repo — in scope"
     },
     "statusUpdateSections": {
-      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 177/291 roadmap (60.8%) · Forward 86/100 tasks (86%) · 0 initiatives · 2 outstanding · Sprints 17/17 sealed (100%) · Stories 162/276 program (58.7%) · Points 1010/1819 pts (55.5%) · Icebox 15/15 icebox (100%) · 0 deferred",
-      "nextWorkItem": "- **Type:** Task\n- **ID:** `T66`\n- **Title:** docs:ia:check fleet uplift — frontmatter, README depth, allowlists\n- **Owner:** canon-os\n- **Because:** docs:ia:check fleet uplift — frontmatter, README depth, allowlists"
+      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 192/337 roadmap (57%) · Forward 88/100 tasks (88%) · 0 initiatives · 0 outstanding · Sprints 16/17 sealed (94.1%) · Stories 177/322 program (55%) · Points 1062/1876 pts (56.6%) · Icebox 15/15 icebox (100%) · 0 deferred",
+      "nextWorkItem": "- **Type:** Task\n- **ID:** `sprint-backlog`\n- **Title:** Program sprint backlog\n- **Owner:** bridge-os\n- **Value created:** All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams\n- **Scope:** own-in-scope — Own repo — in scope\n- **GTM contribution:** AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial"
     },
     "statusUpdate": {
-      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 177/291 roadmap (60.8%) · Forward 86/100 tasks (86%) · 0 initiatives · 2 outstanding · Sprints 17/17 sealed (100%) · Stories 162/276 program (58.7%) · Points 1010/1819 pts (55.5%) · Icebox 15/15 icebox (100%) · 0 deferred",
-      "nextWorkItem": "- **Type:** Task\n- **ID:** `T66`\n- **Title:** docs:ia:check fleet uplift — frontmatter, README depth, allowlists\n- **Owner:** canon-os\n- **Because:** docs:ia:check fleet uplift — frontmatter, README depth, allowlists"
+      "executionMode": "- **Mode:** Execute roadmap (`complete_roadmap`)\n- **Scope:** program + icebox + forward queue + production wave + fleet owner P0 · stop when `roadmap_execution_complete`\n- **Progress:** Roadmap 192/337 roadmap (57%) · Forward 88/100 tasks (88%) · 0 initiatives · 0 outstanding · Sprints 16/17 sealed (94.1%) · Stories 177/322 program (55%) · Points 1062/1876 pts (56.6%) · Icebox 15/15 icebox (100%) · 0 deferred",
+      "nextWorkItem": "- **Type:** Task\n- **ID:** `sprint-backlog`\n- **Title:** Program sprint backlog\n- **Owner:** bridge-os\n- **Value created:** All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams\n- **Scope:** own-in-scope — Own repo — in scope\n- **GTM contribution:** AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial"
     },
     "roadmapCompletion": {
       "schema": "gtcx://bridge-os/roadmap-completion/v1",
       "mode": "complete_roadmap",
       "completeRoadmapMode": true,
       "sprintBacklogSealed": false,
-      "forwardQueueClear": false,
-      "forwardOutstanding": 2,
+      "forwardQueueClear": true,
+      "forwardOutstanding": 0,
       "openInitiatives": 0,
       "productionWavePending": false,
       "unregisteredProductionWaveSprints": [],
@@ -696,20 +537,14 @@
       "productCultureClear": true,
       "productCulture": null,
       "roadmap": {
-        "done": 177,
-        "total": 291
+        "done": 192,
+        "total": 337
       },
       "blocks": [
         {
           "id": "sprint-backlog",
           "label": "Program sprint backlog",
-          "detail": "114 program stories remaining",
-          "owner": "bridge-os"
-        },
-        {
-          "id": "forward-queue",
-          "label": "Forward queue (pm/_tasks / intake)",
-          "detail": "2 outstanding tasks · 0 open initiatives",
+          "detail": "145 program stories remaining",
           "owner": "bridge-os"
         }
       ],
@@ -718,27 +553,17 @@
       "stopSignal": "continue"
     },
     "roadmapExecutionComplete": false,
-    "automatableExhausted": false,
     "engineeringLaneAbstraction": {
       "applies": false,
-      "tier": "task-intake-item",
+      "tier": "program-office",
       "repoId": "bridge-os"
     },
     "personaReadGate": {
-      "ok": false,
-      "blocked": true,
+      "ok": true,
       "institutional": "platform-architect",
       "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
       "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-      "witness": {
-        "schema": "gtcx://bridge-os/persona-read-witness/v1",
-        "institutional": "platform-architect",
-        "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
-        "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-        "readAt": "2026-06-17T13:34:51.975Z"
-      },
-      "reason": "persona read witness stale (>24h)",
-      "witnessCommand": "pnpm persona:read-witness --write"
+      "readAt": "2026-06-24T09:09:26.186Z"
     },
     "constitutionReadGate": {
       "ok": true,
@@ -754,9 +579,43 @@
     "ego": {
       "schema": "gtcx://baseline-os/ego/v1",
       "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-      "compiledAt": "2026-06-22T23:38:00.174Z",
+      "compiledAt": "2026-06-25T00:24:33.460Z",
       "repo": "bridge-os",
-      "storyId": "T66",
+      "storyId": {
+        "type": "task",
+        "typeLabel": "Task",
+        "id": "sprint-backlog",
+        "title": "Program sprint backlog",
+        "owner": "bridge-os",
+        "state": "open",
+        "notProgramOfficeIdle": true,
+        "gtmTrace": true,
+        "programmeId": "PROG-CONTINENTAL-CAPITAL",
+        "milestoneId": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+        "gtmTier": "GR-T2-partial",
+        "capabilityId": null,
+        "prdRef": null,
+        "milestoneDoD": {
+          "milestoneId": "PRODUCT-CULTURE-R2",
+          "title": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+          "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+          "acceptanceChecks": [
+            {
+              "id": "culture-check",
+              "label": "pnpm ecosystem:product-culture:check PASS",
+              "witness": "pm/ci/product-culture-fleet-latest.json"
+            }
+          ]
+        },
+        "gtmContribution": "AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial",
+        "valueCreated": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams",
+        "scopeId": "own-in-scope",
+        "scopeLabel": "Own repo — in scope",
+        "scope": "own-in-scope — Own repo — in scope",
+        "lane": null,
+        "p22Reason": "complete_roadmap — 145 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+        "workDescription": "Program sprint backlog · All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams · own-in-scope — Own repo — in scope"
+      },
       "persona": {
         "institutional": "platform-architect",
         "frame": "development",
@@ -774,7 +633,7 @@
       },
       "forbiddenPatternCount": 40,
       "mdPath": ".baseline/session/ego-latest.md",
-      "mdHash": "34c500da77053283cd1cb17ada0ec07e10c778e057aed3202afb5f464a3437a4",
+      "mdHash": "d1a4e7466d6813d6c6e61629c81f3cfbfb9294a39c8398d64ef49144f4179289",
       "layers": [
         "anti-assistant",
         "constitution",
@@ -782,6 +641,7 @@
         "universal-ops",
         "forbidden",
         "persona",
+        "parse",
         "work",
         "nitro",
         "proceed-brief"
@@ -792,7 +652,7 @@
           "institutional": "platform-architect",
           "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
           "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-          "readAt": "2026-06-22T11:39:35.707Z"
+          "readAt": "2026-06-24T09:08:42.696Z"
         },
         "constitutionReadGate": {
           "ok": true,
@@ -813,9 +673,43 @@
     "agentEmbodiment": {
       "schema": "gtcx://baseline-os/ego/v1",
       "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-      "compiledAt": "2026-06-22T23:38:00.174Z",
+      "compiledAt": "2026-06-25T00:24:33.460Z",
       "repo": "bridge-os",
-      "storyId": "T66",
+      "storyId": {
+        "type": "task",
+        "typeLabel": "Task",
+        "id": "sprint-backlog",
+        "title": "Program sprint backlog",
+        "owner": "bridge-os",
+        "state": "open",
+        "notProgramOfficeIdle": true,
+        "gtmTrace": true,
+        "programmeId": "PROG-CONTINENTAL-CAPITAL",
+        "milestoneId": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+        "gtmTier": "GR-T2-partial",
+        "capabilityId": null,
+        "prdRef": null,
+        "milestoneDoD": {
+          "milestoneId": "PRODUCT-CULTURE-R2",
+          "title": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+          "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+          "acceptanceChecks": [
+            {
+              "id": "culture-check",
+              "label": "pnpm ecosystem:product-culture:check PASS",
+              "witness": "pm/ci/product-culture-fleet-latest.json"
+            }
+          ]
+        },
+        "gtmContribution": "AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial",
+        "valueCreated": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams",
+        "scopeId": "own-in-scope",
+        "scopeLabel": "Own repo — in scope",
+        "scope": "own-in-scope — Own repo — in scope",
+        "lane": null,
+        "p22Reason": "complete_roadmap — 145 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+        "workDescription": "Program sprint backlog · All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams · own-in-scope — Own repo — in scope"
+      },
       "persona": {
         "institutional": "platform-architect",
         "frame": "development",
@@ -833,7 +727,7 @@
       },
       "forbiddenPatternCount": 40,
       "mdPath": ".baseline/session/ego-latest.md",
-      "mdHash": "34c500da77053283cd1cb17ada0ec07e10c778e057aed3202afb5f464a3437a4",
+      "mdHash": "d1a4e7466d6813d6c6e61629c81f3cfbfb9294a39c8398d64ef49144f4179289",
       "layers": [
         "anti-assistant",
         "constitution",
@@ -841,6 +735,7 @@
         "universal-ops",
         "forbidden",
         "persona",
+        "parse",
         "work",
         "nitro",
         "proceed-brief"
@@ -851,7 +746,7 @@
           "institutional": "platform-architect",
           "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
           "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-          "readAt": "2026-06-22T11:39:35.707Z"
+          "readAt": "2026-06-24T09:08:42.696Z"
         },
         "constitutionReadGate": {
           "ok": true,
@@ -869,10 +764,162 @@
       }
     },
     "agentEmbodimentPath": ".baseline/session/ego-latest.md",
+    "repo": "bridge-os",
+    "proceedBrief": {
+      "activePersona": "platform-architect",
+      "frame": "development",
+      "personaDocUrl": "https://gtcx-ecosystem.gitbook.io/gtcx-ecosystem/governance/institutional/personas/platform-architect",
+      "personaDocPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
+      "voice": "Systems-oriented, reliability-focused, cost-conscious",
+      "embodies": "Platform lead accountable for fleet reliability",
+      "personaConfidence": 0.98,
+      "personaSource": "work-item-manifest",
+      "goalOrientationBrief": "## Goal orientation\n**Fleet north star:** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail\n**Quarter:** Ship · surfaces · GTM · operational AI\n**Head programme:** `PROG-CONTINENTAL-CAPITAL` → `markets-os`\n**Repo north star:** Fleet program office — intake, witness, P22 routing, never product implement\n**Milestone:** ROADMAP-COMPLETE — fleet live programmes syndicated\n**Shippable:** All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone\n**PRD refs:** prd-product-charter\n**Product team:** GTCX Program Office (`protocol-engineer`)",
+      "storyId": "sprint-backlog",
+      "valueCreated": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams",
+      "scopeId": "own-in-scope",
+      "scopeLabel": "Own repo — in scope",
+      "scope": "own-in-scope — Own repo — in scope",
+      "gtmContribution": "AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial"
+    },
+    "productTeam": {
+      "schema": "gtcx://bridge-os/product-team-context/v1",
+      "utilized": true,
+      "teamName": "GTCX Program Office",
+      "primary": "protocol-engineer",
+      "secondary": [
+        "platform-engineer",
+        "agile-coach"
+      ],
+      "mission": "Fleet orchestration, ZenHub SoR, agent harness, cross-repo coordination",
+      "frame": "regulatory-audit",
+      "profilesSoR": "pm/spec/repo-persona-profiles.json"
+    },
+    "goalOrientation": {
+      "schema": "gtcx://bridge-os/goal-orientation/v1.1",
+      "registrySoR": "pm/spec/ecosystem-fleet-goals-registry.json",
+      "registryVersion": "1.1.0",
+      "motto": "AI-native company that eats its own operating model",
+      "fleetNorthStar": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "fleetMilestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
+      "gtmTier": "GR-T2-partial",
+      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
+      "headProductRepo": "markets-os",
+      "quarterPillars": {
+        "id": "GTCX-Q3-2026",
+        "title": "Ship · surfaces · GTM · operational AI",
+        "targetDate": "2026-Q3",
+        "pillars": [
+          {
+            "id": "ship",
+            "label": "Shipping",
+            "passTest": "Named releases with demo/staging/pilot paths that run",
+            "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+          },
+          {
+            "id": "surfaces",
+            "label": "Beautiful surfaces",
+            "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
+            "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
+          },
+          {
+            "id": "gtm",
+            "label": "GTM",
+            "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
+            "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
+          },
+          {
+            "id": "operational-ai",
+            "label": "AI OS operational",
+            "passTest": "agent:next-work → execute → witness on real fleet work",
+            "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
+          }
+        ]
+      },
+      "quarterTitle": "Ship · surfaces · GTM · operational AI",
+      "quarterId": "GTCX-Q3-2026",
+      "recalibrate": "pnpm ecosystem:clarity:report:brief",
+      "northStar": "Fleet program office — intake, witness, P22 routing, never product implement",
+      "activeMilestone": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "prdRefs": [
+        "prd-product-charter"
+      ],
+      "programmeId": "PROG-CONTINENTAL-CAPITAL",
+      "headStoryId": "INIT-PRODUCT-DEVELOPMENT-CULTURE",
+      "workMustTraceTo": [
+        "fleet-live-programmes",
+        "owner product-goals.json"
+      ],
+      "programmeHead": null,
+      "clarityBrief": "pnpm ecosystem:clarity:report:brief",
+      "clarityWitness": "bridge-os/pm/ci/ecosystem-clarity-report-latest.json",
+      "ceremonyWitness": "bridge-os/pm/ci/agile-ceremony-sync-latest.json",
+      "openMilestoneCount": null
+    },
+    "fleetGoalsRegistry": {
+      "version": "1.1.0",
+      "updated": "2026-06-24",
+      "path": "pm/spec/ecosystem-fleet-goals-registry.json"
+    },
+    "quarterPillars": {
+      "id": "GTCX-Q3-2026",
+      "title": "Ship · surfaces · GTM · operational AI",
+      "targetDate": "2026-Q3",
+      "pillars": [
+        {
+          "id": "ship",
+          "label": "Shipping",
+          "passTest": "Named releases with demo/staging/pilot paths that run",
+          "primaryWitness": "markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+        },
+        {
+          "id": "surfaces",
+          "label": "Beautiful surfaces",
+          "passTest": "Operator + buyer journeys intentional (Surface + Agency)",
+          "primaryWitness": "gtcx-os/pm/ci/documentation-matrix-latest.json"
+        },
+        {
+          "id": "gtm",
+          "label": "GTM",
+          "passTest": "Ecosystem OS category story with Venture + Agency assets in market",
+          "primaryWitness": "ecosystem-os/docs/business/portfolio/product-portfolio.md"
+        },
+        {
+          "id": "operational-ai",
+          "label": "AI OS operational",
+          "passTest": "agent:next-work → execute → witness on real fleet work",
+          "primaryWitness": "agile-os/pm/ci/sprint-authority-check-latest.json"
+        }
+      ]
+    },
+    "fleetNorthStarBlock": {
+      "goal": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "gtmTier": "GR-T2-partial",
+      "evidence": "fabric-os/audit/evidence/gtm-audit-latest.json",
+      "milestone": "Pilot ship ready (legal + security + deploy + GTM trace)",
+      "milestoneWitness": "pm/ci/pilot-readiness-report-latest.json",
+      "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
+      "headProductRepo": "markets-os"
+    },
+    "engineeringLane": {
+      "role": "orchestration",
+      "abstractedLanes": {
+        "securityAssurance": "fabric-os",
+        "documentationAudit": "canon-os",
+        "legalOps": "agile-os + Parallel sovereign gates"
+      },
+      "forbiddenInNextWorkItem": [
+        "audit triage",
+        "pen-test SOW",
+        "legal approval",
+        "doc promotion implement"
+      ]
+    },
     "goalTrace": {
       "schema": "gtcx://bridge-os/goal-trace/v2.1",
       "repo": "bridge-os",
-      "nextStoryId": "T66",
+      "nextStoryId": "sprint-backlog",
       "headStoryId": "INIT-PRODUCT-DEVELOPMENT-CULTURE",
       "headProgrammeId": "PROG-CONTINENTAL-CAPITAL",
       "headProductRepo": "markets-os",
@@ -908,7 +955,7 @@
         ]
       },
       "fleetNorthStar": "GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
-      "declaredTrace": null,
+      "declaredTrace": "ROADMAP-COMPLETE — fleet live programmes syndicated",
       "programmeId": "PROG-CONTINENTAL-CAPITAL",
       "milestone": "ROADMAP-COMPLETE — fleet live programmes syndicated",
       "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
@@ -1009,7 +1056,9 @@
       },
       "proceedBriefFields": [
         "Next",
-        "Because",
+        "Story",
+        "Value created",
+        "Scope",
         "Blocked until",
         "Override"
       ],
@@ -1132,11 +1181,7 @@
     "hubScopeGuard": {
       "ok": true,
       "applies": false
-    },
-    "personaReadGateBlocked": true,
-    "sessionStartBlocked": true,
-    "sessionStartBlockedReason": "persona read witness stale (>24h)",
-    "blockedUntil": "pnpm persona:read-witness --write"
+    }
   },
   "modelProfile": null,
   "nitroStack": null,
@@ -1146,6 +1191,6 @@
     "witness": null,
     "error": "baselineos CLI not built"
   },
-  "gitChanged": 39,
+  "gitChanged": 51,
   "authorityClass": "R"
 }

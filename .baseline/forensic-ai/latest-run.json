@@ -1,7 +1,7 @@
 {
   "programId": "FORENSIC-AI-001",
   "storyId": "FORENSIC-AI-001",
-  "updatedAt": "2026-06-22T23:38:01.461Z",
+  "updatedAt": "2026-06-25T00:24:33.861Z",
   "companyName": "ecosystem-os",
   "orgSource": "explicit",
   "ambient": {
@@ -69,14 +69,19 @@
     "projectHints": [
       "ecosystem-os",
       "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
-      "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface"
+      "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "STORY-DOCS-IA-ECO — Fleet docs IA lift",
+      "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+      "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+      "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
+      "STORY-VEN-OS-HANDOFF — venture-os inbound handoff"
     ],
     "goalHints": [
-      "orientation: milestone `PRODUCT-CULTURE-R2` — shippable: All product/platform repos have product-goals",
       "to implement Protocol 22-selected work",
       "Unblock Report — never revert to consultant mode",
-      "** Make these tests pass",
-      "error (sandbox denial), tell the user the sandbox blocked worktree creation and you're working in the current directory instead"
+      "** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+      "** Fleet program office — intake, witness, P22 routing, never product implement",
+      "** Make these tests pass"
     ],
     "filesScanned": 180,
     "solicitOrg": false
@@ -166,51 +171,51 @@
     {
       "passId": "FRP-P0-ambient",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     },
     {
       "passId": "FRP-P1-entity",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-22T23:38:01.461Z",
+      "completedAt": "2026-06-25T00:24:33.861Z",
       "nodeCount": 1
     },
     {
       "passId": "FRP-P2-vertical",
       "protocolId": "FRP-P2",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     },
     {
       "passId": "FRP-P4-regulatory",
       "protocolId": "FRP-P4",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     },
     {
       "passId": "FRP-P5-org-shape",
       "protocolId": "FRP-P5",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     },
     {
       "passId": "FRP-P6-gaps",
       "protocolId": "FRP-P6",
-      "completedAt": "2026-06-22T23:38:01.461Z",
+      "completedAt": "2026-06-25T00:24:33.861Z",
       "questionCount": 4
     },
     {
       "passId": "FRP-P7-merge",
       "protocolId": "FRP-P7",
-      "completedAt": "2026-06-22T23:38:01.461Z",
+      "completedAt": "2026-06-25T00:24:33.861Z",
       "nodeCount": 1,
       "edgeCount": 0
     },
     {
       "passId": "hydrate-layers",
       "protocolId": "hydrate",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     },
     {
       "passId": "complete",
       "protocolId": "complete",
-      "completedAt": "2026-06-22T23:38:01.461Z"
+      "completedAt": "2026-06-25T00:24:33.861Z"
     }
   ],
   "hydratedPaths": [

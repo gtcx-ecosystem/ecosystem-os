@@ -1,9 +1,43 @@
 {
   "schema": "gtcx://baseline-os/ego/v1",
   "schemaAlias": "gtcx://baseline-os/agent-embodiment/v1",
-  "compiledAt": "2026-06-22T23:38:02.749Z",
+  "compiledAt": "2026-06-25T00:24:34.612Z",
   "repo": "ecosystem-os",
-  "storyId": "T66",
+  "storyId": {
+    "type": "task",
+    "typeLabel": "Task",
+    "id": "sprint-backlog",
+    "title": "Program sprint backlog",
+    "owner": "bridge-os",
+    "state": "open",
+    "notProgramOfficeIdle": true,
+    "gtmTrace": true,
+    "programmeId": "PROG-CONTINENTAL-CAPITAL",
+    "milestoneId": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+    "gtmTier": "GR-T2-partial",
+    "capabilityId": null,
+    "prdRef": null,
+    "milestoneDoD": {
+      "milestoneId": "PRODUCT-CULTURE-R2",
+      "title": "ROADMAP-COMPLETE — fleet live programmes syndicated",
+      "shippableOutcome": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone",
+      "acceptanceChecks": [
+        {
+          "id": "culture-check",
+          "label": "pnpm ecosystem:product-culture:check PASS",
+          "witness": "pm/ci/product-culture-fleet-latest.json"
+        }
+      ]
+    },
+    "gtmContribution": "AI OS operational: agent:next-work → execute → witness on real fleet work · tier GR-T2-partial",
+    "valueCreated": "All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams",
+    "scopeId": "own-in-scope",
+    "scopeLabel": "Own repo — in scope",
+    "scope": "own-in-scope — Own repo — in scope",
+    "lane": null,
+    "p22Reason": "complete_roadmap — 145 program stories remaining · traces PROG-CONTINENTAL-CAPITAL",
+    "workDescription": "Program sprint backlog · All product/platform repos have product-goals.json + prd-index; clarity report shows milestone DoD not sprint count alone — binds roadmaps to PRDs, milestones, and pilot DoD for GTCX fleet agile teams · own-in-scope — Own repo — in scope"
+  },
   "persona": {
     "institutional": "platform-architect",
     "frame": "development",
@@ -21,7 +55,7 @@
   },
   "forbiddenPatternCount": 40,
   "mdPath": ".baseline/session/ego-latest.md",
-  "mdHash": "89b6b3dc5a5b8d1376e9700931b435d10fb0691eb8fb37b0374b79e5cefe246d",
+  "mdHash": "54a9d30387df46bba617fc44d61d7121323883a6ce798310c5462cbe631fc5ce",
   "layers": [
     "anti-assistant",
     "constitution",
@@ -29,40 +63,31 @@
     "universal-ops",
     "forbidden",
     "persona",
+    "parse",
     "work",
     "nitro",
     "proceed-brief"
   ],
   "gates": {
     "personaReadGate": {
-      "ok": false,
-      "blocked": true,
+      "ok": true,
       "institutional": "platform-architect",
       "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
       "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-      "witness": {
-        "schema": "gtcx://bridge-os/persona-read-witness/v1",
-        "institutional": "platform-architect",
-        "docPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/docs/governance/institutional/personas/platform-architect.md",
-        "docHash": "e71211c56201e59d355b57b47a6dbd60a41cd0e4b13f2e3c8c91c2c163cf7703",
-        "readAt": "2026-06-17T13:34:51.975Z"
-      },
-      "reason": "persona read witness stale (>24h)",
-      "witnessCommand": "pnpm persona:read-witness --write"
+      "readAt": "2026-06-24T09:09:26.186Z"
     },
     "constitutionReadGate": {
-      "ok": false,
-      "blocked": true,
+      "ok": true,
       "articles": [
         "I",
         "III",
         "V"
       ],
       "bundleHash": "5440d51f4280ddb4b4d036aa801a86df6d9038c678208f9c1725c4a3474a86f1",
-      "reason": "no constitution read witness — run pnpm constitution:read-witness --write",
-      "witnessCommand": "pnpm constitution:read-witness --write"
+      "readAt": "2026-06-25T00:11:39.822Z",
+      "document": "docs/governance/constitution/GTCX-CONSTITUTION.md"
     },
-    "personaReadGateBlocked": true,
-    "constitutionReadGateBlocked": true
+    "personaReadGateBlocked": false,
+    "constitutionReadGateBlocked": false
   }
 }

@@ -1,12 +1,12 @@
 {
   "schema": "gtcx://baseline-os/session-forensic-compliance/v1",
-  "at": "2026-06-22T23:38:02.746Z",
+  "at": "2026-06-25T00:24:34.570Z",
   "repo": "ecosystem-os",
   "protocol": "51-session-forensic-synthesis",
   "ok": true,
   "errors": [],
-  "sessionId": "861937f3-bf36-46f9-b41b-8888c55f4c8f",
-  "ledgerPath": "workstream/sessions/ledger/861937f3-bf36-46f9-b41b-8888c55f4c8f.json",
+  "sessionId": "cf53a2d5-6f6e-4d72-85cc-b905d136a4e9",
+  "ledgerPath": "workstream/sessions/ledger/cf53a2d5-6f6e-4d72-85cc-b905d136a4e9.json",
   "eventCount": 3,
   "steps": [
     {
