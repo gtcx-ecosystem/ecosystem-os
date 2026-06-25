@@ -1,0 +1,61 @@
+{
+  "$schema": "gtcx://pm/completion-model/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-08",
+  "scoreScale": {
+    "internal": "0-10 audit rubric",
+    "external": "0-100 display (internal × 10)"
+  },
+  "dimensionWeights": {
+    "ux-product-design": 8,
+    "documentation": 7,
+    "repo-folder-hygiene": 8,
+    "spec-drift": 8,
+    "hallucination-resilience": 10,
+    "ai-maturity": 9,
+    "security": 12,
+    "ecosystem-integration": 9,
+    "innovation-originality": 5,
+    "technical-moat": 5,
+    "production-readiness": 10,
+    "bank-grade-auditability": 9,
+    "enterprise-readiness": 10
+  },
+  "epicCompletionBlend": {
+    "auditScoreWeight": 0.7,
+    "featureClosureWeight": 0.3
+  },
+  "definitionOfDone": {
+    "deploy": {
+      "label": "Pilot deploy allowed",
+      "minComposite100": 85,
+      "minPerDimension100": 70,
+      "requiredDimensions": [
+        "repo-folder-hygiene",
+        "documentation",
+        "security",
+        "production-readiness",
+        "spec-drift"
+      ],
+      "zeroOpenP0": true,
+      "evidenceConfidenceMin": "B"
+    },
+    "referenceGrade": {
+      "label": "Reference-grade / GA",
+      "minComposite100": 95,
+      "minPerDimension100": 90,
+      "requiredDimensions": "all",
+      "zeroOpenP0": true,
+      "zeroOpenP1": true,
+      "evidenceConfidenceMin": "A"
+    }
+  },
+  "deployWitness": {
+    "requiredFields": ["environment", "commitSha", "deployDate", "witnessPath"]
+  },
+  "postLaunchP1Exclusions": {
+    "label": "Pre-launch — omit from referenceGrade zeroOpenP1 and initiative P1 backlog",
+    "patterns": ["pen-test", "pentest", "EXT-INF-002", "H-05", "INT-S12-01"],
+    "hubPolicy": "gtcx-agentic human-gates H-05 roadmapPhase post-launch"
+  }
+}

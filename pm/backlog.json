@@ -1,0 +1,98 @@
+{
+  "$schema": "gtcx://ops/pm-backlog/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-25",
+  "syncSource": "pnpm product:compile",
+  "active": null,
+  "backlogClear": true,
+  "stories": [
+    {
+      "id": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-AGILE-DELIVERY-CONTRACT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md"
+    },
+    {
+      "id": "STORY-DOCS-IA-ECO",
+      "title": "STORY-DOCS-IA-ECO — Fleet docs IA lift",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-DOCS-IA-ECO",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md"
+    },
+    {
+      "id": "STORY-P35-LAYOUT",
+      "title": "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+      "status": "done",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-P35-LAYOUT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-P35-LAYOUT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-P35-LAYOUT.md"
+    },
+    {
+      "id": "STORY-PM-FOLDER-R1",
+      "title": "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+      "status": "done",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-PM-FOLDER-R1",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-PM-FOLDER-R1.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-PM-FOLDER-R1.md"
+    },
+    {
+      "id": "STORY-VEN-FUNDRAISE-SYNC",
+      "title": "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-VENTURE",
+      "canonBundleId": "FEAT-VEN-FUNDRAISE-SYNC",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-VEN-FUNDRAISE-SYNC.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-VEN-FUNDRAISE-SYNC.md"
+    },
+    {
+      "id": "STORY-VEN-OS-HANDOFF",
+      "title": "STORY-VEN-OS-HANDOFF — venture-os inbound handoff",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-VENTURE",
+      "canonBundleId": "FEAT-VEN-OS-HANDOFF",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-VEN-OS-HANDOFF.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-VEN-OS-HANDOFF.md"
+    }
+  ],
+  "crossRepoRefs": [],
+  "agileHub": null,
+  "roadmapPath": "machine/execution-roadmap.md",
+  "_generated": {
+    "by": "product-compile.mjs",
+    "protocol": "P57-product-delivery-compile",
+    "at": "2026-06-25T00:13:40.457Z"
+  },
+  "execution": {
+    "backlogClear": true,
+    "active": null,
+    "openCount": 0,
+    "totalCount": 6,
+    "doneCount": 6,
+    "openIds": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "gtcx://pm/sprint-active/v1",
+  "schemaVersion": 1,
+  "repo": "ecosystem-os",
+  "sprintId": "SPR-2026-06-ECO-BACKLOG",
+  "updated": "2026-06-17",
+  "description": "Backlog development sprint — pm domains, Agency foundation, Venture module contract",
+  "goals": [
+    "pm/backlog registry + four initiative slices operational",
+    "Agency catalogs + check gates green",
+    "Venture module contract + GitBook pack scaffolded"
+  ],
+  "tasks": [
+    { "id": "ECO-AGY-001", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-002", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-003", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-004", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-006", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-008", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-009", "owner": "ecosystem-os", "status": "done" },
+    { "id": "ECO-AGY-010", "owner": "ecosystem-os", "status": "done" },
+  ],
+  "uat": {
+    "matrixRef": "pm/roadmap/uat/",
+    "scenarios": []
+  }
+}

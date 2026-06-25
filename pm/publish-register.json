@@ -1,0 +1,490 @@
+{
+  "$schema": "gtcx://ecosystem-os/publish-register/v2",
+  "version": "2.3.0",
+  "updated": "2026-06-24",
+  "ownerRepo": "ecosystem-os",
+  "initiative": "INIT-DOC-FLEET-PUBLISH",
+  "initiativeStatus": "active-v4",
+  "programCharter": "docs/strategy/init-doc-fleet-publish.md",
+  "coverageMatrix": "ops/gtm/fleet-catalog-index.md",
+  "spaces": [
+    {
+      "id": "gtcx-ecosystem",
+      "provider": "gitbook",
+      "sourcePath": "docs/gitbook/ecosystem/",
+      "summary": "docs/gitbook/ecosystem/SUMMARY.md",
+      "status": "live",
+      "targetStatus": "live",
+      "agentInit": "docs/agents/provisioning/AGENT-INIT-CANON.md",
+      "ownerRepo": "ecosystem-os",
+      "refreshCycle": "on-change"
+    },
+    {
+      "id": "gtcx-protocols",
+      "provider": "gitbook",
+      "sourcePath": "docs/reference/gitbooks/gtcx-protocols/",
+      "summary": "docs/reference/gitbooks/gtcx-protocols/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "live",
+      "ownerRepo": "gtcx-os",
+      "ownerSlice": "platform/protocols",
+      "authoringPath": "gtcx-os/platform/protocols/docs/gitbook/",
+      "syncManifest": "docs/reference/gitbooks/gtcx-protocols/.sync-manifest.json",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "apex-engine",
+      "provider": "gitbook",
+      "sourcePath": "baseline-os/docs/gitbook/apex-engine/",
+      "summary": "baseline-os/docs/gitbook/publish/scorecard.md",
+      "status": "planned",
+      "targetStatus": "synced",
+      "ownerRepo": "baseline-os",
+      "inbound": "bridge-os/docs/operations/coordination/from-baseline-os-apex-engine-program-2026-06-14.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "baselineos",
+      "provider": "gitbook",
+      "sourcePath": "baseline-os/docs/gitbook/",
+      "summary": "baseline-os/docs/gitbook/publish/scorecard.md",
+      "status": "synced",
+      "targetStatus": "live",
+      "ownerRepo": "baseline-os",
+      "inbound": "bridge-os/docs/operations/coordination/from-baseline-os-docs-product-roadmap-2026-06-15.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "compliance-os",
+      "provider": "gitbook",
+      "sourcePath": "compliance-os/docs/gitbook/",
+      "summary": "compliance-os/docs/gitbook/README.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "compliance-os",
+      "inbound": "ops/gtm/inbound-tickets/to-compliance-os-gitbook-sync-contract-2026-06-13.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "ledger-ui",
+      "provider": "gitbook",
+      "sourcePath": "ledger-ui/docs/gitbook/",
+      "summary": "ledger-ui/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "ledger-ui",
+      "inbound": "ops/gtm/inbound-tickets/to-ledger-ui-gitbook-sync-contract-2026-06-13.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "markets-os",
+      "provider": "gitbook",
+      "sourcePath": "markets-os/docs/gitbook/",
+      "summary": "markets-os/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "live",
+      "ownerRepo": "markets-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "agile-os",
+      "provider": "gitbook",
+      "sourcePath": "agile-os/docs/gitbook/",
+      "summary": "agile-os/docs/gitbook/README.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "agile-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "fabric-os",
+      "provider": "gitbook",
+      "sourcePath": "fabric-os/docs/gitbook/",
+      "summary": "fabric-os/docs/gitbook/SUMMARY.md",
+      "status": "synced",
+      "targetStatus": "synced",
+      "ownerRepo": "fabric-os",
+      "refreshCycle": "on-owner-release"
+    },
+    {
+      "id": "gtcx-mobile",
+      "provider": "gitbook",
+      "sourcePath": "gtcx-mobile/docs/gitbook/",
+      "summary": "gtcx-mobile/docs/gitbook/README.md",
+      "status": "planned",
+      "targetStatus": "synced",
+      "ownerRepo": "gtcx-mobile",
+      "inbound": "ops/gtm/inbound-tickets/to-gtcx-mobile-gitbook-sync-contract-2026-06-13.md",
+      "syncContract": "archive/legacy-docs-strategy/gitbook-product-sync-contract.md",
+      "refreshCycle": "on-owner-release",
+      "notes": "Owner scaffold pending — row tracked; not live/synced until path exists"
+    },
+    {
+      "id": "legacy-gitbook",
+      "provider": "gitbook",
+      "sourcePath": "docs/gitbook/",
+      "summary": "docs/gitbook/summary.md",
+      "status": "live",
+      "targetStatus": "live",
+      "ownerRepo": "ecosystem-os",
+      "notes": "Legacy guides/product migration per Protocol 1 v2.0 — Sprint 45"
+    }
+  ],
+  "fleetRows": [
+    {
+      "repo": "ecosystem-os",
+      "gitbook": "gtcx-ecosystem",
+      "gtm": "ops/gtm/",
+      "devDocs": "docs/gitbook/api/",
+      "onboarding": "docs/onboarding/",
+      "status": "partial"
+    },
+    {
+      "repo": "canon-os",
+      "gitbook": "pointer",
+      "gtm": "pointer",
+      "devDocs": "audit-framework",
+      "onboarding": "pointer",
+      "status": "constitution-hub"
+    },
+    {
+      "repo": "gtcx-os",
+      "gitbook": "gtcx-protocols",
+      "gtm": "pending",
+      "devDocs": "platform/protocols/docs/gitbook/",
+      "onboarding": "pending",
+      "status": "partial"
+    },
+    {
+      "repo": "compliance-os",
+      "gitbook": "compliance-os",
+      "gtm": "pending",
+      "devDocs": "compliance-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "gtcx-mobile",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "ledger-ui",
+      "gitbook": "ledger-ui",
+      "gtm": "pending",
+      "devDocs": "ledger-ui/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "markets-os",
+      "gitbook": "markets-os",
+      "gtm": "pending",
+      "devDocs": "markets-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "agile-os",
+      "gitbook": "agile-os",
+      "gtm": "pending",
+      "devDocs": "agile-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "fabric-os",
+      "gitbook": "fabric-os",
+      "gtm": "pending",
+      "devDocs": "fabric-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "synced"
+    },
+    {
+      "repo": "gtcx-platforms",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-core",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-infrastructure",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-intelligence",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "exploration-os",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "terminal-os",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "baseline-os",
+      "gitbook": "baselineos",
+      "gtm": "pending",
+      "devDocs": "baseline-os/docs/gitbook/",
+      "onboarding": "owner",
+      "status": "partial"
+    },
+    {
+      "repo": "gtcx-agentic",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "bridge-os",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-markets",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "terra-os",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "sensei-ai",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "nyota-ai",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "griot-ai",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "veritas-ai",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-hardware",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    },
+    {
+      "repo": "gtcx-operations",
+      "gitbook": "planned",
+      "gtm": "pending",
+      "devDocs": "owner",
+      "onboarding": "owner",
+      "status": "gap"
+    }
+  ],
+  "printLane": {
+    "$schema": "gtcx://ecosystem-os/publish-register-print-lane/v1",
+    "version": "1.0.0",
+    "updated": "2026-06-24",
+    "spec": "canon-os/machine/spec/fleet-print-publishing-architecture.json",
+    "roadmap": "canon-os/machine/spec/fleet-print-publishing-roadmap.json",
+    "engine": "canon-os/machine/spec/publishing-engine.json",
+    "command": "pnpm publish:print",
+    "fleetCommand": "pnpm --dir bridge-os ecosystem:print:publish",
+    "fleetRows": [
+      {
+        "repo": "canon-os",
+        "profile": "constitution-hub",
+        "instances": "docs/reference/templates/formal/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "kits": ["jlcorp-bwg", "teemane-k3"]
+      },
+      {
+        "repo": "ecosystem-os",
+        "profile": "ecosystem-operator",
+        "instances": "—",
+        "output": "—",
+        "status": "n/a"
+      },
+      {
+        "repo": "bridge-os",
+        "profile": "program-office",
+        "instances": "—",
+        "output": "audit/evidence/",
+        "status": "witness"
+      },
+      {
+        "repo": "agile-os",
+        "profile": "program-office",
+        "instances": "—",
+        "output": "audit/evidence/",
+        "status": "witness"
+      },
+      {
+        "repo": "baseline-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R6 reference impl + sample render"
+      },
+      {
+        "repo": "compliance-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "exploration-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "fabric-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "griot-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "gtcx-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "ledger-ui",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "markets-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "nyota-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "sensei-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "terminal-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "terra-os",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      },
+      {
+        "repo": "veritas-ai",
+        "profile": "product",
+        "instances": "docs/reference/templates/formal/instances/",
+        "output": "documents/print/output/deals/",
+        "status": "live",
+        "note": "FEAT-PRINT-R8 smoke tear-sheet render"
+      }
+    ]
+  }
+}
