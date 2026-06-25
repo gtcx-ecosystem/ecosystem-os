@@ -62,6 +62,22 @@
     "venture-os",
     "pm"
   ],
+  "permissible_on_approval": {
+    "machine": {
+      "approvalId": "P35-PHYSICAL-RENAME-2026-06-24",
+      "approvedAt": "2026-06-24T19:36:00.000Z",
+      "approver": "platform-architect",
+      "rationale": "Symlink machine→pm for canon-os product:compile backward compat after P35 physical pm/ hub",
+      "expires": "2027-06-24T00:00:00.000Z"
+    },
+    "operations": {
+      "approvalId": "P35-PHYSICAL-RENAME-2026-06-24",
+      "approvedAt": "2026-06-25T00:14:00.000Z",
+      "approver": "platform-architect",
+      "rationale": "Symlink operations→ops for canon-os fleet tooling (product:compile, machine:sync, agile:check) backward compat after P35 physical ops/ hub",
+      "expires": "2027-06-24T00:00:00.000Z"
+    }
+  },
   "allowed_dot_directories": [
     ".github",
     ".husky",
@@ -83,7 +99,6 @@
     "node_modules",
     "tsconfig.tsbuildinfo"
   ],
-  "permissible_on_approval": {},
   "forbidden_root_names": {
     "00-archive": "Use archive/ (P35 v5).",
     "01-docs": "Use docs/ (P35 v5).",
