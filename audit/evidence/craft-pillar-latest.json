@@ -1,11 +1,11 @@
 {
   "schema": "gtcx://audit/craft-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-22",
+  "date": "2026-06-25",
   "score100": 64,
   "published": false,
   "provisional": true,
-  "blockedBy": "compliance",
+  "blockedBy": "technicalExcellence",
   "unlockThreshold100": 85,
   "metrics": {
     "selectivity-ingredients": {
