@@ -1,9 +1,9 @@
 {
   "schema": "gtcx://canon-os/docs-fractal-mpr-check/v1",
-  "generatedAt": "2026-06-24T00:41:55.255Z",
+  "generatedAt": "2026-06-25T00:14:31.999Z",
   "repo": "ecosystem-os",
   "policyUpdated": "2026-06-19",
-  "pass": false,
+  "pass": true,
   "gates": [
     {
       "id": "policy:present",
@@ -297,13 +297,13 @@
     },
     {
       "id": "layer:product:pillarContract-complete",
-      "ok": false,
-      "detail": "missing: compliance, technicalExcellence, craft, worldClass, trustAndSafety, creativityInnovation, commercialValue, defensiveMoat, agenticEmpowerment, ecosystemIntegration, ipMagic"
+      "ok": true,
+      "detail": "all 11 pillars in pack"
     },
     {
       "id": "layer:product:fractalMpr-present",
-      "ok": false,
-      "detail": "pack missing fractalMpr { policy, layerWitness, scorecard }"
+      "ok": true,
+      "detail": "fractalMpr block present"
     },
     {
       "id": "layer:product:scorecard-exists",
