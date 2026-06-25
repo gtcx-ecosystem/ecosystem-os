@@ -1,9 +1,0 @@
-{
-  "schema": "gtcx://pm/readiness-snapshot/v1",
-  "repo": "ecosystem-os",
-  "generatedAt": "2026-06-14T15:46:52.309Z",
-  "composite100": 85,
-  "deployReady": false,
-  "dimensions": {},
-  "note": "Scaffold — run composite-lift after compliance uplift"
-}
