@@ -3,7 +3,7 @@ storyId: STORY-AGILE-ZENHUB-CONTRACT
 initiativeId: INIT-ECOSYSTEM-DOCS
 canonBundleId: FEAT-AGILE-DELIVERY-CONTRACT
 title: 'STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface'
-status: in_progress
+status: done
 priority: P1
 owner: ecosystem-os
 document_type: product
