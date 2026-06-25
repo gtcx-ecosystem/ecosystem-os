@@ -2,7 +2,7 @@
 featureId: FEAT-DOCS-IA-ECO
 initiativeId: INIT-ECOSYSTEM-DOCS
 title: 'FEAT-DOCS-IA-ECO — Fleet docs IA lift for ecosystem-os'
-status: in_progress
+status: done
 priority: P1
 owner: ecosystem-os
 document_type: product
