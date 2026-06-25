@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://baseline-os/forensic-parse-artifact/v1",
   "programId": "FORENSIC-PARSE-001",
-  "parsedAt": "2026-06-25T00:24:33.771Z",
+  "parsedAt": "2026-06-25T03:06:15.296Z",
   "repo": "ecosystem-os",
   "corpus": {
     "docs": {
@@ -124,13 +124,15 @@
         "INIT-ECOSYSTEM-DOCS",
         "INIT-ECOSYSTEM-VENTURE",
         "INIT-ECOSYSTEM-AGENCY",
-        "INIT-ECOSYSTEM-SHIP"
+        "INIT-M5-",
+        "BL-O-01",
+        "INIT-M7-"
       ]
     },
     "sessions": {
-      "ledgerCount": 20,
-      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-ecosystem-os/agent-transcripts/3ff81095-ac2b-4854-8305-41fc94df660b/3ff81095-ac2b-4854-8305-41fc94df660b.jsonl",
-      "transcriptLines": 687,
+      "ledgerCount": 21,
+      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-terminal-os/agent-transcripts/3da4db96-edcd-44ae-b33b-9000a59d5910/3da4db96-edcd-44ae-b33b-9000a59d5910.jsonl",
+      "transcriptLines": 681,
       "userQueryCount": 30
     }
   },
@@ -141,7 +143,7 @@
       "candidates": [
         {
           "personaId": "platform-architect",
-          "weight": 19
+          "weight": 20
         }
       ]
     },
@@ -216,86 +218,87 @@
         "plus",
         "assessment",
         "start",
-        "session:",
-        "ecosystem:docs:tree:fleet:strict",
-        "--dir",
-        "docs:tree:check",
-        "fabric:ops:check",
-        "fabric:ops:check:strict",
-        "ops:consumption:check:write",
-        "agile:check",
-        "product:compile",
-        "four-plane",
-        "machine:sync",
-        "product:compile:check",
-        "docs:pack:pillar-contract:check",
-        "canon:synthesize:check",
-        "canon:contracts:check",
+        "context",
+        "ops:check",
+        "agent:protocols:check",
+        "agent:conduct:check",
+        "agent:auto-dev:check",
+        "dev",
         "session",
         "next",
         "gates",
         "hub",
+        "pm:surface-gtm-roadmaps:audit",
+        "docs:product:check",
+        "pm:surface-execution:close",
+        "pm:surface-execution:check",
+        "pm:surface-forensic-pack:publish",
+        "pm:surface-forensic-pack:close",
+        "--dir",
+        "docs:tree:check",
+        "fabric:ops:check",
+        "fabric:ops:check:strict",
+        "fabric:ops-contracts:check",
+        "agile:check",
+        "ops:consumption:check",
         "mcp",
         "to",
-        "persona:read-witness",
+        "wiring",
+        "shapes",
         "serve",
         "agent:consumption:check",
-        "canon:consumption:check",
+        "--filter",
+        "mirror",
+        "docs:pack:pillar-contract:check",
+        "canon:contracts:check",
+        "pm:sync",
         "repo:provision:check",
-        "wiring",
-        "docs:tree:check:strict",
-        "docs:product:check",
+        "Baseline runtime",
         "gtm:readiness:check",
-        "gtm:readiness:check:write",
-        "ops:check",
-        "summary",
-        "publish:check",
-        "script",
-        "ceremony",
-        "file",
-        "files"
+        "pm:subscriber-scale:check",
+        "pm:subscriber-scale:check:strict"
       ],
       "commands": [
         "baseline start",
-        "baseline session:",
+        "baseline context",
         "pnpm agent:next-work",
-        "pnpm ecosystem:docs:tree:fleet:strict",
+        "pnpm ops:check",
+        "pnpm agent:protocols:check",
+        "pnpm agent:conduct:check",
+        "pnpm agent:auto-dev:check",
+        "pnpm dev",
+        "baseline session",
+        "baseline next",
+        "baseline gates",
+        "baseline hub",
+        "pnpm session",
+        "pnpm pm:surface-gtm-roadmaps:audit",
+        "pnpm docs:product:check",
+        "pnpm pm:surface-execution:close",
+        "pnpm pm:surface-execution:check",
+        "pnpm pm:surface-forensic-pack:publish",
+        "pnpm pm:surface-forensic-pack:close",
         "pnpm --dir",
         "pnpm docs:ia:check",
         "pnpm docs:tree:check",
         "pnpm fabric:ops:check",
         "pnpm fabric:ops:check:strict",
-        "pnpm ops:consumption:check:write",
+        "pnpm fabric:ops-contracts:check",
         "pnpm agile:check",
-        "pnpm product:compile",
-        "baseline four-plane",
-        "pnpm machine:sync",
-        "pnpm product:compile:check",
-        "pnpm docs:pack:pillar-contract:check",
-        "pnpm canon:synthesize:check",
-        "pnpm canon:contracts:check",
-        "pnpm session",
+        "pnpm ops:consumption:check",
         "pnpm next",
         "pnpm gates",
         "pnpm hub",
         "pnpm mcp",
         "baseline to",
-        "pnpm persona:read-witness",
+        "baseline wiring",
+        "baseline shapes",
+        "baseline serve",
         "pnpm serve",
         "pnpm agent:consumption:check",
-        "pnpm canon:consumption:check",
-        "pnpm repo:provision:check",
-        "baseline wiring",
-        "pnpm docs:tree:check:strict",
-        "pnpm docs:product:check",
-        "pnpm gtm:readiness:check",
-        "pnpm gtm:readiness:check:write",
-        "pnpm ops:check",
-        "pnpm agency:check",
-        "baseline summary",
-        "pnpm publish:check",
-        "baseline script",
-        "baseline ceremony"
+        "pnpm --filter",
+        "baseline mirror",
+        "pnpm docs:pack:pillar-contract:check"
       ]
     },
     "studio": {
@@ -303,7 +306,8 @@
         "folder-spec",
         "docs-integrity-pack",
         "relocation-report",
-        "folder-spec"
+        "folder-spec",
+        "deliverable"
       ],
       "provenanceRequired": true
     },
@@ -313,6 +317,7 @@
       "compliance-audit"
     ],
     "initiatives": [
+      "BL-O-01",
       "DOC-01",
       "DOC-02",
       "DOC-03",
@@ -345,8 +350,9 @@
       "INIT-DOCS-PROVISIONING-V1-W2",
       "INIT-ECOSYSTEM-AGENCY",
       "INIT-ECOSYSTEM-DOCS",
-      "INIT-ECOSYSTEM-SHIP",
       "INIT-ECOSYSTEM-VENTURE",
+      "INIT-M5-",
+      "INIT-M7-",
       "XR-102",
       "XR-510"
     ],
@@ -356,6 +362,16 @@
     ]
   },
   "ingestSignals": [
+    {
+      "id": "initiative:BL-O-01",
+      "kind": "initiative",
+      "text": "Active initiative reference: BL-O-01",
+      "source": "docs+sessions",
+      "refs": [
+        "BL-O-01"
+      ],
+      "confidence": 0.85
+    },
     {
       "id": "initiative:DOC-01",
       "kind": "initiative",
@@ -497,16 +513,6 @@
       "confidence": 0.85
     },
     {
-      "id": "initiative:ECO-DOCS-004",
-      "kind": "initiative",
-      "text": "Active initiative reference: ECO-DOCS-004",
-      "source": "docs+sessions",
-      "refs": [
-        "ECO-DOCS-004"
-      ],
-      "confidence": 0.85
-    },
-    {
       "id": "persona:platform-architect",
       "kind": "persona",
       "text": "Dominant persona signal: platform-architect",
@@ -617,41 +623,41 @@
       "confidence": 0.7
     },
     {
-      "id": "query:37c3e7e4",
+      "id": "query:a7aab5ff",
       "kind": "operator-intent",
-      "text": "execute-roadmap",
+      "text": "Thursday, Jun 25, 2026, 2:11 AM (UTC+2)\n\nexecute roadmap",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:37c3e7e4",
+      "id": "query:a9040d3d",
       "kind": "operator-intent",
-      "text": "execute-roadmap",
+      "text": "Thursday, Jun 25, 2026, 2:31 AM (UTC+2)\n\nexecute roadmap",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:37c3e7e4",
+      "id": "query:a9040d3d",
       "kind": "operator-intent",
-      "text": "execute-roadmap",
+      "text": "Thursday, Jun 25, 2026, 2:31 AM (UTC+2)\n\nexecute roadmap",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:6fd1afd4",
+      "id": "query:a9b0b8dc",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:10 AM (UTC+2)\n\n baseline start",
+      "text": "Thursday, Jun 25, 2026, 2:41 AM (UTC+2)\n\nexecute roadmap",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:9f8a1105",
+      "id": "query:894d5abe",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:17 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 4:56 AM (UTC+2)\n\nexecute roadmap",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65

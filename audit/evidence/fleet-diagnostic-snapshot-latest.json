@@ -2,7 +2,7 @@
   "schema": "gtcx://audit/fleet-diagnostic-snapshot/v2",
   "repo": "ecosystem-os",
   "tier": "ecosystem-operating-system",
-  "refreshedAt": "2026-06-24T17:41:32.662Z",
+  "refreshedAt": "2026-06-25T03:13:25.948Z",
   "sessionPhase": null,
   "laneSeparation": {
     "policy": "GS-MATURITY-LANE-001",
@@ -20,23 +20,26 @@
     },
     "multiPillar": {
       "composite100": 59,
-      "trustCap100": 74,
+      "trustCap100": 66,
       "compliance100": 69,
       "published": false,
-      "witnessPath": "audit/evidence/five-pillar-latest.json",
-      "evaluatedAt": "2026-06-22T23:22:52.933Z",
-      "ageHours": 42.31102292724609,
+      "witnessPath": "audit/evidence/mpr-repo-latest.json",
+      "evaluatedAt": "2026-06-25T03:07:25.178Z",
+      "ageHours": 0.1002133433702257,
       "stale": false,
       "refreshCommand": "pnpm audit:mpr:repo:run -- --repo <repo> --write"
     },
     "master": {
-      "score10": 10,
-      "score100": 100,
-      "productionReady": true,
-      "gaps": [],
-      "witnessPath": "audit/evidence/composite-audit-latest.json",
-      "ageHours": 116.05903260409885,
-      "stale": true,
+      "score10": 7.5,
+      "score100": 75,
+      "productionReady": false,
+      "gaps": [
+        "ops:check failed",
+        "P35 strict"
+      ],
+      "witnessPath": "audit/evidence/master-audit-latest.json",
+      "ageHours": 0.11911826666937934,
+      "stale": false,
       "refreshCommand": "pnpm ecosystem:master:audit --repo <repo> --write"
     },
     "gtm": {
@@ -285,9 +288,9 @@
       },
       "engineeringMaturity": {
         "lane": "engineeringMaturity",
-        "score100": 54,
+        "score100": 51,
         "status": "in-progress",
-        "witnessPath": "audit/evidence/five-pillar-latest.json",
+        "witnessPath": "audit/evidence/mpr-repo-latest.json",
         "mprPublished": false
       },
       "integratorPilotGtm": {
@@ -367,7 +370,7 @@
     }
   },
   "rollup": {
-    "avgScore100": 74,
+    "avgScore100": 67,
     "anyStale": true,
     "pilotReady": false,
     "integratorPilotReady": false,

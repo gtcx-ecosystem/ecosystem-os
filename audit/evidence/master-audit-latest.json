@@ -1,11 +1,13 @@
 {
-  "schema": "gtcx://audit/composite/v1",
   "repo": "ecosystem-os",
   "date": "2026-06-25",
-  "composite100": 75,
+  "score": 7.5,
   "productionReady": false,
-  "source": "ecosystem-master-audit-gate-rollup",
-  "gates": {
+  "gaps": [
+    "ops:check failed",
+    "P35 strict"
+  ],
+  "checks": {
     "baselineConfig": {
       "ok": true,
       "sor": true,
@@ -35,11 +37,5 @@
       "ok": true,
       "detail": "To https://github.com/gtcx-ecosystem/ecosystem-os.git\n   3cc1203..0074a2f  HEAD "
     }
-  },
-  "gaps": [
-    "ops:check failed",
-    "P35 strict"
-  ],
-  "note": "Gate rollup — replace with five-core witness composite after A1–A5 audits",
-  "replaces": "master-audit"
+  }
 }

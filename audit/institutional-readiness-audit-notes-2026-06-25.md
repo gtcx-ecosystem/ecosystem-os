@@ -32,8 +32,10 @@ buyer-facing adoption surface did **not** yet change.
 
 - Institutional market fit: **Medium** (unchanged) — strong as narrative and
   ecosystem coordination; not a procurement-ready product surface.
-- Product completeness (as a docs/GTM hub): **High** — internal contracts, IA,
-  agile, publish, and GTM gates are all green and witnessed; roadmap closed.
+- Product completeness (as a docs/GTM hub): **Good, not perfect** — IA, agile,
+  publish, and GTM gates are green and witnessed and the roadmap is closed, but the
+  weighted five-core composite is **75/100 (B)**: product-excellence and
+  production-grade depth, not per-gate pass/fail, is the binding constraint.
 - Enterprise readiness (buyer-facing): **Limited** (unchanged) — still lacks
   deployable bundles, per-component readiness labels, and buyer journeys.
 - 90-day adoption feasibility: **Medium** — improved evidence integrity helps
@@ -42,12 +44,19 @@ buyer-facing adoption surface did **not** yet change.
 
 ## Candid Opinion
 
-The repo is now in excellent **internal** health: every fleet gate is green, the
-P35 v5 hub migration is reconciled and committed, the roadmap is closed at the
-initiative level, and claims are backed by fresh witnesses. That closes the
-"evidence integrity" risk flagged implicitly last cycle — internal composite 100
-is now corroborated by a clean, witnessed working tree rather than a stale
-snapshot.
+Fleet-coordination health is strong: every fleet gate is green (IA, agile,
+publish, GTM, layout, ops), the P35 v5 hub migration is reconciled and committed,
+the roadmap is closed at the initiative level, and the working tree is clean.
+
+But refreshing the five-core machine composite this cycle produced the single most
+important finding: the previously cited **composite of 100 was stale** (dated
+2026-06-15). Re-running the audit against the 2026-06-25 tree drops it to
+**75 / `productionReady: false`** — corroborated independently by the regenerated
+master-audit (**7.5/10**) and the tooling's own fresh-platform-audit (**7.0/10,
+A3**). The green per-gate checks are real, but the *weighted* composite that
+accounts for product-excellence, production-grade, and compliance depth is a B,
+not a perfect score. Evidence integrity therefore improved by *exposing* an
+inflated number, not by confirming it.
 
 However, the **institutional-readiness** thesis from 2026-06-24 stands: a 100/100
 internal composite is not the same as buyer adoption readiness. The priority gaps
@@ -61,9 +70,11 @@ remains powerful only if it makes adoption feel simpler rather than larger.
 **A3 — Supporting GTM and adoption substrate** (unchanged).
 
 Internal rigor rose; the adoption-facing label does not move until the
-navigation/readiness-hub uplift ships. Numeric institutional-readiness score:
-**6.5/10** (up from 6/10) — credited entirely to evidence integrity and roadmap
-closure, not to new buyer-facing capability.
+navigation/readiness-hub uplift ships. Buyer-lens institutional-readiness score:
+**6.5/10** (up from 6/10), converging with the machine readings refreshed this
+cycle — master-audit **7.5/10**, five-core composite **75/100 (B, not
+production-ready)**, fresh-platform-audit **7.0/10**. Consensus: **~7/10, A3** —
+credited to evidence integrity and roadmap closure, not new buyer-facing capability.
 
 ## Priority Gaps (carried forward — still open)
 
@@ -71,8 +82,10 @@ closure, not to new buyer-facing capability.
 2. Mark every component by readiness label: A0, A1, A2, A3, or A4 (A0–A4 dashboard).
 3. Keep ecosystem narrative from creating overcommitment risk in procurement.
 4. Evidence-packet index linking ecosystem narrative → per-repo audits + deploy artifacts.
-5. Refresh the five-core machine composite (`composite-audit-latest.json` dated
-   2026-06-15) — re-run `pnpm --dir ../bridge-os ecosystem:five-core-audits:check --repo ecosystem-os` so the 100 composite reflects the 2026-06-25 tree.
+5. **Close the composite gap to production-ready.** The refreshed five-core
+   composite is **75 / not production-ready** (was a stale 100). Raise
+   product-excellence and production-grade core scores — these, not the green
+   per-gate checks, are what gate the composite above the B threshold.
 
 ## Evidence (this audit)
 
@@ -86,7 +99,9 @@ closure, not to new buyer-facing capability.
 | Publish | `publish:check` 9 live/synced · 0 error |
 | Layout / ops | `layout:check` + `ops:check` exit 0 |
 | Cross-repo escalation | `ops/gtm/inbound-tickets/to-bridge-os-roadmap-complete-handoff-2026-06-25.md` |
-| Five-core composite (stale) | `audit/evidence/composite-audit-latest.json` — 100, dated 2026-06-15 |
+| Five-core composite (refreshed) | `audit/evidence/composite-audit-latest.json` — **75 · productionReady false** · 2026-06-25 |
+| Master-audit (refreshed) | `audit/evidence/master-audit-latest.json` — **7.5/10** · 2026-06-25 |
+| Machine cross-check | regenerated fresh-platform read — **7.0/10 · A3** (consistent with master-audit) |
 
 ---
 
