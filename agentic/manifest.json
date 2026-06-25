@@ -1,0 +1,9 @@
+{
+  "$schema": "gtcx://agentic/monorepo-bridge/v1",
+  "repo": "ecosystem-os",
+  "role": "fleet-documentation-home",
+  "updated": "2026-06-24",
+  "pointer": "../agents/manifest.json",
+  "fatHub": "../bridge-os/",
+  "note": "P35 v5 agentic hub — canonical bridge manifest at agents/manifest.json"
+}
