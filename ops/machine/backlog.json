@@ -1,0 +1,121 @@
+{
+  "$schema": "gtcx://ops/pm-backlog/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-24",
+  "syncSource": "pnpm product:compile",
+  "active": {
+    "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+    "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+    "status": "in_progress",
+    "owner": "ecosystem-os",
+    "priority": "P1",
+    "tier": "in_progress"
+  },
+  "backlogClear": false,
+  "stories": [
+    {
+      "id": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "in_progress",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-AGILE-DELIVERY-CONTRACT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-AGILE-ZENHUB-CONTRACT.md"
+    },
+    {
+      "id": "STORY-DOCS-IA-ECO",
+      "title": "STORY-DOCS-IA-ECO — Fleet docs IA lift",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-DOCS-IA-ECO",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md"
+    },
+    {
+      "id": "STORY-P35-LAYOUT",
+      "title": "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+      "status": "in_progress",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-P35-LAYOUT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-P35-LAYOUT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-P35-LAYOUT.md"
+    },
+    {
+      "id": "STORY-PM-FOLDER-R1",
+      "title": "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+      "status": "done",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-DOCS",
+      "canonBundleId": "FEAT-PM-FOLDER-R1",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-PM-FOLDER-R1.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-PM-FOLDER-R1.md"
+    },
+    {
+      "id": "STORY-VEN-FUNDRAISE-SYNC",
+      "title": "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
+      "status": "open",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-VENTURE",
+      "canonBundleId": "FEAT-VEN-FUNDRAISE-SYNC",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-VEN-FUNDRAISE-SYNC.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-VEN-FUNDRAISE-SYNC.md"
+    },
+    {
+      "id": "STORY-VEN-OS-HANDOFF",
+      "title": "STORY-VEN-OS-HANDOFF — venture-os inbound handoff",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-VENTURE",
+      "canonBundleId": "FEAT-VEN-OS-HANDOFF",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-VEN-OS-HANDOFF.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-VEN-OS-HANDOFF.md"
+    }
+  ],
+  "crossRepoRefs": [],
+  "agileHub": null,
+  "roadmapPath": "machine/execution-roadmap.md",
+  "_generated": {
+    "by": "product-compile.mjs",
+    "protocol": "P57-product-delivery-compile",
+    "at": "2026-06-24T17:25:20.891Z"
+  },
+  "execution": {
+    "backlogClear": false,
+    "active": {
+      "storyId": "STORY-AGILE-ZENHUB-CONTRACT",
+      "title": "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+      "status": "in_progress",
+      "owner": "ecosystem-os",
+      "priority": "P1",
+      "tier": "in_progress"
+    },
+    "openCount": 3,
+    "totalCount": 6,
+    "doneCount": 3,
+    "openIds": [
+      "STORY-AGILE-ZENHUB-CONTRACT",
+      "STORY-P35-LAYOUT",
+      "STORY-VEN-FUNDRAISE-SYNC"
+    ]
+  },
+  "_mirror": {
+    "of": "machine/backlog.json",
+    "at": "2026-06-24T17:25:20.926Z",
+    "note": "Shim only — P22 and gates read machine/backlog.json"
+  }
+}

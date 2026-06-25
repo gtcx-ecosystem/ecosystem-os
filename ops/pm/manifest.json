@@ -1,0 +1,31 @@
+{
+  "$schema": "gtcx://ops/pm/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-24",
+  "status": "current",
+  "backlogSoR": "pm/backlog.json",
+  "initiatives": "pm/roadmap/initiatives.json",
+  "publishRegister": "pm/publish-register.json",
+  "compile": "pnpm product:compile",
+  "local": {
+    "agileDocs": "agile",
+    "executionRoadmap": "pm/execution-roadmap.md",
+    "workSelection": "docs/operations/agent-work-selection.md",
+    "autoDevState": "pm/auto-dev-state.md",
+    "nextWorkScript": null
+  },
+  "sync": {
+    "command": "pnpm machine:sync",
+    "output": "ops/machine/backlog.json",
+    "nextWorkScript": null
+  },
+  "agileReference": {
+    "hub": "agile-os",
+    "referenceImpl": "../agile-os/agile",
+    "fleetBacklog": "../agile-os/pm/ecosystem-sprint-backlog.json",
+    "strategy": "../agile-os/docs/strategy/fleet-agile-hub.md",
+    "zenhubStandard": "../agile-os/pm/spec/pm-zenhub-standard.json",
+    "zenhubRegistry": "../bridge-os/config/zenhub-ecosystem-registry.json"
+  },
+  "note": "P29 pm slice — P35 physical ops/ + pm/ hubs; machine→pm symlink for canon compile"
+}
