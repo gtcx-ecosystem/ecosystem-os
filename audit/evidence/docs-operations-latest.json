@@ -1,14 +1,14 @@
 {
-  "schema": "gtcx://canon-os/docs-operations-check/v1",
+  "schema": "gtcx://canon-os/docs-operations-check/v3",
   "repo": "ecosystem-os",
   "profile": "fleet-documentation",
-  "at": "2026-06-22T22:28:51.121Z",
+  "at": "2026-06-25T00:14:31.912Z",
   "ok": true,
   "gates": [
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-operations-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-operations-pack.json"
     },
     {
       "id": "spec:not-stub",
@@ -31,9 +31,29 @@
       "detail": "docs/operations/README.md"
     },
     {
-      "id": "root:docs/operations/FOLDER-SPEC.md",
+      "id": "root:docs/operations/agent-work-selection.md",
       "ok": true,
-      "detail": "docs/operations/FOLDER-SPEC.md"
+      "detail": "docs/operations/agent-work-selection.md"
+    },
+    {
+      "id": "root:docs/operations/cross-repo-coordination.md",
+      "ok": true,
+      "detail": "docs/operations/cross-repo-coordination.md"
+    },
+    {
+      "id": "forbid:loose-root-md",
+      "ok": true,
+      "detail": "README + scorecard only"
+    },
+    {
+      "id": "forbid:local-folder-spec",
+      "ok": true,
+      "detail": "operations/ — central spec via README only"
+    },
+    {
+      "id": "allowlist:subfolders",
+      "ok": true,
+      "detail": "pack profile subfolders"
     },
     {
       "id": "root-readme:cross-ref",
@@ -43,47 +63,187 @@
     {
       "id": "root-readme:ops-link",
       "ok": true,
-      "detail": "README must link ops/ machine SoR"
+      "detail": "README must link operations/ machine SoR"
     },
     {
-      "id": "root-folder-spec:pack-link",
+      "id": "readme:central-spec",
       "ok": true,
-      "detail": "FOLDER-SPEC cites pack"
+      "detail": "README links canon-os 05-operations + pack"
     },
     {
-      "id": "subfolder:runbooks",
+      "id": "subfolder-contract:present",
       "ok": true,
-      "detail": "docs/operations/runbooks/"
+      "detail": "docs-operations-subfolder-contract.json"
     },
     {
-      "id": "subfolder-file:runbooks/README.md",
-      "ok": true,
-      "detail": "docs/operations/runbooks/README.md"
-    },
-    {
-      "id": "subfolder:agent-init",
-      "ok": true,
-      "detail": "docs/operations/agent-init/"
-    },
-    {
-      "id": "subfolder-file:agent-init/README.md",
+      "id": "subfolder-readme:agent-init",
       "ok": true,
       "detail": "docs/operations/agent-init/README.md"
     },
     {
-      "id": "canonical:agent-init/agent-universal-instructions.md",
+      "id": "subfolder-children:agent-init",
       "ok": true,
-      "detail": "docs/operations/agent-init/agent-universal-instructions.md"
+      "detail": "fabric contract child folders"
     },
     {
-      "id": "subfolder:coordination",
+      "id": "subfolder-format:agent-init",
       "ok": true,
-      "detail": "docs/operations/coordination/"
+      "detail": "{slug}.md"
     },
     {
-      "id": "subfolder-file:coordination/README.md",
+      "id": "subfolder-readme:compliance",
+      "ok": true,
+      "detail": "docs/operations/compliance/README.md"
+    },
+    {
+      "id": "subfolder-children:compliance",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:compliance",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:coordination",
       "ok": true,
       "detail": "docs/operations/coordination/README.md"
+    },
+    {
+      "id": "subfolder-children:coordination",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:coordination",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:deployment",
+      "ok": true,
+      "detail": "docs/operations/deployment/README.md"
+    },
+    {
+      "id": "subfolder-children:deployment",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:deployment",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:organization",
+      "ok": true,
+      "detail": "docs/operations/organization/README.md"
+    },
+    {
+      "id": "subfolder-children:organization",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:organization",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:remediation",
+      "ok": true,
+      "detail": "docs/operations/remediation/README.md"
+    },
+    {
+      "id": "subfolder-children:remediation",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:remediation",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:repo",
+      "ok": true,
+      "detail": "docs/operations/repo/README.md"
+    },
+    {
+      "id": "subfolder-children:repo",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:repo",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:runbooks",
+      "ok": true,
+      "detail": "docs/operations/runbooks/README.md"
+    },
+    {
+      "id": "subfolder-children:runbooks",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:runbooks",
+      "ok": true,
+      "detail": "{system}-{action}.md"
+    },
+    {
+      "id": "subfolder-readme:structure",
+      "ok": true,
+      "detail": "docs/operations/structure/README.md"
+    },
+    {
+      "id": "subfolder-children:structure",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:structure",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:templates",
+      "ok": true,
+      "detail": "docs/operations/templates/README.md"
+    },
+    {
+      "id": "subfolder-children:templates",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:templates",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "subfolder-readme:workspace",
+      "ok": true,
+      "detail": "docs/operations/workspace/README.md"
+    },
+    {
+      "id": "subfolder-children:workspace",
+      "ok": true,
+      "detail": "fabric contract child folders"
+    },
+    {
+      "id": "subfolder-format:workspace",
+      "ok": true,
+      "detail": "{slug}.md"
+    },
+    {
+      "id": "fabric-contract:declared",
+      "ok": true,
+      "detail": "baseline-os → docs/operations/"
     }
   ]
 }
