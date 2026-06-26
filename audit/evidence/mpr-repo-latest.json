@@ -3,9 +3,9 @@
   "scope": "repo",
   "id": "ecosystem-os",
   "repo": "ecosystem-os",
-  "evaluatedAt": "2026-06-25T03:07:25.178Z",
-  "gitHead": "0074a2f2138d98d0651157c1ab2111156f5e5c95",
-  "date": "2026-06-25",
+  "evaluatedAt": "2026-06-26T11:34:23.358Z",
+  "gitHead": "418c92a97fd6597a141762c51572756bd50af4af",
+  "date": "2026-06-26",
   "weights": {
     "compliance": 0,
     "technicalExcellence": 0.15,
@@ -20,23 +20,23 @@
   },
   "quadrants": {
     "compliance": {
-      "score100": 69,
-      "published": false,
-      "provisional": true,
-      "blockedBy": "below-threshold",
+      "score100": 99,
+      "published": true,
+      "provisional": false,
+      "blockedBy": null,
       "unlockThreshold100": 85,
       "categories": {
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 45,
+          "score100": 100,
           "protocol": "P35",
           "items": [
             {
               "id": "p35-strict-pass",
               "label": "P35 layout strict GREEN",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 35,
               "severity": "P1",
               "optional": false,
@@ -57,8 +57,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -157,14 +157,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 50,
+          "score100": 100,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -274,7 +274,7 @@
               "weight": 40,
               "severity": "P2",
               "optional": false,
-              "detail": "1 dated sibling(s) with -latest witness — e.g. audit/evidence/master-audit-2026-06-25.json",
+              "detail": "6 dated sibling(s) with -latest witness — e.g. audit/agentic-innovation-audit-2026-06-25.md",
               "protocol": "P32"
             }
           ],
@@ -875,44 +875,23 @@
       },
       "hygieneViolations": [
         {
-          "id": "p35-strict-pass",
-          "categoryId": "layout-p35",
-          "label": "P35 layout strict GREEN",
-          "severity": "P1",
-          "detail": "p35Strict"
-        },
-        {
-          "id": "root-allowlist",
-          "categoryId": "layout-p35",
-          "label": "Root allowlist / workspace root cleanliness",
-          "severity": "P2",
-          "detail": "opsCheck"
-        },
-        {
-          "id": "ops-check-pass",
-          "categoryId": "ops-domains-p29",
-          "label": "pnpm ops:check exit 0",
-          "severity": "P1",
-          "detail": "opsCheck"
-        },
-        {
           "id": "witness-latest-only",
           "categoryId": "anti-version-bloat-p32",
           "label": "No dated audit/evidence siblings when *-latest.* exists",
           "severity": "P2",
-          "detail": "1 dated sibling(s) with -latest witness — e.g. audit/evidence/master-audit-2026-06-25.json"
+          "detail": "6 dated sibling(s) with -latest witness — e.g. audit/agentic-innovation-audit-2026-06-25.md"
         }
       ],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 2
+      "openP1": 0
     },
     "technicalExcellence": {
       "score100": 38,
       "published": false,
       "provisional": true,
-      "blockedBy": "compliance",
+      "blockedBy": "below-threshold",
       "unlockThreshold100": 85,
       "metrics": {
         "engineering-production": {
@@ -993,7 +972,7 @@
       "score100": 64,
       "published": false,
       "provisional": true,
-      "blockedBy": "compliance",
+      "blockedBy": "esl:ESL-2",
       "unlockThreshold100": 85,
       "metrics": {
         "selectivity-ingredients": {
@@ -1058,7 +1037,9 @@
       "craftFlags": {
         "interchangeable": false,
         "aiSlop": false
-      }
+      },
+      "eslRequired": "ESL-2",
+      "eslActive": "ESL-1"
     },
     "worldClass": {
       "score100": 34,
@@ -1178,10 +1159,10 @@
       "rubricSpec": "pm/spec/world-class-rubric.json",
       "rubricVersion": "1.0.0",
       "eslRequired": "ESL-3",
-      "eslActive": "ESL-2"
+      "eslActive": "ESL-1"
     },
     "trustAndSafety": {
-      "score100": 66,
+      "score100": 70,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1214,12 +1195,12 @@
           "score100": 60,
           "weight": 20,
           "freshFivePillar": true,
-          "versionBloatHits": 1
+          "versionBloatHits": 6
         },
         "independent-replay": {
-          "score100": 45,
+          "score100": 75,
           "weight": 15,
-          "opsCheck": false
+          "opsCheck": true
         }
       },
       "mode": "envelope-cap",
@@ -1228,15 +1209,15 @@
       "publishGate": {
         "minConfidence": "B",
         "minTrust100": 70,
-        "blocked": true
+        "blocked": false
       }
     }
   },
-  "foundationComposite100": 51,
-  "fullComposite100": 66,
-  "trustCap100": 66,
-  "composite100": 59,
-  "composite100Raw": 69,
+  "foundationComposite100": 52,
+  "fullComposite100": 70,
+  "trustCap100": 70,
+  "composite100": 70,
+  "composite100Raw": 99,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
@@ -1244,9 +1225,9 @@
   "openP1": 0,
   "multiPillar": {
     "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
-    "foundationComposite100": 51,
-    "fullComposite100": 66,
-    "trustCap100": 66,
+    "foundationComposite100": 52,
+    "fullComposite100": 70,
+    "trustCap100": 70,
     "weights": {
       "compliance": 0,
       "technicalExcellence": 0.15,
@@ -1261,9 +1242,9 @@
     },
     "quadrants": {
       "compliance": {
-        "score100": 69,
-        "published": false,
-        "provisional": true,
+        "score100": 99,
+        "published": true,
+        "provisional": false,
         "blockedBy": [],
         "confidence": "B",
         "checks": []
@@ -1272,9 +1253,7 @@
         "score100": 38,
         "published": false,
         "provisional": true,
-        "blockedBy": [
-          "compliance"
-        ],
+        "blockedBy": [],
         "confidence": "B",
         "checks": []
       },
@@ -1283,7 +1262,7 @@
         "published": false,
         "provisional": true,
         "blockedBy": [
-          "compliance"
+          "esl:ESL-2"
         ],
         "confidence": "B",
         "checks": []
@@ -1299,7 +1278,7 @@
         "checks": []
       },
       "trustAndSafety": {
-        "score100": 66,
+        "score100": 70,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1326,8 +1305,7 @@
         "published": false,
         "provisional": true,
         "blockedBy": [
-          "worldClass<85",
-          "trustAndSafety<70"
+          "worldClass<85"
         ],
         "confidence": "C",
         "checks": [],
@@ -1356,8 +1334,7 @@
         "published": false,
         "provisional": true,
         "blockedBy": [
-          "technicalExcellence<85",
-          "trustAndSafety<70"
+          "technicalExcellence<85"
         ],
         "confidence": "C",
         "checks": [],
@@ -1387,8 +1364,7 @@
         "provisional": true,
         "blockedBy": [
           "craft<85",
-          "worldClass<85",
-          "trustAndSafety<70"
+          "worldClass<85"
         ],
         "confidence": "C",
         "checks": [],
