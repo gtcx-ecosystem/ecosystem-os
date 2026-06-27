@@ -1,0 +1,15 @@
+{
+  "$schema": "gtcx://ecosystem-os/feature-registry-shard/v1",
+  "version": "1.0.0",
+  "updated": "2026-06-27",
+  "owner": "ecosystem-os",
+  "features": [
+    {"id":"ECO-FEAT-001","name":"Fleet GitBook documentation home","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"documentation","classification":"core","specRef":"docs/gitbook/ecosystem/README.md","implementationRef":"docs/gitbook/","audit":{"witness":"audit/evidence/docs-tree-latest.json","protocol":"docs-tree"},"pillars":["documentation","operator-experience","auditability"]},
+    {"id":"ECO-FEAT-002","name":"Operator onboarding documentation","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"onboarding","classification":"core","specRef":"docs/onboarding/README.md","implementationRef":"platform/scripts/docs-foundation-check.mjs","audit":{"witness":"audit/evidence/docs-foundation-latest.json","protocol":"docs-foundation"},"pillars":["onboarding","operability","quality"]},
+    {"id":"ECO-FEAT-003","name":"GTM fleet catalog","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"gtm","classification":"gtm-enabler","specRef":"ops/gtm/fleet-catalog-index.md","implementationRef":"platform/scripts/gtm-readiness-check.mjs","audit":{"witness":"audit/evidence/gtm-readiness-check-latest.json","protocol":"gtm-readiness"},"pillars":["gtm","portfolio","evidence"]},
+    {"id":"ECO-FEAT-004","name":"Publish registry","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"publishing","classification":"core","specRef":"pm/publish-register.json","implementationRef":"platform/scripts/publish-register-check.mjs","audit":{"witness":"pm/ci/product-compile-latest.json","protocol":"publish-register"},"pillars":["publishing","coordination","auditability"]},
+    {"id":"ECO-FEAT-005","name":"Fundraising documentation pack","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"fundraising","classification":"gtm-enabler","specRef":"fundraising/README.md","implementationRef":"docs/business/strategy/","audit":{"witness":"audit/evidence/gtm-goal-report-latest.json","protocol":"gtm"},"pillars":["capital","gtm","documentation"]},
+    {"id":"ECO-FEAT-006","name":"Venture OS content surface","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"venture","classification":"competitive","specRef":"venture-os/README.md","implementationRef":"docs/product/roadmap/features/FEAT-VEN-OS-HANDOFF.md","audit":{"witness":"audit/evidence/product-excellence-audit-latest.json","protocol":"product-excellence"},"pillars":["venture","growth","documentation"]},
+    {"id":"ECO-FEAT-007","name":"Documentation quality gates","status":"current","shipStatus":"shipped","ownerRepo":"ecosystem-os","domain":"quality","classification":"core","specRef":"docs/reference/documentation-fleet-coverage-matrix.md","implementationRef":"platform/scripts/docs-tree-check.mjs","audit":{"witness":"audit/evidence/docs-ia-latest.json","protocol":"docs-ia"},"pillars":["quality","coverage","auditability"]}
+  ]
+}

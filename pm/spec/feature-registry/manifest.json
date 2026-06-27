@@ -1,0 +1,14 @@
+{
+  "$schema": "gtcx://ecosystem-os/feature-registry/v1",
+  "version": "1.0.0",
+  "updated": "2026-06-27",
+  "status": "current",
+  "owner": "ecosystem-os",
+  "title": "ecosystem-os feature registry",
+  "featureCount": 7,
+  "shards": ["machine/spec/feature-registry/ecosystem-os-features.json"],
+  "forensic": {
+    "source": "bridge-os feature spec registry enforcement",
+    "witness": "bridge-os/machine/ci/feature-spec-completion-fleet-latest.json"
+  }
+}
