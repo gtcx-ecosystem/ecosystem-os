@@ -1,7 +1,16 @@
-# BaselineOS Pitfalls
+# Known Pitfalls
 
-## Known Pitfalls
+## Active TODOs / FIXMEs in Code
+**Discovered:** 2026-06-27
+| File | Line | Issue |
+|------|------|-------|
+| docs/gitbook/business/domain/government/stakeholder-analysis/key-weaknesses-and-red-flags.md | 19 | or malicious attack could halt all operations. Strengthening: Rigorous third-par |
+| docs/gitbook/business/domain/government/stakeholder-analysis/operational-risks.md | 21 | or cryptographic breach could undermine trust. AGX should adopt well-tested bloc |
+| docs/gitbook/business/domain/government/stakeholder-analysis/questions-and-answers.md | 24 | of a large exchange) suggest multi-signature vault access, cold-storage for keys |
 
-- Do not treat `.baseline/config.json` alone as full agent context; agents need `.baseline/definition.json`.
-- Do not hand-copy audit prompts across repos; use `baseline audit <command>` so the prompt/output contract stays canonical.
-- Do not commit secrets or local runtime databases.
+> Review and resolve these before they become blockers.
+
+## Code Quality
+**Discovered:** 2026-06-27
+- Add pitfalls here as they are discovered
+

@@ -1,66 +1,37 @@
 {
-  "version": "1.6.2",
+  "version": "ecosystem-init-1",
   "name": "ecosystem-os",
   "projectRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
-  "createdAt": "2026-06-17T08:18:50.683Z",
+  "createdAt": "2026-06-27T16:45:18.000Z",
   "detection": {
     "runtime": "node",
-    "runtimeVersion": ">=20.18.0",
     "providers": [],
-    "frameworks": []
+    "frameworks": [
+      "Node.js / TypeScript"
+    ]
   },
   "knowledge": [
     "./docs",
+    "./docs",
+    "./.agent",
     "./.claude",
+    "./.cursor",
     "./README.md",
-    "./CHANGELOG.md",
-    "./AGENTS.md"
+    "./AGENTS.md",
+    "./CHANGELOG.md"
   ],
   "index": {
-    "documents": 364,
-    "indexedAt": "2026-06-17T08:18:50.683Z"
+    "documents": 0,
+    "indexedAt": null
   },
   "layers": {
-    "armed": 7,
+    "armed": 0,
     "total": 7,
-    "score": 100,
-    "status": "ready",
-    "results": [
-      {
-        "id": "lang",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "frame",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "studio",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "govern",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "experience",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "autonomy",
-        "passed": true,
-        "score": 100
-      },
-      {
-        "id": "persona",
-        "passed": true,
-        "score": 100
-      }
-    ]
+    "score": 0,
+    "status": "initialized"
+  },
+  "discovery": {
+    "patterns": 1,
+    "todos": 3
   }
 }

@@ -1,0 +1,20 @@
+{
+  "schema": "gtcx://baseline-os/govern-experience-cascade/v1",
+  "storyId": "GOV-005",
+  "evaluatedAt": "2026-06-26T00:19:28.193Z",
+  "activeLawProfile": {
+    "mergedRegimes": [],
+    "strictestEnforcement": "audit",
+    "inferredRegimes": [],
+    "acceptanceContractId": "task-1782433168189-VboqK4RI"
+  },
+  "experience": {
+    "moveSetId": "task-1782433168189-VboqK4RI",
+    "appliedOverrides": [],
+    "governActiveRegimes": [
+      "P26",
+      "P45",
+      "product-lead-directive"
+    ]
+  }
+}

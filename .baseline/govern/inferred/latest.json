@@ -1,0 +1,29 @@
+{
+  "schema": "gtcx://baseline-os/active-law-profile/v1",
+  "storyId": "GOV-004",
+  "constitutionRef": ".baseline/govern/constitution.json",
+  "inferredRegimes": [],
+  "operatorPins": [],
+  "mergedRegimes": [],
+  "strictestEnforcement": "audit",
+  "utterance": "session:archive session:archive",
+  "acceptanceContractId": "task-1782433168189-VboqK4RI",
+  "updatedAt": "2026-06-26T00:19:28.193Z",
+  "provenance": {
+    "foundational": [],
+    "inferred": [],
+    "operatorSet": []
+  },
+  "cascade": {
+    "schema": "gtcx://baseline-os/govern-cascade/v1",
+    "pending": false,
+    "layers": [
+      "lang",
+      "frame",
+      "persona",
+      "experience",
+      "autonomy",
+      "studio"
+    ]
+  }
+}

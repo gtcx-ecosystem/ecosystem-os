@@ -1,0 +1,39 @@
+{
+  "schema": "gtcx://baseline-os/govern-evidence-bundle/v1",
+  "storyId": "GOV-006",
+  "grpPassId": "GRP-5",
+  "blocked": false,
+  "decision": "allow",
+  "trustScore": 70,
+  "trustFloor": 40,
+  "taskId": "task-1782433168189-VboqK4RI",
+  "utterance": "session:archive session:archive",
+  "activeLawProfile": {
+    "mergedRegimes": [],
+    "strictestEnforcement": "audit",
+    "operatorPins": [],
+    "inferredRegimes": []
+  },
+  "governEvidence": {
+    "approvals": [],
+    "auditTrail": [
+      {
+        "id": "grp-5-task-1782433168189-VboqK4RI-1782433168196",
+        "type": "policy_evaluated",
+        "actor": "baseline-os/govern-pipeline-gate",
+        "policyId": "GOV-006-pipeline-gate",
+        "resourceId": "task-1782433168189-VboqK4RI",
+        "details": {
+          "decision": "allow",
+          "trustScore": 70,
+          "trustFloor": 40,
+          "mergedRegimes": [],
+          "strictestEnforcement": "audit",
+          "utterance": "session:archive session:archive"
+        },
+        "timestamp": "2026-06-26T00:19:28.196Z"
+      }
+    ]
+  },
+  "evaluatedAt": "2026-06-26T00:19:28.196Z"
+}

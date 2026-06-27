@@ -1,8 +1,16 @@
-# BaselineOS Patterns
+# Confirmed Patterns
 
-## Confirmed Patterns
+## Architecture & Stack
+**Discovered:** 2026-06-27
+- Monorepo managed with pnpm workspaces + Turborepo
+- CI/CD via GitHub Actions
+- Tech stack: Node.js / TypeScript
 
-- Use `.baseline/definition.json` as the canonical agent-readable baseline.
-- Use `.baseline/config.json` for CLI/runtime initialization metadata.
-- Use `baseline.config.json` as the no-code runtime config so `baseline status` works after `baseline init`.
-- Route audits through `baseline audit <command>`; BaselineOS prints the canonical `gtcx-docs` prompt and output contract.
+## Conventions
+**Discovered:** 2026-06-27
+- Add confirmed conventions here as they are validated
+
+## Documentation
+**Discovered:** 2026-06-27
+- Uses docs/ for documentation
+- Has root README.md

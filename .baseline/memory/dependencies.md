@@ -1,5 +1,23 @@
-# BaselineOS Dependencies
+# Cross-Repo Dependencies
 
-## Cross-Repo Dependencies
+> Auto-discovered from package.json, imports, and docs.
 
-- gtcx-docs: canonical audit framework and institutional baseline. Set `GTCX_DOCS_PATH=/path/to/gtcx-docs` if side-by-side discovery is unavailable.
+## Ecosystem Dependencies
+
+No cross-repo dependencies detected in package.json or docs.
+
+## Hard Dependencies (Blocking)
+| Needs | From Repo | Status | ETA | Blocking Epic |
+|-------|-----------|--------|-----|---------------|
+| | | | | |
+
+## Soft Dependencies (Nice to have)
+| Needs | From Repo | Status | ETA |
+|-------|-----------|--------|-----|
+| | | | |
+
+## Downstream Consumers
+| Repo | What They Need | Status |
+|------|---------------|--------|
+| | | |
+
