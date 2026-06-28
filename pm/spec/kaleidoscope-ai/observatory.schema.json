@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/observatory.schema/v1",
+  "title": "Kaleidoscope AI observatory witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "repo",
+    "phase",
+    "ok",
+    "summary",
+    "repos",
+    "aliases",
+    "answers",
+    "issues"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "repo": { "const": "ecosystem-os" },
+    "phase": { "type": "string", "minLength": 1 },
+    "ok": { "type": "boolean" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "repoCount",
+        "readyRepos",
+        "blockerCount",
+        "aliasWarningCount",
+        "freshEvidenceRepos",
+        "movementAvailable"
+      ],
+      "properties": {
+        "repoCount": { "type": "integer", "minimum": 0 },
+        "readyRepos": { "type": "integer", "minimum": 0 },
+        "blockerCount": { "type": "integer", "minimum": 0 },
+        "aliasWarningCount": { "type": "integer", "minimum": 0 },
+        "freshEvidenceRepos": { "type": "integer", "minimum": 0 },
+        "movementAvailable": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "repos": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/repoRow" }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "path", "target", "mapsToRepo", "warning"],
+        "properties": {
+          "name": { "type": "string" },
+          "path": { "type": "string" },
+          "target": { "type": "string" },
+          "mapsToRepo": { "type": ["string", "null"] },
+          "warning": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "answers": {
+      "type": "object",
+      "required": ["whatChangedSinceLastAudit"],
+      "properties": {
+        "whatChangedSinceLastAudit": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "issues": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "repoRow": {
+      "type": "object",
+      "required": [
+        "repo",
+        "tier",
+        "role",
+        "readiness",
+        "graphRagMcp",
+        "blockers",
+        "signal",
+        "mpr",
+        "evidenceFreshness",
+        "movement"
+      ],
+      "properties": {
+        "repo": { "type": "string", "minLength": 1 },
+        "tier": { "type": "integer", "minimum": 0 },
+        "role": { "type": "string" },
+        "readiness": {
+          "type": "object",
+          "required": ["maturity", "score100", "targetStatus"]
+        },
+        "graphRagMcp": {
+          "type": "object",
+          "required": ["rag", "mcp", "graph", "eval"]
+        },
+        "blockers": {
+          "type": "object",
+          "required": ["count", "items"]
+        },
+        "signal": {
+          "type": "object",
+          "required": ["level", "score100", "bottlenecks"]
+        },
+        "mpr": {
+          "type": "object",
+          "required": ["composite100", "source"]
+        },
+        "evidenceFreshness": {
+          "type": "object",
+          "required": ["fresh", "oldestSourceDate", "newestSourceDate", "evidenceCount"]
+        },
+        "movement": {
+          "type": "object",
+          "required": ["available", "currentScore100", "priorScore100", "delta"]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

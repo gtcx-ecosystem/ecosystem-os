@@ -731,6 +731,12 @@ Exit gate:
 
 - Observatory can answer "what changed since the last audit?" from current evidence
 
+Initial implementation:
+
+- `pnpm kaleidoscope:observatory:check` reads the graph snapshot, query witness, SIGNAL fleet witness, and per-repo MPR witnesses.
+- `pnpm kaleidoscope:observatory:write` emits `audit/evidence/kaleidoscope-observatory-latest.json` and `docs/business/research/kaleidoscope-ai/observatory-latest.md`.
+- The witness includes repo readiness, graph/RAG/MCP status, blocker heatmap inputs, SIGNAL/MPR columns, evidence freshness, symlink alias warnings, and an explicit current-evidence answer to "what changed since the last audit?"
+
 ### P2.4: Decision room MVP
 
 Goal: ship evidence-backed strategic Q&A.
