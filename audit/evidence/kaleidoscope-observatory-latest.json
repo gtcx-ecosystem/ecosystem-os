@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
-  "generatedAt": "2026-06-28T21:57:49.710Z",
+  "generatedAt": "2026-06-28T22:16:03.240Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-observatory-mvp",
   "ok": true,
@@ -74,15 +74,19 @@
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
           "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "Define product-intelligence surface or mark repo as infrastructure-only.",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
         ]
       },
       "mpr": {
@@ -157,13 +161,17 @@
         "signalE": {
           "level": "L1",
           "score100": 25,
-          "lowestDimension": "systemsArchitecture",
+          "lowestDimension": "process",
           "published": true,
-          "summary": "SIGNAL-E limited by systemsArchitecture."
+          "summary": "SIGNAL-E limited by process."
         },
         "bottlenecks": [
           "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "process limits SIGNAL-E to L1",
+          "Define product-intelligence surface or mark repo as infrastructure-only.",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
         ]
       },
       "mpr": {
@@ -226,26 +234,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -308,25 +319,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -389,26 +404,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -471,25 +489,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -552,25 +574,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -645,13 +671,17 @@
         "signalE": {
           "level": "L1",
           "score100": 25,
-          "lowestDimension": "systemsArchitecture",
+          "lowestDimension": "process",
           "published": true,
-          "summary": "SIGNAL-E limited by systemsArchitecture."
+          "summary": "SIGNAL-E limited by process."
         },
         "bottlenecks": [
           "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "process limits SIGNAL-E to L1",
+          "Define product-intelligence surface or mark repo as infrastructure-only.",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
         ]
       },
       "mpr": {
@@ -714,25 +744,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -795,25 +829,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -876,25 +914,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -957,25 +999,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1038,25 +1084,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1119,25 +1169,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1210,16 +1264,19 @@
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
           "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "Define product-intelligence surface or mark repo as infrastructure-only.",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
         ]
       },
       "mpr": {
@@ -1292,16 +1349,19 @@
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
           "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "Define product-intelligence surface or mark repo as infrastructure-only.",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
         ]
       },
       "mpr": {
@@ -1364,25 +1424,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1445,26 +1509,29 @@
         "items": []
       },
       "signal": {
-        "level": "L0",
-        "score100": 8,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L0",
-          "score100": 8,
-          "lowestDimension": "tooling",
+          "level": "L2",
+          "score100": 45,
+          "lowestDimension": "systemsArchitecture",
           "published": true,
-          "summary": "SIGNAL-E limited by tooling."
+          "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "tooling limits SIGNAL-E to L0",
-          "No repo-local Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1527,26 +1594,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {
@@ -1609,26 +1679,29 @@
         "items": []
       },
       "signal": {
-        "level": "L1",
-        "score100": 25,
+        "level": "L2",
+        "score100": 45,
         "signalP": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-P limited by systemsArchitecture."
         },
         "signalE": {
-          "level": "L1",
-          "score100": 25,
+          "level": "L2",
+          "score100": 45,
           "lowestDimension": "systemsArchitecture",
           "published": true,
           "summary": "SIGNAL-E limited by systemsArchitecture."
         },
         "bottlenecks": [
-          "systemsArchitecture limits SIGNAL-P to L1",
-          "systemsArchitecture limits SIGNAL-E to L1",
-          "Partial Graph/RAG/MCP config found"
+          "systemsArchitecture limits SIGNAL-P to L2",
+          "systemsArchitecture limits SIGNAL-E to L2",
+          "No production user-facing AI trace, eval, or feedback loop is published yet.",
+          "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+          "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+          "Publish product-feedback, trace, and answer-quality metrics."
         ]
       },
       "mpr": {

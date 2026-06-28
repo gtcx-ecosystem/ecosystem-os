@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/decision-room/v1",
-  "generatedAt": "2026-06-28T22:07:24.781Z",
+  "generatedAt": "2026-06-28T22:16:08.114Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-decision-room-mvp",
   "ok": true,
@@ -73,7 +73,7 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T21:57:49.711Z",
+          "sourceDate": "2026-06-28T22:16:03.242Z",
           "reason": "current ecosystem readiness and blockers",
           "excerpt": "\"readyRepos\": 20, \"blockerCount\": 0, \"aliasWarningCount\": 0, \"freshEvidenceRepos\": 20,"
         },
@@ -99,7 +99,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T11:22:20.690Z",
-        "newestSourceDate": "2026-06-28T21:57:49.711Z",
+        "newestSourceDate": "2026-06-28T22:16:03.242Z",
         "stale": false
       },
       "evaluation": {
@@ -155,7 +155,7 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T21:57:49.711Z",
+          "sourceDate": "2026-06-28T22:16:03.242Z",
           "reason": "repo readiness, SIGNAL, and MPR columns",
           "excerpt": "\"signalFleet\": \"audit/evidence/signal-fleet-latest.json\", \"mprRepo\": \"../*/audit/evidence/mpr-repo-latest.json\" }, \"contracts\": {"
         },
@@ -167,7 +167,7 @@
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:04:30.079Z",
+          "sourceDate": "2026-06-28T22:13:26.480Z",
           "reason": "driver repo roles for Phase 2",
           "excerpt": "| `ecosystem-os` | Kaleidoscope product planning, fleet graph, cross-repo intelligence, product surfaces, fleet witnesses. | | `baseline-os` | Schemas, contracts, scoring calibration, machine-readable specs, witness formats. | | `bridge-os` | Runners, repo/fleet orchestration, connectors, graph/RAG/MCP checks, evidence"
         }
@@ -181,7 +181,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T21:01:02.240Z",
-        "newestSourceDate": "2026-06-28T22:04:30.079Z",
+        "newestSourceDate": "2026-06-28T22:16:03.242Z",
         "stale": false
       },
       "evaluation": {
@@ -237,9 +237,9 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T21:57:49.711Z",
+          "sourceDate": "2026-06-28T22:16:03.242Z",
           "reason": "fleet-level Observatory rollup",
-          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-28T21:57:49.710Z\", \"repo\": \"ecosystem-os\","
+          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-28T22:16:03.240Z\", \"repo\": \"ecosystem-os\","
         },
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
@@ -249,7 +249,7 @@
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:04:30.079Z",
+          "sourceDate": "2026-06-28T22:13:26.480Z",
           "reason": "Phase 2 architecture and retrieval mesh thesis",
           "excerpt": "-> graph projection -> retrieval mesh -> agent runtime -> evaluator and policy gates"
         }
@@ -263,7 +263,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T21:52:10.216Z",
-        "newestSourceDate": "2026-06-28T22:04:30.079Z",
+        "newestSourceDate": "2026-06-28T22:16:03.242Z",
         "stale": false
       },
       "evaluation": {
@@ -319,13 +319,13 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T21:57:49.711Z",
+          "sourceDate": "2026-06-28T22:16:03.242Z",
           "reason": "current movement availability and readiness",
-          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-28T21:57:49.710Z\", \"repo\": \"ecosystem-os\","
+          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-28T22:16:03.240Z\", \"repo\": \"ecosystem-os\","
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:04:30.079Z",
+          "sourceDate": "2026-06-28T22:13:26.480Z",
           "reason": "Phase 2 roadmap sequencing",
           "excerpt": "### P2.4: Decision room MVP Goal: ship evidence-backed strategic Q&A."
         },
@@ -345,7 +345,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T12:07:47.223Z",
-        "newestSourceDate": "2026-06-28T22:04:30.079Z",
+        "newestSourceDate": "2026-06-28T22:16:03.242Z",
         "stale": false
       },
       "evaluation": {
