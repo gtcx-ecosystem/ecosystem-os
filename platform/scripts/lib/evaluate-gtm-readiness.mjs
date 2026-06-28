@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join } from 'node:path';
 import { evaluateProductCharter } from './evaluate-product-charter.mjs';
 import { isStoryOpen } from './executable-backlog.mjs';
+import { inferGtmStage } from './infer-gtm-stage.mjs';
 
 const STANDARD_PATH = 'machine/spec/gtm-product-readiness-standard.json';
 
@@ -506,17 +507,30 @@ export function evaluateGtmReadiness(repoRoot, options = {}) {
       pass: dimensions.every((d) => d.pass),
     };
     writeFileSync(join(auditDir, 'gtm-readiness-check-latest.json'), `${JSON.stringify(rollup, null, 2)}\n`);
+    const stageInference = inferGtmStage(repoRoot, repo);
     writeFileSync(
       join(auditDir, 'gtm-readiness-latest.json'),
       `${JSON.stringify(
         {
-          schema: 'gtcx://canon-os/gtm-readiness-witness/v1',
+          schema: 'gtcx://canon-os/gtm-readiness-witness/v2',
           repo,
           generatedAt: new Date().toISOString(),
-          status: readiness.status === 'pass' || (readiness.score100 ?? 0) >= 70 ? 'pass' : readiness.status,
-          score100: readiness.score100 ?? 0,
-          source: 'gtm-readiness-check-write',
-          profile: profile.name,
+          gtmStage: stageInference.gtmStage,
+          gtmStageName: stageInference.gtmStageName,
+          gtmStageStatus: stageInference.gtmStageStatus,
+          pilotReady: stageInference.pilotReady,
+          score100: stageInference.score100,
+          productGates: stageInference.productGates,
+          procurementAssurance: stageInference.procurementAssurance,
+          gaps: stageInference.gaps,
+          note: stageInference.note,
+          laneSeparation: stageInference.laneSeparation,
+          p58: {
+            status: readiness.status === 'pass' || (readiness.score100 ?? 0) >= 70 ? 'pass' : readiness.status,
+            score100: readiness.score100 ?? 0,
+            profile: profile.name,
+            source: 'gtm-readiness-check-write',
+          },
         },
         null,
         2,

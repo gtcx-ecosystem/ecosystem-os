@@ -207,14 +207,7 @@ function main() {
     gates.push(gate(`root:${entry.path}`, existsSync(join(REPO, entry.path)), entry.path));
   }
 
-  const rootAllow = new Set(ROOT_ALLOW);
-  for (const entry of spec.requiredRootFiles ?? []) {
-    if (entry.path?.endsWith('.md')) {
-      rootAllow.add(entry.path.split('/').pop());
-    }
-  }
-
-  const looseRoot = listLooseRootMd(opsDir, rootAllow);
+  const looseRoot = listLooseRootMd(opsDir);
   gates.push(
     gate(
       'forbid:loose-root-md',

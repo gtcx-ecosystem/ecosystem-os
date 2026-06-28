@@ -325,6 +325,20 @@ export function evaluateProductCharter(repoRoot, options = {}) {
     ),
   );
 
+  const shipGatesWitness = readJson(join(repoRoot, 'machine/ci/feature-ship-gates-latest.json'));
+  const matrixGateRows = matrix?.features?.filter((f) => f.shipGates) ?? [];
+  const shipGateClear = shipGatesWitness?.summary?.shipGateClear ?? matrixGateRows.filter((f) => f.shipGates?.shipGateClear).length;
+  const shipGateTotal = shipGatesWitness?.summary?.featureCount ?? matrixGateRows.length;
+  const hasShipGates = Boolean(shipGatesWitness?.summary) || matrixGateRows.length > 0;
+  gates.push(
+    gate(
+      'forensic:feature-ship-gates',
+      hasShipGates,
+      hasShipGates ? `${shipGateClear}/${shipGateTotal} clear` : 'not bootstrapped — pm:feature-matrix:sync',
+      !hasShipGates,
+    ),
+  );
+
   const scoring = options.scoring ?? {
     requiredGateWeight: 1,
     optionalGateWeight: 0.25,

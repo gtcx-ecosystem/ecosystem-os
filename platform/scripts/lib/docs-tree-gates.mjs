@@ -5,7 +5,6 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { isPointerStub, looseMarkdownAtRoot } from './docs-decompose-gates.mjs';
 import { profileKeyFromTier, readProductTier, resolveDocsPack } from './resolve-docs-pack.mjs';
-import { readmeLinksCentralFolderSpec } from './readme-central-spec-link.mjs';
 
 export function gate(id, ok, detail = null) {
   return { id, ok, ...(detail ? { detail } : {}) };
@@ -270,23 +269,14 @@ export function validateDocsTree(repoRoot, options = {}) {
     const mdHere = readdirSync(dir, { withFileTypes: true }).filter((e) => e.isFile() && e.name.endsWith('.md'));
     const subdirs = readdirSync(dir, { withFileTypes: true }).filter((e) => e.isDirectory() && !e.name.startsWith('.'));
     const needsFolderSpec = spec.universal?.everyFolder?.folderSpecWhen;
-    const centralizedPolicy = spec.universal?.everyFolder?.centralizedFolderSpecViaReadme === true;
-    const topLayerId = relFromDocs.split('/')[0];
-    const layerReadmePath = join(docsDir, topLayerId, 'README.md');
-    const readmeCentralized =
-      centralizedPolicy &&
-      topLayerId &&
-      existsSync(layerReadmePath) &&
-      readmeLinksCentralFolderSpec(readFileSync(layerReadmePath, 'utf8'), topLayerId);
     if (
       needsFolderSpec &&
       !inIntake &&
       relFromDocs &&
-      !readmeCentralized &&
       !existsSync(join(dir, 'FOLDER-SPEC.md')) &&
       (mdHere.length >= (needsFolderSpec.mdCountGte ?? 3) || subdirs.length >= (needsFolderSpec.orSubfolderCountGte ?? 1))
     ) {
-      const topLayer = topLayerId;
+      const topLayer = relFromDocs.split('/')[0];
       if (allowedTop.has(topLayer) && spec.universal?.everyFolder?.topLevelLayerRequiresFolderSpec) {
         if (strict) gates.push(gate(`folder:spec:${relPath}`, false, 'missing FOLDER-SPEC.md'));
       }
