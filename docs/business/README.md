@@ -33,6 +33,7 @@ goals: 'Business narrative SoR — decomposed from reference/product and overvie
 | Markets | — | [market/](./market/) | reference/product/ | overview/product/ |
 | Economics | [goals.md](../foundation/goals.md) | [economics/](./economics/) | reference/product/ | overview/product/ |
 | Research | — | [research/](./research/) | — | archive/docs/business/ |
+| Kaleidoscope AI | — | [research/kaleidoscope-ai/](./research/kaleidoscope-ai/) | — | active ecosystem intelligence planning |
 
 ## Subfolders
 
@@ -42,7 +43,7 @@ goals: 'Business narrative SoR — decomposed from reference/product and overvie
 | `customers/` | ICP, personas, core audiences |
 | `economics/` | business model, pricing, revenue, metrics |
 | `strategy/` | executive summary, ecosystem integration |
-| `research/` | industry transformation, funding, capital markets, ecosystem overview, master voice |
+| `research/` | industry transformation, funding, capital markets, ecosystem overview, master voice, Kaleidoscope AI |
 | `case-studies/` | sector case studies |
 | `use-cases/` | stakeholder use cases |
 
