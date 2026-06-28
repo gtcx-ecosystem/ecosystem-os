@@ -833,6 +833,7 @@ Initial implementation:
 - Execution Studio remains draft-only: repo edits, ticket creation, external communication, and deployment stay blocked until explicit approval.
 - `pm/spec/kaleidoscope-ai/85-uplift-action.schema.json` and `docs/business/research/kaleidoscope-ai/85-uplift-action.md` define the handoff format from Kaleidoscope insight to `agile-os` execution.
 - `docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md` is the first internal draft for the market-leadership partner room. It maps partner rooms, repo ownership, evidence gaps, claim controls, and approval gates while keeping external use blocked.
+- `pnpm kaleidoscope:partner-brief:check` evaluates the partner room for source evidence, partner-room coverage, claim controls, movement caveats, and explicit external-use blocking.
 
 ### P2.7: eval, safety, and release hardening
 
@@ -864,7 +865,7 @@ Initial implementation:
 
 - `pnpm kaleidoscope:release-gates:check` evaluates Query, Decision Room, Observatory, SIGNAL, and Execution Studio witnesses as a release gate bundle.
 - `pnpm kaleidoscope:release-gates:write` emits `audit/evidence/kaleidoscope-release-gates-latest.json` and `docs/business/research/kaleidoscope-ai/release-gates-latest.md`.
-- The witness blocks release when source witnesses fail, golden queries regress, Decision Room citations/freshness/confidence fail, unsupported-claim warnings appear, SIGNAL evidence regresses, or Execution Studio approval boundaries are missing.
+- The witness blocks release when source witnesses fail, golden queries regress, Decision Room citations/freshness/confidence fail, unsupported-claim warnings appear, SIGNAL evidence regresses, partner-brief boundaries are missing, or Execution Studio approval boundaries are missing.
 - External use remains blocked until explicit approval even when internal draft release gates pass.
 
 Operating-loop entrypoint:

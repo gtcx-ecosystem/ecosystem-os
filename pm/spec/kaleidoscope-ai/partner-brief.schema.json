@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates.schema/v1",
-  "title": "Kaleidoscope AI release gates witness",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/partner-brief.schema/v1",
+  "title": "Kaleidoscope AI partner brief evaluation witness",
   "type": "object",
   "required": [
     "schema",
@@ -10,32 +10,28 @@
     "repo",
     "phase",
     "ok",
-    "releaseDecision",
-    "externalUse",
     "summary",
     "gates",
     "sources"
   ],
   "properties": {
-    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates/v1" },
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/partner-brief/v1" },
     "generatedAt": { "type": "string", "format": "date-time" },
     "date": { "type": "string" },
     "repo": { "const": "ecosystem-os" },
     "phase": { "type": "string", "minLength": 1 },
     "ok": { "type": "boolean" },
-    "releaseDecision": { "enum": ["internal-draft-release-pass", "blocked"] },
-    "externalUse": {
-      "type": "object",
-      "required": ["status", "reason"],
-      "properties": {
-        "status": { "const": "blocked_until_explicit_approval" },
-        "reason": { "type": "string", "minLength": 1 }
-      },
-      "additionalProperties": true
-    },
     "summary": {
       "type": "object",
-      "required": ["gateCount", "passedGates", "failedGates", "blockers"],
+      "required": [
+        "gateCount",
+        "passedGates",
+        "failedGates",
+        "externalUse",
+        "approvalStatus",
+        "partnerRooms",
+        "claimControls"
+      ],
       "additionalProperties": true
     },
     "gates": {
@@ -44,7 +40,7 @@
     },
     "sources": {
       "type": "object",
-      "required": ["query", "decision", "observatory", "signal", "execution", "partnerBrief", "safetyPlan"]
+      "required": ["partnerRoom", "decision", "observatory", "execution", "safetyPlan"]
     }
   },
   "$defs": {

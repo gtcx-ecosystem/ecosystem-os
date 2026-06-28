@@ -15,7 +15,7 @@ review_cycle: on-change
 ## Summary
 
 - Release decision: internal-draft-release-pass
-- Gates: 9/9 passed
+- Gates: 10/10 passed
 - Failed gates: 0
 - External use: blocked_until_explicit_approval
 
@@ -30,6 +30,7 @@ review_cycle: on-change
 | unsupported-claim-gate | pass | Release cannot pass when strategic answers include unsupported claims. |
 | confidence-gate | pass | Release cannot pass when answer confidence drops below floor. |
 | approval-boundary-gate | pass | Release cannot pass when draft actions can cross write, external, or deploy boundaries without approval. |
+| partner-brief-boundary-gate | pass | Release cannot pass when partner narratives can cross external-use boundaries without explicit approval. |
 | signal-evidence-gate | pass | Release cannot pass when repo-level agentic maturity evidence is missing or graph/RAG/MCP readiness regresses. |
 | safety-plan-linked | pass | Release cannot pass without a documented safety and release-gate doctrine. |
 

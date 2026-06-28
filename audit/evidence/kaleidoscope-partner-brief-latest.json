@@ -1,0 +1,164 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/partner-brief/v1",
+  "generatedAt": "2026-06-28T23:32:28.286Z",
+  "date": "2026-06-29",
+  "repo": "ecosystem-os",
+  "phase": "phase-2-partner-brief-eval",
+  "ok": true,
+  "summary": {
+    "gateCount": 8,
+    "passedGates": 8,
+    "failedGates": 0,
+    "blockers": [],
+    "externalUse": "blocked_until_explicit_approval",
+    "approvalStatus": "draft_pending_approval",
+    "partnerRooms": 5,
+    "claimControls": 6,
+    "unsupportedClaimWarnings": 0,
+    "movementAvailable": true
+  },
+  "gates": [
+    {
+      "id": "source-witnesses-ok",
+      "label": "Required source witnesses are green",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "reason": "Decision Room strategic answer witness"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.148Z",
+          "reason": "Observatory readiness and movement witness"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.244Z",
+          "reason": "Execution Studio approval-boundary witness"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass when upstream strategic or execution witnesses are not ok."
+    },
+    {
+      "id": "market-question-eval",
+      "label": "Market-leadership answer passes citation, freshness, confidence, and unsupported-claim gates",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "reason": "market-leadership decision packet"
+        }
+      ],
+      "failureMode": "Partner narrative cannot pass when the source market-leadership answer fails evaluation."
+    },
+    {
+      "id": "partner-room-present",
+      "label": "Partner execution room draft is present",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "sourceDate": "2026-06-28T23:28:03.411Z",
+          "reason": "partner execution room draft"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass without a source evidence map."
+    },
+    {
+      "id": "partner-rooms-covered",
+      "label": "Partner-specific rooms are covered",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "sourceDate": "2026-06-28T23:28:03.411Z",
+          "reason": "partner room sections"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass unless bank/DFI, regulator, buyer, operator, and investor rooms are all represented."
+    },
+    {
+      "id": "claim-controls-present",
+      "label": "Claim controls are explicit",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "sourceDate": "2026-06-28T23:28:03.411Z",
+          "reason": "claim controls table"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass without claim posture and external-use rules."
+    },
+    {
+      "id": "external-use-blocked",
+      "label": "External use remains blocked until explicit approval",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "sourceDate": "2026-06-28T23:28:03.411Z",
+          "reason": "external-use frontmatter and body warning"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.244Z",
+          "reason": "Execution Studio approval request"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass if the artifact can be used externally without approval."
+    },
+    {
+      "id": "movement-caveat-present",
+      "label": "Movement baseline caveat is present",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "sourceDate": "2026-06-28T23:28:03.411Z",
+          "reason": "movement caveat"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.148Z",
+          "reason": "movement availability"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass if zero-delta movement can be misread as historical improvement."
+    },
+    {
+      "id": "safety-doctrine-linked",
+      "label": "Safety and release doctrine is linked",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md",
+          "sourceDate": "2026-06-28T11:44:06.145Z",
+          "reason": "release safety doctrine"
+        }
+      ],
+      "failureMode": "Partner brief evaluation cannot pass without linked safety and approval doctrine."
+    }
+  ],
+  "sources": {
+    "partnerRoom": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+    "decision": "audit/evidence/kaleidoscope-decision-room-latest.json",
+    "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",
+    "execution": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+    "safetyPlan": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md"
+  },
+  "contracts": {
+    "partnerBrief": "pm/spec/kaleidoscope-ai/partner-brief.schema.json"
+  }
+}

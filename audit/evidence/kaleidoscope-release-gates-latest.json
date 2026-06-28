@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates/v1",
-  "generatedAt": "2026-06-28T23:23:54.357Z",
+  "generatedAt": "2026-06-28T23:32:28.329Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-eval-safety-release-hardening",
@@ -11,8 +11,8 @@
     "reason": "Partner-facing, investor-facing, deployment, and repo-write actions require explicit approval outside this release witness."
   },
   "summary": {
-    "gateCount": 9,
-    "passedGates": 9,
+    "gateCount": 10,
+    "passedGates": 10,
     "failedGates": 0,
     "blockers": []
   },
@@ -25,28 +25,33 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.124Z",
+          "sourceDate": "2026-06-28T23:32:28.047Z",
           "reason": "query witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.272Z",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
           "reason": "decision witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.226Z",
+          "sourceDate": "2026-06-28T23:32:28.148Z",
           "reason": "observatory witness"
         },
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.179Z",
+          "sourceDate": "2026-06-28T23:32:28.102Z",
           "reason": "SIGNAL witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.315Z",
+          "sourceDate": "2026-06-28T23:32:28.244Z",
           "reason": "execution studio witness"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.287Z",
+          "reason": "partner brief evaluation witness"
         }
       ],
       "failureMode": "Release cannot pass when any upstream witness is not ok."
@@ -59,7 +64,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.124Z",
+          "sourceDate": "2026-06-28T23:32:28.047Z",
           "reason": "golden question eval results"
         }
       ],
@@ -73,7 +78,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.272Z",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
           "reason": "decision citations"
         }
       ],
@@ -87,7 +92,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.272Z",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
           "reason": "decision freshness evaluation"
         }
       ],
@@ -101,7 +106,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.272Z",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
           "reason": "unsupported claim evaluation"
         }
       ],
@@ -115,7 +120,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.272Z",
+          "sourceDate": "2026-06-28T23:32:28.195Z",
           "reason": "answer confidence evaluation"
         }
       ],
@@ -129,11 +134,25 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.315Z",
+          "sourceDate": "2026-06-28T23:32:28.244Z",
           "reason": "draft-only approval and release gate evidence"
         }
       ],
       "failureMode": "Release cannot pass when draft actions can cross write, external, or deploy boundaries without approval."
+    },
+    {
+      "id": "partner-brief-boundary-gate",
+      "label": "Partner brief remains internal draft and approval-gated",
+      "passed": true,
+      "severity": "none",
+      "evidence": [
+        {
+          "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+          "sourceDate": "2026-06-28T23:32:28.287Z",
+          "reason": "partner brief claim, freshness, and approval-boundary evaluation"
+        }
+      ],
+      "failureMode": "Release cannot pass when partner narratives can cross external-use boundaries without explicit approval."
     },
     {
       "id": "signal-evidence-gate",
@@ -143,7 +162,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:23:54.179Z",
+          "sourceDate": "2026-06-28T23:32:28.102Z",
           "reason": "SIGNAL fleet witness"
         }
       ],
@@ -170,9 +189,11 @@
     "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",
     "signal": "audit/evidence/signal-fleet-latest.json",
     "execution": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+    "partnerBrief": "audit/evidence/kaleidoscope-partner-brief-latest.json",
     "safetyPlan": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md"
   },
   "contracts": {
-    "releaseGates": "pm/spec/kaleidoscope-ai/release-gates.schema.json"
+    "releaseGates": "pm/spec/kaleidoscope-ai/release-gates.schema.json",
+    "partnerBrief": "pm/spec/kaleidoscope-ai/partner-brief.schema.json"
   }
 }

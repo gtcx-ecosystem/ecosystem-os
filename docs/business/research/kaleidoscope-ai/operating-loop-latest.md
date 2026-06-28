@@ -15,7 +15,7 @@ review_cycle: on-change
 ## Summary
 
 - Mode: write
-- Stages: 8/8 passed
+- Stages: 9/9 passed
 - Release decision: internal-draft-release-pass
 - External use: blocked_until_explicit_approval
 - Approval pending actions: 6
@@ -32,4 +32,5 @@ review_cycle: on-change
 | observatory | pass | audit/evidence/kaleidoscope-observatory-latest.json |
 | decision-room | pass | audit/evidence/kaleidoscope-decision-room-latest.json |
 | execution-studio | pass | audit/evidence/kaleidoscope-execution-studio-latest.json |
+| partner-brief | pass | audit/evidence/kaleidoscope-partner-brief-latest.json |
 | release-gates | pass | audit/evidence/kaleidoscope-release-gates-latest.json |
