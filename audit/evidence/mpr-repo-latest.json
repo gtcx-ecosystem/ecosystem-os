@@ -3,8 +3,8 @@
   "scope": "repo",
   "id": "ecosystem-os",
   "repo": "ecosystem-os",
-  "evaluatedAt": "2026-06-28T03:43:31.981Z",
-  "gitHead": "c803560615b6a6a82b414613b3372adfe7d4d073",
+  "evaluatedAt": "2026-06-28T11:14:29.380Z",
+  "gitHead": "6f39a5d5084375e210c7ac89b42732c1dbbd7b6e",
   "date": "2026-06-28",
   "weights": {
     "compliance": 0,
@@ -20,23 +20,23 @@
   },
   "quadrants": {
     "compliance": {
-      "score100": 100,
-      "published": true,
-      "provisional": false,
-      "blockedBy": null,
+      "score100": 69,
+      "published": false,
+      "provisional": true,
+      "blockedBy": "below-threshold",
       "unlockThreshold100": 85,
       "categories": {
         "layout-p35": {
           "label": "Layout & workspace (P35 v5)",
           "weight": 8,
-          "score100": 100,
+          "score100": 45,
           "protocol": "P35",
           "items": [
             {
               "id": "p35-strict-pass",
               "label": "P35 layout strict GREEN",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 35,
               "severity": "P1",
               "optional": false,
@@ -57,8 +57,8 @@
             {
               "id": "root-allowlist",
               "label": "Root allowlist / workspace root cleanliness",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 20,
               "severity": "P2",
               "optional": false,
@@ -157,14 +157,14 @@
         "ops-domains-p29": {
           "label": "Operational domains (P29)",
           "weight": 6,
-          "score100": 100,
+          "score100": 50,
           "protocol": "P29",
           "items": [
             {
               "id": "ops-check-pass",
               "label": "pnpm ops:check exit 0",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 50,
               "severity": "P1",
               "optional": false,
@@ -457,7 +457,7 @@
         "agentic-harness-p22-p28": {
           "label": "Agentic harness (P22–P28)",
           "weight": 10,
-          "score100": 100,
+          "score100": 75,
           "protocol": "P22-P28",
           "items": [
             {
@@ -485,8 +485,8 @@
             {
               "id": "agent-work-selection-check",
               "label": "pnpm agent:work-selection:check",
-              "pass": true,
-              "score100": 100,
+              "pass": false,
+              "score100": 0,
               "weight": 25,
               "severity": "P1",
               "optional": false,
@@ -873,17 +873,46 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [],
+      "hygieneViolations": [
+        {
+          "id": "p35-strict-pass",
+          "categoryId": "layout-p35",
+          "label": "P35 layout strict GREEN",
+          "severity": "P1",
+          "detail": "p35Strict"
+        },
+        {
+          "id": "root-allowlist",
+          "categoryId": "layout-p35",
+          "label": "Root allowlist / workspace root cleanliness",
+          "severity": "P2",
+          "detail": "opsCheck"
+        },
+        {
+          "id": "ops-check-pass",
+          "categoryId": "ops-domains-p29",
+          "label": "pnpm ops:check exit 0",
+          "severity": "P1",
+          "detail": "opsCheck"
+        },
+        {
+          "id": "agent-work-selection-check",
+          "categoryId": "agentic-harness-p22-p28",
+          "label": "pnpm agent:work-selection:check",
+          "severity": "P1",
+          "detail": "workSelection"
+        }
+      ],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
-      "openP1": 0
+      "openP1": 3
     },
     "technicalExcellence": {
       "score100": 38,
       "published": false,
       "provisional": true,
-      "blockedBy": "below-threshold",
+      "blockedBy": "compliance",
       "unlockThreshold100": 85,
       "metrics": {
         "engineering-production": {
@@ -964,7 +993,7 @@
       "score100": 64,
       "published": false,
       "provisional": true,
-      "blockedBy": "technicalExcellence",
+      "blockedBy": "compliance",
       "unlockThreshold100": 85,
       "metrics": {
         "selectivity-ingredients": {
@@ -1152,7 +1181,7 @@
       "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 78,
+      "score100": 74,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1188,9 +1217,9 @@
           "versionBloatHits": 0
         },
         "independent-replay": {
-          "score100": 75,
+          "score100": 45,
           "weight": 15,
-          "opsCheck": true
+          "opsCheck": false
         }
       },
       "mode": "envelope-cap",
@@ -1203,11 +1232,11 @@
       }
     }
   },
-  "foundationComposite100": 55,
+  "foundationComposite100": 54,
   "fullComposite100": 70,
-  "trustCap100": 78,
-  "composite100": 78,
-  "composite100Raw": 100,
+  "trustCap100": 74,
+  "composite100": 59,
+  "composite100Raw": 69,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
@@ -1215,9 +1244,9 @@
   "openP1": 0,
   "multiPillar": {
     "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
-    "foundationComposite100": 55,
+    "foundationComposite100": 54,
     "fullComposite100": 70,
-    "trustCap100": 78,
+    "trustCap100": 74,
     "weights": {
       "compliance": 0,
       "technicalExcellence": 0.15,
@@ -1232,9 +1261,9 @@
     },
     "quadrants": {
       "compliance": {
-        "score100": 100,
-        "published": true,
-        "provisional": false,
+        "score100": 69,
+        "published": false,
+        "provisional": true,
         "blockedBy": [],
         "confidence": "B",
         "checks": []
@@ -1243,7 +1272,9 @@
         "score100": 38,
         "published": false,
         "provisional": true,
-        "blockedBy": [],
+        "blockedBy": [
+          "compliance"
+        ],
         "confidence": "B",
         "checks": []
       },
@@ -1252,7 +1283,7 @@
         "published": false,
         "provisional": true,
         "blockedBy": [
-          "technicalExcellence"
+          "compliance"
         ],
         "confidence": "B",
         "checks": []
@@ -1268,7 +1299,7 @@
         "checks": []
       },
       "trustAndSafety": {
-        "score100": 78,
+        "score100": 74,
         "published": true,
         "provisional": false,
         "blockedBy": [],

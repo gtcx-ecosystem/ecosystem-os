@@ -5,7 +5,7 @@
   "score100": 64,
   "published": false,
   "provisional": true,
-  "blockedBy": "technicalExcellence",
+  "blockedBy": "compliance",
   "unlockThreshold100": 85,
   "metrics": {
     "selectivity-ingredients": {
