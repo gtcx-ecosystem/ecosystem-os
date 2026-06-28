@@ -832,6 +832,7 @@ Initial implementation:
 - Every action includes target 8.5 readiness, owner repo, target repos, evidence citations, validation command, approval request, release gate, draft artifacts, and acceptance criteria.
 - Execution Studio remains draft-only: repo edits, ticket creation, external communication, and deployment stay blocked until explicit approval.
 - `pm/spec/kaleidoscope-ai/85-uplift-action.schema.json` and `docs/business/research/kaleidoscope-ai/85-uplift-action.md` define the handoff format from Kaleidoscope insight to `agile-os` execution.
+- `docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md` is the first internal draft for the market-leadership partner room. It maps partner rooms, repo ownership, evidence gaps, claim controls, and approval gates while keeping external use blocked.
 
 ### P2.7: eval, safety, and release hardening
 
