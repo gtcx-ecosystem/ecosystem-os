@@ -31,6 +31,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`movement-history-baseline.md`](./movement-history-baseline.md) | Interpretation note for the first prior/current graph movement baseline. |
 | [`partner-execution-room-draft.md`](./partner-execution-room-draft.md) | Internal draft execution room for market-leadership partner narratives, evidence gaps, and approval gates. |
 | [`partner-proof-packet-templates.md`](./partner-proof-packet-templates.md) | Internal templates for bank/DFI, regulator, buyer, operator, and investor proof packets. |
+| [`commercial-evidence-gap-report.md`](./commercial-evidence-gap-report.md) | Current commercial evidence gaps mapped to owner repos and Execution Studio draft actions. |
 
 ## Machine contracts
 
