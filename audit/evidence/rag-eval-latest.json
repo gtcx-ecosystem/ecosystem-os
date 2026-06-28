@@ -1,0 +1,11 @@
+{
+  "schema": "gtcx://ecosystem-os/rag-eval/v1",
+  "generatedAt": "2026-06-28T16:34:44.558Z",
+  "repo": "ecosystem-os",
+  "ok": true,
+  "golden": "config/baseline/rag-eval-golden.json",
+  "issues": [],
+  "queryCount": 2,
+  "resolvedEvidence": 2,
+  "totalEvidence": 2
+}
