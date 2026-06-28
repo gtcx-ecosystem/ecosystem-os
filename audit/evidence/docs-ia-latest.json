@@ -1,19 +1,21 @@
 {
   "schema": "gtcx://ecosystem-os/docs-ia-check/v1",
-  "generatedAt": "2026-06-25T00:36:04.559Z",
+  "generatedAt": "2026-06-26T00:18:25.530Z",
   "repo": "ecosystem-os",
-  "ok": true,
+  "ok": false,
   "strict": false,
   "initiative": "INIT-DOCS-CORE-IA-V1",
   "gateSequenceSource": "canon-os/machine/spec/docs-ia-initiative.json",
-  "failures": [],
+  "failures": [
+    "docs:foundation:check"
+  ],
   "steps": [
     {
       "gateId": "docs:foundation:check",
       "script": "docs-foundation-check.mjs",
-      "ok": true,
-      "exit": 0,
-      "detail": " | PASS — 16/16 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-foundation-latest.json"
+      "ok": false,
+      "exit": 1,
+      "detail": " | FAIL — 15/16 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-foundation-latest.json"
     },
     {
       "gateId": "docs:business:check",

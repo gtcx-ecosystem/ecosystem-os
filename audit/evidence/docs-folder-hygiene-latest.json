@@ -1,37 +1,42 @@
 {
   "schema": "gtcx://canon-os/docs-folder-hygiene-witness/v1",
-  "generatedAt": "2026-06-19T21:58:38.825Z",
+  "generatedAt": "2026-06-27T14:56:53.800Z",
   "repo": "ecosystem-os",
   "policyUpdated": "2026-06-16",
   "pass": false,
   "strict": false,
   "metrics": {
-    "totalMd": 620,
+    "totalMd": 666,
     "topLevelFolders": [
       {
         "name": "gitbook",
-        "mdCount": 347,
+        "mdCount": 348,
         "looseRoot": 1
       },
       {
         "name": "reference",
-        "mdCount": 73,
+        "mdCount": 75,
         "looseRoot": 0
       },
       {
         "name": "architecture",
-        "mdCount": 69,
-        "looseRoot": 1
+        "mdCount": 70,
+        "looseRoot": 0
       },
       {
         "name": "business",
-        "mdCount": 60,
+        "mdCount": 64,
+        "looseRoot": 0
+      },
+      {
+        "name": "product",
+        "mdCount": 46,
         "looseRoot": 0
       },
       {
         "name": "operations",
         "mdCount": 42,
-        "looseRoot": 0
+        "looseRoot": 2
       },
       {
         "name": "foundation",
@@ -39,8 +44,18 @@
         "looseRoot": 7
       },
       {
-        "name": "product",
-        "mdCount": 12,
+        "name": "gtm",
+        "mdCount": 3,
+        "looseRoot": 0
+      },
+      {
+        "name": "11-legal",
+        "mdCount": 1,
+        "looseRoot": 0
+      },
+      {
+        "name": "overview",
+        "mdCount": 1,
         "looseRoot": 0
       }
     ]
@@ -97,8 +112,8 @@
     },
     {
       "id": "sprawl:docsarchitecture",
-      "ok": false,
-      "detail": "relocate: legacy-README.md"
+      "ok": true,
+      "detail": "clean"
     },
     {
       "id": "sprawl:docsproduct",
@@ -108,7 +123,7 @@
     {
       "id": "sprawl:docsoperations",
       "ok": true,
-      "detail": "clean"
+      "detail": "relocate: agent-work-selection.md, cross-repo-coordination.md"
     },
     {
       "id": "sprawl:agile",
@@ -127,7 +142,6 @@
     }
   ],
   "failed": [
-    "sprawl:docsarchitecture",
     "sprawl:agents"
   ]
 }

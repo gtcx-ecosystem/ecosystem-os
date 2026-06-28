@@ -7026,12 +7026,12 @@
             }
           },
           {
-            "id": "docs/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md",
+            "id": "docs/business/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md",
             "category": "artifacts",
             "type": "artifact.file.modified",
-            "summary": "modified: docs/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md (uncommitted)",
+            "summary": "modified: docs/business/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md (uncommitted)",
             "refs": [
-              "docs/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md"
+              "docs/business/strategy/product-capability-matrix.md -> archive/legacy-docs-strategy/product-capability-matrix.md"
             ],
             "status": "open",
             "severity": null,

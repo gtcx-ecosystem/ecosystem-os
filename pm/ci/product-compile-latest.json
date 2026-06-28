@@ -1,23 +1,38 @@
 {
   "schema": "gtcx://canon-os/product-compile/v1",
-  "generatedAt": "2026-06-25T00:46:16.250Z",
+  "generatedAt": "2026-06-27T19:55:37.245Z",
   "repo": "ecosystem-os",
   "protocol": "P57-product-delivery-compile",
   "pass": true,
   "counts": {
-    "initiativesCompiled": 4,
-    "storiesCompiled": 6,
-    "initiativeTotal": 4,
-    "storyTotal": 6,
-    "backlogClear": true,
-    "openStories": 0,
-    "executableGaps": 0
+    "initiativesCompiled": 6,
+    "storiesCompiled": 8,
+    "initiativeTotal": 6,
+    "storyTotal": 9,
+    "backlogClear": false,
+    "openStories": 1,
+    "executableGaps": 2,
+    "ownerWarnings": 0
   },
+  "ownerWarnings": [],
   "hashes": {
-    "initiatives": "2a42bd35f0049055a64bf36bce78e64e8c091c2d7f9e22a8d5beaf42831d0889",
-    "backlog": "410bb66b61553dd3df34bfcdd874271ea653cdcce9a0d63a3bed756784fa6526"
+    "initiatives": "af488a54598d7d44a285593957fc0b2705682839345a980338a272db9b388ef1",
+    "backlog": "05db4f54cf5044998a0f008d243c5276bede186759c5833cc9ffc3a4e7edb6c5"
   },
-  "executableGaps": [],
+  "executableGaps": [
+    {
+      "initiativeId": "INIT-ECOSYSTEM-CORE",
+      "title": "INIT-ECOSYSTEM-CORE — Kernel, Graph, Ledger, Surface",
+      "reason": "no_open_stories",
+      "fix": "Open or add a pending story under initiative INIT-ECOSYSTEM-CORE → product:compile --write"
+    },
+    {
+      "initiativeId": "INIT-ECOSYSTEM-ETHOS",
+      "title": "INIT-ECOSYSTEM-ETHOS — Ethos module",
+      "reason": "no_open_stories",
+      "fix": "Open or add a pending story under initiative INIT-ECOSYSTEM-ETHOS → product:compile --write"
+    }
+  ],
   "featureSync": [],
   "stale": []
 }

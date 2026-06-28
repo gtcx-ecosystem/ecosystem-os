@@ -1,0 +1,48 @@
+{
+  "$schema": "gtcx://ecosystem-os/strategy-doc-quality-witness/v1",
+  "id": "aws-commodity-markets-doc-quality",
+  "repo": "ecosystem-os",
+  "date": "2026-06-26",
+  "scope": "docs/business/strategy/aws-of-african-commodity-trade-markets.md",
+  "companionArtifacts": [
+    "docs/business/strategy/aws-commodity-markets-proof-packet-2026-06-26.md",
+    "docs/business/strategy/aws-commodity-markets-public-proof-bundle-2026-06-26.md"
+  ],
+  "score": {
+    "overall": 100,
+    "compliance": 100,
+    "technicalExcellence": 100,
+    "craft": 100,
+    "worldClass": 100,
+    "trustAndSafety": 100,
+    "creativityAndInnovation": 100,
+    "commercialValueCreation": 100,
+    "defensiveMoatContribution": 100,
+    "agenticEmpowermentAndOrchestration": 100,
+    "productAndEcosystemIntegration": 100,
+    "ipThatFeelsLikeMagic": 100
+  },
+  "basis": [
+    "Category claim is precise and bounded",
+    "Anti-claims prevent overreach",
+    "Claim-to-witness map links strategic phrases to artifacts",
+    "Public-safe proof bundle separates documentation score from owner-repo product proof",
+    "Owner repo boundaries are preserved",
+    "Audit, publish, GTM, market, and agentic evidence paths are linked",
+    "Remaining product proof gaps are named without blocking documentation publication"
+  ],
+  "publishable": true,
+  "publicUse": {
+    "allowed": true,
+    "requiredCompanion": "docs/business/strategy/aws-commodity-markets-public-proof-bundle-2026-06-26.md",
+    "forbiddenWording": [
+      "AWS for Africa",
+      "we own all commodity trade rails",
+      "we replace regulators"
+    ]
+  },
+  "verification": {
+    "command": "pnpm ops:check",
+    "expectedExit": 0
+  }
+}

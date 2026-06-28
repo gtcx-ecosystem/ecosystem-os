@@ -1,6 +1,6 @@
 {
   "$schema": "gtcx://baseline-os/experience-forensic-solicitation/v1",
-  "updatedAt": "2026-06-25T00:24:33.860Z",
+  "updatedAt": "2026-06-27T10:19:34.364Z",
   "programId": "FORENSIC-AI-001",
   "moveSet": "forensic-onboarding",
   "prompts": [

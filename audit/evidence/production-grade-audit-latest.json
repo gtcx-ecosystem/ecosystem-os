@@ -3,18 +3,18 @@
   "coreId": "A2-PRODUCTION-GRADE",
   "slug": "production-grade",
   "repo": "ecosystem-os",
-  "date": "2026-06-15",
-  "score10": 10,
-  "score100": 100,
-  "score100Raw": 100,
-  "status": "rubric-driven",
+  "date": "2026-06-25",
+  "score10": 6,
+  "score100": 60,
+  "score100Raw": 60,
+  "status": "probe-gates-only",
   "source": "run-five-core-audit",
   "metrics": {
     "production-readiness": {
-      "score100": 100,
+      "score100": 0,
       "weight": 10,
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "D",
+      "source": "missing"
     }
   },
   "gates": [
@@ -28,7 +28,7 @@
     {
       "id": "ops-check-pass",
       "label": "pnpm ops:check exit 0",
-      "pass": true,
+      "pass": false,
       "severity": "P1",
       "cap100": 70
     },
@@ -40,20 +40,27 @@
       "cap100": 85
     }
   ],
-  "capsFired": [],
+  "capsFired": [
+    {
+      "id": "gate-ops-check-pass",
+      "label": "Gate failed: pnpm ops:check exit 0",
+      "ceiling100": 70,
+      "trigger": "ops-check-pass"
+    }
+  ],
   "openP0": 0,
   "openP1": 0,
-  "rubricSource": "audit-output",
-  "rubricSourcePath": "audit/audit-output-2026-06-15.json",
+  "rubricSource": "readiness-snapshot",
+  "rubricSourcePath": "pm/readiness-snapshot.json",
   "checks": {
     "ciPipeline": {
       "ok": true,
       "detail": "ci.yml or test/lint scripts"
     },
     "opsCheck": {
-      "ok": true,
-      "code": 0,
-      "out": "> ecosystem-os@0.1.0 ops:check /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\n> node platform/scripts/ops-check.mjs\n\nops:check ok — ecosystem-os P29+P35+PM"
+      "ok": false,
+      "code": 1,
+      "out": "> ecosystem-os@0.1.0 ops:check /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\n> node platform/scripts/ops-check.mjs\n\n ELIFECYCLE  Command failed with exit code 1.\n WARN   Local package.json exists, but node_modules missing, did you mean to install?\nops:check FAIL — ecosystem-os\n  - layout:check exit 1 —   ],   \"warnings\": [] }"
     },
     "deployPath": {
       "ok": true,
@@ -64,16 +71,14 @@
       "detail": "pm ci gates or manifest"
     },
     "p35Strict": {
-      "ok": true,
-      "code": 0,
-      "out": "{\n  \"ok\": true,\n  \"protocol\": \"35-ecosystem-workspace-world-class/v5.0.0\",\n  \"engine\": \"layout-spec-enforce/v1\",\n  \"contractVersion\": \"5.1.0\",\n  \"contractPath\": \"/Users/amanianai/Sites/gtcx-ecosystem/bridge-os/config/ecosystem-layout-contract.json\",\n  \"mode\": \"strict\",\n  \"repo\": \"ecosystem-os\",\n  \"repoRoot\": \"/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\",\n  \"repoKind\": \"ecosystem-monorepo-root\",\n  \"layoutVersion\": \"v5\",\n  \"resolvedHubs\": {\n    \"agentic\": {\n      \"path\": \"agentic\",\n      \"kind\": \"v5\"\n    },\n    \"archive\": {\n      \"path\": \"archive\",\n      \"kind\": \"v5\"\n    },\n    \"audit\": {"
+      "ok": false,
+      "code": 1,
+      "out": "{\n  \"ok\": false,\n  \"protocol\": \"35-ecosystem-workspace-world-class/v5.0.0\",\n  \"engine\": \"layout-spec-enforce/v1\",\n  \"contractVersion\": \"5.1.0\",\n  \"contractPath\": \"/Users/amanianai/Sites/gtcx-ecosystem/bridge-os/config/ecosystem-layout-contract.json\",\n  \"mode\": \"strict\",\n  \"repo\": \"ecosystem-os\",\n  \"repoRoot\": \"/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os\",\n  \"repoKind\": \"ecosystem-monorepo-root\",\n  \"layoutVersion\": \"v5\",\n  \"resolvedHubs\": {\n    \"agentic\": {\n      \"path\": \"agentic\",\n      \"kind\": \"v5\"\n    },\n    \"agents\": {\n      \"path\": \"agents\",\n      \"kind\": \"v5\"\n    },\n    \"archive\": "
     }
   },
-  "gaps": [],
-  "runbook": "audit/runbooks/A2-production-grade.md",
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  "gaps": [
+    "opsCheck",
+    "p35Strict"
+  ],
+  "runbook": "audit/runbooks/A2-production-grade.md"
 }

@@ -1,6 +1,6 @@
-# Session trajectory — ecosystem-os
+# Session trajectory — .
 
-**Score:** 100/100 · **Material session:** false
+**Score:** 85/100 · **Material session:** false
 
 | Check | Status |
 |-------|--------|
@@ -8,6 +8,11 @@
 | session.compliance attestation | pass |
 | ≥1 session:record when material session (commits≥1 or duration≥30m) | pass |
 | gems or decisions when commits≥3 | pass |
+| retrospective artifact exists | fail |
+| open-items witness exists | pass |
 
+## Failures
+
+- trajectory.retrospective: retrospective artifact exists
 
 

@@ -23,10 +23,5 @@
       "detail": "no exr-pack.yaml"
     }
   ],
-  "at": "2026-06-19T02:27:03.030Z",
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  "at": "2026-06-27T12:13:20.411Z"
 }

@@ -1,0 +1,69 @@
+{
+  "schema": "gtcx://baseline-os/session-ledger/v1",
+  "sessionId": "7b9c578b-0e9c-4050-80e9-266eb68c75b5",
+  "repo": "ecosystem-os",
+  "startedAt": "2026-06-27T10:19:33.903Z",
+  "agentTrace": {
+    "id": "gtcx-agent-7b9c578b-0e9c-4050-80e9-266eb68c75b5",
+    "header": "x-gtcx-agent-trace-id",
+    "otelAttribute": "gtcx.agent_trace_id",
+    "traceparent": "00-f949e0a667da35e718f51a52a1a9233a-a4271c15e1a74389-01"
+  },
+  "persona": "platform-architect",
+  "frame": "development",
+  "p22Head": "PLAN-NEXT-ON-CLEAR",
+  "tracking": {
+    "schema": "gtcx://baseline-os/session-tracked-items/v1",
+    "spec": "baseline-os/pm/spec/session-tracked-items.json",
+    "agentReference": "workstream/sessions/TRACKED-ITEMS.md"
+  },
+  "events": [
+    {
+      "id": "f68e0f47-8e8b-44d5-87e7-38bf1de18278",
+      "at": "2026-06-27T10:19:35.109Z",
+      "type": "session.start",
+      "source": "hook",
+      "summary": "Session bootstrap — ecosystem-os",
+      "refs": [
+        "PLAN-NEXT-ON-CLEAR"
+      ],
+      "meta": {
+        "ssot": "baseline-os/platform/scripts/agent/session-ledger-init.mjs",
+        "protocol": "51-session-forensic-synthesis"
+      }
+    },
+    {
+      "id": "7235591d-99ac-4548-b035-e1c74193a6fa",
+      "at": "2026-06-27T10:19:35.109Z",
+      "type": "p22.head",
+      "source": "hook",
+      "summary": "P22 head: PLAN-NEXT-ON-CLEAR",
+      "refs": [
+        "PLAN-NEXT-ON-CLEAR"
+      ],
+      "meta": {
+        "persona": "platform-architect",
+        "frame": "development"
+      }
+    },
+    {
+      "id": "4155858f-2d3a-4996-aae9-e48bb1b0e6ff",
+      "at": "2026-06-27T10:19:35.113Z",
+      "type": "session.compliance",
+      "source": "hook",
+      "summary": "Agent attests P51 forensic capture: session:init active; session:record obligation for gems, bugs, CI insights during work; session:open-items at closure.",
+      "refs": [
+        "PLAN-NEXT-ON-CLEAR"
+      ],
+      "meta": {
+        "protocol": "51-session-forensic-synthesis",
+        "agentObligation": [
+          "session:record during work",
+          "session:open-items at closure"
+        ],
+        "complianceGate": "session:compliance:check"
+      }
+    }
+  ],
+  "lastRecordedAt": "2026-06-27T10:19:35.113Z"
+}

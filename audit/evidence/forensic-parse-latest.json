@@ -1,12 +1,13 @@
 {
   "schema": "gtcx://baseline-os/forensic-parse-artifact/v1",
   "programId": "FORENSIC-PARSE-001",
-  "parsedAt": "2026-06-25T03:06:15.296Z",
+  "parsedAt": "2026-06-27T10:19:34.262Z",
   "repo": "ecosystem-os",
   "corpus": {
     "docs": {
       "filesScanned": 400,
       "paths": [
+        "docs/11-legal/README.md",
         "docs/CHANGELOG.md",
         "docs/INDEX.md",
         "docs/README.md",
@@ -85,8 +86,7 @@
         "docs/business/case-studies/FOLDER-SPEC.md",
         "docs/business/case-studies/README.md",
         "docs/business/customers/FOLDER-SPEC.md",
-        "docs/business/customers/README.md",
-        "docs/business/customers/core-audiences.md"
+        "docs/business/customers/README.md"
       ],
       "initiativeIds": [
         "INIT-DOCS-FOUNDATION-IA-V1",
@@ -124,16 +124,14 @@
         "INIT-ECOSYSTEM-DOCS",
         "INIT-ECOSYSTEM-VENTURE",
         "INIT-ECOSYSTEM-AGENCY",
-        "INIT-M5-",
-        "BL-O-01",
-        "INIT-M7-"
+        "INIT-BASELINE-MATURITY-LANE-SOR"
       ]
     },
     "sessions": {
-      "ledgerCount": 21,
-      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-terminal-os/agent-transcripts/3da4db96-edcd-44ae-b33b-9000a59d5910/3da4db96-edcd-44ae-b33b-9000a59d5910.jsonl",
-      "transcriptLines": 681,
-      "userQueryCount": 30
+      "ledgerCount": 34,
+      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-baseline-os/agent-transcripts/3577dbe4-16a2-449b-92d4-5f56d9f622ba/3577dbe4-16a2-449b-92d4-5f56d9f622ba.jsonl",
+      "transcriptLines": 417,
+      "userQueryCount": 10
     }
   },
   "layerBindings": {
@@ -143,7 +141,7 @@
       "candidates": [
         {
           "personaId": "platform-architect",
-          "weight": 20
+          "weight": 31
         }
       ]
     },
@@ -152,6 +150,7 @@
         "development"
       ],
       "tags": [
+        "['legal', 'compliance']",
         "['documentation', 'architecture']",
         "[['adr', 'eap', 'architecture', 'credentials']]",
         "['documentation']",
@@ -190,8 +189,7 @@
         "[venture, module-scope]",
         "['documentation', 'business']",
         "['documentation', 'business/case-studies']",
-        "['documentation', 'business/customers']",
-        "['business']"
+        "['documentation', 'business/customers']"
       ],
       "confidence": 0.75
     },
@@ -206,6 +204,10 @@
         "agency:check",
         "agency:score",
         "agent:next-work",
+        "before",
+        "runtime",
+        "with",
+        "instead",
         "canon:synthesize",
         "agency:check:write",
         "agency:score:write",
@@ -218,87 +220,37 @@
         "plus",
         "assessment",
         "start",
-        "context",
-        "ops:check",
-        "agent:protocols:check",
-        "agent:conduct:check",
-        "agent:auto-dev:check",
-        "dev",
         "session",
-        "next",
-        "gates",
-        "hub",
-        "pm:surface-gtm-roadmaps:audit",
-        "docs:product:check",
-        "pm:surface-execution:close",
-        "pm:surface-execution:check",
-        "pm:surface-forensic-pack:publish",
-        "pm:surface-forensic-pack:close",
-        "--dir",
-        "docs:tree:check",
-        "fabric:ops:check",
-        "fabric:ops:check:strict",
-        "fabric:ops-contracts:check",
-        "agile:check",
-        "ops:consumption:check",
-        "mcp",
-        "to",
-        "wiring",
-        "shapes",
-        "serve",
-        "agent:consumption:check",
-        "--filter",
-        "mirror",
-        "docs:pack:pillar-contract:check",
-        "canon:contracts:check",
-        "pm:sync",
-        "repo:provision:check",
-        "Baseline runtime",
-        "gtm:readiness:check",
-        "pm:subscriber-scale:check",
-        "pm:subscriber-scale:check:strict"
+        "script",
+        "files",
+        "directory",
+        "file",
+        "fleet:ceremony:check:write",
+        "completion",
+        "audit",
+        "shows",
+        "operations:check",
+        "context",
+        "invocations",
+        "scores",
+        "ops:check"
       ],
       "commands": [
         "baseline start",
-        "baseline context",
-        "pnpm agent:next-work",
-        "pnpm ops:check",
-        "pnpm agent:protocols:check",
-        "pnpm agent:conduct:check",
-        "pnpm agent:auto-dev:check",
-        "pnpm dev",
         "baseline session",
-        "baseline next",
-        "baseline gates",
-        "baseline hub",
-        "pnpm session",
-        "pnpm pm:surface-gtm-roadmaps:audit",
-        "pnpm docs:product:check",
-        "pnpm pm:surface-execution:close",
-        "pnpm pm:surface-execution:check",
-        "pnpm pm:surface-forensic-pack:publish",
-        "pnpm pm:surface-forensic-pack:close",
-        "pnpm --dir",
-        "pnpm docs:ia:check",
-        "pnpm docs:tree:check",
-        "pnpm fabric:ops:check",
-        "pnpm fabric:ops:check:strict",
-        "pnpm fabric:ops-contracts:check",
-        "pnpm agile:check",
-        "pnpm ops:consumption:check",
-        "pnpm next",
-        "pnpm gates",
-        "pnpm hub",
-        "pnpm mcp",
-        "baseline to",
-        "baseline wiring",
-        "baseline shapes",
-        "baseline serve",
-        "pnpm serve",
-        "pnpm agent:consumption:check",
-        "pnpm --filter",
-        "baseline mirror",
-        "pnpm docs:pack:pillar-contract:check"
+        "pnpm script",
+        "baseline files",
+        "baseline directory",
+        "baseline file",
+        "pnpm fleet:ceremony:check:write",
+        "baseline completion",
+        "baseline audit",
+        "baseline shows",
+        "pnpm operations:check",
+        "pnpm context",
+        "pnpm invocations",
+        "baseline scores",
+        "pnpm ops:check"
       ]
     },
     "studio": {
@@ -306,6 +258,7 @@
         "folder-spec",
         "docs-integrity-pack",
         "relocation-report",
+        "docs-integrity",
         "folder-spec",
         "deliverable"
       ],
@@ -317,7 +270,6 @@
       "compliance-audit"
     ],
     "initiatives": [
-      "BL-O-01",
       "DOC-01",
       "DOC-02",
       "DOC-03",
@@ -345,14 +297,13 @@
       "ECO-VEN-003",
       "ECO-VEN-005",
       "ECO-VEN-006",
+      "INIT-BASELINE-MATURITY-LANE-SOR",
       "INIT-DOC-FLEET-PUBLISH",
       "INIT-DOCS-FOUNDATION-IA-V1",
       "INIT-DOCS-PROVISIONING-V1-W2",
       "INIT-ECOSYSTEM-AGENCY",
       "INIT-ECOSYSTEM-DOCS",
       "INIT-ECOSYSTEM-VENTURE",
-      "INIT-M5-",
-      "INIT-M7-",
       "XR-102",
       "XR-510"
     ],
@@ -362,16 +313,6 @@
     ]
   },
   "ingestSignals": [
-    {
-      "id": "initiative:BL-O-01",
-      "kind": "initiative",
-      "text": "Active initiative reference: BL-O-01",
-      "source": "docs+sessions",
-      "refs": [
-        "BL-O-01"
-      ],
-      "confidence": 0.85
-    },
     {
       "id": "initiative:DOC-01",
       "kind": "initiative",
@@ -513,6 +454,16 @@
       "confidence": 0.85
     },
     {
+      "id": "initiative:ECO-DOCS-004",
+      "kind": "initiative",
+      "text": "Active initiative reference: ECO-DOCS-004",
+      "source": "docs+sessions",
+      "refs": [
+        "ECO-DOCS-004"
+      ],
+      "confidence": 0.85
+    },
+    {
       "id": "persona:platform-architect",
       "kind": "persona",
       "text": "Dominant persona signal: platform-architect",
@@ -613,51 +564,51 @@
       "confidence": 0.7
     },
     {
-      "id": "lang:canon:synthesize",
+      "id": "lang:before",
       "kind": "lang",
-      "text": "Lang expression observed: canon:synthesize",
+      "text": "Lang expression observed: before",
       "source": "docs",
       "refs": [
-        "canon:synthesize"
+        "before"
       ],
       "confidence": 0.7
     },
     {
-      "id": "query:a7aab5ff",
+      "id": "query:df519545",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:11 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 3:52 AM (UTC+2)\n\nBriefly inform the user about the task result and perform any follow-up actions (if needed).",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:a9040d3d",
+      "id": "query:df519545",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:31 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 3:52 AM (UTC+2)\n\nBriefly inform the user about the task result and perform any follow-up actions (if needed).",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:a9040d3d",
+      "id": "query:46f25638",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:31 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 4:56 AM (UTC+2)\n\ncomplete a fresh audit of each repo based on your last audit",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:a9b0b8dc",
+      "id": "query:91c6ce87",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 2:41 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 5:24 AM (UTC+2)\n\nwhat needs to happen next?",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:894d5abe",
+      "id": "query:135bd04e",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 4:56 AM (UTC+2)\n\nexecute roadmap",
+      "text": "Thursday, Jun 25, 2026, 5:26 AM (UTC+2)\n\non a branch?",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65

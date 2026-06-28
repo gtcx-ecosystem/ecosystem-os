@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
-  "discoveredAt": "2026-06-25T00:24:33.858Z",
+  "discoveredAt": "2026-06-27T10:19:34.362Z",
   "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
   "repoId": "ecosystem-os",
   "filesScanned": 180,
@@ -49,53 +49,6 @@
           "path": ".baseline/forensic-ai/ambient-context.json",
           "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
           "weight": 5
-        }
-      ]
-    },
-    {
-      "name": "GTCX Agentic",
-      "score": 22,
-      "confidence": "inferred",
-      "evidence": [
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 22, \"confidence\"",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 22, \\\"confidence\\\"\", ",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 22, \\\\\\\"confidence\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 22, \\\\\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
-          "weight": 1
-        },
-        {
-          "path": ".baseline/forensic-ai/ambient-context.json",
-          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
-          "weight": 1
-        },
-        {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
-          "snippet": "--- title: 'GTCX Agentic — Enterprise Overview & Stakeholder Gui",
-          "weight": 1
-        },
-        {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
-          "snippet": "ol-architect --- # GTCX Agentic — Enterprise Overview & Stakeholder Gui",
-          "weight": 1
         }
       ]
     },
@@ -179,49 +132,49 @@
       ]
     },
     {
-      "name": "Negative Scope\n\nThis",
+      "name": "GTCX Agentic",
       "score": 14,
       "confidence": "inferred",
       "evidence": [
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/ai-agents-onboarding.md",
-          "snippet": "* - version 2.0 ## Negative Scope This document does **not** cover: - Topics ",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 14, \"confidence\"",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/contributor-guide.md",
-          "snippet": "k for guidance. ## Negative Scope This document does **not** cover: - Topics ",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 14, \\\"confidence\\\"\", ",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/getting-started-ai-agents.md",
-          "snippet": "* - Version 2.0 ## Negative Scope This guide does **not** cover: - Deep archi",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 14, \\\\\\\"confidence\\",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
-          "snippet": "ring tests --- ## Negative Scope This document does **not** cover: - **Go-to",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/gtm-q2-africa.md",
-          "snippet": "hardcoded. --- ## Negative Scope This document does **not** cover: - **Techn",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
-          "snippet": "path repo. --- ## Negative Scope This document does **not** cover: - **Strat",
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
-          "snippet": " platform. --- ## Negative Scope This document does **not** cover: - **Curre",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "--- title: 'GTCX Agentic — Enterprise Overview & Stakeholder Gui",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/product/README.md",
-          "snippet": "t v5 migration. ## Negative Scope This product document does **not** cover: -",
-          "weight": 3
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "ol-architect --- # GTCX Agentic — Enterprise Overview & Stakeholder Gui",
+          "weight": 1
         }
       ]
     },
@@ -273,32 +226,72 @@
       ]
     },
     {
-      "name": "Executive Summary\n\nThis",
-      "score": 5,
+      "name": "Negative Scope\n\nThis",
+      "score": 10,
       "confidence": "inferred",
       "evidence": [
         {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/ai-agents-onboarding.md",
+          "snippet": "* - version 2.0 ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/contributor-guide.md",
+          "snippet": "k for guidance. ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
           "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/getting-started-ai-agents.md",
-          "snippet": "ed Onboarding** ## Executive Summary This guide provides AI agents and collaborat",
+          "snippet": "* - Version 2.0 ## Negative Scope This guide does **not** cover: - Deep archi",
           "weight": 1
         },
         {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/roadmap/README.md",
-          "snippet": "r GTCX Agentic. ## Executive Summary This directory contains strategic roadmaps a",
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
+          "snippet": "ring tests --- ## Negative Scope This document does **not** cover: - **Go-to",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/gtm-q2-africa.md",
+          "snippet": "hardcoded. --- ## Negative Scope This document does **not** cover: - **Techn",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
+          "snippet": "path repo. --- ## Negative Scope This document does **not** cover: - **Strat",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
+          "snippet": " platform. --- ## Negative Scope This document does **not** cover: - **Curre",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/product/README.md",
+          "snippet": "t v5 migration. ## Negative Scope This product document does **not** cover: -",
           "weight": 3
-        },
-        {
-          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/roadmap/roadmap-2026-q2.md",
-          "snippet": "prompt.md` --- ## Executive Summary This roadmap captured all remaining internal",
-          "weight": 1
         }
       ]
     },
     {
       "name": "GTCX Ecosystem",
-      "score": 4,
+      "score": 7,
       "confidence": "inferred",
       "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Ecosystem\", \"score\": 7, \"confidence\":",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Ecosystem\\\", \\\"score\\\": 7, \\\"confidence\\\":\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Ecosystem\\\\\\\", \\\\\\\"score\\\\\\\": 7, \\\\\\\"confidence\\\\",
+          "weight": 1
+        },
         {
           "path": ".baseline/frame/catalog.json",
           "snippet": "cx\", \"name\": \"GTCX Ecosystem\", \"tier\": \"company\", \"descr",
@@ -317,6 +310,33 @@
         {
           "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
           "snippet": "26-03-09 **Scope:** GTCX Ecosystem — strategic blindspots, low-hanging fru",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Principal Platform Architect",
+      "score": 4,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/memory/session-last-start.json",
+          "snippet": "\", \"role\": \"Principal Platform Architect\", \"tone\": \"Systems-oriented, re",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/memory/session-last-start.json",
+          "snippet": "eminder\": \"Embody **Principal Platform Architect** — Platform lead accountable for fleet",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/session/ego-latest.md",
+          "snippet": "velopment **Role:** Principal Platform Architect **Tone:** Systems-oriented, reliability",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/session/ego-latest.md",
+          "snippet": "Architect\" role: \"Principal Platform Architect\" category: \"engineering\" expertise_",
           "weight": 1
         }
       ]
@@ -380,8 +400,7 @@
     "canon-os",
     "protocol-architect",
     "chief-of-staff",
-    "'product-lead'",
-    "'protocol-architect'"
+    "'product-lead'"
   ],
   "projectHints": [
     "ecosystem-os",

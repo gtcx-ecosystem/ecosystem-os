@@ -3,7 +3,7 @@
   "coreId": "A4-COMPLIANCE-SECURITY",
   "slug": "compliance-security",
   "repo": "ecosystem-os",
-  "date": "2026-06-15",
+  "date": "2026-06-25",
   "score10": 10,
   "score100": 100,
   "score100Raw": 100,
@@ -11,22 +11,22 @@
   "source": "run-five-core-audit",
   "metrics": {
     "security": {
-      "score100": 100,
+      "score100": 0,
       "weight": 12,
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "D",
+      "source": "missing"
     },
     "enterprise-readiness": {
       "score100": 100,
       "weight": 10,
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "B",
+      "source": "strategic-depth"
     },
     "bank-grade-auditability": {
-      "score100": 100,
+      "score100": 0,
       "weight": 9,
-      "confidence": "A",
-      "source": "audit-output"
+      "confidence": "D",
+      "source": "missing"
     }
   },
   "gates": [
@@ -55,8 +55,8 @@
   "capsFired": [],
   "openP0": 0,
   "openP1": 0,
-  "rubricSource": "audit-output",
-  "rubricSourcePath": "audit/audit-output-2026-06-15.json",
+  "rubricSource": "readiness-snapshot",
+  "rubricSourcePath": "pm/readiness-snapshot.json",
   "checks": {
     "noEnvInGit": {
       "ok": true,
@@ -76,10 +76,5 @@
     }
   },
   "gaps": [],
-  "runbook": "audit/runbooks/A4-compliance-security.md",
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  "runbook": "audit/runbooks/A4-compliance-security.md"
 }

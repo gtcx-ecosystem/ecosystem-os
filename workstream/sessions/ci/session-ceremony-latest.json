@@ -2,16 +2,16 @@
   "schema": "gtcx://agile-os/session-ceremony-eval/v1",
   "spec": "agile-os/pm/spec/session-ceremony-artifacts-standard.json",
   "protocol": "P60-session-ceremony-artifacts",
-  "repo": "ecosystem-os",
-  "repoPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
-  "phase": "start",
-  "generatedAt": "2026-06-25T00:11:52.774Z",
-  "advisory": true,
+  "repo": ".",
+  "repoPath": ".",
+  "phase": "close",
+  "generatedAt": "2026-06-26T00:19:46.377Z",
+  "advisory": false,
   "ok": true,
   "ledger": {
     "ok": true,
-    "sessionId": "489e1f3a-ae20-413c-8cb3-499614a848e4",
-    "startedAt": "2026-06-25T00:11:49.194Z",
+    "sessionId": "14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
+    "startedAt": "2026-06-26T00:18:22.678Z",
     "events": 3,
     "recordEvents": 1,
     "hasCompliance": true,
@@ -20,18 +20,18 @@
     "decisions": 1,
     "ledger": {
       "schema": "gtcx://baseline-os/session-ledger/v1",
-      "sessionId": "489e1f3a-ae20-413c-8cb3-499614a848e4",
+      "sessionId": "14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
       "repo": "ecosystem-os",
-      "startedAt": "2026-06-25T00:11:49.194Z",
+      "startedAt": "2026-06-26T00:18:22.678Z",
       "agentTrace": {
-        "id": "gtcx-agent-489e1f3a-ae20-413c-8cb3-499614a848e4",
+        "id": "gtcx-agent-14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
         "header": "x-gtcx-agent-trace-id",
         "otelAttribute": "gtcx.agent_trace_id",
-        "traceparent": "00-0eb0c9c80265db2d19ebed889565b29c-a99422f6e2ccf1ee-01"
+        "traceparent": "00-22107d1581e579c48835df9868b08074-9a5834f8ec8329fc-01"
       },
       "persona": "platform-architect",
       "frame": "development",
-      "p22Head": "sprint-backlog",
+      "p22Head": "PLAN-NEXT-ON-CLEAR",
       "tracking": {
         "schema": "gtcx://baseline-os/session-tracked-items/v1",
         "spec": "baseline-os/pm/spec/session-tracked-items.json",
@@ -39,13 +39,13 @@
       },
       "events": [
         {
-          "id": "75d8f65a-4358-4965-b2bc-7fc4db487c10",
-          "at": "2026-06-25T00:11:50.141Z",
+          "id": "f160e4ae-311a-4b93-bbf6-54c4ca0ef56a",
+          "at": "2026-06-26T00:18:23.738Z",
           "type": "session.start",
           "source": "hook",
           "summary": "Session bootstrap — ecosystem-os",
           "refs": [
-            "sprint-backlog"
+            "PLAN-NEXT-ON-CLEAR"
           ],
           "meta": {
             "ssot": "baseline-os/platform/scripts/agent/session-ledger-init.mjs",
@@ -53,13 +53,13 @@
           }
         },
         {
-          "id": "dfa3a4d1-4afb-41a4-8158-0c1989208113",
-          "at": "2026-06-25T00:11:50.141Z",
+          "id": "1f8bcdcd-95cc-479e-998a-9170145027bb",
+          "at": "2026-06-26T00:18:23.738Z",
           "type": "p22.head",
           "source": "hook",
-          "summary": "P22 head: sprint-backlog",
+          "summary": "P22 head: PLAN-NEXT-ON-CLEAR",
           "refs": [
-            "sprint-backlog"
+            "PLAN-NEXT-ON-CLEAR"
           ],
           "meta": {
             "persona": "platform-architect",
@@ -67,13 +67,13 @@
           }
         },
         {
-          "id": "a3d3c35f-e430-4ac4-a1c5-7f442fa73a6a",
-          "at": "2026-06-25T00:11:50.146Z",
+          "id": "a334337e-e72e-4337-b467-5e166e9dfc5b",
+          "at": "2026-06-26T00:18:23.743Z",
           "type": "session.compliance",
           "source": "hook",
           "summary": "Agent attests P51 forensic capture: session:init active; session:record obligation for gems, bugs, CI insights during work; session:open-items at closure.",
           "refs": [
-            "sprint-backlog"
+            "PLAN-NEXT-ON-CLEAR"
           ],
           "meta": {
             "protocol": "51-session-forensic-synthesis",
@@ -85,17 +85,17 @@
           }
         }
       ],
-      "lastRecordedAt": "2026-06-25T00:11:50.146Z"
+      "lastRecordedAt": "2026-06-26T00:18:23.743Z"
     }
   },
   "trajectory": {
     "schema": "gtcx://baseline-os/session-trajectory-eval/v1",
     "initiative": "ADP-S3-TRAJECTORY",
-    "ok": true,
-    "trajectoryScore100": 100,
+    "ok": false,
+    "trajectoryScore100": 85,
     "strict": false,
     "materialSession": false,
-    "durationMin": 0,
+    "durationMin": 1,
     "git": {
       "commits": 0,
       "available": true
@@ -121,7 +121,7 @@
         "weight": 30,
         "detail": {
           "commits": 0,
-          "durationMin": 0,
+          "durationMin": 1,
           "recordEvents": 1,
           "materialSession": false
         }
@@ -137,9 +137,23 @@
           "gems": 0,
           "decisions": 1
         }
+      },
+      {
+        "id": "trajectory.retrospective",
+        "label": "retrospective artifact exists",
+        "pass": false,
+        "weight": 15
+      },
+      {
+        "id": "trajectory.openItems",
+        "label": "open-items witness exists",
+        "pass": true,
+        "weight": 10
       }
     ],
-    "failures": [],
+    "failures": [
+      "trajectory.retrospective: retrospective artifact exists"
+    ],
     "warnings": []
   },
   "directories": [
@@ -199,7 +213,9 @@
     }
   },
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "trajectory.retrospective: retrospective artifact exists"
+  ],
   "agentObligation": [
     "featuresWorked on story switch or commit",
     "bugs on defect found/fixed",
@@ -222,5 +238,34 @@
       "baseline session:open-items",
       "baseline session:record"
     ]
-  }
+  },
+  "closeSteps": [
+    {
+      "step": "open-items",
+      "ok": true,
+      "exitCode": 0,
+      "command": "session:open-items --write"
+    },
+    {
+      "step": "retrospective",
+      "ok": true,
+      "exitCode": 0,
+      "command": "ecosystem:session:retrospective:write"
+    },
+    {
+      "step": "critique",
+      "ok": true,
+      "exitCode": 0,
+      "command": "ecosystem:session:critique:write",
+      "verdict": null,
+      "findings": 0
+    },
+    {
+      "step": "innovation-note",
+      "ok": true,
+      "skipped": true,
+      "reason": "no innovation triggers"
+    }
+  ],
+  "closedAt": "2026-06-26T00:19:46.378Z"
 }

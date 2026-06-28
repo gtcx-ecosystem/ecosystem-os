@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://canon-os/gtm-status-report/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-24T17:42:26.294Z",
+  "generatedAt": "2026-06-27T09:08:15.010Z",
   "features": [
     {
       "featureId": "_rollup",

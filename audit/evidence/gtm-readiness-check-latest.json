@@ -1,13 +1,13 @@
 {
   "schema": "gtcx://canon-os/gtm-readiness-witness/v1",
   "repo": "ecosystem-os",
-  "generatedAt": "2026-06-24T17:42:26.336Z",
+  "generatedAt": "2026-06-27T09:08:15.012Z",
   "profile": "product",
   "dimensions": [
     {
       "id": "pillars11pr",
       "score": 59,
-      "pass": true
+      "pass": false
     },
     {
       "id": "roadmapHierarchy",
@@ -35,5 +35,5 @@
       "pass": true
     }
   ],
-  "pass": true
+  "pass": false
 }

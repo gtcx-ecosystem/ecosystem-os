@@ -2,8 +2,8 @@
   "schema": "gtcx://audit/fleet-diagnostic-snapshot/v2",
   "repo": "ecosystem-os",
   "tier": "ecosystem-operating-system",
-  "refreshedAt": "2026-06-25T03:13:25.948Z",
-  "sessionPhase": null,
+  "refreshedAt": "2026-06-27T01:27:36.644Z",
+  "sessionPhase": "close",
   "laneSeparation": {
     "policy": "GS-MATURITY-LANE-001",
     "gtmStageModel": "GS-GTM-STAGE-002"
@@ -19,13 +19,13 @@
       "deepCommand": "full-audit skill in owner repo workspace"
     },
     "multiPillar": {
-      "composite100": 59,
-      "trustCap100": 66,
-      "compliance100": 69,
+      "composite100": 70,
+      "trustCap100": 70,
+      "compliance100": 99,
       "published": false,
       "witnessPath": "audit/evidence/mpr-repo-latest.json",
-      "evaluatedAt": "2026-06-25T03:07:25.178Z",
-      "ageHours": 0.1002133433702257,
+      "evaluatedAt": "2026-06-26T11:34:23.358Z",
+      "ageHours": 13.887023574490017,
       "stale": false,
       "refreshCommand": "pnpm audit:mpr:repo:run -- --repo <repo> --write"
     },
@@ -38,7 +38,7 @@
         "P35 strict"
       ],
       "witnessPath": "audit/evidence/master-audit-latest.json",
-      "ageHours": 0.11911826666937934,
+      "ageHours": 46.355422988891604,
       "stale": false,
       "refreshCommand": "pnpm ecosystem:master:audit --repo <repo> --write"
     },
@@ -288,7 +288,7 @@
       },
       "engineeringMaturity": {
         "lane": "engineeringMaturity",
-        "score100": 51,
+        "score100": 52,
         "status": "in-progress",
         "witnessPath": "audit/evidence/mpr-repo-latest.json",
         "mprPublished": false
@@ -370,7 +370,7 @@
     }
   },
   "rollup": {
-    "avgScore100": 67,
+    "avgScore100": 70,
     "anyStale": true,
     "pilotReady": false,
     "integratorPilotReady": false,

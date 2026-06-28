@@ -1,0 +1,11 @@
+{
+  "schema": "gtcx://baseline-os/lang-regime-pins/v1",
+  "version": 1,
+  "storyId": "GOV-003",
+  "sessionId": "task-1782433168189-VboqK4RI",
+  "updatedAt": "2026-06-26T00:19:28.192Z",
+  "pins": [],
+  "derived": {
+    "regimeIds": []
+  }
+}

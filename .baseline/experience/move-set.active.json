@@ -1,0 +1,77 @@
+{
+  "schema": "gtcx://baseline-os/experience-move-set-active/v1",
+  "version": 1,
+  "updatedAt": "2026-06-26T00:19:28.193Z",
+  "moveSet": {
+    "schema": "gtcx://baseline-os/interaction-move-set",
+    "id": "task-1782433168189-VboqK4RI",
+    "voice": {
+      "profile": "institutional"
+    },
+    "focus": {
+      "slice": "platform",
+      "frameTags": []
+    },
+    "responses": {
+      "contract": "status-update",
+      "sections": [
+        "Execution mode",
+        "Done",
+        "Next work item"
+      ],
+      "forbiddenClosings": [
+        "if you want",
+        "want me to",
+        "your call",
+        "say if you want",
+        "in the next session",
+        "can implement"
+      ]
+    },
+    "tone": {
+      "register": "concise",
+      "maxVerbosity": "medium"
+    },
+    "formatting": {
+      "bar": "standard",
+      "codeCitation": true,
+      "tablePolicy": "when-needed"
+    },
+    "literacy": {
+      "level": "operator",
+      "aiLiteracy": "standard",
+      "jargonPolicy": "define-on-first-use"
+    },
+    "workMode": {
+      "mode": "autonomous",
+      "humanEscalation": "never-menu"
+    },
+    "questions": {
+      "policy": "no-engagement-bait",
+      "maxClarifications": 2
+    },
+    "govern": {
+      "activeRegimes": [
+        "P26",
+        "P45",
+        "product-lead-directive"
+      ],
+      "blockPatterns": [
+        "if you want",
+        "want me to",
+        "your call",
+        "say if you want",
+        "in the next session",
+        "can implement"
+      ]
+    },
+    "provenance": {
+      "foundational": [
+        "baseline.config",
+        "EXPERIENCE-PACK-001"
+      ],
+      "learned": [],
+      "operatorSet": []
+    }
+  }
+}

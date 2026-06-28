@@ -1,18 +1,18 @@
 {
   "schema": "gtcx://canon-os/docs-tree-witness/v1",
-  "generatedAt": "2026-06-24T17:29:03.540Z",
+  "generatedAt": "2026-06-27T14:56:52.645Z",
   "repo": "ecosystem-os",
-  "strict": true,
-  "structureOnly": false,
+  "strict": false,
+  "structureOnly": true,
   "profile": "fleet-documentation",
   "pass": false,
   "metrics": {
-    "mdFiles": 656,
-    "folders": 152,
-    "missingReadme": 2,
+    "mdFiles": 0,
+    "folders": 0,
+    "missingReadme": 0,
     "missingFrontmatter": 0,
     "missingDocumentType": 0,
-    "unknownTopLevel": 0
+    "unknownTopLevel": 2
   },
   "gates": [
     {
@@ -62,18 +62,13 @@
     },
     {
       "id": "top-level:allowlist",
-      "ok": true,
-      "detail": "ok"
+      "ok": false,
+      "detail": "11-legal, gtm"
     },
     {
       "id": "deprecated:overview",
       "ok": true,
       "detail": "pointer-only"
-    },
-    {
-      "id": "deprecated:_archive",
-      "ok": false,
-      "detail": "decompose → archive/"
     },
     {
       "id": "layer:required:foundation",
@@ -259,69 +254,9 @@
       "id": "aux:reference:README.md",
       "ok": true,
       "detail": "README.md"
-    },
-    {
-      "id": "folder:readme:docs/_archive",
-      "ok": false,
-      "detail": "missing README.md"
-    },
-    {
-      "id": "folder:readme:docs/_archive/folder-spec-superseded",
-      "ok": false,
-      "detail": "missing README.md"
-    },
-    {
-      "id": "folder:spec:docs/operations",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/organization",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/repo",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/runbooks",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/structure",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/templates",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/operations/workspace",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
-    },
-    {
-      "id": "folder:spec:docs/product/roadmap/stories",
-      "ok": false,
-      "detail": "missing FOLDER-SPEC.md"
     }
   ],
   "failed": [
-    "deprecated:_archive",
-    "folder:readme:docs/_archive",
-    "folder:readme:docs/_archive/folder-spec-superseded",
-    "folder:spec:docs/operations",
-    "folder:spec:docs/operations/organization",
-    "folder:spec:docs/operations/repo",
-    "folder:spec:docs/operations/runbooks",
-    "folder:spec:docs/operations/structure",
-    "folder:spec:docs/operations/templates",
-    "folder:spec:docs/operations/workspace",
-    "folder:spec:docs/product/roadmap/stories"
+    "top-level:allowlist"
   ]
 }

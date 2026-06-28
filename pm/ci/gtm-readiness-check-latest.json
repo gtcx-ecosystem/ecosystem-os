@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://canon-os/gtm-readiness-check/v1",
-  "generatedAt": "2026-06-24T17:42:26.379Z",
+  "generatedAt": "2026-06-27T09:08:15.015Z",
   "repo": "ecosystem-os",
   "profile": "product",
-  "ok": true,
+  "ok": false,
   "composite": 89,
   "dimensions": [
     {
       "id": "pillars11pr",
       "score": 59,
-      "pass": true,
+      "pass": false,
       "detail": {
         "witness": true,
         "composite": 59,
         "pillarCount": 0,
-        "docsIaOk": true
+        "docsIaOk": false
       }
     },
     {
@@ -25,7 +25,7 @@
         "present": true,
         "initiatives": 4,
         "features": 15,
-        "stories": 6,
+        "stories": 7,
         "tasks": 0,
         "uatLinked": 7,
         "path": "docs/product/roadmap",
@@ -59,13 +59,13 @@
       "score": 75,
       "pass": true,
       "detail": {
-        "total": 6,
+        "total": 7,
         "gtmTagged": 0,
-        "estimated": 6,
-        "ownerAssigned": 6,
-        "openExecutable": 3,
+        "estimated": 7,
+        "ownerAssigned": 7,
+        "openExecutable": 1,
         "compiled": true,
-        "backlogClear": false,
+        "backlogClear": true,
         "referencePass": false
       }
     },
@@ -83,19 +83,19 @@
     "present": true,
     "initiatives": 4,
     "features": 15,
-    "stories": 6,
+    "stories": 7,
     "tasks": 0,
     "uatLinked": 7,
     "path": "docs/product/roadmap"
   },
   "backlog": {
-    "total": 6,
+    "total": 7,
     "gtmTagged": 0,
-    "estimated": 6,
-    "ownerAssigned": 6,
-    "openExecutable": 3,
+    "estimated": 7,
+    "ownerAssigned": 7,
+    "openExecutable": 1,
     "compiled": true,
-    "backlogClear": false
+    "backlogClear": true
   },
   "readiness": {
     "present": true,
