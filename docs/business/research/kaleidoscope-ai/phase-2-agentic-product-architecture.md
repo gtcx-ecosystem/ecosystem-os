@@ -835,6 +835,7 @@ Initial implementation:
 - `pm/spec/kaleidoscope-ai/85-uplift-action.schema.json` and `docs/business/research/kaleidoscope-ai/85-uplift-action.md` define the handoff format from Kaleidoscope insight to `agile-os` execution.
 - `docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md` is the first internal draft for the market-leadership partner room. It maps partner rooms, repo ownership, evidence gaps, claim controls, and approval gates while keeping external use blocked.
 - `pnpm kaleidoscope:partner-brief:check` evaluates the partner room for source evidence, partner-room coverage, claim controls, movement caveats, and explicit external-use blocking.
+- Execution Studio now converts Observatory commercial-evidence gaps into repo-owned draft actions, keeping partner and venture readiness improvements explicit and approval-gated.
 
 ### P2.7: eval, safety, and release hardening
 

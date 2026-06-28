@@ -119,6 +119,54 @@ function mprMissing(signal) {
   return signal.results.filter((row) => !row.mprRelation.available).map((row) => row.repo);
 }
 
+function commercialGapRows(observatory) {
+  return (observatory.repos ?? [])
+    .map((row) => {
+      const gaps = Object.entries(row.commercialEvidence?.categories ?? {})
+        .filter(([, value]) => value.status === 'gap')
+        .map(([category]) => category);
+      return {
+        repo: row.repo,
+        gaps,
+        evidencedCategories: row.commercialEvidence?.evidencedCategories ?? 0,
+        categoryCount: row.commercialEvidence?.categoryCount ?? 0
+      };
+    })
+    .filter((row) => row.gaps.length > 0)
+    .sort((a, b) => b.gaps.length - a.gaps.length || a.repo.localeCompare(b.repo));
+}
+
+function commercialGapActions(observatory, readinessCitation, phase2Citation) {
+  return commercialGapRows(observatory).map((row, index) =>
+    action({
+      id: `exec-${String(index + 7).padStart(3, '0')}-${row.repo}-commercial-evidence-gap`,
+      title: `Close commercial evidence gaps for ${row.repo}`,
+      ownerRepo: row.repo,
+      targetRepos: [row.repo],
+      priority: row.gaps.length >= 3 ? 'P1' : 'P2',
+      outcome: `${row.repo} has current traction, partner, revenue, deployment, and workflow evidence available to the Observatory.`,
+      rationale: `Observatory commercial evidence shows ${row.evidencedCategories}/${row.categoryCount} categories evidenced for ${row.repo}; gaps: ${row.gaps.join(', ')}.`,
+      evidence: [readinessCitation, phase2Citation],
+      validationGate: gate(
+        'pnpm kaleidoscope:observatory:check',
+        `${row.repo} commercial evidence gaps are reduced or explicitly documented as not applicable.`
+      ),
+      approvalRequest: approval('commercial-evidence', 'Adding partner, revenue, deployment, traction, or workflow evidence can affect venture and partner-readiness scoring.'),
+      releaseGate: releaseGate(`${row.repo}-commercial-evidence-ready`, [
+        'owner repo publishes or confirms evidence for each missing category',
+        'Observatory commercial evidence rerun reflects the change',
+        'partner/investor claims remain blocked until explicitly approved'
+      ]),
+      draftArtifacts: [`${row.repo}/audit/evidence`, `${row.repo}/docs/business`, `${row.repo}/docs/operations`],
+      acceptanceCriteria: [
+        `Addresses gaps: ${row.gaps.join(', ')}.`,
+        'Uses repo-owned evidence paths rather than ecosystem-level assumptions.',
+        'Does not convert internal evidence into external claims without approval.'
+      ]
+    })
+  );
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -281,7 +329,8 @@ function buildActions(observatory, decision, signal) {
         'Routes market, compliance, and verification repos explicitly.',
         'Keeps unsupported claims at zero.'
       ]
-    })
+    }),
+    ...commercialGapActions(observatory, readinessCitation, phase2Citation)
   ];
 }
 
