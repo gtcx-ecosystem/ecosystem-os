@@ -2,6 +2,10 @@
 
 > Structural changes to `docs/` only. Document content edits use git history + frontmatter `date:`.
 
+## 2026-06-28
+
+- Added `docs/business/research/kaleidoscope-ai/` as the discoverable planning home for Kaleidoscope AI, including graph/RAG/MCP restoration, product spec, agent architecture, third-party tool evaluation, evidence gates, and SIGNAL/MPR integration.
+
 ## 2026-06-17
 
 - Added root-level `venture-os/` package for the Africa-focused Venture OS product, including product spec, workflows, agentic team model, data model, roadmap, GTM packaging, pilot onboarding, and internal GTCX client seed profiles.

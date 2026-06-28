@@ -1,0 +1,38 @@
+---
+title: Kaleidoscope AI planning index
+status: draft
+date: 2026-06-28
+owner: ecosystem-os
+document_type: research-index
+tier: strategic
+tags: ['kaleidoscope-ai', 'graph', 'rag', 'mcp', 'agentic-ai']
+review_cycle: weekly
+---
+
+# Kaleidoscope AI planning index
+
+This folder holds planning artifacts for the Kaleidoscope AI workstream.
+
+Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should sit above repo-local tools, audits, docs, evidence, market research, and execution state, then synthesize strategic decisions, readiness gaps, IP patterns, product narratives, and implementation plans.
+
+## Planning artifacts
+
+| File | Purpose |
+| --- | --- |
+| [`graph-rag-mcp-restore-plan.md`](./graph-rag-mcp-restore-plan.md) | Restore the Graph/RAG/MCP substrate across all repos without repeating the June 17 config collision. |
+| [`per-repo-rag-mcp-restore-matrix.md`](./per-repo-rag-mcp-restore-matrix.md) | Repo-by-repo target state, current gap, and restore action. |
+| [`ecosystem-graph-schema.md`](./ecosystem-graph-schema.md) | Canonical graph schema for ecosystem intelligence. |
+| [`kaleidoscope-ai-product-spec.md`](./kaleidoscope-ai-product-spec.md) | Product spec, user surfaces, features, and MVP workflows. |
+| [`kaleidoscope-ai-agent-architecture.md`](./kaleidoscope-ai-agent-architecture.md) | Agent roster, orchestration model, handoffs, tools, memory, and guardrails. |
+| [`third-party-tool-evaluation.md`](./third-party-tool-evaluation.md) | Third-party tool plan for Graphify, Understand Anything, graph stores, vector stores, evals, and observability. |
+| [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
+| [`signal-mpr-integration-plan.md`](./signal-mpr-integration-plan.md) | Plan to operationalize SIGNAL as an MPR-style agentic maturity witness, runner, and fleet rollup. |
+
+## Planning constraints
+
+- Work only in isolated worktrees for implementation.
+- Do not rely on built-in Codex skills or plugins for the product plan because those capabilities are expected to change.
+- Preserve repo-local ownership. Kaleidoscope AI should ingest from repos and MCP tools, not become a hidden owner of every repo.
+- Keep RAG, graph, MCP, and ledger roles separate.
+- Require evidence links for every strategic claim.
+- Require human approval before any action that changes repo state, external systems, partner-facing docs, or deployment state.

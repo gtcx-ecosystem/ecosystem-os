@@ -28,6 +28,8 @@ overview/, specs/, strategy/ at root — decompose to canonical layers. agile/, 
 | Concern | Path |
 | ------- | ---- |
 | Foundation | [`foundation/`](foundation/) |
+| Business research | [`business/research/`](business/research/) |
+| Kaleidoscope AI | [`business/research/kaleidoscope-ai/`](business/research/kaleidoscope-ai/) |
 | Product | [product/](product/) |
 
 ## Gates
