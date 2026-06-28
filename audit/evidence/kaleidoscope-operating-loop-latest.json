@@ -1,0 +1,211 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/operating-loop/v1",
+  "generatedAt": "2026-06-28T22:48:14.953Z",
+  "date": "2026-06-29",
+  "repo": "ecosystem-os",
+  "mode": "write",
+  "ok": true,
+  "summary": {
+    "stageCount": 8,
+    "passedStages": 8,
+    "failedStages": 0,
+    "releaseDecision": "internal-draft-release-pass",
+    "externalUse": "blocked_until_explicit_approval",
+    "approvalPendingActions": 6,
+    "signalAverageOverallScore100": 40,
+    "graphRagMcpReadyRepos": 20
+  },
+  "stages": [
+    {
+      "id": "graph-rag-mcp",
+      "command": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.012Z",
+      "startedAt": "2026-06-28T22:48:14.954Z",
+      "completedAt": "2026-06-28T22:48:15.023Z",
+      "stdoutTail": [
+        "griot-ai: ready/100 (0 blockers)",
+        "nyota-ai: ready/100 (0 blockers)",
+        "fabric-os: ready/100 (0 blockers)",
+        "canon-os: ready/100 (0 blockers)",
+        "agile-os: ready/100 (0 blockers)",
+        "ledger-os: ready/100 (0 blockers)",
+        "inspection-os: ready/100 (0 blockers)",
+        "venture-os: ready/100 (0 blockers)"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "graph-snapshot",
+      "command": "node platform/scripts/kaleidoscope-graph-snapshot.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.069Z",
+      "startedAt": "2026-06-28T22:48:15.023Z",
+      "completedAt": "2026-06-28T22:48:15.072Z",
+      "stdoutTail": [
+        "present-repos: 20",
+        "missing-repos: 0",
+        "nodes: 240",
+        "edges: 220",
+        "aliases: 0",
+        "blockers: 0",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-graph-snapshot-latest.json"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "query",
+      "command": "node platform/scripts/kaleidoscope-query-service.mjs --golden --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-query-service-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.103Z",
+      "startedAt": "2026-06-28T22:48:15.072Z",
+      "completedAt": "2026-06-28T22:48:15.105Z",
+      "stdoutTail": [
+        "=== kaleidoscope:query:check ===",
+        "",
+        "queries: 4",
+        "passed: 4",
+        "failed: 0",
+        "average-confidence: 0.92",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-query-service-latest.json"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "signal",
+      "command": "node platform/scripts/kaleidoscope-signal-runner.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/signal-fleet-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.156Z",
+      "startedAt": "2026-06-28T22:48:15.105Z",
+      "completedAt": "2026-06-28T22:48:15.159Z",
+      "stdoutTail": [
+        "generated-witnesses: 20",
+        "not-enough-evidence: 0",
+        "avg-overall-score: 40",
+        "graph-rag-mcp-ready: 20",
+        "mpr-relation: 18",
+        "ok: true",
+        "witness: audit/evidence/signal-fleet-latest.json",
+        "report: docs/business/research/kaleidoscope-ai/signal-fleet-latest.md"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "observatory",
+      "command": "node platform/scripts/kaleidoscope-observatory.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-observatory-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.200Z",
+      "startedAt": "2026-06-28T22:48:15.160Z",
+      "completedAt": "2026-06-28T22:48:15.203Z",
+      "stdoutTail": [
+        "ready: 20",
+        "blockers: 0",
+        "alias-warnings: 0",
+        "fresh-evidence: 20",
+        "movement-available: false",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-observatory-latest.json",
+        "report: docs/business/research/kaleidoscope-ai/observatory-latest.md"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "decision-room",
+      "command": "node platform/scripts/kaleidoscope-decision-room.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-decision-room-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.244Z",
+      "startedAt": "2026-06-28T22:48:15.203Z",
+      "completedAt": "2026-06-28T22:48:15.247Z",
+      "stdoutTail": [
+        "passed: 4",
+        "failed: 0",
+        "average-confidence: 0.85",
+        "unsupported-claim-warnings: 0",
+        "stale-evidence-warnings: 0",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-decision-room-latest.json",
+        "report: docs/business/research/kaleidoscope-ai/decision-room-latest.md"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "execution-studio",
+      "command": "node platform/scripts/kaleidoscope-execution-studio.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.286Z",
+      "startedAt": "2026-06-28T22:48:15.247Z",
+      "completedAt": "2026-06-28T22:48:15.288Z",
+      "stdoutTail": [
+        "",
+        "actions: 6",
+        "valid: 6",
+        "approval-pending: 6",
+        "release-blocked: 6",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-execution-studio-latest.json",
+        "report: docs/business/research/kaleidoscope-ai/execution-studio-latest.md"
+      ],
+      "stderrTail": []
+    },
+    {
+      "id": "release-gates",
+      "command": "node platform/scripts/kaleidoscope-release-gates.mjs --write",
+      "exitCode": 0,
+      "ok": true,
+      "witness": "audit/evidence/kaleidoscope-release-gates-latest.json",
+      "witnessOk": true,
+      "witnessDate": "2026-06-28T22:48:15.326Z",
+      "startedAt": "2026-06-28T22:48:15.288Z",
+      "completedAt": "2026-06-28T22:48:15.329Z",
+      "stdoutTail": [
+        "gates: 9",
+        "passed: 9",
+        "failed: 0",
+        "release-decision: internal-draft-release-pass",
+        "external-use: blocked_until_explicit_approval",
+        "ok: true",
+        "witness: audit/evidence/kaleidoscope-release-gates-latest.json",
+        "report: docs/business/research/kaleidoscope-ai/release-gates-latest.md"
+      ],
+      "stderrTail": []
+    }
+  ],
+  "blockers": [],
+  "sources": {
+    "graph-rag-mcp": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+    "graph-snapshot": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+    "query": "audit/evidence/kaleidoscope-query-service-latest.json",
+    "signal": "audit/evidence/signal-fleet-latest.json",
+    "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",
+    "decision-room": "audit/evidence/kaleidoscope-decision-room-latest.json",
+    "execution-studio": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+    "release-gates": "audit/evidence/kaleidoscope-release-gates-latest.json"
+  },
+  "contracts": {
+    "operatingLoop": "pm/spec/kaleidoscope-ai/operating-loop.schema.json",
+    "releaseGates": "pm/spec/kaleidoscope-ai/release-gates.schema.json"
+  }
+}

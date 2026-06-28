@@ -864,6 +864,11 @@ Initial implementation:
 - The witness blocks release when source witnesses fail, golden queries regress, Decision Room citations/freshness/confidence fail, unsupported-claim warnings appear, SIGNAL evidence regresses, or Execution Studio approval boundaries are missing.
 - External use remains blocked until explicit approval even when internal draft release gates pass.
 
+Operating-loop entrypoint:
+
+- `pnpm kaleidoscope:operate:check` runs the full read-only stage chain in dependency order and reports the current release posture.
+- `pnpm kaleidoscope:operate:write` regenerates the stage witnesses, emits `audit/evidence/kaleidoscope-operating-loop-latest.json`, and writes `docs/business/research/kaleidoscope-ai/operating-loop-latest.md`.
+
 ## Near-term backlog
 
 | Priority | Work item | Owner repo | Output |
