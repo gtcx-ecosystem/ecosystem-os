@@ -2,7 +2,7 @@
   "$schema": "gtcx://pm/initiatives/v1",
   "schemaVersion": 1,
   "repo": "ecosystem-os",
-  "updated": "2026-06-25",
+  "updated": "2026-06-27",
   "initiatives": [
     {
       "id": "INIT-ECOSYSTEM-AGENCY",
@@ -72,6 +72,19 @@
       "ownerBaselineId": "creative-director"
     },
     {
+      "id": "INIT-ECOSYSTEM-CORE",
+      "title": "INIT-ECOSYSTEM-CORE — Kernel, Graph, Ledger, Surface",
+      "status": "in_progress",
+      "priority": "P0",
+      "ownerRepo": "ecosystem-os",
+      "protocol": "P57-product-delivery-compile",
+      "parentInitiative": null,
+      "goalIds": [],
+      "planRef": "docs/product/roadmap/initiatives/INIT-ECOSYSTEM-CORE.md",
+      "shippableOutcome": "Kernel, Graph, Ledger, and Surface have local product scope, roadmap ownership, and supporting-repo evidence paths that are explicit in ecosystem-os.",
+      "_compiledFrom": "docs/product/roadmap/initiatives/INIT-ECOSYSTEM-CORE.md"
+    },
+    {
       "id": "INIT-ECOSYSTEM-DOCS",
       "title": "INIT-ECOSYSTEM-DOCS — Fleet documentation home",
       "status": "done",
@@ -125,6 +138,19 @@
       ],
       "completionPercent": 100,
       "ownerBaselineId": "protocol-engineer"
+    },
+    {
+      "id": "INIT-ECOSYSTEM-ETHOS",
+      "title": "INIT-ECOSYSTEM-ETHOS — Ethos module",
+      "status": "in_progress",
+      "priority": "P1",
+      "ownerRepo": "ecosystem-os",
+      "protocol": "P57-product-delivery-compile",
+      "parentInitiative": null,
+      "goalIds": [],
+      "planRef": "docs/product/roadmap/initiatives/INIT-ECOSYSTEM-ETHOS.md",
+      "shippableOutcome": "Ethos has an explicit local product contract, roadmap reference, and evidence path tied to Ecosystem OS doctrine and portfolio surfaces.",
+      "_compiledFrom": "docs/product/roadmap/initiatives/INIT-ECOSYSTEM-ETHOS.md"
     },
     {
       "id": "INIT-ECOSYSTEM-SHIP",
@@ -230,6 +256,6 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-25T00:46:16.242Z"
+    "at": "2026-06-27T19:55:37.236Z"
   }
 }

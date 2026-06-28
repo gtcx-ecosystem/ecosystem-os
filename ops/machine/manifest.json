@@ -19,7 +19,7 @@
     "hub": "agile-os",
     "referenceImpl": "../agile-os/agile",
     "fleetBacklog": "../agile-os/pm/ecosystem-sprint-backlog.json",
-    "strategy": "../agile-os/docs/strategy/fleet-agile-hub.md",
+    "strategy": "../agile-os/docs/business/strategy/fleet-agile-hub.md",
     "zenhubStandard": "../agile-os/pm/spec/pm-zenhub-standard.json",
     "zenhubRegistry": "../bridge-os/config/zenhub-ecosystem-registry.json"
   },

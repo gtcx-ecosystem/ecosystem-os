@@ -2,8 +2,8 @@
   "$schema": "gtcx://bridge-os/product-goals/v1",
   "version": "1.1.0",
   "repo": "ecosystem-os",
-  "tier": "fleet-documentation",
-  "updated": "2026-06-17",
+  "tier": "ai-native-company-operating-system",
+  "updated": "2026-06-27",
   "fleetRegistry": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json",
   "vision": {
     "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
@@ -12,7 +12,7 @@
   "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
   "northStarMetric": {
     "name": "Governed operating loop complete",
-    "target": "Graph state + Ledger evidence + Assurance score + Surface command trace",
+    "target": "Kernel governance + Graph state + Ledger evidence + Surface command trace",
     "witness": "docs/foundation/narrative/product-architecture.md"
   },
   "valueProposition": {
@@ -21,7 +21,7 @@
     "product": "Ecosystem OS",
     "that": "provides the operating substrate for intelligence, coordination, delivery, services, assurance, human doctrine, innovation, and market expression",
     "unlike": "standalone PM, RPA, AI-agent, wiki, and workflow tools",
-    "we": "connect Graph, Kernel, Ledger, and Surface into one company operating platform"
+    "we": "lead Kernel, Graph, Ledger, Surface, Ethos, Venture, and Agency as one company operating platform"
   },
   "activeMilestone": {
     "id": "ECO-OS-SHIP-001",

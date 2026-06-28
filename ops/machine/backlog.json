@@ -1,10 +1,17 @@
 {
   "$schema": "gtcx://ops/pm-backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-25",
+  "updated": "2026-06-27",
   "syncSource": "pnpm product:compile",
-  "active": null,
-  "backlogClear": true,
+  "active": {
+    "storyId": "STORY-ECOSYSTEM-OS-MIGRATION",
+    "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
+    "status": "open",
+    "owner": "ecosystem-os",
+    "priority": "P2",
+    "tier": "compiled-backlog"
+  },
+  "backlogClear": false,
   "stories": [
     {
       "id": "STORY-AGILE-ZENHUB-CONTRACT",
@@ -29,6 +36,41 @@
       "frIds": [],
       "planRef": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md",
       "_compiledFrom": "docs/product/roadmap/stories/STORY-DOCS-IA-ECO.md"
+    },
+    {
+      "id": "STORY-ECO-CORE-OWNERSHIP",
+      "title": "STORY-ECO-CORE-OWNERSHIP — Kernel Graph Ledger Surface local lead",
+      "status": "done",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-CORE",
+      "canonBundleId": "FEAT-ECO-CORE-OWNERSHIP",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-ECO-CORE-OWNERSHIP.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-ECO-CORE-OWNERSHIP.md"
+    },
+    {
+      "id": "STORY-ECO-ETHOS-CONTRACT",
+      "title": "STORY-ECO-ETHOS-CONTRACT — Ethos local module contract",
+      "status": "done",
+      "priority": "P1",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-ETHOS",
+      "canonBundleId": "FEAT-ECO-ETHOS-CONTRACT",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-ECO-ETHOS-CONTRACT.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-ECO-ETHOS-CONTRACT.md"
+    },
+    {
+      "id": "STORY-ECOSYSTEM-OS-MIGRATION",
+      "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
+      "status": "open",
+      "priority": "P2",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECOSYSTEM-OS-MIGRATION",
+      "canonBundleId": null,
+      "frIds": [],
+      "planRef": "../agile-os/docs/operations/coordination/outbound/to-ecosystem-os-open-items-2026-06-25.md"
     },
     {
       "id": "STORY-P35-LAYOUT",
@@ -85,19 +127,28 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-25T00:46:16.250Z"
+    "at": "2026-06-27T19:55:37.245Z"
   },
   "execution": {
-    "backlogClear": true,
-    "active": null,
-    "openCount": 0,
-    "totalCount": 6,
-    "doneCount": 6,
-    "openIds": []
+    "backlogClear": false,
+    "active": {
+      "storyId": "STORY-ECOSYSTEM-OS-MIGRATION",
+      "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
+      "status": "open",
+      "owner": "ecosystem-os",
+      "priority": "P2",
+      "tier": "compiled-backlog"
+    },
+    "openCount": 1,
+    "totalCount": 9,
+    "doneCount": 8,
+    "openIds": [
+      "STORY-ECOSYSTEM-OS-MIGRATION"
+    ]
   },
   "_mirror": {
     "of": "machine/backlog.json",
-    "at": "2026-06-25T00:46:16.252Z",
+    "at": "2026-06-27T19:55:37.250Z",
     "note": "Shim only — P22 and gates read machine/backlog.json"
   }
 }

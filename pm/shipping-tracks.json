@@ -34,7 +34,7 @@
     "position": "Fleet gates green; product GA depth in progress.",
     "gatingWork": "Align machine/ folder to pm-folder-requirements R1.",
     "nextStrategicMove": "pnpm product:compile && pnpm machine:sync && pnpm agent:next-work",
-    "auditComposite100": 100
+    "auditComposite100": 86
   },
-  "fiveCoreSyncedAt": "2026-06-15"
+  "fiveCoreSyncedAt": "2026-06-25"
 }

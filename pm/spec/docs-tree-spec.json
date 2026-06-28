@@ -70,8 +70,7 @@
     "everyFolder": {
       "requiresReadme": true,
       "folderSpecWhen": { "mdCountGte": 3, "orSubfolderCountGte": 1 },
-      "topLevelLayerRequiresFolderSpec": true,
-      "centralizedFolderSpecViaReadme": true
+      "topLevelLayerRequiresFolderSpec": true
     },
     "everyMarkdown": {
       "requiresFrontmatter": true,
