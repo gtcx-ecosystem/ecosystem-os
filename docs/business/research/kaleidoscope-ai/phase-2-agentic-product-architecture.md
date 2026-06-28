@@ -700,6 +700,13 @@ Exit gate:
 
 - golden questions return cited answers with source dates and confidence
 
+Initial implementation:
+
+- `pnpm kaleidoscope:query:check` runs deterministic golden questions over the latest graph snapshot.
+- `pnpm kaleidoscope:query:write` emits `audit/evidence/kaleidoscope-query-service-latest.json`.
+- `platform/scripts/kaleidoscope-query-service.mjs` records route selection, graph node ids, evidence paths, citations, source dates, freshness, and confidence.
+- `pm/spec/kaleidoscope-ai/query-service.schema.json` is the machine contract for the P2.2 witness.
+
 ### P2.3: Observatory MVP
 
 Goal: ship a read-only surface for ecosystem truth.
