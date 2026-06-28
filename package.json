@@ -92,6 +92,8 @@
     "kaleidoscope:query:write": "node platform/scripts/kaleidoscope-query-service.mjs --golden --write",
     "kaleidoscope:observatory:check": "node platform/scripts/kaleidoscope-observatory.mjs",
     "kaleidoscope:observatory:write": "node platform/scripts/kaleidoscope-observatory.mjs --write",
+    "kaleidoscope:decision-room:check": "node platform/scripts/kaleidoscope-decision-room.mjs",
+    "kaleidoscope:decision-room:write": "node platform/scripts/kaleidoscope-decision-room.mjs --write",
     "publish:check": "node platform/scripts/publish-register-check.mjs",
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",

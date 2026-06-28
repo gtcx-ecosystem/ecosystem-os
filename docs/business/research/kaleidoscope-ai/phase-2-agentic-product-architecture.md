@@ -762,6 +762,12 @@ Exit gate:
 
 - top strategic questions pass citation and stale-evidence gates
 
+Initial implementation:
+
+- `pnpm kaleidoscope:decision-room:check` evaluates four strategic questions for market leadership, venture potential, ecosystem integration, and execution focus.
+- `pnpm kaleidoscope:decision-room:write` emits `audit/evidence/kaleidoscope-decision-room-latest.json` and `docs/business/research/kaleidoscope-ai/decision-room-latest.md`.
+- The witness includes question classification, retrieval trace, structured answers, assumptions, citations, confidence, unsupported-claim warnings, and evaluator gates.
+
 ### P2.5: SIGNAL runner and MPR integration
 
 Goal: make agentic maturity measurable like MPR.
