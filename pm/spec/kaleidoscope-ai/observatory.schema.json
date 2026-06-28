@@ -29,7 +29,8 @@
         "blockerCount",
         "aliasWarningCount",
         "freshEvidenceRepos",
-        "movementAvailable"
+        "movementAvailable",
+        "commercialEvidenceCompleteRepos"
       ],
       "properties": {
         "repoCount": { "type": "integer", "minimum": 0 },
@@ -37,7 +38,8 @@
         "blockerCount": { "type": "integer", "minimum": 0 },
         "aliasWarningCount": { "type": "integer", "minimum": 0 },
         "freshEvidenceRepos": { "type": "integer", "minimum": 0 },
-        "movementAvailable": { "type": "boolean" }
+        "movementAvailable": { "type": "boolean" },
+        "commercialEvidenceCompleteRepos": { "type": "integer", "minimum": 0 }
       },
       "additionalProperties": true
     },
@@ -86,6 +88,7 @@
         "signal",
         "mpr",
         "evidenceFreshness",
+        "commercialEvidence",
         "movement"
       ],
       "properties": {
@@ -115,6 +118,11 @@
         "evidenceFreshness": {
           "type": "object",
           "required": ["fresh", "oldestSourceDate", "newestSourceDate", "evidenceCount"]
+        },
+        "commercialEvidence": {
+          "type": "object",
+          "required": ["categories", "evidencedCategories", "categoryCount", "complete"],
+          "additionalProperties": true
         },
         "movement": {
           "type": "object",

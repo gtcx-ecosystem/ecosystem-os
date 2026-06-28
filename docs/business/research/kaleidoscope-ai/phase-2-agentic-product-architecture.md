@@ -737,6 +737,7 @@ Initial implementation:
 - `pnpm kaleidoscope:observatory:write` emits `audit/evidence/kaleidoscope-observatory-latest.json` and `docs/business/research/kaleidoscope-ai/observatory-latest.md`.
 - The witness includes repo readiness, graph/RAG/MCP status, blocker heatmap inputs, SIGNAL/MPR columns, evidence freshness, symlink alias warnings, and an explicit current-evidence answer to "what changed since the last audit?"
 - `audit/evidence/kaleidoscope-graph-snapshot-previous.json` establishes the first prior snapshot for movement comparison. The initial deltas are expected to be zero because this is a baseline initialization, not a historical improvement claim.
+- The Observatory now tracks conservative commercial evidence categories for traction, partner, revenue, deployment, and workflow evidence. Missing categories remain gaps and should not be treated as venture-readiness proof.
 
 ### P2.4: Decision room MVP
 

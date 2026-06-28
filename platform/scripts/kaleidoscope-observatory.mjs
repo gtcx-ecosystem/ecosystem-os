@@ -75,6 +75,78 @@ function evidenceFreshness(graph, repo) {
   };
 }
 
+const COMMERCIAL_EVIDENCE_CANDIDATES = {
+  traction: [
+    'audit/evidence/gtm-readiness-latest.json',
+    'audit/evidence/gtm-progress-report-latest.json',
+    'audit/evidence/pilot-golden-transaction-latest.json',
+    'audit/evidence/tokenization-production-pilot-readiness-latest.json',
+    'audit/evidence/institutional-pilot-package.json',
+    'audit/evidence/institutional-pilot-signed.json',
+    'audit/evidence/design-partner-pilot-latest.json'
+  ],
+  partner: [
+    'agile/roadmaps/partnerships.md',
+    'audit/evidence/design-partner-pilot-latest.json',
+    'machine/ci/design-partner-loi-offtake-os-latest.json',
+    'platform/ecosystem-prototype/data/partners.json',
+    'docs/product/gtm/pilot-sow-template.md'
+  ],
+  revenue: [
+    'docs/business/economics/revenue-streams.md',
+    'archive/legacy-docs-overview/product/revenue-streams.md',
+    'audit/evidence/mpr-business-layer-latest.json'
+  ],
+  deployment: [
+    'docs/operations/deployment-profile.json',
+    'docs/operations/deployment/deployment-profile.json',
+    'operations/deployment-profile.json',
+    'docs/operations/deploy/deployment-profile.md',
+    'audit/evidence/deployment-proof-latest.json',
+    'audit/evidence/production-launch-readiness-latest.json',
+    'audit/evidence/pilot-staging-smoke-latest.json'
+  ],
+  workflow: [
+    'docs/product/ux/critical-workflows.md',
+    'docs/product/experience/critical-workflows.md',
+    'machine/spec/ecosystem-workflows.json',
+    'operations/machine/roadmap/workflows.json',
+    'docs/operations/workflows/n8n-workflows.json',
+    'machine/ux/user-flows/flow-portal-capital-call-payment.md'
+  ]
+};
+
+function commercialEvidenceFor(repo) {
+  const categories = Object.fromEntries(
+    Object.entries(COMMERCIAL_EVIDENCE_CANDIDATES).map(([category, candidates]) => {
+      const evidence = candidates
+        .filter((relPath) => existsSync(join(ECOSYSTEM_ROOT, repo, relPath)))
+        .map((relPath) => ({
+          path: `${repo}/${relPath}`,
+          sourceDate: sourceDate(repo, relPath)
+        }));
+      return [
+        category,
+        {
+          status: evidence.length > 0 ? 'evidenced' : 'gap',
+          evidence,
+          gaps:
+            evidence.length > 0
+              ? []
+              : [`missing ${category} evidence path for Observatory commercial scoring`]
+        }
+      ];
+    })
+  );
+  const evidencedCategories = Object.values(categories).filter((item) => item.status === 'evidenced').length;
+  return {
+    categories,
+    evidencedCategories,
+    categoryCount: Object.keys(categories).length,
+    complete: evidencedCategories === Object.keys(categories).length
+  };
+}
+
 function signalByRepo(signal) {
   const map = new Map();
   for (const result of signal?.results ?? []) map.set(result.repo, result);
@@ -177,6 +249,7 @@ function buildRows(graph, signal) {
         },
         mpr: mprForRepo(repo),
         evidenceFreshness: evidenceFreshness(graph, repo),
+        commercialEvidence: commercialEvidenceFor(repo),
         movement: movementFor(repoNode, previousByRepo)
       };
     })
@@ -196,6 +269,12 @@ function statusIcon(ok) {
 
 function configShort(row) {
   return ['rag', 'mcp', 'graph', 'eval'].map((kind) => `${kind}:${statusIcon(row.graphRagMcp[kind].ok)}`).join(' ');
+}
+
+function commercialShort(row) {
+  return Object.entries(row.commercialEvidence.categories)
+    .map(([key, value]) => `${key.slice(0, 3)}:${value.status === 'evidenced' ? 'ok' : 'gap'}`)
+    .join(' ');
 }
 
 function movementAnswer(rows, graph, query, aliasRows) {
@@ -235,6 +314,7 @@ function markdownReport(witness) {
     `- Alias warnings: ${witness.summary.aliasWarningCount}`,
     `- Fresh evidence repos: ${witness.summary.freshEvidenceRepos}/${witness.summary.repoCount}`,
     `- Movement available: ${witness.summary.movementAvailable}`,
+    `- Commercial evidence complete: ${witness.summary.commercialEvidenceCompleteRepos}/${witness.summary.repoCount}`,
     '',
     '## What changed since the last audit?',
     '',
@@ -242,13 +322,25 @@ function markdownReport(witness) {
     '',
     '## Repo Readiness',
     '',
-    '| Repo | Tier | Ready | Graph/RAG/MCP | Blockers | SIGNAL | MPR | Freshness | Movement |',
-    '| --- | ---: | --- | --- | ---: | --- | ---: | --- | --- |'
+    '| Repo | Tier | Ready | Graph/RAG/MCP | Blockers | SIGNAL | MPR | Freshness | Movement | Commercial |',
+    '| --- | ---: | --- | --- | ---: | --- | ---: | --- | --- | --- |'
   ];
 
   for (const row of witness.repos) {
     lines.push(
-      `| ${row.repo} | ${row.tier} | ${row.readiness.maturity} ${row.readiness.score100}/100 | ${configShort(row)} | ${row.blockers.count} | ${row.signal.level ?? 'n/a'} ${row.signal.score100 ?? 'n/a'} | ${row.mpr.composite100 ?? 'n/a'} | ${row.evidenceFreshness.fresh ? 'fresh' : 'stale/unknown'} | ${row.movement.available ? row.movement.delta : 'n/a'} |`
+      `| ${row.repo} | ${row.tier} | ${row.readiness.maturity} ${row.readiness.score100}/100 | ${configShort(row)} | ${row.blockers.count} | ${row.signal.level ?? 'n/a'} ${row.signal.score100 ?? 'n/a'} | ${row.mpr.composite100 ?? 'n/a'} | ${row.evidenceFreshness.fresh ? 'fresh' : 'stale/unknown'} | ${row.movement.available ? row.movement.delta : 'n/a'} | ${commercialShort(row)} |`
+    );
+  }
+
+  lines.push('', '## Commercial Evidence', '');
+  lines.push('| Repo | Evidenced categories | Gaps |');
+  lines.push('| --- | ---: | --- |');
+  for (const row of witness.repos) {
+    const gaps = Object.entries(row.commercialEvidence.categories)
+      .filter(([, value]) => value.status === 'gap')
+      .map(([key]) => key);
+    lines.push(
+      `| ${row.repo} | ${row.commercialEvidence.evidencedCategories}/${row.commercialEvidence.categoryCount} | ${gaps.length ? gaps.join(', ') : 'none'} |`
     );
   }
 
@@ -284,7 +376,8 @@ function buildWitness() {
         blockerCount: 0,
         aliasWarningCount: 0,
         freshEvidenceRepos: 0,
-        movementAvailable: false
+        movementAvailable: false,
+        commercialEvidenceCompleteRepos: 0
       },
       repos: [],
       aliases: [],
@@ -302,7 +395,12 @@ function buildWitness() {
     blockerCount,
     aliasWarningCount: aliasRows.filter((alias) => alias.warning).length,
     freshEvidenceRepos: rows.filter((row) => row.evidenceFreshness.fresh).length,
-    movementAvailable: rows.some((row) => row.movement.available)
+    movementAvailable: rows.some((row) => row.movement.available),
+    commercialEvidenceCompleteRepos: rows.filter((row) => row.commercialEvidence.complete).length,
+    commercialEvidencePartialRepos: rows.filter(
+      (row) => row.commercialEvidence.evidencedCategories > 0 && !row.commercialEvidence.complete
+    ).length,
+    commercialEvidenceGapRepos: rows.filter((row) => row.commercialEvidence.evidencedCategories === 0).length
   };
 
   if (!graph.ok) issues.push('graph snapshot is not ok');
@@ -322,7 +420,8 @@ function buildWitness() {
       graphSnapshot: GRAPH_REL,
       queryWitness: QUERY_REL,
       signalFleet: SIGNAL_REL,
-      mprRepo: '../*/audit/evidence/mpr-repo-latest.json'
+      mprRepo: '../*/audit/evidence/mpr-repo-latest.json',
+      commercialEvidence: '../*/{audit/evidence,docs,operations,machine,agile}/**/*'
     },
     contracts: {
       observatory: 'pm/spec/kaleidoscope-ai/observatory.schema.json',
@@ -358,6 +457,7 @@ function main() {
     console.log(`alias-warnings: ${witness.summary.aliasWarningCount}`);
     console.log(`fresh-evidence: ${witness.summary.freshEvidenceRepos}`);
     console.log(`movement-available: ${witness.summary.movementAvailable}`);
+    console.log(`commercial-evidence-complete: ${witness.summary.commercialEvidenceCompleteRepos}`);
     console.log(`ok: ${witness.ok}`);
     if (WRITE) {
       console.log(`witness: ${relative(REPO, OUT)}`);
