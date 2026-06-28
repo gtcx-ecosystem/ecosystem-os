@@ -24,6 +24,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`ecosystem-graph-schema.md`](./ecosystem-graph-schema.md) | Canonical graph schema for ecosystem intelligence. |
 | [`kaleidoscope-ai-product-spec.md`](./kaleidoscope-ai-product-spec.md) | Product spec, user surfaces, features, and MVP workflows. |
 | [`kaleidoscope-ai-agent-architecture.md`](./kaleidoscope-ai-agent-architecture.md) | Agent roster, orchestration model, handoffs, tools, memory, and guardrails. |
+| [`phase-2-agentic-product-architecture.md`](./phase-2-agentic-product-architecture.md) | Phase 2 product architecture, agentic design patterns, roadmap, driver repo responsibilities, and innovation/IP thesis. |
 | [`third-party-tool-evaluation.md`](./third-party-tool-evaluation.md) | Third-party tool plan for Graphify, Understand Anything, graph stores, vector stores, evals, and observability. |
 | [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
 | [`signal-mpr-integration-plan.md`](./signal-mpr-integration-plan.md) | Plan to operationalize SIGNAL as an MPR-style agentic maturity witness, runner, and fleet rollup. |
