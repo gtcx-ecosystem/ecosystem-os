@@ -29,6 +29,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
 | [`signal-mpr-integration-plan.md`](./signal-mpr-integration-plan.md) | Plan to operationalize SIGNAL as an MPR-style agentic maturity witness, runner, and fleet rollup. |
 | [`movement-history-baseline.md`](./movement-history-baseline.md) | Interpretation note for the first prior/current graph movement baseline. |
+| [`partner-execution-room-draft.md`](./partner-execution-room-draft.md) | Internal draft execution room for market-leadership partner narratives, evidence gaps, and approval gates. |
 
 ## Machine contracts
 
