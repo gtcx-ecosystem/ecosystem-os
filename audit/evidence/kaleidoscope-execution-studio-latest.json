@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-28T22:48:15.284Z",
+  "generatedAt": "2026-06-28T23:23:54.314Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
@@ -37,12 +37,12 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.156Z",
+          "sourceDate": "2026-06-28T23:23:54.179Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:47:26.465Z",
+          "sourceDate": "2026-06-28T23:19:15.437Z",
           "reason": "Execution Studio draft-mode and approval-boundary requirements"
         }
       ],
@@ -95,12 +95,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.244Z",
+          "sourceDate": "2026-06-28T23:23:54.272Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:47:26.465Z",
+          "sourceDate": "2026-06-28T23:19:15.437Z",
           "reason": "Execution Studio draft-mode and approval-boundary requirements"
         }
       ],
@@ -152,12 +152,12 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.156Z",
+          "sourceDate": "2026-06-28T23:23:54.179Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.200Z",
+          "sourceDate": "2026-06-28T23:23:54.226Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],
@@ -213,12 +213,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.200Z",
+          "sourceDate": "2026-06-28T23:23:54.226Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T22:47:26.465Z",
+          "sourceDate": "2026-06-28T23:19:15.437Z",
           "reason": "Execution Studio draft-mode and approval-boundary requirements"
         }
       ],
@@ -269,12 +269,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.200Z",
+          "sourceDate": "2026-06-28T23:23:54.226Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.244Z",
+          "sourceDate": "2026-06-28T23:23:54.272Z",
           "reason": "strategic recommendations and execution focus"
         }
       ],
@@ -328,12 +328,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.244Z",
+          "sourceDate": "2026-06-28T23:23:54.272Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T22:48:15.200Z",
+          "sourceDate": "2026-06-28T23:23:54.226Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],

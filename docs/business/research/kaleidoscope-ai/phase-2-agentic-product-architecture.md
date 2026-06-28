@@ -736,6 +736,7 @@ Initial implementation:
 - `pnpm kaleidoscope:observatory:check` reads the graph snapshot, query witness, SIGNAL fleet witness, and per-repo MPR witnesses.
 - `pnpm kaleidoscope:observatory:write` emits `audit/evidence/kaleidoscope-observatory-latest.json` and `docs/business/research/kaleidoscope-ai/observatory-latest.md`.
 - The witness includes repo readiness, graph/RAG/MCP status, blocker heatmap inputs, SIGNAL/MPR columns, evidence freshness, symlink alias warnings, and an explicit current-evidence answer to "what changed since the last audit?"
+- `audit/evidence/kaleidoscope-graph-snapshot-previous.json` establishes the first prior snapshot for movement comparison. The initial deltas are expected to be zero because this is a baseline initialization, not a historical improvement claim.
 
 ### P2.4: Decision room MVP
 
