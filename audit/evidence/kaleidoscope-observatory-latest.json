@@ -1,0 +1,1660 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
+  "generatedAt": "2026-06-28T21:57:49.710Z",
+  "repo": "ecosystem-os",
+  "phase": "phase-2-observatory-mvp",
+  "ok": true,
+  "sources": {
+    "graphSnapshot": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+    "queryWitness": "audit/evidence/kaleidoscope-query-service-latest.json",
+    "signalFleet": "audit/evidence/signal-fleet-latest.json",
+    "mprRepo": "../*/audit/evidence/mpr-repo-latest.json"
+  },
+  "contracts": {
+    "observatory": "pm/spec/kaleidoscope-ai/observatory.schema.json",
+    "graphSnapshot": "pm/spec/kaleidoscope-ai/graph-snapshot.schema.json",
+    "queryService": "pm/spec/kaleidoscope-ai/query-service.schema.json"
+  },
+  "summary": {
+    "repoCount": 20,
+    "readyRepos": 20,
+    "blockerCount": 0,
+    "aliasWarningCount": 0,
+    "freshEvidenceRepos": 20,
+    "movementAvailable": false
+  },
+  "repos": [
+    {
+      "repo": "baseline-os",
+      "tier": 0,
+      "role": "RAG/MCP hub and validator owner",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 100,
+        "source": "baseline-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-27T14:38:25.546Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T16:54:47.591Z",
+        "newestSourceDate": "2026-06-28T16:55:46.741Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "bridge-os",
+      "tier": 0,
+      "role": "MCP/action orchestration and fleet coordination",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": null,
+        "source": "missing",
+        "evaluatedAt": null
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:11.500Z",
+        "newestSourceDate": "2026-06-28T17:07:10.396Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "ecosystem-os",
+      "tier": 0,
+      "role": "Ecosystem graph and Kaleidoscope home",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "strengthen"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "ecosystem-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:14:29.380Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T16:34:44.563Z",
+        "newestSourceDate": "2026-06-28T16:34:44.563Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "compliance-os",
+      "tier": 1,
+      "role": "Compliance operating layer",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "compliance-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:17:45.421Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:17.000Z",
+        "newestSourceDate": "2026-06-28T17:28:31.144Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "gtcx-os",
+      "tier": 1,
+      "role": "Platform/product OS and Cortex scope",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 91,
+        "source": "gtcx-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:14:31.991Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T17:19:44.119Z",
+        "newestSourceDate": "2026-06-28T17:20:34.334Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "ledger-ui",
+      "tier": 1,
+      "role": "Finance/ledger UI",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "ledger-ui/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:15:28.828Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:33.371Z",
+        "newestSourceDate": "2026-06-28T17:36:15.150Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "markets-os",
+      "tier": 1,
+      "role": "Market infrastructure product",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "markets-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:14:38.594Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:36.039Z",
+        "newestSourceDate": "2026-06-28T17:24:47.437Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "terminal-os",
+      "tier": 1,
+      "role": "Operator/terminal surface",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": null,
+        "source": "missing",
+        "evaluatedAt": null
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:40.128Z",
+        "newestSourceDate": "2026-06-28T17:32:15.800Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "exploration-os",
+      "tier": 2,
+      "role": "Field/site intelligence",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "exploration-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:17:38.131Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:21.454Z",
+        "newestSourceDate": "2026-06-28T17:52:23.865Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "griot-ai",
+      "tier": 2,
+      "role": "Market/context publishing",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "griot-ai/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-27T10:11:40.623Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:17:56.637Z",
+        "newestSourceDate": "2026-06-28T18:18:08.808Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "nyota-ai",
+      "tier": 2,
+      "role": "Last-mile/mobile intelligence",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "nyota-ai/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:15:02.479Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:21:32.085Z",
+        "newestSourceDate": "2026-06-28T18:22:20.357Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "sensei-os",
+      "tier": 2,
+      "role": "Migration/agent intelligence",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "strengthen"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "sensei-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:14:53.816Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:38.620Z",
+        "newestSourceDate": "2026-06-28T18:12:05.244Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "terra-os",
+      "tier": 2,
+      "role": "Land/site/source truth",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "terra-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:14:45.111Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T17:46:58.891Z",
+        "newestSourceDate": "2026-06-28T17:47:50.940Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "veritas-ai",
+      "tier": 2,
+      "role": "Verification/publication intelligence",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "veritas-ai/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:15:07.198Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T11:22:43.125Z",
+        "newestSourceDate": "2026-06-28T17:57:02.261Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "agile-os",
+      "tier": 3,
+      "role": "Sprint, backlog, delivery OS",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "seed"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "agile-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T16:10:38.426Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:34:49.802Z",
+        "newestSourceDate": "2026-06-28T18:34:49.839Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "canon-os",
+      "tier": 3,
+      "role": "Governance and protocols",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "strengthen"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "canon-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:13:41.517Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:31:37.726Z",
+        "newestSourceDate": "2026-06-28T18:31:37.744Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "fabric-os",
+      "tier": 3,
+      "role": "Deployment, ops, compliance fabric",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "restore"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1"
+        ]
+      },
+      "mpr": {
+        "composite100": 100,
+        "source": "fabric-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-26T00:17:52.354Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:26:13.715Z",
+        "newestSourceDate": "2026-06-28T21:46:26.761Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "inspection-os",
+      "tier": 3,
+      "role": "Inspection product",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "seed"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L0",
+        "score100": 8,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L0",
+          "score100": 8,
+          "lowestDimension": "tooling",
+          "published": true,
+          "summary": "SIGNAL-E limited by tooling."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "tooling limits SIGNAL-E to L0",
+          "No repo-local Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 54,
+        "source": "inspection-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T16:12:43.612Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:41:42.490Z",
+        "newestSourceDate": "2026-06-28T18:41:42.521Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "ledger-os",
+      "tier": 3,
+      "role": "Ledger/product finance backend",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "seed"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "ledger-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T16:12:40.413Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:38:09.837Z",
+        "newestSourceDate": "2026-06-28T18:38:09.874Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    },
+    {
+      "repo": "venture-os",
+      "tier": 3,
+      "role": "Venture/portfolio product",
+      "readiness": {
+        "maturity": "ready",
+        "score100": 100,
+        "targetStatus": "seed"
+      },
+      "graphRagMcp": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/rag.config.json",
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/mcp.config.json",
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/graph.config.json",
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "source": "config/baseline/eval.config.json",
+          "issues": []
+        }
+      },
+      "blockers": {
+        "count": 0,
+        "items": []
+      },
+      "signal": {
+        "level": "L1",
+        "score100": 25,
+        "signalP": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-P limited by systemsArchitecture."
+        },
+        "signalE": {
+          "level": "L1",
+          "score100": 25,
+          "lowestDimension": "systemsArchitecture",
+          "published": true,
+          "summary": "SIGNAL-E limited by systemsArchitecture."
+        },
+        "bottlenecks": [
+          "systemsArchitecture limits SIGNAL-P to L1",
+          "systemsArchitecture limits SIGNAL-E to L1",
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "mpr": {
+        "composite100": 59,
+        "source": "venture-os/audit/evidence/mpr-repo-latest.json",
+        "evaluatedAt": "2026-06-28T11:15:18.347Z"
+      },
+      "evidenceFreshness": {
+        "fresh": true,
+        "oldestSourceDate": "2026-06-28T18:47:34.305Z",
+        "newestSourceDate": "2026-06-28T21:46:36.427Z",
+        "newestAgeDays": 0,
+        "evidenceCount": 4
+      },
+      "movement": {
+        "available": false,
+        "currentScore100": 100,
+        "priorScore100": null,
+        "delta": null,
+        "reason": "No prior Kaleidoscope graph snapshot found in repo evidence."
+      }
+    }
+  ],
+  "aliases": [],
+  "answers": {
+    "whatChangedSinceLastAudit": "Since the last available Kaleidoscope evidence, the current graph snapshot shows 20/20 repos ready, 0 blocker nodes, 0 symlink aliases, and 0 alias warnings. Prior/current score movement is not available because no prior Kaleidoscope graph snapshot is present in repo evidence. P2.2 query witness passes 4/4 golden questions at 0.92 average confidence."
+  },
+  "issues": []
+}
