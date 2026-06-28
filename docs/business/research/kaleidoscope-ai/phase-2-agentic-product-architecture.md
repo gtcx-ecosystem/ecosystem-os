@@ -793,6 +793,13 @@ Exit gate:
 
 - every real repo can emit a SIGNAL witness or a structured "not enough evidence" witness
 
+Initial implementation:
+
+- `pnpm kaleidoscope:signal:check` evaluates fleet SIGNAL-P and SIGNAL-E from the latest graph snapshot plus per-repo MPR evidence.
+- `pnpm kaleidoscope:signal:write` emits `audit/evidence/signal-fleet-latest.json` and `docs/business/research/kaleidoscope-ai/signal-fleet-latest.md`.
+- The witness preserves the MPR relationship while keeping SIGNAL conservative: graph/RAG/MCP and eval evidence can support L2, while L3+ requires trace, policy, approval, and learning-loop evidence.
+- Every present repo emits a generated repo-level SIGNAL result or a structured `not-enough-evidence` result.
+
 ### P2.6: Execution studio draft mode
 
 Goal: turn insights into gated work artifacts.
