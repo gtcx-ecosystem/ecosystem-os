@@ -1,23 +1,23 @@
 # Agency check
 
-- Updated: `2026-06-17T18:21:04.202Z`
+- Updated: `2026-06-28T16:15:34.528Z`
 - OK: **true**
 
 ## tools
 
-- Path: `/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/agency/catalogs/tools.json`
+- Path: `pm/agency/catalogs/tools.json`
 - OK: **true**
 - Issues: **0**
 
 ## assets
 
-- Path: `/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/agency/catalogs/assets.json`
+- Path: `pm/agency/catalogs/assets.json`
 - OK: **true**
 - Issues: **0**
 
 ## resources
 
-- Path: `/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/agency/catalogs/resources.json`
+- Path: `pm/agency/catalogs/resources.json`
 - OK: **true**
 - Issues: **0**
 
