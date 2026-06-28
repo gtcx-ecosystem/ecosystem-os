@@ -14,6 +14,7 @@ const SOURCE_RELS = {
   observatory: 'audit/evidence/kaleidoscope-observatory-latest.json',
   signal: 'audit/evidence/signal-fleet-latest.json',
   execution: 'audit/evidence/kaleidoscope-execution-studio-latest.json',
+  partnerBrief: 'audit/evidence/kaleidoscope-partner-brief-latest.json',
   safetyPlan: 'docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md'
 };
 const WRITE = process.argv.includes('--write');
@@ -58,6 +59,7 @@ function buildWitness() {
   const observatory = readJson(SOURCE_RELS.observatory);
   const signal = readJson(SOURCE_RELS.signal);
   const execution = readJson(SOURCE_RELS.execution);
+  const partnerBrief = readJson(SOURCE_RELS.partnerBrief);
   const generatedAt = new Date().toISOString();
 
   const decisionQuestions = decision.questions ?? [];
@@ -75,13 +77,19 @@ function buildWitness() {
     gate(
       'source-witnesses-ok',
       'Required source witnesses are green',
-      query.ok === true && decision.ok === true && observatory.ok === true && signal.ok === true && execution.ok === true,
+      query.ok === true &&
+        decision.ok === true &&
+        observatory.ok === true &&
+        signal.ok === true &&
+        execution.ok === true &&
+        partnerBrief.ok === true,
       [
         source(SOURCE_RELS.query, 'query witness'),
         source(SOURCE_RELS.decision, 'decision witness'),
         source(SOURCE_RELS.observatory, 'observatory witness'),
         source(SOURCE_RELS.signal, 'SIGNAL witness'),
-        source(SOURCE_RELS.execution, 'execution studio witness')
+        source(SOURCE_RELS.execution, 'execution studio witness'),
+        source(SOURCE_RELS.partnerBrief, 'partner brief evaluation witness')
       ],
       'Release cannot pass when any upstream witness is not ok.'
     ),
@@ -128,6 +136,15 @@ function buildWitness() {
       'Release cannot pass when draft actions can cross write, external, or deploy boundaries without approval.'
     ),
     gate(
+      'partner-brief-boundary-gate',
+      'Partner brief remains internal draft and approval-gated',
+      partnerBrief.ok === true &&
+        partnerBrief.summary?.externalUse === 'blocked_until_explicit_approval' &&
+        partnerBrief.summary?.approvalStatus === 'draft_pending_approval',
+      [source(SOURCE_RELS.partnerBrief, 'partner brief claim, freshness, and approval-boundary evaluation')],
+      'Release cannot pass when partner narratives can cross external-use boundaries without explicit approval.'
+    ),
+    gate(
       'signal-evidence-gate',
       'SIGNAL and MPR relation evidence is explicit',
       signal.summary?.generatedRepoWitnesses === signal.summary?.repoCount && signal.summary?.graphRagMcpReadyRepos === signal.summary?.repoCount,
@@ -165,7 +182,8 @@ function buildWitness() {
     gates,
     sources: SOURCE_RELS,
     contracts: {
-      releaseGates: 'pm/spec/kaleidoscope-ai/release-gates.schema.json'
+      releaseGates: 'pm/spec/kaleidoscope-ai/release-gates.schema.json',
+      partnerBrief: 'pm/spec/kaleidoscope-ai/partner-brief.schema.json'
     }
   };
 }

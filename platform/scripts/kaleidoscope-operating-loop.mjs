@@ -62,6 +62,12 @@ const STAGES = [
     witness: 'audit/evidence/kaleidoscope-execution-studio-latest.json'
   },
   {
+    id: 'partner-brief',
+    check: ['node', 'platform/scripts/kaleidoscope-partner-brief.mjs'],
+    write: ['node', 'platform/scripts/kaleidoscope-partner-brief.mjs', '--write'],
+    witness: 'audit/evidence/kaleidoscope-partner-brief-latest.json'
+  },
+  {
     id: 'release-gates',
     check: ['node', 'platform/scripts/kaleidoscope-release-gates.mjs'],
     write: ['node', 'platform/scripts/kaleidoscope-release-gates.mjs', '--write'],
