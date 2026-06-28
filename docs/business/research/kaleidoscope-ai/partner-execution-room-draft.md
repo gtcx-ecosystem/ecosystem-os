@@ -216,7 +216,7 @@ Before this room can graduate beyond internal draft:
 
 ## Open Gaps
 
-- Add partner-specific proof packets for bank/DFI, regulator, buyer, operator, and investor rooms.
+- Use [`partner-proof-packet-templates.md`](./partner-proof-packet-templates.md) to assemble partner-specific proof packets for bank/DFI, regulator, buyer, operator, and investor rooms.
 - Add traction, partner, revenue, deployment, and workflow fields to Observatory before ranking venture potential externally.
 - Add commodity-specific current evidence from `markets-os`, `gtcx-os`, `compliance-os`, `veritas-ai`, and `griot-ai`.
 - Add a partner-brief evaluator that checks for claim class, citation freshness, and approval status before export.
