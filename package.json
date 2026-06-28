@@ -98,6 +98,8 @@
     "kaleidoscope:signal:write": "node platform/scripts/kaleidoscope-signal-runner.mjs --write",
     "kaleidoscope:execution-studio:check": "node platform/scripts/kaleidoscope-execution-studio.mjs",
     "kaleidoscope:execution-studio:write": "node platform/scripts/kaleidoscope-execution-studio.mjs --write",
+    "kaleidoscope:release-gates:check": "node platform/scripts/kaleidoscope-release-gates.mjs",
+    "kaleidoscope:release-gates:write": "node platform/scripts/kaleidoscope-release-gates.mjs --write",
     "publish:check": "node platform/scripts/publish-register-check.mjs",
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",

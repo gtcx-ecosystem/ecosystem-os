@@ -857,6 +857,13 @@ Exit gate:
 
 - product release cannot pass if high-value answers lack citations, freshness, confidence, and approval boundaries
 
+Initial implementation:
+
+- `pnpm kaleidoscope:release-gates:check` evaluates Query, Decision Room, Observatory, SIGNAL, and Execution Studio witnesses as a release gate bundle.
+- `pnpm kaleidoscope:release-gates:write` emits `audit/evidence/kaleidoscope-release-gates-latest.json` and `docs/business/research/kaleidoscope-ai/release-gates-latest.md`.
+- The witness blocks release when source witnesses fail, golden queries regress, Decision Room citations/freshness/confidence fail, unsupported-claim warnings appear, SIGNAL evidence regresses, or Execution Studio approval boundaries are missing.
+- External use remains blocked until explicit approval even when internal draft release gates pass.
+
 ## Near-term backlog
 
 | Priority | Work item | Owner repo | Output |
