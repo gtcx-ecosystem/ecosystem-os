@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
 
 function nowIso() {
   return new Date().toISOString();
@@ -15,6 +15,11 @@ function ensureDir(path) {
 
 function mdEscape(s) {
   return String(s ?? '').replaceAll('\n', ' ').trim();
+}
+
+function repoRelative(root, filePath) {
+  const rel = relative(root, filePath);
+  return rel && !rel.startsWith('..') ? rel : filePath;
 }
 
 function checkCatalog({ id, filePath, items, itemLabel, requiredFields }) {
@@ -276,7 +281,7 @@ const witness = {
   ok: results.every((r) => r.ok) && brandScaffold.ok && deliverables.ok && witnessResolution.ok,
   catalogs: results.map((r, idx) => ({
     id: ['tools', 'assets', 'resources'][idx],
-    path: r.filePath,
+    path: repoRelative(root, r.filePath),
     ok: r.ok,
     issues: r.issues,
   })),
@@ -308,4 +313,3 @@ if (!witness.ok) {
 } else {
   process.stdout.write(JSON.stringify(witness, null, 2) + '\n');
 }
-

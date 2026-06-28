@@ -3,7 +3,7 @@
  * docs:foundation:check — strict docs/foundation/ pack per resolved docs-foundation-pack.json
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, relative } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { repoRootFromImportMeta } from './lib/repo-root.mjs';
 import { profileKeyFromTier, readProductTier, resolveDocsPack } from './lib/resolve-docs-pack.mjs';
@@ -18,6 +18,12 @@ function gate(id, ok, detail = null) {
   return { id, ok, ...(detail ? { detail } : {}) };
 }
 
+function repoRelative(filePath) {
+  if (!filePath) return filePath;
+  const rel = relative(REPO, filePath);
+  return rel && !rel.startsWith('..') ? rel : filePath;
+}
+
 function main() {
   const gates = [];
   const resolution = resolveDocsPack(REPO, PACK);
@@ -25,7 +31,11 @@ function main() {
   const repoName = JSON.parse(readFileSync(join(REPO, 'package.json'), 'utf8')).name;
 
   gates.push(
-    gate('spec:local-present', !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)), resolution.localPath ?? 'missing local pack'),
+    gate(
+      'spec:local-present',
+      !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+      repoRelative(resolution.localPath) ?? 'missing local pack',
+    ),
   );
   gates.push(
     gate(
@@ -119,7 +129,7 @@ function emit(gates, repoName, resolution) {
     at: new Date().toISOString(),
     ok,
     spec: {
-      localPath: resolution?.localPath ?? null,
+      localPath: repoRelative(resolution?.localPath) ?? null,
       localIsStub: resolution?.localIsStub ?? null,
       resolvedIsFull: resolution?.resolvedIsFull ?? false,
     },

@@ -1,0 +1,689 @@
+{
+  "schema": "gtcx://baseline-os/signal-fleet-witness/v1",
+  "scope": "fleet",
+  "evaluatedAt": "2026-06-28T16:04:12.047Z",
+  "date": "2026-06-28",
+  "repoCount": 20,
+  "results": [
+    {
+      "repo": "agile-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "baseline-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-baseline-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "bridge-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-bridge-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "canon-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "compliance-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-compliance-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "ecosystem-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "exploration-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-exploration-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "fabric-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-fabric-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "griot-ai",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-griot-ai-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "gtcx-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "inspection-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L0",
+        "score100": 8,
+        "lowestDimension": "tooling",
+        "published": true,
+        "summary": "SIGNAL-E limited by tooling."
+      },
+      "overallLevel": "L0",
+      "overallScore100": 8,
+      "graphRagMcp": {
+        "state": "noRepoLocalConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "No repo-local Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "tooling limits SIGNAL-E to L0",
+        "No repo-local Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "ledger-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "ledger-ui",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-ledger-ui-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "markets-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-markets-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "nyota-ai",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-nyota-ai-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "sensei-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-sensei-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "terminal-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-terminal-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "terra-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-terra-os-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    },
+    {
+      "repo": "venture-os",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "partialConfig",
+        "signalELevelCeiling": "L1",
+        "witnesses": [],
+        "notes": [
+          "Partial Graph/RAG/MCP config found"
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1",
+        "Partial Graph/RAG/MCP config found"
+      ]
+    },
+    {
+      "repo": "veritas-ai",
+      "signalP": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-P limited by systemsArchitecture."
+      },
+      "signalE": {
+        "level": "L1",
+        "score100": 25,
+        "lowestDimension": "systemsArchitecture",
+        "published": true,
+        "summary": "SIGNAL-E limited by systemsArchitecture."
+      },
+      "overallLevel": "L1",
+      "overallScore100": 25,
+      "graphRagMcp": {
+        "state": "currentRepoWitness",
+        "signalELevelCeiling": "L2",
+        "witnesses": [
+          {
+            "type": "witness",
+            "ref": "audit/evidence/rag-model-b-veritas-ai-latest.json",
+            "label": "RAG/MCP witness",
+            "status": "pass"
+          }
+        ]
+      },
+      "bottlenecks": [
+        "systemsArchitecture limits SIGNAL-P to L1",
+        "systemsArchitecture limits SIGNAL-E to L1"
+      ]
+    }
+  ],
+  "source": "run-signal-fleet-audit"
+}
