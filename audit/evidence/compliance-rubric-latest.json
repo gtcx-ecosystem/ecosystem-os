@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://audit/compliance-rubric/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-25",
-  "score100": 69,
+  "date": "2026-06-28",
+  "score100": 100,
   "categories": {
     "layout-p35": {
       "label": "Layout & workspace (P35 v5)",
       "weight": 8,
-      "score100": 45,
+      "score100": 100,
       "protocol": "P35",
       "items": [
         {
           "id": "p35-strict-pass",
           "label": "P35 layout strict GREEN",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 35,
           "severity": "P1",
           "optional": false,
@@ -35,8 +35,8 @@
         {
           "id": "root-allowlist",
           "label": "Root allowlist / workspace root cleanliness",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 20,
           "severity": "P2",
           "optional": false,
@@ -135,14 +135,14 @@
     "ops-domains-p29": {
       "label": "Operational domains (P29)",
       "weight": 6,
-      "score100": 50,
+      "score100": 100,
       "protocol": "P29",
       "items": [
         {
           "id": "ops-check-pass",
           "label": "pnpm ops:check exit 0",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 50,
           "severity": "P1",
           "optional": false,
@@ -219,7 +219,7 @@
     "anti-version-bloat-p32": {
       "label": "Anti-version bloat (P32)",
       "weight": 4,
-      "score100": 60,
+      "score100": 100,
       "protocol": "P32",
       "items": [
         {
@@ -247,12 +247,12 @@
         {
           "id": "witness-latest-only",
           "label": "No dated audit/evidence siblings when *-latest.* exists",
-          "pass": false,
-          "score100": 0,
+          "pass": true,
+          "score100": 100,
           "weight": 40,
           "severity": "P2",
           "optional": false,
-          "detail": "1 dated sibling(s) with -latest witness — e.g. audit/evidence/master-audit-2026-06-25.json",
+          "detail": "witness-latest clean",
           "protocol": "P32"
         }
       ],
@@ -446,7 +446,7 @@
           "weight": 20,
           "severity": "P1",
           "optional": false,
-          "detail": "agentic/manifest.json",
+          "detail": "agents/manifest.json (or legacy agentic/manifest.json)",
           "protocol": "P22-P28"
         },
         {
@@ -479,7 +479,7 @@
           "weight": 15,
           "severity": "P2",
           "optional": false,
-          "detail": "MCP hub, hub repo, or agentic consumer",
+          "detail": "MCP hub, hub repo, or agent-manifest consumer",
           "protocol": "P22-P28"
         },
         {
@@ -573,7 +573,7 @@
           "weight": 30,
           "severity": "P2",
           "optional": false,
-          "detail": "4 items"
+          "detail": "6 items"
         },
         {
           "id": "uat-scenarios",
@@ -793,7 +793,7 @@
           "weight": 50,
           "severity": "P2",
           "optional": false,
-          "detail": "deploy directory"
+          "detail": "deploy/ or platform/ infra home (deploy optional)"
         },
         {
           "id": "pm-ci-gates-json",
@@ -851,35 +851,6 @@
       "itemCount": 3
     }
   },
-  "violations": [
-    {
-      "id": "p35-strict-pass",
-      "categoryId": "layout-p35",
-      "label": "P35 layout strict GREEN",
-      "severity": "P1",
-      "detail": "p35Strict"
-    },
-    {
-      "id": "root-allowlist",
-      "categoryId": "layout-p35",
-      "label": "Root allowlist / workspace root cleanliness",
-      "severity": "P2",
-      "detail": "opsCheck"
-    },
-    {
-      "id": "ops-check-pass",
-      "categoryId": "ops-domains-p29",
-      "label": "pnpm ops:check exit 0",
-      "severity": "P1",
-      "detail": "opsCheck"
-    },
-    {
-      "id": "witness-latest-only",
-      "categoryId": "anti-version-bloat-p32",
-      "label": "No dated audit/evidence siblings when *-latest.* exists",
-      "severity": "P2",
-      "detail": "1 dated sibling(s) with -latest witness — e.g. audit/evidence/master-audit-2026-06-25.json"
-    }
-  ],
+  "violations": [],
   "itemTotal": 66
 }

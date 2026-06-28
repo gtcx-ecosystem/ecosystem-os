@@ -3,9 +3,9 @@
   "scope": "repo",
   "id": "ecosystem-os",
   "repo": "ecosystem-os",
-  "evaluatedAt": "2026-06-26T11:34:23.358Z",
-  "gitHead": "418c92a97fd6597a141762c51572756bd50af4af",
-  "date": "2026-06-26",
+  "evaluatedAt": "2026-06-28T03:43:31.981Z",
+  "gitHead": "c803560615b6a6a82b414613b3372adfe7d4d073",
+  "date": "2026-06-28",
   "weights": {
     "compliance": 0,
     "technicalExcellence": 0.15,
@@ -20,7 +20,7 @@
   },
   "quadrants": {
     "compliance": {
-      "score100": 99,
+      "score100": 100,
       "published": true,
       "provisional": false,
       "blockedBy": null,
@@ -241,7 +241,7 @@
         "anti-version-bloat-p32": {
           "label": "Anti-version bloat (P32)",
           "weight": 4,
-          "score100": 60,
+          "score100": 100,
           "protocol": "P32",
           "items": [
             {
@@ -269,12 +269,12 @@
             {
               "id": "witness-latest-only",
               "label": "No dated audit/evidence siblings when *-latest.* exists",
-              "pass": false,
-              "score100": 0,
+              "pass": true,
+              "score100": 100,
               "weight": 40,
               "severity": "P2",
               "optional": false,
-              "detail": "6 dated sibling(s) with -latest witness — e.g. audit/agentic-innovation-audit-2026-06-25.md",
+              "detail": "witness-latest clean",
               "protocol": "P32"
             }
           ],
@@ -468,7 +468,7 @@
               "weight": 20,
               "severity": "P1",
               "optional": false,
-              "detail": "agentic/manifest.json",
+              "detail": "agents/manifest.json (or legacy agentic/manifest.json)",
               "protocol": "P22-P28"
             },
             {
@@ -501,7 +501,7 @@
               "weight": 15,
               "severity": "P2",
               "optional": false,
-              "detail": "MCP hub, hub repo, or agentic consumer",
+              "detail": "MCP hub, hub repo, or agent-manifest consumer",
               "protocol": "P22-P28"
             },
             {
@@ -595,7 +595,7 @@
               "weight": 30,
               "severity": "P2",
               "optional": false,
-              "detail": "4 items"
+              "detail": "6 items"
             },
             {
               "id": "uat-scenarios",
@@ -815,7 +815,7 @@
               "weight": 50,
               "severity": "P2",
               "optional": false,
-              "detail": "deploy directory"
+              "detail": "deploy/ or platform/ infra home (deploy optional)"
             },
             {
               "id": "pm-ci-gates-json",
@@ -873,15 +873,7 @@
           "itemCount": 3
         }
       },
-      "hygieneViolations": [
-        {
-          "id": "witness-latest-only",
-          "categoryId": "anti-version-bloat-p32",
-          "label": "No dated audit/evidence siblings when *-latest.* exists",
-          "severity": "P2",
-          "detail": "6 dated sibling(s) with -latest witness — e.g. audit/agentic-innovation-audit-2026-06-25.md"
-        }
-      ],
+      "hygieneViolations": [],
       "itemTotal": 66,
       "rubricVersion": "1.0.0",
       "openP0": 0,
@@ -972,7 +964,7 @@
       "score100": 64,
       "published": false,
       "provisional": true,
-      "blockedBy": "esl:ESL-2",
+      "blockedBy": "technicalExcellence",
       "unlockThreshold100": 85,
       "metrics": {
         "selectivity-ingredients": {
@@ -1037,9 +1029,7 @@
       "craftFlags": {
         "interchangeable": false,
         "aiSlop": false
-      },
-      "eslRequired": "ESL-2",
-      "eslActive": "ESL-1"
+      }
     },
     "worldClass": {
       "score100": 34,
@@ -1159,10 +1149,10 @@
       "rubricSpec": "pm/spec/world-class-rubric.json",
       "rubricVersion": "1.0.0",
       "eslRequired": "ESL-3",
-      "eslActive": "ESL-1"
+      "eslActive": "ESL-2"
     },
     "trustAndSafety": {
-      "score100": 70,
+      "score100": 78,
       "published": true,
       "metrics": {
         "evidence-coverage": {
@@ -1192,10 +1182,10 @@
           "weight": 20
         },
         "audit-trail": {
-          "score100": 60,
+          "score100": 100,
           "weight": 20,
           "freshFivePillar": true,
-          "versionBloatHits": 6
+          "versionBloatHits": 0
         },
         "independent-replay": {
           "score100": 75,
@@ -1213,11 +1203,11 @@
       }
     }
   },
-  "foundationComposite100": 52,
+  "foundationComposite100": 55,
   "fullComposite100": 70,
-  "trustCap100": 70,
-  "composite100": 70,
-  "composite100Raw": 99,
+  "trustCap100": 78,
+  "composite100": 78,
+  "composite100Raw": 100,
   "compositeMode": "partial-unlock",
   "fullCompositeEligible": false,
   "unlockThreshold100": 85,
@@ -1225,9 +1215,9 @@
   "openP1": 0,
   "multiPillar": {
     "schema": "gtcx://baseline-os/multi-pillar-repo-extension/v1",
-    "foundationComposite100": 52,
+    "foundationComposite100": 55,
     "fullComposite100": 70,
-    "trustCap100": 70,
+    "trustCap100": 78,
     "weights": {
       "compliance": 0,
       "technicalExcellence": 0.15,
@@ -1242,7 +1232,7 @@
     },
     "quadrants": {
       "compliance": {
-        "score100": 99,
+        "score100": 100,
         "published": true,
         "provisional": false,
         "blockedBy": [],
@@ -1262,7 +1252,7 @@
         "published": false,
         "provisional": true,
         "blockedBy": [
-          "esl:ESL-2"
+          "technicalExcellence"
         ],
         "confidence": "B",
         "checks": []
@@ -1278,7 +1268,7 @@
         "checks": []
       },
       "trustAndSafety": {
-        "score100": 70,
+        "score100": 78,
         "published": true,
         "provisional": false,
         "blockedBy": [],
