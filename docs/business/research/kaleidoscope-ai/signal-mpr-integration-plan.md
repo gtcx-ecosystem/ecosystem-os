@@ -225,6 +225,11 @@ Recommended level bands:
 
 The score band should not override gates. A repo with high documentation but no traces cannot score L3 on Monitoring. A repo with autonomous claims but no policy layer and audit log cannot score L4 on Safeguards.
 
+Initial L3 evidence pack:
+
+- `pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json` defines the machine-readable evidence contract for SIGNAL L3 claims.
+- `docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md` defines the operating rule: graph/RAG/MCP readiness can support L2, but L3 requires trace, policy, approval, eval, rollback, and learning-loop evidence.
+
 ## Evidence gates by dimension
 
 ### systems architecture
