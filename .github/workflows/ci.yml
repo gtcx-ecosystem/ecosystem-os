@@ -10,6 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: ecosystem-os
+      - uses: actions/checkout@v4
+        with:
+          repository: gtcx-ecosystem/bridge-os
+          path: bridge-os
+      - uses: actions/checkout@v4
+        with:
+          repository: gtcx-ecosystem/canon-os
+          path: canon-os
       - uses: pnpm/action-setup@v4
         with:
           version: 9.15.0
@@ -17,5 +27,8 @@ jobs:
         with:
           node-version: '20'
           cache: pnpm
+          cache-dependency-path: ecosystem-os/pnpm-lock.yaml
       - run: pnpm test
+        working-directory: ecosystem-os
       - run: pnpm ops:check
+        working-directory: ecosystem-os
