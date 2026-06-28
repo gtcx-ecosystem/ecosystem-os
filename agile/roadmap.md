@@ -11,7 +11,7 @@ review_cycle: on-change
 
 # ecosystem-os — agile roadmap
 
-> **Fleet CPO:** [`../agile-os/docs/strategy/fleet-agile-hub.md`](../agile-os/docs/strategy/fleet-agile-hub.md)  
+> **Fleet CPO:** [`../agile-os/docs/business/strategy/fleet-agile-hub.md`](../agile-os/docs/business/strategy/fleet-agile-hub.md)  
 > **Current rollup:** [`roadmaps/roadmap-current.md`](./roadmaps/roadmap-current.md)  
 > **Machine backlog:** `pm/backlog.json` · **Execution roadmap:** `pm/execution-roadmap.md`
 

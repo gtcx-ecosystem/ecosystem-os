@@ -22,4 +22,4 @@
 - INIT-DOCS-PROVISIONING-V1-W2 — added P48 six-pack (`CHANGELOG.md`, `FOLDER-SPEC.md`)
 - Top-level folder `FOLDER-SPEC.md` stubs per Protocol 48
 - Registry: `canon-os/pm/spec/docs-folder-provisioning.json`
-- Tactical CPO artifacts — added `docs/reference/onboarding/`, `docs/agents/universal/`, `docs/agents/cursor/`, `docs/agile/`, `docs/strategy/product-capability-matrix.md`, `pm/product/prds/prd-product-charter.md`
+- Tactical CPO artifacts — added `docs/reference/onboarding/`, `docs/agents/universal/`, `docs/agents/cursor/`, `docs/agile/`, `docs/business/strategy/product-capability-matrix.md`, `pm/product/prds/prd-product-charter.md`

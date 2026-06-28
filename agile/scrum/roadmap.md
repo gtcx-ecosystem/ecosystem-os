@@ -11,7 +11,7 @@ review_cycle: on-change
 
 # ecosystem-os — agile lens
 
-> **Reference:** [`../agile-os/docs/strategy/fleet-agile-hub.md`](../agile-os/docs/strategy/fleet-agile-hub.md)  
+> **Reference:** [`../agile-os/docs/business/strategy/fleet-agile-hub.md`](../agile-os/docs/business/strategy/fleet-agile-hub.md)  
 > **Machine backlog slice:** `ops/pm/backlog.json` — refresh with `pnpm pm:sync`
 
 ## Local execution roadmap

@@ -16,6 +16,8 @@ review_cycle: monthly
 
 **AI-native company operating system** — not PM tool, not data warehouse, not generic agent framework.
 
+Strategic market framing: [AWS of African commodity trade markets](aws-of-african-commodity-trade-markets.md).
+
 ## vs incumbents
 
 | Competitor class | They optimize | Ecosystem OS difference |

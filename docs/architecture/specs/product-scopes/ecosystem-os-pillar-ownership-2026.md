@@ -14,6 +14,8 @@ canonical: true
 
 > **Canonical SoR** for which module owns which pillar of the AI-native company operating loop. Every module scope doc links here.
 
+Ecosystem OS is the local product lead for Kernel, Graph, Ledger, Surface, Ethos, Venture, and Agency. Bridge, Agile, Fabric, and Assurance remain operating modules in the Ecosystem OS product model, with sibling repos participating as implementation, ceremony, service, or evidence systems.
+
 ## Operating loop pillars
 
 | # | Pillar | Meaning |
@@ -43,5 +45,7 @@ canonical: true
 | **Agile** | consumes | — | — | — | consumes | SoR | — | consumes | — |
 | **Fabric** | — | — | — | — | consumes | consumes | SoR | consumes | — |
 | **Assurance** | consumes | — | — | — | — | consumes | consumes | SoR | feeds |
+
+**Lead repo for Kernel / Graph / Ledger / Surface / Ethos / Venture / Agency:** `ecosystem-os`
 
 **Witness:** `audit/evidence/mpr-product-layer-latest.json` · **Fleet rubric:** canon-os multi-pillar index

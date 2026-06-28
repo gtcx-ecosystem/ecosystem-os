@@ -2,7 +2,7 @@
 featureId: FEAT-VEN-FUNDRAISE-SYNC
 initiativeId: INIT-ECOSYSTEM-VENTURE
 title: 'FEAT-VEN-FUNDRAISE-SYNC — fundraising backlog traced to pm stories'
-status: open
+status: done
 priority: P1
 owner: ecosystem-os
 document_type: product
@@ -17,3 +17,10 @@ review_cycle: on-change
 Trace `fundraising/implementation/execution-backlog.md` items to compiled stories in `machine/backlog.json`.
 
 **Acceptance:** Each P0/P1 fundraising row links a `storyId` · `pnpm product:compile` includes venture stories
+
+## Completion Evidence
+
+- `docs/product/roadmap/stories/STORY-VEN-FUNDRAISE-SYNC.md`
+- `pm/backlog/venture-backlog.json`
+- `machine/backlog.json`
+- `machine/ci/product-compile-latest.json`

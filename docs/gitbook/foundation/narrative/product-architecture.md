@@ -13,6 +13,8 @@ review_cycle: on-change
 
 ## Substrate
 
+Ecosystem OS is the local product lead for the substrate. Implementation may be distributed across fleet repos, but product scope, roadmap language, and portfolio narrative are led here.
+
 | Layer | Verb | Purpose |
 | ----- | ---- | ------- |
 | **Kernel** | governs | Identity, authority, policy, events, module contracts, permissions. |
@@ -23,6 +25,8 @@ review_cycle: on-change
 The substrate is not a department. It is the platform beneath every operating module.
 
 ## Operating modules
+
+Ecosystem OS is also the local product lead for Ethos, Venture, and Agency. Bridge, Agile, Fabric, and Assurance are part of the product architecture and connect through their operating repos for execution, ceremonies, infrastructure, and evidence.
 
 | Module | Verb | Role |
 | ------ | ---- | ---- |

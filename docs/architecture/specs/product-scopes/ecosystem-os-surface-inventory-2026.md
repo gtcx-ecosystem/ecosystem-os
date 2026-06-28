@@ -12,16 +12,16 @@ canonical: true
 
 # Ecosystem OS — surface inventory
 
-## Substrate surfaces (owner repos)
+## Substrate surfaces (ecosystem-os lead)
 
-| ID | Surface | Owner repo | Buyer promise |
-| -- | ------- | ---------- | ------------- |
-| SUB-01 | Kernel runtime | baseline-os | Governed agent substrate |
-| SUB-02 | Graph / backlog | agile-os, bridge-os | Company state + work graph |
-| SUB-03 | Ledger / evidence | ledger-ui | Verifiable history |
-| SUB-04 | GTCX command | gtcx-os | Trade platform hub |
-| SUB-05 | Markets desk | markets-os | Capital formation rail |
-| SUB-06 | Terminal fifty-four | terminal-os | Operator product surfaces |
+Ecosystem OS is the product lead and local roadmap SoR for Kernel, Graph, Ledger, and Surface. Sibling repos may provide implementation adapters, evidence producers, or mirrored product surfaces, but they do not own the product boundary for these substrate surfaces.
+
+| ID | Surface | Lead repo | Implementation / evidence participants | Buyer promise |
+| -- | ------- | --------- | -------------------------------------- | ------------- |
+| SUB-01 | Kernel runtime | ecosystem-os | baseline-os | Governed agent substrate |
+| SUB-02 | Graph / backlog | ecosystem-os | agile-os, bridge-os | Company state + work graph |
+| SUB-03 | Ledger / evidence | ecosystem-os | ledger-ui, fabric-os, canon-os | Verifiable history |
+| SUB-04 | Surface command | ecosystem-os | gtcx-os, markets-os, terra-os, terminal-os | Command center and operator product surfaces |
 
 ## Operating module surfaces (ecosystem-os SoR)
 
