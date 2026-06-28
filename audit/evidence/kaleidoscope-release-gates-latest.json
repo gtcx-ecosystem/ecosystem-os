@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates/v1",
-  "generatedAt": "2026-06-28T23:32:28.329Z",
+  "generatedAt": "2026-06-28T23:48:03.052Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-eval-safety-release-hardening",
@@ -25,32 +25,32 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.047Z",
+          "sourceDate": "2026-06-28T23:48:02.755Z",
           "reason": "query witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "sourceDate": "2026-06-28T23:48:02.922Z",
           "reason": "decision witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.148Z",
+          "sourceDate": "2026-06-28T23:48:02.868Z",
           "reason": "observatory witness"
         },
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.102Z",
+          "sourceDate": "2026-06-28T23:48:02.816Z",
           "reason": "SIGNAL witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.244Z",
+          "sourceDate": "2026-06-28T23:48:02.966Z",
           "reason": "execution studio witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.287Z",
+          "sourceDate": "2026-06-28T23:48:03.010Z",
           "reason": "partner brief evaluation witness"
         }
       ],
@@ -64,7 +64,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.047Z",
+          "sourceDate": "2026-06-28T23:48:02.755Z",
           "reason": "golden question eval results"
         }
       ],
@@ -78,7 +78,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "sourceDate": "2026-06-28T23:48:02.922Z",
           "reason": "decision citations"
         }
       ],
@@ -92,7 +92,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "sourceDate": "2026-06-28T23:48:02.922Z",
           "reason": "decision freshness evaluation"
         }
       ],
@@ -106,7 +106,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "sourceDate": "2026-06-28T23:48:02.922Z",
           "reason": "unsupported claim evaluation"
         }
       ],
@@ -120,7 +120,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.195Z",
+          "sourceDate": "2026-06-28T23:48:02.922Z",
           "reason": "answer confidence evaluation"
         }
       ],
@@ -134,7 +134,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.244Z",
+          "sourceDate": "2026-06-28T23:48:02.966Z",
           "reason": "draft-only approval and release gate evidence"
         }
       ],
@@ -148,7 +148,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.287Z",
+          "sourceDate": "2026-06-28T23:48:03.010Z",
           "reason": "partner brief claim, freshness, and approval-boundary evaluation"
         }
       ],
@@ -162,7 +162,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:32:28.102Z",
+          "sourceDate": "2026-06-28T23:48:02.816Z",
           "reason": "SIGNAL fleet witness"
         }
       ],

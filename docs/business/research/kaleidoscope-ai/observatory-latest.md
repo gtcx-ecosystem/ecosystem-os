@@ -19,6 +19,7 @@ review_cycle: on-change
 - Alias warnings: 0
 - Fresh evidence repos: 20/20
 - Movement available: true
+- Commercial evidence complete: 14/20
 
 ## What changed since the last audit?
 
@@ -26,26 +27,51 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 
 ## Repo Readiness
 
-| Repo | Tier | Ready | Graph/RAG/MCP | Blockers | SIGNAL | MPR | Freshness | Movement |
-| --- | ---: | --- | --- | ---: | --- | ---: | --- | --- |
-| baseline-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 100 | fresh | 0 |
-| bridge-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 |
-| ecosystem-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| compliance-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| gtcx-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 91 | fresh | 0 |
-| ledger-ui | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| markets-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| terminal-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 |
-| exploration-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| griot-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| nyota-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| sensei-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| terra-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| veritas-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| agile-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 |
-| canon-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 |
-| fabric-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 100 | fresh | 0 |
-| inspection-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 54 | fresh | 0 |
-| ledger-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
-| venture-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 |
+| Repo | Tier | Ready | Graph/RAG/MCP | Blockers | SIGNAL | MPR | Freshness | Movement | Commercial |
+| --- | ---: | --- | --- | ---: | --- | ---: | --- | --- | --- |
+| baseline-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 100 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
+| bridge-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
+| ecosystem-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:gap wor:ok |
+| compliance-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| gtcx-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 91 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| ledger-ui | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| markets-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| terminal-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| exploration-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| griot-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| nyota-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| sensei-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| terra-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| veritas-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| agile-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:gap par:ok rev:ok dep:ok wor:ok |
+| canon-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
+| fabric-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 100 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| inspection-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 54 | fresh | 0 | tra:ok par:gap rev:gap dep:gap wor:gap |
+| ledger-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+| venture-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
+
+## Commercial Evidence
+
+| Repo | Evidenced categories | Gaps |
+| --- | ---: | --- |
+| baseline-os | 4/5 | workflow |
+| bridge-os | 4/5 | workflow |
+| ecosystem-os | 4/5 | deployment |
+| compliance-os | 5/5 | none |
+| gtcx-os | 5/5 | none |
+| ledger-ui | 5/5 | none |
+| markets-os | 5/5 | none |
+| terminal-os | 5/5 | none |
+| exploration-os | 5/5 | none |
+| griot-ai | 5/5 | none |
+| nyota-ai | 5/5 | none |
+| sensei-os | 5/5 | none |
+| terra-os | 5/5 | none |
+| veritas-ai | 5/5 | none |
+| agile-os | 4/5 | traction |
+| canon-os | 4/5 | workflow |
+| fabric-os | 5/5 | none |
+| inspection-os | 1/5 | partner, revenue, deployment, workflow |
+| ledger-os | 5/5 | none |
+| venture-os | 5/5 | none |
 

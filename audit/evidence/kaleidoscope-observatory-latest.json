@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
-  "generatedAt": "2026-06-28T23:32:28.147Z",
+  "generatedAt": "2026-06-28T23:48:02.867Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-observatory-mvp",
   "ok": true,
@@ -8,7 +8,8 @@
     "graphSnapshot": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
     "queryWitness": "audit/evidence/kaleidoscope-query-service-latest.json",
     "signalFleet": "audit/evidence/signal-fleet-latest.json",
-    "mprRepo": "../*/audit/evidence/mpr-repo-latest.json"
+    "mprRepo": "../*/audit/evidence/mpr-repo-latest.json",
+    "commercialEvidence": "../*/{audit/evidence,docs,operations,machine,agile}/**/*"
   },
   "contracts": {
     "observatory": "pm/spec/kaleidoscope-ai/observatory.schema.json",
@@ -21,7 +22,10 @@
     "blockerCount": 0,
     "aliasWarningCount": 0,
     "freshEvidenceRepos": 20,
-    "movementAvailable": true
+    "movementAvailable": true,
+    "commercialEvidenceCompleteRepos": 14,
+    "commercialEvidencePartialRepos": 6,
+    "commercialEvidenceGapRepos": 0
   },
   "repos": [
     {
@@ -100,6 +104,64 @@
         "newestSourceDate": "2026-06-28T16:55:46.741Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "baseline-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:10.353Z"
+              },
+              {
+                "path": "baseline-os/audit/evidence/gtm-progress-report-latest.json",
+                "sourceDate": "2026-06-28T11:22:10.352Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "baseline-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:10.246Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "baseline-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:10.357Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "baseline-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:10.614Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing workflow evidence path for Observatory commercial scoring"
+            ]
+          }
+        },
+        "evidencedCategories": 4,
+        "categoryCount": 5,
+        "complete": false
       },
       "movement": {
         "available": true,
@@ -186,6 +248,68 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "bridge-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:11.469Z"
+              },
+              {
+                "path": "bridge-os/audit/evidence/gtm-progress-report-latest.json",
+                "sourceDate": "2026-06-28T11:22:11.468Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "bridge-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:11.318Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "bridge-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:11.472Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "bridge-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:11.585Z"
+              },
+              {
+                "path": "bridge-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:11.586Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing workflow evidence path for Observatory commercial scoring"
+            ]
+          }
+        },
+        "evidencedCategories": 4,
+        "categoryCount": 5,
+        "complete": false
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -266,10 +390,72 @@
       },
       "evidenceFreshness": {
         "fresh": true,
-        "oldestSourceDate": "2026-06-28T23:32:27.918Z",
-        "newestSourceDate": "2026-06-28T23:32:27.919Z",
+        "oldestSourceDate": "2026-06-28T23:48:02.619Z",
+        "newestSourceDate": "2026-06-28T23:48:02.620Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ecosystem-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:20.622Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ecosystem-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:20.421Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ecosystem-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:20.676Z"
+              },
+              {
+                "path": "ecosystem-os/archive/legacy-docs-overview/product/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:20.538Z"
+              },
+              {
+                "path": "ecosystem-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:20.624Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing deployment evidence path for Observatory commercial scoring"
+            ]
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ecosystem-os/docs/product/experience/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:20.823Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 4,
+        "categoryCount": 5,
+        "complete": false
       },
       "movement": {
         "available": true,
@@ -356,6 +542,79 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "compliance-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:16.990Z"
+              },
+              {
+                "path": "compliance-os/audit/evidence/design-partner-pilot-latest.json",
+                "sourceDate": "2026-06-28T11:22:16.981Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "compliance-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:16.421Z"
+              },
+              {
+                "path": "compliance-os/audit/evidence/design-partner-pilot-latest.json",
+                "sourceDate": "2026-06-28T11:22:16.981Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "compliance-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:17.062Z"
+              },
+              {
+                "path": "compliance-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:16.996Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "compliance-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:17.119Z"
+              },
+              {
+                "path": "compliance-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:17.120Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "compliance-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:17.171Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -440,6 +699,75 @@
         "newestSourceDate": "2026-06-28T17:20:34.334Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "gtcx-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:28.166Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "gtcx-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:27.018Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "gtcx-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:28.238Z"
+              },
+              {
+                "path": "gtcx-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:28.174Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "gtcx-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:28.395Z"
+              },
+              {
+                "path": "gtcx-os/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:28.395Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "gtcx-os/docs/product/experience/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:28.271Z"
+              },
+              {
+                "path": "gtcx-os/machine/spec/ecosystem-workflows.json",
+                "sourceDate": "2026-06-28T11:22:28.377Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -526,6 +854,71 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-ui/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:33.367Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-ui/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:33.301Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-ui/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:33.399Z"
+              },
+              {
+                "path": "ledger-ui/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:33.368Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-ui/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:33.415Z"
+              },
+              {
+                "path": "ledger-ui/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:33.415Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-ui/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:33.424Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -610,6 +1003,103 @@
         "newestSourceDate": "2026-06-28T17:24:47.437Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "markets-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.021Z"
+              },
+              {
+                "path": "markets-os/audit/evidence/pilot-golden-transaction-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.036Z"
+              },
+              {
+                "path": "markets-os/audit/evidence/tokenization-production-pilot-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.044Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "markets-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:35.868Z"
+              },
+              {
+                "path": "markets-os/machine/ci/design-partner-loi-offtake-os-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.276Z"
+              },
+              {
+                "path": "markets-os/platform/ecosystem-prototype/data/partners.json",
+                "sourceDate": "2026-06-28T11:22:36.419Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "markets-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:36.130Z"
+              },
+              {
+                "path": "markets-os/archive/legacy-docs-overview/product/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:35.929Z"
+              },
+              {
+                "path": "markets-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.027Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "markets-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:36.185Z"
+              },
+              {
+                "path": "markets-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:36.186Z"
+              },
+              {
+                "path": "markets-os/audit/evidence/production-launch-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:36.038Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "markets-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:36.235Z"
+              },
+              {
+                "path": "markets-os/operations/machine/roadmap/workflows.json",
+                "sourceDate": "2026-06-28T11:22:36.336Z"
+              },
+              {
+                "path": "markets-os/machine/ux/user-flows/flow-portal-capital-call-payment.md",
+                "sourceDate": "2026-06-28T11:22:36.322Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -696,6 +1186,75 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terminal-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T17:30:01.886Z"
+              },
+              {
+                "path": "terminal-os/audit/evidence/gtm-progress-report-latest.json",
+                "sourceDate": "2026-06-28T17:30:01.886Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terminal-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T17:30:01.865Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terminal-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T17:30:02.086Z"
+              },
+              {
+                "path": "terminal-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:40.120Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terminal-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:40.390Z"
+              },
+              {
+                "path": "terminal-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:40.390Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terminal-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T17:30:02.166Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -780,6 +1339,71 @@
         "newestSourceDate": "2026-06-28T17:52:23.865Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "exploration-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:21.449Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "exploration-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:21.212Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "exploration-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:21.501Z"
+              },
+              {
+                "path": "exploration-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:21.450Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "exploration-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:21.520Z"
+              },
+              {
+                "path": "exploration-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:21.520Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "exploration-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:21.571Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -866,6 +1490,83 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "griot-ai/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:26.365Z"
+              },
+              {
+                "path": "griot-ai/audit/evidence/gtm-progress-report-latest.json",
+                "sourceDate": "2026-06-28T11:22:26.364Z"
+              },
+              {
+                "path": "griot-ai/audit/evidence/institutional-pilot-package.json",
+                "sourceDate": "2026-06-28T11:22:26.367Z"
+              },
+              {
+                "path": "griot-ai/audit/evidence/institutional-pilot-signed.json",
+                "sourceDate": "2026-06-28T11:22:26.368Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "griot-ai/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:26.283Z"
+              },
+              {
+                "path": "griot-ai/docs/product/gtm/pilot-sow-template.md",
+                "sourceDate": "2026-06-28T11:22:26.484Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "griot-ai/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:26.426Z"
+              },
+              {
+                "path": "griot-ai/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:26.372Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "griot-ai/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:26.462Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "griot-ai/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:26.504Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -950,6 +1651,67 @@
         "newestSourceDate": "2026-06-28T18:22:20.357Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "nyota-ai/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:37.146Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "nyota-ai/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:37.030Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "nyota-ai/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:37.225Z"
+              },
+              {
+                "path": "nyota-ai/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:37.149Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "nyota-ai/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:37.311Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "nyota-ai/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:37.373Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -1036,6 +1798,75 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "sensei-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:38.614Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "sensei-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:38.193Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "sensei-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:38.668Z"
+              },
+              {
+                "path": "sensei-os/archive/legacy-docs-overview/product/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:38.428Z"
+              },
+              {
+                "path": "sensei-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:38.615Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "sensei-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:38.688Z"
+              },
+              {
+                "path": "sensei-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:38.688Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "sensei-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:38.701Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -1120,6 +1951,67 @@
         "newestSourceDate": "2026-06-28T17:47:50.940Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terra-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:41.812Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terra-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:41.358Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terra-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:41.921Z"
+              },
+              {
+                "path": "terra-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:41.816Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terra-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:41.945Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "terra-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:41.956Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -1206,6 +2098,67 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "veritas-ai/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:43.112Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "veritas-ai/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:43.018Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "veritas-ai/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:43.188Z"
+              },
+              {
+                "path": "veritas-ai/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:43.116Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "veritas-ai/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:43.215Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "veritas-ai/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:43.240Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -1290,6 +2243,64 @@
         "newestSourceDate": "2026-06-28T18:34:49.839Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing traction evidence path for Observatory commercial scoring"
+            ]
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "agile-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:09.764Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "agile-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:09.844Z"
+              },
+              {
+                "path": "agile-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:09.810Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "agile-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:09.886Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "agile-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:09.909Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 4,
+        "categoryCount": 5,
+        "complete": false
       },
       "movement": {
         "available": true,
@@ -1376,6 +2387,64 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "canon-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:13.046Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "canon-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:12.116Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "canon-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:13.053Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "canon-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:13.191Z"
+              },
+              {
+                "path": "canon-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:13.191Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing workflow evidence path for Observatory commercial scoring"
+            ]
+          }
+        },
+        "evidencedCategories": 4,
+        "categoryCount": 5,
+        "complete": false
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -1460,6 +2529,75 @@
         "newestSourceDate": "2026-06-28T21:46:26.761Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "fabric-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:25.814Z"
+              },
+              {
+                "path": "fabric-os/audit/evidence/gtm-progress-report-latest.json",
+                "sourceDate": "2026-06-28T11:22:25.813Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "fabric-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:25.683Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "fabric-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:25.943Z"
+              },
+              {
+                "path": "fabric-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:25.816Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "fabric-os/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:26.045Z"
+              },
+              {
+                "path": "fabric-os/audit/evidence/pilot-staging-smoke-latest.json",
+                "sourceDate": "2026-06-28T11:22:25.819Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "fabric-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:25.983Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -1546,6 +2684,51 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "inspection-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:32.840Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing partner evidence path for Observatory commercial scoring"
+            ]
+          },
+          "revenue": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing revenue evidence path for Observatory commercial scoring"
+            ]
+          },
+          "deployment": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing deployment evidence path for Observatory commercial scoring"
+            ]
+          },
+          "workflow": {
+            "status": "gap",
+            "evidence": [],
+            "gaps": [
+              "missing workflow evidence path for Observatory commercial scoring"
+            ]
+          }
+        },
+        "evidencedCategories": 1,
+        "categoryCount": 5,
+        "complete": false
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -1631,6 +2814,67 @@
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:33.067Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:33.047Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:33.070Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:33.116Z"
+              },
+              {
+                "path": "ledger-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:33.117Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "ledger-os/docs/product/experience/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:33.125Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
+      },
       "movement": {
         "available": true,
         "currentScore100": 100,
@@ -1715,6 +2959,79 @@
         "newestSourceDate": "2026-06-28T21:46:36.427Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
+      },
+      "commercialEvidence": {
+        "categories": {
+          "traction": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "venture-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-28T11:22:42.699Z"
+              }
+            ],
+            "gaps": []
+          },
+          "partner": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "venture-os/agile/roadmaps/partnerships.md",
+                "sourceDate": "2026-06-28T11:22:42.610Z"
+              }
+            ],
+            "gaps": []
+          },
+          "revenue": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "venture-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-28T11:22:42.745Z"
+              },
+              {
+                "path": "venture-os/audit/evidence/mpr-business-layer-latest.json",
+                "sourceDate": "2026-06-28T11:22:42.702Z"
+              }
+            ],
+            "gaps": []
+          },
+          "deployment": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "venture-os/docs/operations/deployment-profile.json",
+                "sourceDate": "2026-06-28T11:22:42.760Z"
+              },
+              {
+                "path": "venture-os/docs/operations/deploy/deployment-profile.md",
+                "sourceDate": "2026-06-28T11:22:42.759Z"
+              },
+              {
+                "path": "venture-os/audit/evidence/deployment-proof-latest.json",
+                "sourceDate": "2026-06-28T11:22:42.669Z"
+              }
+            ],
+            "gaps": []
+          },
+          "workflow": {
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "venture-os/docs/product/ux/critical-workflows.md",
+                "sourceDate": "2026-06-28T11:22:42.775Z"
+              },
+              {
+                "path": "venture-os/docs/operations/workflows/n8n-workflows.json",
+                "sourceDate": "2026-06-28T11:22:42.771Z"
+              }
+            ],
+            "gaps": []
+          }
+        },
+        "evidencedCategories": 5,
+        "categoryCount": 5,
+        "complete": true
       },
       "movement": {
         "available": true,
