@@ -824,6 +824,13 @@ Exit gate:
 
 - every draft action includes owner repo, evidence, validation gate, and approval status
 
+Initial implementation:
+
+- `pnpm kaleidoscope:execution-studio:check` validates draft-only owner-routed actions from current Observatory, Decision Room, and SIGNAL evidence.
+- `pnpm kaleidoscope:execution-studio:write` emits `audit/evidence/kaleidoscope-execution-studio-latest.json` and `docs/business/research/kaleidoscope-ai/execution-studio-latest.md`.
+- Every action includes target 8.5 readiness, owner repo, target repos, evidence citations, validation command, approval request, release gate, draft artifacts, and acceptance criteria.
+- Execution Studio remains draft-only: repo edits, ticket creation, external communication, and deployment stay blocked until explicit approval.
+
 ### P2.7: eval, safety, and release hardening
 
 Goal: make Kaleidoscope safe enough for strategic use.

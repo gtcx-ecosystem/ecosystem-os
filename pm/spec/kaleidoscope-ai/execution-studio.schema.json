@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio.schema/v1",
+  "title": "Kaleidoscope AI execution studio witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "date",
+    "repo",
+    "phase",
+    "mode",
+    "ok",
+    "summary",
+    "actions",
+    "issues",
+    "sources"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "date": { "type": "string" },
+    "repo": { "const": "ecosystem-os" },
+    "phase": { "type": "string", "minLength": 1 },
+    "mode": { "const": "draft-only" },
+    "ok": { "type": "boolean" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "actionCount",
+        "okActions",
+        "approvalPendingActions",
+        "releaseBlockedActions",
+        "owners"
+      ],
+      "additionalProperties": true
+    },
+    "actions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/action" }
+    },
+    "issues": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sources": {
+      "type": "object",
+      "required": ["observatory", "decisionRoom", "signalFleet", "phase2"]
+    }
+  },
+  "$defs": {
+    "citation": {
+      "type": "object",
+      "required": ["path", "sourceDate", "reason"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sourceDate": { "type": "string" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "validationGate": {
+      "type": "object",
+      "required": ["type", "command", "successCriteria"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "command": { "type": "string", "minLength": 1 },
+        "successCriteria": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "approvalRequest": {
+      "type": "object",
+      "required": ["status", "required", "boundary", "reason", "allowedWithoutApproval"],
+      "properties": {
+        "status": { "const": "draft_pending_approval" },
+        "required": { "const": true },
+        "boundary": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 },
+        "allowedWithoutApproval": { "const": false }
+      },
+      "additionalProperties": true
+    },
+    "releaseGate": {
+      "type": "object",
+      "required": ["name", "status", "criteria"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "status": { "const": "blocked_until_validation_and_approval" },
+        "criteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    },
+    "action": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "mode",
+        "ownerRepo",
+        "targetRepos",
+        "priority",
+        "targetReadinessScore100",
+        "outcome",
+        "rationale",
+        "evidence",
+        "validationGate",
+        "approvalRequest",
+        "releaseGate",
+        "draftArtifacts",
+        "acceptanceCriteria",
+        "ok"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "mode": { "const": "draft-only" },
+        "ownerRepo": { "type": "string", "minLength": 1 },
+        "targetRepos": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "priority": { "type": "string", "minLength": 1 },
+        "targetReadinessScore100": { "const": 85 },
+        "outcome": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string", "minLength": 1 },
+        "evidence": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/$defs/citation" }
+        },
+        "validationGate": { "$ref": "#/$defs/validationGate" },
+        "approvalRequest": { "$ref": "#/$defs/approvalRequest" },
+        "releaseGate": { "$ref": "#/$defs/releaseGate" },
+        "draftArtifacts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "acceptanceCriteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "ok": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
