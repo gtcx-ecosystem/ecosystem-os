@@ -26,7 +26,7 @@ The Observatory now tracks five commercial evidence categories per repo:
 | deployment | deployment profile, production readiness, staging, or deployment proof evidence. |
 | workflow | critical user workflow, user flow, operating workflow, or automation workflow evidence. |
 
-The first run shows 14/20 repos complete across the five categories and 6/20 repos with explicit gaps. Execution Studio now converts each gap row into a draft-only, owner-routed action.
+The current run shows 15/20 repos complete across the five categories and 5/20 repos with explicit gaps. Execution Studio converts each gap row into a draft-only, owner-routed action.
 
 ## Current Gap Map
 
@@ -37,7 +37,6 @@ The first run shows 14/20 repos complete across the five categories and 6/20 rep
 | `exec-009-baseline-os-commercial-evidence-gap` | `baseline-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
 | `exec-010-bridge-os-commercial-evidence-gap` | `bridge-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
 | `exec-011-canon-os-commercial-evidence-gap` | `canon-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
-| `exec-012-ecosystem-os-commercial-evidence-gap` | `ecosystem-os` | 4/5 | deployment | P2 | `pnpm kaleidoscope:observatory:check` |
 
 ## Required Proof
 
@@ -62,5 +61,5 @@ The first run shows 14/20 repos complete across the five categories and 6/20 rep
 1. Route `inspection-os` first because it has the widest gap and blocks commercial comparability.
 2. Route single-category workflow gaps to `baseline-os`, `bridge-os`, and `canon-os`.
 3. Route `agile-os` traction evidence to clarify how Agile OS drives measurable execution progress.
-4. Route `ecosystem-os` deployment evidence so Kaleidoscope's own planning surface does not stay commercially incomplete.
+4. Keep `ecosystem-os` deployment evidence current through `docs/operations/deployment/deployment-profile.json`.
 5. Rerun `pnpm kaleidoscope:operate:write` after owner repos publish or confirm evidence.

@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-28T23:50:56.234Z",
+  "generatedAt": "2026-06-28T23:56:30.812Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
   "mode": "draft-only",
   "ok": true,
   "summary": {
-    "actionCount": 12,
-    "okActions": 12,
-    "approvalPendingActions": 12,
-    "releaseBlockedActions": 12,
+    "actionCount": 11,
+    "okActions": 11,
+    "approvalPendingActions": 11,
+    "releaseBlockedActions": 11,
     "owners": {
       "baseline-os": 2,
       "bridge-os": 2,
-      "ecosystem-os": 4,
+      "ecosystem-os": 3,
       "agile-os": 2,
       "inspection-os": 1,
       "canon-os": 1
@@ -39,7 +39,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.053Z",
+          "sourceDate": "2026-06-28T23:56:30.632Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
@@ -97,7 +97,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.193Z",
+          "sourceDate": "2026-06-28T23:56:30.771Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
@@ -154,12 +154,12 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.053Z",
+          "sourceDate": "2026-06-28T23:56:30.632Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],
@@ -215,7 +215,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -271,12 +271,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.193Z",
+          "sourceDate": "2026-06-28T23:56:30.771Z",
           "reason": "strategic recommendations and execution focus"
         }
       ],
@@ -330,12 +330,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.193Z",
+          "sourceDate": "2026-06-28T23:56:30.771Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],
@@ -385,7 +385,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -442,7 +442,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -499,7 +499,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -556,7 +556,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -613,7 +613,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
+          "sourceDate": "2026-06-28T23:56:30.720Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -650,63 +650,6 @@
       ],
       "acceptanceCriteria": [
         "Addresses gaps: workflow.",
-        "Uses repo-owned evidence paths rather than ecosystem-level assumptions.",
-        "Does not convert internal evidence into external claims without approval."
-      ],
-      "ok": true
-    },
-    {
-      "id": "exec-012-ecosystem-os-commercial-evidence-gap",
-      "title": "Close commercial evidence gaps for ecosystem-os",
-      "mode": "draft-only",
-      "ownerRepo": "ecosystem-os",
-      "targetRepos": [
-        "ecosystem-os"
-      ],
-      "priority": "P2",
-      "targetReadinessScore100": 85,
-      "outcome": "ecosystem-os has current traction, partner, revenue, deployment, and workflow evidence available to the Observatory.",
-      "rationale": "Observatory commercial evidence shows 4/5 categories evidenced for ecosystem-os; gaps: deployment.",
-      "evidence": [
-        {
-          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T23:50:56.144Z",
-          "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
-        },
-        {
-          "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T23:50:42.672Z",
-          "reason": "Execution Studio draft-mode and approval-boundary requirements"
-        }
-      ],
-      "validationGate": {
-        "type": "local-validation",
-        "command": "pnpm kaleidoscope:observatory:check",
-        "successCriteria": "ecosystem-os commercial evidence gaps are reduced or explicitly documented as not applicable."
-      },
-      "approvalRequest": {
-        "status": "draft_pending_approval",
-        "required": true,
-        "boundary": "commercial-evidence",
-        "reason": "Adding partner, revenue, deployment, traction, or workflow evidence can affect venture and partner-readiness scoring.",
-        "allowedWithoutApproval": false
-      },
-      "releaseGate": {
-        "name": "ecosystem-os-commercial-evidence-ready",
-        "status": "blocked_until_validation_and_approval",
-        "criteria": [
-          "owner repo publishes or confirms evidence for each missing category",
-          "Observatory commercial evidence rerun reflects the change",
-          "partner/investor claims remain blocked until explicitly approved"
-        ]
-      },
-      "draftArtifacts": [
-        "ecosystem-os/audit/evidence",
-        "ecosystem-os/docs/business",
-        "ecosystem-os/docs/operations"
-      ],
-      "acceptanceCriteria": [
-        "Addresses gaps: deployment.",
         "Uses repo-owned evidence paths rather than ecosystem-level assumptions.",
         "Does not convert internal evidence into external claims without approval."
       ],
