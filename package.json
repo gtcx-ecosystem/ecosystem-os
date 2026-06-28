@@ -85,6 +85,8 @@
     "rag:eval": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --local eval",
     "kaleidoscope:graph-rag-mcp:check": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs",
     "kaleidoscope:graph-rag-mcp:write": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --write",
+    "kaleidoscope:graph-snapshot:check": "node platform/scripts/kaleidoscope-graph-snapshot.mjs",
+    "kaleidoscope:graph-snapshot:write": "node platform/scripts/kaleidoscope-graph-snapshot.mjs --write",
     "publish:check": "node platform/scripts/publish-register-check.mjs",
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",

@@ -1,0 +1,6268 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/graph-snapshot/v1",
+  "generatedAt": "2026-06-28T21:01:02.238Z",
+  "repo": "ecosystem-os",
+  "phase": "phase-2-fleet-graph-snapshot",
+  "ok": true,
+  "summary": {
+    "repoCount": 20,
+    "presentRepos": 20,
+    "missingRepos": 0,
+    "nodeCount": 240,
+    "edgeCount": 220,
+    "aliasCount": 0,
+    "configNodeCount": 80,
+    "evidenceNodeCount": 80,
+    "blockerNodeCount": 0
+  },
+  "contracts": {
+    "graphConfig": "pm/spec/kaleidoscope-ai/graph-config.schema.json",
+    "graphSnapshot": "pm/spec/kaleidoscope-ai/graph-snapshot.schema.json"
+  },
+  "nodes": [
+    {
+      "id": "config:agile-os:eval",
+      "type": "config",
+      "label": "agile-os eval",
+      "repo": "agile-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:agile-os:graph",
+      "type": "config",
+      "label": "agile-os graph",
+      "repo": "agile-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:agile-os:mcp",
+      "type": "config",
+      "label": "agile-os mcp",
+      "repo": "agile-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:agile-os:rag",
+      "type": "config",
+      "label": "agile-os rag",
+      "repo": "agile-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:baseline-os:eval",
+      "type": "config",
+      "label": "baseline-os eval",
+      "repo": "baseline-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:baseline-os:graph",
+      "type": "config",
+      "label": "baseline-os graph",
+      "repo": "baseline-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:baseline-os:mcp",
+      "type": "config",
+      "label": "baseline-os mcp",
+      "repo": "baseline-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:baseline-os:rag",
+      "type": "config",
+      "label": "baseline-os rag",
+      "repo": "baseline-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:bridge-os:eval",
+      "type": "config",
+      "label": "bridge-os eval",
+      "repo": "bridge-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:bridge-os:graph",
+      "type": "config",
+      "label": "bridge-os graph",
+      "repo": "bridge-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:bridge-os:mcp",
+      "type": "config",
+      "label": "bridge-os mcp",
+      "repo": "bridge-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:bridge-os:rag",
+      "type": "config",
+      "label": "bridge-os rag",
+      "repo": "bridge-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:canon-os:eval",
+      "type": "config",
+      "label": "canon-os eval",
+      "repo": "canon-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:canon-os:graph",
+      "type": "config",
+      "label": "canon-os graph",
+      "repo": "canon-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:canon-os:mcp",
+      "type": "config",
+      "label": "canon-os mcp",
+      "repo": "canon-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:canon-os:rag",
+      "type": "config",
+      "label": "canon-os rag",
+      "repo": "canon-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:compliance-os:eval",
+      "type": "config",
+      "label": "compliance-os eval",
+      "repo": "compliance-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:compliance-os:graph",
+      "type": "config",
+      "label": "compliance-os graph",
+      "repo": "compliance-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:compliance-os:mcp",
+      "type": "config",
+      "label": "compliance-os mcp",
+      "repo": "compliance-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:compliance-os:rag",
+      "type": "config",
+      "label": "compliance-os rag",
+      "repo": "compliance-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ecosystem-os:eval",
+      "type": "config",
+      "label": "ecosystem-os eval",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ecosystem-os:graph",
+      "type": "config",
+      "label": "ecosystem-os graph",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ecosystem-os:mcp",
+      "type": "config",
+      "label": "ecosystem-os mcp",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ecosystem-os:rag",
+      "type": "config",
+      "label": "ecosystem-os rag",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:exploration-os:eval",
+      "type": "config",
+      "label": "exploration-os eval",
+      "repo": "exploration-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:exploration-os:graph",
+      "type": "config",
+      "label": "exploration-os graph",
+      "repo": "exploration-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:exploration-os:mcp",
+      "type": "config",
+      "label": "exploration-os mcp",
+      "repo": "exploration-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:exploration-os:rag",
+      "type": "config",
+      "label": "exploration-os rag",
+      "repo": "exploration-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:fabric-os:eval",
+      "type": "config",
+      "label": "fabric-os eval",
+      "repo": "fabric-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:fabric-os:graph",
+      "type": "config",
+      "label": "fabric-os graph",
+      "repo": "fabric-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:fabric-os:mcp",
+      "type": "config",
+      "label": "fabric-os mcp",
+      "repo": "fabric-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:fabric-os:rag",
+      "type": "config",
+      "label": "fabric-os rag",
+      "repo": "fabric-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:griot-ai:eval",
+      "type": "config",
+      "label": "griot-ai eval",
+      "repo": "griot-ai",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:griot-ai:graph",
+      "type": "config",
+      "label": "griot-ai graph",
+      "repo": "griot-ai",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:griot-ai:mcp",
+      "type": "config",
+      "label": "griot-ai mcp",
+      "repo": "griot-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:griot-ai:rag",
+      "type": "config",
+      "label": "griot-ai rag",
+      "repo": "griot-ai",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:gtcx-os:eval",
+      "type": "config",
+      "label": "gtcx-os eval",
+      "repo": "gtcx-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:gtcx-os:graph",
+      "type": "config",
+      "label": "gtcx-os graph",
+      "repo": "gtcx-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:gtcx-os:mcp",
+      "type": "config",
+      "label": "gtcx-os mcp",
+      "repo": "gtcx-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:gtcx-os:rag",
+      "type": "config",
+      "label": "gtcx-os rag",
+      "repo": "gtcx-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:inspection-os:eval",
+      "type": "config",
+      "label": "inspection-os eval",
+      "repo": "inspection-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:inspection-os:graph",
+      "type": "config",
+      "label": "inspection-os graph",
+      "repo": "inspection-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:inspection-os:mcp",
+      "type": "config",
+      "label": "inspection-os mcp",
+      "repo": "inspection-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:inspection-os:rag",
+      "type": "config",
+      "label": "inspection-os rag",
+      "repo": "inspection-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-os:eval",
+      "type": "config",
+      "label": "ledger-os eval",
+      "repo": "ledger-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-os:graph",
+      "type": "config",
+      "label": "ledger-os graph",
+      "repo": "ledger-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-os:mcp",
+      "type": "config",
+      "label": "ledger-os mcp",
+      "repo": "ledger-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-os:rag",
+      "type": "config",
+      "label": "ledger-os rag",
+      "repo": "ledger-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-ui:eval",
+      "type": "config",
+      "label": "ledger-ui eval",
+      "repo": "ledger-ui",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-ui:graph",
+      "type": "config",
+      "label": "ledger-ui graph",
+      "repo": "ledger-ui",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-ui:mcp",
+      "type": "config",
+      "label": "ledger-ui mcp",
+      "repo": "ledger-ui",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:ledger-ui:rag",
+      "type": "config",
+      "label": "ledger-ui rag",
+      "repo": "ledger-ui",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:markets-os:eval",
+      "type": "config",
+      "label": "markets-os eval",
+      "repo": "markets-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:markets-os:graph",
+      "type": "config",
+      "label": "markets-os graph",
+      "repo": "markets-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:markets-os:mcp",
+      "type": "config",
+      "label": "markets-os mcp",
+      "repo": "markets-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:markets-os:rag",
+      "type": "config",
+      "label": "markets-os rag",
+      "repo": "markets-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:nyota-ai:eval",
+      "type": "config",
+      "label": "nyota-ai eval",
+      "repo": "nyota-ai",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:nyota-ai:graph",
+      "type": "config",
+      "label": "nyota-ai graph",
+      "repo": "nyota-ai",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:nyota-ai:mcp",
+      "type": "config",
+      "label": "nyota-ai mcp",
+      "repo": "nyota-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:nyota-ai:rag",
+      "type": "config",
+      "label": "nyota-ai rag",
+      "repo": "nyota-ai",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:sensei-os:eval",
+      "type": "config",
+      "label": "sensei-os eval",
+      "repo": "sensei-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:sensei-os:graph",
+      "type": "config",
+      "label": "sensei-os graph",
+      "repo": "sensei-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:sensei-os:mcp",
+      "type": "config",
+      "label": "sensei-os mcp",
+      "repo": "sensei-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:sensei-os:rag",
+      "type": "config",
+      "label": "sensei-os rag",
+      "repo": "sensei-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terminal-os:eval",
+      "type": "config",
+      "label": "terminal-os eval",
+      "repo": "terminal-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terminal-os:graph",
+      "type": "config",
+      "label": "terminal-os graph",
+      "repo": "terminal-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terminal-os:mcp",
+      "type": "config",
+      "label": "terminal-os mcp",
+      "repo": "terminal-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terminal-os:rag",
+      "type": "config",
+      "label": "terminal-os rag",
+      "repo": "terminal-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terra-os:eval",
+      "type": "config",
+      "label": "terra-os eval",
+      "repo": "terra-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terra-os:graph",
+      "type": "config",
+      "label": "terra-os graph",
+      "repo": "terra-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terra-os:mcp",
+      "type": "config",
+      "label": "terra-os mcp",
+      "repo": "terra-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:terra-os:rag",
+      "type": "config",
+      "label": "terra-os rag",
+      "repo": "terra-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:venture-os:eval",
+      "type": "config",
+      "label": "venture-os eval",
+      "repo": "venture-os",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:venture-os:graph",
+      "type": "config",
+      "label": "venture-os graph",
+      "repo": "venture-os",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:venture-os:mcp",
+      "type": "config",
+      "label": "venture-os mcp",
+      "repo": "venture-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:venture-os:rag",
+      "type": "config",
+      "label": "venture-os rag",
+      "repo": "venture-os",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:veritas-ai:eval",
+      "type": "config",
+      "label": "veritas-ai eval",
+      "repo": "veritas-ai",
+      "source": "config/baseline/eval.config.json",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "kind": "eval",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:veritas-ai:graph",
+      "type": "config",
+      "label": "veritas-ai graph",
+      "repo": "veritas-ai",
+      "source": "config/baseline/graph.config.json",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "kind": "graph",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:veritas-ai:mcp",
+      "type": "config",
+      "label": "veritas-ai mcp",
+      "repo": "veritas-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "kind": "mcp",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "config:veritas-ai:rag",
+      "type": "config",
+      "label": "veritas-ai rag",
+      "repo": "veritas-ai",
+      "source": "config/baseline/rag.config.json",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "kind": "rag",
+        "present": true,
+        "ok": true,
+        "issues": []
+      }
+    },
+    {
+      "id": "evidence:agile-os:graphProjection",
+      "type": "evidence",
+      "label": "agile-os graphProjection",
+      "repo": "agile-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:agile-os:mcpConfig",
+      "type": "evidence",
+      "label": "agile-os mcpConfig",
+      "repo": "agile-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:agile-os:ragConfig",
+      "type": "evidence",
+      "label": "agile-os ragConfig",
+      "repo": "agile-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:agile-os:ragEval",
+      "type": "evidence",
+      "label": "agile-os ragEval",
+      "repo": "agile-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:baseline-os:graphProjection",
+      "type": "evidence",
+      "label": "baseline-os graphProjection",
+      "repo": "baseline-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:baseline-os:mcpConfig",
+      "type": "evidence",
+      "label": "baseline-os mcpConfig",
+      "repo": "baseline-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:baseline-os:ragConfig",
+      "type": "evidence",
+      "label": "baseline-os ragConfig",
+      "repo": "baseline-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:baseline-os:ragEval",
+      "type": "evidence",
+      "label": "baseline-os ragEval",
+      "repo": "baseline-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:bridge-os:graphProjection",
+      "type": "evidence",
+      "label": "bridge-os graphProjection",
+      "repo": "bridge-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:bridge-os:mcpConfig",
+      "type": "evidence",
+      "label": "bridge-os mcpConfig",
+      "repo": "bridge-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:bridge-os:ragConfig",
+      "type": "evidence",
+      "label": "bridge-os ragConfig",
+      "repo": "bridge-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:bridge-os:ragEval",
+      "type": "evidence",
+      "label": "bridge-os ragEval",
+      "repo": "bridge-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:canon-os:graphProjection",
+      "type": "evidence",
+      "label": "canon-os graphProjection",
+      "repo": "canon-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:canon-os:mcpConfig",
+      "type": "evidence",
+      "label": "canon-os mcpConfig",
+      "repo": "canon-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:canon-os:ragConfig",
+      "type": "evidence",
+      "label": "canon-os ragConfig",
+      "repo": "canon-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:canon-os:ragEval",
+      "type": "evidence",
+      "label": "canon-os ragEval",
+      "repo": "canon-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:compliance-os:graphProjection",
+      "type": "evidence",
+      "label": "compliance-os graphProjection",
+      "repo": "compliance-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:compliance-os:mcpConfig",
+      "type": "evidence",
+      "label": "compliance-os mcpConfig",
+      "repo": "compliance-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:compliance-os:ragConfig",
+      "type": "evidence",
+      "label": "compliance-os ragConfig",
+      "repo": "compliance-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:compliance-os:ragEval",
+      "type": "evidence",
+      "label": "compliance-os ragEval",
+      "repo": "compliance-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ecosystem-os:graphProjection",
+      "type": "evidence",
+      "label": "ecosystem-os graphProjection",
+      "repo": "ecosystem-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ecosystem-os:mcpConfig",
+      "type": "evidence",
+      "label": "ecosystem-os mcpConfig",
+      "repo": "ecosystem-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ecosystem-os:ragConfig",
+      "type": "evidence",
+      "label": "ecosystem-os ragConfig",
+      "repo": "ecosystem-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ecosystem-os:ragEval",
+      "type": "evidence",
+      "label": "ecosystem-os ragEval",
+      "repo": "ecosystem-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:exploration-os:graphProjection",
+      "type": "evidence",
+      "label": "exploration-os graphProjection",
+      "repo": "exploration-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:exploration-os:mcpConfig",
+      "type": "evidence",
+      "label": "exploration-os mcpConfig",
+      "repo": "exploration-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:exploration-os:ragConfig",
+      "type": "evidence",
+      "label": "exploration-os ragConfig",
+      "repo": "exploration-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:exploration-os:ragEval",
+      "type": "evidence",
+      "label": "exploration-os ragEval",
+      "repo": "exploration-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:fabric-os:graphProjection",
+      "type": "evidence",
+      "label": "fabric-os graphProjection",
+      "repo": "fabric-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:fabric-os:mcpConfig",
+      "type": "evidence",
+      "label": "fabric-os mcpConfig",
+      "repo": "fabric-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:fabric-os:ragConfig",
+      "type": "evidence",
+      "label": "fabric-os ragConfig",
+      "repo": "fabric-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:fabric-os:ragEval",
+      "type": "evidence",
+      "label": "fabric-os ragEval",
+      "repo": "fabric-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:griot-ai:graphProjection",
+      "type": "evidence",
+      "label": "griot-ai graphProjection",
+      "repo": "griot-ai",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:griot-ai:mcpConfig",
+      "type": "evidence",
+      "label": "griot-ai mcpConfig",
+      "repo": "griot-ai",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:griot-ai:ragConfig",
+      "type": "evidence",
+      "label": "griot-ai ragConfig",
+      "repo": "griot-ai",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:griot-ai:ragEval",
+      "type": "evidence",
+      "label": "griot-ai ragEval",
+      "repo": "griot-ai",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:gtcx-os:graphProjection",
+      "type": "evidence",
+      "label": "gtcx-os graphProjection",
+      "repo": "gtcx-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:gtcx-os:mcpConfig",
+      "type": "evidence",
+      "label": "gtcx-os mcpConfig",
+      "repo": "gtcx-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:gtcx-os:ragConfig",
+      "type": "evidence",
+      "label": "gtcx-os ragConfig",
+      "repo": "gtcx-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:gtcx-os:ragEval",
+      "type": "evidence",
+      "label": "gtcx-os ragEval",
+      "repo": "gtcx-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:inspection-os:graphProjection",
+      "type": "evidence",
+      "label": "inspection-os graphProjection",
+      "repo": "inspection-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:inspection-os:mcpConfig",
+      "type": "evidence",
+      "label": "inspection-os mcpConfig",
+      "repo": "inspection-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:inspection-os:ragConfig",
+      "type": "evidence",
+      "label": "inspection-os ragConfig",
+      "repo": "inspection-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:inspection-os:ragEval",
+      "type": "evidence",
+      "label": "inspection-os ragEval",
+      "repo": "inspection-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-os:graphProjection",
+      "type": "evidence",
+      "label": "ledger-os graphProjection",
+      "repo": "ledger-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-os:mcpConfig",
+      "type": "evidence",
+      "label": "ledger-os mcpConfig",
+      "repo": "ledger-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-os:ragConfig",
+      "type": "evidence",
+      "label": "ledger-os ragConfig",
+      "repo": "ledger-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-os:ragEval",
+      "type": "evidence",
+      "label": "ledger-os ragEval",
+      "repo": "ledger-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-ui:graphProjection",
+      "type": "evidence",
+      "label": "ledger-ui graphProjection",
+      "repo": "ledger-ui",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-ui:mcpConfig",
+      "type": "evidence",
+      "label": "ledger-ui mcpConfig",
+      "repo": "ledger-ui",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-ui:ragConfig",
+      "type": "evidence",
+      "label": "ledger-ui ragConfig",
+      "repo": "ledger-ui",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:ledger-ui:ragEval",
+      "type": "evidence",
+      "label": "ledger-ui ragEval",
+      "repo": "ledger-ui",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:markets-os:graphProjection",
+      "type": "evidence",
+      "label": "markets-os graphProjection",
+      "repo": "markets-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:markets-os:mcpConfig",
+      "type": "evidence",
+      "label": "markets-os mcpConfig",
+      "repo": "markets-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:markets-os:ragConfig",
+      "type": "evidence",
+      "label": "markets-os ragConfig",
+      "repo": "markets-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:markets-os:ragEval",
+      "type": "evidence",
+      "label": "markets-os ragEval",
+      "repo": "markets-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:nyota-ai:graphProjection",
+      "type": "evidence",
+      "label": "nyota-ai graphProjection",
+      "repo": "nyota-ai",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:nyota-ai:mcpConfig",
+      "type": "evidence",
+      "label": "nyota-ai mcpConfig",
+      "repo": "nyota-ai",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:nyota-ai:ragConfig",
+      "type": "evidence",
+      "label": "nyota-ai ragConfig",
+      "repo": "nyota-ai",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:nyota-ai:ragEval",
+      "type": "evidence",
+      "label": "nyota-ai ragEval",
+      "repo": "nyota-ai",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:sensei-os:graphProjection",
+      "type": "evidence",
+      "label": "sensei-os graphProjection",
+      "repo": "sensei-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:sensei-os:mcpConfig",
+      "type": "evidence",
+      "label": "sensei-os mcpConfig",
+      "repo": "sensei-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:sensei-os:ragConfig",
+      "type": "evidence",
+      "label": "sensei-os ragConfig",
+      "repo": "sensei-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:sensei-os:ragEval",
+      "type": "evidence",
+      "label": "sensei-os ragEval",
+      "repo": "sensei-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terminal-os:graphProjection",
+      "type": "evidence",
+      "label": "terminal-os graphProjection",
+      "repo": "terminal-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terminal-os:mcpConfig",
+      "type": "evidence",
+      "label": "terminal-os mcpConfig",
+      "repo": "terminal-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terminal-os:ragConfig",
+      "type": "evidence",
+      "label": "terminal-os ragConfig",
+      "repo": "terminal-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terminal-os:ragEval",
+      "type": "evidence",
+      "label": "terminal-os ragEval",
+      "repo": "terminal-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terra-os:graphProjection",
+      "type": "evidence",
+      "label": "terra-os graphProjection",
+      "repo": "terra-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terra-os:mcpConfig",
+      "type": "evidence",
+      "label": "terra-os mcpConfig",
+      "repo": "terra-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terra-os:ragConfig",
+      "type": "evidence",
+      "label": "terra-os ragConfig",
+      "repo": "terra-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:terra-os:ragEval",
+      "type": "evidence",
+      "label": "terra-os ragEval",
+      "repo": "terra-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:venture-os:graphProjection",
+      "type": "evidence",
+      "label": "venture-os graphProjection",
+      "repo": "venture-os",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:venture-os:mcpConfig",
+      "type": "evidence",
+      "label": "venture-os mcpConfig",
+      "repo": "venture-os",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:venture-os:ragConfig",
+      "type": "evidence",
+      "label": "venture-os ragConfig",
+      "repo": "venture-os",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:venture-os:ragEval",
+      "type": "evidence",
+      "label": "venture-os ragEval",
+      "repo": "venture-os",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:veritas-ai:graphProjection",
+      "type": "evidence",
+      "label": "veritas-ai graphProjection",
+      "repo": "veritas-ai",
+      "source": "audit/evidence/graph-projection-latest.json",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "kind": "graphProjection",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:veritas-ai:mcpConfig",
+      "type": "evidence",
+      "label": "veritas-ai mcpConfig",
+      "repo": "veritas-ai",
+      "source": "audit/evidence/mcp-config-latest.json",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "kind": "mcpConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:veritas-ai:ragConfig",
+      "type": "evidence",
+      "label": "veritas-ai ragConfig",
+      "repo": "veritas-ai",
+      "source": "audit/evidence/rag-config-latest.json",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "kind": "ragConfig",
+        "present": true
+      }
+    },
+    {
+      "id": "evidence:veritas-ai:ragEval",
+      "type": "evidence",
+      "label": "veritas-ai ragEval",
+      "repo": "veritas-ai",
+      "source": "audit/evidence/rag-eval-latest.json",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "kind": "ragEval",
+        "present": true
+      }
+    },
+    {
+      "id": "repo:agile-os",
+      "type": "repo",
+      "label": "agile-os",
+      "repo": "agile-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Sprint, backlog, delivery OS",
+        "targetStatus": "seed",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:baseline-os",
+      "type": "repo",
+      "label": "baseline-os",
+      "repo": "baseline-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 0,
+        "role": "RAG/MCP hub and validator owner",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:bridge-os",
+      "type": "repo",
+      "label": "bridge-os",
+      "repo": "bridge-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 0,
+        "role": "MCP/action orchestration and fleet coordination",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:canon-os",
+      "type": "repo",
+      "label": "canon-os",
+      "repo": "canon-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Governance and protocols",
+        "targetStatus": "strengthen",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:compliance-os",
+      "type": "repo",
+      "label": "compliance-os",
+      "repo": "compliance-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 1,
+        "role": "Compliance operating layer",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:ecosystem-os",
+      "type": "repo",
+      "label": "ecosystem-os",
+      "repo": "ecosystem-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 0,
+        "role": "Ecosystem graph and Kaleidoscope home",
+        "targetStatus": "strengthen",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:exploration-os",
+      "type": "repo",
+      "label": "exploration-os",
+      "repo": "exploration-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Field/site intelligence",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:fabric-os",
+      "type": "repo",
+      "label": "fabric-os",
+      "repo": "fabric-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Deployment, ops, compliance fabric",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:griot-ai",
+      "type": "repo",
+      "label": "griot-ai",
+      "repo": "griot-ai",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Market/context publishing",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:gtcx-os",
+      "type": "repo",
+      "label": "gtcx-os",
+      "repo": "gtcx-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 1,
+        "role": "Platform/product OS and Cortex scope",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:inspection-os",
+      "type": "repo",
+      "label": "inspection-os",
+      "repo": "inspection-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Inspection product",
+        "targetStatus": "seed",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:ledger-os",
+      "type": "repo",
+      "label": "ledger-os",
+      "repo": "ledger-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Ledger/product finance backend",
+        "targetStatus": "seed",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:ledger-ui",
+      "type": "repo",
+      "label": "ledger-ui",
+      "repo": "ledger-ui",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 1,
+        "role": "Finance/ledger UI",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:markets-os",
+      "type": "repo",
+      "label": "markets-os",
+      "repo": "markets-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 1,
+        "role": "Market infrastructure product",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:nyota-ai",
+      "type": "repo",
+      "label": "nyota-ai",
+      "repo": "nyota-ai",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Last-mile/mobile intelligence",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:sensei-os",
+      "type": "repo",
+      "label": "sensei-os",
+      "repo": "sensei-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Migration/agent intelligence",
+        "targetStatus": "strengthen",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:terminal-os",
+      "type": "repo",
+      "label": "terminal-os",
+      "repo": "terminal-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 1,
+        "role": "Operator/terminal surface",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:terra-os",
+      "type": "repo",
+      "label": "terra-os",
+      "repo": "terra-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Land/site/source truth",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:venture-os",
+      "type": "repo",
+      "label": "venture-os",
+      "repo": "venture-os",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 3,
+        "role": "Venture/portfolio product",
+        "targetStatus": "seed",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "repo:veritas-ai",
+      "type": "repo",
+      "label": "veritas-ai",
+      "repo": "veritas-ai",
+      "source": "../*/package.json",
+      "evidence": [
+        "package.json"
+      ],
+      "properties": {
+        "tier": 2,
+        "role": "Verification/publication intelligence",
+        "targetStatus": "restore",
+        "present": true,
+        "score": 100,
+        "maturity": "ready"
+      }
+    },
+    {
+      "id": "tool:agile-os:agile.backlog.context.read",
+      "type": "tool",
+      "label": "agile.backlog.context.read",
+      "repo": "agile-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read backlog traceability, intake, ship-gate, and roadmap execution context."
+      }
+    },
+    {
+      "id": "tool:agile-os:agile.ceremony.context.read",
+      "type": "tool",
+      "label": "agile.ceremony.context.read",
+      "repo": "agile-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read sprint ceremony, work-loop, and fleet cadence context."
+      }
+    },
+    {
+      "id": "tool:agile-os:agile.evidence.write",
+      "type": "tool",
+      "label": "agile.evidence.write",
+      "repo": "agile-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Agile evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:baseline-os:baseline.evidence.write",
+      "type": "tool",
+      "label": "baseline.evidence.write",
+      "repo": "baseline-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local evidence witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:baseline-os:baseline.rag.search",
+      "type": "tool",
+      "label": "baseline.rag.search",
+      "repo": "baseline-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Search indexed BaselineOS and fleet knowledge surfaces."
+      }
+    },
+    {
+      "id": "tool:baseline-os:baseline.session.read",
+      "type": "tool",
+      "label": "baseline.session.read",
+      "repo": "baseline-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read session, memory, and operating context."
+      }
+    },
+    {
+      "id": "tool:bridge-os:bridge.evidence.write",
+      "type": "tool",
+      "label": "bridge.evidence.write",
+      "repo": "bridge-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write BridgeOS audit and orchestration evidence under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:bridge-os:bridge.fleet.route",
+      "type": "tool",
+      "label": "bridge.fleet.route",
+      "repo": "bridge-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Route fleet work through BridgeOS program and repo coordination records."
+      }
+    },
+    {
+      "id": "tool:bridge-os:bridge.graph.project",
+      "type": "tool",
+      "label": "bridge.graph.project",
+      "repo": "bridge-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Project PM, MCP, evidence, and repo coordination surfaces into the ecosystem graph."
+      }
+    },
+    {
+      "id": "tool:bridge-os:bridge.next-work.read",
+      "type": "tool",
+      "label": "bridge.next-work.read",
+      "repo": "bridge-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read prioritized next-work, sprint, and program-office state."
+      }
+    },
+    {
+      "id": "tool:canon-os:canon.evidence.write",
+      "type": "tool",
+      "label": "canon.evidence.write",
+      "repo": "canon-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Canon evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:canon-os:canon.governance.context.read",
+      "type": "tool",
+      "label": "canon.governance.context.read",
+      "repo": "canon-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read governance, protocol, documentation, and publishing authority context."
+      }
+    },
+    {
+      "id": "tool:canon-os:canon.product.context.read",
+      "type": "tool",
+      "label": "canon.product.context.read",
+      "repo": "canon-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read product canon, bundle, service, and repo provisioning context."
+      }
+    },
+    {
+      "id": "tool:compliance-os:compliance.assurance.context.read",
+      "type": "tool",
+      "label": "compliance.assurance.context.read",
+      "repo": "compliance-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read evidence, assurance, and audit readiness context for agent workflows."
+      }
+    },
+    {
+      "id": "tool:compliance-os:compliance.controls.read",
+      "type": "tool",
+      "label": "compliance.controls.read",
+      "repo": "compliance-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read control registers, friction maps, and compliance operating context."
+      }
+    },
+    {
+      "id": "tool:compliance-os:compliance.evidence.write",
+      "type": "tool",
+      "label": "compliance.evidence.write",
+      "repo": "compliance-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local compliance evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:ecosystem-os:ecosystem.graph.scan",
+      "type": "tool",
+      "label": "ecosystem.graph.scan",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read-only scan of repo Graph/RAG/MCP readiness and evidence."
+      }
+    },
+    {
+      "id": "tool:ecosystem-os:ecosystem.graph.write-witness",
+      "type": "tool",
+      "label": "ecosystem.graph.write-witness",
+      "repo": "ecosystem-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local ecosystem-os audit evidence for Kaleidoscope fleet readiness."
+      }
+    },
+    {
+      "id": "tool:exploration-os:exploration.evidence.write",
+      "type": "tool",
+      "label": "exploration.evidence.write",
+      "repo": "exploration-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local exploration evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:exploration-os:exploration.site.context.read",
+      "type": "tool",
+      "label": "exploration.site.context.read",
+      "repo": "exploration-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read exploration site and field intelligence context for agent workflows."
+      }
+    },
+    {
+      "id": "tool:exploration-os:exploration.story.context.read",
+      "type": "tool",
+      "label": "exploration.story.context.read",
+      "repo": "exploration-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read story-register, agile, and exploration planning context."
+      }
+    },
+    {
+      "id": "tool:fabric-os:fabric.deployment.context.read",
+      "type": "tool",
+      "label": "fabric.deployment.context.read",
+      "repo": "fabric-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read deployment, Kubernetes, Docker, Terraform, and staging readiness context."
+      }
+    },
+    {
+      "id": "tool:fabric-os:fabric.evidence.write",
+      "type": "tool",
+      "label": "fabric.evidence.write",
+      "repo": "fabric-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Fabric evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:fabric-os:fabric.operations.context.read",
+      "type": "tool",
+      "label": "fabric.operations.context.read",
+      "repo": "fabric-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read service fabric, ops lanes, security assurance, and fleet control context."
+      }
+    },
+    {
+      "id": "tool:griot-ai:griot.evidence.write",
+      "type": "tool",
+      "label": "griot.evidence.write",
+      "repo": "griot-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Griot evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:griot-ai:griot.market.context.read",
+      "type": "tool",
+      "label": "griot.market.context.read",
+      "repo": "griot-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read market, partner, localization, and institutional readiness context."
+      }
+    },
+    {
+      "id": "tool:griot-ai:griot.narrative.context.read",
+      "type": "tool",
+      "label": "griot.narrative.context.read",
+      "repo": "griot-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read narrative intelligence, synthesis, and publishing context for Griot workflows."
+      }
+    },
+    {
+      "id": "tool:gtcx-os:gtcx.cortex.context.route",
+      "type": "tool",
+      "label": "gtcx.cortex.context.route",
+      "repo": "gtcx-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Route Cortex-scoped product and platform context into the local agent session."
+      }
+    },
+    {
+      "id": "tool:gtcx-os:gtcx.evidence.write",
+      "type": "tool",
+      "label": "gtcx.evidence.write",
+      "repo": "gtcx-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local audit and graph/RAG/MCP evidence under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:gtcx-os:gtcx.product.surface.read",
+      "type": "tool",
+      "label": "gtcx.product.surface.read",
+      "repo": "gtcx-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read platform, product, and domain surface context for GTCX OS."
+      }
+    },
+    {
+      "id": "tool:inspection-os:inspection.evidence.context.read",
+      "type": "tool",
+      "label": "inspection.evidence.context.read",
+      "repo": "inspection-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read signed evidence, fixtures, API, and domain validation context."
+      }
+    },
+    {
+      "id": "tool:inspection-os:inspection.evidence.write",
+      "type": "tool",
+      "label": "inspection.evidence.write",
+      "repo": "inspection-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Inspection evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:inspection-os:inspection.field.context.read",
+      "type": "tool",
+      "label": "inspection.field.context.read",
+      "repo": "inspection-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read commodity inspection, collateral verification, and field workflow context."
+      }
+    },
+    {
+      "id": "tool:ledger-os:ledger.authority.context.read",
+      "type": "tool",
+      "label": "ledger.authority.context.read",
+      "repo": "ledger-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read authority, institutional operations, route audit, and durability context."
+      }
+    },
+    {
+      "id": "tool:ledger-os:ledger.evidence.write",
+      "type": "tool",
+      "label": "ledger.evidence.write",
+      "repo": "ledger-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Ledger evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:ledger-os:ledger.trade.context.read",
+      "type": "tool",
+      "label": "ledger.trade.context.read",
+      "repo": "ledger-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read trade finance, corridor, collateral, and workbench context."
+      }
+    },
+    {
+      "id": "tool:ledger-ui:ledger.evidence.write",
+      "type": "tool",
+      "label": "ledger.evidence.write",
+      "repo": "ledger-ui",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local ledger UI evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:ledger-ui:ledger.finance.surface.read",
+      "type": "tool",
+      "label": "ledger.finance.surface.read",
+      "repo": "ledger-ui",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read finance and ledger interface evidence for agent workflows."
+      }
+    },
+    {
+      "id": "tool:ledger-ui:ledger.ui.context.read",
+      "type": "tool",
+      "label": "ledger.ui.context.read",
+      "repo": "ledger-ui",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read ledger UI product, component, and workflow context."
+      }
+    },
+    {
+      "id": "tool:markets-os:markets.evidence.write",
+      "type": "tool",
+      "label": "markets.evidence.write",
+      "repo": "markets-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local market evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:markets-os:markets.regulatory.context.read",
+      "type": "tool",
+      "label": "markets.regulatory.context.read",
+      "repo": "markets-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read regulatory, institutional readiness, and tokenization contract context."
+      }
+    },
+    {
+      "id": "tool:markets-os:markets.transaction.context.read",
+      "type": "tool",
+      "label": "markets.transaction.context.read",
+      "repo": "markets-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read transaction, advisory, and market-infrastructure context for agent workflows."
+      }
+    },
+    {
+      "id": "tool:nyota-ai:nyota.commodity.context.read",
+      "type": "tool",
+      "label": "nyota.commodity.context.read",
+      "repo": "nyota-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read commodity intelligence, producer workflow, and market signal context."
+      }
+    },
+    {
+      "id": "tool:nyota-ai:nyota.evidence.write",
+      "type": "tool",
+      "label": "nyota.evidence.write",
+      "repo": "nyota-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Nyota evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:nyota-ai:nyota.localization.context.read",
+      "type": "tool",
+      "label": "nyota.localization.context.read",
+      "repo": "nyota-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read language, channel, and field UX context for African producer support."
+      }
+    },
+    {
+      "id": "tool:sensei-os:sensei.coaching.context.read",
+      "type": "tool",
+      "label": "sensei.coaching.context.read",
+      "repo": "sensei-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read product, roadmap, and readiness context for agent guidance."
+      }
+    },
+    {
+      "id": "tool:sensei-os:sensei.evidence.write",
+      "type": "tool",
+      "label": "sensei.evidence.write",
+      "repo": "sensei-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Sensei evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:sensei-os:sensei.migration.context.read",
+      "type": "tool",
+      "label": "sensei.migration.context.read",
+      "repo": "sensei-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read migration, agent intelligence, and remediation context for Sensei workflows."
+      }
+    },
+    {
+      "id": "tool:terminal-os:terminal.evidence.write",
+      "type": "tool",
+      "label": "terminal.evidence.write",
+      "repo": "terminal-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local terminal evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:terminal-os:terminal.operator.context.read",
+      "type": "tool",
+      "label": "terminal.operator.context.read",
+      "repo": "terminal-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read operator terminal context, work pointers, and workflow state."
+      }
+    },
+    {
+      "id": "tool:terminal-os:terminal.session.context.read",
+      "type": "tool",
+      "label": "terminal.session.context.read",
+      "repo": "terminal-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read terminal session and agent operating context for workflow assistance."
+      }
+    },
+    {
+      "id": "tool:terra-os:terra.evidence.write",
+      "type": "tool",
+      "label": "terra.evidence.write",
+      "repo": "terra-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local TerraOS evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:terra-os:terra.field.context.read",
+      "type": "tool",
+      "label": "terra.field.context.read",
+      "repo": "terra-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read field intelligence, product, and planning context for agent workflows."
+      }
+    },
+    {
+      "id": "tool:terra-os:terra.site.context.read",
+      "type": "tool",
+      "label": "terra.site.context.read",
+      "repo": "terra-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read land, site, and source-of-truth context for TerraOS workflows."
+      }
+    },
+    {
+      "id": "tool:venture-os:venture.evidence.write",
+      "type": "tool",
+      "label": "venture.evidence.write",
+      "repo": "venture-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Venture evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:venture-os:venture.founder.context.read",
+      "type": "tool",
+      "label": "venture.founder.context.read",
+      "repo": "venture-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read founder command center, capital filter, workflow, and readiness context."
+      }
+    },
+    {
+      "id": "tool:venture-os:venture.investment.context.read",
+      "type": "tool",
+      "label": "venture.investment.context.read",
+      "repo": "venture-os",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read investment memorandum, approvals, publishing, and market readiness context."
+      }
+    },
+    {
+      "id": "tool:veritas-ai:veritas.claim.context.read",
+      "type": "tool",
+      "label": "veritas.claim.context.read",
+      "repo": "veritas-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read claim, evidence, and source-trace context for agent workflows."
+      }
+    },
+    {
+      "id": "tool:veritas-ai:veritas.evidence.write",
+      "type": "tool",
+      "label": "veritas.evidence.write",
+      "repo": "veritas-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write",
+        "description": "Write local Veritas evidence and graph/RAG/MCP witnesses under audit/evidence."
+      }
+    },
+    {
+      "id": "tool:veritas-ai:veritas.verification.context.read",
+      "type": "tool",
+      "label": "veritas.verification.context.read",
+      "repo": "veritas-ai",
+      "source": "config/baseline/mcp.config.json",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read",
+        "description": "Read verification, assurance, and publication intelligence context."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:agile-os:exposes_tool:agile.backlog.context.read",
+      "type": "exposes_tool",
+      "source": "repo:agile-os",
+      "target": "tool:agile-os:agile.backlog.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:agile-os:exposes_tool:agile.ceremony.context.read",
+      "type": "exposes_tool",
+      "source": "repo:agile-os",
+      "target": "tool:agile-os:agile.ceremony.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:agile-os:exposes_tool:agile.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:agile-os",
+      "target": "tool:agile-os:agile.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:agile-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:agile-os",
+      "target": "config:agile-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:agile-os",
+      "target": "config:agile-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:agile-os",
+      "target": "config:agile-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:agile-os",
+      "target": "config:agile-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:agile-os",
+      "target": "evidence:agile-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:agile-os",
+      "target": "evidence:agile-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:agile-os",
+      "target": "evidence:agile-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:agile-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:agile-os",
+      "target": "evidence:agile-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:exposes_tool:baseline.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:baseline-os",
+      "target": "tool:baseline-os:baseline.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:baseline-os:exposes_tool:baseline.rag.search",
+      "type": "exposes_tool",
+      "source": "repo:baseline-os",
+      "target": "tool:baseline-os:baseline.rag.search",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:baseline-os:exposes_tool:baseline.session.read",
+      "type": "exposes_tool",
+      "source": "repo:baseline-os",
+      "target": "tool:baseline-os:baseline.session.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:baseline-os",
+      "target": "config:baseline-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:baseline-os",
+      "target": "config:baseline-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:baseline-os",
+      "target": "config:baseline-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:baseline-os",
+      "target": "config:baseline-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:baseline-os",
+      "target": "evidence:baseline-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:baseline-os",
+      "target": "evidence:baseline-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:baseline-os",
+      "target": "evidence:baseline-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:baseline-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:baseline-os",
+      "target": "evidence:baseline-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:exposes_tool:bridge.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:bridge-os",
+      "target": "tool:bridge-os:bridge.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:bridge-os:exposes_tool:bridge.fleet.route",
+      "type": "exposes_tool",
+      "source": "repo:bridge-os",
+      "target": "tool:bridge-os:bridge.fleet.route",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:bridge-os:exposes_tool:bridge.graph.project",
+      "type": "exposes_tool",
+      "source": "repo:bridge-os",
+      "target": "tool:bridge-os:bridge.graph.project",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:bridge-os:exposes_tool:bridge.next-work.read",
+      "type": "exposes_tool",
+      "source": "repo:bridge-os",
+      "target": "tool:bridge-os:bridge.next-work.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:bridge-os",
+      "target": "config:bridge-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:bridge-os",
+      "target": "config:bridge-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:bridge-os",
+      "target": "config:bridge-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:bridge-os",
+      "target": "config:bridge-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:bridge-os",
+      "target": "evidence:bridge-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:bridge-os",
+      "target": "evidence:bridge-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:bridge-os",
+      "target": "evidence:bridge-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:bridge-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:bridge-os",
+      "target": "evidence:bridge-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:canon-os:exposes_tool:canon.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:canon-os",
+      "target": "tool:canon-os:canon.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:canon-os:exposes_tool:canon.governance.context.read",
+      "type": "exposes_tool",
+      "source": "repo:canon-os",
+      "target": "tool:canon-os:canon.governance.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:canon-os:exposes_tool:canon.product.context.read",
+      "type": "exposes_tool",
+      "source": "repo:canon-os",
+      "target": "tool:canon-os:canon.product.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:canon-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:canon-os",
+      "target": "config:canon-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:canon-os",
+      "target": "config:canon-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:canon-os",
+      "target": "config:canon-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:canon-os",
+      "target": "config:canon-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:canon-os",
+      "target": "evidence:canon-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:canon-os",
+      "target": "evidence:canon-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:canon-os",
+      "target": "evidence:canon-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:canon-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:canon-os",
+      "target": "evidence:canon-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:exposes_tool:compliance.assurance.context.read",
+      "type": "exposes_tool",
+      "source": "repo:compliance-os",
+      "target": "tool:compliance-os:compliance.assurance.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:compliance-os:exposes_tool:compliance.controls.read",
+      "type": "exposes_tool",
+      "source": "repo:compliance-os",
+      "target": "tool:compliance-os:compliance.controls.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:compliance-os:exposes_tool:compliance.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:compliance-os",
+      "target": "tool:compliance-os:compliance.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:compliance-os",
+      "target": "config:compliance-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:compliance-os",
+      "target": "config:compliance-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:compliance-os",
+      "target": "config:compliance-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:compliance-os",
+      "target": "config:compliance-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:compliance-os",
+      "target": "evidence:compliance-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:compliance-os",
+      "target": "evidence:compliance-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:compliance-os",
+      "target": "evidence:compliance-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:compliance-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:compliance-os",
+      "target": "evidence:compliance-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:exposes_tool:ecosystem.graph.scan",
+      "type": "exposes_tool",
+      "source": "repo:ecosystem-os",
+      "target": "tool:ecosystem-os:ecosystem.graph.scan",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:exposes_tool:ecosystem.graph.write-witness",
+      "type": "exposes_tool",
+      "source": "repo:ecosystem-os",
+      "target": "tool:ecosystem-os:ecosystem.graph.write-witness",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:ecosystem-os",
+      "target": "config:ecosystem-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:ecosystem-os",
+      "target": "config:ecosystem-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:ecosystem-os",
+      "target": "config:ecosystem-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:ecosystem-os",
+      "target": "config:ecosystem-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:ecosystem-os",
+      "target": "evidence:ecosystem-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:ecosystem-os",
+      "target": "evidence:ecosystem-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:ecosystem-os",
+      "target": "evidence:ecosystem-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ecosystem-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:ecosystem-os",
+      "target": "evidence:ecosystem-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:exposes_tool:exploration.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:exploration-os",
+      "target": "tool:exploration-os:exploration.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:exploration-os:exposes_tool:exploration.site.context.read",
+      "type": "exposes_tool",
+      "source": "repo:exploration-os",
+      "target": "tool:exploration-os:exploration.site.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:exploration-os:exposes_tool:exploration.story.context.read",
+      "type": "exposes_tool",
+      "source": "repo:exploration-os",
+      "target": "tool:exploration-os:exploration.story.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:exploration-os",
+      "target": "config:exploration-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:exploration-os",
+      "target": "config:exploration-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:exploration-os",
+      "target": "config:exploration-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:exploration-os",
+      "target": "config:exploration-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:exploration-os",
+      "target": "evidence:exploration-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:exploration-os",
+      "target": "evidence:exploration-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:exploration-os",
+      "target": "evidence:exploration-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:exploration-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:exploration-os",
+      "target": "evidence:exploration-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:exposes_tool:fabric.deployment.context.read",
+      "type": "exposes_tool",
+      "source": "repo:fabric-os",
+      "target": "tool:fabric-os:fabric.deployment.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:fabric-os:exposes_tool:fabric.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:fabric-os",
+      "target": "tool:fabric-os:fabric.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:fabric-os:exposes_tool:fabric.operations.context.read",
+      "type": "exposes_tool",
+      "source": "repo:fabric-os",
+      "target": "tool:fabric-os:fabric.operations.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:fabric-os",
+      "target": "config:fabric-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:fabric-os",
+      "target": "config:fabric-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:fabric-os",
+      "target": "config:fabric-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:fabric-os",
+      "target": "config:fabric-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:fabric-os",
+      "target": "evidence:fabric-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:fabric-os",
+      "target": "evidence:fabric-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:fabric-os",
+      "target": "evidence:fabric-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:fabric-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:fabric-os",
+      "target": "evidence:fabric-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:exposes_tool:griot.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:griot-ai",
+      "target": "tool:griot-ai:griot.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:griot-ai:exposes_tool:griot.market.context.read",
+      "type": "exposes_tool",
+      "source": "repo:griot-ai",
+      "target": "tool:griot-ai:griot.market.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:griot-ai:exposes_tool:griot.narrative.context.read",
+      "type": "exposes_tool",
+      "source": "repo:griot-ai",
+      "target": "tool:griot-ai:griot.narrative.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_config:eval",
+      "type": "has_config",
+      "source": "repo:griot-ai",
+      "target": "config:griot-ai:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_config:graph",
+      "type": "has_config",
+      "source": "repo:griot-ai",
+      "target": "config:griot-ai:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:griot-ai",
+      "target": "config:griot-ai:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_config:rag",
+      "type": "has_config",
+      "source": "repo:griot-ai",
+      "target": "config:griot-ai:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:griot-ai",
+      "target": "evidence:griot-ai:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:griot-ai",
+      "target": "evidence:griot-ai:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:griot-ai",
+      "target": "evidence:griot-ai:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:griot-ai:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:griot-ai",
+      "target": "evidence:griot-ai:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:exposes_tool:gtcx.cortex.context.route",
+      "type": "exposes_tool",
+      "source": "repo:gtcx-os",
+      "target": "tool:gtcx-os:gtcx.cortex.context.route",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:gtcx-os:exposes_tool:gtcx.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:gtcx-os",
+      "target": "tool:gtcx-os:gtcx.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:gtcx-os:exposes_tool:gtcx.product.surface.read",
+      "type": "exposes_tool",
+      "source": "repo:gtcx-os",
+      "target": "tool:gtcx-os:gtcx.product.surface.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:gtcx-os",
+      "target": "config:gtcx-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:gtcx-os",
+      "target": "config:gtcx-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:gtcx-os",
+      "target": "config:gtcx-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:gtcx-os",
+      "target": "config:gtcx-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:gtcx-os",
+      "target": "evidence:gtcx-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:gtcx-os",
+      "target": "evidence:gtcx-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:gtcx-os",
+      "target": "evidence:gtcx-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:gtcx-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:gtcx-os",
+      "target": "evidence:gtcx-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:exposes_tool:inspection.evidence.context.read",
+      "type": "exposes_tool",
+      "source": "repo:inspection-os",
+      "target": "tool:inspection-os:inspection.evidence.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:inspection-os:exposes_tool:inspection.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:inspection-os",
+      "target": "tool:inspection-os:inspection.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:inspection-os:exposes_tool:inspection.field.context.read",
+      "type": "exposes_tool",
+      "source": "repo:inspection-os",
+      "target": "tool:inspection-os:inspection.field.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:inspection-os",
+      "target": "config:inspection-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:inspection-os",
+      "target": "config:inspection-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:inspection-os",
+      "target": "config:inspection-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:inspection-os",
+      "target": "config:inspection-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:inspection-os",
+      "target": "evidence:inspection-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:inspection-os",
+      "target": "evidence:inspection-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:inspection-os",
+      "target": "evidence:inspection-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:inspection-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:inspection-os",
+      "target": "evidence:inspection-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:exposes_tool:ledger.authority.context.read",
+      "type": "exposes_tool",
+      "source": "repo:ledger-os",
+      "target": "tool:ledger-os:ledger.authority.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:ledger-os:exposes_tool:ledger.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:ledger-os",
+      "target": "tool:ledger-os:ledger.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:ledger-os:exposes_tool:ledger.trade.context.read",
+      "type": "exposes_tool",
+      "source": "repo:ledger-os",
+      "target": "tool:ledger-os:ledger.trade.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:ledger-os",
+      "target": "config:ledger-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:ledger-os",
+      "target": "config:ledger-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:ledger-os",
+      "target": "config:ledger-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:ledger-os",
+      "target": "config:ledger-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:ledger-os",
+      "target": "evidence:ledger-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:ledger-os",
+      "target": "evidence:ledger-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:ledger-os",
+      "target": "evidence:ledger-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:ledger-os",
+      "target": "evidence:ledger-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:exposes_tool:ledger.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:ledger-ui",
+      "target": "tool:ledger-ui:ledger.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:ledger-ui:exposes_tool:ledger.finance.surface.read",
+      "type": "exposes_tool",
+      "source": "repo:ledger-ui",
+      "target": "tool:ledger-ui:ledger.finance.surface.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:ledger-ui:exposes_tool:ledger.ui.context.read",
+      "type": "exposes_tool",
+      "source": "repo:ledger-ui",
+      "target": "tool:ledger-ui:ledger.ui.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_config:eval",
+      "type": "has_config",
+      "source": "repo:ledger-ui",
+      "target": "config:ledger-ui:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_config:graph",
+      "type": "has_config",
+      "source": "repo:ledger-ui",
+      "target": "config:ledger-ui:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:ledger-ui",
+      "target": "config:ledger-ui:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_config:rag",
+      "type": "has_config",
+      "source": "repo:ledger-ui",
+      "target": "config:ledger-ui:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:ledger-ui",
+      "target": "evidence:ledger-ui:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:ledger-ui",
+      "target": "evidence:ledger-ui:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:ledger-ui",
+      "target": "evidence:ledger-ui:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:ledger-ui:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:ledger-ui",
+      "target": "evidence:ledger-ui:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:markets-os:exposes_tool:markets.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:markets-os",
+      "target": "tool:markets-os:markets.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:markets-os:exposes_tool:markets.regulatory.context.read",
+      "type": "exposes_tool",
+      "source": "repo:markets-os",
+      "target": "tool:markets-os:markets.regulatory.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:markets-os:exposes_tool:markets.transaction.context.read",
+      "type": "exposes_tool",
+      "source": "repo:markets-os",
+      "target": "tool:markets-os:markets.transaction.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:markets-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:markets-os",
+      "target": "config:markets-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:markets-os",
+      "target": "config:markets-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:markets-os",
+      "target": "config:markets-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:markets-os",
+      "target": "config:markets-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:markets-os",
+      "target": "evidence:markets-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:markets-os",
+      "target": "evidence:markets-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:markets-os",
+      "target": "evidence:markets-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:markets-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:markets-os",
+      "target": "evidence:markets-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:exposes_tool:nyota.commodity.context.read",
+      "type": "exposes_tool",
+      "source": "repo:nyota-ai",
+      "target": "tool:nyota-ai:nyota.commodity.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:nyota-ai:exposes_tool:nyota.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:nyota-ai",
+      "target": "tool:nyota-ai:nyota.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:nyota-ai:exposes_tool:nyota.localization.context.read",
+      "type": "exposes_tool",
+      "source": "repo:nyota-ai",
+      "target": "tool:nyota-ai:nyota.localization.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_config:eval",
+      "type": "has_config",
+      "source": "repo:nyota-ai",
+      "target": "config:nyota-ai:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_config:graph",
+      "type": "has_config",
+      "source": "repo:nyota-ai",
+      "target": "config:nyota-ai:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:nyota-ai",
+      "target": "config:nyota-ai:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_config:rag",
+      "type": "has_config",
+      "source": "repo:nyota-ai",
+      "target": "config:nyota-ai:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:nyota-ai",
+      "target": "evidence:nyota-ai:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:nyota-ai",
+      "target": "evidence:nyota-ai:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:nyota-ai",
+      "target": "evidence:nyota-ai:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:nyota-ai:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:nyota-ai",
+      "target": "evidence:nyota-ai:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:exposes_tool:sensei.coaching.context.read",
+      "type": "exposes_tool",
+      "source": "repo:sensei-os",
+      "target": "tool:sensei-os:sensei.coaching.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:sensei-os:exposes_tool:sensei.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:sensei-os",
+      "target": "tool:sensei-os:sensei.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:sensei-os:exposes_tool:sensei.migration.context.read",
+      "type": "exposes_tool",
+      "source": "repo:sensei-os",
+      "target": "tool:sensei-os:sensei.migration.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:sensei-os",
+      "target": "config:sensei-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:sensei-os",
+      "target": "config:sensei-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:sensei-os",
+      "target": "config:sensei-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:sensei-os",
+      "target": "config:sensei-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:sensei-os",
+      "target": "evidence:sensei-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:sensei-os",
+      "target": "evidence:sensei-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:sensei-os",
+      "target": "evidence:sensei-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:sensei-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:sensei-os",
+      "target": "evidence:sensei-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:exposes_tool:terminal.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:terminal-os",
+      "target": "tool:terminal-os:terminal.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:terminal-os:exposes_tool:terminal.operator.context.read",
+      "type": "exposes_tool",
+      "source": "repo:terminal-os",
+      "target": "tool:terminal-os:terminal.operator.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:terminal-os:exposes_tool:terminal.session.context.read",
+      "type": "exposes_tool",
+      "source": "repo:terminal-os",
+      "target": "tool:terminal-os:terminal.session.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:terminal-os",
+      "target": "config:terminal-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:terminal-os",
+      "target": "config:terminal-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:terminal-os",
+      "target": "config:terminal-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:terminal-os",
+      "target": "config:terminal-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:terminal-os",
+      "target": "evidence:terminal-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:terminal-os",
+      "target": "evidence:terminal-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:terminal-os",
+      "target": "evidence:terminal-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terminal-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:terminal-os",
+      "target": "evidence:terminal-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terra-os:exposes_tool:terra.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:terra-os",
+      "target": "tool:terra-os:terra.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:terra-os:exposes_tool:terra.field.context.read",
+      "type": "exposes_tool",
+      "source": "repo:terra-os",
+      "target": "tool:terra-os:terra.field.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:terra-os:exposes_tool:terra.site.context.read",
+      "type": "exposes_tool",
+      "source": "repo:terra-os",
+      "target": "tool:terra-os:terra.site.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:terra-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:terra-os",
+      "target": "config:terra-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:terra-os",
+      "target": "config:terra-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:terra-os",
+      "target": "config:terra-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:terra-os",
+      "target": "config:terra-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:terra-os",
+      "target": "evidence:terra-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:terra-os",
+      "target": "evidence:terra-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:terra-os",
+      "target": "evidence:terra-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:terra-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:terra-os",
+      "target": "evidence:terra-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:venture-os:exposes_tool:venture.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:venture-os",
+      "target": "tool:venture-os:venture.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:venture-os:exposes_tool:venture.founder.context.read",
+      "type": "exposes_tool",
+      "source": "repo:venture-os",
+      "target": "tool:venture-os:venture.founder.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:venture-os:exposes_tool:venture.investment.context.read",
+      "type": "exposes_tool",
+      "source": "repo:venture-os",
+      "target": "tool:venture-os:venture.investment.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:venture-os:has_config:eval",
+      "type": "has_config",
+      "source": "repo:venture-os",
+      "target": "config:venture-os:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_config:graph",
+      "type": "has_config",
+      "source": "repo:venture-os",
+      "target": "config:venture-os:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:venture-os",
+      "target": "config:venture-os:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_config:rag",
+      "type": "has_config",
+      "source": "repo:venture-os",
+      "target": "config:venture-os:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:venture-os",
+      "target": "evidence:venture-os:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:venture-os",
+      "target": "evidence:venture-os:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:venture-os",
+      "target": "evidence:venture-os:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:venture-os:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:venture-os",
+      "target": "evidence:venture-os:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:exposes_tool:veritas.claim.context.read",
+      "type": "exposes_tool",
+      "source": "repo:veritas-ai",
+      "target": "tool:veritas-ai:veritas.claim.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:veritas-ai:exposes_tool:veritas.evidence.write",
+      "type": "exposes_tool",
+      "source": "repo:veritas-ai",
+      "target": "tool:veritas-ai:veritas.evidence.write",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "write"
+      }
+    },
+    {
+      "id": "edge:veritas-ai:exposes_tool:veritas.verification.context.read",
+      "type": "exposes_tool",
+      "source": "repo:veritas-ai",
+      "target": "tool:veritas-ai:veritas.verification.context.read",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "permissionClass": "read"
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_config:eval",
+      "type": "has_config",
+      "source": "repo:veritas-ai",
+      "target": "config:veritas-ai:eval",
+      "evidence": [
+        "config/baseline/eval.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_config:graph",
+      "type": "has_config",
+      "source": "repo:veritas-ai",
+      "target": "config:veritas-ai:graph",
+      "evidence": [
+        "config/baseline/graph.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_config:mcp",
+      "type": "has_config",
+      "source": "repo:veritas-ai",
+      "target": "config:veritas-ai:mcp",
+      "evidence": [
+        "config/baseline/mcp.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_config:rag",
+      "type": "has_config",
+      "source": "repo:veritas-ai",
+      "target": "config:veritas-ai:rag",
+      "evidence": [
+        "config/baseline/rag.config.json"
+      ],
+      "properties": {
+        "ok": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_evidence:graphProjection",
+      "type": "has_evidence",
+      "source": "repo:veritas-ai",
+      "target": "evidence:veritas-ai:graphProjection",
+      "evidence": [
+        "audit/evidence/graph-projection-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_evidence:mcpConfig",
+      "type": "has_evidence",
+      "source": "repo:veritas-ai",
+      "target": "evidence:veritas-ai:mcpConfig",
+      "evidence": [
+        "audit/evidence/mcp-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_evidence:ragConfig",
+      "type": "has_evidence",
+      "source": "repo:veritas-ai",
+      "target": "evidence:veritas-ai:ragConfig",
+      "evidence": [
+        "audit/evidence/rag-config-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    },
+    {
+      "id": "edge:veritas-ai:has_evidence:ragEval",
+      "type": "has_evidence",
+      "source": "repo:veritas-ai",
+      "target": "evidence:veritas-ai:ragEval",
+      "evidence": [
+        "audit/evidence/rag-eval-latest.json"
+      ],
+      "properties": {
+        "present": true
+      }
+    }
+  ],
+  "aliases": [],
+  "issues": []
+}
