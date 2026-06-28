@@ -7,6 +7,7 @@ Audit workflow entry and forensic report registry for this repository.
 | **Agent start** | [`AGENT-START.md`](./AGENT-START.md) |
 | **Five-core index** | [`FIVE-CORE-AUDITS.md`](./FIVE-CORE-AUDITS.md) |
 | **Machine evidence** | [`evidence/`](./evidence/) |
+| **Independent reviews** | [`independent/ecosystem-os/`](./independent/ecosystem-os/) |
 
 Run layout gates before claiming audit complete: `pnpm ops:check`.
 
