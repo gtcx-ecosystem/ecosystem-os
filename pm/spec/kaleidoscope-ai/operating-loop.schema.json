@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/operating-loop.schema/v1",
+  "title": "Kaleidoscope AI operating loop witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "date",
+    "repo",
+    "mode",
+    "ok",
+    "summary",
+    "stages",
+    "blockers",
+    "sources"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/operating-loop/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "date": { "type": "string" },
+    "repo": { "const": "ecosystem-os" },
+    "mode": { "enum": ["check", "write"] },
+    "ok": { "type": "boolean" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "stageCount",
+        "passedStages",
+        "failedStages",
+        "releaseDecision",
+        "externalUse",
+        "approvalPendingActions"
+      ],
+      "additionalProperties": true
+    },
+    "stages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/stage" }
+    },
+    "blockers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "stage": {
+      "type": "object",
+      "required": [
+        "id",
+        "command",
+        "exitCode",
+        "ok",
+        "witness",
+        "witnessOk",
+        "startedAt",
+        "completedAt"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "command": { "type": "string", "minLength": 1 },
+        "exitCode": { "type": ["integer", "null"] },
+        "ok": { "type": "boolean" },
+        "witness": { "type": "string", "minLength": 1 },
+        "witnessOk": { "type": "boolean" },
+        "witnessDate": { "type": ["string", "null"] },
+        "startedAt": { "type": "string", "format": "date-time" },
+        "completedAt": { "type": "string", "format": "date-time" },
+        "stdoutTail": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "stderrTail": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

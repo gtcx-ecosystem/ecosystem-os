@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates/v1",
-  "generatedAt": "2026-06-28T22:27:12.918Z",
+  "generatedAt": "2026-06-28T22:48:15.325Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-eval-safety-release-hardening",
@@ -25,27 +25,27 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T21:52:10.216Z",
+          "sourceDate": "2026-06-28T22:48:15.103Z",
           "reason": "query witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:16:08.115Z",
+          "sourceDate": "2026-06-28T22:48:15.244Z",
           "reason": "decision witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-28T22:16:03.242Z",
+          "sourceDate": "2026-06-28T22:48:15.200Z",
           "reason": "observatory witness"
         },
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T22:15:57.412Z",
+          "sourceDate": "2026-06-28T22:48:15.156Z",
           "reason": "SIGNAL witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T22:21:50.182Z",
+          "sourceDate": "2026-06-28T22:48:15.286Z",
           "reason": "execution studio witness"
         }
       ],
@@ -59,7 +59,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-28T21:52:10.216Z",
+          "sourceDate": "2026-06-28T22:48:15.103Z",
           "reason": "golden question eval results"
         }
       ],
@@ -73,7 +73,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:16:08.115Z",
+          "sourceDate": "2026-06-28T22:48:15.244Z",
           "reason": "decision citations"
         }
       ],
@@ -87,7 +87,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:16:08.115Z",
+          "sourceDate": "2026-06-28T22:48:15.244Z",
           "reason": "decision freshness evaluation"
         }
       ],
@@ -101,7 +101,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:16:08.115Z",
+          "sourceDate": "2026-06-28T22:48:15.244Z",
           "reason": "unsupported claim evaluation"
         }
       ],
@@ -115,7 +115,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-28T22:16:08.115Z",
+          "sourceDate": "2026-06-28T22:48:15.244Z",
           "reason": "answer confidence evaluation"
         }
       ],
@@ -129,7 +129,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-28T22:21:50.182Z",
+          "sourceDate": "2026-06-28T22:48:15.286Z",
           "reason": "draft-only approval and release gate evidence"
         }
       ],
@@ -143,7 +143,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-28T22:15:57.412Z",
+          "sourceDate": "2026-06-28T22:48:15.156Z",
           "reason": "SIGNAL fleet witness"
         }
       ],
