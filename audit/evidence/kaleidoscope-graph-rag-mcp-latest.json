@@ -1,0 +1,1428 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-graph-rag-mcp-fleet/v1",
+  "generatedAt": "2026-06-28T16:34:44.579Z",
+  "repo": "ecosystem-os",
+  "restored": false,
+  "phase": "phase-1-contracts-and-baseline-scan",
+  "summary": {
+    "repoCount": 20,
+    "ready": 1,
+    "partialOrBetter": 1,
+    "splitConfigComplete": 1,
+    "averageScore": 42,
+    "tiers": {
+      "tier0": {
+        "repos": 3,
+        "ready": 1,
+        "partial": 0,
+        "seeded": 2,
+        "missing": 0,
+        "averageScore": 64
+      },
+      "tier1": {
+        "repos": 5,
+        "ready": 0,
+        "partial": 0,
+        "seeded": 5,
+        "missing": 0,
+        "averageScore": 46
+      },
+      "tier2": {
+        "repos": 6,
+        "ready": 0,
+        "partial": 0,
+        "seeded": 6,
+        "missing": 0,
+        "averageScore": 46
+      },
+      "tier3": {
+        "repos": 6,
+        "ready": 0,
+        "partial": 0,
+        "seeded": 2,
+        "missing": 4,
+        "averageScore": 23
+      }
+    }
+  },
+  "contracts": {
+    "rag": "pm/spec/kaleidoscope-ai/rag-config.schema.json",
+    "mcp": "pm/spec/kaleidoscope-ai/mcp-config.schema.json",
+    "graph": "pm/spec/kaleidoscope-ai/graph-config.schema.json",
+    "eval": "pm/spec/kaleidoscope-ai/eval-config.schema.json"
+  },
+  "configs": {
+    "ecosystemOs": {
+      "rag": {
+        "path": "config/baseline/rag.config.json",
+        "present": true
+      },
+      "mcp": {
+        "path": "config/baseline/mcp.config.json",
+        "present": true
+      },
+      "graph": {
+        "path": "config/baseline/graph.config.json",
+        "present": true
+      },
+      "eval": {
+        "path": "config/baseline/eval.config.json",
+        "present": true
+      }
+    }
+  },
+  "repos": [
+    {
+      "repo": "baseline-os",
+      "tier": 0,
+      "role": "RAG/MCP hub and validator owner",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 43,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing mcp script"
+      ]
+    },
+    {
+      "repo": "bridge-os",
+      "tier": 0,
+      "role": "MCP/action orchestration and fleet coordination",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "ecosystem-os",
+      "tier": 0,
+      "role": "Ecosystem graph and Kaleidoscope home",
+      "targetStatus": "strengthen",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": true,
+          "ok": true,
+          "issues": []
+        },
+        "mcp": {
+          "present": true,
+          "ok": true,
+          "issues": []
+        },
+        "graph": {
+          "present": true,
+          "ok": true,
+          "issues": []
+        },
+        "eval": {
+          "present": true,
+          "ok": true,
+          "issues": []
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": true,
+        "validateGraphConfig": true,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": true,
+        "ragEval": true,
+        "mcpConfig": true,
+        "graphProjection": true
+      },
+      "score": 100,
+      "maturity": "ready",
+      "blockers": []
+    },
+    {
+      "repo": "gtcx-os",
+      "tier": 1,
+      "role": "Platform/product OS and Cortex scope",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 40,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script"
+      ]
+    },
+    {
+      "repo": "markets-os",
+      "tier": 1,
+      "role": "Market infrastructure product",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "compliance-os",
+      "tier": 1,
+      "role": "Compliance operating layer",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "terminal-os",
+      "tier": 1,
+      "role": "Operator/terminal surface",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "ledger-ui",
+      "tier": 1,
+      "role": "Finance/ledger UI",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "terra-os",
+      "tier": 2,
+      "role": "Land/site/source truth",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 43,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script"
+      ]
+    },
+    {
+      "repo": "exploration-os",
+      "tier": 2,
+      "role": "Field/site intelligence",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "veritas-ai",
+      "tier": 2,
+      "role": "Verification/publication intelligence",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 43,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing mcp script"
+      ]
+    },
+    {
+      "repo": "sensei-os",
+      "tier": 2,
+      "role": "Migration/agent intelligence",
+      "targetStatus": "strengthen",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "griot-ai",
+      "tier": 2,
+      "role": "Market/context publishing",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 48,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "nyota-ai",
+      "tier": 2,
+      "role": "Last-mile/mobile intelligence",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 43,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing mcp script"
+      ]
+    },
+    {
+      "repo": "fabric-os",
+      "tier": 3,
+      "role": "Deployment, ops, compliance fabric",
+      "targetStatus": "restore",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": false,
+        "parseOk": false,
+        "separated": false,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": true,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": true,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": true,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 28,
+      "maturity": "missing",
+      "blockers": [
+        "missing organization baseline",
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script"
+      ]
+    },
+    {
+      "repo": "canon-os",
+      "tier": 3,
+      "role": "Governance and protocols",
+      "targetStatus": "strengthen",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": false,
+        "parseOk": false,
+        "separated": false,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": false,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 10,
+      "maturity": "missing",
+      "blockers": [
+        "missing organization baseline",
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:rag-config script",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script",
+        "missing mcp script"
+      ]
+    },
+    {
+      "repo": "agile-os",
+      "tier": 3,
+      "role": "Sprint, backlog, delivery OS",
+      "targetStatus": "seed",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": false,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 35,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:rag-config script",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script"
+      ]
+    },
+    {
+      "repo": "ledger-os",
+      "tier": 3,
+      "role": "Ledger/product finance backend",
+      "targetStatus": "seed",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": true,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": false,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": true
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 35,
+      "maturity": "seeded",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:rag-config script",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script"
+      ]
+    },
+    {
+      "repo": "inspection-os",
+      "tier": 3,
+      "role": "Inspection product",
+      "targetStatus": "seed",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": false,
+        "parseOk": false,
+        "separated": false,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": false,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 10,
+      "maturity": "missing",
+      "blockers": [
+        "missing organization baseline",
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:rag-config script",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script",
+        "missing mcp script"
+      ]
+    },
+    {
+      "repo": "venture-os",
+      "tier": 3,
+      "role": "Venture/portfolio product",
+      "targetStatus": "seed",
+      "repoPresent": true,
+      "organizationBaseline": {
+        "path": "config/baseline/baseline.config.json",
+        "present": true,
+        "parseOk": true,
+        "separated": false,
+        "hasLegacyRagFields": false
+      },
+      "splitConfigs": {
+        "rag": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "mcp": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "graph": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        },
+        "eval": {
+          "present": false,
+          "ok": false,
+          "issues": [
+            "missing"
+          ]
+        }
+      },
+      "scripts": {
+        "validateRagConfig": false,
+        "validateMcpConfig": false,
+        "validateGraphConfig": false,
+        "ragEval": false,
+        "mcp": false
+      },
+      "evidence": {
+        "ragConfig": false,
+        "ragEval": false,
+        "mcpConfig": false,
+        "graphProjection": false
+      },
+      "score": 20,
+      "maturity": "missing",
+      "blockers": [
+        "rag config: missing",
+        "mcp config: missing",
+        "graph config: missing",
+        "eval config: missing",
+        "missing validate:rag-config script",
+        "missing validate:mcp-config script",
+        "missing validate:graph-config script",
+        "missing rag:eval script",
+        "missing mcp script"
+      ]
+    }
+  ],
+  "nextActions": [
+    "Move split config validators into baseline-os and bridge-os.",
+    "Migrate tier-0 and tier-1 repos to config/baseline/{rag,mcp,graph,eval}.config.json.",
+    "Emit repo-local rag-config, mcp-config, graph-projection, and rag-eval witnesses.",
+    "Promote this scanner from baseline witness to strict gate after tier-1 reaches ready."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "gtcx://ecosystem-os/eval-config/v1",
+  "repo": "ecosystem-os",
+  "goldenSets": [
+    "config/baseline/rag-eval-golden.json"
+  ],
+  "qualityGates": [
+    {
+      "id": "graph-coverage",
+      "threshold": 0.85
+    },
+    {
+      "id": "evidence-grounding",
+      "threshold": 0.9
+    },
+    {
+      "id": "permissioned-action-coverage",
+      "threshold": 0.8
+    }
+  ],
+  "releaseGates": [
+    "no-unvalidated-claims",
+    "human-approval-for-write-actions",
+    "stale-witness-detection"
+  ]
+}

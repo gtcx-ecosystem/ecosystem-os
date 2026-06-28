@@ -1,0 +1,425 @@
+{
+  "schema": "gtcx://ecosystem-os/graph-projection/v1",
+  "generatedAt": "2026-06-28T16:34:44.558Z",
+  "repo": "ecosystem-os",
+  "configOk": true,
+  "config": "config/baseline/graph.config.json",
+  "issues": [],
+  "ok": true,
+  "nodeCount": 20,
+  "edgeCount": 19,
+  "nodes": [
+    {
+      "id": "repo:baseline-os",
+      "type": "repo",
+      "label": "baseline-os",
+      "source": "../*/package.json",
+      "tier": 0,
+      "targetStatus": "restore",
+      "role": "RAG/MCP hub and validator owner",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:bridge-os",
+      "type": "repo",
+      "label": "bridge-os",
+      "source": "../*/package.json",
+      "tier": 0,
+      "targetStatus": "restore",
+      "role": "MCP/action orchestration and fleet coordination",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:ecosystem-os",
+      "type": "repo",
+      "label": "ecosystem-os",
+      "source": "../*/package.json",
+      "tier": 0,
+      "targetStatus": "strengthen",
+      "role": "Ecosystem graph and Kaleidoscope home",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:gtcx-os",
+      "type": "repo",
+      "label": "gtcx-os",
+      "source": "../*/package.json",
+      "tier": 1,
+      "targetStatus": "restore",
+      "role": "Platform/product OS and Cortex scope",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:markets-os",
+      "type": "repo",
+      "label": "markets-os",
+      "source": "../*/package.json",
+      "tier": 1,
+      "targetStatus": "restore",
+      "role": "Market infrastructure product",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:compliance-os",
+      "type": "repo",
+      "label": "compliance-os",
+      "source": "../*/package.json",
+      "tier": 1,
+      "targetStatus": "restore",
+      "role": "Compliance operating layer",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:terminal-os",
+      "type": "repo",
+      "label": "terminal-os",
+      "source": "../*/package.json",
+      "tier": 1,
+      "targetStatus": "restore",
+      "role": "Operator/terminal surface",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:ledger-ui",
+      "type": "repo",
+      "label": "ledger-ui",
+      "source": "../*/package.json",
+      "tier": 1,
+      "targetStatus": "restore",
+      "role": "Finance/ledger UI",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:terra-os",
+      "type": "repo",
+      "label": "terra-os",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "restore",
+      "role": "Land/site/source truth",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:exploration-os",
+      "type": "repo",
+      "label": "exploration-os",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "restore",
+      "role": "Field/site intelligence",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:veritas-ai",
+      "type": "repo",
+      "label": "veritas-ai",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "restore",
+      "role": "Verification/publication intelligence",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:sensei-os",
+      "type": "repo",
+      "label": "sensei-os",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "strengthen",
+      "role": "Migration/agent intelligence",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:griot-ai",
+      "type": "repo",
+      "label": "griot-ai",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "restore",
+      "role": "Market/context publishing",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:nyota-ai",
+      "type": "repo",
+      "label": "nyota-ai",
+      "source": "../*/package.json",
+      "tier": 2,
+      "targetStatus": "restore",
+      "role": "Last-mile/mobile intelligence",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:fabric-os",
+      "type": "repo",
+      "label": "fabric-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "restore",
+      "role": "Deployment, ops, compliance fabric",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:canon-os",
+      "type": "repo",
+      "label": "canon-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "strengthen",
+      "role": "Governance and protocols",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:agile-os",
+      "type": "repo",
+      "label": "agile-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "seed",
+      "role": "Sprint, backlog, delivery OS",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:ledger-os",
+      "type": "repo",
+      "label": "ledger-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "seed",
+      "role": "Ledger/product finance backend",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:inspection-os",
+      "type": "repo",
+      "label": "inspection-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "seed",
+      "role": "Inspection product",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "id": "repo:venture-os",
+      "type": "repo",
+      "label": "venture-os",
+      "source": "../*/package.json",
+      "tier": 3,
+      "targetStatus": "seed",
+      "role": "Venture/portfolio product",
+      "confidence": 1,
+      "updatedAt": "2026-06-28"
+    }
+  ],
+  "edges": [
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:baseline-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:bridge-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:gtcx-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:markets-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:compliance-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:terminal-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:ledger-ui",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:terra-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:exploration-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:veritas-ai",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:sensei-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:griot-ai",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:nyota-ai",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:fabric-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:canon-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:agile-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:ledger-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:inspection-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    },
+    {
+      "source": "repo:ecosystem-os",
+      "target": "repo:venture-os",
+      "type": "depends_on",
+      "evidence": [
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "confidence": 0.8,
+      "updatedAt": "2026-06-28"
+    }
+  ]
+}

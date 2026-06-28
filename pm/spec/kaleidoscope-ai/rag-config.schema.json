@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/rag-config.schema/v1",
+  "title": "Kaleidoscope AI RAG config",
+  "type": "object",
+  "required": ["$schema", "repo", "topology", "knowledge", "include", "exclude", "paths", "eval"],
+  "properties": {
+    "$schema": { "const": "gtcx://ecosystem-os/rag-config/v1" },
+    "repo": { "type": "string", "minLength": 1 },
+    "topology": { "enum": ["local", "consumer", "hub", "exception"] },
+    "knowledge": { "type": "array", "items": { "type": "string" } },
+    "include": { "type": "array", "items": { "type": "string" } },
+    "exclude": { "type": "array", "items": { "type": "string" } },
+    "paths": {
+      "type": "object",
+      "required": ["index", "checkpoints"],
+      "properties": {
+        "index": { "type": "string", "minLength": 1 },
+        "checkpoints": { "type": "string", "minLength": 1 }
+      }
+    },
+    "eval": {
+      "type": "object",
+      "required": ["golden", "mockCorpus"],
+      "properties": {
+        "golden": { "type": "string", "minLength": 1 },
+        "mockCorpus": { "type": "string", "minLength": 1 }
+      }
+    }
+  },
+  "additionalProperties": true
+}

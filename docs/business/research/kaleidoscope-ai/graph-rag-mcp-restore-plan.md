@@ -148,6 +148,14 @@ Exit criteria:
 - Validators know which file owns which concern.
 - No validator treats the organization baseline as the RAG SoR.
 
+Implementation witness:
+
+```bash
+pnpm kaleidoscope:graph-rag-mcp:write
+```
+
+This emits `audit/evidence/kaleidoscope-graph-rag-mcp-latest.json` from a read-only scan of checked-out fleet repos. It is a baseline witness, not a strict restore gate yet.
+
 ### Phase 2: update validators
 
 Update the validation model:
@@ -300,4 +308,3 @@ Exit criteria:
 - Model Context Protocol architecture: https://modelcontextprotocol.io/docs/learn/architecture
 - LangGraph overview: https://docs.langchain.com/oss/python/langgraph/overview
 - LlamaIndex documentation: https://docs.llamaindex.ai/
-
