@@ -1,23 +1,25 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources/v1",
-  "generatedAt": "2026-06-29T05:09:25.981Z",
+  "generatedAt": "2026-06-29T05:12:25.166Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-3-internal-read-only-resources",
   "ok": true,
   "summary": {
-    "resourceCount": 5,
+    "resourceCount": 7,
     "resources": [
       "fleet",
       "graph",
+      "query",
+      "decision-room",
       "signal",
       "release",
       "phase-2"
     ],
-    "passedResourceChecks": 5,
+    "passedResourceChecks": 7,
     "failedResourceChecks": 0,
     "failedResources": [],
-    "readOnlyResources": 5,
+    "readOnlyResources": 7,
     "externalUse": "blocked_until_explicit_approval"
   },
   "validation": [
@@ -28,6 +30,16 @@
     },
     {
       "resource": "graph",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "query",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "decision-room",
       "ok": true,
       "issues": []
     },
@@ -51,7 +63,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "fleet",
-      "generatedAt": "2026-06-29T05:09:25.981Z",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
       "mode": "read",
       "decision": "fleet-ready-read-only",
       "confidence": 0.95,
@@ -990,7 +1002,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "graph",
-      "generatedAt": "2026-06-29T05:09:25.981Z",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
       "mode": "read",
       "decision": "graph-snapshot-complete",
       "confidence": 0.96,
@@ -1444,8 +1456,712 @@
     },
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "query",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "mode": "read",
+      "decision": "query-golden-eval-pass",
+      "confidence": 0.92,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.311Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.277Z"
+          },
+          {
+            "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+            "sourceDate": "2026-06-29T03:43:26.600Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "reason": "golden strategic query answers, retrieval routes, citations, confidence, and freshness",
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "reason": "typed graph source used by the query service",
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+          "reason": "product-surface response envelope contract",
+          "sourceDate": "2026-06-29T03:43:26.600Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-query-service-latest.json",
+        "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+        "pm/spec/kaleidoscope-ai/product-surface-api.schema.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/query",
+        "summary": {
+          "queryCount": 4,
+          "passedQueries": 4,
+          "failedQueries": 0,
+          "averageConfidence": 0.92
+        },
+        "graphSnapshot": {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "generatedAt": "2026-06-29T01:31:17.272Z",
+          "nodeCount": 240,
+          "edgeCount": 220
+        },
+        "queries": [
+          {
+            "id": "repo-readiness",
+            "query": "Which repos are ready for graph RAG MCP?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "20/20 repos are ready for graph/RAG/MCP: agile-os (100/100), baseline-os (100/100), bridge-os (100/100), canon-os (100/100), compliance-os (100/100), ecosystem-os (100/100), exploration-os (100/100), fabric-os (100/100), griot-ai (100/100), gtcx-os (100/100), inspection-os (100/100), ledger-os (100/100), ledger-ui (100/100), markets-os (100/100), nyota-ai (100/100), sensei-os (100/100), terminal-os (100/100), terra-os (100/100), venture-os (100/100), veritas-ai (100/100).",
+            "confidence": 0.95,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "agile-os",
+                "path": "package.json",
+                "nodeId": "repo:agile-os",
+                "sourceDate": "2026-06-29T01:07:13.807Z",
+                "reason": "repo evidence for agile-os",
+                "excerpt": "\"description\": \"Agile OS — centralized fleet sprint ceremonies, ZenHub, and cross-repo agile coordination (successor to gtcx-agile)\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "baseline-os",
+                "path": "package.json",
+                "nodeId": "repo:baseline-os",
+                "sourceDate": "2026-06-28T16:54:24.859Z",
+                "reason": "repo evidence for baseline-os",
+                "excerpt": "\"layer:critical-mass:report:markdown\": \"node platform/scripts/layer-critical-mass-report.mjs -- --markdown\", \"validate:rag-config\": \"node platform/scripts/validate-rag-config.mjs --root .\", \"validate:rag-config:write\": \"node platform/scripts/write-rag-config-e"
+              },
+              {
+                "repo": "bridge-os",
+                "path": "package.json",
+                "nodeId": "repo:bridge-os",
+                "sourceDate": "2026-06-29T01:15:19.440Z",
+                "reason": "repo evidence for bridge-os",
+                "excerpt": "\"description\": \"BridgeOS — GTCX ecosystem coordination, rollouts, PM engine, and cross-repo program office\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "canon-os",
+                "path": "package.json",
+                "nodeId": "repo:canon-os",
+                "sourceDate": "2026-06-29T00:08:32.122Z",
+                "reason": "repo evidence for canon-os",
+                "excerpt": "\"p1:agile:populate\": \"node platform/scripts/fleet-p1-agile-populate.mjs --all\", \"p2:rag:mcp:populate:write\": \"node platform/scripts/fleet-p2-rag-mcp-populate.mjs --all --write\", \"p2:rag:mcp:populate\": \"node platform/scripts/fleet-p2-rag-mcp-populate.mjs --all\""
+              },
+              {
+                "repo": "compliance-os",
+                "path": "package.json",
+                "nodeId": "repo:compliance-os",
+                "sourceDate": "2026-06-28T17:28:19.951Z",
+                "reason": "repo evidence for compliance-os",
+                "excerpt": "\"description\": \"ComplianceOS monorepo: services, packages, data, and documentation\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "ecosystem-os",
+                "path": "package.json",
+                "nodeId": "repo:ecosystem-os",
+                "sourceDate": "2026-06-28T23:30:36.651Z",
+                "reason": "repo evidence for ecosystem-os",
+                "excerpt": "\"description\": \"Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "exploration-os",
+                "path": "package.json",
+                "nodeId": "repo:exploration-os",
+                "sourceDate": "2026-06-28T17:52:11.592Z",
+                "reason": "repo evidence for exploration-os",
+                "excerpt": "\"agent:check\": \"node platform/scripts/agent-sync/sync.mjs --check\", \"financing:lender:preflight\": \"node platform/tools/financing/verify-lender-webhook-ready.mjs\", \"financing:lender:deploy\": \"node platform/tools/financing/deploy-lender-webhook-staging.mjs\","
+              },
+              {
+                "repo": "fabric-os",
+                "path": "package.json",
+                "nodeId": "repo:fabric-os",
+                "sourceDate": "2026-06-28T18:25:03.763Z",
+                "reason": "repo evidence for fabric-os",
+                "excerpt": "\"description\": \"Fabric OS — service fabric execution: Docker, Kubernetes, Terraform, security, and deployment control plane\", \"repository\": { \"type\": \"git\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 8,
+              "oldestSourceDate": "2026-06-28T16:54:24.859Z",
+              "newestSourceDate": "2026-06-29T01:15:19.440Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "repo:agile-os",
+                "repo:baseline-os",
+                "repo:bridge-os",
+                "repo:canon-os",
+                "repo:compliance-os",
+                "repo:ecosystem-os",
+                "repo:exploration-os",
+                "repo:fabric-os",
+                "repo:griot-ai",
+                "repo:gtcx-os",
+                "repo:inspection-os",
+                "repo:ledger-os",
+                "repo:ledger-ui",
+                "repo:markets-os",
+                "repo:nyota-ai",
+                "repo:sensei-os",
+                "repo:terminal-os",
+                "repo:terra-os",
+                "repo:venture-os",
+                "repo:veritas-ai"
+              ],
+              "evidencePaths": [
+                "agile-os/package.json",
+                "baseline-os/package.json",
+                "bridge-os/package.json",
+                "canon-os/package.json",
+                "compliance-os/package.json",
+                "ecosystem-os/package.json",
+                "exploration-os/package.json",
+                "fabric-os/package.json"
+              ]
+            }
+          },
+          {
+            "id": "bridge-mcp-tools",
+            "query": "What MCP tools does bridge-os expose?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "bridge-os exposes 4 MCP tool nodes: bridge-os:bridge.evidence.write, bridge-os:bridge.fleet.route, bridge-os:bridge.graph.project, bridge-os:bridge.next-work.read.",
+            "confidence": 0.9,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "bridge-os",
+                "path": "config/baseline/mcp.config.json",
+                "nodeId": "tool:bridge-os:bridge.evidence.write",
+                "sourceDate": "2026-06-28T17:06:45.193Z",
+                "reason": "tool evidence for bridge.evidence.write",
+                "excerpt": "{ \"$schema\": \"gtcx://ecosystem-os/mcp-config/v1\", \"repo\": \"bridge-os\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 1,
+              "oldestSourceDate": "2026-06-28T17:06:45.193Z",
+              "newestSourceDate": "2026-06-28T17:06:45.193Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "tool:bridge-os:bridge.evidence.write",
+                "tool:bridge-os:bridge.fleet.route",
+                "tool:bridge-os:bridge.graph.project",
+                "tool:bridge-os:bridge.next-work.read"
+              ],
+              "evidencePaths": [
+                "bridge-os/config/baseline/mcp.config.json"
+              ]
+            }
+          },
+          {
+            "id": "blockers",
+            "query": "Which repos have blockers?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "No repo blockers are present in the latest graph snapshot.",
+            "confidence": 0.94,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "agile-os",
+                "path": "package.json",
+                "nodeId": "repo:agile-os",
+                "sourceDate": "2026-06-29T01:07:13.807Z",
+                "reason": "repo evidence for agile-os",
+                "excerpt": "\"description\": \"Agile OS — centralized fleet sprint ceremonies, ZenHub, and cross-repo agile coordination (successor to gtcx-agile)\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "baseline-os",
+                "path": "package.json",
+                "nodeId": "repo:baseline-os",
+                "sourceDate": "2026-06-28T16:54:24.859Z",
+                "reason": "repo evidence for baseline-os",
+                "excerpt": "\"agent:check\": \"node platform/scripts/agent-sync/sync.mjs --check\", \"ecosystem:standup:daily\": \"npx tsx platform/scripts/ecosystem/standup.ts --repos=all\", \"ecosystem:standup:daily:slack\": \"npx tsx platform/scripts/ecosystem/standup.ts --repos=all --slack\","
+              },
+              {
+                "repo": "bridge-os",
+                "path": "package.json",
+                "nodeId": "repo:bridge-os",
+                "sourceDate": "2026-06-29T01:15:19.440Z",
+                "reason": "repo evidence for bridge-os",
+                "excerpt": "\"description\": \"BridgeOS — GTCX ecosystem coordination, rollouts, PM engine, and cross-repo program office\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "canon-os",
+                "path": "package.json",
+                "nodeId": "repo:canon-os",
+                "sourceDate": "2026-06-29T00:08:32.122Z",
+                "reason": "repo evidence for canon-os",
+                "excerpt": "{ \"name\": \"canon-os\", \"version\": \"0.1.0\","
+              },
+              {
+                "repo": "compliance-os",
+                "path": "package.json",
+                "nodeId": "repo:compliance-os",
+                "sourceDate": "2026-06-28T17:28:19.951Z",
+                "reason": "repo evidence for compliance-os",
+                "excerpt": "\"description\": \"ComplianceOS monorepo: services, packages, data, and documentation\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "ecosystem-os",
+                "path": "package.json",
+                "nodeId": "repo:ecosystem-os",
+                "sourceDate": "2026-06-28T23:30:36.651Z",
+                "reason": "repo evidence for ecosystem-os",
+                "excerpt": "\"description\": \"Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "exploration-os",
+                "path": "package.json",
+                "nodeId": "repo:exploration-os",
+                "sourceDate": "2026-06-28T17:52:11.592Z",
+                "reason": "repo evidence for exploration-os",
+                "excerpt": "{ \"name\": \"exploration-os\", \"version\": \"2.0.0\","
+              },
+              {
+                "repo": "fabric-os",
+                "path": "package.json",
+                "nodeId": "repo:fabric-os",
+                "sourceDate": "2026-06-28T18:25:03.763Z",
+                "reason": "repo evidence for fabric-os",
+                "excerpt": "\"description\": \"Fabric OS — service fabric execution: Docker, Kubernetes, Terraform, security, and deployment control plane\", \"repository\": { \"type\": \"git\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 8,
+              "oldestSourceDate": "2026-06-28T16:54:24.859Z",
+              "newestSourceDate": "2026-06-29T01:15:19.440Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "repo:agile-os",
+                "repo:baseline-os",
+                "repo:bridge-os",
+                "repo:canon-os",
+                "repo:compliance-os",
+                "repo:ecosystem-os",
+                "repo:exploration-os",
+                "repo:fabric-os"
+              ],
+              "evidencePaths": [
+                "agile-os/package.json",
+                "baseline-os/package.json",
+                "bridge-os/package.json",
+                "canon-os/package.json",
+                "compliance-os/package.json",
+                "ecosystem-os/package.json",
+                "exploration-os/package.json",
+                "fabric-os/package.json"
+              ]
+            }
+          },
+          {
+            "id": "terra-rag-evidence",
+            "query": "What evidence supports terra-os RAG config?",
+            "route": "rag",
+            "routeReason": "source expansion terms detected: evidence, RAG, citation, or config",
+            "answer": "terra-os rag evidence is represented by 3 graph nodes with cited source files.",
+            "confidence": 0.88,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "terra-os",
+                "path": "config/baseline/rag.config.json",
+                "nodeId": "config:terra-os:rag",
+                "sourceDate": "2026-06-28T17:45:44.246Z",
+                "reason": "config evidence for terra-os rag",
+                "excerpt": "{ \"$schema\": \"gtcx://ecosystem-os/rag-config/v1\", \"repo\": \"terra-os\","
+              },
+              {
+                "repo": "terra-os",
+                "path": "audit/evidence/rag-config-latest.json",
+                "nodeId": "evidence:terra-os:ragConfig",
+                "sourceDate": "2026-06-28T17:46:58.922Z",
+                "reason": "evidence evidence for terra-os ragConfig",
+                "excerpt": "{ \"schema\": \"gtcx://terra-os/rag-config-check/v1\", \"generatedAt\": \"2026-06-28T17:46:58.921Z\","
+              },
+              {
+                "repo": "terra-os",
+                "path": "audit/evidence/rag-eval-latest.json",
+                "nodeId": "evidence:terra-os:ragEval",
+                "sourceDate": "2026-06-28T17:47:50.940Z",
+                "reason": "evidence evidence for terra-os ragEval",
+                "excerpt": "\"schemaVersion\": \"1.0\", \"goldenName\": \"terra-os-baseline\", \"goldenVersion\": \"1.0\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T17:45:44.246Z",
+              "newestSourceDate": "2026-06-28T17:47:50.940Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "config:terra-os:rag",
+                "evidence:terra-os:ragConfig",
+                "evidence:terra-os:ragEval"
+              ],
+              "evidencePaths": [
+                "terra-os/config/baseline/rag.config.json",
+                "terra-os/audit/evidence/rag-config-latest.json",
+                "terra-os/audit/evidence/rag-eval-latest.json"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "decision-room",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "mode": "read",
+      "decision": "decision-room-eval-pass",
+      "confidence": 0.85,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.311Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.444Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic answers, evaluator gates, assumptions, unsupported-claim checks, citations, and freshness",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "reason": "retrieval quality and route-selected answer evidence",
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "reason": "current fleet truth used by strategic decisions",
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 product-surface requirement for Decision Room",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [
+        "Decision Room responses are internal strategic synthesis until external artifact approval is recorded."
+      ],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-decision-room-replay",
+          "ownerRepo": "bridge-os",
+          "status": "draft",
+          "validation": "add deterministic replay command for a selected question and witness set"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/kaleidoscope-query-service-latest.json",
+        "audit/evidence/kaleidoscope-observatory-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/decision-room",
+        "summary": {
+          "questionCount": 4,
+          "passedQuestions": 4,
+          "failedQuestions": 0,
+          "averageConfidence": 0.85,
+          "unsupportedClaimWarnings": 0,
+          "staleEvidenceWarnings": 0
+        },
+        "questions": [
+          {
+            "id": "market-leadership-africa",
+            "question": "Where is the strongest market leadership opportunity in African markets?",
+            "classification": {
+              "intent": "market-leadership",
+              "decisionType": "strategy",
+              "route": "hybrid"
+            },
+            "headline": "The strongest opportunity is a governed African commodity-trade operating system: verification, compliance, market infrastructure, and execution intelligence as one evidence-backed platform.",
+            "rationale": [
+              "Current substrate readiness is 20/20 repos with 0 blocker nodes, which means the ecosystem can support an integrated market-leadership narrative now.",
+              "The product thesis is strongest where trust, verification, compliance, and market access reinforce each other rather than shipping as isolated point products.",
+              "The near-term wedge should stay evidence-led: gold/commodity verification, regulator and buyer trust, readiness reporting, and partner execution rooms."
+            ],
+            "recommendedActions": [
+              "Package the Observatory and Decision Room outputs as board/partner evidence, not internal tooling only.",
+              "Use markets-os, compliance-os, gtcx-os, veritas-ai, and griot-ai as the first external narrative spine.",
+              "Keep fabric-os, bridge-os, baseline-os, and canon-os positioned as the operating substrate that makes the market play defensible."
+            ],
+            "confidence": 0.86,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "current ecosystem readiness and blockers",
+                "excerpt": "\"readyRepos\": 20, \"blockerCount\": 0, \"aliasWarningCount\": 0, \"freshEvidenceRepos\": 20,"
+              },
+              {
+                "path": "docs/business/strategy/aws-of-african-commodity-trade-markets.md",
+                "sourceDate": "2026-06-28T11:22:20.690Z",
+                "reason": "African commodity trade market thesis",
+                "excerpt": "--- title: 'Ecosystem OS - AWS of African commodity trade markets' status: current date: 2026-06-26"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/kaleidoscope-ai-product-spec.md",
+                "sourceDate": "2026-06-28T11:44:06.147Z",
+                "reason": "Kaleidoscope product scope and strategic questions",
+                "excerpt": "document_type: product-spec tier: strategic tags: ['kaleidoscope-ai', 'product', 'agentic-ai', 'ecosystem-intelligence'] review_cycle: weekly"
+              }
+            ],
+            "assumptions": [
+              "Market leadership depends on partner trust and execution proof, not only code readiness.",
+              "The current graph/RAG/MCP readiness witness is a sufficient substrate signal, but live customer traction remains a separate evidence track."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T11:22:20.690Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "venture-potential",
+            "question": "Which repos show the strongest venture potential?",
+            "classification": {
+              "intent": "venture-prioritization",
+              "decisionType": "portfolio",
+              "route": "graph+scorecard"
+            },
+            "headline": "The strongest current venture-potential candidates by available MPR evidence are baseline-os (100), fabric-os (100), gtcx-os (91), ecosystem-os (59), compliance-os (59), ledger-ui (59).",
+            "rationale": [
+              "The ranking is evidence-limited: it uses current MPR composite where present, graph/RAG/MCP readiness, and strategic ecosystem role.",
+              "Readiness is broad (20/20), so near-term venture differentiation comes from market surface, trust surface, and defensibility rather than basic substrate readiness.",
+              "gtcx-os, fabric-os, baseline-os, and product-facing market/compliance repos should be treated as portfolio anchors until richer traction metrics are wired."
+            ],
+            "recommendedActions": [
+              "Add traction, partner, revenue, deployment, and user workflow fields to the next Observatory version.",
+              "Separate infrastructure venture value from product venture value so fabric/baseline do not crowd out market-facing repos.",
+              "Use Decision Room outputs to generate investor-ready portfolio briefs with explicit evidence gaps."
+            ],
+            "confidence": 0.8,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "repo readiness, SIGNAL, and MPR columns",
+                "excerpt": "\"signalFleet\": \"audit/evidence/signal-fleet-latest.json\", \"mprRepo\": \"../*/audit/evidence/mpr-repo-latest.json\", \"commercialEvidence\": \"../*/{audit/evidence,docs,operations,machine,agile}/**/*\" },"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.277Z",
+                "reason": "graph snapshot repo readiness nodes",
+                "excerpt": "\"generatedAt\": \"2026-06-29T01:31:17.272Z\", \"repo\": \"ecosystem-os\", \"phase\": \"phase-2-fleet-graph-snapshot\", \"ok\": true,"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "driver repo roles for Phase 2",
+                "excerpt": "| `ecosystem-os` | Kaleidoscope product planning, fleet graph, cross-repo intelligence, product surfaces, fleet witnesses. | | `baseline-os` | Schemas, contracts, scoring calibration, machine-readable specs, witness formats. | | `bridge-os` | Runners, repo/fleet orchestration, connectors, graph/RAG/MCP checks, evidence"
+              }
+            ],
+            "assumptions": [
+              "MPR composite is a useful proxy but not a complete venture score.",
+              "Repos with missing MPR are not low potential; they are currently under-evidenced."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:50:42.672Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "ecosystem-integration",
+            "question": "What is the ecosystem integration strength as a play?",
+            "classification": {
+              "intent": "ecosystem-thesis",
+              "decisionType": "strategy",
+              "route": "graph+observatory"
+            },
+            "headline": "The integration strength is the main product advantage: Kaleidoscope turns repo-local evidence into a fleet-level operating picture with citations, maturity signals, and action routing.",
+            "rationale": [
+              "The graph snapshot has current graph evidence, the query witness passes 4/4 golden questions, and the Observatory shows 20/20 repos ready.",
+              "This creates a product pattern that competitors typically split across dashboards, docs, audits, and agents.",
+              "The core IP is not just RAG; it is governed graph plus retrieval trace plus maturity scoring plus execution routing."
+            ],
+            "recommendedActions": [
+              "Promote graph, query, and Observatory witnesses as the product control loop.",
+              "Add prior snapshot history next so integration strength can show movement, not only current state.",
+              "Keep MCP as the governed tool boundary before adding broader agent-to-agent delegation."
+            ],
+            "confidence": 0.88,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "fleet-level Observatory rollup",
+                "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-29T01:31:17.442Z\", \"repo\": \"ecosystem-os\","
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.311Z",
+                "reason": "golden strategic query results and confidence",
+                "excerpt": "\"queryCount\": 4, \"passedQueries\": 4, \"failedQueries\": 0, \"averageConfidence\": 0.92"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "Phase 2 architecture and retrieval mesh thesis",
+                "excerpt": "-> graph projection -> retrieval mesh -> agent runtime -> evaluator and policy gates"
+              }
+            ],
+            "assumptions": [
+              "The integration claim is bounded to internal ecosystem evidence until external benchmark evidence is attached.",
+              "MCP and graph readiness are necessary but not sufficient for production-grade user experience."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:50:42.672Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "execution-focus",
+            "question": "What should the team do next?",
+            "classification": {
+              "intent": "execution-prioritization",
+              "decisionType": "operating-plan",
+              "route": "observatory+roadmap"
+            },
+            "headline": "Next unblocked work is historical movement and stronger Decision Room evals: add prior graph snapshots, richer strategic golden questions, and owner-routed execution outputs.",
+            "rationale": [
+              "P2.1, P2.2, and P2.3 now produce current graph, query, and Observatory witnesses.",
+              "The main gap explicitly shown by the Observatory is movement unavailable because no prior Kaleidoscope graph snapshot exists.",
+              "Decision Room should now mature from deterministic answers into evaluated decision packets with routeable follow-up work."
+            ],
+            "recommendedActions": [
+              "Add prior/current snapshot comparison and score delta history.",
+              "Expand golden strategic questions for market leadership, venture potential, partnership paths, GTM, and repo uplift.",
+              "Generate owner-routed execution briefs for bridge-os, baseline-os, canon-os, fabric-os, and product repos."
+            ],
+            "confidence": 0.87,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "current movement availability and readiness",
+                "excerpt": "\"answers\": { \"whatChangedSinceLastAudit\": \"Since the last available Kaleidoscope evidence, the current graph snapshot shows 20/20 repos ready, 0 blocker nodes, 0 symlink aliases, and 0 alias warnings. 20 repos have prior/current score movement available. P2.2 query witness passes 4/4 golden questions at 0.92 average co"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "Phase 2 roadmap sequencing",
+                "excerpt": "### P2.4: Decision room MVP Goal: ship evidence-backed strategic Q&A."
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/signal-mpr-integration-plan.md",
+                "sourceDate": "2026-06-28T23:11:04.456Z",
+                "reason": "SIGNAL/MPR maturity and next unlock framing",
+                "excerpt": "tier: strategic tags: ['kaleidoscope-ai', 'signal', 'mpr', 'agentic-maturity', 'evidence'] review_cycle: weekly ---"
+              }
+            ],
+            "assumptions": [
+              "Blocked fabric-os and venture-os PRs should remain separate until their repo gates are fixed.",
+              "The next slice should avoid UI until the evidence/eval contract is stable."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:11:04.456Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "signal",
-      "generatedAt": "2026-06-29T05:09:25.981Z",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
       "mode": "read",
       "decision": "signal-fleet-witness-ready",
       "confidence": 0.9,
@@ -2027,7 +2743,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "release",
-      "generatedAt": "2026-06-29T05:09:25.981Z",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
       "mode": "read",
       "decision": "internal-draft-release-pass",
       "confidence": 0.94,
@@ -2271,7 +2987,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "phase-2",
-      "generatedAt": "2026-06-29T05:09:25.981Z",
+      "generatedAt": "2026-06-29T05:12:25.166Z",
       "mode": "read",
       "decision": "phase-2-complete-for-internal-draft-use",
       "confidence": 0.95,

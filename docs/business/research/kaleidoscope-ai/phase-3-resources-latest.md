@@ -14,9 +14,9 @@ review_cycle: on-change
 
 ## Summary
 
-- Resources: 5/5 valid
+- Resources: 7/7 valid
 - Failed resources: 0
-- Read-only resources: 5
+- Read-only resources: 7
 - External use: blocked_until_explicit_approval
 
 ## Resources
@@ -25,6 +25,8 @@ review_cycle: on-change
 | --- | --- | --- | --- | --- | --- |
 | fleet | /kaleidoscope/fleet | fleet-ready-read-only | fresh | not_required/read | audit/evidence/kaleidoscope-observatory-latest.json, audit/evidence/kaleidoscope-graph-rag-mcp-latest.json, audit/evidence/signal-fleet-latest.json |
 | graph | /kaleidoscope/graph | graph-snapshot-complete | fresh | not_required/read | audit/evidence/kaleidoscope-graph-snapshot-latest.json, audit/evidence/kaleidoscope-graph-rag-mcp-latest.json |
+| query | /kaleidoscope/query | query-golden-eval-pass | fresh | not_required/read | audit/evidence/kaleidoscope-query-service-latest.json, audit/evidence/kaleidoscope-graph-snapshot-latest.json, pm/spec/kaleidoscope-ai/product-surface-api.schema.json |
+| decision-room | /kaleidoscope/decision-room | decision-room-eval-pass | fresh | not_required/read | audit/evidence/kaleidoscope-decision-room-latest.json, audit/evidence/kaleidoscope-query-service-latest.json, audit/evidence/kaleidoscope-observatory-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
 | signal | /kaleidoscope/signal | signal-fleet-witness-ready | fresh | not_required/read | audit/evidence/signal-fleet-latest.json, audit/evidence/kaleidoscope-graph-snapshot-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
 | release | /kaleidoscope/release | internal-draft-release-pass | fresh | blocked_until_explicit_approval/external | audit/evidence/kaleidoscope-release-gates-latest.json, audit/evidence/kaleidoscope-phase-2-completion-latest.json, pm/spec/kaleidoscope-ai/product-surface-api.schema.json |
 | phase-2 | /kaleidoscope/phase-2 | phase-2-complete-for-internal-draft-use | fresh | not_required/read | audit/evidence/kaleidoscope-phase-2-completion-latest.json, audit/evidence/kaleidoscope-release-gates-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
@@ -35,6 +37,8 @@ review_cycle: on-change
 | --- | --- | --- |
 | fleet | pass | none |
 | graph | pass | none |
+| query | pass | none |
+| decision-room | pass | none |
 | signal | pass | none |
 | release | pass | none |
 | phase-2 | pass | none |

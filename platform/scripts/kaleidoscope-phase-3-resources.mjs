@@ -23,7 +23,9 @@ const WITNESS_SCHEMA = 'gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources/v1
 const SOURCES = {
   graphRagMcp: 'audit/evidence/kaleidoscope-graph-rag-mcp-latest.json',
   graphSnapshot: 'audit/evidence/kaleidoscope-graph-snapshot-latest.json',
+  query: 'audit/evidence/kaleidoscope-query-service-latest.json',
   observatory: 'audit/evidence/kaleidoscope-observatory-latest.json',
+  decisionRoom: 'audit/evidence/kaleidoscope-decision-room-latest.json',
   signal: 'audit/evidence/signal-fleet-latest.json',
   releaseGates: 'audit/evidence/kaleidoscope-release-gates-latest.json',
   phase2: 'audit/evidence/kaleidoscope-phase-2-completion-latest.json',
@@ -31,7 +33,7 @@ const SOURCES = {
   responseEnvelope: 'pm/spec/kaleidoscope-ai/product-surface-api.schema.json'
 };
 
-const RESOURCE_ORDER = ['fleet', 'graph', 'signal', 'release', 'phase-2'];
+const RESOURCE_ORDER = ['fleet', 'graph', 'query', 'decision-room', 'signal', 'release', 'phase-2'];
 const VALID_RESOURCES = new Set([
   'fleet',
   'graph',
@@ -120,6 +122,40 @@ function countsBy(items, selector) {
   }, {});
 }
 
+function compactQuery(item) {
+  return {
+    id: item.id,
+    query: item.query,
+    route: item.route,
+    routeReason: item.routeReason,
+    answer: item.answer,
+    confidence: item.confidence,
+    ok: item.ok,
+    issues: item.issues ?? [],
+    citations: item.citations ?? [],
+    freshness: item.freshness,
+    retrieval: item.retrieval
+  };
+}
+
+function compactDecision(item) {
+  return {
+    id: item.id,
+    question: item.question,
+    classification: item.classification,
+    headline: item.answer?.headline,
+    rationale: item.answer?.rationale ?? [],
+    recommendedActions: item.answer?.recommendedActions ?? [],
+    confidence: item.confidence,
+    citations: item.citations ?? [],
+    assumptions: item.assumptions ?? [],
+    unsupportedClaims: item.unsupportedClaims ?? [],
+    ok: item.ok,
+    freshness: item.freshness,
+    evaluation: item.evaluation
+  };
+}
+
 function resource(resource, generatedAt, decision, paths, payload, extra = {}) {
   return {
     schema: RESPONSE_SCHEMA,
@@ -162,7 +198,9 @@ function validateResponse(item) {
 function buildResponses(generatedAt) {
   const graphRagMcp = readJson(SOURCES.graphRagMcp);
   const graphSnapshot = readJson(SOURCES.graphSnapshot);
+  const query = readJson(SOURCES.query);
   const observatory = readJson(SOURCES.observatory);
+  const decisionRoom = readJson(SOURCES.decisionRoom);
   const signal = readJson(SOURCES.signal);
   const releaseGates = readJson(SOURCES.releaseGates);
   const phase2 = readJson(SOURCES.phase2);
@@ -217,6 +255,57 @@ function buildResponses(generatedAt) {
           [SOURCES.graphSnapshot]: 'typed fleet graph nodes, edges, blockers, aliases, and evidence links',
           [SOURCES.graphRagMcp]: 'source readiness for graph, RAG, MCP, and eval configs'
         }
+      }
+    ),
+    resource(
+      'query',
+      generatedAt,
+      query.ok ? 'query-golden-eval-pass' : 'query-golden-eval-fail',
+      [SOURCES.query, SOURCES.graphSnapshot, SOURCES.responseEnvelope],
+      {
+        route: '/kaleidoscope/query',
+        summary: query.summary,
+        graphSnapshot: query.graphSnapshot,
+        queries: (query.queries ?? []).map(compactQuery)
+      },
+      {
+        confidence: query.summary?.averageConfidence ?? null,
+        reasons: {
+          [SOURCES.query]: 'golden strategic query answers, retrieval routes, citations, confidence, and freshness',
+          [SOURCES.graphSnapshot]: 'typed graph source used by the query service',
+          [SOURCES.responseEnvelope]: 'product-surface response envelope contract'
+        }
+      }
+    ),
+    resource(
+      'decision-room',
+      generatedAt,
+      decisionRoom.ok ? 'decision-room-eval-pass' : 'decision-room-eval-fail',
+      [SOURCES.decisionRoom, SOURCES.query, SOURCES.observatory, SOURCES.apiSpec],
+      {
+        route: '/kaleidoscope/decision-room',
+        summary: decisionRoom.summary,
+        questions: (decisionRoom.questions ?? []).map(compactDecision)
+      },
+      {
+        confidence: decisionRoom.summary?.averageConfidence ?? null,
+        reasons: {
+          [SOURCES.decisionRoom]: 'strategic answers, evaluator gates, assumptions, unsupported-claim checks, citations, and freshness',
+          [SOURCES.query]: 'retrieval quality and route-selected answer evidence',
+          [SOURCES.observatory]: 'current fleet truth used by strategic decisions',
+          [SOURCES.apiSpec]: 'Phase 3 product-surface requirement for Decision Room'
+        },
+        assumptions: [
+          'Decision Room responses are internal strategic synthesis until external artifact approval is recorded.'
+        ],
+        nextActions: [
+          {
+            id: 'phase-3-decision-room-replay',
+            ownerRepo: 'bridge-os',
+            status: 'draft',
+            validation: 'add deterministic replay command for a selected question and witness set'
+          }
+        ]
       }
     ),
     resource(
