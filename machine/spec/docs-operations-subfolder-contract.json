@@ -29,7 +29,7 @@
       "purpose": "Release + environment narratives.",
       "documentType": "runbook",
       "requiredFiles": ["README.md"],
-      "allowedRootFiles": ["README.md"],
+      "allowedRootFiles": ["README.md", "deployment-profile.json"],
       "filePatternRegex": "^[a-z0-9-]+\\.md$",
       "filePatternHuman": "{slug}.md",
       "forbidLooseMdAtRoot": false,

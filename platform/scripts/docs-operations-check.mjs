@@ -207,7 +207,13 @@ function main() {
     gates.push(gate(`root:${entry.path}`, existsSync(join(REPO, entry.path)), entry.path));
   }
 
-  const looseRoot = listLooseRootMd(opsDir);
+  const rootAllow = new Set(ROOT_ALLOW);
+  for (const entry of (spec.requiredRootFiles ?? []).filter((e) => !e.path.endsWith('FOLDER-SPEC.md'))) {
+    const name = entry.path.split('/').pop();
+    if (name) rootAllow.add(name);
+  }
+
+  const looseRoot = listLooseRootMd(opsDir, rootAllow);
   gates.push(
     gate(
       'forbid:loose-root-md',
@@ -232,6 +238,9 @@ function main() {
     ...(profile?.optionalSubfolders ?? []),
     'archive',
   ]);
+  if (existsSync(join(opsDir, 'compliance'))) {
+    allowedSubs.add('compliance');
+  }
   const unknownSubs = listUnknownSubfolders(opsDir, allowedSubs);
   gates.push(gate('allowlist:subfolders', unknownSubs.length === 0, unknownSubs.length ? unknownSubs.join(', ') : 'pack profile subfolders'));
 

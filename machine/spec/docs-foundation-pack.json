@@ -53,6 +53,16 @@
       "V"
     ]
   },
+  "profiles": {
+    "product": {
+      "foundationRequired": true,
+      "note": "ecosystem-os product foundation docs are required and mirrored into machine/canon"
+    },
+    "fleet-documentation": {
+      "foundationRequired": true,
+      "extends": "product"
+    }
+  },
   "enforcement": {
     "check": "pnpm docs:foundation:check",
     "witness": "audit/evidence/docs-foundation-latest.json"

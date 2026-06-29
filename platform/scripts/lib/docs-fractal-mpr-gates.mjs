@@ -42,7 +42,8 @@ export function loadPolicy(repoRoot) {
 }
 
 export function loadPack(repoRoot, packRel) {
-  const local = join(repoRoot, packRel);
+  const normalizedRel = packRel.replace(/^pm\/spec\//, 'machine/spec/');
+  const local = join(repoRoot, normalizedRel);
   const canon = join(repoRoot, '../canon-os/pm/spec', packRel.replace(/^pm\/spec\//, ''));
   const path = existsSync(local) ? local : existsSync(canon) ? canon : null;
   if (!path) return null;
