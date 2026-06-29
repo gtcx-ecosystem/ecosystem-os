@@ -1,81 +1,19 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-29T01:23:37.937Z",
+  "generatedAt": "2026-06-29T01:31:17.531Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
   "mode": "draft-only",
   "ok": true,
   "summary": {
-    "actionCount": 1,
-    "okActions": 1,
-    "approvalPendingActions": 1,
-    "releaseBlockedActions": 1,
-    "owners": {
-      "baseline-os": 1
-    }
+    "actionCount": 0,
+    "okActions": 0,
+    "approvalPendingActions": 0,
+    "releaseBlockedActions": 0,
+    "owners": {}
   },
-  "actions": [
-    {
-      "id": "exec-001-signal-l3-trace-policy-pack",
-      "title": "Define the trace, policy, approval, and learning-loop evidence pack for SIGNAL-E L3",
-      "mode": "draft-only",
-      "ownerRepo": "baseline-os",
-      "targetRepos": [
-        "baseline-os",
-        "fabric-os",
-        "bridge-os",
-        "ecosystem-os"
-      ],
-      "priority": "P0",
-      "targetReadinessScore100": 85,
-      "outcome": "A reusable evidence contract that shows exactly what unlocks SIGNAL-E L3 across the fleet.",
-      "rationale": "The SIGNAL fleet runner shows 18 repos at SIGNAL-E L2 and blocks L3 until trace, policy, approval, and learning-loop evidence is published.",
-      "evidence": [
-        {
-          "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T01:23:37.794Z",
-          "reason": "SIGNAL bottlenecks and next unlocks"
-        },
-        {
-          "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
-          "sourceDate": "2026-06-28T23:50:42.672Z",
-          "reason": "Execution Studio draft-mode and approval-boundary requirements"
-        }
-      ],
-      "validationGate": {
-        "type": "local-validation",
-        "command": "pnpm kaleidoscope:signal:check",
-        "successCriteria": "SIGNAL witness remains green and L3 gaps are machine-readable."
-      },
-      "approvalRequest": {
-        "status": "draft_pending_approval",
-        "required": true,
-        "boundary": "spec-change",
-        "reason": "Adding or changing canonical evidence contracts requires owner review.",
-        "allowedWithoutApproval": false
-      },
-      "releaseGate": {
-        "name": "signal-l3-contract-ready",
-        "status": "blocked_until_validation_and_approval",
-        "criteria": [
-          "schema exists",
-          "runner can cite trace/policy/approval evidence",
-          "Observatory surfaces L3 blockers"
-        ]
-      },
-      "draftArtifacts": [
-        "pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json",
-        "docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md"
-      ],
-      "acceptanceCriteria": [
-        "Defines trace, policy, approval, learning-loop, and rollback evidence fields.",
-        "Documents why graph/RAG/MCP readiness alone cannot claim L3.",
-        "Includes validation commands and failure modes."
-      ],
-      "ok": true
-    }
-  ],
+  "actions": [],
   "issues": [],
   "sources": {
     "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",

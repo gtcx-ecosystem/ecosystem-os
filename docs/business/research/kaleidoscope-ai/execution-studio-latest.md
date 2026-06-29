@@ -15,19 +15,17 @@ review_cycle: on-change
 ## Summary
 
 - Mode: draft-only
-- Actions: 1/1 valid
-- Approval pending: 1
-- Release blocked until validation and approval: 1
+- Actions: 0/0 valid
+- Approval pending: 0
+- Release blocked until validation and approval: 0
 
 ## Draft actions
 
 | ID | Owner | Priority | Target repos | Validation | Approval |
 | --- | --- | ---: | --- | --- | --- |
-| exec-001-signal-l3-trace-policy-pack | baseline-os | P0 | baseline-os, fabric-os, bridge-os, ecosystem-os | pnpm kaleidoscope:signal:check | draft_pending_approval |
 
 ## Release gates
 
-- exec-001-signal-l3-trace-policy-pack: signal-l3-contract-ready - blocked_until_validation_and_approval
 
 ## Notes
 

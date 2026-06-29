@@ -1,12 +1,12 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/query-service/v1",
-  "generatedAt": "2026-06-29T01:23:37.729Z",
+  "generatedAt": "2026-06-29T01:31:17.310Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-unified-query-service",
   "ok": true,
   "graphSnapshot": {
     "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
-    "generatedAt": "2026-06-29T01:23:37.688Z",
+    "generatedAt": "2026-06-29T01:31:17.272Z",
     "nodeCount": 240,
     "edgeCount": 220
   },
