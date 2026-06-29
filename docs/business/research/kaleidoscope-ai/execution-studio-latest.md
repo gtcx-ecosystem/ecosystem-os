@@ -15,9 +15,9 @@ review_cycle: on-change
 ## Summary
 
 - Mode: draft-only
-- Actions: 9/9 valid
-- Approval pending: 9
-- Release blocked until validation and approval: 9
+- Actions: 8/8 valid
+- Approval pending: 8
+- Release blocked until validation and approval: 8
 
 ## Draft actions
 
@@ -30,8 +30,7 @@ review_cycle: on-change
 | exec-005-observatory-movement-history | ecosystem-os | P1 | ecosystem-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 | exec-006-market-leadership-partner-room | ecosystem-os | P2 | markets-os, compliance-os, gtcx-os, veritas-ai, griot-ai | pnpm kaleidoscope:decision-room:check | draft_pending_approval |
 | exec-007-inspection-os-commercial-evidence-gap | inspection-os | P1 | inspection-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
-| exec-008-agile-os-commercial-evidence-gap | agile-os | P2 | agile-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
-| exec-009-baseline-os-commercial-evidence-gap | baseline-os | P2 | baseline-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
+| exec-008-baseline-os-commercial-evidence-gap | baseline-os | P2 | baseline-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 
 ## Release gates
 
@@ -42,8 +41,7 @@ review_cycle: on-change
 - exec-005-observatory-movement-history: movement-history-ready - blocked_until_validation_and_approval
 - exec-006-market-leadership-partner-room: partner-room-draft-ready - blocked_until_validation_and_approval
 - exec-007-inspection-os-commercial-evidence-gap: inspection-os-commercial-evidence-ready - blocked_until_validation_and_approval
-- exec-008-agile-os-commercial-evidence-gap: agile-os-commercial-evidence-ready - blocked_until_validation_and_approval
-- exec-009-baseline-os-commercial-evidence-gap: baseline-os-commercial-evidence-ready - blocked_until_validation_and_approval
+- exec-008-baseline-os-commercial-evidence-gap: baseline-os-commercial-evidence-ready - blocked_until_validation_and_approval
 
 ## Notes
 
