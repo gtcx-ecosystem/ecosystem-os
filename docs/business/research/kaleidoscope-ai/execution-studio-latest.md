@@ -15,9 +15,9 @@ review_cycle: on-change
 ## Summary
 
 - Mode: draft-only
-- Actions: 6/6 valid
-- Approval pending: 6
-- Release blocked until validation and approval: 6
+- Actions: 5/5 valid
+- Approval pending: 5
+- Release blocked until validation and approval: 5
 
 ## Draft actions
 
@@ -27,7 +27,6 @@ review_cycle: on-change
 | exec-002-bridge-fleet-execution-runner | bridge-os | P0 | bridge-os, ecosystem-os, agile-os | pnpm kaleidoscope:execution-studio:check | draft_pending_approval |
 | exec-003-mpr-relation-gap | ecosystem-os | P1 | bridge-os, terminal-os | pnpm kaleidoscope:signal:check | draft_pending_approval |
 | exec-004-85-uplift-format | agile-os | P1 | agile-os, baseline-os, bridge-os, canon-os, terminal-os, compliance-os | pnpm kaleidoscope:execution-studio:check | draft_pending_approval |
-| exec-005-observatory-movement-history | ecosystem-os | P1 | ecosystem-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 | exec-006-market-leadership-partner-room | ecosystem-os | P2 | markets-os, compliance-os, gtcx-os, veritas-ai, griot-ai | pnpm kaleidoscope:decision-room:check | draft_pending_approval |
 
 ## Release gates
@@ -36,7 +35,6 @@ review_cycle: on-change
 - exec-002-bridge-fleet-execution-runner: draft-runner-only - blocked_until_validation_and_approval
 - exec-003-mpr-relation-gap: mpr-relation-complete - blocked_until_validation_and_approval
 - exec-004-85-uplift-format: 85-task-format-ready - blocked_until_validation_and_approval
-- exec-005-observatory-movement-history: movement-history-ready - blocked_until_validation_and_approval
 - exec-006-market-leadership-partner-room: partner-room-draft-ready - blocked_until_validation_and_approval
 
 ## Notes
