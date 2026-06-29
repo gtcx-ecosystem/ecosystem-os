@@ -21,6 +21,9 @@ const AGILE_85_SCHEMA_RELS = [
 ];
 const AGILE_85_DOC_REL = 'agile-os/docs/business/research/kaleidoscope-ai/85-uplift-task-format.md';
 const AGILE_85_WITNESS_REL = 'agile-os/machine/ci/85-uplift-action-format-latest.json';
+const BRIDGE_RUNNER_SCHEMA_REL = 'bridge-os/machine/spec/kaleidoscope-ai/fleet-execution-runner.schema.json';
+const BRIDGE_RUNNER_DOC_REL = 'bridge-os/docs/operations/coordination/kaleidoscope-execution-runner-contract.md';
+const BRIDGE_RUNNER_WITNESS_REL = 'bridge-os/machine/ci/kaleidoscope-execution-runner-contract-latest.json';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -199,6 +202,13 @@ function agile85UpliftFormatComplete() {
   return schemaExists && docExists && witness?.ok === true && witness?.summary?.targetReadinessScore100 === 85;
 }
 
+function bridgeRunnerContractComplete() {
+  const schemaExists = existsSync(join(ECOSYSTEM_ROOT, BRIDGE_RUNNER_SCHEMA_REL));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, BRIDGE_RUNNER_DOC_REL));
+  const witness = maybeReadFleetJson(BRIDGE_RUNNER_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.defaultMode === 'draft-only';
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -296,6 +306,37 @@ function buildActions(observatory, decision, signal) {
           ]
         })
       ];
+  const bridgeRunnerAction = bridgeRunnerContractComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-002-bridge-fleet-execution-runner',
+          title: 'Draft the bridge-os fleet execution runner contract',
+          ownerRepo: 'bridge-os',
+          targetRepos: ['bridge-os', 'ecosystem-os', 'agile-os'],
+          priority: 'P0',
+          outcome: 'A bridge-owned runner contract for turning Kaleidoscope draft actions into approved work artifacts.',
+          rationale:
+            'Execution Studio needs a controlled runner boundary before it can create tickets, branches, or repo edits.',
+          evidence: [decisionCitation, phase2Citation],
+          validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Every draft action has owner repo, evidence, validation, approval, and release gate.'),
+          approvalRequest: approval('write-action-runner', 'Any future runner that writes to repos or work systems crosses a state-changing boundary.'),
+          releaseGate: releaseGate('draft-runner-only', [
+            'default mode remains draft-only',
+            'write actions require approval',
+            'owner routing is explicit'
+          ]),
+          draftArtifacts: [
+            'machine/spec/kaleidoscope-ai/fleet-execution-runner.schema.json',
+            'docs/operations/coordination/kaleidoscope-execution-runner-contract.md'
+          ],
+          acceptanceCriteria: [
+            'Runner contract separates draft, write, external, and deploy boundaries.',
+            'Approval request format is embedded in every action.',
+            'No action can ship without a validation gate.'
+          ]
+        })
+      ];
 
   return [
     action({
@@ -325,33 +366,7 @@ function buildActions(observatory, decision, signal) {
         'Includes validation commands and failure modes.'
       ]
     }),
-    action({
-      id: 'exec-002-bridge-fleet-execution-runner',
-      title: 'Draft the bridge-os fleet execution runner contract',
-      ownerRepo: 'bridge-os',
-      targetRepos: ['bridge-os', 'ecosystem-os', 'agile-os'],
-      priority: 'P0',
-      outcome: 'A bridge-owned runner contract for turning Kaleidoscope draft actions into approved work artifacts.',
-      rationale:
-        'Execution Studio needs a controlled runner boundary before it can create tickets, branches, or repo edits.',
-      evidence: [decisionCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Every draft action has owner repo, evidence, validation, approval, and release gate.'),
-      approvalRequest: approval('write-action-runner', 'Any future runner that writes to repos or work systems crosses a state-changing boundary.'),
-      releaseGate: releaseGate('draft-runner-only', [
-        'default mode remains draft-only',
-        'write actions require approval',
-        'owner routing is explicit'
-      ]),
-      draftArtifacts: [
-        'pm/spec/kaleidoscope-ai/execution-action.schema.json',
-        'docs/business/research/kaleidoscope-ai/execution-studio-latest.md'
-      ],
-      acceptanceCriteria: [
-        'Runner contract separates draft, write, external, and deploy boundaries.',
-        'Approval request format is embedded in every action.',
-        'No action can ship without a validation gate.'
-      ]
-    }),
+    ...bridgeRunnerAction,
     ...mprRelationAction,
     ...upliftFormatAction,
     ...movementAction,
