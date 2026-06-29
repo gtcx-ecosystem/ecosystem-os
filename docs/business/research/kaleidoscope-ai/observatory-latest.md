@@ -19,7 +19,7 @@ review_cycle: on-change
 - Alias warnings: 0
 - Fresh evidence repos: 20/20
 - Movement available: true
-- Commercial evidence complete: 18/20
+- Commercial evidence complete: 19/20
 
 ## What changed since the last audit?
 
@@ -46,7 +46,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | agile-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | canon-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | fabric-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 100 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
-| inspection-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 54 | fresh | 0 | tra:ok par:gap rev:gap dep:gap wor:gap |
+| inspection-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 54 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | ledger-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | venture-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 
@@ -71,7 +71,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | agile-os | 5/5 | none |
 | canon-os | 5/5 | none |
 | fabric-os | 5/5 | none |
-| inspection-os | 1/5 | partner, revenue, deployment, workflow |
+| inspection-os | 5/5 | none |
 | ledger-os | 5/5 | none |
 | venture-os | 5/5 | none |
 

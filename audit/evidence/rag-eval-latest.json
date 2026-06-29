@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/rag-eval/v1",
-  "generatedAt": "2026-06-29T00:15:58.362Z",
+  "generatedAt": "2026-06-29T00:35:32.196Z",
   "repo": "ecosystem-os",
   "ok": true,
   "golden": "config/baseline/rag-eval-golden.json",

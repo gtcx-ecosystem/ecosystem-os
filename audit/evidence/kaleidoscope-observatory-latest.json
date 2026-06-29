@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
-  "generatedAt": "2026-06-29T00:15:58.642Z",
+  "generatedAt": "2026-06-29T00:35:32.435Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-observatory-mvp",
   "ok": true,
@@ -23,8 +23,8 @@
     "aliasWarningCount": 0,
     "freshEvidenceRepos": 20,
     "movementAvailable": true,
-    "commercialEvidenceCompleteRepos": 18,
-    "commercialEvidencePartialRepos": 2,
+    "commercialEvidenceCompleteRepos": 19,
+    "commercialEvidencePartialRepos": 1,
     "commercialEvidenceGapRepos": 0
   },
   "repos": [
@@ -393,8 +393,8 @@
       },
       "evidenceFreshness": {
         "fresh": true,
-        "oldestSourceDate": "2026-06-29T00:15:58.366Z",
-        "newestSourceDate": "2026-06-29T00:15:58.367Z",
+        "oldestSourceDate": "2026-06-29T00:35:32.199Z",
+        "newestSourceDate": "2026-06-29T00:35:32.200Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
@@ -2713,37 +2713,49 @@
             "gaps": []
           },
           "partner": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing partner evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "inspection-os/docs/product/gtm/pilot-sow-template.md",
+                "sourceDate": "2026-06-29T00:33:55.276Z"
+              }
+            ],
+            "gaps": []
           },
           "revenue": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing revenue evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "inspection-os/docs/business/economics/revenue-streams.md",
+                "sourceDate": "2026-06-29T00:33:55.275Z"
+              }
+            ],
+            "gaps": []
           },
           "deployment": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing deployment evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "inspection-os/docs/operations/deployment/deployment-profile.json",
+                "sourceDate": "2026-06-29T00:33:55.276Z"
+              }
+            ],
+            "gaps": []
           },
           "workflow": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing workflow evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "inspection-os/docs/product/experience/critical-workflows.md",
+                "sourceDate": "2026-06-29T00:33:55.276Z"
+              }
+            ],
+            "gaps": []
           }
         },
-        "evidencedCategories": 1,
+        "evidencedCategories": 5,
         "categoryCount": 5,
-        "complete": false
+        "complete": true
       },
       "movement": {
         "available": true,
