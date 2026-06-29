@@ -104,6 +104,8 @@
     "kaleidoscope:release-gates:write": "node platform/scripts/kaleidoscope-release-gates.mjs --write",
     "kaleidoscope:operate:check": "node platform/scripts/kaleidoscope-operating-loop.mjs",
     "kaleidoscope:operate:write": "node platform/scripts/kaleidoscope-operating-loop.mjs --write",
+    "kaleidoscope:phase-2:check": "node platform/scripts/kaleidoscope-phase-2-completion.mjs",
+    "kaleidoscope:phase-2:write": "node platform/scripts/kaleidoscope-phase-2-completion.mjs --write",
     "publish:check": "node platform/scripts/publish-register-check.mjs",
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",

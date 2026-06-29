@@ -875,6 +875,13 @@ Operating-loop entrypoint:
 - `pnpm kaleidoscope:operate:check` runs the full read-only stage chain in dependency order and reports the current release posture.
 - `pnpm kaleidoscope:operate:write` regenerates the stage witnesses, emits `audit/evidence/kaleidoscope-operating-loop-latest.json`, and writes `docs/business/research/kaleidoscope-ai/operating-loop-latest.md`.
 
+Phase 2 completion entrypoint:
+
+- `pnpm kaleidoscope:phase-2:check` reads the current generated witnesses and verifies that Phase 2 is complete for internal draft use.
+- `pnpm kaleidoscope:phase-2:write` emits `audit/evidence/kaleidoscope-phase-2-completion-latest.json` and writes `docs/business/research/kaleidoscope-ai/phase-2-completion-latest.md`.
+- The completion gate requires graph/RAG/MCP restore, graph snapshot coverage, query evals, Observatory coverage, Decision Room evidence gates, SIGNAL/MPR relation coverage, an empty Execution Studio queue, partner-brief boundaries, release gates, and the full operating loop to be green.
+- Phase 2 completion does not approve external use. Partner-facing artifacts, investor materials, deployments, and repo-write actions remain blocked until explicit approval.
+
 ## Near-term backlog
 
 | Priority | Work item | Owner repo | Output |
