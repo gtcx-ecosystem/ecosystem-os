@@ -164,6 +164,14 @@ pnpm kaleidoscope:graph-rag-mcp:strict
 
 Strict mode fails when `restored === false`. Use it only when the local fleet checkout is pinned to the intended repo SHAs and canonical side-by-side topology. Non-canonical temp worktrees or missing sibling repos can produce topology failures that are useful for diagnosis but should not be treated as product readiness regressions.
 
+Pinned fleet reproducibility witness:
+
+```bash
+pnpm kaleidoscope:graph-rag-mcp:pin:write
+```
+
+This emits `audit/evidence/kaleidoscope-graph-rag-mcp-strict-fleet-pin-latest.json` and `docs/business/research/kaleidoscope-ai/graph-rag-mcp-strict-fleet-pin-latest.md`. The pin witness records the sibling repo paths, remotes, branches, HEAD SHAs, and dirty-state used for a strict run. A reviewer who cannot reproduce strict pass should compare their sibling repo SHAs and topology against this pin before treating `restored=false` as a product regression.
+
 ### Phase 2: update validators
 
 Update the validation model:
