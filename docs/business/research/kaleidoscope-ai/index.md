@@ -28,6 +28,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`phase-3-product-surface-api.md`](./phase-3-product-surface-api.md) | Phase 3 product surface/API contract for Observatory, Decision Room, Signal Lab, Execution Studio, Partner Room, and release resources. |
 | [`session-closure-readiness-2026-06-29.md`](./session-closure-readiness-2026-06-29.md) | Closure/readiness report, acceptance criteria, validation evidence, and residual risks for the Phase 2 closure and Phase 3 readiness session. |
 | [`independent-session-audit-2026-06-29.md`](./independent-session-audit-2026-06-29.md) | Independent-agent acceptance audit, findings, remediation status, and Phase 3 readiness verdict for the session. |
+| [`feature-complete-handoff-2026-06-29.md`](./feature-complete-handoff-2026-06-29.md) | Feature-complete decision, residual handoff, and acceptance gates separating Phase 3 internal foundation completeness from product completeness. |
 | [`phase-3-qa-handoff-2026-06-29.md`](./phase-3-qa-handoff-2026-06-29.md) | QA-agent handoff, acceptance criteria, local validation commands, and known residual risks for Phase 3 internal development. |
 | [`third-party-tool-evaluation.md`](./third-party-tool-evaluation.md) | Third-party tool plan for Graphify, Understand Anything, graph stores, vector stores, evals, and observability. |
 | [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
