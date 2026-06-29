@@ -24,6 +24,8 @@ const AGILE_85_WITNESS_REL = 'agile-os/machine/ci/85-uplift-action-format-latest
 const BRIDGE_RUNNER_SCHEMA_REL = 'bridge-os/machine/spec/kaleidoscope-ai/fleet-execution-runner.schema.json';
 const BRIDGE_RUNNER_DOC_REL = 'bridge-os/docs/operations/coordination/kaleidoscope-execution-runner-contract.md';
 const BRIDGE_RUNNER_WITNESS_REL = 'bridge-os/machine/ci/kaleidoscope-execution-runner-contract-latest.json';
+const PARTNER_ROOM_REL = 'docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md';
+const PARTNER_BRIEF_REL = 'audit/evidence/kaleidoscope-partner-brief-latest.json';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -209,6 +211,19 @@ function bridgeRunnerContractComplete() {
   return schemaExists && docExists && witness?.ok === true && witness?.summary?.defaultMode === 'draft-only';
 }
 
+function partnerExecutionRoomComplete() {
+  const partnerRoomExists = existsSync(join(REPO, PARTNER_ROOM_REL));
+  const partnerBrief = readJson(PARTNER_BRIEF_REL);
+  return (
+    partnerRoomExists &&
+    partnerBrief?.ok === true &&
+    partnerBrief?.summary?.externalUse === 'blocked_until_explicit_approval' &&
+    partnerBrief?.summary?.unsupportedClaimWarnings === 0 &&
+    (partnerBrief?.summary?.partnerRooms ?? 0) >= 5 &&
+    (partnerBrief?.summary?.claimControls ?? 0) >= 6
+  );
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -335,6 +350,34 @@ function buildActions(observatory, decision, signal) {
             'Approval request format is embedded in every action.',
             'No action can ship without a validation gate.'
           ]
+          })
+        ];
+  const partnerRoomAction = partnerExecutionRoomComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-006-market-leadership-partner-room',
+          title: 'Draft partner-ready market leadership execution room',
+          ownerRepo: 'ecosystem-os',
+          targetRepos: ['markets-os', 'compliance-os', 'gtcx-os', 'veritas-ai', 'griot-ai'],
+          priority: 'P2',
+          outcome: 'A cited partner/investor briefing packet for the African commodity-trade operating-system wedge.',
+          rationale:
+            'Decision Room identifies the governed African commodity-trade operating system as the strongest market leadership opportunity.',
+          evidence: [decisionCitation, readinessCitation],
+          validationGate: gate('pnpm kaleidoscope:decision-room:check', 'Strategic market answer keeps citation, freshness, confidence, and unsupported-claim gates green.'),
+          approvalRequest: approval('external-partner-artifact', 'Partner-facing narratives require approval before external use.'),
+          releaseGate: releaseGate('partner-room-draft-ready', [
+            'claims cite current evidence',
+            'unsupported-claim warnings remain zero',
+            'external use remains blocked until approval'
+          ]),
+          draftArtifacts: [PARTNER_ROOM_REL],
+          acceptanceCriteria: [
+            'Separates internal evidence from external claims.',
+            'Routes market, compliance, and verification repos explicitly.',
+            'Keeps unsupported claims at zero.'
+          ]
         })
       ];
 
@@ -370,30 +413,7 @@ function buildActions(observatory, decision, signal) {
     ...mprRelationAction,
     ...upliftFormatAction,
     ...movementAction,
-    action({
-      id: 'exec-006-market-leadership-partner-room',
-      title: 'Draft partner-ready market leadership execution room',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: ['markets-os', 'compliance-os', 'gtcx-os', 'veritas-ai', 'griot-ai'],
-      priority: 'P2',
-      outcome: 'A cited partner/investor briefing packet for the African commodity-trade operating-system wedge.',
-      rationale:
-        'Decision Room identifies the governed African commodity-trade operating system as the strongest market leadership opportunity.',
-      evidence: [decisionCitation, readinessCitation],
-      validationGate: gate('pnpm kaleidoscope:decision-room:check', 'Strategic market answer keeps citation, freshness, confidence, and unsupported-claim gates green.'),
-      approvalRequest: approval('external-partner-artifact', 'Partner-facing narratives require approval before external use.'),
-      releaseGate: releaseGate('partner-room-draft-ready', [
-        'claims cite current evidence',
-        'unsupported-claim warnings remain zero',
-        'external use remains blocked until approval'
-      ]),
-      draftArtifacts: ['docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md'],
-      acceptanceCriteria: [
-        'Separates internal evidence from external claims.',
-        'Routes market, compliance, and verification repos explicitly.',
-        'Keeps unsupported claims at zero.'
-      ]
-    }),
+    ...partnerRoomAction,
     ...commercialGapActions(observatory, readinessCitation, phase2Citation)
   ];
 }
