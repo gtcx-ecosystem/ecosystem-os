@@ -26,6 +26,8 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`kaleidoscope-ai-agent-architecture.md`](./kaleidoscope-ai-agent-architecture.md) | Agent roster, orchestration model, handoffs, tools, memory, and guardrails. |
 | [`phase-2-agentic-product-architecture.md`](./phase-2-agentic-product-architecture.md) | Phase 2 product architecture, agentic design patterns, roadmap, driver repo responsibilities, and innovation/IP thesis. |
 | [`phase-3-product-surface-api.md`](./phase-3-product-surface-api.md) | Phase 3 product surface/API contract for Observatory, Decision Room, Signal Lab, Execution Studio, Partner Room, and release resources. |
+| [`session-closure-readiness-2026-06-29.md`](./session-closure-readiness-2026-06-29.md) | Closure/readiness report, acceptance criteria, validation evidence, and residual risks for the Phase 2 closure and Phase 3 readiness session. |
+| [`independent-session-audit-2026-06-29.md`](./independent-session-audit-2026-06-29.md) | Independent-agent acceptance audit, findings, remediation status, and Phase 3 readiness verdict for the session. |
 | [`third-party-tool-evaluation.md`](./third-party-tool-evaluation.md) | Third-party tool plan for Graphify, Understand Anything, graph stores, vector stores, evals, and observability. |
 | [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
 | [`signal-mpr-integration-plan.md`](./signal-mpr-integration-plan.md) | Plan to operationalize SIGNAL as an MPR-style agentic maturity witness, runner, and fleet rollup. |
