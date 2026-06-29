@@ -15,9 +15,9 @@ review_cycle: on-change
 ## Summary
 
 - Mode: draft-only
-- Actions: 4/4 valid
-- Approval pending: 4
-- Release blocked until validation and approval: 4
+- Actions: 3/3 valid
+- Approval pending: 3
+- Release blocked until validation and approval: 3
 
 ## Draft actions
 
@@ -25,14 +25,12 @@ review_cycle: on-change
 | --- | --- | ---: | --- | --- | --- |
 | exec-001-signal-l3-trace-policy-pack | baseline-os | P0 | baseline-os, fabric-os, bridge-os, ecosystem-os | pnpm kaleidoscope:signal:check | draft_pending_approval |
 | exec-002-bridge-fleet-execution-runner | bridge-os | P0 | bridge-os, ecosystem-os, agile-os | pnpm kaleidoscope:execution-studio:check | draft_pending_approval |
-| exec-004-85-uplift-format | agile-os | P1 | agile-os, baseline-os, bridge-os, canon-os, terminal-os, compliance-os | pnpm kaleidoscope:execution-studio:check | draft_pending_approval |
 | exec-006-market-leadership-partner-room | ecosystem-os | P2 | markets-os, compliance-os, gtcx-os, veritas-ai, griot-ai | pnpm kaleidoscope:decision-room:check | draft_pending_approval |
 
 ## Release gates
 
 - exec-001-signal-l3-trace-policy-pack: signal-l3-contract-ready - blocked_until_validation_and_approval
 - exec-002-bridge-fleet-execution-runner: draft-runner-only - blocked_until_validation_and_approval
-- exec-004-85-uplift-format: 85-task-format-ready - blocked_until_validation_and_approval
 - exec-006-market-leadership-partner-room: partner-room-draft-ready - blocked_until_validation_and_approval
 
 ## Notes

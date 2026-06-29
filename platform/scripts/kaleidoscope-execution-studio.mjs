@@ -4,6 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
+const ECOSYSTEM_ROOT = resolve(REPO, '..');
 const OUT_REL = 'audit/evidence/kaleidoscope-execution-studio-latest.json';
 const REPORT_REL = 'docs/business/research/kaleidoscope-ai/execution-studio-latest.md';
 const OUT = join(REPO, OUT_REL);
@@ -14,6 +15,12 @@ const SIGNAL_REL = 'audit/evidence/signal-fleet-latest.json';
 const PHASE2_REL = 'docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md';
 const PREVIOUS_GRAPH_REL = 'audit/evidence/kaleidoscope-graph-snapshot-previous.json';
 const MOVEMENT_HISTORY_REL = 'docs/business/research/kaleidoscope-ai/movement-history-baseline.md';
+const AGILE_85_SCHEMA_RELS = [
+  'agile-os/pm/spec/kaleidoscope-ai/85-uplift-action.schema.json',
+  'agile-os/machine/spec/kaleidoscope-ai/85-uplift-action.schema.json'
+];
+const AGILE_85_DOC_REL = 'agile-os/docs/business/research/kaleidoscope-ai/85-uplift-task-format.md';
+const AGILE_85_WITNESS_REL = 'agile-os/machine/ci/85-uplift-action-format-latest.json';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -25,6 +32,14 @@ const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
 
 function readJson(rel) {
   return JSON.parse(readFileSync(join(REPO, rel), 'utf8'));
+}
+
+function maybeReadFleetJson(rel) {
+  try {
+    return JSON.parse(readFileSync(join(ECOSYSTEM_ROOT, rel), 'utf8'));
+  } catch {
+    return null;
+  }
 }
 
 function mtimeIso(rel) {
@@ -177,6 +192,13 @@ function movementHistoryComplete(observatory) {
   );
 }
 
+function agile85UpliftFormatComplete() {
+  const schemaExists = AGILE_85_SCHEMA_RELS.some((rel) => existsSync(join(ECOSYSTEM_ROOT, rel)));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, AGILE_85_DOC_REL));
+  const witness = maybeReadFleetJson(AGILE_85_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.targetReadinessScore100 === 85;
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -245,6 +267,35 @@ function buildActions(observatory, decision, signal) {
             ]
           })
         ];
+  const upliftFormatAction = agile85UpliftFormatComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-004-85-uplift-format',
+          title: 'Define the 8.5 uplift task format',
+          ownerRepo: 'agile-os',
+          targetRepos: lowSignalRepos,
+          priority: 'P1',
+          outcome: 'A repeatable task format that converts repo gaps into 8.5 readiness work.',
+          rationale:
+            'The user goal is 8.5 readiness; Kaleidoscope needs a standard task format before dispatching repo-level uplift work.',
+          evidence: [readinessCitation, phase2Citation],
+          validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Generated actions include target readiness, validation, approval, and release gates.'),
+          approvalRequest: approval('work-management-standard', 'Changing task format affects execution across agile-os and downstream repos.'),
+          releaseGate: releaseGate('85-task-format-ready', [
+            'task format includes evidence refs',
+            'owner repo is mandatory',
+            'validation command is mandatory',
+            'approval status is mandatory'
+          ]),
+          draftArtifacts: ['pm/spec/kaleidoscope-ai/85-uplift-action.schema.json'],
+          acceptanceCriteria: [
+            'Supports repo, fleet, and product-surface actions.',
+            'Maps every task to an 8.5 readiness outcome.',
+            'Can be consumed by agile-os without losing evidence trace.'
+          ]
+        })
+      ];
 
   return [
     action({
@@ -302,31 +353,7 @@ function buildActions(observatory, decision, signal) {
       ]
     }),
     ...mprRelationAction,
-    action({
-      id: 'exec-004-85-uplift-format',
-      title: 'Define the 8.5 uplift task format',
-      ownerRepo: 'agile-os',
-      targetRepos: lowSignalRepos,
-      priority: 'P1',
-      outcome: 'A repeatable task format that converts repo gaps into 8.5 readiness work.',
-      rationale:
-        'The user goal is 8.5 readiness; Kaleidoscope needs a standard task format before dispatching repo-level uplift work.',
-      evidence: [readinessCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Generated actions include target readiness, validation, approval, and release gates.'),
-      approvalRequest: approval('work-management-standard', 'Changing task format affects execution across agile-os and downstream repos.'),
-      releaseGate: releaseGate('85-task-format-ready', [
-        'task format includes evidence refs',
-        'owner repo is mandatory',
-        'validation command is mandatory',
-        'approval status is mandatory'
-      ]),
-      draftArtifacts: ['pm/spec/kaleidoscope-ai/85-uplift-action.schema.json'],
-      acceptanceCriteria: [
-        'Supports repo, fleet, and product-surface actions.',
-        'Maps every task to an 8.5 readiness outcome.',
-        'Can be consumed by agile-os without losing evidence trace.'
-      ]
-    }),
+    ...upliftFormatAction,
     ...movementAction,
     action({
       id: 'exec-006-market-leadership-partner-room',
