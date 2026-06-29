@@ -1,21 +1,21 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-29T00:50:43.352Z",
+  "generatedAt": "2026-06-29T01:01:21.674Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
   "mode": "draft-only",
   "ok": true,
   "summary": {
-    "actionCount": 5,
-    "okActions": 5,
-    "approvalPendingActions": 5,
-    "releaseBlockedActions": 5,
+    "actionCount": 4,
+    "okActions": 4,
+    "approvalPendingActions": 4,
+    "releaseBlockedActions": 4,
     "owners": {
       "baseline-os": 1,
       "bridge-os": 1,
-      "ecosystem-os": 2,
-      "agile-os": 1
+      "agile-os": 1,
+      "ecosystem-os": 1
     }
   },
   "actions": [
@@ -37,7 +37,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.195Z",
+          "sourceDate": "2026-06-29T01:01:21.246Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
@@ -95,7 +95,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.308Z",
+          "sourceDate": "2026-06-29T01:01:21.465Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
@@ -137,63 +137,6 @@
       "ok": true
     },
     {
-      "id": "exec-003-mpr-relation-gap",
-      "title": "Resolve missing MPR relation for bridge-os and terminal-os",
-      "mode": "draft-only",
-      "ownerRepo": "ecosystem-os",
-      "targetRepos": [
-        "bridge-os",
-        "terminal-os"
-      ],
-      "priority": "P1",
-      "targetReadinessScore100": 85,
-      "outcome": "Bridge and terminal no longer appear as under-evidenced in SIGNAL/MPR rollups.",
-      "rationale": "The SIGNAL fleet witness shows missing MPR relation for bridge-os and terminal-os, holding their SIGNAL-E process evidence at L1.",
-      "evidence": [
-        {
-          "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.195Z",
-          "reason": "SIGNAL bottlenecks and next unlocks"
-        },
-        {
-          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.260Z",
-          "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
-        }
-      ],
-      "validationGate": {
-        "type": "local-validation",
-        "command": "pnpm kaleidoscope:signal:check",
-        "successCriteria": "MPR relation count increases or an explicit no-MPR relation witness is published."
-      },
-      "approvalRequest": {
-        "status": "draft_pending_approval",
-        "required": true,
-        "boundary": "cross-repo-evidence",
-        "reason": "Publishing repo evidence or no-MPR relation witnesses affects fleet scoring.",
-        "allowedWithoutApproval": false
-      },
-      "releaseGate": {
-        "name": "mpr-relation-complete",
-        "status": "blocked_until_validation_and_approval",
-        "criteria": [
-          "bridge-os relation resolved",
-          "terminal-os relation resolved",
-          "Observatory MPR column explains n/a states"
-        ]
-      },
-      "draftArtifacts": [
-        "audit/evidence/mpr-relation-gap-latest.json",
-        "docs/business/research/kaleidoscope-ai/mpr-relation-gap.md"
-      ],
-      "acceptanceCriteria": [
-        "Lists the exact repos with missing MPR relation.",
-        "Routes owner review before publishing replacement evidence.",
-        "Keeps SIGNAL score conservative until evidence exists."
-      ],
-      "ok": true
-    },
-    {
       "id": "exec-004-85-uplift-format",
       "title": "Define the 8.5 uplift task format",
       "mode": "draft-only",
@@ -213,7 +156,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.260Z",
+          "sourceDate": "2026-06-29T01:01:21.371Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -273,12 +216,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.308Z",
+          "sourceDate": "2026-06-29T01:01:21.465Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:50:43.260Z",
+          "sourceDate": "2026-06-29T01:01:21.371Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],

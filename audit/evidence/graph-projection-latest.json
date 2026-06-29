@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/graph-projection/v1",
-  "generatedAt": "2026-06-29T00:50:42.981Z",
+  "generatedAt": "2026-06-29T01:01:20.906Z",
   "repo": "ecosystem-os",
   "configOk": true,
   "config": "config/baseline/graph.config.json",

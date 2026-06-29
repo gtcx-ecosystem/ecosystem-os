@@ -21,7 +21,7 @@ review_cycle: on-change
 - SIGNAL-P levels: L0:0 L1:5 L2:15 L3:0 L4:0 L5:0
 - SIGNAL-E levels: L0:0 L1:2 L2:18 L3:0 L4:0 L5:0
 - Graph/RAG/MCP ready repos: 20/20
-- MPR relation available: 18/20
+- MPR relation available: 20/20
 
 ## Calibration
 
@@ -30,10 +30,10 @@ SIGNAL uses a ceiling rule: each axis is limited by its weakest dimension. Curre
 ## Repo results
 
 | Repo | SIGNAL-P | SIGNAL-E | Overall | Graph/RAG/MCP | MPR | Main bottleneck |
-| --- | ---: | ---: | ---: | --- | ---: | --- |
+| --- | ---: | ---: | ---: | --- | --- | --- |
 | agile-os | L1 25/100 | L2 45/100 | L1 25/100 | currentRepoWitness | 59 | systemsArchitecture |
 | baseline-os | L1 25/100 | L2 45/100 | L1 25/100 | currentRepoWitness | 100 | systemsArchitecture |
-| bridge-os | L1 25/100 | L1 25/100 | L1 25/100 | currentRepoWitness | n/a | process |
+| bridge-os | L1 25/100 | L1 25/100 | L1 25/100 | currentRepoWitness | explicit-no-score | process |
 | canon-os | L1 25/100 | L2 45/100 | L1 25/100 | currentRepoWitness | 59 | systemsArchitecture |
 | compliance-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
 | ecosystem-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
@@ -47,7 +47,7 @@ SIGNAL uses a ceiling rule: each axis is limited by its weakest dimension. Curre
 | markets-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
 | nyota-ai | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
 | sensei-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
-| terminal-os | L1 25/100 | L1 25/100 | L1 25/100 | currentRepoWitness | n/a | process |
+| terminal-os | L1 25/100 | L1 25/100 | L1 25/100 | currentRepoWitness | explicit-no-score | process |
 | terra-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
 | venture-os | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
 | veritas-ai | L2 45/100 | L2 45/100 | L2 45/100 | currentRepoWitness | 59 | systemsArchitecture |
@@ -56,9 +56,9 @@ SIGNAL uses a ceiling rule: each axis is limited by its weakest dimension. Curre
 
 - agile-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
 - baseline-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
-- bridge-os: Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.
+- bridge-os: Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.
 - canon-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
-- terminal-os: Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.
+- terminal-os: Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.
 - compliance-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
 - ecosystem-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
 - exploration-os: Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.
