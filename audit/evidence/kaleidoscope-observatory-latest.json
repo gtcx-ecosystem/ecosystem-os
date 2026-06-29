@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
-  "generatedAt": "2026-06-29T00:11:09.331Z",
+  "generatedAt": "2026-06-29T00:15:58.642Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-observatory-mvp",
   "ok": true,
@@ -23,8 +23,8 @@
     "aliasWarningCount": 0,
     "freshEvidenceRepos": 20,
     "movementAvailable": true,
-    "commercialEvidenceCompleteRepos": 17,
-    "commercialEvidencePartialRepos": 3,
+    "commercialEvidenceCompleteRepos": 18,
+    "commercialEvidencePartialRepos": 2,
     "commercialEvidenceGapRepos": 0
   },
   "repos": [
@@ -393,8 +393,8 @@
       },
       "evidenceFreshness": {
         "fresh": true,
-        "oldestSourceDate": "2026-06-29T00:11:09.094Z",
-        "newestSourceDate": "2026-06-29T00:11:09.095Z",
+        "oldestSourceDate": "2026-06-29T00:15:58.366Z",
+        "newestSourceDate": "2026-06-29T00:15:58.367Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
       },
@@ -2257,11 +2257,14 @@
       "commercialEvidence": {
         "categories": {
           "traction": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing traction evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "agile-os/audit/evidence/gtm-readiness-latest.json",
+                "sourceDate": "2026-06-29T00:13:48.089Z"
+              }
+            ],
+            "gaps": []
           },
           "partner": {
             "status": "evidenced",
@@ -2308,9 +2311,9 @@
             "gaps": []
           }
         },
-        "evidencedCategories": 4,
+        "evidencedCategories": 5,
         "categoryCount": 5,
-        "complete": false
+        "complete": true
       },
       "movement": {
         "available": true,
