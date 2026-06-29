@@ -67,7 +67,9 @@ Review these first:
 - `platform/scripts/kaleidoscope-phase-3-resources.mjs`
 - `pm/spec/kaleidoscope-ai/phase-3-resources.schema.json`
 - `audit/evidence/kaleidoscope-phase-3-resources-latest.json`
+- `audit/evidence/kaleidoscope-phase-3-resource-replay-latest.json`
 - `docs/business/research/kaleidoscope-ai/phase-3-resources-latest.md`
+- `docs/business/research/kaleidoscope-ai/phase-3-resource-replay-latest.md`
 - `docs/business/research/kaleidoscope-ai/phase-3-qa-handoff-2026-06-29.md`
 - `docs/business/research/kaleidoscope-ai/index.md`
 - `pm/spec/kaleidoscope-ai/product-surface-api.schema.json`
@@ -113,6 +115,7 @@ Expected resource modes and approval states:
 | qa-10 | Local validation is sufficient and recorded. | Commands below pass or document pre-existing unrelated failures. |
 | qa-11 | The resource harness does not hide source truth. | Payloads are derived from existing witnesses rather than becoming a second source of truth. |
 | qa-12 | Draft resources are product surfaces, not execution tools. | `/actions` and `/partner-room` expose draft state and approval requests only. |
+| qa-13 | Product responses are replayable from the same witness set. | `kaleidoscope-phase-3-resource-replay-latest.json` records semantic fingerprints, witness file hashes, resource order, and approval-boundary validation for all nine resources. |
 
 ## Severity rubric
 
@@ -129,6 +132,7 @@ Run from `ecosystem-os`:
 
 ```bash
 pnpm kaleidoscope:phase-3-resources:check
+pnpm kaleidoscope:phase-3-resource-replay:check
 pnpm docs:business:check
 pnpm ops:check
 pnpm test
@@ -140,6 +144,7 @@ Expected local results from the implementation session:
 | Command | Expected result |
 | --- | --- |
 | `pnpm kaleidoscope:phase-3-resources:check` | Pass; `resources: 9/9`, `failed: 0`, `read-only: 7`, `draft-only: 2`, `external-use: blocked_until_explicit_approval`. |
+| `pnpm kaleidoscope:phase-3-resource-replay:check` | Pass; `resources: 9/9`, `failed: 0`, `order: pass`, `external-use: blocked_until_explicit_approval`. |
 | `pnpm docs:business:check` | Pass; `44/44`. |
 | `pnpm ops:check` | Pass; `ops:check ok`. |
 | `pnpm test` | Pass; `ops:check exits 0`. |
@@ -192,7 +197,7 @@ Do fail this review if the current work claims any of the above is complete.
 Return a concise report in this shape:
 
 1. Findings ordered by severity, with file and line references.
-2. Acceptance matrix for `qa-01` through `qa-12`.
+2. Acceptance matrix for `qa-01` through `qa-13`.
 3. Local validation commands run, including exact pass/fail results.
 4. Regression check against PRs #36 through #41 and Fabric PRs #117 through #119.
 5. Readiness verdict: `pass`, `pass_with_follow_up`, or `fail`.

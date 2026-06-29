@@ -108,6 +108,8 @@
     "kaleidoscope:phase-2:write": "node platform/scripts/kaleidoscope-phase-2-completion.mjs --write",
     "kaleidoscope:phase-3-resources:check": "node platform/scripts/kaleidoscope-phase-3-resources.mjs",
     "kaleidoscope:phase-3-resources:write": "node platform/scripts/kaleidoscope-phase-3-resources.mjs --write",
+    "kaleidoscope:phase-3-resource-replay:check": "node platform/scripts/kaleidoscope-phase-3-resource-replay.mjs",
+    "kaleidoscope:phase-3-resource-replay:write": "node platform/scripts/kaleidoscope-phase-3-resource-replay.mjs --write",
     "publish:check": "node platform/scripts/publish-register-check.mjs",
     "gtm:readiness:check": "node platform/scripts/gtm-readiness-check.mjs",
     "gtm:readiness:check:write": "node platform/scripts/gtm-readiness-check.mjs --write",
