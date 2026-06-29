@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -12,6 +12,8 @@ const OBSERVATORY_REL = 'audit/evidence/kaleidoscope-observatory-latest.json';
 const DECISION_REL = 'audit/evidence/kaleidoscope-decision-room-latest.json';
 const SIGNAL_REL = 'audit/evidence/signal-fleet-latest.json';
 const PHASE2_REL = 'docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md';
+const PREVIOUS_GRAPH_REL = 'audit/evidence/kaleidoscope-graph-snapshot-previous.json';
+const MOVEMENT_HISTORY_REL = 'docs/business/research/kaleidoscope-ai/movement-history-baseline.md';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -167,6 +169,14 @@ function commercialGapActions(observatory, readinessCitation, phase2Citation) {
   );
 }
 
+function movementHistoryComplete(observatory) {
+  return (
+    observatory?.summary?.movementAvailable === true &&
+    existsSync(join(REPO, PREVIOUS_GRAPH_REL)) &&
+    existsSync(join(REPO, MOVEMENT_HISTORY_REL))
+  );
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -174,6 +184,35 @@ function buildActions(observatory, decision, signal) {
   const decisionCitation = citation(DECISION_REL, 'strategic recommendations and execution focus');
   const signalCitation = citation(SIGNAL_REL, 'SIGNAL bottlenecks and next unlocks');
   const phase2Citation = citation(PHASE2_REL, 'Execution Studio draft-mode and approval-boundary requirements');
+
+  const movementAction = movementHistoryComplete(observatory)
+    ? []
+    : [
+        action({
+          id: 'exec-005-observatory-movement-history',
+          title: 'Add prior/current movement history to Observatory',
+          ownerRepo: 'ecosystem-os',
+          targetRepos: ['ecosystem-os'],
+          priority: 'P1',
+          outcome: 'Observatory can answer movement since last audit from prior/current snapshots.',
+          rationale:
+            'The current Observatory explicitly reports movement unavailable because no prior Kaleidoscope graph snapshot is present.',
+          evidence: [readinessCitation, decisionCitation],
+          validationGate: gate('pnpm kaleidoscope:observatory:check', 'movementAvailable becomes true when a prior snapshot fixture is present.'),
+          approvalRequest: approval('evidence-history', 'Adding historical snapshots changes movement analysis and should be reviewed.'),
+          releaseGate: releaseGate('movement-history-ready', [
+            'prior snapshot path documented',
+            'delta fields populated',
+            'Decision Room can cite movement'
+          ]),
+          draftArtifacts: [PREVIOUS_GRAPH_REL],
+          acceptanceCriteria: [
+            'Does not overwrite latest evidence.',
+            'Supports replay from archived snapshots.',
+            'Reports score deltas per repo.'
+          ]
+        })
+      ];
 
   return [
     action({
@@ -282,30 +321,7 @@ function buildActions(observatory, decision, signal) {
         'Can be consumed by agile-os without losing evidence trace.'
       ]
     }),
-    action({
-      id: 'exec-005-observatory-movement-history',
-      title: 'Add prior/current movement history to Observatory',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: ['ecosystem-os'],
-      priority: 'P1',
-      outcome: 'Observatory can answer movement since last audit from prior/current snapshots.',
-      rationale:
-        'The current Observatory explicitly reports movement unavailable because no prior Kaleidoscope graph snapshot is present.',
-      evidence: [readinessCitation, decisionCitation],
-      validationGate: gate('pnpm kaleidoscope:observatory:check', 'movementAvailable becomes true when a prior snapshot fixture is present.'),
-      approvalRequest: approval('evidence-history', 'Adding historical snapshots changes movement analysis and should be reviewed.'),
-      releaseGate: releaseGate('movement-history-ready', [
-        'prior snapshot path documented',
-        'delta fields populated',
-        'Decision Room can cite movement'
-      ]),
-      draftArtifacts: ['audit/evidence/kaleidoscope-graph-snapshot-previous.json'],
-      acceptanceCriteria: [
-        'Does not overwrite latest evidence.',
-        'Supports replay from archived snapshots.',
-        'Reports score deltas per repo.'
-      ]
-    }),
+    ...movementAction,
     action({
       id: 'exec-006-market-leadership-partner-room',
       title: 'Draft partner-ready market leadership execution room',

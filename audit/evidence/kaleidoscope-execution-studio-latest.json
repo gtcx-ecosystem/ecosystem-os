@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-29T00:42:40.468Z",
+  "generatedAt": "2026-06-29T00:50:43.352Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
   "mode": "draft-only",
   "ok": true,
   "summary": {
-    "actionCount": 6,
-    "okActions": 6,
-    "approvalPendingActions": 6,
-    "releaseBlockedActions": 6,
+    "actionCount": 5,
+    "okActions": 5,
+    "approvalPendingActions": 5,
+    "releaseBlockedActions": 5,
     "owners": {
       "baseline-os": 1,
       "bridge-os": 1,
-      "ecosystem-os": 3,
+      "ecosystem-os": 2,
       "agile-os": 1
     }
   },
@@ -37,7 +37,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.326Z",
+          "sourceDate": "2026-06-29T00:50:43.195Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
@@ -95,7 +95,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.426Z",
+          "sourceDate": "2026-06-29T00:50:43.308Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
@@ -152,12 +152,12 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.326Z",
+          "sourceDate": "2026-06-29T00:50:43.195Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.376Z",
+          "sourceDate": "2026-06-29T00:50:43.260Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],
@@ -213,7 +213,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.376Z",
+          "sourceDate": "2026-06-29T00:50:43.260Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         },
         {
@@ -255,61 +255,6 @@
       "ok": true
     },
     {
-      "id": "exec-005-observatory-movement-history",
-      "title": "Add prior/current movement history to Observatory",
-      "mode": "draft-only",
-      "ownerRepo": "ecosystem-os",
-      "targetRepos": [
-        "ecosystem-os"
-      ],
-      "priority": "P1",
-      "targetReadinessScore100": 85,
-      "outcome": "Observatory can answer movement since last audit from prior/current snapshots.",
-      "rationale": "The current Observatory explicitly reports movement unavailable because no prior Kaleidoscope graph snapshot is present.",
-      "evidence": [
-        {
-          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.376Z",
-          "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
-        },
-        {
-          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.426Z",
-          "reason": "strategic recommendations and execution focus"
-        }
-      ],
-      "validationGate": {
-        "type": "local-validation",
-        "command": "pnpm kaleidoscope:observatory:check",
-        "successCriteria": "movementAvailable becomes true when a prior snapshot fixture is present."
-      },
-      "approvalRequest": {
-        "status": "draft_pending_approval",
-        "required": true,
-        "boundary": "evidence-history",
-        "reason": "Adding historical snapshots changes movement analysis and should be reviewed.",
-        "allowedWithoutApproval": false
-      },
-      "releaseGate": {
-        "name": "movement-history-ready",
-        "status": "blocked_until_validation_and_approval",
-        "criteria": [
-          "prior snapshot path documented",
-          "delta fields populated",
-          "Decision Room can cite movement"
-        ]
-      },
-      "draftArtifacts": [
-        "audit/evidence/kaleidoscope-graph-snapshot-previous.json"
-      ],
-      "acceptanceCriteria": [
-        "Does not overwrite latest evidence.",
-        "Supports replay from archived snapshots.",
-        "Reports score deltas per repo."
-      ],
-      "ok": true
-    },
-    {
       "id": "exec-006-market-leadership-partner-room",
       "title": "Draft partner-ready market leadership execution room",
       "mode": "draft-only",
@@ -328,12 +273,12 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.426Z",
+          "sourceDate": "2026-06-29T00:50:43.308Z",
           "reason": "strategic recommendations and execution focus"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:42:40.376Z",
+          "sourceDate": "2026-06-29T00:50:43.260Z",
           "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
         }
       ],
