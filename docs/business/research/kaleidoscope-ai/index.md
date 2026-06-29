@@ -55,7 +55,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`../../../../pm/spec/kaleidoscope-ai/operating-loop.schema.json`](../../../../pm/spec/kaleidoscope-ai/operating-loop.schema.json) | Operating-loop witness contract for ordered Kaleidoscope stage execution and release posture. |
 | [`../../../../pm/spec/kaleidoscope-ai/phase-2-completion.schema.json`](../../../../pm/spec/kaleidoscope-ai/phase-2-completion.schema.json) | Phase 2 completion witness contract for internal draft release closure and Phase 3 readiness. |
 | [`../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json`](../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json) | Phase 3 product surface API response envelope for cited, fresh, approval-aware resources. |
-| [`../../../../pm/spec/kaleidoscope-ai/phase-3-resources.schema.json`](../../../../pm/spec/kaleidoscope-ai/phase-3-resources.schema.json) | Phase 3 internal read-only resources witness contract for `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/release`, and `/phase-2`. |
+| [`../../../../pm/spec/kaleidoscope-ai/phase-3-resources.schema.json`](../../../../pm/spec/kaleidoscope-ai/phase-3-resources.schema.json) | Phase 3 internal product resources witness contract for `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/actions`, `/partner-room`, `/release`, and `/phase-2`. |
 | [`../../../../pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json`](../../../../pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json) | SIGNAL L3 evidence pack contract for trace, policy, approval, eval, rollback, and learning-loop evidence. |
 | [`../../../../pm/spec/kaleidoscope-ai/mpr-relation-gap.schema.json`](../../../../pm/spec/kaleidoscope-ai/mpr-relation-gap.schema.json) | MPR relation gap witness contract for repos with missing MPR/SIGNAL relation evidence. |
 | [`../../../../pm/spec/kaleidoscope-ai/85-uplift-action.schema.json`](../../../../pm/spec/kaleidoscope-ai/85-uplift-action.schema.json) | 8.5 uplift action contract for owner routing, evidence, validation, approval, and release gates. |
@@ -82,7 +82,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`release-gates-latest.md`](./release-gates-latest.md) | Read-only release-gate report generated from current evidence. |
 | [`operating-loop-latest.md`](./operating-loop-latest.md) | Read-only operating-loop report generated from current evidence. |
 | [`phase-2-completion-latest.md`](./phase-2-completion-latest.md) | Read-only Phase 2 closure and Phase 3 readiness report generated from current evidence. |
-| [`phase-3-resources-latest.md`](./phase-3-resources-latest.md) | Read-only Phase 3 resource response report generated from current evidence. |
+| [`phase-3-resources-latest.md`](./phase-3-resources-latest.md) | Phase 3 product resource response report generated from current evidence. |
 | [`signal-l3-evidence-pack.md`](./signal-l3-evidence-pack.md) | SIGNAL L3 evidence-pack specification for orchestrated agentic maturity. |
 | [`mpr-relation-gap.md`](./mpr-relation-gap.md) | Read-only MPR relation gap report for repos with missing MPR relation evidence. |
 | [`85-uplift-action.md`](./85-uplift-action.md) | 8.5 uplift action format for Evidence Studio to Agile OS handoff. |

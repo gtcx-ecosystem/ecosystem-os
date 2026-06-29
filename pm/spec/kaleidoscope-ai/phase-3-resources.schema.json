@@ -19,7 +19,7 @@
     "generatedAt": { "type": "string", "format": "date-time" },
     "date": { "type": "string" },
     "repo": { "const": "ecosystem-os" },
-    "phase": { "const": "phase-3-internal-read-only-resources" },
+    "phase": { "const": "phase-3-internal-product-resources" },
     "ok": { "type": "boolean" },
     "summary": {
       "type": "object",
@@ -30,6 +30,7 @@
         "failedResourceChecks",
         "failedResources",
         "readOnlyResources",
+        "draftResources",
         "externalUse"
       ],
       "properties": {
@@ -45,6 +46,7 @@
           "items": { "type": "string" }
         },
         "readOnlyResources": { "type": "integer", "minimum": 0 },
+        "draftResources": { "type": "integer", "minimum": 0 },
         "externalUse": { "const": "blocked_until_explicit_approval" }
       },
       "additionalProperties": true

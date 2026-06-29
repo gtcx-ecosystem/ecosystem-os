@@ -1,25 +1,28 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources/v1",
-  "generatedAt": "2026-06-29T05:12:25.166Z",
+  "generatedAt": "2026-06-29T05:15:17.617Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
-  "phase": "phase-3-internal-read-only-resources",
+  "phase": "phase-3-internal-product-resources",
   "ok": true,
   "summary": {
-    "resourceCount": 7,
+    "resourceCount": 9,
     "resources": [
       "fleet",
       "graph",
       "query",
       "decision-room",
       "signal",
+      "actions",
+      "partner-room",
       "release",
       "phase-2"
     ],
-    "passedResourceChecks": 7,
+    "passedResourceChecks": 9,
     "failedResourceChecks": 0,
     "failedResources": [],
     "readOnlyResources": 7,
+    "draftResources": 2,
     "externalUse": "blocked_until_explicit_approval"
   },
   "validation": [
@@ -49,6 +52,16 @@
       "issues": []
     },
     {
+      "resource": "actions",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "partner-room",
+      "ok": true,
+      "issues": []
+    },
+    {
       "resource": "release",
       "ok": true,
       "issues": []
@@ -63,7 +76,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "fleet",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "fleet-ready-read-only",
       "confidence": 0.95,
@@ -1002,7 +1015,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "graph",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "graph-snapshot-complete",
       "confidence": 0.96,
@@ -1457,7 +1470,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "query",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "query-golden-eval-pass",
       "confidence": 0.92,
@@ -1837,7 +1850,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "decision-room",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "decision-room-eval-pass",
       "confidence": 0.85,
@@ -2161,7 +2174,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "signal",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "signal-fleet-witness-ready",
       "confidence": 0.9,
@@ -2742,8 +2755,323 @@
     },
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "actions",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "draft",
+      "decision": "actions-draft-queue-ready",
+      "confidence": 0.9,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.534Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/signal-fleet-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.370Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "reason": "draft action queue, owner routing, validation, approval, and release-gate state",
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic source questions that can produce draft actions",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "reason": "agentic maturity source for SIGNAL uplift actions",
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 product-surface requirement for Execution Studio",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "draft_pending_approval",
+        "boundary": "draft",
+        "reason": "Draft-only action surface. It can display or generate internal draft actions but cannot create issues, write repos, deploy, publish, or contact external parties without explicit approval.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-actions-approval-record",
+          "ownerRepo": "agile-os",
+          "status": "approval_required",
+          "validation": "add acceptance and approval records before any draft action becomes repo write or ticket creation"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-execution-studio-latest.json",
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/signal-fleet-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/actions",
+        "summary": {
+          "actionCount": 0,
+          "okActions": 0,
+          "approvalPendingActions": 0,
+          "releaseBlockedActions": 0,
+          "owners": {}
+        },
+        "mode": "draft-only",
+        "actions": [],
+        "issues": []
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "partner-room",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "draft",
+      "decision": "partner-room-draft-ready-external-blocked",
+      "confidence": 0.88,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.577Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.444Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.534Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+          "reason": "partner-room gates, claim controls, movement caveat, and external-use boundary",
+          "sourceDate": "2026-06-29T01:31:17.577Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic claims and cited partner narrative source",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "reason": "current fleet readiness and movement source",
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "reason": "approval-boundary source for partner-facing actions",
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "blocked_until_explicit_approval",
+        "boundary": "external",
+        "reason": "Partner Room can assemble internal drafts only. External sharing requires explicit approval for the specific artifact and audience.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-partner-room-approval-record",
+          "ownerRepo": "canon-os",
+          "status": "approval_required",
+          "validation": "record audience-specific approval before partner, investor, buyer, regulator, operator, or DFI use"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-partner-brief-latest.json",
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/kaleidoscope-observatory-latest.json",
+        "audit/evidence/kaleidoscope-execution-studio-latest.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/partner-room",
+        "summary": {
+          "gateCount": 8,
+          "passedGates": 8,
+          "failedGates": 0,
+          "blockers": [],
+          "externalUse": "blocked_until_explicit_approval",
+          "approvalStatus": "draft_pending_approval",
+          "partnerRooms": 5,
+          "claimControls": 6,
+          "unsupportedClaimWarnings": 0,
+          "movementAvailable": true
+        },
+        "gates": [
+          {
+            "id": "source-witnesses-ok",
+            "label": "Required source witnesses are green",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "Decision Room strategic answer witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "Observatory readiness and movement witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "Execution Studio approval-boundary witness"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass when upstream strategic or execution witnesses are not ok."
+          },
+          {
+            "id": "market-question-eval",
+            "label": "Market-leadership answer passes citation, freshness, confidence, and unsupported-claim gates",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "market-leadership decision packet"
+              }
+            ],
+            "failureMode": "Partner narrative cannot pass when the source market-leadership answer fails evaluation."
+          },
+          {
+            "id": "partner-room-present",
+            "label": "Partner execution room draft is present",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "partner execution room draft"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without a source evidence map."
+          },
+          {
+            "id": "partner-rooms-covered",
+            "label": "Partner-specific rooms are covered",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "partner room sections"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass unless bank/DFI, regulator, buyer, operator, and investor rooms are all represented."
+          },
+          {
+            "id": "claim-controls-present",
+            "label": "Claim controls are explicit",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "claim controls table"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without claim posture and external-use rules."
+          },
+          {
+            "id": "external-use-blocked",
+            "label": "External use remains blocked until explicit approval",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "external-use frontmatter and body warning"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "Execution Studio approval request"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass if the artifact can be used externally without approval."
+          },
+          {
+            "id": "movement-caveat-present",
+            "label": "Movement baseline caveat is present",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "movement caveat"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "movement availability"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass if zero-delta movement can be misread as historical improvement."
+          },
+          {
+            "id": "safety-doctrine-linked",
+            "label": "Safety and release doctrine is linked",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md",
+                "sourceDate": "2026-06-28T11:44:06.145Z",
+                "reason": "release safety doctrine"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without linked safety and approval doctrine."
+          }
+        ],
+        "sources": {
+          "partnerRoom": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "decision": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "execution": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "safetyPlan": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md"
+        }
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "release",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "internal-draft-release-pass",
       "confidence": 0.94,
@@ -2987,7 +3315,7 @@
     {
       "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
       "resource": "phase-2",
-      "generatedAt": "2026-06-29T05:12:25.166Z",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
       "mode": "read",
       "decision": "phase-2-complete-for-internal-draft-use",
       "confidence": 0.95,

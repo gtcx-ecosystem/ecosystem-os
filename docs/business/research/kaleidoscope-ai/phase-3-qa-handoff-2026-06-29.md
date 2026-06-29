@@ -25,7 +25,7 @@ Validate that the merged session work establishes a safe internal foundation for
 - Phase 2 is closed for internal draft use only;
 - Phase 3 product-surface response envelope is specified;
 - trace/eval sink work in `fabric-os` is locally validated and audit-remediated;
-- new Phase 3 read-only resources in `ecosystem-os` return approval-aware, cited, fresh product-surface envelopes;
+- new Phase 3 internal product resources in `ecosystem-os` return approval-aware, cited, fresh product-surface envelopes;
 - external use remains blocked until explicit artifact and audience approval exists.
 
 ## Merged work to review
@@ -41,7 +41,7 @@ Validate that the merged session work establishes a safe internal foundation for
 
 ## Current Phase 3 branch under review
 
-The active internal-development branch adds the read-only Phase 3 resource harness:
+The active internal-development branch adds the Phase 3 resource harness:
 
 - `platform/scripts/kaleidoscope-phase-3-resources.mjs`
 - `pm/spec/kaleidoscope-ai/phase-3-resources.schema.json`
@@ -49,17 +49,17 @@ The active internal-development branch adds the read-only Phase 3 resource harne
 - `docs/business/research/kaleidoscope-ai/phase-3-resources-latest.md`
 - `docs/business/research/kaleidoscope-ai/phase-3-qa-handoff-2026-06-29.md`
 
-The current harness covers `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/release`, and `/phase-2`.
+The current harness covers `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/actions`, `/partner-room`, `/release`, and `/phase-2`.
 
 ## Acceptance criteria
 
 | ID | Criterion | Expected result |
 | --- | --- | --- |
 | qa-01 | Phase 2 closure remains internal-only. | `kaleidoscope-phase-2-completion-latest.json` says `phase-2-complete-for-internal-draft-use` and external use is blocked. |
-| qa-02 | Product-surface responses conform to the envelope. | `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/release`, and `/phase-2` responses include `resource`, `generatedAt`, `mode`, `decision`, `freshness`, `citations`, `approval`, and `witnesses`. |
+| qa-02 | Product-surface responses conform to the envelope. | `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/actions`, `/partner-room`, `/release`, and `/phase-2` responses include `resource`, `generatedAt`, `mode`, `decision`, `freshness`, `citations`, `approval`, and `witnesses`. |
 | qa-03 | Responses are evidence-backed. | Every response has non-empty citations and source witness lineage. |
 | qa-04 | Responses are freshness-aware. | Every response includes source dates and a freshness status. |
-| qa-05 | Approval boundaries are preserved. | Read resources remain read-only; release/external-use responses stay blocked until explicit approval. |
+| qa-05 | Approval boundaries are preserved. | Read resources remain read-only; draft resources do not execute writes or external actions; release and partner-room external use stay blocked until explicit approval. |
 | qa-06 | No external or write action is performed. | The runner only reads evidence and writes generated local witness/report files when `--write` is used. |
 | qa-07 | Fabric trace/eval sink remediation holds. | `inputRefs` are canonicalized into event IDs and schema docs use tracked `machine/spec/...` paths. |
 | qa-08 | Documentation is discoverable. | Kaleidoscope index links the handoff, Phase 3 resource schema, witness, and generated report. |
