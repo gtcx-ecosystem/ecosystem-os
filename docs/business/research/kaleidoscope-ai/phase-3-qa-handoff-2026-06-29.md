@@ -49,12 +49,14 @@ The active internal-development branch adds the read-only Phase 3 resource harne
 - `docs/business/research/kaleidoscope-ai/phase-3-resources-latest.md`
 - `docs/business/research/kaleidoscope-ai/phase-3-qa-handoff-2026-06-29.md`
 
+The current harness covers `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/release`, and `/phase-2`.
+
 ## Acceptance criteria
 
 | ID | Criterion | Expected result |
 | --- | --- | --- |
 | qa-01 | Phase 2 closure remains internal-only. | `kaleidoscope-phase-2-completion-latest.json` says `phase-2-complete-for-internal-draft-use` and external use is blocked. |
-| qa-02 | Product-surface responses conform to the envelope. | `/fleet`, `/graph`, `/signal`, `/release`, and `/phase-2` responses include `resource`, `generatedAt`, `mode`, `decision`, `freshness`, `citations`, `approval`, and `witnesses`. |
+| qa-02 | Product-surface responses conform to the envelope. | `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/release`, and `/phase-2` responses include `resource`, `generatedAt`, `mode`, `decision`, `freshness`, `citations`, `approval`, and `witnesses`. |
 | qa-03 | Responses are evidence-backed. | Every response has non-empty citations and source witness lineage. |
 | qa-04 | Responses are freshness-aware. | Every response includes source dates and a freshness status. |
 | qa-05 | Approval boundaries are preserved. | Read resources remain read-only; release/external-use responses stay blocked until explicit approval. |
