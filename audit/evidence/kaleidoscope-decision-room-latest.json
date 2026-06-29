@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/decision-room/v1",
-  "generatedAt": "2026-06-29T01:19:13.256Z",
+  "generatedAt": "2026-06-29T01:23:37.894Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-decision-room-mvp",
   "ok": true,
@@ -76,7 +76,7 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.210Z",
+          "sourceDate": "2026-06-29T01:23:37.847Z",
           "reason": "current ecosystem readiness and blockers",
           "excerpt": "\"readyRepos\": 20, \"blockerCount\": 0, \"aliasWarningCount\": 0, \"freshEvidenceRepos\": 20,"
         },
@@ -102,7 +102,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T11:22:20.690Z",
-        "newestSourceDate": "2026-06-29T01:19:13.210Z",
+        "newestSourceDate": "2026-06-29T01:23:37.847Z",
         "stale": false
       },
       "evaluation": {
@@ -161,15 +161,15 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.210Z",
+          "sourceDate": "2026-06-29T01:23:37.847Z",
           "reason": "repo readiness, SIGNAL, and MPR columns",
           "excerpt": "\"signalFleet\": \"audit/evidence/signal-fleet-latest.json\", \"mprRepo\": \"../*/audit/evidence/mpr-repo-latest.json\", \"commercialEvidence\": \"../*/{audit/evidence,docs,operations,machine,agile}/**/*\" },"
         },
         {
           "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.018Z",
+          "sourceDate": "2026-06-29T01:23:37.695Z",
           "reason": "graph snapshot repo readiness nodes",
-          "excerpt": "\"generatedAt\": \"2026-06-29T01:19:13.011Z\", \"repo\": \"ecosystem-os\", \"phase\": \"phase-2-fleet-graph-snapshot\", \"ok\": true,"
+          "excerpt": "\"generatedAt\": \"2026-06-29T01:23:37.688Z\", \"repo\": \"ecosystem-os\", \"phase\": \"phase-2-fleet-graph-snapshot\", \"ok\": true,"
         },
         {
           "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
@@ -187,7 +187,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T23:50:42.672Z",
-        "newestSourceDate": "2026-06-29T01:19:13.210Z",
+        "newestSourceDate": "2026-06-29T01:23:37.847Z",
         "stale": false
       },
       "evaluation": {
@@ -246,13 +246,13 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.210Z",
+          "sourceDate": "2026-06-29T01:23:37.847Z",
           "reason": "fleet-level Observatory rollup",
-          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-29T01:19:13.203Z\", \"repo\": \"ecosystem-os\","
+          "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-29T01:23:37.844Z\", \"repo\": \"ecosystem-os\","
         },
         {
           "path": "audit/evidence/kaleidoscope-query-service-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.057Z",
+          "sourceDate": "2026-06-29T01:23:37.730Z",
           "reason": "golden strategic query results and confidence",
           "excerpt": "\"queryCount\": 4, \"passedQueries\": 4, \"failedQueries\": 0, \"averageConfidence\": 0.92"
         },
@@ -272,7 +272,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T23:50:42.672Z",
-        "newestSourceDate": "2026-06-29T01:19:13.210Z",
+        "newestSourceDate": "2026-06-29T01:23:37.847Z",
         "stale": false
       },
       "evaluation": {
@@ -331,7 +331,7 @@
       "citations": [
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.210Z",
+          "sourceDate": "2026-06-29T01:23:37.847Z",
           "reason": "current movement availability and readiness",
           "excerpt": "\"answers\": { \"whatChangedSinceLastAudit\": \"Since the last available Kaleidoscope evidence, the current graph snapshot shows 20/20 repos ready, 0 blocker nodes, 0 symlink aliases, and 0 alias warnings. 20 repos have prior/current score movement available. P2.2 query witness passes 4/4 golden questions at 0.92 average co"
         },
@@ -357,7 +357,7 @@
       "freshness": {
         "sourceDateCount": 3,
         "oldestSourceDate": "2026-06-28T23:11:04.456Z",
-        "newestSourceDate": "2026-06-29T01:19:13.210Z",
+        "newestSourceDate": "2026-06-29T01:23:37.847Z",
         "stale": false
       },
       "evaluation": {

@@ -1,19 +1,18 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/execution-studio/v1",
-  "generatedAt": "2026-06-29T01:19:13.298Z",
+  "generatedAt": "2026-06-29T01:23:37.937Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-execution-studio-draft-mode",
   "mode": "draft-only",
   "ok": true,
   "summary": {
-    "actionCount": 2,
-    "okActions": 2,
-    "approvalPendingActions": 2,
-    "releaseBlockedActions": 2,
+    "actionCount": 1,
+    "okActions": 1,
+    "approvalPendingActions": 1,
+    "releaseBlockedActions": 1,
     "owners": {
-      "baseline-os": 1,
-      "ecosystem-os": 1
+      "baseline-os": 1
     }
   },
   "actions": [
@@ -35,7 +34,7 @@
       "evidence": [
         {
           "path": "audit/evidence/signal-fleet-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.117Z",
+          "sourceDate": "2026-06-29T01:23:37.794Z",
           "reason": "SIGNAL bottlenecks and next unlocks"
         },
         {
@@ -73,65 +72,6 @@
         "Defines trace, policy, approval, learning-loop, and rollback evidence fields.",
         "Documents why graph/RAG/MCP readiness alone cannot claim L3.",
         "Includes validation commands and failure modes."
-      ],
-      "ok": true
-    },
-    {
-      "id": "exec-006-market-leadership-partner-room",
-      "title": "Draft partner-ready market leadership execution room",
-      "mode": "draft-only",
-      "ownerRepo": "ecosystem-os",
-      "targetRepos": [
-        "markets-os",
-        "compliance-os",
-        "gtcx-os",
-        "veritas-ai",
-        "griot-ai"
-      ],
-      "priority": "P2",
-      "targetReadinessScore100": 85,
-      "outcome": "A cited partner/investor briefing packet for the African commodity-trade operating-system wedge.",
-      "rationale": "Decision Room identifies the governed African commodity-trade operating system as the strongest market leadership opportunity.",
-      "evidence": [
-        {
-          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.258Z",
-          "reason": "strategic recommendations and execution focus"
-        },
-        {
-          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T01:19:13.210Z",
-          "reason": "current fleet readiness, MPR, SIGNAL, and blockers"
-        }
-      ],
-      "validationGate": {
-        "type": "local-validation",
-        "command": "pnpm kaleidoscope:decision-room:check",
-        "successCriteria": "Strategic market answer keeps citation, freshness, confidence, and unsupported-claim gates green."
-      },
-      "approvalRequest": {
-        "status": "draft_pending_approval",
-        "required": true,
-        "boundary": "external-partner-artifact",
-        "reason": "Partner-facing narratives require approval before external use.",
-        "allowedWithoutApproval": false
-      },
-      "releaseGate": {
-        "name": "partner-room-draft-ready",
-        "status": "blocked_until_validation_and_approval",
-        "criteria": [
-          "claims cite current evidence",
-          "unsupported-claim warnings remain zero",
-          "external use remains blocked until approval"
-        ]
-      },
-      "draftArtifacts": [
-        "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md"
-      ],
-      "acceptanceCriteria": [
-        "Separates internal evidence from external claims.",
-        "Routes market, compliance, and verification repos explicitly.",
-        "Keeps unsupported claims at zero."
       ],
       "ok": true
     }
