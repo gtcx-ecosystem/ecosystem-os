@@ -25,6 +25,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`kaleidoscope-ai-product-spec.md`](./kaleidoscope-ai-product-spec.md) | Product spec, user surfaces, features, and MVP workflows. |
 | [`kaleidoscope-ai-agent-architecture.md`](./kaleidoscope-ai-agent-architecture.md) | Agent roster, orchestration model, handoffs, tools, memory, and guardrails. |
 | [`phase-2-agentic-product-architecture.md`](./phase-2-agentic-product-architecture.md) | Phase 2 product architecture, agentic design patterns, roadmap, driver repo responsibilities, and innovation/IP thesis. |
+| [`phase-3-product-surface-api.md`](./phase-3-product-surface-api.md) | Phase 3 product surface/API contract for Observatory, Decision Room, Signal Lab, Execution Studio, Partner Room, and release resources. |
 | [`third-party-tool-evaluation.md`](./third-party-tool-evaluation.md) | Third-party tool plan for Graphify, Understand Anything, graph stores, vector stores, evals, and observability. |
 | [`evidence-eval-safety-release-gates.md`](./evidence-eval-safety-release-gates.md) | Evidence, eval, safety, and release gates for Kaleidoscope AI. |
 | [`signal-mpr-integration-plan.md`](./signal-mpr-integration-plan.md) | Plan to operationalize SIGNAL as an MPR-style agentic maturity witness, runner, and fleet rollup. |
@@ -50,6 +51,7 @@ Kaleidoscope AI is the ecosystem-level intelligence layer for GTCX. It should si
 | [`../../../../pm/spec/kaleidoscope-ai/release-gates.schema.json`](../../../../pm/spec/kaleidoscope-ai/release-gates.schema.json) | Release-gate witness contract for eval, citation, freshness, confidence, and approval-boundary gates. |
 | [`../../../../pm/spec/kaleidoscope-ai/operating-loop.schema.json`](../../../../pm/spec/kaleidoscope-ai/operating-loop.schema.json) | Operating-loop witness contract for ordered Kaleidoscope stage execution and release posture. |
 | [`../../../../pm/spec/kaleidoscope-ai/phase-2-completion.schema.json`](../../../../pm/spec/kaleidoscope-ai/phase-2-completion.schema.json) | Phase 2 completion witness contract for internal draft release closure and Phase 3 readiness. |
+| [`../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json`](../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json) | Phase 3 product surface API response envelope for cited, fresh, approval-aware resources. |
 | [`../../../../pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json`](../../../../pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json) | SIGNAL L3 evidence pack contract for trace, policy, approval, eval, rollback, and learning-loop evidence. |
 | [`../../../../pm/spec/kaleidoscope-ai/mpr-relation-gap.schema.json`](../../../../pm/spec/kaleidoscope-ai/mpr-relation-gap.schema.json) | MPR relation gap witness contract for repos with missing MPR/SIGNAL relation evidence. |
 | [`../../../../pm/spec/kaleidoscope-ai/85-uplift-action.schema.json`](../../../../pm/spec/kaleidoscope-ai/85-uplift-action.schema.json) | 8.5 uplift action contract for owner routing, evidence, validation, approval, and release gates. |

@@ -38,6 +38,8 @@ Kaleidoscope AI answers:
 
 ## User surfaces
 
+Phase 3 turns these surfaces into API resources and UI views. The resource contract is defined in [`phase-3-product-surface-api.md`](./phase-3-product-surface-api.md), with the response envelope in [`../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json`](../../../../pm/spec/kaleidoscope-ai/product-surface-api.schema.json).
+
 ### Observatory
 
 Live ecosystem view:
@@ -247,4 +249,3 @@ Output:
 - MCP for standardized context and tool connections: https://modelcontextprotocol.io/docs/learn/architecture
 - LangGraph for durable, stateful agent workflows when needed: https://docs.langchain.com/oss/python/langgraph/overview
 - LlamaIndex for ingestion, indexing, retrieval, and graph/RAG workflows: https://docs.llamaindex.ai/
-
