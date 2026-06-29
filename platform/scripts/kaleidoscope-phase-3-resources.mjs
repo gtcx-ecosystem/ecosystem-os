@@ -27,13 +27,15 @@ const SOURCES = {
   observatory: 'audit/evidence/kaleidoscope-observatory-latest.json',
   decisionRoom: 'audit/evidence/kaleidoscope-decision-room-latest.json',
   signal: 'audit/evidence/signal-fleet-latest.json',
+  executionStudio: 'audit/evidence/kaleidoscope-execution-studio-latest.json',
+  partnerBrief: 'audit/evidence/kaleidoscope-partner-brief-latest.json',
   releaseGates: 'audit/evidence/kaleidoscope-release-gates-latest.json',
   phase2: 'audit/evidence/kaleidoscope-phase-2-completion-latest.json',
   apiSpec: 'docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md',
   responseEnvelope: 'pm/spec/kaleidoscope-ai/product-surface-api.schema.json'
 };
 
-const RESOURCE_ORDER = ['fleet', 'graph', 'query', 'decision-room', 'signal', 'release', 'phase-2'];
+const RESOURCE_ORDER = ['fleet', 'graph', 'query', 'decision-room', 'signal', 'actions', 'partner-room', 'release', 'phase-2'];
 const VALID_RESOURCES = new Set([
   'fleet',
   'graph',
@@ -156,12 +158,36 @@ function compactDecision(item) {
   };
 }
 
+function compactAction(item) {
+  return {
+    id: item.id,
+    title: item.title,
+    ownerRepo: item.ownerRepo,
+    status: item.status,
+    validation: item.validation,
+    approval: item.approval,
+    releaseGate: item.releaseGate,
+    citations: item.citations ?? []
+  };
+}
+
+function compactGate(item) {
+  return {
+    id: item.id,
+    label: item.label,
+    passed: item.passed,
+    severity: item.severity,
+    evidence: item.evidence ?? [],
+    failureMode: item.failureMode
+  };
+}
+
 function resource(resource, generatedAt, decision, paths, payload, extra = {}) {
   return {
     schema: RESPONSE_SCHEMA,
     resource,
     generatedAt,
-    mode: 'read',
+    mode: extra.mode ?? 'read',
     decision,
     confidence: extra.confidence ?? null,
     freshness: freshness(paths, generatedAt),
@@ -202,6 +228,8 @@ function buildResponses(generatedAt) {
   const observatory = readJson(SOURCES.observatory);
   const decisionRoom = readJson(SOURCES.decisionRoom);
   const signal = readJson(SOURCES.signal);
+  const executionStudio = readJson(SOURCES.executionStudio);
+  const partnerBrief = readJson(SOURCES.partnerBrief);
   const releaseGates = readJson(SOURCES.releaseGates);
   const phase2 = readJson(SOURCES.phase2);
 
@@ -346,6 +374,79 @@ function buildResponses(generatedAt) {
       }
     ),
     resource(
+      'actions',
+      generatedAt,
+      executionStudio.ok ? 'actions-draft-queue-ready' : 'actions-draft-queue-blocked',
+      [SOURCES.executionStudio, SOURCES.decisionRoom, SOURCES.signal, SOURCES.apiSpec],
+      {
+        route: '/kaleidoscope/actions',
+        summary: executionStudio.summary,
+        mode: executionStudio.mode,
+        actions: (executionStudio.actions ?? []).map(compactAction),
+        issues: executionStudio.issues ?? []
+      },
+      {
+        mode: 'draft',
+        confidence: executionStudio.ok ? 0.9 : 0.65,
+        reasons: {
+          [SOURCES.executionStudio]: 'draft action queue, owner routing, validation, approval, and release-gate state',
+          [SOURCES.decisionRoom]: 'strategic source questions that can produce draft actions',
+          [SOURCES.signal]: 'agentic maturity source for SIGNAL uplift actions',
+          [SOURCES.apiSpec]: 'Phase 3 product-surface requirement for Execution Studio'
+        },
+        approval: {
+          status: 'draft_pending_approval',
+          boundary: 'draft',
+          reason: 'Draft-only action surface. It can display or generate internal draft actions but cannot create issues, write repos, deploy, publish, or contact external parties without explicit approval.',
+          approvalRecord: null
+        },
+        nextActions: [
+          {
+            id: 'phase-3-actions-approval-record',
+            ownerRepo: 'agile-os',
+            status: 'approval_required',
+            validation: 'add acceptance and approval records before any draft action becomes repo write or ticket creation'
+          }
+        ]
+      }
+    ),
+    resource(
+      'partner-room',
+      generatedAt,
+      partnerBrief.ok ? 'partner-room-draft-ready-external-blocked' : 'partner-room-draft-blocked',
+      [SOURCES.partnerBrief, SOURCES.decisionRoom, SOURCES.observatory, SOURCES.executionStudio],
+      {
+        route: '/kaleidoscope/partner-room',
+        summary: partnerBrief.summary,
+        gates: (partnerBrief.gates ?? []).map(compactGate),
+        sources: partnerBrief.sources
+      },
+      {
+        mode: 'draft',
+        confidence: partnerBrief.ok ? 0.88 : 0.62,
+        reasons: {
+          [SOURCES.partnerBrief]: 'partner-room gates, claim controls, movement caveat, and external-use boundary',
+          [SOURCES.decisionRoom]: 'strategic claims and cited partner narrative source',
+          [SOURCES.observatory]: 'current fleet readiness and movement source',
+          [SOURCES.executionStudio]: 'approval-boundary source for partner-facing actions'
+        },
+        approval: {
+          status: 'blocked_until_explicit_approval',
+          boundary: 'external',
+          reason: 'Partner Room can assemble internal drafts only. External sharing requires explicit approval for the specific artifact and audience.',
+          approvalRecord: null
+        },
+        nextActions: [
+          {
+            id: 'phase-3-partner-room-approval-record',
+            ownerRepo: 'canon-os',
+            status: 'approval_required',
+            validation: 'record audience-specific approval before partner, investor, buyer, regulator, operator, or DFI use'
+          }
+        ]
+      }
+    ),
+    resource(
       'release',
       generatedAt,
       releaseGates.releaseDecision,
@@ -416,7 +517,7 @@ function buildWitness() {
     generatedAt,
     date: localDate(generatedAt),
     repo: 'ecosystem-os',
-    phase: 'phase-3-internal-read-only-resources',
+    phase: 'phase-3-internal-product-resources',
     ok: failures.length === 0,
     summary: {
       resourceCount: responses.length,
@@ -425,6 +526,7 @@ function buildWitness() {
       failedResourceChecks: failures.length,
       failedResources: failures.map((item) => item.resource),
       readOnlyResources: responses.filter((item) => item.mode === 'read').length,
+      draftResources: responses.filter((item) => item.mode === 'draft').length,
       externalUse: 'blocked_until_explicit_approval'
     },
     validation,
@@ -458,6 +560,7 @@ function renderReport(witness) {
     `- Resources: ${witness.summary.passedResourceChecks}/${witness.summary.resourceCount} valid`,
     `- Failed resources: ${witness.summary.failedResourceChecks}`,
     `- Read-only resources: ${witness.summary.readOnlyResources}`,
+    `- Draft-only resources: ${witness.summary.draftResources}`,
     `- External use: ${witness.summary.externalUse}`,
     '',
     '## Resources',
@@ -480,7 +583,7 @@ function renderReport(witness) {
   }
 
   lines.push('', '## Boundary', '');
-  lines.push('These resources are internal read-only product-surface responses. They do not authorize repo writes, tickets, deployments, publication, partner contact, investor sharing, or external use.');
+  lines.push('These resources are internal product-surface responses. Draft resources may return internal drafts and approval requests, but they do not authorize repo writes, tickets, deployments, publication, partner contact, investor sharing, or external use.');
 
   return `${lines.join('\n')}\n`;
 }
@@ -503,6 +606,7 @@ function main() {
   console.log(`resources: ${witness.summary.passedResourceChecks}/${witness.summary.resourceCount}`);
   console.log(`failed: ${witness.summary.failedResourceChecks}`);
   console.log(`read-only: ${witness.summary.readOnlyResources}`);
+  console.log(`draft-only: ${witness.summary.draftResources}`);
   console.log(`external-use: ${witness.summary.externalUse}`);
   if (WRITE) {
     console.log(`witness: ${OUT_REL}`);

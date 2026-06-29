@@ -14,9 +14,10 @@ review_cycle: on-change
 
 ## Summary
 
-- Resources: 7/7 valid
+- Resources: 9/9 valid
 - Failed resources: 0
 - Read-only resources: 7
+- Draft-only resources: 2
 - External use: blocked_until_explicit_approval
 
 ## Resources
@@ -28,6 +29,8 @@ review_cycle: on-change
 | query | /kaleidoscope/query | query-golden-eval-pass | fresh | not_required/read | audit/evidence/kaleidoscope-query-service-latest.json, audit/evidence/kaleidoscope-graph-snapshot-latest.json, pm/spec/kaleidoscope-ai/product-surface-api.schema.json |
 | decision-room | /kaleidoscope/decision-room | decision-room-eval-pass | fresh | not_required/read | audit/evidence/kaleidoscope-decision-room-latest.json, audit/evidence/kaleidoscope-query-service-latest.json, audit/evidence/kaleidoscope-observatory-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
 | signal | /kaleidoscope/signal | signal-fleet-witness-ready | fresh | not_required/read | audit/evidence/signal-fleet-latest.json, audit/evidence/kaleidoscope-graph-snapshot-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
+| actions | /kaleidoscope/actions | actions-draft-queue-ready | fresh | draft_pending_approval/draft | audit/evidence/kaleidoscope-execution-studio-latest.json, audit/evidence/kaleidoscope-decision-room-latest.json, audit/evidence/signal-fleet-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
+| partner-room | /kaleidoscope/partner-room | partner-room-draft-ready-external-blocked | fresh | blocked_until_explicit_approval/external | audit/evidence/kaleidoscope-partner-brief-latest.json, audit/evidence/kaleidoscope-decision-room-latest.json, audit/evidence/kaleidoscope-observatory-latest.json, audit/evidence/kaleidoscope-execution-studio-latest.json |
 | release | /kaleidoscope/release | internal-draft-release-pass | fresh | blocked_until_explicit_approval/external | audit/evidence/kaleidoscope-release-gates-latest.json, audit/evidence/kaleidoscope-phase-2-completion-latest.json, pm/spec/kaleidoscope-ai/product-surface-api.schema.json |
 | phase-2 | /kaleidoscope/phase-2 | phase-2-complete-for-internal-draft-use | fresh | not_required/read | audit/evidence/kaleidoscope-phase-2-completion-latest.json, audit/evidence/kaleidoscope-release-gates-latest.json, docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md |
 
@@ -40,9 +43,11 @@ review_cycle: on-change
 | query | pass | none |
 | decision-room | pass | none |
 | signal | pass | none |
+| actions | pass | none |
+| partner-room | pass | none |
 | release | pass | none |
 | phase-2 | pass | none |
 
 ## Boundary
 
-These resources are internal read-only product-surface responses. They do not authorize repo writes, tickets, deployments, publication, partner contact, investor sharing, or external use.
+These resources are internal product-surface responses. Draft resources may return internal drafts and approval requests, but they do not authorize repo writes, tickets, deployments, publication, partner contact, investor sharing, or external use.
