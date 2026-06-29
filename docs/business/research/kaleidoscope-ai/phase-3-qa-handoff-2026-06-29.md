@@ -58,6 +58,7 @@ Use one of these verdicts:
 | `ecosystem-os` | #41 | `e2953d0241d89adf2884cedb96dcee304b1a14b8` | Draft-only `/actions` and `/partner-room` resources with approval boundaries. |
 | `ecosystem-os` | #42 | `5ba7c799c62b69a465d4d40c53aca979ad5989b1` | Improved QA handoff with verdict rubric, resource states, and acceptance criteria. |
 | `ecosystem-os` | #43 | `6bd3f250c1104e5289123f6a5f996c6b0c2bcf31` | Phase 3 resource replay evidence, semantic fingerprints, witness hashes, and `qa-13`. |
+| `ecosystem-os` | #44 | `6fe17dc150844650d64bbd1aa488eed992536261` | Graph/RAG/MCP strict gate option, topology caveat, and QA follow-up remediation. |
 | `fabric-os` | #117 | `89ceecf8038bb79709e4407695a6639097a1373a` | Trace/eval sink ops spec and schema. |
 | `fabric-os` | #118 | `9e04ed7afde708502f5901a1fa61a6718cc9ee9f` | Local trace/eval sink writer, witness, runbook, scripts. |
 | `fabric-os` | #119 | `8c31030731a34147e1579b5a7ea7d88ababbc02a` | Audit remediation: event IDs include canonicalized `inputRefs`; runbook points to tracked schema path. |
@@ -75,6 +76,8 @@ Review these first:
 - `docs/business/research/kaleidoscope-ai/phase-3-qa-handoff-2026-06-29.md`
 - `docs/business/research/kaleidoscope-ai/index.md`
 - `pm/spec/kaleidoscope-ai/product-surface-api.schema.json`
+- `audit/evidence/kaleidoscope-graph-rag-mcp-strict-fleet-pin-latest.json`
+- `docs/business/research/kaleidoscope-ai/graph-rag-mcp-strict-fleet-pin-latest.md`
 
 The current harness covers `/fleet`, `/graph`, `/query`, `/decision-room`, `/signal`, `/actions`, `/partner-room`, `/release`, and `/phase-2`.
 
@@ -135,6 +138,7 @@ Run from `ecosystem-os`:
 ```bash
 pnpm kaleidoscope:phase-3-resources:check
 pnpm kaleidoscope:phase-3-resource-replay:check
+pnpm kaleidoscope:graph-rag-mcp:pin:check
 pnpm kaleidoscope:graph-rag-mcp:strict
 pnpm docs:business:check
 pnpm ops:check
@@ -148,7 +152,8 @@ Expected local results from the implementation session:
 | --- | --- |
 | `pnpm kaleidoscope:phase-3-resources:check` | Pass; `resources: 9/9`, `failed: 0`, `read-only: 7`, `draft-only: 2`, `external-use: blocked_until_explicit_approval`. |
 | `pnpm kaleidoscope:phase-3-resource-replay:check` | Pass; `resources: 9/9`, `failed: 0`, `order: pass`, `external-use: blocked_until_explicit_approval`. |
-| `pnpm kaleidoscope:graph-rag-mcp:strict` | Pass only in canonical pinned fleet topology; `restored: true`, `strict: true`. |
+| `pnpm kaleidoscope:graph-rag-mcp:pin:check` | Pass when all 20 sibling repos are present, git-backed, and have pinned HEAD SHAs. |
+| `pnpm kaleidoscope:graph-rag-mcp:strict` | Pass only when the local sibling fleet matches the pinned canonical topology and current repo SHAs; if it fails, compare against `kaleidoscope-graph-rag-mcp-strict-fleet-pin-latest.json` before treating it as a regression. |
 | `pnpm docs:business:check` | Pass; `44/44`. |
 | `pnpm ops:check` | Pass; `ops:check ok`. |
 | `pnpm test` | Pass; `ops:check exits 0`. |
@@ -178,7 +183,7 @@ Expected prior Fabric local results:
 | --- | --- | --- |
 | `fabric-os` docs operations gate has pre-existing hygiene failures. | Known residual. | Do not count as regression unless touched files introduce new failures. |
 | `fabric-os` workspace check has a pre-existing missing `docs/agile/roadmap.md` issue. | Known residual. | Track as follow-up, not a blocker for this Phase 3 resource harness. |
-| Graph/RAG/MCP default scan is a witness, not a strict restore gate. | Known residual. | Use `pnpm kaleidoscope:graph-rag-mcp:strict` only against pinned canonical fleet topology; otherwise treat restored=false as a follow-up signal. |
+| Graph/RAG/MCP default scan is a witness, not a strict restore gate. | Known residual. | Use `pnpm kaleidoscope:graph-rag-mcp:pin:check` to inspect pinned fleet SHAs, then run `pnpm kaleidoscope:graph-rag-mcp:strict` only against matching canonical fleet topology; otherwise treat restored=false as a follow-up signal. |
 | Phase 3 resources are a deterministic local harness, not a deployed service. | Intentional for MVP order. | Verify contract and evidence first; service runtime is later. |
 | External use is not approved. | Intentional. | Fail QA if any artifact implies partner, investor, deployment, or publication use is allowed. |
 | Hosted GitHub Actions may show `UNSTABLE` because hosted CI is locked by account/billing state. | Out of scope for this phase. | Do not use hosted CI status as a pass/fail signal. |
