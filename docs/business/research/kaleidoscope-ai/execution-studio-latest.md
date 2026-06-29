@@ -15,9 +15,9 @@ review_cycle: on-change
 ## Summary
 
 - Mode: draft-only
-- Actions: 11/11 valid
-- Approval pending: 11
-- Release blocked until validation and approval: 11
+- Actions: 10/10 valid
+- Approval pending: 10
+- Release blocked until validation and approval: 10
 
 ## Draft actions
 
@@ -32,8 +32,7 @@ review_cycle: on-change
 | exec-007-inspection-os-commercial-evidence-gap | inspection-os | P1 | inspection-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 | exec-008-agile-os-commercial-evidence-gap | agile-os | P2 | agile-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 | exec-009-baseline-os-commercial-evidence-gap | baseline-os | P2 | baseline-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
-| exec-010-bridge-os-commercial-evidence-gap | bridge-os | P2 | bridge-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
-| exec-011-canon-os-commercial-evidence-gap | canon-os | P2 | canon-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
+| exec-010-canon-os-commercial-evidence-gap | canon-os | P2 | canon-os | pnpm kaleidoscope:observatory:check | draft_pending_approval |
 
 ## Release gates
 
@@ -46,8 +45,7 @@ review_cycle: on-change
 - exec-007-inspection-os-commercial-evidence-gap: inspection-os-commercial-evidence-ready - blocked_until_validation_and_approval
 - exec-008-agile-os-commercial-evidence-gap: agile-os-commercial-evidence-ready - blocked_until_validation_and_approval
 - exec-009-baseline-os-commercial-evidence-gap: baseline-os-commercial-evidence-ready - blocked_until_validation_and_approval
-- exec-010-bridge-os-commercial-evidence-gap: bridge-os-commercial-evidence-ready - blocked_until_validation_and_approval
-- exec-011-canon-os-commercial-evidence-gap: canon-os-commercial-evidence-ready - blocked_until_validation_and_approval
+- exec-010-canon-os-commercial-evidence-gap: canon-os-commercial-evidence-ready - blocked_until_validation_and_approval
 
 ## Notes
 

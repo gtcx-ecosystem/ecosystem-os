@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1",
-  "generatedAt": "2026-06-28T23:56:30.719Z",
+  "generatedAt": "2026-06-29T00:06:31.620Z",
   "repo": "ecosystem-os",
   "phase": "phase-2-observatory-mvp",
   "ok": true,
@@ -23,8 +23,8 @@
     "aliasWarningCount": 0,
     "freshEvidenceRepos": 20,
     "movementAvailable": true,
-    "commercialEvidenceCompleteRepos": 15,
-    "commercialEvidencePartialRepos": 5,
+    "commercialEvidenceCompleteRepos": 16,
+    "commercialEvidencePartialRepos": 4,
     "commercialEvidenceGapRepos": 0
   },
   "repos": [
@@ -299,16 +299,19 @@
             "gaps": []
           },
           "workflow": {
-            "status": "gap",
-            "evidence": [],
-            "gaps": [
-              "missing workflow evidence path for Observatory commercial scoring"
-            ]
+            "status": "evidenced",
+            "evidence": [
+              {
+                "path": "bridge-os/docs/product/experience/critical-workflows.md",
+                "sourceDate": "2026-06-29T00:03:22.394Z"
+              }
+            ],
+            "gaps": []
           }
         },
-        "evidencedCategories": 4,
+        "evidencedCategories": 5,
         "categoryCount": 5,
-        "complete": false
+        "complete": true
       },
       "movement": {
         "available": true,
@@ -390,8 +393,8 @@
       },
       "evidenceFreshness": {
         "fresh": true,
-        "oldestSourceDate": "2026-06-28T23:56:30.437Z",
-        "newestSourceDate": "2026-06-28T23:56:30.438Z",
+        "oldestSourceDate": "2026-06-29T00:06:31.388Z",
+        "newestSourceDate": "2026-06-29T00:06:31.389Z",
         "newestAgeDays": 0,
         "evidenceCount": 4
       },

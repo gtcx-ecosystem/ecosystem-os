@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/graph-projection/v1",
-  "generatedAt": "2026-06-28T23:56:30.434Z",
+  "generatedAt": "2026-06-29T00:06:31.385Z",
   "repo": "ecosystem-os",
   "configOk": true,
   "config": "config/baseline/graph.config.json",
@@ -18,7 +18,7 @@
       "targetStatus": "restore",
       "role": "RAG/MCP hub and validator owner",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:bridge-os",
@@ -29,7 +29,7 @@
       "targetStatus": "restore",
       "role": "MCP/action orchestration and fleet coordination",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:ecosystem-os",
@@ -40,7 +40,7 @@
       "targetStatus": "strengthen",
       "role": "Ecosystem graph and Kaleidoscope home",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:gtcx-os",
@@ -51,7 +51,7 @@
       "targetStatus": "restore",
       "role": "Platform/product OS and Cortex scope",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:markets-os",
@@ -62,7 +62,7 @@
       "targetStatus": "restore",
       "role": "Market infrastructure product",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:compliance-os",
@@ -73,7 +73,7 @@
       "targetStatus": "restore",
       "role": "Compliance operating layer",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:terminal-os",
@@ -84,7 +84,7 @@
       "targetStatus": "restore",
       "role": "Operator/terminal surface",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:ledger-ui",
@@ -95,7 +95,7 @@
       "targetStatus": "restore",
       "role": "Finance/ledger UI",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:terra-os",
@@ -106,7 +106,7 @@
       "targetStatus": "restore",
       "role": "Land/site/source truth",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:exploration-os",
@@ -117,7 +117,7 @@
       "targetStatus": "restore",
       "role": "Field/site intelligence",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:veritas-ai",
@@ -128,7 +128,7 @@
       "targetStatus": "restore",
       "role": "Verification/publication intelligence",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:sensei-os",
@@ -139,7 +139,7 @@
       "targetStatus": "strengthen",
       "role": "Migration/agent intelligence",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:griot-ai",
@@ -150,7 +150,7 @@
       "targetStatus": "restore",
       "role": "Market/context publishing",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:nyota-ai",
@@ -161,7 +161,7 @@
       "targetStatus": "restore",
       "role": "Last-mile/mobile intelligence",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:fabric-os",
@@ -172,7 +172,7 @@
       "targetStatus": "restore",
       "role": "Deployment, ops, compliance fabric",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:canon-os",
@@ -183,7 +183,7 @@
       "targetStatus": "strengthen",
       "role": "Governance and protocols",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:agile-os",
@@ -194,7 +194,7 @@
       "targetStatus": "seed",
       "role": "Sprint, backlog, delivery OS",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:ledger-os",
@@ -205,7 +205,7 @@
       "targetStatus": "seed",
       "role": "Ledger/product finance backend",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:inspection-os",
@@ -216,7 +216,7 @@
       "targetStatus": "seed",
       "role": "Inspection product",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "id": "repo:venture-os",
@@ -227,7 +227,7 @@
       "targetStatus": "seed",
       "role": "Venture/portfolio product",
       "confidence": 1,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     }
   ],
   "edges": [
@@ -239,7 +239,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -249,7 +249,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -259,7 +259,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -269,7 +269,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -279,7 +279,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -289,7 +289,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -299,7 +299,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -309,7 +309,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -319,7 +319,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -329,7 +329,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -339,7 +339,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -349,7 +349,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -359,7 +359,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -369,7 +369,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -379,7 +379,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -389,7 +389,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -399,7 +399,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -409,7 +409,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     },
     {
       "source": "repo:ecosystem-os",
@@ -419,7 +419,7 @@
         "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
       ],
       "confidence": 0.8,
-      "updatedAt": "2026-06-28"
+      "updatedAt": "2026-06-29"
     }
   ]
 }
