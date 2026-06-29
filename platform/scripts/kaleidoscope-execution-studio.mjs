@@ -26,6 +26,9 @@ const BRIDGE_RUNNER_DOC_REL = 'bridge-os/docs/operations/coordination/kaleidosco
 const BRIDGE_RUNNER_WITNESS_REL = 'bridge-os/machine/ci/kaleidoscope-execution-runner-contract-latest.json';
 const PARTNER_ROOM_REL = 'docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md';
 const PARTNER_BRIEF_REL = 'audit/evidence/kaleidoscope-partner-brief-latest.json';
+const BASELINE_SIGNAL_L3_SCHEMA_REL = 'baseline-os/machine/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json';
+const BASELINE_SIGNAL_L3_DOC_REL = 'baseline-os/docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md';
+const BASELINE_SIGNAL_L3_WITNESS_REL = 'baseline-os/audit/evidence/signal-l3-evidence-pack-latest.json';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -224,6 +227,13 @@ function partnerExecutionRoomComplete() {
   );
 }
 
+function signalL3EvidencePackComplete() {
+  const schemaExists = existsSync(join(ECOSYSTEM_ROOT, BASELINE_SIGNAL_L3_SCHEMA_REL));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, BASELINE_SIGNAL_L3_DOC_REL));
+  const witness = maybeReadFleetJson(BASELINE_SIGNAL_L3_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.targetSignalLevel === 'L3';
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -382,33 +392,37 @@ function buildActions(observatory, decision, signal) {
       ];
 
   return [
-    action({
-      id: 'exec-001-signal-l3-trace-policy-pack',
-      title: 'Define the trace, policy, approval, and learning-loop evidence pack for SIGNAL-E L3',
-      ownerRepo: 'baseline-os',
-      targetRepos: ['baseline-os', 'fabric-os', 'bridge-os', 'ecosystem-os'],
-      priority: 'P0',
-      outcome: 'A reusable evidence contract that shows exactly what unlocks SIGNAL-E L3 across the fleet.',
-      rationale:
-        'The SIGNAL fleet runner shows 18 repos at SIGNAL-E L2 and blocks L3 until trace, policy, approval, and learning-loop evidence is published.',
-      evidence: [signalCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:signal:check', 'SIGNAL witness remains green and L3 gaps are machine-readable.'),
-      approvalRequest: approval('spec-change', 'Adding or changing canonical evidence contracts requires owner review.'),
-      releaseGate: releaseGate('signal-l3-contract-ready', [
-        'schema exists',
-        'runner can cite trace/policy/approval evidence',
-        'Observatory surfaces L3 blockers'
-      ]),
-      draftArtifacts: [
-        'pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json',
-        'docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md'
-      ],
-      acceptanceCriteria: [
-        'Defines trace, policy, approval, learning-loop, and rollback evidence fields.',
-        'Documents why graph/RAG/MCP readiness alone cannot claim L3.',
-        'Includes validation commands and failure modes.'
-      ]
-    }),
+    ...(signalL3EvidencePackComplete()
+      ? []
+      : [
+          action({
+            id: 'exec-001-signal-l3-trace-policy-pack',
+            title: 'Define the trace, policy, approval, and learning-loop evidence pack for SIGNAL-E L3',
+            ownerRepo: 'baseline-os',
+            targetRepos: ['baseline-os', 'fabric-os', 'bridge-os', 'ecosystem-os'],
+            priority: 'P0',
+            outcome: 'A reusable evidence contract that shows exactly what unlocks SIGNAL-E L3 across the fleet.',
+            rationale:
+              'The SIGNAL fleet runner shows 18 repos at SIGNAL-E L2 and blocks L3 until trace, policy, approval, and learning-loop evidence is published.',
+            evidence: [signalCitation, phase2Citation],
+            validationGate: gate('pnpm kaleidoscope:signal:check', 'SIGNAL witness remains green and L3 gaps are machine-readable.'),
+            approvalRequest: approval('spec-change', 'Adding or changing canonical evidence contracts requires owner review.'),
+            releaseGate: releaseGate('signal-l3-contract-ready', [
+              'schema exists',
+              'runner can cite trace/policy/approval evidence',
+              'Observatory surfaces L3 blockers'
+            ]),
+            draftArtifacts: [
+              'machine/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json',
+              'docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md'
+            ],
+            acceptanceCriteria: [
+              'Defines trace, policy, approval, learning-loop, and rollback evidence fields.',
+              'Documents why graph/RAG/MCP readiness alone cannot claim L3.',
+              'Includes validation commands and failure modes.'
+            ]
+          })
+        ]),
     ...bridgeRunnerAction,
     ...mprRelationAction,
     ...upliftFormatAction,
