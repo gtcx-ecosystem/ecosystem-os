@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources.schema/v1",
+  "title": "Kaleidoscope AI phase 3 resources witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "repo",
+    "phase",
+    "ok",
+    "summary",
+    "validation",
+    "responses",
+    "contracts"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "date": { "type": "string" },
+    "repo": { "const": "ecosystem-os" },
+    "phase": { "const": "phase-3-internal-read-only-resources" },
+    "ok": { "type": "boolean" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "resourceCount",
+        "resources",
+        "passedResourceChecks",
+        "failedResourceChecks",
+        "failedResources",
+        "readOnlyResources",
+        "externalUse"
+      ],
+      "properties": {
+        "resourceCount": { "type": "integer", "minimum": 0 },
+        "resources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "passedResourceChecks": { "type": "integer", "minimum": 0 },
+        "failedResourceChecks": { "type": "integer", "minimum": 0 },
+        "failedResources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "readOnlyResources": { "type": "integer", "minimum": 0 },
+        "externalUse": { "const": "blocked_until_explicit_approval" }
+      },
+      "additionalProperties": true
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["resource", "ok", "issues"],
+        "properties": {
+          "resource": { "type": "string" },
+          "ok": { "type": "boolean" },
+          "issues": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "responses": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api.schema/v1" }
+    },
+    "contracts": {
+      "type": "object",
+      "required": ["responseEnvelope", "phase3Resources", "apiSpec"],
+      "properties": {
+        "responseEnvelope": { "type": "string" },
+        "phase3Resources": { "type": "string" },
+        "apiSpec": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
