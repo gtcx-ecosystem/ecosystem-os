@@ -13,98 +13,140 @@ review_cycle: on-change
 
 ## Audit mandate
 
-A separate read-only agent reviewed the Kaleidoscope session work after implementation. The reviewer did not author the work under review.
+This is the independent-agent acceptance audit packet for the Kaleidoscope AI work session completed on 2026-06-29.
 
-The audit assessed:
+The review assesses whether the session work is acceptable for continued internal Phase 3 development. It is not a production launch review, partner release review, investor-sharing review, deployment review, or authorization for autonomous execution.
 
-- Phase 2 closure evidence and Phase 3 readiness
-- product, schema, operations, and local runtime contracts
-- approval and external-use boundaries
-- SIGNAL L3 trace/eval prerequisites
-- local validation evidence
-- isolated-branch and lowercase-path requirements
-- consistency between implementation and documentation
-
-Hosted CI was outside the audit basis. The decision used repository evidence, local command results, commit history, and pull-request mergeability.
+The audit basis is repository evidence, local command results, witness files, schemas, generated reports, branch history, and documented acceptance criteria. Hosted GitHub Actions are outside the audit basis for this phase.
 
 ## Verdict
 
 **Pass with follow-up required.**
 
-The session establishes a coherent Phase 2 completion gate and a credible Phase 3 internal-build baseline. Product and Fabric responsibilities are separated, external actions remain blocked, and the local trace/eval substrate covers all seven event classes needed by the current SIGNAL L3 design.
+No blocker or high-severity issue is attributed to the Kaleidoscope changes reviewed in this packet. The session establishes an evidence-backed internal foundation for Phase 3: Phase 2 closure, product response contract, deterministic product resources, replay evidence, strict Graph/RAG/MCP pinning, trace/eval sink contracts, and explicit approval boundaries.
 
-The result is ready for internal Phase 3 implementation. It is not approval for external use or production deployment.
+The work is suitable for continued internal Phase 3 development. It is not suitable for production, external use, deployment, publication, partner contact, investor sharing, autonomous ticket creation, repo writes, or external distribution.
 
 ## Findings
 
+### Blocker
+
+None.
+
+### High
+
+None.
+
 ### Medium: Fabric repository-wide documentation validation is not green
 
-`pnpm docs:operations:check`, `pnpm workspace:check`, and the documentation-standard portion of `pnpm test` encounter pre-existing repository hygiene failures. The observed failures include loose root documents, local folder-spec issues, subfolder formatting, broken links/frontmatter, and a missing `docs/agile/roadmap.md`.
+`fabric-os` has pre-existing documentation and workspace hygiene failures. Observed failures include operations documentation shape issues, local folder-spec issues, subfolder formatting gaps, and a missing `docs/agile/roadmap.md`.
 
-These failures predate and are outside the Kaleidoscope changes, but they reduce confidence in a claim that all Fabric repository gates are green.
+These failures predate the Kaleidoscope trace/eval sink changes and do not invalidate the scoped local sink witness. They do reduce confidence in any broad claim that Fabric repository-wide gates are green.
 
-**Disposition:** accepted residual risk. Resolve through a dedicated Fabric hygiene change or record an explicit time-bounded waiver.
+**Disposition:** accepted residual risk for internal Phase 3. Resolve through a dedicated Fabric hygiene change or explicit time-bounded waiver.
 
-### Medium: closure evidence was not yet durable at review time
+### Medium: strict fleet pin records one dirty sibling repo
 
-The closure/readiness report existed only as an uncommitted worktree file when the independent review ran.
+The strict Graph/RAG/MCP pin witness records all 20 repos as present and git-backed, but one sibling repo is dirty: `baseline-os`.
 
-**Disposition:** resolved by publishing this audit and the closure/readiness report through the isolated closure branch.
+The pin remains useful as reproducibility evidence, but release-clean claims should wait until the sibling fleet records `dirty: 0`.
 
-### Low/medium: trace event id contract omitted input references
+**Disposition:** accepted residual risk for internal Phase 3. Track as the next strict reproducibility cleanup.
 
-The initial local sink generated stable ids from session id, event class, and resource. The runbook contract also required input references, so two events with different source inputs could collide.
+### Medium: Phase 3 resource harness is not yet a service runtime or UI
 
-**Disposition:** resolved by `fabric-os` [PR #119](https://github.com/gtcx-ecosystem/fabric-os/pull/119), merge commit `8c31030731a34147e1579b5a7ea7d88ababbc02a`. Input references are canonicalized and included in the deterministic hash.
+The nine Phase 3 resources are deterministic local product-surface responses generated from witness files. They are not a deployed API, UI, managed trace runtime, or production agentic execution layer.
 
-### Low: Fabric runbook used the symlink path for the schema
+**Disposition:** intentional sequencing. The contract and evidence baseline should precede service/UI promotion.
 
-The initial runbook cited `pm/spec/kaleidoscope-ai/trace-eval-sink.schema.json`, while Fabric tracks that file under `machine/spec` and exposes `pm` as a symlink.
+### Low/medium: trace event id contract initially omitted input references
+
+The initial Fabric local sink generated stable ids from session id, event class, and resource. The runbook contract also required input references, so two events with different source inputs could collide.
+
+**Disposition:** resolved by `fabric-os` PR #119, merge commit `8c31030731a34147e1579b5a7ea7d88ababbc02a`. Input references are canonicalized and included in the deterministic hash.
+
+### Low: Fabric runbook initially used the symlink path for the schema
+
+The initial Fabric runbook cited `pm/spec/kaleidoscope-ai/trace-eval-sink.schema.json`, while Fabric tracks that file under `machine/spec` and exposes `pm` as a symlink.
 
 **Disposition:** resolved by `fabric-os` PR #119. The runbook now names `machine/spec/kaleidoscope-ai/trace-eval-sink.schema.json`.
 
-## Acceptance audit
+## Acceptance matrix
 
-| Area | Status | Independent assessment |
-| --- | --- | --- |
-| Phase 2 completion gate | pass | Machine-readable closure requires the relevant graph, RAG, MCP, product, release, and operating-loop witnesses. |
-| Phase 3 product contract | pass | Product surfaces and a cited, freshness-aware, approval-aware response envelope are specified before runtime implementation. |
-| Ownership boundaries | pass | Ecosystem owns product synthesis; Fabric owns trace/eval runtime posture; doctrine and approval ownership remain explicit. |
-| External-use controls | pass | External use remains blocked pending artifact-specific and audience-specific approval. |
-| SIGNAL L3 substrate | pass with follow-up | Seven required event classes exist and write boundaries are blocked; managed runtime remains future work. |
-| Local replay evidence | pass | JSONL events and a machine-readable witness are produced by local write/check commands. |
-| Path hygiene | pass | Session-added files use lowercase names; the Fabric tracked schema path is now documented accurately. |
-| Branch safety | pass | Reviewed implementation was developed on isolated branches and merged through pull requests. |
-| Repository-wide Fabric gates | follow-up | Pre-existing documentation and workspace failures remain unresolved. |
+| ID | Area | Status | Independent assessment |
+| --- | --- | --- | --- |
+| qa-01 | Phase 2 closure remains internal-only. | pass | Completion decision remains `phase-2-complete-for-internal-draft-use`; external use is blocked. |
+| qa-02 | Product-surface responses conform to the envelope. | pass | All nine resources include resource identity, generation time, mode, decision, freshness, citations, approval, and witnesses. |
+| qa-03 | Responses are evidence-backed. | pass | Each response has non-empty citations and source witness lineage. |
+| qa-04 | Responses are freshness-aware. | pass | Responses preserve source dates and freshness status. |
+| qa-05 | Approval boundaries are preserved. | pass | Read resources remain read-only; draft resources do not execute; external use stays blocked. |
+| qa-06 | No external or write action is performed. | pass | Runners only read evidence and write local generated witness/report files when invoked with write mode. |
+| qa-07 | Fabric trace/eval sink remediation holds. | pass | Event ids include canonicalized `inputRefs`; schema documentation uses tracked `machine/spec` paths. |
+| qa-08 | Documentation is discoverable. | pass | The Kaleidoscope index links the handoff, schemas, witnesses, generated reports, and strict pin report. |
+| qa-09 | File naming stays lowercase. | pass | Session-added file paths are lowercase. |
+| qa-10 | Local validation is sufficient and recorded. | pass | Local validation commands pass for the scoped Kaleidoscope work. |
+| qa-11 | The resource harness does not hide source truth. | pass | Payloads are derived from existing witnesses instead of becoming a second source of truth. |
+| qa-12 | Draft resources are product surfaces, not execution tools. | pass | `/actions` and `/partner-room` expose draft state and approval requests only. |
+| qa-13 | Product responses are replayable from the same witness set. | pass | Replay witness records fingerprints, witness hashes, resource order, and approval-boundary validation for all nine resources. |
+| qa-14 | Graph/RAG/MCP strict restore is reproducible. | pass with follow-up | All 20 repos are pinned with branch, remote, and HEAD; one dirty sibling repo remains a cleanup item. |
 
 ## Validation evidence
 
-The audit accepted these local results:
+The audit accepts these local validation results:
 
 | Repo | Validation | Result |
 | --- | --- | --- |
-| `ecosystem-os` | Phase 2 write/check, release gates, operating loop | pass |
-| `ecosystem-os` | business docs, operations, repository tests | pass |
-| `fabric-os` | trace/eval sink write/check | pass |
-| `fabric-os` | AIOps foundation check | pass, `97/100` |
-| `fabric-os` | write/external boundary witness | pass, blocked |
-| `fabric-os` | repository-wide documentation/workspace gates | known pre-existing failures |
+| `ecosystem-os` | `pnpm kaleidoscope:phase-3-resources:check` | pass; `resources: 9/9`, `failed: 0`, `read-only: 7`, `draft-only: 2`, `external-use: blocked_until_explicit_approval`. |
+| `ecosystem-os` | `pnpm kaleidoscope:phase-3-resource-replay:check` | pass; `resources: 9/9`, `failed: 0`, `order: pass`, replay bundle fingerprint recorded. |
+| `ecosystem-os` | `pnpm kaleidoscope:graph-rag-mcp:pin:check` | pass; `repos: 20/20`, `missing: 0`, `non-git: 0`, `dirty: 1`. |
+| `ecosystem-os` | `pnpm kaleidoscope:release-gates:check` | pass. |
+| `ecosystem-os` | `pnpm kaleidoscope:operate:check` | pass. |
+| `ecosystem-os` | `pnpm docs:business:check` | pass. |
+| `ecosystem-os` | `pnpm ops:check` | pass. |
+| `ecosystem-os` | `pnpm test` | pass. |
+| `fabric-os` | `pnpm kaleidoscope:trace-eval-sink:write` | pass. |
+| `fabric-os` | `pnpm kaleidoscope:trace-eval-sink:check` | pass. |
+| `fabric-os` | `pnpm aiops:check` | pass, previously `97/100`. |
+| `fabric-os` | repository-wide documentation/workspace gates | known pre-existing failures. |
 
-Post-review remediation was revalidated with:
+## Scope accepted
 
-- `pnpm kaleidoscope:trace-eval-sink:write`
-- `pnpm kaleidoscope:trace-eval-sink:check`
-- `pnpm aiops:check`
-- `git diff --check`
+Accepted for internal Phase 3:
+
+- evidence-backed read-only product resources;
+- draft-only action and partner-room product surfaces;
+- deterministic replay against witness hashes;
+- Graph/RAG/MCP strict pin witness;
+- product response envelope and schemas;
+- trace/eval sink event contract and local sink witness;
+- approval and external-use boundary preservation.
+
+Not accepted in this audit:
+
+- production release;
+- external partner use;
+- investor sharing;
+- public publication;
+- deployment;
+- autonomous execution;
+- ticket creation;
+- repo write execution;
+- managed service runtime;
+- UI shell;
+- live vector or graph database;
+- full SIGNAL L3 maturity claim.
 
 ## Required follow-up
 
-1. Resolve or explicitly waive the pre-existing Fabric documentation and workspace gate failures.
-2. Implement the read-only Phase 3 product resources against the response-envelope schema.
-3. Wire resource calls to Fabric trace/eval events and preserve source witness lineage.
-4. Add a SIGNAL L3 release gate before claiming orchestrated maturity.
-5. Keep external actions blocked until explicit artifact and audience approval is recorded.
+| Priority | Follow-up | Owner repos |
+| --- | --- | --- |
+| Medium | Resolve `baseline-os` dirty state and regenerate strict fleet pin with `dirty: 0`. | `baseline-os`, `ecosystem-os` |
+| Medium | Resolve or explicitly waive pre-existing Fabric documentation and workspace gate failures. | `fabric-os` |
+| Medium | Promote the nine deterministic resources into an internal service runtime. | `ecosystem-os`, `bridge-os`, `fabric-os` |
+| Medium | Wire resource calls to Fabric trace/eval events and preserve source witness lineage. | `fabric-os`, `bridge-os`, `ecosystem-os` |
+| Medium | Add SIGNAL L3 release gate before claiming orchestrated maturity. | `canon-os`, `baseline-os`, `bridge-os`, `ecosystem-os` |
+| Low | Keep closure, QA handoff, and generated reports synchronized as PRs merge. | `ecosystem-os` |
 
 ## Independent conclusion
 
-The session work is internally coherent, evidence-backed, and suitable to begin Phase 3 implementation. The remaining Fabric hygiene issue is real but does not invalidate the scoped Kaleidoscope contracts or local sink behavior. Production, deployment, and external-use readiness are not established by this audit.
+The session work is internally coherent, evidence-backed, and safe to continue as Phase 3 internal development. The remaining issues are material follow-ups, not blockers for the current internal foundation. The strongest acceptance basis is the combination of deterministic witnesses, replay fingerprints, strict fleet pins, and explicit external-use blocking.
