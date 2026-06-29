@@ -84,6 +84,7 @@
     "validate:graph-config": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --local graph",
     "rag:eval": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --local eval",
     "kaleidoscope:graph-rag-mcp:check": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs",
+    "kaleidoscope:graph-rag-mcp:strict": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --strict",
     "kaleidoscope:graph-rag-mcp:write": "node platform/scripts/kaleidoscope-graph-rag-mcp-check.mjs --write",
     "kaleidoscope:graph-snapshot:check": "node platform/scripts/kaleidoscope-graph-snapshot.mjs",
     "kaleidoscope:graph-snapshot:write": "node platform/scripts/kaleidoscope-graph-snapshot.mjs --write",
