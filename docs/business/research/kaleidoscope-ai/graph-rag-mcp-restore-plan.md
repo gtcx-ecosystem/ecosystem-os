@@ -156,6 +156,14 @@ pnpm kaleidoscope:graph-rag-mcp:write
 
 This emits `audit/evidence/kaleidoscope-graph-rag-mcp-latest.json` from a read-only scan of checked-out fleet repos. It is a baseline witness, not a strict restore gate yet.
 
+Strict gate option:
+
+```bash
+pnpm kaleidoscope:graph-rag-mcp:strict
+```
+
+Strict mode fails when `restored === false`. Use it only when the local fleet checkout is pinned to the intended repo SHAs and canonical side-by-side topology. Non-canonical temp worktrees or missing sibling repos can produce topology failures that are useful for diagnosis but should not be treated as product readiness regressions.
+
 ### Phase 2: update validators
 
 Update the validation model:
