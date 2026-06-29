@@ -2,7 +2,7 @@
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/signal-fleet/v1",
   "scope": "fleet",
   "ok": true,
-  "evaluatedAt": "2026-06-29T00:50:43.193Z",
+  "evaluatedAt": "2026-06-29T01:01:21.243Z",
   "date": "2026-06-29",
   "repoCount": 20,
   "summary": {
@@ -25,7 +25,7 @@
       "L1": 2
     },
     "graphRagMcpReadyRepos": 20,
-    "mprRelationAvailableRepos": 18
+    "mprRelationAvailableRepos": 20
   },
   "results": [
     {
@@ -227,9 +227,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "agile-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -458,9 +461,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "baseline-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 100,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -540,7 +546,9 @@
           "process": {
             "level": "L1",
             "score100": 25,
-            "evidence": [],
+            "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#bridge-os"
+            ],
             "gaps": [
               "Connect product-intelligence findings to roadmap, QA, and release evidence."
             ]
@@ -559,6 +567,7 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#bridge-os",
               "config/baseline/eval.config.json"
             ],
             "gaps": [
@@ -607,13 +616,14 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#bridge-os",
               "config/baseline/eval.config.json",
               "config/baseline/graph.config.json",
               "config/baseline/mcp.config.json",
               "config/baseline/rag.config.json"
             ],
             "gaps": [
-              "Publish repo MPR evidence."
+              "MPR relation is explicit but cannot raise process scoring until repo evidence or approval allows score changes."
             ]
           },
           "safeguards": {
@@ -633,6 +643,7 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#bridge-os",
               "config/baseline/eval.config.json"
             ],
             "gaps": [
@@ -683,11 +694,14 @@
         "notes": []
       },
       "mprRelation": {
-        "available": false,
-        "source": "missing",
+        "available": true,
+        "relationType": "explicit-no-mpr-relation",
+        "source": "audit/evidence/mpr-relation-gap-latest.json#bridge-os",
         "composite100": null,
         "agenticEmpowerment100": null,
-        "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
+        "scoreChangeAllowed": false,
+        "approvalStatus": "draft_pending_approval",
+        "relation": "Repo-local MPR is intentionally absent; the ecosystem witness makes the relation explicit while keeping SIGNAL scoring conservative."
       },
       "bottlenecks": [
         "systemsArchitecture limits SIGNAL-P to L1",
@@ -698,7 +712,7 @@
         "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
       ],
       "nextUnlocks": [
-        "Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.",
+        "Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.",
         "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
         "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
       ],
@@ -710,7 +724,7 @@
         "Publish product-feedback, trace, and answer-quality metrics.",
         "Name product owner and SIGNAL-P uplift lane.",
         "No distributed trace, policy-control, or learning-loop evidence is published yet.",
-        "Publish repo MPR evidence.",
+        "MPR relation is explicit but cannot raise process scoring until repo evidence or approval allows score changes.",
         "Add approval tokens, audit logs, and rollback evidence before L3/L4 claims.",
         "Publish traces/eval results tied to agentic workflows before L3.",
         "Add named owner, release gate, and escalation path for SIGNAL improvements."
@@ -915,9 +929,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "canon-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -1146,9 +1163,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "compliance-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -1376,9 +1396,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "ecosystem-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -1606,9 +1629,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "exploration-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -1836,9 +1862,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "fabric-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 100,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -2066,9 +2095,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "griot-ai/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -2296,9 +2328,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "gtcx-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 91,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -2526,9 +2561,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "inspection-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 54,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -2756,9 +2794,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "ledger-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -2986,9 +3027,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "ledger-ui/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -3216,9 +3260,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "markets-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -3446,9 +3493,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "nyota-ai/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -3676,9 +3726,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "sensei-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -3757,7 +3810,9 @@
           "process": {
             "level": "L1",
             "score100": 25,
-            "evidence": [],
+            "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#terminal-os"
+            ],
             "gaps": [
               "Connect product-intelligence findings to roadmap, QA, and release evidence."
             ]
@@ -3776,6 +3831,7 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#terminal-os",
               "config/baseline/eval.config.json"
             ],
             "gaps": [
@@ -3824,13 +3880,14 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#terminal-os",
               "config/baseline/eval.config.json",
               "config/baseline/graph.config.json",
               "config/baseline/mcp.config.json",
               "config/baseline/rag.config.json"
             ],
             "gaps": [
-              "Publish repo MPR evidence."
+              "MPR relation is explicit but cannot raise process scoring until repo evidence or approval allows score changes."
             ]
           },
           "safeguards": {
@@ -3850,6 +3907,7 @@
             "level": "L1",
             "score100": 25,
             "evidence": [
+              "audit/evidence/mpr-relation-gap-latest.json#terminal-os",
               "config/baseline/eval.config.json"
             ],
             "gaps": [
@@ -3900,11 +3958,14 @@
         "notes": []
       },
       "mprRelation": {
-        "available": false,
-        "source": "missing",
+        "available": true,
+        "relationType": "explicit-no-mpr-relation",
+        "source": "audit/evidence/mpr-relation-gap-latest.json#terminal-os",
         "composite100": null,
         "agenticEmpowerment100": null,
-        "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
+        "scoreChangeAllowed": false,
+        "approvalStatus": "draft_pending_approval",
+        "relation": "Repo-local MPR is intentionally absent; the ecosystem witness makes the relation explicit while keeping SIGNAL scoring conservative."
       },
       "bottlenecks": [
         "systemsArchitecture limits SIGNAL-P to L1",
@@ -3915,7 +3976,7 @@
         "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
       ],
       "nextUnlocks": [
-        "Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.",
+        "Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.",
         "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
         "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
       ],
@@ -3927,7 +3988,7 @@
         "Publish product-feedback, trace, and answer-quality metrics.",
         "Name product owner and SIGNAL-P uplift lane.",
         "No distributed trace, policy-control, or learning-loop evidence is published yet.",
-        "Publish repo MPR evidence.",
+        "MPR relation is explicit but cannot raise process scoring until repo evidence or approval allows score changes.",
         "Add approval tokens, audit logs, and rollback evidence before L3/L4 claims.",
         "Publish traces/eval results tied to agentic workflows before L3.",
         "Add named owner, release gate, and escalation path for SIGNAL improvements."
@@ -4132,9 +4193,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "terra-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -4362,9 +4426,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "venture-os/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -4592,9 +4659,12 @@
       },
       "mprRelation": {
         "available": true,
+        "relationType": "repo-mpr",
         "source": "veritas-ai/audit/evidence/mpr-repo-latest.json",
         "composite100": 59,
         "agenticEmpowerment100": null,
+        "scoreChangeAllowed": true,
+        "approvalStatus": "repo-owned",
         "relation": "MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens."
       },
       "bottlenecks": [
@@ -4628,6 +4698,7 @@
   "sources": {
     "graphSnapshot": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
     "mprRepo": "../*/audit/evidence/mpr-repo-latest.json",
+    "mprRelationGap": "audit/evidence/mpr-relation-gap-latest.json",
     "frameworkPlan": "docs/business/research/kaleidoscope-ai/signal-mpr-integration-plan.md"
   },
   "schemaRefs": {

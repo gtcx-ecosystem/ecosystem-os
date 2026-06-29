@@ -213,6 +213,38 @@ function buildActions(observatory, decision, signal) {
           ]
         })
       ];
+  const mprRelationAction =
+    missingMprRepos.length === 0
+      ? []
+      : [
+          action({
+            id: 'exec-003-mpr-relation-gap',
+            title: 'Resolve missing MPR relation for bridge-os and terminal-os',
+            ownerRepo: 'ecosystem-os',
+            targetRepos: missingMprRepos,
+            priority: 'P1',
+            outcome: 'Bridge and terminal no longer appear as under-evidenced in SIGNAL/MPR rollups.',
+            rationale:
+              'The SIGNAL fleet witness shows missing MPR relation for bridge-os and terminal-os, holding their SIGNAL-E process evidence at L1.',
+            evidence: [signalCitation, readinessCitation],
+            validationGate: gate('pnpm kaleidoscope:signal:check', 'MPR relation count increases or an explicit no-MPR relation witness is published.'),
+            approvalRequest: approval('cross-repo-evidence', 'Publishing repo evidence or no-MPR relation witnesses affects fleet scoring.'),
+            releaseGate: releaseGate('mpr-relation-complete', [
+              'bridge-os relation resolved',
+              'terminal-os relation resolved',
+              'Observatory MPR column explains n/a states'
+            ]),
+            draftArtifacts: [
+              'audit/evidence/mpr-relation-gap-latest.json',
+              'docs/business/research/kaleidoscope-ai/mpr-relation-gap.md'
+            ],
+            acceptanceCriteria: [
+              'Lists the exact repos with missing MPR relation.',
+              'Routes owner review before publishing replacement evidence.',
+              'Keeps SIGNAL score conservative until evidence exists.'
+            ]
+          })
+        ];
 
   return [
     action({
@@ -269,33 +301,7 @@ function buildActions(observatory, decision, signal) {
         'No action can ship without a validation gate.'
       ]
     }),
-    action({
-      id: 'exec-003-mpr-relation-gap',
-      title: 'Resolve missing MPR relation for bridge-os and terminal-os',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: missingMprRepos,
-      priority: 'P1',
-      outcome: 'Bridge and terminal no longer appear as under-evidenced in SIGNAL/MPR rollups.',
-      rationale:
-        'The SIGNAL fleet witness shows missing MPR relation for bridge-os and terminal-os, holding their SIGNAL-E process evidence at L1.',
-      evidence: [signalCitation, readinessCitation],
-      validationGate: gate('pnpm kaleidoscope:signal:check', 'MPR relation count increases or an explicit no-MPR relation witness is published.'),
-      approvalRequest: approval('cross-repo-evidence', 'Publishing repo evidence or no-MPR relation witnesses affects fleet scoring.'),
-      releaseGate: releaseGate('mpr-relation-complete', [
-        'bridge-os relation resolved',
-        'terminal-os relation resolved',
-        'Observatory MPR column explains n/a states'
-      ]),
-      draftArtifacts: [
-        'audit/evidence/mpr-relation-gap-latest.json',
-        'docs/business/research/kaleidoscope-ai/mpr-relation-gap.md'
-      ],
-      acceptanceCriteria: [
-        'Lists the exact repos with missing MPR relation.',
-        'Routes owner review before publishing replacement evidence.',
-        'Keeps SIGNAL score conservative until evidence exists.'
-      ]
-    }),
+    ...mprRelationAction,
     action({
       id: 'exec-004-85-uplift-format',
       title: 'Define the 8.5 uplift task format',

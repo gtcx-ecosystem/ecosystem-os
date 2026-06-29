@@ -15,7 +15,7 @@ review_cycle: on-change
 
 This report makes the current MPR relation gap explicit for Kaleidoscope, SIGNAL, and Observatory consumers.
 
-It does not change repo scores. It records the gap so the team can decide whether each repo should publish repo-local MPR evidence or an approved no-MPR relation witness.
+It does not change repo scores. It records an explicit no-MPR relation witness so the fleet can distinguish "missing relation" from "intentionally evaluated through ecosystem-level MPR context."
 
 Machine witness:
 
@@ -25,24 +25,24 @@ Schema:
 
 - `pm/spec/kaleidoscope-ai/mpr-relation-gap.schema.json`
 
-## Current gaps
+## Current explicit relations
 
 | Repo | Current SIGNAL-E | MPR relation | Current handling |
 | --- | ---: | --- | --- |
-| `bridge-os` | L1 | missing | Keep SIGNAL process evidence capped until MPR evidence or approved no-MPR relation exists. |
-| `terminal-os` | L1 | missing | Keep SIGNAL process evidence capped until MPR evidence or approved no-MPR relation exists. |
+| `bridge-os` | L1 | explicit no-MPR relation witness | Keep SIGNAL process evidence capped until repo MPR evidence exists or scoring approval is granted. |
+| `terminal-os` | L1 | explicit no-MPR relation witness | Keep SIGNAL process evidence capped until repo MPR evidence exists or scoring approval is granted. |
 
 ## Resolution options
 
 | Option | When to use | Effect |
 | --- | --- | --- |
 | Publish repo MPR evidence | Repo should be evaluated like other real repos. | MPR relation becomes direct and SIGNAL process evidence can be re-evaluated. |
-| Publish approved no-MPR relation witness | Repo is intentionally evaluated through ecosystem-level evidence instead of repo-local MPR. | MPR relation becomes explicit, but scoring only changes after approval. |
-| Leave as missing | Evidence owner is not ready to decide. | SIGNAL remains conservative and Observatory keeps MPR as `n/a`. |
+| Keep explicit no-MPR relation witness | Repo is intentionally evaluated through ecosystem-level evidence instead of repo-local MPR. | MPR relation coverage becomes explicit, but scoring stays conservative. |
+| Leave as missing | Evidence owner is not ready to decide. | SIGNAL remains conservative and Execution Studio keeps the repo in the missing-relation queue. |
 
 ## Approval boundary
 
-Changing this relation can affect SIGNAL process scoring and Observatory rollups. The current gap witness is therefore draft evidence only and keeps `scoreChangeAllowed` as `false`.
+Changing this relation can affect SIGNAL process scoring and Observatory rollups. The current witness is therefore draft evidence only and keeps `scoreChangeAllowed` as `false`.
 
 ## Validation
 
@@ -51,4 +51,3 @@ pnpm kaleidoscope:signal:check
 pnpm kaleidoscope:observatory:check
 pnpm kaleidoscope:operate:check
 ```
-

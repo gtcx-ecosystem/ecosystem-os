@@ -8,6 +8,7 @@ const ECOSYSTEM_ROOT = resolve(REPO, '..');
 const GRAPH_REL = 'audit/evidence/kaleidoscope-graph-snapshot-latest.json';
 const OUT_REL = 'audit/evidence/signal-fleet-latest.json';
 const REPORT_REL = 'docs/business/research/kaleidoscope-ai/signal-fleet-latest.md';
+const MPR_RELATION_GAP_REL = 'audit/evidence/mpr-relation-gap-latest.json';
 const OUT = join(REPO, OUT_REL);
 const REPORT = join(REPO, REPORT_REL);
 const WRITE = process.argv.includes('--write');
@@ -126,26 +127,62 @@ function anyCoreConfigPresent(evidence) {
   return ['graph', 'rag', 'mcp', 'eval'].some((kind) => evidence.configs[kind]?.present === true);
 }
 
+function explicitNoMprRelation(repo) {
+  const witness = maybeJson(MPR_RELATION_GAP_REL);
+  const row = witness?.gaps?.find((item) => item.repo === repo);
+  const relation = String(row?.currentMprRelation ?? '');
+  if (!row || !relation.includes('explicit-no-mpr')) return null;
+  return {
+    source: `${MPR_RELATION_GAP_REL}#${repo}`,
+    evaluatedAt: witness.generatedAt ?? mtimeIso(MPR_RELATION_GAP_REL),
+    scoreChangeAllowed: row.scoreChangeAllowed === true,
+    approvalStatus: witness.approval?.status ?? null,
+    reason: row.recommendedResolution ?? null
+  };
+}
+
 function mprForRepo(repo) {
   const rel = `${repo}/audit/evidence/mpr-repo-latest.json`;
   const abs = join(ECOSYSTEM_ROOT, rel);
   const witness = maybeJson(abs);
   if (!witness) {
+    const explicitRelation = explicitNoMprRelation(repo);
+    if (explicitRelation) {
+      return {
+        available: true,
+        relationType: 'explicit-no-mpr-relation',
+        source: explicitRelation.source,
+        composite100: null,
+        evaluatedAt: explicitRelation.evaluatedAt,
+        agenticEmpowerment100: null,
+        scoreChangeAllowed: explicitRelation.scoreChangeAllowed,
+        approvalStatus: explicitRelation.approvalStatus,
+        reason: explicitRelation.reason
+      };
+    }
     return {
       available: false,
+      relationType: 'missing',
       source: 'missing',
       composite100: null,
       evaluatedAt: null,
-      agenticEmpowerment100: null
+      agenticEmpowerment100: null,
+      scoreChangeAllowed: false,
+      approvalStatus: null,
+      reason: null
     };
   }
   const agentic = witness.quadrants?.agenticEmpowerment;
   return {
     available: true,
+    relationType: 'repo-mpr',
     source: rel,
     composite100: witness.composite100 ?? witness.fullComposite100 ?? null,
     evaluatedAt: witness.evaluatedAt ?? mtimeIso(abs),
-    agenticEmpowerment100: agentic?.score100 ?? null
+    agenticEmpowerment100: agentic?.score100 ?? null,
+    scoreChangeAllowed: true,
+    approvalStatus: 'repo-owned',
+    reason: null
   };
 }
 
@@ -174,12 +211,18 @@ function dimension(level, evidence, gaps) {
 function scoreSignalE(repo, repoNode, evidence, mpr) {
   const allConfigs = allCoreConfigsOk(evidence);
   const anyConfig = anyCoreConfigPresent(evidence);
+  const mprScoreEligible = mpr.scoreChangeAllowed === true;
   const hasReadTool = evidence.tools.some((tool) => tool.permissionClass === 'read');
   const hasWriteTool = evidence.tools.some((tool) => tool.permissionClass === 'write');
   const hasPermissionedTools = evidence.tools.length > 0 && evidence.tools.every((tool) => tool.permissionClass !== 'unknown');
-  const graphRefs = Object.values(evidence.configs).map((item) => item.source).filter(Boolean);
+  const graphRefs = Object.values(evidence.configs)
+    .map((item) => item.source)
+    .filter(Boolean);
   const mprRef = mpr.available ? [mpr.source] : [];
   const commonL3Gap = 'No distributed trace, policy-control, or learning-loop evidence is published yet.';
+  const mprGap = mpr.available
+    ? 'MPR relation is explicit but cannot raise process scoring until repo evidence or approval allows score changes.'
+    : 'Publish repo MPR evidence.';
 
   return {
     systemsArchitecture: dimension(
@@ -193,9 +236,9 @@ function scoreSignalE(repo, repoNode, evidence, mpr) {
       hasReadTool ? [commonL3Gap] : ['Publish at least one read-scoped MCP tool boundary.']
     ),
     process: dimension(
-      mpr.available && allConfigs ? 'L2' : mpr.available || anyConfig ? 'L1' : 'L0',
+      mprScoreEligible && allConfigs ? 'L2' : mprScoreEligible || anyConfig ? 'L1' : 'L0',
       [...mprRef, ...graphRefs],
-      mpr.available ? ['Connect SIGNAL deltas to recurring planning and release gates.'] : ['Publish repo MPR evidence.']
+      mprScoreEligible ? ['Connect SIGNAL deltas to recurring planning and release gates.'] : [mprGap]
     ),
     safeguards: dimension(
       allConfigs && hasPermissionedTools ? 'L2' : hasPermissionedTools || configOk(evidence, 'eval') ? 'L1' : 'L0',
@@ -205,7 +248,7 @@ function scoreSignalE(repo, repoNode, evidence, mpr) {
         : ['Publish permissioned tool boundaries and approval policy evidence.']
     ),
     monitoring: dimension(
-      configOk(evidence, 'eval') && mpr.available ? 'L2' : configOk(evidence, 'eval') || mpr.available ? 'L1' : 'L0',
+      configOk(evidence, 'eval') && mprScoreEligible ? 'L2' : configOk(evidence, 'eval') || mprScoreEligible ? 'L1' : 'L0',
       [...mprRef, evidence.configs.eval?.source].filter(Boolean),
       ['Publish traces/eval results tied to agentic workflows before L3.']
     ),
@@ -220,6 +263,7 @@ function scoreSignalE(repo, repoNode, evidence, mpr) {
 function scoreSignalP(repo, repoNode, evidence, mpr) {
   const product = repoIsProduct(repo, repoNode);
   const allConfigs = allCoreConfigsOk(evidence);
+  const mprScoreEligible = mpr.scoreChangeAllowed === true;
   const hasContextTool = evidence.tools.some((tool) => /context|product|market|read|search/i.test(`${tool.name} ${tool.description}`));
   const mprRef = mpr.available ? [mpr.source] : [];
   const commonGap = 'No production user-facing AI trace, eval, or feedback loop is published yet.';
@@ -236,7 +280,7 @@ function scoreSignalP(repo, repoNode, evidence, mpr) {
       hasContextTool ? [commonGap] : ['Publish user/problem/context retrieval tooling.']
     ),
     process: dimension(
-      product && mpr.available ? 'L2' : product || mpr.available || allConfigs ? 'L1' : 'L0',
+      product && mprScoreEligible ? 'L2' : product || mprScoreEligible || allConfigs ? 'L1' : 'L0',
       mprRef,
       ['Connect product-intelligence findings to roadmap, QA, and release evidence.']
     ),
@@ -246,7 +290,7 @@ function scoreSignalP(repo, repoNode, evidence, mpr) {
       ['Publish hallucination, approval, and user-impact safeguards for AI product outputs.']
     ),
     monitoring: dimension(
-      product && mpr.available && configOk(evidence, 'eval') ? 'L2' : mpr.available || configOk(evidence, 'eval') ? 'L1' : 'L0',
+      product && mprScoreEligible && configOk(evidence, 'eval') ? 'L2' : mprScoreEligible || configOk(evidence, 'eval') ? 'L1' : 'L0',
       [...mprRef, evidence.configs.eval?.source].filter(Boolean),
       ['Publish product-feedback, trace, and answer-quality metrics.']
     ),
@@ -309,8 +353,10 @@ function buildResult(graph, repoNode) {
   const enoughEvidence = repoNode.properties?.present === true && evidence.nodes.length > 0;
   const signalEUnlock = !allCoreConfigsOk(evidence)
     ? 'Publish complete graph, RAG, MCP, and eval config evidence to unlock SIGNAL-E L2.'
-    : !mpr.available
-      ? 'Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.'
+    : mpr.relationType === 'explicit-no-mpr-relation'
+      ? 'Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.'
+      : !mpr.scoreChangeAllowed
+        ? 'Publish repo MPR evidence or an explicit no-MPR relation witness to unlock SIGNAL-E process evidence.'
       : 'Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.';
   const signalPUnlock =
     signalP.level === 'L2'
@@ -336,13 +382,18 @@ function buildResult(graph, repoNode) {
     graphRagMcp: graphRagMcpSummary(evidence),
     mprRelation: {
       available: mpr.available,
+      relationType: mpr.relationType,
       source: mpr.source,
       composite100: mpr.composite100,
       agenticEmpowerment100: mpr.agenticEmpowerment100,
+      scoreChangeAllowed: mpr.scoreChangeAllowed,
+      approvalStatus: mpr.approvalStatus,
       relation:
-        mpr.agenticEmpowerment100 === null
-          ? 'MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens.'
-          : 'MPR agenticEmpowerment should reference SIGNAL level and bottlenecks instead of duplicating them.'
+        mpr.relationType === 'explicit-no-mpr-relation'
+          ? 'Repo-local MPR is intentionally absent; the ecosystem witness makes the relation explicit while keeping SIGNAL scoring conservative.'
+          : mpr.agenticEmpowerment100 === null
+            ? 'MPR agenticEmpowerment pillar is not published separately; SIGNAL is used as the explanatory maturity lens.'
+            : 'MPR agenticEmpowerment should reference SIGNAL level and bottlenecks instead of duplicating them.'
     },
     bottlenecks: [
       `${signalP.lowestDimension} limits SIGNAL-P to ${signalP.level}`,
@@ -402,6 +453,7 @@ function buildWitness() {
     sources: {
       graphSnapshot: GRAPH_REL,
       mprRepo: '../*/audit/evidence/mpr-repo-latest.json',
+      mprRelationGap: MPR_RELATION_GAP_REL,
       frameworkPlan: 'docs/business/research/kaleidoscope-ai/signal-mpr-integration-plan.md'
     },
     schemaRefs: {
@@ -449,12 +501,16 @@ function renderReport(witness) {
     '## Repo results',
     '',
     '| Repo | SIGNAL-P | SIGNAL-E | Overall | Graph/RAG/MCP | MPR | Main bottleneck |',
-    '| --- | ---: | ---: | ---: | --- | ---: | --- |'
+    '| --- | ---: | ---: | ---: | --- | --- | --- |'
   ];
 
   for (const row of witness.results) {
+    const mprDisplay =
+      row.mprRelation.relationType === 'explicit-no-mpr-relation'
+        ? 'explicit-no-score'
+        : row.mprRelation.composite100 ?? 'n/a';
     lines.push(
-      `| ${row.repo} | ${row.signalP.level} ${row.signalP.score100}/100 | ${row.signalE.level} ${row.signalE.score100}/100 | ${row.overallLevel} ${row.overallScore100}/100 | ${row.graphRagMcp.state} | ${row.mprRelation.composite100 ?? 'n/a'} | ${row.signalE.lowestDimension} |`
+      `| ${row.repo} | ${row.signalP.level} ${row.signalP.score100}/100 | ${row.signalE.level} ${row.signalE.score100}/100 | ${row.overallLevel} ${row.overallScore100}/100 | ${row.graphRagMcp.state} | ${mprDisplay} | ${row.signalE.lowestDimension} |`
     );
   }
 
