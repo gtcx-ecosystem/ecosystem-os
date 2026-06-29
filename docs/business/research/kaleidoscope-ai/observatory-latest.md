@@ -1,7 +1,7 @@
 ---
 title: Kaleidoscope AI observatory latest
 status: generated
-date: 2026-06-28
+date: 2026-06-29
 owner: ecosystem-os
 document_type: evidence-report
 tags: ['kaleidoscope-ai', 'observatory', 'graph', 'rag', 'mcp']
@@ -19,7 +19,7 @@ review_cycle: on-change
 - Alias warnings: 0
 - Fresh evidence repos: 20/20
 - Movement available: true
-- Commercial evidence complete: 15/20
+- Commercial evidence complete: 16/20
 
 ## What changed since the last audit?
 
@@ -30,7 +30,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | Repo | Tier | Ready | Graph/RAG/MCP | Blockers | SIGNAL | MPR | Freshness | Movement | Commercial |
 | --- | ---: | --- | --- | ---: | --- | ---: | --- | --- | --- |
 | baseline-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 100 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
-| bridge-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
+| bridge-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | n/a | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | ecosystem-os | 0 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | compliance-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | gtcx-os | 1 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 91 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
@@ -55,7 +55,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | Repo | Evidenced categories | Gaps |
 | --- | ---: | --- |
 | baseline-os | 4/5 | workflow |
-| bridge-os | 4/5 | workflow |
+| bridge-os | 5/5 | none |
 | ecosystem-os | 5/5 | none |
 | compliance-os | 5/5 | none |
 | gtcx-os | 5/5 | none |

@@ -26,7 +26,7 @@ The Observatory now tracks five commercial evidence categories per repo:
 | deployment | deployment profile, production readiness, staging, or deployment proof evidence. |
 | workflow | critical user workflow, user flow, operating workflow, or automation workflow evidence. |
 
-The current run shows 15/20 repos complete across the five categories and 5/20 repos with explicit gaps. Execution Studio converts each gap row into a draft-only, owner-routed action.
+The current run shows 16/20 repos complete across the five categories and 4/20 repos with explicit gaps. Execution Studio converts each gap row into a draft-only, owner-routed action.
 
 ## Current Gap Map
 
@@ -35,8 +35,7 @@ The current run shows 15/20 repos complete across the five categories and 5/20 r
 | `exec-007-inspection-os-commercial-evidence-gap` | `inspection-os` | 1/5 | partner, revenue, deployment, workflow | P1 | `pnpm kaleidoscope:observatory:check` |
 | `exec-008-agile-os-commercial-evidence-gap` | `agile-os` | 4/5 | traction | P2 | `pnpm kaleidoscope:observatory:check` |
 | `exec-009-baseline-os-commercial-evidence-gap` | `baseline-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
-| `exec-010-bridge-os-commercial-evidence-gap` | `bridge-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
-| `exec-011-canon-os-commercial-evidence-gap` | `canon-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
+| `exec-010-canon-os-commercial-evidence-gap` | `canon-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
 
 ## Required Proof
 
@@ -59,7 +58,7 @@ The current run shows 15/20 repos complete across the five categories and 5/20 r
 ## Next Actions
 
 1. Route `inspection-os` first because it has the widest gap and blocks commercial comparability.
-2. Route single-category workflow gaps to `baseline-os`, `bridge-os`, and `canon-os`.
+2. Route single-category workflow gaps to `baseline-os` and `canon-os`.
 3. Route `agile-os` traction evidence to clarify how Agile OS drives measurable execution progress.
 4. Keep `ecosystem-os` deployment evidence current through `docs/operations/deployment/deployment-profile.json`.
 5. Rerun `pnpm kaleidoscope:operate:write` after owner repos publish or confirm evidence.
