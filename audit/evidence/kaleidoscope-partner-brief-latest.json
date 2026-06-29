@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/kaleidoscope-ai/partner-brief/v1",
-  "generatedAt": "2026-06-29T00:06:31.759Z",
+  "generatedAt": "2026-06-29T00:11:09.504Z",
   "date": "2026-06-29",
   "repo": "ecosystem-os",
   "phase": "phase-2-partner-brief-eval",
@@ -26,17 +26,17 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.672Z",
+          "sourceDate": "2026-06-29T00:11:09.383Z",
           "reason": "Decision Room strategic answer witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.621Z",
+          "sourceDate": "2026-06-29T00:11:09.332Z",
           "reason": "Observatory readiness and movement witness"
         },
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.717Z",
+          "sourceDate": "2026-06-29T00:11:09.447Z",
           "reason": "Execution Studio approval-boundary witness"
         }
       ],
@@ -50,7 +50,7 @@
       "evidence": [
         {
           "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.672Z",
+          "sourceDate": "2026-06-29T00:11:09.383Z",
           "reason": "market-leadership decision packet"
         }
       ],
@@ -111,7 +111,7 @@
         },
         {
           "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.717Z",
+          "sourceDate": "2026-06-29T00:11:09.447Z",
           "reason": "Execution Studio approval request"
         }
       ],
@@ -130,7 +130,7 @@
         },
         {
           "path": "audit/evidence/kaleidoscope-observatory-latest.json",
-          "sourceDate": "2026-06-29T00:06:31.621Z",
+          "sourceDate": "2026-06-29T00:11:09.332Z",
           "reason": "movement availability"
         }
       ],

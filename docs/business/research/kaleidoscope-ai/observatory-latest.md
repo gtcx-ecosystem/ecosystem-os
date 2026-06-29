@@ -19,7 +19,7 @@ review_cycle: on-change
 - Alias warnings: 0
 - Fresh evidence repos: 20/20
 - Movement available: true
-- Commercial evidence complete: 16/20
+- Commercial evidence complete: 17/20
 
 ## What changed since the last audit?
 
@@ -44,7 +44,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | terra-os | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | veritas-ai | 2 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | agile-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:gap par:ok rev:ok dep:ok wor:ok |
-| canon-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:gap |
+| canon-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L1 25 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | fabric-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 100 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
 | inspection-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 54 | fresh | 0 | tra:ok par:gap rev:gap dep:gap wor:gap |
 | ledger-os | 3 | ready 100/100 | rag:ok mcp:ok graph:ok eval:ok | 0 | L2 45 | 59 | fresh | 0 | tra:ok par:ok rev:ok dep:ok wor:ok |
@@ -69,7 +69,7 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | terra-os | 5/5 | none |
 | veritas-ai | 5/5 | none |
 | agile-os | 4/5 | traction |
-| canon-os | 4/5 | workflow |
+| canon-os | 5/5 | none |
 | fabric-os | 5/5 | none |
 | inspection-os | 1/5 | partner, revenue, deployment, workflow |
 | ledger-os | 5/5 | none |
