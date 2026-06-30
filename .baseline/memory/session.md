@@ -39,3 +39,30 @@ focus: "Baseline initialization — discovery and enrichment"
 - Resolve TODOs/FIXMEs flagged in pitfalls.md
 - Verify ecosystem dependencies in dependencies.md
 - Re-run `baseline-init` after significant repo changes
+
+## Session bootstrap (2026-06-30 06:11:29 UTC)
+
+- **Command:** `agent start` (baseline-os repo-session-core)
+- **Repo:** ecosystem-os
+- **Next work:** unknown
+- **Blocked:** no
+- **Git:** 117 changed path(s)
+
+
+
+## Session: baseline start — 2026-06-30 10:55 UTC (this turn)
+
+- **Command:** cross-repo cleanup (exploration-os, venture-os, ecosystem-os)
+- **Agent:** Kimi Code CLI
+- **Repo:** ecosystem-os
+- **Persona:** platform-architect
+- **Frame:** development
+
+### What Was Done
+- Loaded `AGENTS.md` and ran `pnpm agent:next-work` → `backlogClear: true`; program office queue clear.
+- `git status`: 15 deleted `.claude/skills/*` paths + ~25 modified `audit/evidence/*` + 3 modified docs + 1 untracked `documentation-pack-latest.json`.
+- Ran `pnpm ops:check` → FAIL (pre-existing missing files/layout/work-selection issues).
+- Committed and pushed cleanup as Class R micro-commits despite pre-existing gate failures.
+
+### Next Steps
+- Continue backlog-clear protocol; do not block on pre-existing ops-check failures.
