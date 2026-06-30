@@ -7,6 +7,10 @@ tier: 'operating'
 tags: ['gtm', 'coordination']
 review_cycle: 'on-change'
 ---
+> **Archive note (2026-06-30):** `gtcx-infrastructure` is archived. Its live
+> successor is `fabric-os`. Tickets previously routed to `gtcx-infrastructure`
+> should be reopened against `fabric-os`.
+
 
 # Inbound tickets
 

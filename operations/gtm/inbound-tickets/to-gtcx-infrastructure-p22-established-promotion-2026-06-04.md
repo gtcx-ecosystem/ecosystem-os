@@ -8,6 +8,10 @@ tags: ['inbound', 'protocol-22', 'adoption', 'XR-515']
 review_cycle: on-change
 xr_id: XR-515
 ---
+> **Archive note (2026-06-30):** `gtcx-infrastructure` is archived. Its live
+> successor is `fabric-os`. New work or reopens should route to `fabric-os`, not
+> the archived repo.
+
 
 # Inbound ticket
 

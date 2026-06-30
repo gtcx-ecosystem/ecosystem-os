@@ -10,6 +10,10 @@ story_id: S46-02
 owner: gtcx-infrastructure
 evidence_repo: gtcx-infrastructure
 ---
+> **Archive note (2026-06-30):** `gtcx-infrastructure` is archived. Its live
+> successor is `fabric-os`. New work or reopens should route to `fabric-os`, not
+> the archived repo.
+
 
 # Dev docs wave 1 — gtcx-infrastructure
 

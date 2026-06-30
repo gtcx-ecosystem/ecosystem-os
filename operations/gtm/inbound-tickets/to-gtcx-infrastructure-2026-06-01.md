@@ -7,6 +7,10 @@ tier: 'operating'
 tags: ['gtm', 'gitbook', 'gtcx-protocols']
 review_cycle: 'on-change'
 ---
+> **Archive note (2026-06-30):** `gtcx-infrastructure` is archived. Its live
+> successor is `fabric-os`. New work or reopens should route to `fabric-os`, not
+> the archived repo.
+
 
 # Inbound: Protocols GitBook hub sync (v0.4.4)
 

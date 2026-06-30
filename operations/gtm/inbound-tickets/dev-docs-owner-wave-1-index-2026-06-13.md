@@ -6,6 +6,10 @@ owner: canon-os
 initiative: INIT-DOC-FLEET-PUBLISH
 story_id: S46-02
 ---
+> **Archive note (2026-06-30):** `gtcx-infrastructure` is archived. Its live
+> successor is `fabric-os`. Tickets previously routed to `gtcx-infrastructure`
+> should be reopened against `fabric-os`.
+
 
 # Dev docs owner inbound — wave 1
 
