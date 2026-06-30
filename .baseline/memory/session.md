@@ -66,3 +66,31 @@ focus: "Baseline initialization — discovery and enrichment"
 
 ### Next Steps
 - Continue backlog-clear protocol; do not block on pre-existing ops-check failures.
+
+## Session: push-conflict resolution — 2026-06-30 12:17 UTC
+
+- **Agent:** Kimi Code CLI
+- **Repo:** ecosystem-os
+- **Persona:** platform-architect
+- **Frame:** development
+
+### What Was Done
+- Resolved `origin/main` push conflict caused by local `pm/ → machine/` and `ops/ → operations/` renames diverging from remote additions under `pm/spec/kaleidoscope-ai/`.
+- `git pull --rebase` had failed with directory-rename conflicts and was aborted.
+- Ran `git merge origin/main` (produced `99bf9c3`); working tree retained resurrected `pm/` untracked files and backup dirs (`machine~origin_main`, `operations~origin_main`).
+- Removed obsolete untracked `pm/` tree (old `product-goals.json` superseded by `machine/spec/product-goals.json`) and any backup dirs.
+- Committed all resolved rename + remote-content reconciliation as `207196a`.
+- Verified all remote `pm/spec/kaleidoscope-ai/*` files are present under `machine/spec/kaleidoscope-ai/`, plus local additions (`signal-l5-evidence-pack.schema.json`, `signal-module-remediation.json`, remediation scripts).
+- Pushed `main` to `origin/main` successfully: `a43b3c1..207196a`.
+
+### Authority
+- Class R — routine autonomous cleanup and merge resolution; no Class A/S gates involved.
+
+### Verification
+- `git status` → clean working tree.
+- `git ls-tree` comparison → all 21 origin `pm/spec/kaleidoscope-ai` files accounted for in `machine/spec/kaleidoscope-ai`.
+- `git push origin main` → exit 0.
+
+### Next Steps
+- Resume backlog-clear protocol; `pnpm agent:next-work` already reports `backlogClear: true`.
+- Pre-existing `pnpm ops:check` failures remain out of scope.
