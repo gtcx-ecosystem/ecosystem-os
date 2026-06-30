@@ -4,6 +4,7 @@ status: generated
 date: 2026-06-29
 owner: ecosystem-os
 document_type: evidence-report
+tier: standard
 tags: ['kaleidoscope-ai', 'observatory', 'graph', 'rag', 'mcp']
 review_cycle: on-change
 ---
@@ -74,4 +75,3 @@ Since the last available Kaleidoscope evidence, the current graph snapshot shows
 | inspection-os | 5/5 | none |
 | ledger-os | 5/5 | none |
 | venture-os | 5/5 | none |
-

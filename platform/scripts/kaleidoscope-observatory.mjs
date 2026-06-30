@@ -108,7 +108,7 @@ const COMMERCIAL_EVIDENCE_CANDIDATES = {
   ],
   workflow: [
     'docs/product/ux/critical-workflows.md',
-    'docs/product/experience/critical-workflows.md',
+    'docs/product/ux/critical-workflows.md',
     'machine/spec/ecosystem-workflows.json',
     'operations/machine/roadmap/workflows.json',
     'docs/operations/workflows/n8n-workflows.json',

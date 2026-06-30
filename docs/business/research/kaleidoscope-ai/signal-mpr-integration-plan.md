@@ -1,6 +1,6 @@
 ---
 title: signal mpr integration plan
-status: draft
+status: current
 date: 2026-06-28
 owner: ecosystem-os
 document_type: planning
@@ -14,6 +14,12 @@ review_cycle: weekly
 ## Purpose
 
 Use SIGNAL the way GTCX already uses MPR: as a repeatable, evidence-backed, repo-local, fleet-rollup assessment system.
+
+Execution of the ecosystem-os module uplift is governed by:
+
+- `docs/business/research/kaleidoscope-ai/signal-maturity-remediation-plan.md`
+- `pm/spec/kaleidoscope-ai/signal-module-remediation.json`
+- `pnpm kaleidoscope:signal:remediation:check`
 
 MPR answers: how strong is this repo or work item across compliance, technical excellence, craft, world-class execution, commercial value, moat, agentic empowerment, ecosystem integration, and IP?
 

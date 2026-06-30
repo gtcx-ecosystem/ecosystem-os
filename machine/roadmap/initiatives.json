@@ -2,8 +2,21 @@
   "$schema": "gtcx://pm/initiatives/v1",
   "schemaVersion": 1,
   "repo": "ecosystem-os",
-  "updated": "2026-06-27",
+  "updated": "2026-06-29",
   "initiatives": [
+    {
+      "id": "INIT-ECO-SIGNAL-MATURITY",
+      "title": "INIT-ECO-SIGNAL-MATURITY — evidence-backed agentic maturity",
+      "status": "in_progress",
+      "priority": "P0",
+      "ownerRepo": "ecosystem-os",
+      "protocol": "P57-product-delivery-compile",
+      "parentInitiative": null,
+      "goalIds": [],
+      "planRef": "docs/product/roadmap/initiatives/INIT-ECO-SIGNAL-MATURITY.md",
+      "shippableOutcome": "every locally led module carries scoped SIGNAL-P and SIGNAL-E witnesses for L3 and L5; five consecutive operating cycles prove self-improvement, generative design, policy synthesis, cross-module learning, autonomous experimentation, and human override.",
+      "_compiledFrom": "docs/product/roadmap/initiatives/INIT-ECO-SIGNAL-MATURITY.md"
+    },
     {
       "id": "INIT-ECOSYSTEM-AGENCY",
       "title": "INIT-ECOSYSTEM-AGENCY — Agency module",
@@ -74,7 +87,7 @@
     {
       "id": "INIT-ECOSYSTEM-CORE",
       "title": "INIT-ECOSYSTEM-CORE — Kernel, Graph, Ledger, Surface",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P0",
       "ownerRepo": "ecosystem-os",
       "protocol": "P57-product-delivery-compile",
@@ -142,7 +155,7 @@
     {
       "id": "INIT-ECOSYSTEM-ETHOS",
       "title": "INIT-ECOSYSTEM-ETHOS — Ethos module",
-      "status": "in_progress",
+      "status": "done",
       "priority": "P1",
       "ownerRepo": "ecosystem-os",
       "protocol": "P57-product-delivery-compile",
@@ -256,6 +269,6 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-27T19:55:37.236Z"
+    "at": "2026-06-29T10:44:25.832Z"
   }
 }

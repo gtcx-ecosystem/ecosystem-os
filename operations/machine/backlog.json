@@ -1,15 +1,15 @@
 {
   "$schema": "gtcx://ops/pm-backlog/v1",
   "repo": "ecosystem-os",
-  "updated": "2026-06-27",
+  "updated": "2026-06-29",
   "syncSource": "pnpm product:compile",
   "active": {
-    "storyId": "STORY-ECOSYSTEM-OS-MIGRATION",
-    "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
-    "status": "open",
+    "storyId": "STORY-ECO-SIGNAL-L3",
+    "title": "STORY-ECO-SIGNAL-L3 — establish the governed-loop L3 evidence gate",
+    "status": "in_progress",
     "owner": "ecosystem-os",
-    "priority": "P2",
-    "tier": "compiled-backlog"
+    "priority": "P0",
+    "tier": "in_progress"
   },
   "backlogClear": false,
   "stories": [
@@ -62,15 +62,28 @@
       "_compiledFrom": "docs/product/roadmap/stories/STORY-ECO-ETHOS-CONTRACT.md"
     },
     {
-      "id": "STORY-ECOSYSTEM-OS-MIGRATION",
-      "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
-      "status": "open",
-      "priority": "P2",
+      "id": "STORY-ECO-SIGNAL-L3",
+      "title": "STORY-ECO-SIGNAL-L3 — establish the governed-loop L3 evidence gate",
+      "status": "in_progress",
+      "priority": "P0",
       "owner": "ecosystem-os",
-      "initiativeId": "INIT-ECOSYSTEM-OS-MIGRATION",
-      "canonBundleId": null,
+      "initiativeId": "INIT-ECO-SIGNAL-MATURITY",
+      "canonBundleId": "FEAT-ECO-SIGNAL-MATURITY",
       "frIds": [],
-      "planRef": "../agile-os/docs/operations/coordination/outbound/to-ecosystem-os-open-items-2026-06-25.md"
+      "planRef": "docs/product/roadmap/stories/STORY-ECO-SIGNAL-L3.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-ECO-SIGNAL-L3.md"
+    },
+    {
+      "id": "STORY-ECO-SIGNAL-L5",
+      "title": "STORY-ECO-SIGNAL-L5 — prove generative operating maturity",
+      "status": "pending",
+      "priority": "P0",
+      "owner": "ecosystem-os",
+      "initiativeId": "INIT-ECO-SIGNAL-MATURITY",
+      "canonBundleId": "FEAT-ECO-SIGNAL-MATURITY",
+      "frIds": [],
+      "planRef": "docs/product/roadmap/stories/STORY-ECO-SIGNAL-L5.md",
+      "_compiledFrom": "docs/product/roadmap/stories/STORY-ECO-SIGNAL-L5.md"
     },
     {
       "id": "STORY-P35-LAYOUT",
@@ -127,28 +140,29 @@
   "_generated": {
     "by": "product-compile.mjs",
     "protocol": "P57-product-delivery-compile",
-    "at": "2026-06-27T19:55:37.245Z"
+    "at": "2026-06-29T10:44:25.842Z"
   },
   "execution": {
     "backlogClear": false,
     "active": {
-      "storyId": "STORY-ECOSYSTEM-OS-MIGRATION",
-      "title": "STORY-ECOSYSTEM-OS-MIGRATION — INIT-ECOSYSTEM-OS-MIGRATION",
-      "status": "open",
+      "storyId": "STORY-ECO-SIGNAL-L3",
+      "title": "STORY-ECO-SIGNAL-L3 — establish the governed-loop L3 evidence gate",
+      "status": "in_progress",
       "owner": "ecosystem-os",
-      "priority": "P2",
-      "tier": "compiled-backlog"
+      "priority": "P0",
+      "tier": "in_progress"
     },
-    "openCount": 1,
-    "totalCount": 9,
+    "openCount": 2,
+    "totalCount": 10,
     "doneCount": 8,
     "openIds": [
-      "STORY-ECOSYSTEM-OS-MIGRATION"
+      "STORY-ECO-SIGNAL-L3",
+      "STORY-ECO-SIGNAL-L5"
     ]
   },
   "_mirror": {
     "of": "machine/backlog.json",
-    "at": "2026-06-27T19:55:37.250Z",
+    "at": "2026-06-29T10:44:25.846Z",
     "note": "Shim only — P22 and gates read machine/backlog.json"
   }
 }

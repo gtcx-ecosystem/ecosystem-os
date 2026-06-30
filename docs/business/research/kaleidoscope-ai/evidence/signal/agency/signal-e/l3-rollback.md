@@ -1,0 +1,17 @@
+---
+title: SIGNAL L3 Agency SIGNAL-E rollback evidence
+status: generated
+date: 2026-06-29
+owner: ecosystem-os
+document_type: evidence-note
+tags: ['kaleidoscope-ai', 'signal', 'l3']
+review_cycle: on-change
+---
+
+# SIGNAL L3 Agency SIGNAL-E rollback evidence
+
+Module: Agency
+Axis: SIGNAL-E
+Completion signal: Tool calls respect delegation, approval, and rollback controls in the shared trace.
+
+This local evidence note binds the module remediation contract to a replayable governed-loop claim. It is scoped to ecosystem-os product ownership and does not assert sibling implementation completion.

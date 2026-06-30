@@ -50,6 +50,9 @@ run('agent:work-selection:check', process.execPath, [
 ]);
 run('agency:check', process.execPath, ['platform/scripts/agency-check.mjs']);
 run('publish:check', process.execPath, ['platform/scripts/publish-register-check.mjs']);
+run('signal:remediation:check', process.execPath, [
+  'platform/scripts/kaleidoscope-signal-remediation-check.mjs',
+]);
 
 if (errors.length) {
   console.error('ops:check FAIL — ecosystem-os');

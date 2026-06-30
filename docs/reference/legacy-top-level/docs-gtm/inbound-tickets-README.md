@@ -3,6 +3,7 @@ title: 'Inbound tickets — ecosystem-os'
 status: current
 date: 2026-06-06
 owner: ecosystem-os
+document_type: operations
 tier: standard
 tags: ['gtm', 'coordination']
 review_cycle: on-change

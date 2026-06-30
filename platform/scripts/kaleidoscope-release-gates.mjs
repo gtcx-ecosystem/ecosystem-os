@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -15,7 +16,8 @@ const SOURCE_RELS = {
   signal: 'audit/evidence/signal-fleet-latest.json',
   execution: 'audit/evidence/kaleidoscope-execution-studio-latest.json',
   partnerBrief: 'audit/evidence/kaleidoscope-partner-brief-latest.json',
-  safetyPlan: 'docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md'
+  safetyPlan: 'docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md',
+  signalRemediation: 'pm/spec/kaleidoscope-ai/signal-module-remediation.json'
 };
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
@@ -61,6 +63,11 @@ function buildWitness() {
   const execution = readJson(SOURCE_RELS.execution);
   const partnerBrief = readJson(SOURCE_RELS.partnerBrief);
   const generatedAt = new Date().toISOString();
+  const remediationCheck = spawnSync(
+    process.execPath,
+    ['platform/scripts/kaleidoscope-signal-remediation-check.mjs'],
+    { cwd: REPO, encoding: 'utf8' }
+  );
 
   const decisionQuestions = decision.questions ?? [];
   const allDecisionQuestionsCited = decisionQuestions.every((item) => (item.citations ?? []).length >= 3);
@@ -150,6 +157,13 @@ function buildWitness() {
       signal.summary?.generatedRepoWitnesses === signal.summary?.repoCount && signal.summary?.graphRagMcpReadyRepos === signal.summary?.repoCount,
       [source(SOURCE_RELS.signal, 'SIGNAL fleet witness')],
       'Release cannot pass when repo-level agentic maturity evidence is missing or graph/RAG/MCP readiness regresses.'
+    ),
+    gate(
+      'signal-remediation-integrity',
+      'SIGNAL remediation contract is internally consistent',
+      remediationCheck.status === 0,
+      [source(SOURCE_RELS.signalRemediation, 'module ownership, evidence paths, targets, and claim consistency')],
+      'Release cannot pass when SIGNAL remediation controls drift or overstate maturity.'
     ),
     gate(
       'safety-plan-linked',

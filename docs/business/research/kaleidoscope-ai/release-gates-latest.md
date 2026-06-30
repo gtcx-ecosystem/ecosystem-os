@@ -4,6 +4,7 @@ status: generated
 date: 2026-06-29
 owner: ecosystem-os
 document_type: evidence-report
+tier: standard
 tags: ['kaleidoscope-ai', 'release-gates', 'evals', 'safety']
 review_cycle: on-change
 ---

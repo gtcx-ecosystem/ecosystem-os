@@ -58,9 +58,9 @@ Every product module traces to a local ecosystem-os lead. Supporting repos may i
 | **Graph** | Substrate | `pm/spec/backlog-registry.json#graph` | `INIT-ECOSYSTEM-CORE` | ecosystem-os | agile-os, bridge-os | company state graph |
 | **Ledger** | Substrate | `pm/spec/backlog-registry.json#ledger` | `INIT-ECOSYSTEM-CORE` | ecosystem-os | ledger-ui, fabric-os, canon-os | evidence envelopes |
 | **Surface** | Substrate | `pm/spec/backlog-registry.json#surface` | `INIT-ECOSYSTEM-CORE` | ecosystem-os | gtcx-os, markets-os, terra-os, terminal-os | command surfaces |
-| **Ethos** | Operating | `docs/gitbook/foundation/` | `INIT-ECOSYSTEM-DOCS` | ecosystem-os | doctrine + charter |
-| **Venture** | Operating | `pm/backlog/venture-backlog.json` | `INIT-ECOSYSTEM-VENTURE` | ecosystem-os | `ECO-VEN-002`–`006` |
-| **Agency** | Operating | `pm/backlog/agency-backlog.json` | `INIT-ECOSYSTEM-AGENCY` | ecosystem-os | sealed (`ECO-AGY-001`) |
+| **Ethos** | Operating | `pm/spec/backlog-registry.json#ethos` | `INIT-ECOSYSTEM-ETHOS` | ecosystem-os | docs/foundation, canon-os references | doctrine + charter |
+| **Venture** | Operating | `pm/backlog/venture-backlog.json` | `INIT-ECOSYSTEM-VENTURE` | ecosystem-os | venture-os implementation | `ECO-VEN-*` |
+| **Agency** | Operating | `pm/backlog/agency-backlog.json` | `INIT-ECOSYSTEM-AGENCY` | ecosystem-os | pm/agency | sealed (`ECO-AGY-*`) |
 | **Bridge** | Operating | `../bridge-os/pm/` | fleet program | bridge-os | ecosystem-os product integration | program office |
 | **Agile** | Operating | `../agile-os/pm/` | fleet program | agile-os | ecosystem-os product integration | sprint authority |
 | **Fabric** | Operating | `../fabric-os/pm/` | `SECAS-S4` | fabric-os | ecosystem-os product integration | assurance ops |

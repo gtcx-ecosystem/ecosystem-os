@@ -3,6 +3,7 @@ title: 'SOC 2 — ecosystem-os slice'
 status: current
 date: 2026-06-06
 owner: ecosystem-os
+document_type: assurance
 tier: standard
 tags: ['gtm', 'soc2', 'assurance']
 review_cycle: on-change
