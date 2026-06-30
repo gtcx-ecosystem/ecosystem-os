@@ -1,0 +1,368 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resource-replay/v1",
+  "generatedAt": "2026-06-29T05:42:13.016Z",
+  "date": "2026-06-29",
+  "repo": "ecosystem-os",
+  "phase": "phase-3-resource-replay",
+  "ok": true,
+  "summary": {
+    "source": "audit/evidence/kaleidoscope-phase-3-resources-latest.json",
+    "sourceSha256": "07aaf388295486c4ecdbdacd2e80240066be9ae79160ff319d36cbf549d748b0",
+    "replayBundleFingerprint": "ec4fd714c6ae47f76b4b540e36c6e77e7f23ff15352d9e5b35ad34334d681ecf",
+    "resourceCount": 9,
+    "expectedResourceCount": 9,
+    "resources": [
+      "fleet",
+      "graph",
+      "query",
+      "decision-room",
+      "signal",
+      "actions",
+      "partner-room",
+      "release",
+      "phase-2"
+    ],
+    "orderOk": true,
+    "missingResources": [],
+    "unexpectedResources": [],
+    "passedResources": 9,
+    "failedResources": 0,
+    "externalUse": "blocked_until_explicit_approval"
+  },
+  "validation": [
+    {
+      "resource": "fleet",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/fleet",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "959ff8e6d3632a30a0faff0508e3071d095575ac2172946235b77f293a9a8795",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "exists": true,
+          "sha256": "c1b21fe4007cedcf13a470309648437cecd838c709c3ba64dbd7f34e7e62ac6e",
+          "bytes": 95384,
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+          "exists": true,
+          "sha256": "f7f5296763df5841fe278c24240e2c058efb46580bf5f3881e63b82a1c27ead1",
+          "bytes": 26057,
+          "sourceDate": "2026-06-29T01:31:17.225Z"
+        },
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "exists": true,
+          "sha256": "2b9232b8eadcace58159e7e9aa257806d19fe7b3be763cb627e393795ade0215",
+          "bytes": 170164,
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        }
+      ]
+    },
+    {
+      "resource": "graph",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/graph",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "f2b98f1d42e26a84cf51f526f4b8655331dbf5526d19a6ea2936803615ce0e46",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "exists": true,
+          "sha256": "e0a99e27337fea74d8753984d3fbd7487d7b213ef95c8c92cbd40cf3fc10d1a4",
+          "bytes": 164700,
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+          "exists": true,
+          "sha256": "f7f5296763df5841fe278c24240e2c058efb46580bf5f3881e63b82a1c27ead1",
+          "bytes": 26057,
+          "sourceDate": "2026-06-29T01:31:17.225Z"
+        }
+      ]
+    },
+    {
+      "resource": "query",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/query",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "e57b927701f59174c1a28be96688856360156da7b7b0bf0684307c405c12b547",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "exists": true,
+          "sha256": "b5fdcd38292d96404b8bded4860789f46305c30bf3a942abe4fd1a0d7adafd67",
+          "bytes": 14166,
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "exists": true,
+          "sha256": "e0a99e27337fea74d8753984d3fbd7487d7b213ef95c8c92cbd40cf3fc10d1a4",
+          "bytes": 164700,
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+          "exists": true,
+          "sha256": "5119e6b643ae87a3f8df0e79cc635b76b9638a78d70b9bfc2619e489a51403b2",
+          "bytes": 3572,
+          "sourceDate": "2026-06-29T03:43:26.600Z"
+        }
+      ]
+    },
+    {
+      "resource": "decision-room",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/decision-room",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "61673d3eb45facf0a5f26980535233be4be6b29ec8e99bb0d1afe0261135a873",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "exists": true,
+          "sha256": "98872d557874b13844f21b1ab3c42d3b4841f3e76ed7d18289f0c44a37695c15",
+          "bytes": 17561,
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "exists": true,
+          "sha256": "b5fdcd38292d96404b8bded4860789f46305c30bf3a942abe4fd1a0d7adafd67",
+          "bytes": 14166,
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "exists": true,
+          "sha256": "c1b21fe4007cedcf13a470309648437cecd838c709c3ba64dbd7f34e7e62ac6e",
+          "bytes": 95384,
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "exists": true,
+          "sha256": "b2d55e553cdeef44d42fb59bf64aa4273105916d56c314a1b90c6e030fba8f55",
+          "bytes": 7721,
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ]
+    },
+    {
+      "resource": "signal",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/signal",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "bc4db700cc94011a0dfee8a495a7310603ccadff1ea11cf22b5358e84c5f78ee",
+      "witnesses": [
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "exists": true,
+          "sha256": "2b9232b8eadcace58159e7e9aa257806d19fe7b3be763cb627e393795ade0215",
+          "bytes": 170164,
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "exists": true,
+          "sha256": "e0a99e27337fea74d8753984d3fbd7487d7b213ef95c8c92cbd40cf3fc10d1a4",
+          "bytes": 164700,
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "exists": true,
+          "sha256": "b2d55e553cdeef44d42fb59bf64aa4273105916d56c314a1b90c6e030fba8f55",
+          "bytes": 7721,
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ]
+    },
+    {
+      "resource": "actions",
+      "mode": "draft",
+      "approval": {
+        "status": "draft_pending_approval",
+        "boundary": "draft"
+      },
+      "route": "/kaleidoscope/actions",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "52a02bc91273b7055eebc0c0027895a734a44f2f23f1cb79ba437747b0be97a3",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "exists": true,
+          "sha256": "8c2b1cf1eca57e4dabc539c21bb8c73950f1a17a47b393b62fa3fd1cbac7a77a",
+          "bytes": 862,
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "exists": true,
+          "sha256": "98872d557874b13844f21b1ab3c42d3b4841f3e76ed7d18289f0c44a37695c15",
+          "bytes": 17561,
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "exists": true,
+          "sha256": "2b9232b8eadcace58159e7e9aa257806d19fe7b3be763cb627e393795ade0215",
+          "bytes": 170164,
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "exists": true,
+          "sha256": "b2d55e553cdeef44d42fb59bf64aa4273105916d56c314a1b90c6e030fba8f55",
+          "bytes": 7721,
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ]
+    },
+    {
+      "resource": "partner-room",
+      "mode": "draft",
+      "approval": {
+        "status": "blocked_until_explicit_approval",
+        "boundary": "external"
+      },
+      "route": "/kaleidoscope/partner-room",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "69c054e74cf066ac22c47a102e7790122176d382343b4415f5a430a9dc9ddce3",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+          "exists": true,
+          "sha256": "8c8260beebb8f287f46a970272e29aca96f31f37d7d389250b89a6300fab6610",
+          "bytes": 6033,
+          "sourceDate": "2026-06-29T01:31:17.577Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "exists": true,
+          "sha256": "98872d557874b13844f21b1ab3c42d3b4841f3e76ed7d18289f0c44a37695c15",
+          "bytes": 17561,
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "exists": true,
+          "sha256": "c1b21fe4007cedcf13a470309648437cecd838c709c3ba64dbd7f34e7e62ac6e",
+          "bytes": 95384,
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "exists": true,
+          "sha256": "8c2b1cf1eca57e4dabc539c21bb8c73950f1a17a47b393b62fa3fd1cbac7a77a",
+          "bytes": 862,
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        }
+      ]
+    },
+    {
+      "resource": "release",
+      "mode": "read",
+      "approval": {
+        "status": "blocked_until_explicit_approval",
+        "boundary": "external"
+      },
+      "route": "/kaleidoscope/release",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "57f1e51d71f83d1e8f74d4a6146677d1ee6c0fc42716653045ee4f075e77407c",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+          "exists": true,
+          "sha256": "03542322144c3dbf9dbf6931cbb0bd76f424ce967643525905533d0cc811bc1c",
+          "bytes": 7168,
+          "sourceDate": "2026-06-29T01:31:17.619Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+          "exists": true,
+          "sha256": "a8ed3112418e723c9b59e1a4aa2589a71cbfb21f4efb7a5edf04925e732d4d37",
+          "bytes": 8427,
+          "sourceDate": "2026-06-29T03:40:04.835Z"
+        },
+        {
+          "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+          "exists": true,
+          "sha256": "5119e6b643ae87a3f8df0e79cc635b76b9638a78d70b9bfc2619e489a51403b2",
+          "bytes": 3572,
+          "sourceDate": "2026-06-29T03:43:26.600Z"
+        }
+      ]
+    },
+    {
+      "resource": "phase-2",
+      "mode": "read",
+      "approval": {
+        "status": "not_required",
+        "boundary": "read"
+      },
+      "route": "/kaleidoscope/phase-2",
+      "ok": true,
+      "issues": [],
+      "semanticFingerprint": "c3e0e013f8348c23cd6a8aa610e248f661e7816ad7aef2a532fac9c51cecfd75",
+      "witnesses": [
+        {
+          "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+          "exists": true,
+          "sha256": "a8ed3112418e723c9b59e1a4aa2589a71cbfb21f4efb7a5edf04925e732d4d37",
+          "bytes": 8427,
+          "sourceDate": "2026-06-29T03:40:04.835Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+          "exists": true,
+          "sha256": "03542322144c3dbf9dbf6931cbb0bd76f424ce967643525905533d0cc811bc1c",
+          "bytes": 7168,
+          "sourceDate": "2026-06-29T01:31:17.619Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "exists": true,
+          "sha256": "b2d55e553cdeef44d42fb59bf64aa4273105916d56c314a1b90c6e030fba8f55",
+          "bytes": 7721,
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ]
+    }
+  ],
+  "contracts": {
+    "resourceReplay": "pm/spec/kaleidoscope-ai/phase-3-resource-replay.schema.json",
+    "phase3Resources": "pm/spec/kaleidoscope-ai/phase-3-resources.schema.json",
+    "responseEnvelope": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json"
+  }
+}

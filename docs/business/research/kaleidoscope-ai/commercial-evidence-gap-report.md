@@ -26,13 +26,13 @@ The Observatory now tracks five commercial evidence categories per repo:
 | deployment | deployment profile, production readiness, staging, or deployment proof evidence. |
 | workflow | critical user workflow, user flow, operating workflow, or automation workflow evidence. |
 
-The current run shows 19/20 repos complete across the five categories and 1/20 repos with explicit gaps. Execution Studio converts each gap row into a draft-only, owner-routed action.
+The current run shows 20/20 repos complete across the five categories and 0/20 repos with explicit gaps. Execution Studio has no remaining commercial-evidence gap actions.
 
 ## Current Gap Map
 
 | Action | Owner repo | Current coverage | Missing categories | Priority | Validation |
 | --- | --- | ---: | --- | --- | --- |
-| `exec-007-baseline-os-commercial-evidence-gap` | `baseline-os` | 4/5 | workflow | P2 | `pnpm kaleidoscope:observatory:check` |
+| none | all repos | 5/5 | none | n/a | `pnpm kaleidoscope:observatory:check` |
 
 ## Required Proof
 
@@ -54,6 +54,6 @@ The current run shows 19/20 repos complete across the five categories and 1/20 r
 
 ## Next Actions
 
-1. Route the remaining single-category workflow gap to `baseline-os`.
+1. Keep source evidence current in owner repos.
 2. Keep `ecosystem-os` deployment evidence current through `docs/operations/deployment/deployment-profile.json`.
 3. Rerun `pnpm kaleidoscope:operate:write` after owner repos publish or confirm evidence.

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/phase-2-completion.schema/v1",
+  "title": "Kaleidoscope AI phase 2 completion witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "date",
+    "repo",
+    "phase",
+    "ok",
+    "decision",
+    "externalUse",
+    "summary",
+    "gates",
+    "phase3Readiness",
+    "sources"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/phase-2-completion/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "date": { "type": "string" },
+    "repo": { "const": "ecosystem-os" },
+    "phase": { "type": "string", "minLength": 1 },
+    "ok": { "type": "boolean" },
+    "decision": {
+      "enum": ["phase-2-complete-for-internal-draft-use", "blocked"]
+    },
+    "externalUse": {
+      "type": "object",
+      "required": ["status", "reason"],
+      "properties": {
+        "status": { "const": "blocked_until_explicit_approval" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "repoCount",
+        "gateCount",
+        "passedGates",
+        "failedGates",
+        "blockers",
+        "releaseDecision",
+        "operatingLoopStages",
+        "executionStudioActions",
+        "approvalPendingActions",
+        "graphRagMcpReadyRepos"
+      ],
+      "additionalProperties": true
+    },
+    "gates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/gate" }
+    },
+    "phase3Readiness": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/phase3Readiness" }
+    },
+    "sources": {
+      "type": "object",
+      "required": [
+        "graphRagMcp",
+        "graphSnapshot",
+        "query",
+        "observatory",
+        "decisionRoom",
+        "signal",
+        "executionStudio",
+        "partnerBrief",
+        "releaseGates",
+        "operatingLoop",
+        "phase2Architecture",
+        "releaseDoctrine"
+      ]
+    }
+  },
+  "$defs": {
+    "citation": {
+      "type": "object",
+      "required": ["path", "sourceDate", "reason"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sourceDate": { "type": "string" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "gate": {
+      "type": "object",
+      "required": ["id", "label", "passed", "severity", "evidence", "failureMode"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "passed": { "type": "boolean" },
+        "severity": { "enum": ["none", "blocker"] },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/citation" }
+        },
+        "failureMode": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "phase3Readiness": {
+      "type": "object",
+      "required": ["id", "ownerRepos", "status", "why"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "ownerRepos": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "status": { "type": "string", "minLength": 1 },
+        "why": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
+const ECOSYSTEM_ROOT = resolve(REPO, '..');
 const OUT_REL = 'audit/evidence/kaleidoscope-execution-studio-latest.json';
 const REPORT_REL = 'docs/business/research/kaleidoscope-ai/execution-studio-latest.md';
 const OUT = join(REPO, OUT_REL);
@@ -12,6 +13,22 @@ const OBSERVATORY_REL = 'audit/evidence/kaleidoscope-observatory-latest.json';
 const DECISION_REL = 'audit/evidence/kaleidoscope-decision-room-latest.json';
 const SIGNAL_REL = 'audit/evidence/signal-fleet-latest.json';
 const PHASE2_REL = 'docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md';
+const PREVIOUS_GRAPH_REL = 'audit/evidence/kaleidoscope-graph-snapshot-previous.json';
+const MOVEMENT_HISTORY_REL = 'docs/business/research/kaleidoscope-ai/movement-history-baseline.md';
+const AGILE_85_SCHEMA_RELS = [
+  'agile-os/pm/spec/kaleidoscope-ai/85-uplift-action.schema.json',
+  'agile-os/machine/spec/kaleidoscope-ai/85-uplift-action.schema.json'
+];
+const AGILE_85_DOC_REL = 'agile-os/docs/business/research/kaleidoscope-ai/85-uplift-task-format.md';
+const AGILE_85_WITNESS_REL = 'agile-os/machine/ci/85-uplift-action-format-latest.json';
+const BRIDGE_RUNNER_SCHEMA_REL = 'bridge-os/machine/spec/kaleidoscope-ai/fleet-execution-runner.schema.json';
+const BRIDGE_RUNNER_DOC_REL = 'bridge-os/docs/operations/coordination/kaleidoscope-execution-runner-contract.md';
+const BRIDGE_RUNNER_WITNESS_REL = 'bridge-os/machine/ci/kaleidoscope-execution-runner-contract-latest.json';
+const PARTNER_ROOM_REL = 'docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md';
+const PARTNER_BRIEF_REL = 'audit/evidence/kaleidoscope-partner-brief-latest.json';
+const BASELINE_SIGNAL_L3_SCHEMA_REL = 'baseline-os/machine/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json';
+const BASELINE_SIGNAL_L3_DOC_REL = 'baseline-os/docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md';
+const BASELINE_SIGNAL_L3_WITNESS_REL = 'baseline-os/audit/evidence/signal-l3-evidence-pack-latest.json';
 const WRITE = process.argv.includes('--write');
 const JSON_OUT = process.argv.includes('--json');
 const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
@@ -23,6 +40,14 @@ const LOCAL_DATE_FORMATTER = new Intl.DateTimeFormat('en-CA', {
 
 function readJson(rel) {
   return JSON.parse(readFileSync(join(REPO, rel), 'utf8'));
+}
+
+function maybeReadFleetJson(rel) {
+  try {
+    return JSON.parse(readFileSync(join(ECOSYSTEM_ROOT, rel), 'utf8'));
+  } catch {
+    return null;
+  }
 }
 
 function mtimeIso(rel) {
@@ -167,6 +192,48 @@ function commercialGapActions(observatory, readinessCitation, phase2Citation) {
   );
 }
 
+function movementHistoryComplete(observatory) {
+  return (
+    observatory?.summary?.movementAvailable === true &&
+    existsSync(join(REPO, PREVIOUS_GRAPH_REL)) &&
+    existsSync(join(REPO, MOVEMENT_HISTORY_REL))
+  );
+}
+
+function agile85UpliftFormatComplete() {
+  const schemaExists = AGILE_85_SCHEMA_RELS.some((rel) => existsSync(join(ECOSYSTEM_ROOT, rel)));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, AGILE_85_DOC_REL));
+  const witness = maybeReadFleetJson(AGILE_85_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.targetReadinessScore100 === 85;
+}
+
+function bridgeRunnerContractComplete() {
+  const schemaExists = existsSync(join(ECOSYSTEM_ROOT, BRIDGE_RUNNER_SCHEMA_REL));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, BRIDGE_RUNNER_DOC_REL));
+  const witness = maybeReadFleetJson(BRIDGE_RUNNER_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.defaultMode === 'draft-only';
+}
+
+function partnerExecutionRoomComplete() {
+  const partnerRoomExists = existsSync(join(REPO, PARTNER_ROOM_REL));
+  const partnerBrief = readJson(PARTNER_BRIEF_REL);
+  return (
+    partnerRoomExists &&
+    partnerBrief?.ok === true &&
+    partnerBrief?.summary?.externalUse === 'blocked_until_explicit_approval' &&
+    partnerBrief?.summary?.unsupportedClaimWarnings === 0 &&
+    (partnerBrief?.summary?.partnerRooms ?? 0) >= 5 &&
+    (partnerBrief?.summary?.claimControls ?? 0) >= 6
+  );
+}
+
+function signalL3EvidencePackComplete() {
+  const schemaExists = existsSync(join(ECOSYSTEM_ROOT, BASELINE_SIGNAL_L3_SCHEMA_REL));
+  const docExists = existsSync(join(ECOSYSTEM_ROOT, BASELINE_SIGNAL_L3_DOC_REL));
+  const witness = maybeReadFleetJson(BASELINE_SIGNAL_L3_WITNESS_REL);
+  return schemaExists && docExists && witness?.ok === true && witness?.summary?.targetSignalLevel === 'L3';
+}
+
 function buildActions(observatory, decision, signal) {
   const lowSignalRepos = topSignalRows(signal);
   const missingMprRepos = mprMissing(signal);
@@ -175,161 +242,192 @@ function buildActions(observatory, decision, signal) {
   const signalCitation = citation(SIGNAL_REL, 'SIGNAL bottlenecks and next unlocks');
   const phase2Citation = citation(PHASE2_REL, 'Execution Studio draft-mode and approval-boundary requirements');
 
+  const movementAction = movementHistoryComplete(observatory)
+    ? []
+    : [
+        action({
+          id: 'exec-005-observatory-movement-history',
+          title: 'Add prior/current movement history to Observatory',
+          ownerRepo: 'ecosystem-os',
+          targetRepos: ['ecosystem-os'],
+          priority: 'P1',
+          outcome: 'Observatory can answer movement since last audit from prior/current snapshots.',
+          rationale:
+            'The current Observatory explicitly reports movement unavailable because no prior Kaleidoscope graph snapshot is present.',
+          evidence: [readinessCitation, decisionCitation],
+          validationGate: gate('pnpm kaleidoscope:observatory:check', 'movementAvailable becomes true when a prior snapshot fixture is present.'),
+          approvalRequest: approval('evidence-history', 'Adding historical snapshots changes movement analysis and should be reviewed.'),
+          releaseGate: releaseGate('movement-history-ready', [
+            'prior snapshot path documented',
+            'delta fields populated',
+            'Decision Room can cite movement'
+          ]),
+          draftArtifacts: [PREVIOUS_GRAPH_REL],
+          acceptanceCriteria: [
+            'Does not overwrite latest evidence.',
+            'Supports replay from archived snapshots.',
+            'Reports score deltas per repo.'
+          ]
+        })
+      ];
+  const mprRelationAction =
+    missingMprRepos.length === 0
+      ? []
+      : [
+          action({
+            id: 'exec-003-mpr-relation-gap',
+            title: 'Resolve missing MPR relation for bridge-os and terminal-os',
+            ownerRepo: 'ecosystem-os',
+            targetRepos: missingMprRepos,
+            priority: 'P1',
+            outcome: 'Bridge and terminal no longer appear as under-evidenced in SIGNAL/MPR rollups.',
+            rationale:
+              'The SIGNAL fleet witness shows missing MPR relation for bridge-os and terminal-os, holding their SIGNAL-E process evidence at L1.',
+            evidence: [signalCitation, readinessCitation],
+            validationGate: gate('pnpm kaleidoscope:signal:check', 'MPR relation count increases or an explicit no-MPR relation witness is published.'),
+            approvalRequest: approval('cross-repo-evidence', 'Publishing repo evidence or no-MPR relation witnesses affects fleet scoring.'),
+            releaseGate: releaseGate('mpr-relation-complete', [
+              'bridge-os relation resolved',
+              'terminal-os relation resolved',
+              'Observatory MPR column explains n/a states'
+            ]),
+            draftArtifacts: [
+              'audit/evidence/mpr-relation-gap-latest.json',
+              'docs/business/research/kaleidoscope-ai/mpr-relation-gap.md'
+            ],
+            acceptanceCriteria: [
+              'Lists the exact repos with missing MPR relation.',
+              'Routes owner review before publishing replacement evidence.',
+              'Keeps SIGNAL score conservative until evidence exists.'
+            ]
+          })
+        ];
+  const upliftFormatAction = agile85UpliftFormatComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-004-85-uplift-format',
+          title: 'Define the 8.5 uplift task format',
+          ownerRepo: 'agile-os',
+          targetRepos: lowSignalRepos,
+          priority: 'P1',
+          outcome: 'A repeatable task format that converts repo gaps into 8.5 readiness work.',
+          rationale:
+            'The user goal is 8.5 readiness; Kaleidoscope needs a standard task format before dispatching repo-level uplift work.',
+          evidence: [readinessCitation, phase2Citation],
+          validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Generated actions include target readiness, validation, approval, and release gates.'),
+          approvalRequest: approval('work-management-standard', 'Changing task format affects execution across agile-os and downstream repos.'),
+          releaseGate: releaseGate('85-task-format-ready', [
+            'task format includes evidence refs',
+            'owner repo is mandatory',
+            'validation command is mandatory',
+            'approval status is mandatory'
+          ]),
+          draftArtifacts: ['pm/spec/kaleidoscope-ai/85-uplift-action.schema.json'],
+          acceptanceCriteria: [
+            'Supports repo, fleet, and product-surface actions.',
+            'Maps every task to an 8.5 readiness outcome.',
+            'Can be consumed by agile-os without losing evidence trace.'
+          ]
+        })
+      ];
+  const bridgeRunnerAction = bridgeRunnerContractComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-002-bridge-fleet-execution-runner',
+          title: 'Draft the bridge-os fleet execution runner contract',
+          ownerRepo: 'bridge-os',
+          targetRepos: ['bridge-os', 'ecosystem-os', 'agile-os'],
+          priority: 'P0',
+          outcome: 'A bridge-owned runner contract for turning Kaleidoscope draft actions into approved work artifacts.',
+          rationale:
+            'Execution Studio needs a controlled runner boundary before it can create tickets, branches, or repo edits.',
+          evidence: [decisionCitation, phase2Citation],
+          validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Every draft action has owner repo, evidence, validation, approval, and release gate.'),
+          approvalRequest: approval('write-action-runner', 'Any future runner that writes to repos or work systems crosses a state-changing boundary.'),
+          releaseGate: releaseGate('draft-runner-only', [
+            'default mode remains draft-only',
+            'write actions require approval',
+            'owner routing is explicit'
+          ]),
+          draftArtifacts: [
+            'machine/spec/kaleidoscope-ai/fleet-execution-runner.schema.json',
+            'docs/operations/coordination/kaleidoscope-execution-runner-contract.md'
+          ],
+          acceptanceCriteria: [
+            'Runner contract separates draft, write, external, and deploy boundaries.',
+            'Approval request format is embedded in every action.',
+            'No action can ship without a validation gate.'
+          ]
+          })
+        ];
+  const partnerRoomAction = partnerExecutionRoomComplete()
+    ? []
+    : [
+        action({
+          id: 'exec-006-market-leadership-partner-room',
+          title: 'Draft partner-ready market leadership execution room',
+          ownerRepo: 'ecosystem-os',
+          targetRepos: ['markets-os', 'compliance-os', 'gtcx-os', 'veritas-ai', 'griot-ai'],
+          priority: 'P2',
+          outcome: 'A cited partner/investor briefing packet for the African commodity-trade operating-system wedge.',
+          rationale:
+            'Decision Room identifies the governed African commodity-trade operating system as the strongest market leadership opportunity.',
+          evidence: [decisionCitation, readinessCitation],
+          validationGate: gate('pnpm kaleidoscope:decision-room:check', 'Strategic market answer keeps citation, freshness, confidence, and unsupported-claim gates green.'),
+          approvalRequest: approval('external-partner-artifact', 'Partner-facing narratives require approval before external use.'),
+          releaseGate: releaseGate('partner-room-draft-ready', [
+            'claims cite current evidence',
+            'unsupported-claim warnings remain zero',
+            'external use remains blocked until approval'
+          ]),
+          draftArtifacts: [PARTNER_ROOM_REL],
+          acceptanceCriteria: [
+            'Separates internal evidence from external claims.',
+            'Routes market, compliance, and verification repos explicitly.',
+            'Keeps unsupported claims at zero.'
+          ]
+        })
+      ];
+
   return [
-    action({
-      id: 'exec-001-signal-l3-trace-policy-pack',
-      title: 'Define the trace, policy, approval, and learning-loop evidence pack for SIGNAL-E L3',
-      ownerRepo: 'baseline-os',
-      targetRepos: ['baseline-os', 'fabric-os', 'bridge-os', 'ecosystem-os'],
-      priority: 'P0',
-      outcome: 'A reusable evidence contract that shows exactly what unlocks SIGNAL-E L3 across the fleet.',
-      rationale:
-        'The SIGNAL fleet runner shows 18 repos at SIGNAL-E L2 and blocks L3 until trace, policy, approval, and learning-loop evidence is published.',
-      evidence: [signalCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:signal:check', 'SIGNAL witness remains green and L3 gaps are machine-readable.'),
-      approvalRequest: approval('spec-change', 'Adding or changing canonical evidence contracts requires owner review.'),
-      releaseGate: releaseGate('signal-l3-contract-ready', [
-        'schema exists',
-        'runner can cite trace/policy/approval evidence',
-        'Observatory surfaces L3 blockers'
-      ]),
-      draftArtifacts: [
-        'pm/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json',
-        'docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md'
-      ],
-      acceptanceCriteria: [
-        'Defines trace, policy, approval, learning-loop, and rollback evidence fields.',
-        'Documents why graph/RAG/MCP readiness alone cannot claim L3.',
-        'Includes validation commands and failure modes.'
-      ]
-    }),
-    action({
-      id: 'exec-002-bridge-fleet-execution-runner',
-      title: 'Draft the bridge-os fleet execution runner contract',
-      ownerRepo: 'bridge-os',
-      targetRepos: ['bridge-os', 'ecosystem-os', 'agile-os'],
-      priority: 'P0',
-      outcome: 'A bridge-owned runner contract for turning Kaleidoscope draft actions into approved work artifacts.',
-      rationale:
-        'Execution Studio needs a controlled runner boundary before it can create tickets, branches, or repo edits.',
-      evidence: [decisionCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Every draft action has owner repo, evidence, validation, approval, and release gate.'),
-      approvalRequest: approval('write-action-runner', 'Any future runner that writes to repos or work systems crosses a state-changing boundary.'),
-      releaseGate: releaseGate('draft-runner-only', [
-        'default mode remains draft-only',
-        'write actions require approval',
-        'owner routing is explicit'
-      ]),
-      draftArtifacts: [
-        'pm/spec/kaleidoscope-ai/execution-action.schema.json',
-        'docs/business/research/kaleidoscope-ai/execution-studio-latest.md'
-      ],
-      acceptanceCriteria: [
-        'Runner contract separates draft, write, external, and deploy boundaries.',
-        'Approval request format is embedded in every action.',
-        'No action can ship without a validation gate.'
-      ]
-    }),
-    action({
-      id: 'exec-003-mpr-relation-gap',
-      title: 'Resolve missing MPR relation for bridge-os and terminal-os',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: missingMprRepos,
-      priority: 'P1',
-      outcome: 'Bridge and terminal no longer appear as under-evidenced in SIGNAL/MPR rollups.',
-      rationale:
-        'The SIGNAL fleet witness shows missing MPR relation for bridge-os and terminal-os, holding their SIGNAL-E process evidence at L1.',
-      evidence: [signalCitation, readinessCitation],
-      validationGate: gate('pnpm kaleidoscope:signal:check', 'MPR relation count increases or an explicit no-MPR relation witness is published.'),
-      approvalRequest: approval('cross-repo-evidence', 'Publishing repo evidence or no-MPR relation witnesses affects fleet scoring.'),
-      releaseGate: releaseGate('mpr-relation-complete', [
-        'bridge-os relation resolved',
-        'terminal-os relation resolved',
-        'Observatory MPR column explains n/a states'
-      ]),
-      draftArtifacts: [
-        'audit/evidence/mpr-relation-gap-latest.json',
-        'docs/business/research/kaleidoscope-ai/mpr-relation-gap.md'
-      ],
-      acceptanceCriteria: [
-        'Lists the exact repos with missing MPR relation.',
-        'Routes owner review before publishing replacement evidence.',
-        'Keeps SIGNAL score conservative until evidence exists.'
-      ]
-    }),
-    action({
-      id: 'exec-004-85-uplift-format',
-      title: 'Define the 8.5 uplift task format',
-      ownerRepo: 'agile-os',
-      targetRepos: lowSignalRepos,
-      priority: 'P1',
-      outcome: 'A repeatable task format that converts repo gaps into 8.5 readiness work.',
-      rationale:
-        'The user goal is 8.5 readiness; Kaleidoscope needs a standard task format before dispatching repo-level uplift work.',
-      evidence: [readinessCitation, phase2Citation],
-      validationGate: gate('pnpm kaleidoscope:execution-studio:check', 'Generated actions include target readiness, validation, approval, and release gates.'),
-      approvalRequest: approval('work-management-standard', 'Changing task format affects execution across agile-os and downstream repos.'),
-      releaseGate: releaseGate('85-task-format-ready', [
-        'task format includes evidence refs',
-        'owner repo is mandatory',
-        'validation command is mandatory',
-        'approval status is mandatory'
-      ]),
-      draftArtifacts: ['pm/spec/kaleidoscope-ai/85-uplift-action.schema.json'],
-      acceptanceCriteria: [
-        'Supports repo, fleet, and product-surface actions.',
-        'Maps every task to an 8.5 readiness outcome.',
-        'Can be consumed by agile-os without losing evidence trace.'
-      ]
-    }),
-    action({
-      id: 'exec-005-observatory-movement-history',
-      title: 'Add prior/current movement history to Observatory',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: ['ecosystem-os'],
-      priority: 'P1',
-      outcome: 'Observatory can answer movement since last audit from prior/current snapshots.',
-      rationale:
-        'The current Observatory explicitly reports movement unavailable because no prior Kaleidoscope graph snapshot is present.',
-      evidence: [readinessCitation, decisionCitation],
-      validationGate: gate('pnpm kaleidoscope:observatory:check', 'movementAvailable becomes true when a prior snapshot fixture is present.'),
-      approvalRequest: approval('evidence-history', 'Adding historical snapshots changes movement analysis and should be reviewed.'),
-      releaseGate: releaseGate('movement-history-ready', [
-        'prior snapshot path documented',
-        'delta fields populated',
-        'Decision Room can cite movement'
-      ]),
-      draftArtifacts: ['audit/evidence/kaleidoscope-graph-snapshot-previous.json'],
-      acceptanceCriteria: [
-        'Does not overwrite latest evidence.',
-        'Supports replay from archived snapshots.',
-        'Reports score deltas per repo.'
-      ]
-    }),
-    action({
-      id: 'exec-006-market-leadership-partner-room',
-      title: 'Draft partner-ready market leadership execution room',
-      ownerRepo: 'ecosystem-os',
-      targetRepos: ['markets-os', 'compliance-os', 'gtcx-os', 'veritas-ai', 'griot-ai'],
-      priority: 'P2',
-      outcome: 'A cited partner/investor briefing packet for the African commodity-trade operating-system wedge.',
-      rationale:
-        'Decision Room identifies the governed African commodity-trade operating system as the strongest market leadership opportunity.',
-      evidence: [decisionCitation, readinessCitation],
-      validationGate: gate('pnpm kaleidoscope:decision-room:check', 'Strategic market answer keeps citation, freshness, confidence, and unsupported-claim gates green.'),
-      approvalRequest: approval('external-partner-artifact', 'Partner-facing narratives require approval before external use.'),
-      releaseGate: releaseGate('partner-room-draft-ready', [
-        'claims cite current evidence',
-        'unsupported-claim warnings remain zero',
-        'external use remains blocked until approval'
-      ]),
-      draftArtifacts: ['docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md'],
-      acceptanceCriteria: [
-        'Separates internal evidence from external claims.',
-        'Routes market, compliance, and verification repos explicitly.',
-        'Keeps unsupported claims at zero.'
-      ]
-    }),
+    ...(signalL3EvidencePackComplete()
+      ? []
+      : [
+          action({
+            id: 'exec-001-signal-l3-trace-policy-pack',
+            title: 'Define the trace, policy, approval, and learning-loop evidence pack for SIGNAL-E L3',
+            ownerRepo: 'baseline-os',
+            targetRepos: ['baseline-os', 'fabric-os', 'bridge-os', 'ecosystem-os'],
+            priority: 'P0',
+            outcome: 'A reusable evidence contract that shows exactly what unlocks SIGNAL-E L3 across the fleet.',
+            rationale:
+              'The SIGNAL fleet runner shows 18 repos at SIGNAL-E L2 and blocks L3 until trace, policy, approval, and learning-loop evidence is published.',
+            evidence: [signalCitation, phase2Citation],
+            validationGate: gate('pnpm kaleidoscope:signal:check', 'SIGNAL witness remains green and L3 gaps are machine-readable.'),
+            approvalRequest: approval('spec-change', 'Adding or changing canonical evidence contracts requires owner review.'),
+            releaseGate: releaseGate('signal-l3-contract-ready', [
+              'schema exists',
+              'runner can cite trace/policy/approval evidence',
+              'Observatory surfaces L3 blockers'
+            ]),
+            draftArtifacts: [
+              'machine/spec/kaleidoscope-ai/signal-l3-evidence-pack.schema.json',
+              'docs/business/research/kaleidoscope-ai/signal-l3-evidence-pack.md'
+            ],
+            acceptanceCriteria: [
+              'Defines trace, policy, approval, learning-loop, and rollback evidence fields.',
+              'Documents why graph/RAG/MCP readiness alone cannot claim L3.',
+              'Includes validation commands and failure modes.'
+            ]
+          })
+        ]),
+    ...bridgeRunnerAction,
+    ...mprRelationAction,
+    ...upliftFormatAction,
+    ...movementAction,
+    ...partnerRoomAction,
     ...commercialGapActions(observatory, readinessCitation, phase2Citation)
   ];
 }

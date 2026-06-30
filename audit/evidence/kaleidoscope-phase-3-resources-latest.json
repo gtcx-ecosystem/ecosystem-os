@@ -1,0 +1,3571 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/phase-3-resources/v1",
+  "generatedAt": "2026-06-29T05:15:17.617Z",
+  "date": "2026-06-29",
+  "repo": "ecosystem-os",
+  "phase": "phase-3-internal-product-resources",
+  "ok": true,
+  "summary": {
+    "resourceCount": 9,
+    "resources": [
+      "fleet",
+      "graph",
+      "query",
+      "decision-room",
+      "signal",
+      "actions",
+      "partner-room",
+      "release",
+      "phase-2"
+    ],
+    "passedResourceChecks": 9,
+    "failedResourceChecks": 0,
+    "failedResources": [],
+    "readOnlyResources": 7,
+    "draftResources": 2,
+    "externalUse": "blocked_until_explicit_approval"
+  },
+  "validation": [
+    {
+      "resource": "fleet",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "graph",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "query",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "decision-room",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "signal",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "actions",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "partner-room",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "release",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "resource": "phase-2",
+      "ok": true,
+      "issues": []
+    }
+  ],
+  "responses": [
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "fleet",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "fleet-ready-read-only",
+      "confidence": 0.95,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.444Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.225Z"
+          },
+          {
+            "path": "audit/evidence/signal-fleet-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.370Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "reason": "fleet readiness, blockers, freshness, commercial evidence, and aliases",
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+          "reason": "graph/RAG/MCP/eval readiness by repo",
+          "sourceDate": "2026-06-29T01:31:17.225Z"
+        },
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "reason": "SIGNAL and MPR relation maturity by repo",
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-observatory-latest.json",
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+        "audit/evidence/signal-fleet-latest.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/fleet",
+        "summary": {
+          "repoCount": 20,
+          "readyRepos": 20,
+          "blockerCount": 0,
+          "aliasWarningCount": 0,
+          "freshEvidenceRepos": 20,
+          "movementAvailable": true,
+          "commercialEvidenceCompleteRepos": 20,
+          "commercialEvidencePartialRepos": 0,
+          "commercialEvidenceGapRepos": 0
+        },
+        "repoCount": 20,
+        "readinessCounts": {
+          "ready": 20
+        },
+        "commercialEvidenceCounts": {
+          "complete": 20
+        },
+        "repos": [
+          {
+            "repo": "baseline-os",
+            "tier": 0,
+            "role": "RAG/MCP hub and validator owner",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L1",
+              "score100": 25,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L1",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "Define product-intelligence surface or mark repo as infrastructure-only.",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
+              ]
+            },
+            "mpr": {
+              "composite100": 100,
+              "source": "baseline-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-27T14:38:25.546Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T16:54:47.591Z",
+              "newestSourceDate": "2026-06-28T16:55:46.741Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "bridge-os",
+            "tier": 0,
+            "role": "MCP/action orchestration and fleet coordination",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L1",
+              "score100": 25,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L1",
+                "process limits SIGNAL-E to L1",
+                "Define product-intelligence surface or mark repo as infrastructure-only.",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
+              ]
+            },
+            "mpr": {
+              "composite100": null,
+              "source": "missing",
+              "evaluatedAt": null
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:11.500Z",
+              "newestSourceDate": "2026-06-28T17:07:10.396Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "ecosystem-os",
+            "tier": 0,
+            "role": "Ecosystem graph and Kaleidoscope home",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "strengthen"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "ecosystem-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:14:29.380Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-29T01:31:17.188Z",
+              "newestSourceDate": "2026-06-29T01:31:17.189Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "compliance-os",
+            "tier": 1,
+            "role": "Compliance operating layer",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "compliance-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:17:45.421Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:17.000Z",
+              "newestSourceDate": "2026-06-28T17:28:31.144Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "gtcx-os",
+            "tier": 1,
+            "role": "Platform/product OS and Cortex scope",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 91,
+              "source": "gtcx-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:14:31.991Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T17:19:44.119Z",
+              "newestSourceDate": "2026-06-28T17:20:34.334Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "ledger-ui",
+            "tier": 1,
+            "role": "Finance/ledger UI",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "ledger-ui/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:15:28.828Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:33.371Z",
+              "newestSourceDate": "2026-06-28T17:36:15.150Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "markets-os",
+            "tier": 1,
+            "role": "Market infrastructure product",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "markets-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:14:38.594Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:36.039Z",
+              "newestSourceDate": "2026-06-28T17:24:47.437Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "terminal-os",
+            "tier": 1,
+            "role": "Operator/terminal surface",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L1",
+              "score100": 25,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L1",
+                "process limits SIGNAL-E to L1",
+                "Define product-intelligence surface or mark repo as infrastructure-only.",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
+              ]
+            },
+            "mpr": {
+              "composite100": null,
+              "source": "missing",
+              "evaluatedAt": null
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:40.128Z",
+              "newestSourceDate": "2026-06-28T17:32:15.800Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "exploration-os",
+            "tier": 2,
+            "role": "Field/site intelligence",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "exploration-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:17:38.131Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:21.454Z",
+              "newestSourceDate": "2026-06-28T17:52:23.865Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "griot-ai",
+            "tier": 2,
+            "role": "Market/context publishing",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "griot-ai/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-27T10:11:40.623Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:17:56.637Z",
+              "newestSourceDate": "2026-06-28T18:18:08.808Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "nyota-ai",
+            "tier": 2,
+            "role": "Last-mile/mobile intelligence",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "nyota-ai/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:15:02.479Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:21:32.085Z",
+              "newestSourceDate": "2026-06-28T18:22:20.357Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "sensei-os",
+            "tier": 2,
+            "role": "Migration/agent intelligence",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "strengthen"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "sensei-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:14:53.816Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:38.620Z",
+              "newestSourceDate": "2026-06-28T18:12:05.244Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "terra-os",
+            "tier": 2,
+            "role": "Land/site/source truth",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "terra-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:14:45.111Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T17:46:58.891Z",
+              "newestSourceDate": "2026-06-28T17:47:50.940Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "veritas-ai",
+            "tier": 2,
+            "role": "Verification/publication intelligence",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "veritas-ai/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:15:07.198Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T11:22:43.125Z",
+              "newestSourceDate": "2026-06-28T17:57:02.261Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "agile-os",
+            "tier": 3,
+            "role": "Sprint, backlog, delivery OS",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "seed"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L1",
+              "score100": 25,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L1",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "Define product-intelligence surface or mark repo as infrastructure-only.",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "agile-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T16:10:38.426Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:34:49.802Z",
+              "newestSourceDate": "2026-06-28T18:34:49.839Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "canon-os",
+            "tier": 3,
+            "role": "Governance and protocols",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "strengthen"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L1",
+              "score100": 25,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L1",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "Define product-intelligence surface or mark repo as infrastructure-only.",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "canon-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:13:41.517Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:31:37.726Z",
+              "newestSourceDate": "2026-06-28T18:31:37.744Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "fabric-os",
+            "tier": 3,
+            "role": "Deployment, ops, compliance fabric",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "restore"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 100,
+              "source": "fabric-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-26T00:17:52.354Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:26:13.715Z",
+              "newestSourceDate": "2026-06-28T21:46:26.761Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "inspection-os",
+            "tier": 3,
+            "role": "Inspection product",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "seed"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 54,
+              "source": "inspection-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T16:12:43.612Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:41:42.490Z",
+              "newestSourceDate": "2026-06-28T18:41:42.521Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "ledger-os",
+            "tier": 3,
+            "role": "Ledger/product finance backend",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "seed"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "ledger-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T16:12:40.413Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:38:09.837Z",
+              "newestSourceDate": "2026-06-28T18:38:09.874Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          },
+          {
+            "repo": "venture-os",
+            "tier": 3,
+            "role": "Venture/portfolio product",
+            "readiness": {
+              "maturity": "ready",
+              "score100": 100,
+              "targetStatus": "seed"
+            },
+            "blockers": {
+              "count": 0,
+              "items": []
+            },
+            "signal": {
+              "level": "L2",
+              "score100": 45,
+              "bottlenecks": [
+                "systemsArchitecture limits SIGNAL-P to L2",
+                "systemsArchitecture limits SIGNAL-E to L2",
+                "No production user-facing AI trace, eval, or feedback loop is published yet.",
+                "Connect product-intelligence findings to roadmap, QA, and release evidence.",
+                "Publish hallucination, approval, and user-impact safeguards for AI product outputs.",
+                "Publish product-feedback, trace, and answer-quality metrics."
+              ]
+            },
+            "mpr": {
+              "composite100": 59,
+              "source": "venture-os/audit/evidence/mpr-repo-latest.json",
+              "evaluatedAt": "2026-06-28T11:15:18.347Z"
+            },
+            "evidenceFreshness": {
+              "fresh": true,
+              "oldestSourceDate": "2026-06-28T18:47:34.305Z",
+              "newestSourceDate": "2026-06-28T21:46:36.427Z",
+              "newestAgeDays": 0,
+              "evidenceCount": 4
+            },
+            "commercialEvidence": {
+              "evidencedCategories": 5,
+              "categoryCount": 5,
+              "complete": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "graph",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "graph-snapshot-complete",
+      "confidence": 0.96,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.277Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.225Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "reason": "typed fleet graph nodes, edges, blockers, aliases, and evidence links",
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+          "reason": "source readiness for graph, RAG, MCP, and eval configs",
+          "sourceDate": "2026-06-29T01:31:17.225Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+        "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/graph",
+        "summary": {
+          "repoCount": 20,
+          "presentRepos": 20,
+          "missingRepos": 0,
+          "nodeCount": 240,
+          "edgeCount": 220,
+          "aliasCount": 0,
+          "configNodeCount": 80,
+          "evidenceNodeCount": 80,
+          "blockerNodeCount": 0
+        },
+        "nodeTypeCounts": {
+          "config": 80,
+          "evidence": 80,
+          "repo": 20,
+          "tool": 60
+        },
+        "edgeTypeCounts": {
+          "exposes_tool": 60,
+          "has_config": 80,
+          "has_evidence": 80
+        },
+        "sampleNodes": [
+          {
+            "id": "config:agile-os:eval",
+            "type": "config",
+            "repo": "agile-os",
+            "label": "agile-os eval",
+            "source": "config/baseline/eval.config.json"
+          },
+          {
+            "id": "config:agile-os:graph",
+            "type": "config",
+            "repo": "agile-os",
+            "label": "agile-os graph",
+            "source": "config/baseline/graph.config.json"
+          },
+          {
+            "id": "config:agile-os:mcp",
+            "type": "config",
+            "repo": "agile-os",
+            "label": "agile-os mcp",
+            "source": "config/baseline/mcp.config.json"
+          },
+          {
+            "id": "config:agile-os:rag",
+            "type": "config",
+            "repo": "agile-os",
+            "label": "agile-os rag",
+            "source": "config/baseline/rag.config.json"
+          },
+          {
+            "id": "config:baseline-os:eval",
+            "type": "config",
+            "repo": "baseline-os",
+            "label": "baseline-os eval",
+            "source": "config/baseline/eval.config.json"
+          },
+          {
+            "id": "config:baseline-os:graph",
+            "type": "config",
+            "repo": "baseline-os",
+            "label": "baseline-os graph",
+            "source": "config/baseline/graph.config.json"
+          },
+          {
+            "id": "config:baseline-os:mcp",
+            "type": "config",
+            "repo": "baseline-os",
+            "label": "baseline-os mcp",
+            "source": "config/baseline/mcp.config.json"
+          },
+          {
+            "id": "config:baseline-os:rag",
+            "type": "config",
+            "repo": "baseline-os",
+            "label": "baseline-os rag",
+            "source": "config/baseline/rag.config.json"
+          },
+          {
+            "id": "config:bridge-os:eval",
+            "type": "config",
+            "repo": "bridge-os",
+            "label": "bridge-os eval",
+            "source": "config/baseline/eval.config.json"
+          },
+          {
+            "id": "config:bridge-os:graph",
+            "type": "config",
+            "repo": "bridge-os",
+            "label": "bridge-os graph",
+            "source": "config/baseline/graph.config.json"
+          },
+          {
+            "id": "config:bridge-os:mcp",
+            "type": "config",
+            "repo": "bridge-os",
+            "label": "bridge-os mcp",
+            "source": "config/baseline/mcp.config.json"
+          },
+          {
+            "id": "config:bridge-os:rag",
+            "type": "config",
+            "repo": "bridge-os",
+            "label": "bridge-os rag",
+            "source": "config/baseline/rag.config.json"
+          },
+          {
+            "id": "config:canon-os:eval",
+            "type": "config",
+            "repo": "canon-os",
+            "label": "canon-os eval",
+            "source": "config/baseline/eval.config.json"
+          },
+          {
+            "id": "config:canon-os:graph",
+            "type": "config",
+            "repo": "canon-os",
+            "label": "canon-os graph",
+            "source": "config/baseline/graph.config.json"
+          },
+          {
+            "id": "config:canon-os:mcp",
+            "type": "config",
+            "repo": "canon-os",
+            "label": "canon-os mcp",
+            "source": "config/baseline/mcp.config.json"
+          },
+          {
+            "id": "config:canon-os:rag",
+            "type": "config",
+            "repo": "canon-os",
+            "label": "canon-os rag",
+            "source": "config/baseline/rag.config.json"
+          },
+          {
+            "id": "config:compliance-os:eval",
+            "type": "config",
+            "repo": "compliance-os",
+            "label": "compliance-os eval",
+            "source": "config/baseline/eval.config.json"
+          },
+          {
+            "id": "config:compliance-os:graph",
+            "type": "config",
+            "repo": "compliance-os",
+            "label": "compliance-os graph",
+            "source": "config/baseline/graph.config.json"
+          },
+          {
+            "id": "config:compliance-os:mcp",
+            "type": "config",
+            "repo": "compliance-os",
+            "label": "compliance-os mcp",
+            "source": "config/baseline/mcp.config.json"
+          },
+          {
+            "id": "config:compliance-os:rag",
+            "type": "config",
+            "repo": "compliance-os",
+            "label": "compliance-os rag",
+            "source": "config/baseline/rag.config.json"
+          }
+        ],
+        "sampleEdges": [
+          {
+            "id": "edge:agile-os:exposes_tool:agile.backlog.context.read",
+            "type": "exposes_tool",
+            "source": "repo:agile-os",
+            "target": "tool:agile-os:agile.backlog.context.read",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "read"
+            }
+          },
+          {
+            "id": "edge:agile-os:exposes_tool:agile.ceremony.context.read",
+            "type": "exposes_tool",
+            "source": "repo:agile-os",
+            "target": "tool:agile-os:agile.ceremony.context.read",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "read"
+            }
+          },
+          {
+            "id": "edge:agile-os:exposes_tool:agile.evidence.write",
+            "type": "exposes_tool",
+            "source": "repo:agile-os",
+            "target": "tool:agile-os:agile.evidence.write",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "write"
+            }
+          },
+          {
+            "id": "edge:agile-os:has_config:eval",
+            "type": "has_config",
+            "source": "repo:agile-os",
+            "target": "config:agile-os:eval",
+            "evidence": [
+              "config/baseline/eval.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_config:graph",
+            "type": "has_config",
+            "source": "repo:agile-os",
+            "target": "config:agile-os:graph",
+            "evidence": [
+              "config/baseline/graph.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_config:mcp",
+            "type": "has_config",
+            "source": "repo:agile-os",
+            "target": "config:agile-os:mcp",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_config:rag",
+            "type": "has_config",
+            "source": "repo:agile-os",
+            "target": "config:agile-os:rag",
+            "evidence": [
+              "config/baseline/rag.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_evidence:graphProjection",
+            "type": "has_evidence",
+            "source": "repo:agile-os",
+            "target": "evidence:agile-os:graphProjection",
+            "evidence": [
+              "audit/evidence/graph-projection-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_evidence:mcpConfig",
+            "type": "has_evidence",
+            "source": "repo:agile-os",
+            "target": "evidence:agile-os:mcpConfig",
+            "evidence": [
+              "audit/evidence/mcp-config-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_evidence:ragConfig",
+            "type": "has_evidence",
+            "source": "repo:agile-os",
+            "target": "evidence:agile-os:ragConfig",
+            "evidence": [
+              "audit/evidence/rag-config-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          },
+          {
+            "id": "edge:agile-os:has_evidence:ragEval",
+            "type": "has_evidence",
+            "source": "repo:agile-os",
+            "target": "evidence:agile-os:ragEval",
+            "evidence": [
+              "audit/evidence/rag-eval-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:exposes_tool:baseline.evidence.write",
+            "type": "exposes_tool",
+            "source": "repo:baseline-os",
+            "target": "tool:baseline-os:baseline.evidence.write",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "write"
+            }
+          },
+          {
+            "id": "edge:baseline-os:exposes_tool:baseline.rag.search",
+            "type": "exposes_tool",
+            "source": "repo:baseline-os",
+            "target": "tool:baseline-os:baseline.rag.search",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "read"
+            }
+          },
+          {
+            "id": "edge:baseline-os:exposes_tool:baseline.session.read",
+            "type": "exposes_tool",
+            "source": "repo:baseline-os",
+            "target": "tool:baseline-os:baseline.session.read",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "permissionClass": "read"
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_config:eval",
+            "type": "has_config",
+            "source": "repo:baseline-os",
+            "target": "config:baseline-os:eval",
+            "evidence": [
+              "config/baseline/eval.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_config:graph",
+            "type": "has_config",
+            "source": "repo:baseline-os",
+            "target": "config:baseline-os:graph",
+            "evidence": [
+              "config/baseline/graph.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_config:mcp",
+            "type": "has_config",
+            "source": "repo:baseline-os",
+            "target": "config:baseline-os:mcp",
+            "evidence": [
+              "config/baseline/mcp.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_config:rag",
+            "type": "has_config",
+            "source": "repo:baseline-os",
+            "target": "config:baseline-os:rag",
+            "evidence": [
+              "config/baseline/rag.config.json"
+            ],
+            "properties": {
+              "ok": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_evidence:graphProjection",
+            "type": "has_evidence",
+            "source": "repo:baseline-os",
+            "target": "evidence:baseline-os:graphProjection",
+            "evidence": [
+              "audit/evidence/graph-projection-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          },
+          {
+            "id": "edge:baseline-os:has_evidence:mcpConfig",
+            "type": "has_evidence",
+            "source": "repo:baseline-os",
+            "target": "evidence:baseline-os:mcpConfig",
+            "evidence": [
+              "audit/evidence/mcp-config-latest.json"
+            ],
+            "properties": {
+              "present": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "query",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "query-golden-eval-pass",
+      "confidence": 0.92,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.311Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.277Z"
+          },
+          {
+            "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+            "sourceDate": "2026-06-29T03:43:26.600Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "reason": "golden strategic query answers, retrieval routes, citations, confidence, and freshness",
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "reason": "typed graph source used by the query service",
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+          "reason": "product-surface response envelope contract",
+          "sourceDate": "2026-06-29T03:43:26.600Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-query-service-latest.json",
+        "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+        "pm/spec/kaleidoscope-ai/product-surface-api.schema.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/query",
+        "summary": {
+          "queryCount": 4,
+          "passedQueries": 4,
+          "failedQueries": 0,
+          "averageConfidence": 0.92
+        },
+        "graphSnapshot": {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "generatedAt": "2026-06-29T01:31:17.272Z",
+          "nodeCount": 240,
+          "edgeCount": 220
+        },
+        "queries": [
+          {
+            "id": "repo-readiness",
+            "query": "Which repos are ready for graph RAG MCP?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "20/20 repos are ready for graph/RAG/MCP: agile-os (100/100), baseline-os (100/100), bridge-os (100/100), canon-os (100/100), compliance-os (100/100), ecosystem-os (100/100), exploration-os (100/100), fabric-os (100/100), griot-ai (100/100), gtcx-os (100/100), inspection-os (100/100), ledger-os (100/100), ledger-ui (100/100), markets-os (100/100), nyota-ai (100/100), sensei-os (100/100), terminal-os (100/100), terra-os (100/100), venture-os (100/100), veritas-ai (100/100).",
+            "confidence": 0.95,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "agile-os",
+                "path": "package.json",
+                "nodeId": "repo:agile-os",
+                "sourceDate": "2026-06-29T01:07:13.807Z",
+                "reason": "repo evidence for agile-os",
+                "excerpt": "\"description\": \"Agile OS — centralized fleet sprint ceremonies, ZenHub, and cross-repo agile coordination (successor to gtcx-agile)\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "baseline-os",
+                "path": "package.json",
+                "nodeId": "repo:baseline-os",
+                "sourceDate": "2026-06-28T16:54:24.859Z",
+                "reason": "repo evidence for baseline-os",
+                "excerpt": "\"layer:critical-mass:report:markdown\": \"node platform/scripts/layer-critical-mass-report.mjs -- --markdown\", \"validate:rag-config\": \"node platform/scripts/validate-rag-config.mjs --root .\", \"validate:rag-config:write\": \"node platform/scripts/write-rag-config-e"
+              },
+              {
+                "repo": "bridge-os",
+                "path": "package.json",
+                "nodeId": "repo:bridge-os",
+                "sourceDate": "2026-06-29T01:15:19.440Z",
+                "reason": "repo evidence for bridge-os",
+                "excerpt": "\"description\": \"BridgeOS — GTCX ecosystem coordination, rollouts, PM engine, and cross-repo program office\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "canon-os",
+                "path": "package.json",
+                "nodeId": "repo:canon-os",
+                "sourceDate": "2026-06-29T00:08:32.122Z",
+                "reason": "repo evidence for canon-os",
+                "excerpt": "\"p1:agile:populate\": \"node platform/scripts/fleet-p1-agile-populate.mjs --all\", \"p2:rag:mcp:populate:write\": \"node platform/scripts/fleet-p2-rag-mcp-populate.mjs --all --write\", \"p2:rag:mcp:populate\": \"node platform/scripts/fleet-p2-rag-mcp-populate.mjs --all\""
+              },
+              {
+                "repo": "compliance-os",
+                "path": "package.json",
+                "nodeId": "repo:compliance-os",
+                "sourceDate": "2026-06-28T17:28:19.951Z",
+                "reason": "repo evidence for compliance-os",
+                "excerpt": "\"description\": \"ComplianceOS monorepo: services, packages, data, and documentation\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "ecosystem-os",
+                "path": "package.json",
+                "nodeId": "repo:ecosystem-os",
+                "sourceDate": "2026-06-28T23:30:36.651Z",
+                "reason": "repo evidence for ecosystem-os",
+                "excerpt": "\"description\": \"Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "exploration-os",
+                "path": "package.json",
+                "nodeId": "repo:exploration-os",
+                "sourceDate": "2026-06-28T17:52:11.592Z",
+                "reason": "repo evidence for exploration-os",
+                "excerpt": "\"agent:check\": \"node platform/scripts/agent-sync/sync.mjs --check\", \"financing:lender:preflight\": \"node platform/tools/financing/verify-lender-webhook-ready.mjs\", \"financing:lender:deploy\": \"node platform/tools/financing/deploy-lender-webhook-staging.mjs\","
+              },
+              {
+                "repo": "fabric-os",
+                "path": "package.json",
+                "nodeId": "repo:fabric-os",
+                "sourceDate": "2026-06-28T18:25:03.763Z",
+                "reason": "repo evidence for fabric-os",
+                "excerpt": "\"description\": \"Fabric OS — service fabric execution: Docker, Kubernetes, Terraform, security, and deployment control plane\", \"repository\": { \"type\": \"git\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 8,
+              "oldestSourceDate": "2026-06-28T16:54:24.859Z",
+              "newestSourceDate": "2026-06-29T01:15:19.440Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "repo:agile-os",
+                "repo:baseline-os",
+                "repo:bridge-os",
+                "repo:canon-os",
+                "repo:compliance-os",
+                "repo:ecosystem-os",
+                "repo:exploration-os",
+                "repo:fabric-os",
+                "repo:griot-ai",
+                "repo:gtcx-os",
+                "repo:inspection-os",
+                "repo:ledger-os",
+                "repo:ledger-ui",
+                "repo:markets-os",
+                "repo:nyota-ai",
+                "repo:sensei-os",
+                "repo:terminal-os",
+                "repo:terra-os",
+                "repo:venture-os",
+                "repo:veritas-ai"
+              ],
+              "evidencePaths": [
+                "agile-os/package.json",
+                "baseline-os/package.json",
+                "bridge-os/package.json",
+                "canon-os/package.json",
+                "compliance-os/package.json",
+                "ecosystem-os/package.json",
+                "exploration-os/package.json",
+                "fabric-os/package.json"
+              ]
+            }
+          },
+          {
+            "id": "bridge-mcp-tools",
+            "query": "What MCP tools does bridge-os expose?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "bridge-os exposes 4 MCP tool nodes: bridge-os:bridge.evidence.write, bridge-os:bridge.fleet.route, bridge-os:bridge.graph.project, bridge-os:bridge.next-work.read.",
+            "confidence": 0.9,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "bridge-os",
+                "path": "config/baseline/mcp.config.json",
+                "nodeId": "tool:bridge-os:bridge.evidence.write",
+                "sourceDate": "2026-06-28T17:06:45.193Z",
+                "reason": "tool evidence for bridge.evidence.write",
+                "excerpt": "{ \"$schema\": \"gtcx://ecosystem-os/mcp-config/v1\", \"repo\": \"bridge-os\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 1,
+              "oldestSourceDate": "2026-06-28T17:06:45.193Z",
+              "newestSourceDate": "2026-06-28T17:06:45.193Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "tool:bridge-os:bridge.evidence.write",
+                "tool:bridge-os:bridge.fleet.route",
+                "tool:bridge-os:bridge.graph.project",
+                "tool:bridge-os:bridge.next-work.read"
+              ],
+              "evidencePaths": [
+                "bridge-os/config/baseline/mcp.config.json"
+              ]
+            }
+          },
+          {
+            "id": "blockers",
+            "query": "Which repos have blockers?",
+            "route": "graph",
+            "routeReason": "graph terms detected: repos, readiness, blockers, tools, or graph state",
+            "answer": "No repo blockers are present in the latest graph snapshot.",
+            "confidence": 0.94,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "agile-os",
+                "path": "package.json",
+                "nodeId": "repo:agile-os",
+                "sourceDate": "2026-06-29T01:07:13.807Z",
+                "reason": "repo evidence for agile-os",
+                "excerpt": "\"description\": \"Agile OS — centralized fleet sprint ceremonies, ZenHub, and cross-repo agile coordination (successor to gtcx-agile)\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "baseline-os",
+                "path": "package.json",
+                "nodeId": "repo:baseline-os",
+                "sourceDate": "2026-06-28T16:54:24.859Z",
+                "reason": "repo evidence for baseline-os",
+                "excerpt": "\"agent:check\": \"node platform/scripts/agent-sync/sync.mjs --check\", \"ecosystem:standup:daily\": \"npx tsx platform/scripts/ecosystem/standup.ts --repos=all\", \"ecosystem:standup:daily:slack\": \"npx tsx platform/scripts/ecosystem/standup.ts --repos=all --slack\","
+              },
+              {
+                "repo": "bridge-os",
+                "path": "package.json",
+                "nodeId": "repo:bridge-os",
+                "sourceDate": "2026-06-29T01:15:19.440Z",
+                "reason": "repo evidence for bridge-os",
+                "excerpt": "\"description\": \"BridgeOS — GTCX ecosystem coordination, rollouts, PM engine, and cross-repo program office\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "canon-os",
+                "path": "package.json",
+                "nodeId": "repo:canon-os",
+                "sourceDate": "2026-06-29T00:08:32.122Z",
+                "reason": "repo evidence for canon-os",
+                "excerpt": "{ \"name\": \"canon-os\", \"version\": \"0.1.0\","
+              },
+              {
+                "repo": "compliance-os",
+                "path": "package.json",
+                "nodeId": "repo:compliance-os",
+                "sourceDate": "2026-06-28T17:28:19.951Z",
+                "reason": "repo evidence for compliance-os",
+                "excerpt": "\"description\": \"ComplianceOS monorepo: services, packages, data, and documentation\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "ecosystem-os",
+                "path": "package.json",
+                "nodeId": "repo:ecosystem-os",
+                "sourceDate": "2026-06-28T23:30:36.651Z",
+                "reason": "repo evidence for ecosystem-os",
+                "excerpt": "\"description\": \"Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry\", \"repository\": { \"type\": \"git\","
+              },
+              {
+                "repo": "exploration-os",
+                "path": "package.json",
+                "nodeId": "repo:exploration-os",
+                "sourceDate": "2026-06-28T17:52:11.592Z",
+                "reason": "repo evidence for exploration-os",
+                "excerpt": "{ \"name\": \"exploration-os\", \"version\": \"2.0.0\","
+              },
+              {
+                "repo": "fabric-os",
+                "path": "package.json",
+                "nodeId": "repo:fabric-os",
+                "sourceDate": "2026-06-28T18:25:03.763Z",
+                "reason": "repo evidence for fabric-os",
+                "excerpt": "\"description\": \"Fabric OS — service fabric execution: Docker, Kubernetes, Terraform, security, and deployment control plane\", \"repository\": { \"type\": \"git\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 8,
+              "oldestSourceDate": "2026-06-28T16:54:24.859Z",
+              "newestSourceDate": "2026-06-29T01:15:19.440Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "repo:agile-os",
+                "repo:baseline-os",
+                "repo:bridge-os",
+                "repo:canon-os",
+                "repo:compliance-os",
+                "repo:ecosystem-os",
+                "repo:exploration-os",
+                "repo:fabric-os"
+              ],
+              "evidencePaths": [
+                "agile-os/package.json",
+                "baseline-os/package.json",
+                "bridge-os/package.json",
+                "canon-os/package.json",
+                "compliance-os/package.json",
+                "ecosystem-os/package.json",
+                "exploration-os/package.json",
+                "fabric-os/package.json"
+              ]
+            }
+          },
+          {
+            "id": "terra-rag-evidence",
+            "query": "What evidence supports terra-os RAG config?",
+            "route": "rag",
+            "routeReason": "source expansion terms detected: evidence, RAG, citation, or config",
+            "answer": "terra-os rag evidence is represented by 3 graph nodes with cited source files.",
+            "confidence": 0.88,
+            "ok": true,
+            "issues": [],
+            "citations": [
+              {
+                "repo": "terra-os",
+                "path": "config/baseline/rag.config.json",
+                "nodeId": "config:terra-os:rag",
+                "sourceDate": "2026-06-28T17:45:44.246Z",
+                "reason": "config evidence for terra-os rag",
+                "excerpt": "{ \"$schema\": \"gtcx://ecosystem-os/rag-config/v1\", \"repo\": \"terra-os\","
+              },
+              {
+                "repo": "terra-os",
+                "path": "audit/evidence/rag-config-latest.json",
+                "nodeId": "evidence:terra-os:ragConfig",
+                "sourceDate": "2026-06-28T17:46:58.922Z",
+                "reason": "evidence evidence for terra-os ragConfig",
+                "excerpt": "{ \"schema\": \"gtcx://terra-os/rag-config-check/v1\", \"generatedAt\": \"2026-06-28T17:46:58.921Z\","
+              },
+              {
+                "repo": "terra-os",
+                "path": "audit/evidence/rag-eval-latest.json",
+                "nodeId": "evidence:terra-os:ragEval",
+                "sourceDate": "2026-06-28T17:47:50.940Z",
+                "reason": "evidence evidence for terra-os ragEval",
+                "excerpt": "\"schemaVersion\": \"1.0\", \"goldenName\": \"terra-os-baseline\", \"goldenVersion\": \"1.0\","
+              }
+            ],
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T17:45:44.246Z",
+              "newestSourceDate": "2026-06-28T17:47:50.940Z"
+            },
+            "retrieval": {
+              "graphNodeIds": [
+                "config:terra-os:rag",
+                "evidence:terra-os:ragConfig",
+                "evidence:terra-os:ragEval"
+              ],
+              "evidencePaths": [
+                "terra-os/config/baseline/rag.config.json",
+                "terra-os/audit/evidence/rag-config-latest.json",
+                "terra-os/audit/evidence/rag-eval-latest.json"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "decision-room",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "decision-room-eval-pass",
+      "confidence": 0.85,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.311Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.444Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic answers, evaluator gates, assumptions, unsupported-claim checks, citations, and freshness",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+          "reason": "retrieval quality and route-selected answer evidence",
+          "sourceDate": "2026-06-29T01:31:17.311Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "reason": "current fleet truth used by strategic decisions",
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 product-surface requirement for Decision Room",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [
+        "Decision Room responses are internal strategic synthesis until external artifact approval is recorded."
+      ],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-decision-room-replay",
+          "ownerRepo": "bridge-os",
+          "status": "draft",
+          "validation": "add deterministic replay command for a selected question and witness set"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/kaleidoscope-query-service-latest.json",
+        "audit/evidence/kaleidoscope-observatory-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/decision-room",
+        "summary": {
+          "questionCount": 4,
+          "passedQuestions": 4,
+          "failedQuestions": 0,
+          "averageConfidence": 0.85,
+          "unsupportedClaimWarnings": 0,
+          "staleEvidenceWarnings": 0
+        },
+        "questions": [
+          {
+            "id": "market-leadership-africa",
+            "question": "Where is the strongest market leadership opportunity in African markets?",
+            "classification": {
+              "intent": "market-leadership",
+              "decisionType": "strategy",
+              "route": "hybrid"
+            },
+            "headline": "The strongest opportunity is a governed African commodity-trade operating system: verification, compliance, market infrastructure, and execution intelligence as one evidence-backed platform.",
+            "rationale": [
+              "Current substrate readiness is 20/20 repos with 0 blocker nodes, which means the ecosystem can support an integrated market-leadership narrative now.",
+              "The product thesis is strongest where trust, verification, compliance, and market access reinforce each other rather than shipping as isolated point products.",
+              "The near-term wedge should stay evidence-led: gold/commodity verification, regulator and buyer trust, readiness reporting, and partner execution rooms."
+            ],
+            "recommendedActions": [
+              "Package the Observatory and Decision Room outputs as board/partner evidence, not internal tooling only.",
+              "Use markets-os, compliance-os, gtcx-os, veritas-ai, and griot-ai as the first external narrative spine.",
+              "Keep fabric-os, bridge-os, baseline-os, and canon-os positioned as the operating substrate that makes the market play defensible."
+            ],
+            "confidence": 0.86,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "current ecosystem readiness and blockers",
+                "excerpt": "\"readyRepos\": 20, \"blockerCount\": 0, \"aliasWarningCount\": 0, \"freshEvidenceRepos\": 20,"
+              },
+              {
+                "path": "docs/business/strategy/aws-of-african-commodity-trade-markets.md",
+                "sourceDate": "2026-06-28T11:22:20.690Z",
+                "reason": "African commodity trade market thesis",
+                "excerpt": "--- title: 'Ecosystem OS - AWS of African commodity trade markets' status: current date: 2026-06-26"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/kaleidoscope-ai-product-spec.md",
+                "sourceDate": "2026-06-28T11:44:06.147Z",
+                "reason": "Kaleidoscope product scope and strategic questions",
+                "excerpt": "document_type: product-spec tier: strategic tags: ['kaleidoscope-ai', 'product', 'agentic-ai', 'ecosystem-intelligence'] review_cycle: weekly"
+              }
+            ],
+            "assumptions": [
+              "Market leadership depends on partner trust and execution proof, not only code readiness.",
+              "The current graph/RAG/MCP readiness witness is a sufficient substrate signal, but live customer traction remains a separate evidence track."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T11:22:20.690Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "venture-potential",
+            "question": "Which repos show the strongest venture potential?",
+            "classification": {
+              "intent": "venture-prioritization",
+              "decisionType": "portfolio",
+              "route": "graph+scorecard"
+            },
+            "headline": "The strongest current venture-potential candidates by available MPR evidence are baseline-os (100), fabric-os (100), gtcx-os (91), ecosystem-os (59), compliance-os (59), ledger-ui (59).",
+            "rationale": [
+              "The ranking is evidence-limited: it uses current MPR composite where present, graph/RAG/MCP readiness, and strategic ecosystem role.",
+              "Readiness is broad (20/20), so near-term venture differentiation comes from market surface, trust surface, and defensibility rather than basic substrate readiness.",
+              "gtcx-os, fabric-os, baseline-os, and product-facing market/compliance repos should be treated as portfolio anchors until richer traction metrics are wired."
+            ],
+            "recommendedActions": [
+              "Add traction, partner, revenue, deployment, and user workflow fields to the next Observatory version.",
+              "Separate infrastructure venture value from product venture value so fabric/baseline do not crowd out market-facing repos.",
+              "Use Decision Room outputs to generate investor-ready portfolio briefs with explicit evidence gaps."
+            ],
+            "confidence": 0.8,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "repo readiness, SIGNAL, and MPR columns",
+                "excerpt": "\"signalFleet\": \"audit/evidence/signal-fleet-latest.json\", \"mprRepo\": \"../*/audit/evidence/mpr-repo-latest.json\", \"commercialEvidence\": \"../*/{audit/evidence,docs,operations,machine,agile}/**/*\" },"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.277Z",
+                "reason": "graph snapshot repo readiness nodes",
+                "excerpt": "\"generatedAt\": \"2026-06-29T01:31:17.272Z\", \"repo\": \"ecosystem-os\", \"phase\": \"phase-2-fleet-graph-snapshot\", \"ok\": true,"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "driver repo roles for Phase 2",
+                "excerpt": "| `ecosystem-os` | Kaleidoscope product planning, fleet graph, cross-repo intelligence, product surfaces, fleet witnesses. | | `baseline-os` | Schemas, contracts, scoring calibration, machine-readable specs, witness formats. | | `bridge-os` | Runners, repo/fleet orchestration, connectors, graph/RAG/MCP checks, evidence"
+              }
+            ],
+            "assumptions": [
+              "MPR composite is a useful proxy but not a complete venture score.",
+              "Repos with missing MPR are not low potential; they are currently under-evidenced."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:50:42.672Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "ecosystem-integration",
+            "question": "What is the ecosystem integration strength as a play?",
+            "classification": {
+              "intent": "ecosystem-thesis",
+              "decisionType": "strategy",
+              "route": "graph+observatory"
+            },
+            "headline": "The integration strength is the main product advantage: Kaleidoscope turns repo-local evidence into a fleet-level operating picture with citations, maturity signals, and action routing.",
+            "rationale": [
+              "The graph snapshot has current graph evidence, the query witness passes 4/4 golden questions, and the Observatory shows 20/20 repos ready.",
+              "This creates a product pattern that competitors typically split across dashboards, docs, audits, and agents.",
+              "The core IP is not just RAG; it is governed graph plus retrieval trace plus maturity scoring plus execution routing."
+            ],
+            "recommendedActions": [
+              "Promote graph, query, and Observatory witnesses as the product control loop.",
+              "Add prior snapshot history next so integration strength can show movement, not only current state.",
+              "Keep MCP as the governed tool boundary before adding broader agent-to-agent delegation."
+            ],
+            "confidence": 0.88,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "fleet-level Observatory rollup",
+                "excerpt": "{ \"schema\": \"gtcx://ecosystem-os/kaleidoscope-ai/observatory/v1\", \"generatedAt\": \"2026-06-29T01:31:17.442Z\", \"repo\": \"ecosystem-os\","
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.311Z",
+                "reason": "golden strategic query results and confidence",
+                "excerpt": "\"queryCount\": 4, \"passedQueries\": 4, \"failedQueries\": 0, \"averageConfidence\": 0.92"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "Phase 2 architecture and retrieval mesh thesis",
+                "excerpt": "-> graph projection -> retrieval mesh -> agent runtime -> evaluator and policy gates"
+              }
+            ],
+            "assumptions": [
+              "The integration claim is bounded to internal ecosystem evidence until external benchmark evidence is attached.",
+              "MCP and graph readiness are necessary but not sufficient for production-grade user experience."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:50:42.672Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          },
+          {
+            "id": "execution-focus",
+            "question": "What should the team do next?",
+            "classification": {
+              "intent": "execution-prioritization",
+              "decisionType": "operating-plan",
+              "route": "observatory+roadmap"
+            },
+            "headline": "Next unblocked work is historical movement and stronger Decision Room evals: add prior graph snapshots, richer strategic golden questions, and owner-routed execution outputs.",
+            "rationale": [
+              "P2.1, P2.2, and P2.3 now produce current graph, query, and Observatory witnesses.",
+              "The main gap explicitly shown by the Observatory is movement unavailable because no prior Kaleidoscope graph snapshot exists.",
+              "Decision Room should now mature from deterministic answers into evaluated decision packets with routeable follow-up work."
+            ],
+            "recommendedActions": [
+              "Add prior/current snapshot comparison and score delta history.",
+              "Expand golden strategic questions for market leadership, venture potential, partnership paths, GTM, and repo uplift.",
+              "Generate owner-routed execution briefs for bridge-os, baseline-os, canon-os, fabric-os, and product repos."
+            ],
+            "confidence": 0.87,
+            "citations": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "current movement availability and readiness",
+                "excerpt": "\"answers\": { \"whatChangedSinceLastAudit\": \"Since the last available Kaleidoscope evidence, the current graph snapshot shows 20/20 repos ready, 0 blocker nodes, 0 symlink aliases, and 0 alias warnings. 20 repos have prior/current score movement available. P2.2 query witness passes 4/4 golden questions at 0.92 average co"
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md",
+                "sourceDate": "2026-06-28T23:50:42.672Z",
+                "reason": "Phase 2 roadmap sequencing",
+                "excerpt": "### P2.4: Decision room MVP Goal: ship evidence-backed strategic Q&A."
+              },
+              {
+                "path": "docs/business/research/kaleidoscope-ai/signal-mpr-integration-plan.md",
+                "sourceDate": "2026-06-28T23:11:04.456Z",
+                "reason": "SIGNAL/MPR maturity and next unlock framing",
+                "excerpt": "tier: strategic tags: ['kaleidoscope-ai', 'signal', 'mpr', 'agentic-maturity', 'evidence'] review_cycle: weekly ---"
+              }
+            ],
+            "assumptions": [
+              "Blocked fabric-os and venture-os PRs should remain separate until their repo gates are fixed.",
+              "The next slice should avoid UI until the evidence/eval contract is stable."
+            ],
+            "unsupportedClaims": [],
+            "ok": true,
+            "freshness": {
+              "sourceDateCount": 3,
+              "oldestSourceDate": "2026-06-28T23:11:04.456Z",
+              "newestSourceDate": "2026-06-29T01:31:17.444Z",
+              "stale": false
+            },
+            "evaluation": {
+              "citationGate": true,
+              "freshnessGate": true,
+              "unsupportedClaimGate": true,
+              "confidenceGate": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "signal",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "signal-fleet-witness-ready",
+      "confidence": 0.9,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/signal-fleet-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.370Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.277Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "reason": "SIGNAL-P, SIGNAL-E, MPR relation, and agentic maturity witness",
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+          "reason": "repo graph and evidence lineage supporting SIGNAL relation checks",
+          "sourceDate": "2026-06-29T01:31:17.277Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 product-surface requirement for Signal Lab",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-signal-l3-evidence",
+          "ownerRepo": "fabric-os",
+          "status": "draft",
+          "validation": "publish trace, eval, rollback, approval, and learning-loop evidence before any SIGNAL L3 claim"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/signal-fleet-latest.json",
+        "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/signal",
+        "summary": {
+          "repoCount": 20,
+          "generatedRepoWitnesses": 20,
+          "notEnoughEvidenceWitnesses": 0,
+          "averageOverallScore100": 40,
+          "averageSignalPScore100": 40,
+          "averageSignalEScore100": 43,
+          "overallLevelCounts": {
+            "L1": 5,
+            "L2": 15
+          },
+          "signalPLevelCounts": {
+            "L1": 5,
+            "L2": 15
+          },
+          "signalELevelCounts": {
+            "L2": 18,
+            "L1": 2
+          },
+          "graphRagMcpReadyRepos": 20,
+          "mprRelationAvailableRepos": 20
+        },
+        "overallLevelCounts": {
+          "L1": 5,
+          "L2": 15
+        },
+        "signalPLevelCounts": {
+          "L1": 5,
+          "L2": 15
+        },
+        "signalELevelCounts": {
+          "L2": 18,
+          "L1": 2
+        },
+        "bottlenecksByRepo": [
+          {
+            "repo": "agile-os",
+            "overallLevel": "L1",
+            "overallScore100": 25,
+            "signalP": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "baseline-os",
+            "overallLevel": "L1",
+            "overallScore100": 25,
+            "signalP": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "bridge-os",
+            "overallLevel": "L1",
+            "overallScore100": 25,
+            "signalP": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "process",
+              "published": true,
+              "summary": "SIGNAL-E limited by process."
+            },
+            "nextUnlocks": [
+              "Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.",
+              "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "canon-os",
+            "overallLevel": "L1",
+            "overallScore100": 25,
+            "signalP": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "compliance-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "ecosystem-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "exploration-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "fabric-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "griot-ai",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "gtcx-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "inspection-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "ledger-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "ledger-ui",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "markets-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "nyota-ai",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "sensei-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "terminal-os",
+            "overallLevel": "L1",
+            "overallScore100": 25,
+            "signalP": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L1",
+              "score100": 25,
+              "lowestDimension": "process",
+              "published": true,
+              "summary": "SIGNAL-E limited by process."
+            },
+            "nextUnlocks": [
+              "Publish repo MPR evidence or approve score movement for the explicit no-MPR relation to unlock SIGNAL-E process evidence.",
+              "Mark repo as infrastructure-only or define a product-intelligence surface before raising SIGNAL-P.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "terra-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "venture-os",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          },
+          {
+            "repo": "veritas-ai",
+            "overallLevel": "L2",
+            "overallScore100": 45,
+            "signalP": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-P limited by systemsArchitecture."
+            },
+            "signalE": {
+              "level": "L2",
+              "score100": 45,
+              "lowestDimension": "systemsArchitecture",
+              "published": true,
+              "summary": "SIGNAL-E limited by systemsArchitecture."
+            },
+            "nextUnlocks": [
+              "Add trace, policy, approval, and learning-loop evidence to unlock SIGNAL-E L3.",
+              "Connect product AI outputs to evals, feedback, and release gates to unlock SIGNAL-P L3.",
+              "Wire SIGNAL deltas into MPR agenticEmpowerment, Observatory, and Decision Room prioritization."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "actions",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "draft",
+      "decision": "actions-draft-queue-ready",
+      "confidence": 0.9,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.534Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/signal-fleet-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.370Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "reason": "draft action queue, owner routing, validation, approval, and release-gate state",
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic source questions that can produce draft actions",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/signal-fleet-latest.json",
+          "reason": "agentic maturity source for SIGNAL uplift actions",
+          "sourceDate": "2026-06-29T01:31:17.370Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 product-surface requirement for Execution Studio",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "draft_pending_approval",
+        "boundary": "draft",
+        "reason": "Draft-only action surface. It can display or generate internal draft actions but cannot create issues, write repos, deploy, publish, or contact external parties without explicit approval.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-actions-approval-record",
+          "ownerRepo": "agile-os",
+          "status": "approval_required",
+          "validation": "add acceptance and approval records before any draft action becomes repo write or ticket creation"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-execution-studio-latest.json",
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/signal-fleet-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/actions",
+        "summary": {
+          "actionCount": 0,
+          "okActions": 0,
+          "approvalPendingActions": 0,
+          "releaseBlockedActions": 0,
+          "owners": {}
+        },
+        "mode": "draft-only",
+        "actions": [],
+        "issues": []
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "partner-room",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "draft",
+      "decision": "partner-room-draft-ready-external-blocked",
+      "confidence": 0.88,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.577Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.491Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.444Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.534Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+          "reason": "partner-room gates, claim controls, movement caveat, and external-use boundary",
+          "sourceDate": "2026-06-29T01:31:17.577Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "reason": "strategic claims and cited partner narrative source",
+          "sourceDate": "2026-06-29T01:31:17.491Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "reason": "current fleet readiness and movement source",
+          "sourceDate": "2026-06-29T01:31:17.444Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "reason": "approval-boundary source for partner-facing actions",
+          "sourceDate": "2026-06-29T01:31:17.534Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "blocked_until_explicit_approval",
+        "boundary": "external",
+        "reason": "Partner Room can assemble internal drafts only. External sharing requires explicit approval for the specific artifact and audience.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-partner-room-approval-record",
+          "ownerRepo": "canon-os",
+          "status": "approval_required",
+          "validation": "record audience-specific approval before partner, investor, buyer, regulator, operator, or DFI use"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-partner-brief-latest.json",
+        "audit/evidence/kaleidoscope-decision-room-latest.json",
+        "audit/evidence/kaleidoscope-observatory-latest.json",
+        "audit/evidence/kaleidoscope-execution-studio-latest.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/partner-room",
+        "summary": {
+          "gateCount": 8,
+          "passedGates": 8,
+          "failedGates": 0,
+          "blockers": [],
+          "externalUse": "blocked_until_explicit_approval",
+          "approvalStatus": "draft_pending_approval",
+          "partnerRooms": 5,
+          "claimControls": 6,
+          "unsupportedClaimWarnings": 0,
+          "movementAvailable": true
+        },
+        "gates": [
+          {
+            "id": "source-witnesses-ok",
+            "label": "Required source witnesses are green",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "Decision Room strategic answer witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "Observatory readiness and movement witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "Execution Studio approval-boundary witness"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass when upstream strategic or execution witnesses are not ok."
+          },
+          {
+            "id": "market-question-eval",
+            "label": "Market-leadership answer passes citation, freshness, confidence, and unsupported-claim gates",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "market-leadership decision packet"
+              }
+            ],
+            "failureMode": "Partner narrative cannot pass when the source market-leadership answer fails evaluation."
+          },
+          {
+            "id": "partner-room-present",
+            "label": "Partner execution room draft is present",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "partner execution room draft"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without a source evidence map."
+          },
+          {
+            "id": "partner-rooms-covered",
+            "label": "Partner-specific rooms are covered",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "partner room sections"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass unless bank/DFI, regulator, buyer, operator, and investor rooms are all represented."
+          },
+          {
+            "id": "claim-controls-present",
+            "label": "Claim controls are explicit",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "claim controls table"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without claim posture and external-use rules."
+          },
+          {
+            "id": "external-use-blocked",
+            "label": "External use remains blocked until explicit approval",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "external-use frontmatter and body warning"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "Execution Studio approval request"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass if the artifact can be used externally without approval."
+          },
+          {
+            "id": "movement-caveat-present",
+            "label": "Movement baseline caveat is present",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+                "sourceDate": "2026-06-28T23:36:30.224Z",
+                "reason": "movement caveat"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "movement availability"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass if zero-delta movement can be misread as historical improvement."
+          },
+          {
+            "id": "safety-doctrine-linked",
+            "label": "Safety and release doctrine is linked",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md",
+                "sourceDate": "2026-06-28T11:44:06.145Z",
+                "reason": "release safety doctrine"
+              }
+            ],
+            "failureMode": "Partner brief evaluation cannot pass without linked safety and approval doctrine."
+          }
+        ],
+        "sources": {
+          "partnerRoom": "docs/business/research/kaleidoscope-ai/partner-execution-room-draft.md",
+          "decision": "audit/evidence/kaleidoscope-decision-room-latest.json",
+          "observatory": "audit/evidence/kaleidoscope-observatory-latest.json",
+          "execution": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+          "safetyPlan": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md"
+        }
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "release",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "internal-draft-release-pass",
+      "confidence": 0.94,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.619Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+            "sourceDate": "2026-06-29T03:40:04.835Z"
+          },
+          {
+            "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+            "sourceDate": "2026-06-29T03:43:26.600Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+          "reason": "eval, citation, freshness, confidence, approval, safety, and external-use gates",
+          "sourceDate": "2026-06-29T01:31:17.619Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+          "reason": "Phase 2 completion and Phase 3 readiness witness",
+          "sourceDate": "2026-06-29T03:40:04.835Z"
+        },
+        {
+          "path": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+          "reason": "approval-aware response envelope contract",
+          "sourceDate": "2026-06-29T03:43:26.600Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "blocked_until_explicit_approval",
+        "boundary": "external",
+        "reason": "Partner-facing, investor-facing, deployment, and repo-write actions require explicit approval outside this release witness.",
+        "approvalRecord": null
+      },
+      "nextActions": [
+        {
+          "id": "phase-3-external-approval-record",
+          "ownerRepo": "canon-os",
+          "status": "approval_required",
+          "validation": "record artifact-specific approval before partner, investor, deployment, or publication use"
+        }
+      ],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-release-gates-latest.json",
+        "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+        "pm/spec/kaleidoscope-ai/product-surface-api.schema.json"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/release",
+        "releaseDecision": "internal-draft-release-pass",
+        "externalUse": {
+          "status": "blocked_until_explicit_approval",
+          "reason": "Partner-facing, investor-facing, deployment, and repo-write actions require explicit approval outside this release witness."
+        },
+        "summary": {
+          "gateCount": 10,
+          "passedGates": 10,
+          "failedGates": 0,
+          "blockers": []
+        },
+        "gates": [
+          {
+            "id": "source-witnesses-ok",
+            "label": "Required source witnesses are green",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.311Z",
+                "reason": "query witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "decision witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "observatory witness"
+              },
+              {
+                "path": "audit/evidence/signal-fleet-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.370Z",
+                "reason": "SIGNAL witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "execution studio witness"
+              },
+              {
+                "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.577Z",
+                "reason": "partner brief evaluation witness"
+              }
+            ],
+            "failureMode": "Release cannot pass when any upstream witness is not ok."
+          },
+          {
+            "id": "golden-query-eval",
+            "label": "Golden strategic query eval passes",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.311Z",
+                "reason": "golden question eval results"
+              }
+            ],
+            "failureMode": "Release cannot pass when strategic retrieval quality regresses."
+          },
+          {
+            "id": "decision-citation-gate",
+            "label": "Decision Room answers have citations",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "decision citations"
+              }
+            ],
+            "failureMode": "Release cannot pass when high-value answers lack at least three citations."
+          },
+          {
+            "id": "decision-freshness-gate",
+            "label": "Decision Room answers use fresh evidence",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "decision freshness evaluation"
+              }
+            ],
+            "failureMode": "Release cannot pass when high-value answers cite stale evidence."
+          },
+          {
+            "id": "unsupported-claim-gate",
+            "label": "Unsupported claim warnings are zero",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "unsupported claim evaluation"
+              }
+            ],
+            "failureMode": "Release cannot pass when strategic answers include unsupported claims."
+          },
+          {
+            "id": "confidence-gate",
+            "label": "High-value answers meet confidence floor",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "answer confidence evaluation"
+              }
+            ],
+            "failureMode": "Release cannot pass when answer confidence drops below floor."
+          },
+          {
+            "id": "approval-boundary-gate",
+            "label": "Execution actions preserve approval boundaries",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "draft-only approval and release gate evidence"
+              }
+            ],
+            "failureMode": "Release cannot pass when draft actions can cross write, external, or deploy boundaries without approval."
+          },
+          {
+            "id": "partner-brief-boundary-gate",
+            "label": "Partner brief remains internal draft and approval-gated",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.577Z",
+                "reason": "partner brief claim, freshness, and approval-boundary evaluation"
+              }
+            ],
+            "failureMode": "Release cannot pass when partner narratives can cross external-use boundaries without explicit approval."
+          },
+          {
+            "id": "signal-evidence-gate",
+            "label": "SIGNAL and MPR relation evidence is explicit",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/signal-fleet-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.370Z",
+                "reason": "SIGNAL fleet witness"
+              }
+            ],
+            "failureMode": "Release cannot pass when repo-level agentic maturity evidence is missing or graph/RAG/MCP readiness regresses."
+          },
+          {
+            "id": "safety-plan-linked",
+            "label": "Safety and release-gate doctrine is linked",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md",
+                "sourceDate": "2026-06-28T11:44:06.145Z",
+                "reason": "release safety doctrine"
+              }
+            ],
+            "failureMode": "Release cannot pass without a documented safety and release-gate doctrine."
+          }
+        ]
+      }
+    },
+    {
+      "schema": "gtcx://ecosystem-os/kaleidoscope-ai/product-surface-api/v1",
+      "resource": "phase-2",
+      "generatedAt": "2026-06-29T05:15:17.617Z",
+      "mode": "read",
+      "decision": "phase-2-complete-for-internal-draft-use",
+      "confidence": 0.95,
+      "freshness": {
+        "status": "fresh",
+        "sourceDates": [
+          {
+            "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+            "sourceDate": "2026-06-29T03:40:04.835Z"
+          },
+          {
+            "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+            "sourceDate": "2026-06-29T01:31:17.619Z"
+          },
+          {
+            "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+            "sourceDate": "2026-06-29T03:42:58.656Z"
+          }
+        ]
+      },
+      "citations": [
+        {
+          "path": "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+          "reason": "Phase 2 completion gates and Phase 3 readiness",
+          "sourceDate": "2026-06-29T03:40:04.835Z"
+        },
+        {
+          "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+          "reason": "internal draft release posture",
+          "sourceDate": "2026-06-29T01:31:17.619Z"
+        },
+        {
+          "path": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md",
+          "reason": "Phase 3 read-only resource target state",
+          "sourceDate": "2026-06-29T03:42:58.656Z"
+        }
+      ],
+      "assumptions": [],
+      "unsupportedClaims": [],
+      "approval": {
+        "status": "not_required",
+        "boundary": "read",
+        "reason": "Read-only resource. No repo write, ticket creation, deployment, publication, partner contact, or external sharing is authorized.",
+        "approvalRecord": null
+      },
+      "nextActions": [],
+      "witnesses": [
+        "audit/evidence/kaleidoscope-phase-2-completion-latest.json",
+        "audit/evidence/kaleidoscope-release-gates-latest.json",
+        "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+      ],
+      "payload": {
+        "route": "/kaleidoscope/phase-2",
+        "decision": "phase-2-complete-for-internal-draft-use",
+        "externalUse": {
+          "status": "blocked_until_explicit_approval",
+          "reason": "Phase 2 completion only authorizes internal draft use. Partner-facing, investor-facing, deployment, and repo-write actions still require explicit approval."
+        },
+        "summary": {
+          "repoCount": 20,
+          "gateCount": 10,
+          "passedGates": 10,
+          "failedGates": 0,
+          "blockers": [],
+          "releaseDecision": "internal-draft-release-pass",
+          "operatingLoopStages": "9/9",
+          "executionStudioActions": 0,
+          "approvalPendingActions": 0,
+          "signalAverageOverallScore100": 40,
+          "graphRagMcpReadyRepos": 20
+        },
+        "gates": [
+          {
+            "id": "graph-rag-mcp-restored",
+            "label": "Graph, RAG, MCP, and eval configs are restored across the fleet",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-graph-rag-mcp-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.225Z",
+                "reason": "fleet graph/RAG/MCP readiness witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close while any real repo lacks complete graph/RAG/MCP/eval config readiness."
+          },
+          {
+            "id": "graph-snapshot-complete",
+            "label": "Typed ecosystem graph snapshot covers every real repo",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-graph-snapshot-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.277Z",
+                "reason": "fleet graph snapshot witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close without a complete typed graph snapshot and zero graph blockers."
+          },
+          {
+            "id": "query-service-golden-eval-green",
+            "label": "Unified query service passes golden strategic questions",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-query-service-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.311Z",
+                "reason": "query service golden-question witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close while strategic retrieval questions fail their deterministic eval."
+          },
+          {
+            "id": "observatory-fleet-truth-green",
+            "label": "Observatory has current fleet truth and commercial evidence coverage",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-observatory-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.444Z",
+                "reason": "Observatory witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close unless the Observatory can summarize readiness, blockers, movement, and commercial evidence for every real repo."
+          },
+          {
+            "id": "decision-room-eval-green",
+            "label": "Decision Room answers pass citation, freshness, confidence, and unsupported-claim gates",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-decision-room-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.491Z",
+                "reason": "Decision Room strategic Q&A witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close while strategic answers contain unsupported claims, stale evidence warnings, or low confidence."
+          },
+          {
+            "id": "signal-mpr-relation-green",
+            "label": "SIGNAL and MPR relation evidence is explicit for every real repo",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/signal-fleet-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.370Z",
+                "reason": "SIGNAL fleet witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close unless every real repo has generated SIGNAL evidence and an explicit MPR relation."
+          },
+          {
+            "id": "execution-studio-queue-clear",
+            "label": "Execution Studio has no remaining draft actions or approval-pending work",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-execution-studio-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.534Z",
+                "reason": "Execution Studio witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close while valid draft actions remain unresolved or approval-pending."
+          },
+          {
+            "id": "partner-brief-internal-only",
+            "label": "Partner brief remains internal-only and approval-gated",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-partner-brief-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.577Z",
+                "reason": "partner brief boundary witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close if partner/investor-facing narratives can cross the external-use boundary without explicit approval."
+          },
+          {
+            "id": "release-gates-pass",
+            "label": "Internal draft release gates pass with external use blocked",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-release-gates-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.619Z",
+                "reason": "release-gates witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close unless the release-gate bundle is green and external use remains blocked."
+          },
+          {
+            "id": "operating-loop-green",
+            "label": "Full Kaleidoscope operating loop is green",
+            "passed": true,
+            "severity": "none",
+            "evidence": [
+              {
+                "path": "audit/evidence/kaleidoscope-operating-loop-latest.json",
+                "sourceDate": "2026-06-29T01:31:17.623Z",
+                "reason": "operating-loop witness"
+              }
+            ],
+            "failureMode": "Phase 2 cannot close unless the full ordered stage chain passes locally."
+          }
+        ],
+        "phase3Readiness": [
+          {
+            "id": "trace-and-eval-sinks",
+            "ownerRepos": [
+              "fabric-os",
+              "bridge-os",
+              "baseline-os"
+            ],
+            "status": "ready_to_spec",
+            "why": "SIGNAL L3 remains capped until durable traces, eval sinks, rollback evidence, and learning-loop evidence exist."
+          },
+          {
+            "id": "product-surface-api",
+            "ownerRepos": [
+              "ecosystem-os",
+              "baseline-os"
+            ],
+            "status": "ready_to_spec",
+            "why": "The current product is generated evidence and reports; Phase 3 should turn Observatory, Decision Room, Signal Lab, and Execution Studio into API/UI surfaces."
+          },
+          {
+            "id": "partner-proof-packets",
+            "ownerRepos": [
+              "ecosystem-os",
+              "agile-os",
+              "canon-os"
+            ],
+            "status": "approval_required_before_external_use",
+            "why": "Partner proof packets can now be assembled from evidence, but each external artifact still needs explicit approval."
+          }
+        ]
+      }
+    }
+  ],
+  "contracts": {
+    "responseEnvelope": "pm/spec/kaleidoscope-ai/product-surface-api.schema.json",
+    "phase3Resources": "pm/spec/kaleidoscope-ai/phase-3-resources.schema.json",
+    "apiSpec": "docs/business/research/kaleidoscope-ai/phase-3-product-surface-api.md"
+  }
+}

@@ -10,14 +10,14 @@
       "terminal-os"
     ],
     "scoreChangeAllowed": false,
-    "status": "explicit-gap-witness-published"
+    "status": "explicit-no-mpr-relation-witness-published"
   },
   "gaps": [
     {
       "repo": "bridge-os",
       "currentSignalELevel": "L1",
-      "currentMprRelation": "missing",
-      "recommendedResolution": "Publish repo MPR evidence in bridge-os or approve an explicit no-MPR relation witness explaining why bridge-os is evaluated through ecosystem-level MPR instead of repo-local MPR.",
+      "currentMprRelation": "explicit-no-mpr-relation-witness",
+      "recommendedResolution": "Publish repo MPR evidence in bridge-os before allowing any score movement; until then, use this explicit no-MPR relation witness to explain why bridge-os is evaluated through ecosystem-level MPR context instead of repo-local MPR.",
       "scoreChangeAllowed": false,
       "validation": [
         "pnpm kaleidoscope:signal:check",
@@ -28,8 +28,8 @@
     {
       "repo": "terminal-os",
       "currentSignalELevel": "L1",
-      "currentMprRelation": "missing",
-      "recommendedResolution": "Publish repo MPR evidence in terminal-os or approve an explicit no-MPR relation witness explaining why terminal-os is evaluated through ecosystem-level MPR instead of repo-local MPR.",
+      "currentMprRelation": "explicit-no-mpr-relation-witness",
+      "recommendedResolution": "Publish repo MPR evidence in terminal-os before allowing any score movement; until then, use this explicit no-MPR relation witness to explain why terminal-os is evaluated through ecosystem-level MPR context instead of repo-local MPR.",
       "scoreChangeAllowed": false,
       "validation": [
         "pnpm kaleidoscope:signal:check",

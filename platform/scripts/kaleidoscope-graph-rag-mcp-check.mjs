@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const REPO = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const ECOSYSTEM_ROOT = resolve(REPO, '..');
 const WRITE = process.argv.includes('--write');
+const STRICT = process.argv.includes('--strict');
 const LOCAL_KIND = process.argv.includes('--local') ? process.argv[process.argv.indexOf('--local') + 1] : null;
 const WITNESS = join(REPO, 'audit/evidence/kaleidoscope-graph-rag-mcp-latest.json');
 
@@ -379,6 +380,7 @@ function main() {
     generatedAt: new Date().toISOString(),
     repo: 'ecosystem-os',
     restored: ready === repos.length,
+    strict: STRICT,
     phase: 'phase-1-contracts-and-baseline-scan',
     summary: {
       repoCount: repos.length,
@@ -404,7 +406,7 @@ function main() {
       'Move split config validators into baseline-os and bridge-os.',
       'Migrate tier-0 and tier-1 repos to config/baseline/{rag,mcp,graph,eval}.config.json.',
       'Emit repo-local rag-config, mcp-config, graph-projection, and rag-eval witnesses.',
-      'Promote this scanner from baseline witness to strict gate after tier-1 reaches ready.'
+      'Run with --strict only when the fleet checkout topology is pinned and this scan is intended to fail on restored=false.'
     ]
   };
 
@@ -420,10 +422,16 @@ function main() {
   console.log(`split-config-complete: ${witness.summary.splitConfigComplete}`);
   console.log(`average-score: ${witness.summary.averageScore}`);
   console.log(`restored: ${witness.restored}`);
+  console.log(`strict: ${STRICT}`);
   if (WRITE) console.log(`witness: ${relative(REPO, WITNESS)}`);
 
   for (const repo of repos) {
     console.log(`${repo.repo}: ${repo.maturity}/${repo.score} (${repo.blockers.length} blockers)`);
+  }
+
+  if (STRICT && !witness.restored) {
+    console.error('strict gate failed: restored=false');
+    process.exitCode = 1;
   }
 }
 

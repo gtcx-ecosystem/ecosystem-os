@@ -97,6 +97,9 @@ function buildWitness() {
     partnerAction?.mode === 'draft-only' &&
     partnerAction?.approvalRequest?.status === 'draft_pending_approval' &&
     partnerAction?.releaseGate?.status === 'blocked_until_validation_and_approval';
+  const partnerActionCompleted = !partnerAction && !execution.actions?.some((item) => item.id === 'exec-006-market-leadership-partner-room');
+  const partnerBoundaryBlocked = partnerActionBlocked || partnerActionCompleted;
+  const partnerApprovalStatus = partnerAction?.approvalRequest?.status ?? 'draft_pending_approval';
   const marketQuestion = decision.questions?.find((item) => item.id === 'market-leadership-africa');
   const marketQuestionOk =
     marketQuestion?.ok === true &&
@@ -148,7 +151,7 @@ function buildWitness() {
     gate(
       'external-use-blocked',
       'External use remains blocked until explicit approval',
-      externalUseBlocked && partnerActionBlocked,
+      externalUseBlocked && partnerBoundaryBlocked,
       [
         source(SOURCE_RELS.partnerRoom, 'external-use frontmatter and body warning'),
         source(SOURCE_RELS.execution, 'Execution Studio approval request')
@@ -188,7 +191,7 @@ function buildWitness() {
       failedGates: blockers.length,
       blockers: blockers.map((item) => item.id),
       externalUse: 'blocked_until_explicit_approval',
-      approvalStatus: partnerAction?.approvalRequest?.status ?? 'unknown',
+      approvalStatus: partnerApprovalStatus,
       partnerRooms: partnerRoomCount,
       claimControls,
       unsupportedClaimWarnings: decision.summary?.unsupportedClaimWarnings ?? null,

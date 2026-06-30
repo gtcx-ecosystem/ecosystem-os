@@ -18,7 +18,7 @@ review_cycle: on-change
 - Stages: 9/9 passed
 - Release decision: internal-draft-release-pass
 - External use: blocked_until_explicit_approval
-- Approval pending actions: 7
+- Approval pending actions: 0
 - SIGNAL average overall score: 40
 
 ## Stages
