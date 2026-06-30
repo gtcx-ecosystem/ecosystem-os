@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
-  "profile": "fleet-documentation",
-  "at": "2026-06-26T00:18:25.462Z",
+  "profile": "product",
+  "at": "2026-06-30T06:11:33.953Z",
   "ok": true,
   "gates": [
     {
@@ -23,7 +23,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "fleet-documentation"
+      "detail": "product"
     },
     {
       "id": "hub:root-agents",

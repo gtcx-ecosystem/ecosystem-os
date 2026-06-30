@@ -2,7 +2,7 @@
   "schema": "gtcx://audit/fleet-diagnostic-snapshot/v2",
   "repo": "ecosystem-os",
   "tier": "ecosystem-operating-system",
-  "refreshedAt": "2026-06-27T01:27:36.644Z",
+  "refreshedAt": "2026-06-29T06:38:58.229Z",
   "sessionPhase": "close",
   "laneSeparation": {
     "policy": "GS-MATURITY-LANE-001",
@@ -19,27 +19,24 @@
       "deepCommand": "full-audit skill in owner repo workspace"
     },
     "multiPillar": {
-      "composite100": 70,
-      "trustCap100": 70,
-      "compliance100": 99,
+      "composite100": 59,
+      "trustCap100": 74,
+      "compliance100": 69,
       "published": false,
       "witnessPath": "audit/evidence/mpr-repo-latest.json",
-      "evaluatedAt": "2026-06-26T11:34:23.358Z",
-      "ageHours": 13.887023574490017,
+      "evaluatedAt": "2026-06-28T11:14:29.380Z",
+      "ageHours": 19.40801326321072,
       "stale": false,
       "refreshCommand": "pnpm audit:mpr:repo:run -- --repo <repo> --write"
     },
     "master": {
-      "score10": 7.5,
-      "score100": 75,
+      "score10": null,
+      "score100": null,
       "productionReady": false,
-      "gaps": [
-        "ops:check failed",
-        "P35 strict"
-      ],
-      "witnessPath": "audit/evidence/master-audit-latest.json",
-      "ageHours": 46.355422988891604,
-      "stale": false,
+      "gaps": [],
+      "witnessPath": null,
+      "ageHours": null,
+      "stale": true,
       "refreshCommand": "pnpm ecosystem:master:audit --repo <repo> --write"
     },
     "gtm": {
@@ -288,7 +285,7 @@
       },
       "engineeringMaturity": {
         "lane": "engineeringMaturity",
-        "score100": 52,
+        "score100": 54,
         "status": "in-progress",
         "witnessPath": "audit/evidence/mpr-repo-latest.json",
         "mprPublished": false
@@ -370,7 +367,7 @@
     }
   },
   "rollup": {
-    "avgScore100": 70,
+    "avgScore100": 65,
     "anyStale": true,
     "pilotReady": false,
     "integratorPilotReady": false,

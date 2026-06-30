@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-foundation-check/v2",
   "repo": "ecosystem-os",
-  "at": "2026-06-28T16:15:34.571Z",
-  "ok": true,
+  "at": "2026-06-30T06:11:33.541Z",
+  "ok": false,
   "spec": {
     "localPath": "machine/spec/docs-foundation-pack.json",
     "localIsStub": false,
@@ -86,8 +86,8 @@
     },
     {
       "id": "canon:synthesize:check",
-      "ok": true,
-      "detail": "docs → machine/canon fresh"
+      "ok": false,
+      "detail": "run pnpm canon:synthesize"
     }
   ]
 }

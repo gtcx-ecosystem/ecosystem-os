@@ -1,0 +1,116 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/signal-l5-evidence-pack/v1",
+  "generatedAt": "2026-06-29T10:44:11.175Z",
+  "repo": "ecosystem-os",
+  "scope": "product",
+  "moduleId": "graph",
+  "signalAxis": "SIGNAL-P",
+  "requestedLevel": "L5",
+  "ok": true,
+  "operatingCycle": {
+    "consecutivePasses": 5,
+    "minimumRequired": 5,
+    "humanOverrideExercised": true,
+    "cycleWindow": "local-product-control-plane"
+  },
+  "summary": {
+    "selfImprovementEvidencePresent": true,
+    "generativeDesignEvidencePresent": true,
+    "policySynthesisEvidencePresent": true,
+    "crossModuleLearningEvidencePresent": true,
+    "autonomousExperimentationEvidencePresent": true,
+    "humanOverrideEvidencePresent": true
+  },
+  "selfImprovementEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-selfImprovement.md",
+        "kind": "self-improvement",
+        "description": "Graph SIGNAL-P L5 selfImprovement evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "generativeDesignEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-generativeDesign.md",
+        "kind": "generative-design",
+        "description": "Graph SIGNAL-P L5 generativeDesign evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "policySynthesisEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-policySynthesis.md",
+        "kind": "policy-synthesis",
+        "description": "Graph SIGNAL-P L5 policySynthesis evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "crossModuleLearningEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-crossModuleLearning.md",
+        "kind": "cross-module-learning",
+        "description": "Graph SIGNAL-P L5 crossModuleLearning evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "autonomousExperimentationEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-autonomousExperimentation.md",
+        "kind": "autonomous-experiment",
+        "description": "Graph SIGNAL-P L5 autonomousExperimentation evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "humanOverrideEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/graph/signal-p/l5-humanOverride.md",
+        "kind": "human-override",
+        "description": "Graph SIGNAL-P L5 humanOverride evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "releaseGate": {
+    "status": "approved",
+    "blockingCriteria": [],
+    "validationCommands": [
+      "pnpm kaleidoscope:signal:remediation:l5:check"
+    ],
+    "approvalRequired": false
+  }
+}

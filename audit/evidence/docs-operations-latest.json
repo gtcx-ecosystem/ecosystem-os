@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-operations-check/v3",
   "repo": "ecosystem-os",
-  "profile": "fleet-documentation",
-  "at": "2026-06-26T00:18:25.402Z",
+  "profile": "product",
+  "at": "2026-06-30T06:11:33.870Z",
   "ok": true,
   "gates": [
     {
@@ -23,7 +23,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "fleet-documentation"
+      "detail": "product"
     },
     {
       "id": "root:docs/operations/README.md",
@@ -136,21 +136,6 @@
       "detail": "{slug}.md"
     },
     {
-      "id": "subfolder-readme:organization",
-      "ok": true,
-      "detail": "docs/operations/organization/README.md"
-    },
-    {
-      "id": "subfolder-children:organization",
-      "ok": true,
-      "detail": "fabric contract child folders"
-    },
-    {
-      "id": "subfolder-format:organization",
-      "ok": true,
-      "detail": "{slug}.md"
-    },
-    {
       "id": "subfolder-readme:remediation",
       "ok": true,
       "detail": "docs/operations/remediation/README.md"
@@ -194,21 +179,6 @@
       "id": "subfolder-format:runbooks",
       "ok": true,
       "detail": "{system}-{action}.md"
-    },
-    {
-      "id": "subfolder-readme:structure",
-      "ok": true,
-      "detail": "docs/operations/structure/README.md"
-    },
-    {
-      "id": "subfolder-children:structure",
-      "ok": true,
-      "detail": "fabric contract child folders"
-    },
-    {
-      "id": "subfolder-format:structure",
-      "ok": true,
-      "detail": "{slug}.md"
     },
     {
       "id": "subfolder-readme:templates",

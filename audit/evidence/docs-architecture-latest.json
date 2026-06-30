@@ -1,8 +1,8 @@
 {
   "schema": "gtcx://canon-os/docs-architecture-check/v2",
   "repo": "ecosystem-os",
-  "profile": "fleet-documentation",
-  "at": "2026-06-26T00:18:25.273Z",
+  "profile": "product",
+  "at": "2026-06-30T06:11:33.642Z",
   "ok": true,
   "spec": {
     "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-architecture-pack.json",
@@ -28,7 +28,7 @@
     {
       "id": "profile",
       "ok": true,
-      "detail": "fleet-documentation"
+      "detail": "product"
     },
     {
       "id": "root:docs/architecture/README.md",
@@ -56,24 +56,39 @@
       "detail": "FOLDER-SPEC cites pack"
     },
     {
-      "id": "subfolder:integration",
+      "id": "subfolder:specs",
       "ok": true,
-      "detail": "docs/architecture/integration/"
+      "detail": "docs/architecture/specs/"
     },
     {
-      "id": "subfolder-file:integration/README.md",
+      "id": "subfolder-file:specs/README.md",
       "ok": true,
-      "detail": "docs/architecture/integration/README.md"
+      "detail": "docs/architecture/specs/README.md"
     },
     {
-      "id": "subfolder:pillars",
+      "id": "subfolder-file:specs/index.md",
       "ok": true,
-      "detail": "docs/architecture/pillars/"
+      "detail": "docs/architecture/specs/index.md"
     },
     {
-      "id": "subfolder-file:pillars/README.md",
+      "id": "subfolder:decisions",
       "ok": true,
-      "detail": "docs/architecture/pillars/README.md"
+      "detail": "docs/architecture/decisions/"
+    },
+    {
+      "id": "subfolder-file:decisions/README.md",
+      "ok": true,
+      "detail": "docs/architecture/decisions/README.md"
+    },
+    {
+      "id": "subfolder:requirements",
+      "ok": true,
+      "detail": "docs/architecture/requirements/"
+    },
+    {
+      "id": "subfolder-file:requirements/README.md",
+      "ok": true,
+      "detail": "docs/architecture/requirements/README.md"
     },
     {
       "id": "no-loose-narrative-at-root",
@@ -118,7 +133,7 @@
     {
       "id": "content:spec-narrative-min",
       "ok": true,
-      "detail": "23 narrative spec files (min 1)"
+      "detail": "24 narrative spec files (min 1)"
     }
   ]
 }

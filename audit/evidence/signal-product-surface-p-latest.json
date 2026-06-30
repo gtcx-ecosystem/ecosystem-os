@@ -1,0 +1,110 @@
+{
+  "schema": "gtcx://ecosystem-os/kaleidoscope-ai/signal-l3-evidence-pack/v1",
+  "generatedAt": "2026-06-29T10:44:11.175Z",
+  "repo": "ecosystem-os",
+  "scope": "product",
+  "moduleId": "surface",
+  "signalAxis": "SIGNAL-P",
+  "requestedLevel": "L3",
+  "ok": true,
+  "summary": {
+    "traceEvidencePresent": true,
+    "policyEvidencePresent": true,
+    "approvalEvidencePresent": true,
+    "evalEvidencePresent": true,
+    "rollbackEvidencePresent": true,
+    "learningLoopEvidencePresent": true
+  },
+  "traceEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-trace.md",
+        "kind": "trace",
+        "description": "Surface SIGNAL-P L3 trace evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "policyEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-policy.md",
+        "kind": "policy",
+        "description": "Surface SIGNAL-P L3 policy evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "approvalEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-approval.md",
+        "kind": "approval",
+        "description": "Surface SIGNAL-P L3 approval evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "evalEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-eval.md",
+        "kind": "eval",
+        "description": "Surface SIGNAL-P L3 eval evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "rollbackEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-rollback.md",
+        "kind": "rollback",
+        "description": "Surface SIGNAL-P L3 rollback evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "learningLoopEvidence": {
+    "present": true,
+    "minimumCount": 1,
+    "items": [
+      {
+        "path": "docs/business/research/kaleidoscope-ai/evidence/signal/surface/signal-p/l3-learningLoop.md",
+        "kind": "learning-loop",
+        "description": "Surface SIGNAL-P L3 learningLoop evidence note",
+        "owner": "ecosystem-os",
+        "createdAt": "2026-06-29"
+      }
+    ],
+    "gaps": []
+  },
+  "releaseGate": {
+    "status": "approved",
+    "blockingCriteria": [],
+    "validationCommands": [
+      "pnpm kaleidoscope:signal:remediation:l3:check"
+    ],
+    "approvalRequired": false
+  }
+}
