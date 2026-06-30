@@ -40,25 +40,27 @@ review_cycle: monthly
 | [`ecosystem-os-information-architecture-2026.md`](./ecosystem-os-information-architecture-2026.md) | Docs + GitBook IA |
 | [`ecosystem-os-operating-loop-state-machine-2026.md`](./ecosystem-os-operating-loop-state-machine-2026.md) | Know→Publish loop |
 
-### 3. Per-module scopes (ecosystem-os SoR)
+### 3. Per-module scopes (ecosystem-os lead unless noted)
 
-| Module | Scope spec | Implementation repo |
-| ------ | ---------- | ------------------- |
-| **Ethos** | [`ethos-module-scope-2026.md`](./ethos-module-scope-2026.md) | ecosystem-os + canon-os |
-| **Venture** | [`venture-module-scope-2026.md`](./venture-module-scope-2026.md) | ecosystem-os / venture-os |
-| **Agency** | [`agency-module-scope-2026.md`](./agency-module-scope-2026.md) | ecosystem-os |
-| **Bridge** | [`bridge-module-scope-2026.md`](./bridge-module-scope-2026.md) | bridge-os |
-| **Agile** | [`agile-module-scope-2026.md`](./agile-module-scope-2026.md) | agile-os |
-| **Fabric** | [`fabric-module-scope-2026.md`](./fabric-module-scope-2026.md) | fabric-os |
-| **Assurance** | [`assurance-module-scope-2026.md`](./assurance-module-scope-2026.md) | fabric-os + canon-os |
+| Module | Scope spec | Lead repo | Supporting repos / evidence |
+| ------ | ---------- | --------- | --------------------------- |
+| **Ethos** | [`ethos-module-scope-2026.md`](./ethos-module-scope-2026.md) | ecosystem-os | canon-os doctrine references |
+| **Venture** | [`venture-module-scope-2026.md`](./venture-module-scope-2026.md) | ecosystem-os | venture-os implementation |
+| **Agency** | [`agency-module-scope-2026.md`](./agency-module-scope-2026.md) | ecosystem-os | pm/agency evidence |
+| **Bridge** | [`bridge-module-scope-2026.md`](./bridge-module-scope-2026.md) | bridge-os | ecosystem-os product integration |
+| **Agile** | [`agile-module-scope-2026.md`](./agile-module-scope-2026.md) | agile-os | ecosystem-os product integration |
+| **Fabric** | [`fabric-module-scope-2026.md`](./fabric-module-scope-2026.md) | fabric-os | ecosystem-os product integration |
+| **Assurance** | [`assurance-module-scope-2026.md`](./assurance-module-scope-2026.md) | fabric-os + canon-os | ecosystem-os product integration |
 
-### 4. Substrate (reference — implemented in owner repos)
+### 4. Substrate (ecosystem-os lead, distributed implementation)
 
-| Layer | Reference | Owner repos |
-| ----- | --------- | ----------- |
-| Kernel | [`../../../foundation/narrative/product-architecture.md`](../../../foundation/narrative/product-architecture.md#substrate) | baseline-os |
-| Graph | same | agile-os, bridge-os |
-| Ledger | same | ledger-ui, canon-os |
-| Surface | same | gtcx-os, markets-os, terminal-os, … |
+Ecosystem OS leads product scope, roadmap language, and portfolio narrative for the substrate. Supporting repos provide implementation adapters, ceremonies, product surfaces, infrastructure, or evidence.
+
+| Layer | Reference | Lead repo | Supporting repos / evidence |
+| ----- | --------- | --------- | --------------------------- |
+| Kernel | [`../../../foundation/narrative/product-architecture.md`](../../../foundation/narrative/product-architecture.md#substrate) | ecosystem-os | baseline-os |
+| Graph | same | ecosystem-os | agile-os, bridge-os |
+| Ledger | same | ecosystem-os | ledger-ui, fabric-os, canon-os |
+| Surface | same | ecosystem-os | gtcx-os, markets-os, terra-os, terminal-os |
 
 **Fleet module map:** `bridge-os/pm/spec/ecosystem-module-repo-map.json`

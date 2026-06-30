@@ -4,6 +4,7 @@ status: generated
 date: 2026-06-29
 owner: ecosystem-os
 document_type: evidence-report
+tier: standard
 tags: ['kaleidoscope-ai', 'decision-room', 'strategic-qa']
 review_cycle: on-change
 ---
@@ -114,4 +115,3 @@ review_cycle: on-change
 - audit/evidence/kaleidoscope-observatory-latest.json (current movement availability and readiness)
 - docs/business/research/kaleidoscope-ai/phase-2-agentic-product-architecture.md (Phase 2 roadmap sequencing)
 - docs/business/research/kaleidoscope-ai/signal-mpr-integration-plan.md (SIGNAL/MPR maturity and next unlock framing)
-

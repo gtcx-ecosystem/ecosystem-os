@@ -42,7 +42,7 @@ The current run shows 19/20 repos complete across the five categories and 1/20 r
 | partner | `agile/roadmaps/partnerships.md`, design-partner witness, partner data, SOW template, or LOI evidence. |
 | revenue | `docs/business/economics/revenue-streams.md`, MPR business-layer witness, or economics evidence. |
 | deployment | `docs/operations/deployment-profile.json`, deployment proof, production launch readiness, or staging smoke witness. |
-| workflow | `docs/product/ux/critical-workflows.md`, `docs/product/experience/critical-workflows.md`, user-flow evidence, or workflow automation spec. |
+| workflow | `docs/product/ux/critical-workflows.md`, `docs/product/ux/critical-workflows.md`, user-flow evidence, or workflow automation spec. |
 
 ## Operating Rules
 
