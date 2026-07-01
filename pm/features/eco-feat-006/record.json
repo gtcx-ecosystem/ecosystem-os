@@ -1,0 +1,21 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-record/v1",
+  "id": "ECO-FEAT-006",
+  "name": "Venture OS content surface",
+  "status": "current",
+  "shipStatus": "shipped",
+  "ownerRepo": "ecosystem-os",
+  "domain": "venture",
+  "classification": "competitive",
+  "prdRef": "pm/product/prds/prd-product-charter.md",
+  "sourceRef": "venture-os/README.md",
+  "implementationRef": "docs/product/roadmap/features/FEAT-VEN-OS-HANDOFF.md",
+  "acceptanceCriteria": [
+    "Venture OS content surface has a current source artifact at venture-os/README.md.",
+    "The implementation reference docs/product/roadmap/features/FEAT-VEN-OS-HANDOFF.md is covered by a repo-local validation command.",
+    "The feature remains routed through ecosystem-os without normative protocol forks."
+  ],
+  "validationCommand": "pnpm ops:check",
+  "sprintHandoff": "pm/roadmap/sprints/active.json",
+  "updated": "2026-07-01"
+}

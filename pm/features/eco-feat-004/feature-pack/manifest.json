@@ -1,0 +1,41 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-pack/v1",
+  "id": "ECO-FEAT-004-PACK",
+  "featureId": "ECO-FEAT-004",
+  "owner": "ecosystem-os",
+  "status": "current",
+  "prdRef": "pm/product/prds/prd-product-charter.md",
+  "sourceRef": "pm/publish-register.json",
+  "implementationRef": "platform/scripts/publish-register-check.mjs",
+  "acceptanceCriteria": [
+    "Publish registry has a current source artifact at pm/publish-register.json.",
+    "The implementation reference platform/scripts/publish-register-check.mjs is covered by a repo-local validation command.",
+    "The feature remains routed through ecosystem-os without normative protocol forks."
+  ],
+  "qaTesting": [
+    {
+      "command": "pnpm publish:check -- --write",
+      "expectedScore100": 100
+    },
+    {
+      "command": "pnpm ops:check",
+      "expectedScore100": 100
+    }
+  ],
+  "sprintPlans": [
+    {
+      "sprintRef": "pm/roadmap/sprints/active.json",
+      "scrumHandoff": true
+    }
+  ],
+  "mprReview": {
+    "score100": 100,
+    "auditRef": "pm/features/eco-feat-004/audits/mpr.json"
+  },
+  "signalReview": {
+    "level": "L5",
+    "score100": 100,
+    "auditRef": "pm/features/eco-feat-004/audits/signal.json"
+  },
+  "updated": "2026-07-01"
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-mpr-audit/v1",
+  "id": "ECO-FEAT-003",
+  "score100": 100,
+  "mpr": {
+    "primary": [
+      "compliance",
+      "technicalExcellence",
+      "craft",
+      "worldClass",
+      "trustAndSafety"
+    ],
+    "evidence": [
+      "ops/gtm/fleet-catalog-index.md",
+      "platform/scripts/gtm-readiness-check.mjs",
+      "audit/evidence/gtm-readiness-check-latest.json"
+    ]
+  },
+  "notes": "Feature package has source, implementation reference, witness, validation command, and acceptance criteria.",
+  "updated": "2026-07-01"
+}

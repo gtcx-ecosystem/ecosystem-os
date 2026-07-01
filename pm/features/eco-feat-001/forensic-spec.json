@@ -1,0 +1,14 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-forensic-spec/v1",
+  "id": "ECO-FEAT-001",
+  "owner": "ecosystem-os",
+  "sourceOfTruth": "docs/gitbook/ecosystem/README.md",
+  "implementationEvidence": "docs/gitbook/",
+  "witness": "audit/evidence/docs-tree-latest.json",
+  "validationCommand": "pnpm docs:tree:check:strict",
+  "nonGoals": [
+    "Does not move normative protocol authority out of canon-os.",
+    "Does not turn operational assurance work into product release blockers."
+  ],
+  "updated": "2026-07-01"
+}
