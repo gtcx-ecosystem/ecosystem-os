@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://bridge-os/ops-consumption-check/v1",
-  "at": "2026-06-23T16:39:51.796Z",
+  "at": "2026-07-01T12:46:25.482Z",
   "repo": "ecosystem-os",
   "profile": "product",
   "ok": true,
@@ -18,11 +18,12 @@
     {
       "id": "ops:root",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/ops"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/operations"
     },
     {
       "id": "file:ops/coo.md",
-      "ok": true
+      "ok": true,
+      "detail": "operations/coo.md"
     },
     {
       "id": "coo:fabric-pointer",
@@ -57,7 +58,7 @@
     {
       "id": "lane:legal",
       "ok": true,
-      "detail": "ops/legal/manifest.json"
+      "detail": "operations/legal/manifest.json"
     },
     {
       "id": "lane:legal:href",

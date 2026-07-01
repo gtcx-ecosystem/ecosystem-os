@@ -1,10 +1,10 @@
 {
   "schema": "gtcx://ecosystem-os/publish-register-check/v1",
   "repo": "ecosystem-os",
-  "at": "2026-06-18T09:19:15.628Z",
+  "at": "2026-07-01T13:08:33.131Z",
   "ok": true,
   "spaceCount": 11,
-  "liveSyncedCount": 10,
+  "liveSyncedCount": 9,
   "rows": [
     {
       "id": "gtcx-ecosystem",
@@ -24,11 +24,11 @@
     },
     {
       "id": "apex-engine",
-      "status": "synced",
+      "status": "planned",
       "sourcePath": "baseline-os/docs/gitbook/apex-engine/",
-      "resolved": "/Users/amanianai/Sites/gtcx-ecosystem/baseline-os/docs/gitbook/apex-engine/",
+      "resolved": null,
       "ok": true,
-      "tracked": true
+      "tracked": false
     },
     {
       "id": "baselineos",
@@ -95,10 +95,5 @@
       "tracked": true
     }
   ],
-  "errors": [],
-  "migrationRecord": {
-    "policy": "T67",
-    "scrubbedAt": "2026-06-19",
-    "note": "Stale path references scrubbed per INIT-DOCS-CORE-IA-V1 — historical generatedAt preserved."
-  }
+  "errors": []
 }

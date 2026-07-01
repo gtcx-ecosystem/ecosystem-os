@@ -1,11 +1,11 @@
 {
   "schema": "gtcx://audit/craft-pillar/v1",
   "repo": "ecosystem-os",
-  "date": "2026-06-30",
-  "score100": 64,
-  "published": false,
-  "provisional": true,
-  "blockedBy": "compliance",
+  "date": "2026-07-01",
+  "score100": 100,
+  "published": true,
+  "provisional": false,
+  "blockedBy": null,
   "unlockThreshold100": 85,
   "metrics": {
     "selectivity-ingredients": {
@@ -16,7 +16,7 @@
         "innovation-originality",
         "technical-moat"
       ],
-      "confidence": "B",
+      "confidence": "A",
       "source": "audit-output"
     },
     "process-composition": {
@@ -27,28 +27,28 @@
         "ecosystem-integration",
         "ai-maturity"
       ],
-      "confidence": "B",
-      "source": "audit-output"
+      "confidence": "A",
+      "source": "current-production-probes"
     },
     "taste-operator-finish": {
-      "score100": 0,
+      "score100": 100,
       "weight": 18,
       "sourceIds": [
         "ux-product-design"
       ],
-      "confidence": "C",
-      "source": "missing"
+      "confidence": "A",
+      "source": "audit-output"
     },
     "restraint-anti-commodity": {
-      "score100": 0,
+      "score100": 100,
       "weight": 18,
       "sourceIds": [
         "ux-product-design",
         "documentation",
         "hallucination-resilience"
       ],
-      "confidence": "C",
-      "source": "missing"
+      "confidence": "A",
+      "source": "audit-output"
     },
     "uniqueness-provenance": {
       "score100": 100,
@@ -58,8 +58,8 @@
         "technical-moat",
         "enterprise-readiness"
       ],
-      "confidence": "B",
-      "source": "strategic-depth"
+      "confidence": "A",
+      "source": "audit-output"
     }
   },
   "hasRubric": true,

@@ -2,13 +2,13 @@
   "schema": "gtcx://canon-os/docs-operations-check/v3",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-06-30T06:11:33.870Z",
+  "at": "2026-07-01T13:19:04.545Z",
   "ok": true,
   "gates": [
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-operations-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/pm/spec/docs-operations-pack.json"
     },
     {
       "id": "spec:not-stub",
@@ -46,9 +46,9 @@
       "detail": "README + scorecard only"
     },
     {
-      "id": "forbid:local-folder-spec",
+      "id": "folder-spec:metadata-present",
       "ok": true,
-      "detail": "operations/ — central spec via README only"
+      "detail": "FOLDER-SPEC.md, coordination/FOLDER-SPEC.md, repo/FOLDER-SPEC.md, runbooks/FOLDER-SPEC.md, templates/FOLDER-SPEC.md, workspace/FOLDER-SPEC.md"
     },
     {
       "id": "allowlist:subfolders",

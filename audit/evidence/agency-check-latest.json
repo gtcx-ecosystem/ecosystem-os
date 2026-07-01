@@ -1,23 +1,23 @@
 {
   "schema": "gtcx://ecosystem-os/agency-check/v1",
-  "updated": "2026-06-28T16:15:34.528Z",
+  "updated": "2026-07-01T13:14:07.842Z",
   "ok": true,
   "catalogs": [
     {
       "id": "tools",
-      "path": "pm/agency/catalogs/tools.json",
+      "path": "machine/agency/catalogs/tools.json",
       "ok": true,
       "issues": []
     },
     {
       "id": "assets",
-      "path": "pm/agency/catalogs/assets.json",
+      "path": "machine/agency/catalogs/assets.json",
       "ok": true,
       "issues": []
     },
     {
       "id": "resources",
-      "path": "pm/agency/catalogs/resources.json",
+      "path": "machine/agency/catalogs/resources.json",
       "ok": true,
       "issues": []
     }

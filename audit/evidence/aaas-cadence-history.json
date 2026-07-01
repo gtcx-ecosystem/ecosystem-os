@@ -1,0 +1,45 @@
+{
+  "schema": "gtcx://fabric-os/aaas-cadence-history/v1",
+  "points": [
+    {
+      "ts": "2026-07-01T13:24:15.696Z",
+      "metrics": {
+        "compliance": 96,
+        "technicalExcellence": 45,
+        "craft": 62,
+        "worldClass": 51,
+        "trustAndSafety": 81
+      }
+    },
+    {
+      "ts": "2026-07-01T13:25:20.197Z",
+      "metrics": {
+        "compliance": 96,
+        "technicalExcellence": 45,
+        "craft": 62,
+        "worldClass": 51,
+        "trustAndSafety": 81
+      }
+    },
+    {
+      "ts": "2026-07-01T13:25:29.000Z",
+      "metrics": {
+        "compliance": 96,
+        "technicalExcellence": 45,
+        "craft": 62,
+        "worldClass": 51,
+        "trustAndSafety": 81
+      }
+    },
+    {
+      "ts": "2026-07-01T13:25:29.064Z",
+      "metrics": {
+        "compliance": 96,
+        "technicalExcellence": 45,
+        "craft": 62,
+        "worldClass": 51,
+        "trustAndSafety": 81
+      }
+    }
+  ]
+}

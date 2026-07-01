@@ -1,0 +1,97 @@
+{
+  "schema": "gtcx://fabric-os/aaas-adversarial-honesty/v1",
+  "total": 5,
+  "verifiedCount": 1,
+  "unassessableCount": 4,
+  "quarantinedCount": 0,
+  "upheldCount": 1,
+  "depthUnverified": [
+    "technicalExcellence",
+    "craft",
+    "worldClass",
+    "trustAndSafety"
+  ],
+  "quarantined": [],
+  "upheld": [
+    {
+      "id": "compliance",
+      "score": 96,
+      "threshold": 85,
+      "provisional": false,
+      "survives": true,
+      "quarantined": false,
+      "refutedBy": [],
+      "notes": [],
+      "provenance": "sha256:1d17e8c4efa1d67c"
+    }
+  ],
+  "unassessable": [
+    {
+      "id": "technicalExcellence",
+      "score": 45,
+      "threshold": 85,
+      "provisional": true,
+      "survives": true,
+      "quarantined": false,
+      "refutedBy": [],
+      "notes": [
+        {
+          "note": "depth-unverified",
+          "detail": "pillar-level aggregate (no leaf decomposition) — sourced, lower confidence"
+        }
+      ],
+      "provenance": "sha256:2645aff69624b5e2"
+    },
+    {
+      "id": "craft",
+      "score": 62,
+      "threshold": 85,
+      "provisional": true,
+      "survives": true,
+      "quarantined": false,
+      "refutedBy": [],
+      "notes": [
+        {
+          "note": "depth-unverified",
+          "detail": "pillar-level aggregate (no leaf decomposition) — sourced, lower confidence"
+        }
+      ],
+      "provenance": "sha256:69b94a2c30494ba2"
+    },
+    {
+      "id": "worldClass",
+      "score": 51,
+      "threshold": 85,
+      "provisional": true,
+      "survives": true,
+      "quarantined": false,
+      "refutedBy": [],
+      "notes": [
+        {
+          "note": "depth-unverified",
+          "detail": "pillar-level aggregate (no leaf decomposition) — sourced, lower confidence"
+        }
+      ],
+      "provenance": "sha256:1380f0da870ad967"
+    },
+    {
+      "id": "trustAndSafety",
+      "score": 81,
+      "threshold": 85,
+      "provisional": false,
+      "survives": true,
+      "quarantined": false,
+      "refutedBy": [],
+      "notes": [
+        {
+          "note": "depth-unverified",
+          "detail": "pillar-level aggregate (no leaf decomposition) — sourced, lower confidence"
+        }
+      ],
+      "provenance": "sha256:d810c180db2466e7"
+    }
+  ],
+  "ok": true,
+  "repo": "ecosystem-os",
+  "checkedAt": "2026-07-01T13:24:15.694Z"
+}
