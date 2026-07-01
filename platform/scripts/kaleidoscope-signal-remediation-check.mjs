@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const DEFAULT_REPO = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
 const DEFAULT_SPEC = 'pm/spec/kaleidoscope-ai/signal-module-remediation.json';
-const DEFAULT_MACHINE_SPEC = 'machine/spec/kaleidoscope-ai/signal-module-remediation.json';
+const DEFAULT_MACHINE_SPEC = 'pm/spec/kaleidoscope-ai/signal-module-remediation.json';
 const REQUIRED_MODULES = ['agency', 'ethos', 'graph', 'kernel', 'ledger', 'surface', 'venture'];
 const REQUIRED_DIMENSIONS = ['systemsArchitecture', 'tooling', 'process', 'safeguards', 'monitoring', 'teamOwnership'];
 const REQUIRED_EVIDENCE = ['approval', 'eval', 'learningLoop', 'policy', 'rollback', 'trace'];

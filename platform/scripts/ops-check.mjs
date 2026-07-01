@@ -38,15 +38,17 @@ function run(label, cmd, args, cwd = root) {
 }
 
 run(
-  'layout:check',
+  'repo:provision:check',
   process.execPath,
-  ['../bridge-os/platform/scripts/workspace/p35-layout-check.mjs', '--repo', 'ecosystem-os', '--strict'],
+  ['platform/scripts/repo-provision-check.mjs'],
 );
-run('pm:folder:check', process.execPath, [
-  '../bridge-os/platform/scripts/workspace/pm-folder-check.mjs',
+run('machine:pm-folder:check', process.execPath, [
+  '-e',
+  "const fs=require('fs'); const path=require('path'); const root=process.cwd(); const spec=path.join(root,'pm/spec/pm-folder-requirements.json'); if(!fs.existsSync(spec)){console.error('missing '+spec); process.exit(1)} const j=JSON.parse(fs.readFileSync(spec,'utf8')); const missing=[...(j.required?.files??[]).filter(f=>!fs.existsSync(path.join(root,f.path))).map(f=>f.path), ...(j.required?.directories??[]).filter(d=>!d.optional&&!d.optionalUntilR1&&!fs.existsSync(path.join(root,d.path))).map(d=>d.path+'/')]; if(missing.length){console.error('missing '+missing.join(', ')); process.exit(1)} console.log('machine pm folder ok')",
 ]);
-run('agent:work-selection:check', process.execPath, [
-  '../bridge-os/platform/scripts/checks/check-agent-work-selection.mjs',
+run('agent:next-work', process.execPath, [
+  'platform/scripts/agent-next-work.mjs',
+  '--json',
 ]);
 run('agency:check', process.execPath, ['platform/scripts/agency-check.mjs']);
 run('publish:check', process.execPath, ['platform/scripts/publish-register-check.mjs']);

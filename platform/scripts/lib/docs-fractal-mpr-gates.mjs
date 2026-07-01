@@ -34,7 +34,7 @@ export function gate(id, ok, detail = null) {
 }
 
 export function loadPolicy(repoRoot) {
-  const local = join(repoRoot, 'machine/spec/docs-fractal-mpr-policy.json');
+  const local = join(repoRoot, 'pm/spec/docs-fractal-mpr-policy.json');
   const canon = join(repoRoot, '../canon-os/pm/spec/docs-fractal-mpr-policy.json');
   const path = existsSync(local) ? local : canon;
   if (!existsSync(path)) return null;
@@ -42,7 +42,7 @@ export function loadPolicy(repoRoot) {
 }
 
 export function loadPack(repoRoot, packRel) {
-  const normalizedRel = packRel.replace(/^pm\/spec\//, 'machine/spec/');
+  const normalizedRel = packRel;
   const local = join(repoRoot, normalizedRel);
   const canon = join(repoRoot, '../canon-os/pm/spec', packRel.replace(/^pm\/spec\//, ''));
   const path = existsSync(local) ? local : existsSync(canon) ? canon : null;

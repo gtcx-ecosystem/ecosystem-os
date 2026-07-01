@@ -127,6 +127,8 @@
     "ceremony:close:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-close.mjs --repo .",
     "ceremony:critique:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-critique.mjs --write --repo .",
     "ceremony:checkpoint:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-checkpoint.mjs --write --repo .",
-    "ceremony:contract:verify": "node ../baseline-os/platform/scripts/ecosystem/verify-ceremony-contract.mjs --repo ."
+    "ceremony:contract:verify": "node ../baseline-os/platform/scripts/ecosystem/verify-ceremony-contract.mjs --repo .",
+    "docs:check-links": "node platform/scripts/docs-link-check.mjs",
+    "feature:production-package:check": "node platform/scripts/feature-production-package-check.mjs"
   }
 }

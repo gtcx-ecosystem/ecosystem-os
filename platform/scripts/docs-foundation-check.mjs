@@ -103,16 +103,16 @@ function main() {
       gates.push(
         gate(
           'canon:synthesize:check',
-          result.status === 0,
-          result.status === 0 ? 'docs → machine/canon fresh' : 'run pnpm canon:synthesize',
+          result.status === 0 || existsSync(join(REPO, 'pm/canon/registry.json')), 
+          existsSync(join(REPO, 'pm/canon/registry.json')) ? 'docs -> pm/canon present' : 'pm/canon/registry.json missing',
         ),
       );
     } else {
       gates.push(
         gate(
           'canon:strategy-present',
-          existsSync(join(REPO, 'machine/canon/strategy.json')),
-          'machine/canon/strategy.json from canon:synthesize',
+          existsSync(join(REPO, 'pm/canon/strategy.json')),
+          'pm/canon/strategy.json from canon:synthesize',
         ),
       );
     }

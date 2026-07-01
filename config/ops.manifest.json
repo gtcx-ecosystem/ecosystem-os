@@ -2,7 +2,7 @@
   "$schema": "gtcx://ops/manifest/v14",
   "schema": "gtcx.ops.manifest.v14",
   "repo": "ecosystem-os",
-  "updated": "2026-06-17",
+  "updated": "2026-07-01",
   "layoutVersion": "v5",
   "protocol": "https://github.com/gtcx-ecosystem/canon-os/blob/main/docs/governance/protocols/29-agent-workspace-domains/protocol.md",
   "layout": "docs/operations/workspace/ecosystem-repo-layout-v5.md",

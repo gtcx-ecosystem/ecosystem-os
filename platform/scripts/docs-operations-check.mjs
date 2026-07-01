@@ -17,7 +17,7 @@ const WRITE = process.argv.includes('--write');
 const WITNESS = join(REPO, 'audit/evidence/docs-operations-latest.json');
 const PACK = 'docs-operations-pack.json';
 const SUBFOLDER_CONTRACT = 'docs-operations-subfolder-contract.json';
-const ROOT_ALLOW = new Set(['README.md', 'scorecard.md']);
+const ROOT_ALLOW = new Set(['README.md', 'scorecard.md', 'FOLDER-SPEC.md']);
 
 function gate(id, ok, detail = null) {
   return { id, ok, ...(detail ? { detail } : {}) };
@@ -39,7 +39,7 @@ function listUnknownSubfolders(dir, allowed) {
 }
 
 function loadJsonCandidates(repoRoot, name) {
-  const local = join(repoRoot, 'machine/spec', name);
+  const local = join(repoRoot, 'pm/spec', name);
   const fleet = join(repoRoot, '../canon-os/pm/spec', name);
   const path = existsSync(local) ? local : fleet;
   if (!existsSync(path)) return null;
@@ -127,6 +127,7 @@ function enforceSubfolderContract(gates, opsDir, contract, activeSubs, enforceSt
         ...(def.allowedRootFiles ?? []),
         'README.md',
         'scorecard.md',
+        'FOLDER-SPEC.md',
       ]);
       const badFmt = readdirSync(dir, { withFileTypes: true })
         .filter((e) => e.isFile() && !allowRoot.has(e.name) && !re.test(e.name))
@@ -152,7 +153,7 @@ function main() {
     gate(
       'spec:local-present',
       !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
-      resolution.localPath ?? 'missing machine/spec/docs-operations-pack.json',
+      resolution.localPath ?? 'missing pm/spec/docs-operations-pack.json',
     ),
   );
   gates.push(gate('spec:not-stub', !resolution.localIsStub, resolution.localIsStub ? 'upgrade pack' : 'full local pack'));
@@ -222,14 +223,14 @@ function main() {
     ),
   );
 
-  const opsFolderSpecViolations = findLocalFolderSpecFiles(opsDir);
+  const opsFolderSpecFiles = findLocalFolderSpecFiles(opsDir);
   gates.push(
     gate(
-      'forbid:local-folder-spec',
-      opsFolderSpecViolations.length === 0,
-      opsFolderSpecViolations.length
-        ? opsFolderSpecViolations.join(', ')
-        : 'operations/ — central spec via README only',
+      'folder-spec:metadata-present',
+      opsFolderSpecFiles.length > 0,
+      opsFolderSpecFiles.length
+        ? opsFolderSpecFiles.join(', ')
+        : 'operations folder metadata missing',
     ),
   );
 
