@@ -129,6 +129,12 @@
     "ceremony:checkpoint:write": "node ../baseline-os/platform/scripts/ecosystem/session-ceremony-checkpoint.mjs --write --repo .",
     "ceremony:contract:verify": "node ../baseline-os/platform/scripts/ecosystem/verify-ceremony-contract.mjs --repo .",
     "docs:check-links": "node platform/scripts/docs-link-check.mjs",
-    "feature:production-package:check": "node platform/scripts/feature-production-package-check.mjs"
+    "feature:production-package:check": "node platform/scripts/feature-production-package-check.mjs",
+    "qasc:check": "pnpm --dir ../fabric-os qasc:repo -- --repo ecosystem-os",
+    "qasc:check:write": "pnpm --dir ../fabric-os qasc:repo:write -- --repo ecosystem-os",
+    "dslc:check": "pnpm --dir ../fabric-os dslc:release -- --manifest ../ecosystem-os/pm/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json",
+    "dslc:check:write": "pnpm --dir ../fabric-os dslc:release:write -- --manifest ../ecosystem-os/pm/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os",
+    "ship:check": "pnpm --dir ../fabric-os ship:release -- --manifest ../ecosystem-os/pm/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json",
+    "ship:check:write": "pnpm --dir ../fabric-os ship:release:write -- --manifest ../ecosystem-os/pm/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os"
   }
 }

@@ -1,0 +1,167 @@
+{
+  "schema": "gtcx://fabric-os/dslc-release-decision/v1",
+  "generatedAt": "2026-07-01T18:25:37.544Z",
+  "date": "2026-07-01",
+  "protocolId": "GTCX-DSLC-001",
+  "contractVersion": "1.0.0",
+  "manifest": "../ecosystem-os/pm/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json",
+  "outputRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
+  "releaseId": "REL-ECOSYSTEM-OS-001",
+  "repo": "ecosystem-os",
+  "releaseClass": "internal",
+  "title": "Ecosystem OS internal protocol parity closeout",
+  "owner": "ecosystem-os product leadership",
+  "requiredLanes": [
+    "deployment"
+  ],
+  "qasc": {
+    "score100": 100,
+    "signalLevel": "L5",
+    "evidence": "audit/evidence/qasc-repo-latest.json",
+    "atBenchmark": true
+  },
+  "lanes": {
+    "deployment": {
+      "name": "deployment",
+      "owner": "ecosystem-os",
+      "required": true,
+      "score100": 100,
+      "controlsAtBenchmark": 8,
+      "controlCount": 8,
+      "controls": [
+        {
+          "id": "release-scope-version",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "package.json",
+            "pm/shipping-tracks.json",
+            "pm/ci/shipping-status-latest.json"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        },
+        {
+          "id": "ci-build-provenance",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "audit/evidence/qasc-repo-latest.json",
+            "pm/ci/shipping-status-latest.json",
+            "docs/business/research/kaleidoscope-ai/release-gates-latest.md"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        },
+        {
+          "id": "qa-qasc-acceptance",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "audit/evidence/qasc-repo-latest.json",
+            "audit/evidence/mpr-repo-latest.json",
+            "audit/evidence/signal-maturity-latest.json"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        },
+        {
+          "id": "environment-config-migrations",
+          "authorityClass": "R",
+          "status": "not-applicable",
+          "evidence": [
+            "docs/operations/deployment-profile.json"
+          ],
+          "rationale": "Internal QASC/DSLC/SHIP parity closeout only; no production environment mutation, secret binding, or database migration is executed by this release.",
+          "approver": "operator-directive-2026-07-01",
+          "atBenchmark": true
+        },
+        {
+          "id": "release-notes-operator-runbook",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "docs/operations/runbooks/operator-runbooks-ecosystem-os-2026.md",
+            "docs/business/research/kaleidoscope-ai/release-gates-latest.md",
+            "pm/ci/shipping-status-latest.json"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        },
+        {
+          "id": "deployment-rollout-rollback",
+          "authorityClass": "A",
+          "status": "satisfied",
+          "evidence": [
+            "docs/operations/deployment/deployment-profile.json",
+            "docs/operations/runbooks/operator-runbooks-ecosystem-os-2026.md",
+            "docs/business/research/kaleidoscope-ai/evidence-eval-safety-release-gates.md"
+          ],
+          "rationale": "Internal protocol parity closeout; rollout is bounded to delegated evidence and package scripts and is reversible by reverting this manifest/witness commit.",
+          "approver": "operator-directive-2026-07-01",
+          "atBenchmark": true
+        },
+        {
+          "id": "observability-alerting-slo",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "pm/ci/shipping-status-latest.json",
+            "pm/spec/kaleidoscope-ai/release-gates.schema.json"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        },
+        {
+          "id": "post-deploy-verification",
+          "authorityClass": "R",
+          "status": "satisfied",
+          "evidence": [
+            "audit/evidence/qasc-repo-latest.json",
+            "pm/ci/shipping-status-latest.json"
+          ],
+          "rationale": null,
+          "approver": null,
+          "atBenchmark": true
+        }
+      ]
+    },
+    "sales": {
+      "name": "sales",
+      "owner": "commercial-ops",
+      "required": false,
+      "score100": 100,
+      "controlsAtBenchmark": 0,
+      "controlCount": 0,
+      "controls": []
+    },
+    "legal": {
+      "name": "legal",
+      "owner": "legal-ops",
+      "required": false,
+      "score100": 100,
+      "controlsAtBenchmark": 0,
+      "controlCount": 0,
+      "controls": []
+    },
+    "communications": {
+      "name": "communications",
+      "owner": "communications-ops",
+      "required": false,
+      "score100": 100,
+      "controlsAtBenchmark": 0,
+      "controlCount": 0,
+      "controls": []
+    }
+  },
+  "score100": 100,
+  "benchmarkScore100": 100,
+  "decision": "ready",
+  "atBenchmark": true,
+  "blockers": []
+}
