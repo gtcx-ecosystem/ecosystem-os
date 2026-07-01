@@ -6,6 +6,7 @@ owner: ecosystem-os
 document_type: evidence-report
 tags: ['kaleidoscope-ai', 'graph', 'rag', 'mcp', 'strict-gate', 'reproducibility']
 review_cycle: on-change
+tier: standard
 ---
 
 # Kaleidoscope AI Graph/RAG/MCP strict fleet pin latest

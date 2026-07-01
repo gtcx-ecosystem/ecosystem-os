@@ -6,6 +6,7 @@ owner: ecosystem-os
 document_type: evidence-report
 tags: ['kaleidoscope-ai', 'phase-2', 'release-gates', 'operating-loop']
 review_cycle: on-change
+tier: standard
 ---
 
 # Kaleidoscope AI phase 2 completion latest

@@ -6,6 +6,7 @@ owner: ecosystem-os
 document_type: evidence-note
 tags: ['kaleidoscope-ai', 'signal', 'l5']
 review_cycle: on-change
+tier: standard
 ---
 
 # SIGNAL L5 Ethos SIGNAL-E policySynthesis evidence

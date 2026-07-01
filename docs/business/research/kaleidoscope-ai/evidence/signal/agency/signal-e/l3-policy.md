@@ -6,6 +6,7 @@ owner: ecosystem-os
 document_type: evidence-note
 tags: ['kaleidoscope-ai', 'signal', 'l3']
 review_cycle: on-change
+tier: standard
 ---
 
 # SIGNAL L3 Agency SIGNAL-E policy evidence

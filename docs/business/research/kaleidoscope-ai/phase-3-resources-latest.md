@@ -6,6 +6,7 @@ owner: ecosystem-os
 document_type: evidence-report
 tags: ['kaleidoscope-ai', 'phase-3', 'api', 'product-surface']
 review_cycle: on-change
+tier: standard
 ---
 
 # Kaleidoscope AI phase 3 resources latest
