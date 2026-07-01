@@ -3,7 +3,7 @@
   "id": "INIT-ECO-SIGNAL-MATURITY",
   "status": "in_progress",
   "owner": "ecosystem-os",
-  "updated": "2026-06-29",
+  "updated": "2026-07-01",
   "baseline": {
     "scope": "repo",
     "source": "audit/evidence/signal-fleet-latest.json",

@@ -6,7 +6,7 @@
   "productId": "ecosystem-os",
   "version": "0.1.0",
   "status": "draft",
-  "updated": "2026-06-29",
+  "updated": "2026-07-01",
   "owner": "ecosystem-os",
   "goalsRef": "machine/canon/strategy.json",
   "strategyRef": "machine/canon/strategy.json",
@@ -25,7 +25,6 @@
     "goals": "docs/foundation/goals.md",
     "milestones": "docs/foundation/milestones.md",
     "roadmap": "docs/foundation/roadmap.md",
-    "uxReadme": "docs/product/ux/README.md",
     "customersReadme": "docs/business/customers/README.md",
     "strategyReadme": "docs/business/strategy/README.md",
     "architectureReadme": "docs/architecture/README.md"

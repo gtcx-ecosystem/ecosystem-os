@@ -1,23 +1,23 @@
 # Agency check
 
-- Updated: `2026-06-28T16:15:34.528Z`
+- Updated: `2026-07-01T13:14:07.842Z`
 - OK: **true**
 
 ## tools
 
-- Path: `pm/agency/catalogs/tools.json`
+- Path: `machine/agency/catalogs/tools.json`
 - OK: **true**
 - Issues: **0**
 
 ## assets
 
-- Path: `pm/agency/catalogs/assets.json`
+- Path: `machine/agency/catalogs/assets.json`
 - OK: **true**
 - Issues: **0**
 
 ## resources
 
-- Path: `pm/agency/catalogs/resources.json`
+- Path: `machine/agency/catalogs/resources.json`
 - OK: **true**
 - Issues: **0**
 
