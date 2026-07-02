@@ -5,13 +5,22 @@ import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '../..');
-const registryPath = join(root, 'pm/spec/feature-registry/ecosystem-os-features.json');
+function resolveRepoPath(rel) {
+  const candidates = [
+    join(root, rel),
+    rel.startsWith('pm/') ? join(root, rel.replace(/^pm\//, 'machine/')) : null,
+    rel.startsWith('ops/') ? join(root, rel.replace(/^ops\//, 'operations/')) : null,
+  ].filter(Boolean);
+  return candidates.find((candidate) => existsSync(candidate)) ?? candidates[0];
+}
+
+const registryPath = resolveRepoPath('pm/spec/feature-registry/ecosystem-os-features.json');
 const registry = JSON.parse(readFileSync(registryPath, 'utf8'));
 const errors = [];
 const features = registry.features ?? [];
 
 function readJson(rel) {
-  return JSON.parse(readFileSync(join(root, rel), 'utf8'));
+  return JSON.parse(readFileSync(resolveRepoPath(rel), 'utf8'));
 }
 
 for (const feature of features) {
@@ -24,7 +33,7 @@ for (const feature of features) {
     `${base}/feature-pack/manifest.json`,
   ];
   for (const rel of required) {
-    if (!existsSync(join(root, rel))) errors.push(`${feature.id}: missing ${rel}`);
+    if (!existsSync(resolveRepoPath(rel))) errors.push(`${feature.id}: missing ${rel}`);
   }
   if (!errors.some((e) => e.startsWith(feature.id))) {
     const pack = readJson(`${base}/feature-pack/manifest.json`);

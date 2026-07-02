@@ -16,6 +16,8 @@
   "type": "module",
   "scripts": {
     "ops:check": "node platform/scripts/ops-check.mjs",
+    "operations:check": "pnpm ops:check",
+    "operations:consumption:check": "pnpm ops:consumption:check",
     "test": "node --test platform/scripts/*.test.mjs",
     "test:smoke": "pnpm test",
     "session": "node ../baseline-os/platform/packages/baselineos/dist/cli/bin.js session",

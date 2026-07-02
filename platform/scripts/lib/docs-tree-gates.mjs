@@ -11,18 +11,24 @@ export function gate(id, ok, detail = null) {
 }
 
 export function loadTreeSpec(repoRoot) {
-  const local = join(repoRoot, 'pm/spec/docs-tree-spec.json');
-  const canon = join(repoRoot, '../canon-os/pm/spec/docs-tree-spec.json');
-  const path = existsSync(local) ? local : canon;
-  if (!existsSync(path)) return null;
+  const path = [
+    join(repoRoot, 'machine/spec/docs-tree-spec.json'),
+    join(repoRoot, 'pm/spec/docs-tree-spec.json'),
+    join(repoRoot, '../canon-os/machine/spec/docs-tree-spec.json'),
+    join(repoRoot, '../canon-os/pm/spec/docs-tree-spec.json'),
+  ].find((candidate) => existsSync(candidate));
+  if (!path) return null;
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
 export function loadDocTypes(repoRoot) {
-  const local = join(repoRoot, 'pm/spec/docs-document-types.json');
-  const canon = join(repoRoot, '../canon-os/pm/spec/docs-document-types.json');
-  const path = existsSync(local) ? local : canon;
-  if (!existsSync(path)) return null;
+  const path = [
+    join(repoRoot, 'machine/spec/docs-document-types.json'),
+    join(repoRoot, 'pm/spec/docs-document-types.json'),
+    join(repoRoot, '../canon-os/machine/spec/docs-document-types.json'),
+    join(repoRoot, '../canon-os/pm/spec/docs-document-types.json'),
+  ].find((candidate) => existsSync(candidate));
+  if (!path) return null;
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
