@@ -4,8 +4,8 @@ import { dirname, isAbsolute, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const DEFAULT_REPO = resolve(dirname(fileURLToPath(import.meta.url)), '../..');
-const DEFAULT_SPEC = 'pm/spec/kaleidoscope-ai/signal-module-remediation.json';
-const DEFAULT_MACHINE_SPEC = 'pm/spec/kaleidoscope-ai/signal-module-remediation.json';
+const DEFAULT_SPEC = 'machine/spec/kaleidoscope-ai/signal-module-remediation.json';
+const DEFAULT_MACHINE_SPEC = 'machine/spec/kaleidoscope-ai/signal-module-remediation.json';
 const REQUIRED_MODULES = ['agency', 'ethos', 'graph', 'kernel', 'ledger', 'surface', 'venture'];
 const REQUIRED_DIMENSIONS = ['systemsArchitecture', 'tooling', 'process', 'safeguards', 'monitoring', 'teamOwnership'];
 const REQUIRED_EVIDENCE = ['approval', 'eval', 'learningLoop', 'policy', 'rollback', 'trace'];
@@ -36,7 +36,15 @@ const L5_EVIDENCE_FIELDS = {
 const CLAIM_STATUSES = new Set(['candidate', 'done', 'complete', 'completed', 'approved']);
 
 const readJson = (path) => JSON.parse(readFileSync(path, 'utf8'));
-const absolute = (root, path) => (isAbsolute(path) ? path : resolve(root, path));
+function absolute(root, path) {
+  if (isAbsolute(path)) return path;
+  const candidates = [
+    resolve(root, path),
+    path.startsWith('pm/') ? resolve(root, path.replace(/^pm\//, 'machine/')) : null,
+    path.startsWith('ops/') ? resolve(root, path.replace(/^ops\//, 'operations/')) : null,
+  ].filter(Boolean);
+  return candidates.find((candidate) => existsSync(candidate)) ?? candidates[0];
+}
 const sorted = (values) => [...values].sort();
 const sameMembers = (actual, expected) =>
   JSON.stringify(sorted(actual ?? [])) === JSON.stringify(sorted(expected));

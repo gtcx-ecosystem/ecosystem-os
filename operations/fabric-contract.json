@@ -1,0 +1,65 @@
+{
+  "$schema": "gtcx://fabric-os/local-fabric-ops-contract/v1",
+  "repo": "ecosystem-os",
+  "contractVersion": "1.0.0",
+  "centralPolicyContract": "fabric-os/pm/spec/fabric-ops-policy-contract.json",
+  "updated": "2026-06-22",
+  "domains": [
+    {
+      "id": "compliance",
+      "centralRef": "fabric-os/ops/compliance/manifest.json",
+      "localRefs": [
+        "operations/compliance/manifest.json",
+        "audit/evidence/compliance-pillar-latest.json"
+      ]
+    },
+    {
+      "id": "apiTokens",
+      "centralRef": "fabric-os/ops/security/narrative/secrets-management.md",
+      "localRefs": [
+        "operations/security/manifest.json",
+        "config/ops.manifest.json"
+      ]
+    },
+    {
+      "id": "deployment",
+      "centralRef": "fabric-os/docs/operations/deployment/README.md",
+      "localRefs": [
+        "docs/operations/deployment/deployment-profile.json",
+        "config/ops.manifest.json"
+      ]
+    },
+    {
+      "id": "security",
+      "centralRef": "fabric-os/ops/security/manifest.json",
+      "localRefs": [
+        "operations/security/manifest.json",
+        "docs/operations/repo/SECURITY.md"
+      ]
+    },
+    {
+      "id": "observability",
+      "centralRef": "fabric-os/ops/attestation/manifest.json",
+      "localRefs": [
+        "operations/attestation/manifest.json"
+      ]
+    },
+    {
+      "id": "evidence",
+      "centralRef": "fabric-os/ops/attestation/witness/manifest.json",
+      "localRefs": [
+        "audit/evidence/five-pillar-latest.json",
+        "audit/evidence/ops-latest.json"
+      ]
+    },
+    {
+      "id": "opsConsumption",
+      "centralRef": "fabric-os/ops/coo.md",
+      "localRefs": [
+        "operations/coo.md",
+        "machine/spec/ops-pack.json",
+        "operations/manifest.json"
+      ]
+    }
+  ]
+}

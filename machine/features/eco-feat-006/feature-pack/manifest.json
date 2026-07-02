@@ -1,0 +1,41 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-pack/v1",
+  "id": "ECO-FEAT-006-PACK",
+  "featureId": "ECO-FEAT-006",
+  "owner": "ecosystem-os",
+  "status": "current",
+  "prdRef": "pm/product/prds/prd-product-charter.md",
+  "sourceRef": "venture-os/README.md",
+  "implementationRef": "docs/product/roadmap/features/FEAT-VEN-OS-HANDOFF.md",
+  "acceptanceCriteria": [
+    "Venture OS content surface has a current source artifact at venture-os/README.md.",
+    "The implementation reference docs/product/roadmap/features/FEAT-VEN-OS-HANDOFF.md is covered by a repo-local validation command.",
+    "The feature remains routed through ecosystem-os without normative protocol forks."
+  ],
+  "qaTesting": [
+    {
+      "command": "pnpm ops:check",
+      "expectedScore100": 100
+    },
+    {
+      "command": "pnpm ops:check",
+      "expectedScore100": 100
+    }
+  ],
+  "sprintPlans": [
+    {
+      "sprintRef": "pm/roadmap/sprints/active.json",
+      "scrumHandoff": true
+    }
+  ],
+  "mprReview": {
+    "score100": 100,
+    "auditRef": "pm/features/eco-feat-006/audits/mpr.json"
+  },
+  "signalReview": {
+    "level": "L5",
+    "score100": 100,
+    "auditRef": "pm/features/eco-feat-006/audits/signal.json"
+  },
+  "updated": "2026-07-01"
+}

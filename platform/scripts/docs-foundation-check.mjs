@@ -24,6 +24,10 @@ function repoRelative(filePath) {
   return rel && !rel.startsWith('..') ? rel : filePath;
 }
 
+function firstExisting(paths) {
+  return paths.find((path) => existsSync(path)) ?? null;
+}
+
 function main() {
   const gates = [];
   const resolution = resolveDocsPack(REPO, PACK);
@@ -33,7 +37,9 @@ function main() {
   gates.push(
     gate(
       'spec:local-present',
-      !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+      !!resolution.localPath ||
+        existsSync(join(REPO, '../canon-os/machine/spec', PACK)) ||
+        existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
       repoRelative(resolution.localPath) ?? 'missing local pack',
     ),
   );
@@ -95,6 +101,14 @@ function main() {
     const synthScript = existsSync(CANON_SYNTH)
       ? CANON_SYNTH
       : join(REPO, 'platform/scripts/synthesize-product-canon.mjs');
+    const registryPath = firstExisting([
+      join(REPO, 'machine/canon/registry.json'),
+      join(REPO, 'pm/canon/registry.json'),
+    ]);
+    const strategyPath = firstExisting([
+      join(REPO, 'machine/canon/strategy.json'),
+      join(REPO, 'pm/canon/strategy.json'),
+    ]);
     if (existsSync(synthScript)) {
       const result = spawnSync('node', [synthScript, '--check'], {
         cwd: REPO,
@@ -103,16 +117,16 @@ function main() {
       gates.push(
         gate(
           'canon:synthesize:check',
-          result.status === 0 || existsSync(join(REPO, 'pm/canon/registry.json')), 
-          existsSync(join(REPO, 'pm/canon/registry.json')) ? 'docs -> pm/canon present' : 'pm/canon/registry.json missing',
+          result.status === 0 || Boolean(registryPath),
+          registryPath ? `docs -> ${repoRelative(registryPath)} present` : 'machine/canon/registry.json missing',
         ),
       );
     } else {
       gates.push(
         gate(
           'canon:strategy-present',
-          existsSync(join(REPO, 'pm/canon/strategy.json')),
-          'pm/canon/strategy.json from canon:synthesize',
+          Boolean(strategyPath),
+          strategyPath ? `${repoRelative(strategyPath)} from canon:synthesize` : 'machine/canon/strategy.json missing',
         ),
       );
     }

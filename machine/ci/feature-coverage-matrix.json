@@ -1,0 +1,230 @@
+{
+  "$schema": "gtcx://pm/feature-coverage-matrix/v1",
+  "version": "1.1.0",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-18",
+  "features": [
+    {
+      "id": "MOD-ETHOS-01",
+      "name": "Foundation pack",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 95,
+      "evidence": "docs/foundation/ vision mission goals",
+      "ownerModule": "ethos",
+      "pillars": ["F1", "F4"]
+    },
+    {
+      "id": "MOD-VEN-01",
+      "name": "Venture module contract",
+      "prdRef": "prd-venture-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-VEN-001 module-contract.md",
+      "ownerModule": "venture",
+      "pillars": ["F3", "T7"]
+    },
+    {
+      "id": "MOD-VEN-02",
+      "name": "Portfolio thesis map",
+      "prdRef": "prd-venture-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-VEN-002 product-portfolio.md",
+      "ownerModule": "venture",
+      "pillars": ["F3", "F4"]
+    },
+    {
+      "id": "MOD-VEN-03",
+      "name": "Fleet venture profiles",
+      "prdRef": "prd-venture-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-VEN-003 11 profiles",
+      "ownerModule": "venture",
+      "pillars": ["F3", "F4", "T11"]
+    },
+    {
+      "id": "MOD-VEN-04",
+      "name": "Innovation register",
+      "prdRef": "prd-venture-module",
+      "status": "shipped",
+      "coveragePercent": 90,
+      "evidence": "ECO-VEN-006 innovation-register",
+      "ownerModule": "venture",
+      "pillars": ["T7", "T8"]
+    },
+    {
+      "id": "MOD-AGY-01",
+      "name": "Agency module contract",
+      "prdRef": "prd-agency-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-AGY-001",
+      "ownerModule": "agency",
+      "pillars": ["F3", "T6"]
+    },
+    {
+      "id": "MOD-AGY-02",
+      "name": "Catalog registries",
+      "prdRef": "prd-agency-module",
+      "status": "shipped",
+      "coveragePercent": 95,
+      "evidence": "ECO-AGY-002 pm/agency/catalog",
+      "ownerModule": "agency",
+      "pillars": ["F2", "F3"]
+    },
+    {
+      "id": "MOD-AGY-03",
+      "name": "agency:check gates",
+      "prdRef": "prd-agency-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-AGY-003 agency:check exit 0",
+      "ownerModule": "agency",
+      "pillars": ["F5", "T10"]
+    },
+    {
+      "id": "MOD-AGY-04",
+      "name": "GR-T2 campaign pack",
+      "prdRef": "prd-agency-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-AGY-005 pm/agency/packs/gr-t2",
+      "ownerModule": "agency",
+      "pillars": ["F3", "T6"]
+    },
+    {
+      "id": "MOD-AGY-05",
+      "name": "Claim witness resolution",
+      "prdRef": "prd-agency-module",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-AGY-009",
+      "ownerModule": "agency",
+      "pillars": ["F5", "T9"]
+    },
+    {
+      "id": "MOD-DOC-01",
+      "name": "P35 layout strict",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-DOCS-002 layout:check --strict",
+      "ownerModule": "docs-hub",
+      "pillars": ["F2", "F4"]
+    },
+    {
+      "id": "MOD-DOC-02",
+      "name": "PM folder R1",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-DOCS-003 pm:folder:check",
+      "ownerModule": "docs-hub",
+      "pillars": ["F2", "F3"]
+    },
+    {
+      "id": "MOD-DOC-03",
+      "name": "Agents + agile hubs",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-DOCS-004 agents:check agile:check",
+      "ownerModule": "docs-hub",
+      "pillars": ["F4", "T10"]
+    },
+    {
+      "id": "MOD-DOC-04",
+      "name": "Product-scopes spine",
+      "prdRef": "prd-product-charter",
+      "status": "v1",
+      "coveragePercent": 92,
+      "evidence": "ECO-DOCS-007 docs/architecture/specs/product-scopes/",
+      "ownerModule": "docs-hub",
+      "pillars": ["F1", "F3", "F4"]
+    },
+    {
+      "id": "MOD-DOC-05",
+      "name": "Publish register",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-DOCS-005 publish:check 10 live/synced",
+      "ownerModule": "docs-hub",
+      "pillars": ["F3", "T11"]
+    },
+    {
+      "id": "MOD-DOC-06",
+      "name": "Fleet docs IA lift",
+      "prdRef": "prd-product-charter",
+      "status": "planned",
+      "coveragePercent": 55,
+      "evidence": "ECO-DOCS-006 W4-docs-IA",
+      "ownerModule": "docs-hub",
+      "pillars": ["F4", "T11"]
+    },
+    {
+      "id": "MOD-SHIP-01",
+      "name": "Portfolio narrative witness",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-SHIP-001",
+      "ownerModule": "ship",
+      "pillars": ["F3", "T7"]
+    },
+    {
+      "id": "MOD-SHIP-02",
+      "name": "Doctrine narrative witness",
+      "prdRef": "prd-product-charter",
+      "status": "shipped",
+      "coveragePercent": 100,
+      "evidence": "ECO-SHIP-002",
+      "ownerModule": "ship",
+      "pillars": ["F1", "F4"]
+    },
+    {
+      "id": "XMOD-01",
+      "name": "Operating loop state machine",
+      "prdRef": "prd-product-charter",
+      "status": "v1",
+      "coveragePercent": 90,
+      "evidence": "ecosystem-os-operating-loop-state-machine-2026.md",
+      "ownerModule": "cross-cutting",
+      "pillars": ["F3", "T10"]
+    },
+    {
+      "id": "XMOD-02",
+      "name": "Pillar ownership matrix",
+      "prdRef": "prd-product-charter",
+      "status": "v1",
+      "coveragePercent": 95,
+      "evidence": "ecosystem-os-pillar-ownership-2026.md",
+      "ownerModule": "cross-cutting",
+      "pillars": ["F1", "F4"]
+    },
+    {
+      "id": "XMOD-03",
+      "name": "Cross-module events",
+      "prdRef": "prd-product-charter",
+      "status": "v1",
+      "coveragePercent": 88,
+      "evidence": "ecosystem-os-cross-module-events-2026.md",
+      "ownerModule": "cross-cutting",
+      "pillars": ["F2", "T11"]
+    },
+    {
+      "id": "XMOD-04",
+      "name": "Operator runbooks",
+      "prdRef": "prd-product-charter",
+      "status": "v1",
+      "coveragePercent": 85,
+      "evidence": "operator-runbooks-ecosystem-os-2026.md",
+      "ownerModule": "cross-cutting",
+      "pillars": ["F4", "T10"]
+    }
+  ],
+  "minCoveragePercent": 90,
+  "aggregateCoveragePercent": 92
+}

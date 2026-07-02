@@ -1,0 +1,112 @@
+{
+  "$schema": "gtcx://ecosystem-os/backlog-registry/v1",
+  "version": "1.0.0",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-27",
+  "purpose": "Backlog domains for Ecosystem OS product modules led in this repo: Kernel, Graph, Ledger, Surface, Ethos, Venture, and Agency, plus the fleet documentation home.",
+  "machineSoR": "pm/backlog.json",
+  "fleetProgramBacklog": "../agile-os/pm/ecosystem-sprint-backlog.json",
+  "domains": [
+    {
+      "id": "kernel",
+      "label": "Kernel — governed operating substrate",
+      "initiative": "INIT-ECOSYSTEM-CORE",
+      "milestone": "ECO-CORE-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "supportingRepos": [
+        "../baseline-os"
+      ]
+    },
+    {
+      "id": "graph",
+      "label": "Graph — company state and relationship model",
+      "initiative": "INIT-ECOSYSTEM-CORE",
+      "milestone": "ECO-CORE-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "supportingRepos": [
+        "../agile-os",
+        "../bridge-os"
+      ]
+    },
+    {
+      "id": "ledger",
+      "label": "Ledger — evidence, replay, and provenance",
+      "initiative": "INIT-ECOSYSTEM-CORE",
+      "milestone": "ECO-CORE-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "supportingRepos": [
+        "../ledger-ui",
+        "../fabric-os",
+        "../canon-os"
+      ]
+    },
+    {
+      "id": "surface",
+      "label": "Surface — command center and operator experience",
+      "initiative": "INIT-ECOSYSTEM-CORE",
+      "milestone": "ECO-CORE-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "supportingRepos": [
+        "../gtcx-os",
+        "../markets-os",
+        "../terra-os",
+        "../terminal-os"
+      ]
+    },
+    {
+      "id": "ethos",
+      "label": "Ethos — doctrine, leadership, and judgment system",
+      "initiative": "INIT-ECOSYSTEM-ETHOS",
+      "milestone": "ECO-ETHOS-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "moduleContract": "docs/architecture/specs/product-scopes/ethos-module-scope-2026.md"
+    },
+    {
+      "id": "docs",
+      "label": "Fleet documentation home",
+      "initiative": "INIT-ECOSYSTEM-DOCS",
+      "milestone": "ECO-DOC-001",
+      "slice": "pm/backlog/docs-backlog.json",
+      "prdRef": "prd-product-charter"
+    },
+    {
+      "id": "agency",
+      "label": "Agency — GTM + market expression",
+      "initiative": "INIT-ECOSYSTEM-AGENCY",
+      "milestone": "ECO-AGY-001",
+      "slice": "pm/backlog/agency-backlog.json",
+      "prdRef": "prd-agency-module",
+      "moduleContract": "docs/gitbook/business/agency/module-contract.md"
+    },
+    {
+      "id": "venture",
+      "label": "Venture — portfolio + thesis",
+      "initiative": "INIT-ECOSYSTEM-VENTURE",
+      "milestone": "ECO-VEN-001",
+      "slice": "pm/backlog/venture-backlog.json",
+      "prdRef": "prd-venture-module",
+      "moduleContract": "docs/gitbook/business/venture/module-contract.md",
+      "productRepo": "../venture-os"
+    },
+    {
+      "id": "ship",
+      "label": "Quarter ship — ECO-OS-SHIP-001",
+      "initiative": "INIT-ECOSYSTEM-SHIP",
+      "milestone": "ECO-OS-SHIP-001",
+      "slice": null,
+      "prdRef": "prd-product-charter",
+      "productGoals": "pm/spec/product-goals.json#activeMilestone"
+    }
+  ],
+  "rules": [
+    "Repo P22 selects from pm/backlog.json — not from fleet program backlog directly.",
+    "Ecosystem OS is lead repo for Kernel, Graph, Ledger, Surface, Ethos, Venture, and Agency.",
+    "Cross-repo deliverables stay in implementation-repo backlogs; link via initiative handoff fields.",
+    "Venture product implementation lives in venture-os; Venture module strategy and roadmap leadership live here."
+  ]
+}

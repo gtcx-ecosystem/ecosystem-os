@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "updated": "2026-06-17",
+  "items": [
+    {
+      "id": "awesome-design",
+      "name": "Awesome Design Tools (curation)",
+      "kind": "github",
+      "topics": ["tools", "design", "catalog"],
+      "license": "MIT",
+      "status": "allowed",
+      "urls": {
+        "primary": "https://github.com/goabstract/Awesome-Design-Tools"
+      },
+      "notes": "Use as discovery input only; always verify license and maintenance for chosen tools."
+    },
+    {
+      "id": "simpleicons",
+      "name": "Simple Icons",
+      "kind": "github",
+      "topics": ["icons", "brand", "svg"],
+      "license": "CC0-1.0",
+      "status": "recommended",
+      "urls": {
+        "primary": "https://github.com/simple-icons/simple-icons"
+      }
+    }
+  ]
+}
+

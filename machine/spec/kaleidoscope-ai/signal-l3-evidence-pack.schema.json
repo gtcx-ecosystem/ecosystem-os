@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/signal-l3-evidence-pack.schema/v1",
+  "title": "Kaleidoscope AI SIGNAL L3 evidence pack",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "repo",
+    "scope",
+    "signalAxis",
+    "requestedLevel",
+    "ok",
+    "summary",
+    "traceEvidence",
+    "policyEvidence",
+    "approvalEvidence",
+    "evalEvidence",
+    "rollbackEvidence",
+    "learningLoopEvidence",
+    "releaseGate"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/signal-l3-evidence-pack/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "repo": { "type": "string", "minLength": 1 },
+    "scope": { "enum": ["repo", "product", "initiative", "fleet"] },
+    "moduleId": { "type": "string", "minLength": 1 },
+    "signalAxis": { "enum": ["SIGNAL-E", "SIGNAL-P"] },
+    "requestedLevel": { "const": "L3" },
+    "ok": { "type": "boolean" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "traceEvidencePresent",
+        "policyEvidencePresent",
+        "approvalEvidencePresent",
+        "evalEvidencePresent",
+        "rollbackEvidencePresent",
+        "learningLoopEvidencePresent"
+      ],
+      "additionalProperties": true
+    },
+    "traceEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "policyEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "approvalEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "evalEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "rollbackEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "learningLoopEvidence": { "$ref": "#/$defs/evidenceSet" },
+    "releaseGate": {
+      "type": "object",
+      "required": ["status", "blockingCriteria", "validationCommands", "approvalRequired"],
+      "properties": {
+        "status": { "enum": ["blocked", "candidate", "approved"] },
+        "blockingCriteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "validationCommands": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "approvalRequired": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "scope": { "const": "product" } },
+        "required": ["scope"]
+      },
+      "then": { "required": ["moduleId"] }
+    }
+  ],
+  "$defs": {
+    "evidenceRef": {
+      "type": "object",
+      "required": ["path", "kind", "description"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "kind": {
+          "enum": [
+            "command-output",
+            "trace",
+            "policy",
+            "approval",
+            "eval",
+            "rollback",
+            "learning-loop",
+            "runbook",
+            "witness"
+          ]
+        },
+        "description": { "type": "string", "minLength": 1 },
+        "owner": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "evidenceSet": {
+      "type": "object",
+      "required": ["present", "minimumCount", "items", "gaps"],
+      "properties": {
+        "present": { "type": "boolean" },
+        "minimumCount": { "type": "integer", "minimum": 1 },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/evidenceRef" }
+        },
+        "gaps": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

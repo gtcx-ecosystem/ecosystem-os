@@ -1,0 +1,120 @@
+{
+  "$schema": "gtcx://canon-os/docs-product-pack/v1",
+  "updated": "2026-06-22",
+  "upstreamSpec": "../canon-os/machine/spec/docs-product-pack.json",
+  "repo": "ecosystem-os",
+  "fleetCanonical": true,
+  "title": "Docs product pack — ecosystem-os (canon upstream)",
+  "requiredRootFiles": [
+    {
+      "path": "docs/product/README.md",
+      "role": "index + separation table"
+    },
+    {
+      "path": "docs/product/FOLDER-SPEC.md",
+      "role": "repo-local mirror — normative spec in canon-os"
+    }
+  ],
+  "requiredSubfolders": {
+    "roadmap": {
+      "purpose": "Executable plan SoR — compiles via pnpm product:compile"
+    },
+    "ux": {
+      "required": ["README.md"]
+    }
+  },
+  "profiles": {
+    "fleet-documentation": {
+      "productRequired": true,
+      "requiredSubfolders": ["roadmap", "ux"]
+    },
+    "product": {
+      "productRequired": true,
+      "requiredSubfolders": ["roadmap", "ux"]
+    }
+  },
+  "pillarContract": {
+    "compliance": {
+      "primary": true,
+      "artifacts": ["docs/product/roadmap/"],
+      "gates": ["pnpm product:compile:check"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "technicalExcellence": {
+      "secondary": true,
+      "artifacts": ["docs/product/roadmap/implementation-truth.md"],
+      "gates": ["machine/backlog.json compiled"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "craft": {
+      "primary": true,
+      "artifacts": ["docs/product/README.md"],
+      "gates": ["pnpm docs:product:check"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "worldClass": {
+      "secondary": true,
+      "artifacts": ["docs/product/scorecard.md"],
+      "gates": ["MPR witness rollup"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "trustAndSafety": {
+      "secondary": true,
+      "artifacts": ["docs/product/roadmap/"],
+      "gates": ["evidence paths on stories"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "creativityInnovation": {
+      "notApplicable": true,
+      "reason": "Innovation register lives in venture module — product layer routes only",
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "commercialValue": {
+      "primary": true,
+      "artifacts": ["docs/product/roadmap/initiatives/"],
+      "gates": ["GTM-linked features"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "defensiveMoat": {
+      "secondary": true,
+      "artifacts": ["machine/ci/feature-coverage-matrix.json"],
+      "gates": ["feature matrix current"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "agenticEmpowerment": {
+      "secondary": true,
+      "artifacts": ["docs/product/roadmap/stories/"],
+      "gates": ["P22-compiled stories"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "ecosystemIntegration": {
+      "primary": true,
+      "artifacts": ["docs/product/roadmap/capability-matrix.md"],
+      "gates": ["fleet initiative links"],
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    },
+    "ipMagic": {
+      "notApplicable": true,
+      "reason": "IP magic scored in docs/architecture/specs/product-scopes/",
+      "minBar": "≥85 layer order",
+      "witness": "audit/evidence/mpr-product-layer-latest.json"
+    }
+  },
+  "fractalMpr": {
+    "policy": "pm/spec/docs-fractal-mpr-policy.json",
+    "layerWitness": "audit/evidence/mpr-product-layer-latest.json",
+    "scorecard": "docs/product/scorecard.md",
+    "rollupFrom": ["file", "folder"],
+    "scorecardIsReadOnlyRollup": true
+  }
+}

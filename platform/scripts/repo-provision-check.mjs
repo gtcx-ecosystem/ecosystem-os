@@ -11,16 +11,34 @@ const REPO = repoRootFromImportMeta(import.meta.url);
 const WRITE = process.argv.includes('--write');
 const WITNESS = join(REPO, 'audit/evidence/repo-provision-latest.json');
 
-const L0_HUBS = ['docs', 'agile', 'pm', 'agents', 'ops', 'audit', 'platform', 'workstream', 'archive', 'deploy', 'config'];
+const L0_HUBS = [
+  'docs',
+  'agile',
+  'machine',
+  'agents',
+  'operations',
+  'audit',
+  'platform',
+  'workstream',
+  'archive',
+  'deploy',
+  'config',
+];
+const FORBIDDEN_L0_HUBS = ['agentic', 'pm', 'ops'];
 
 function gate(id, ok, detail = null) {
   return { id, ok, ...(detail ? { detail } : {}) };
 }
 
 function loadL1(id) {
-  const local = join(REPO, `pm/spec/repo-provisioning/${id}.json`);
-  const canon = join(REPO, `../canon-os/pm/spec/repo-provisioning/${id}.json`);
-  const path = existsSync(local) ? local : canon;
+  const candidates = [
+    join(REPO, `machine/spec/repo-provisioning/${id}.json`),
+    join(REPO, `pm/spec/repo-provisioning/${id}.json`),
+    join(REPO, `../canon-os/machine/spec/repo-provisioning/${id}.json`),
+    join(REPO, `../canon-os/pm/spec/repo-provisioning/${id}.json`),
+  ];
+  const path = candidates.find((candidate) => existsSync(candidate));
+  if (!path) return null;
   return existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
 }
 
@@ -40,7 +58,9 @@ function main() {
     gates.push(gate(`L0:${hub}`, existsSync(join(REPO, hub)), hub));
   }
 
-  gates.push(gate('L0:forbidden:agentic', !existsSync(join(REPO, 'agentic')), 'agentic/ absent'));
+  for (const hub of FORBIDDEN_L0_HUBS) {
+    gates.push(gate(`L0:forbidden:${hub}`, !existsSync(join(REPO, hub)), `${hub}/ absent`));
+  }
 
   const l1Checks = [
     { id: 'L1-workstream', files: ['workstream/README.md', 'workstream/FOLDER-SPEC.md', 'workstream/sprints/current.md'] },

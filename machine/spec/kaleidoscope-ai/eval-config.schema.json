@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/eval-config.schema/v1",
+  "title": "Kaleidoscope AI eval config",
+  "type": "object",
+  "required": ["$schema", "repo", "goldenSets", "qualityGates", "releaseGates"],
+  "properties": {
+    "$schema": { "const": "gtcx://ecosystem-os/eval-config/v1" },
+    "repo": { "type": "string", "minLength": 1 },
+    "goldenSets": { "type": "array", "items": { "type": "string" } },
+    "qualityGates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "threshold"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "threshold": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "releaseGates": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

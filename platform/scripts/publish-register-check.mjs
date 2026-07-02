@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * publish:check — validate pm/publish-register.json space paths resolve on disk.
+ * publish:check — validate machine/publish-register.json space paths resolve on disk.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -10,22 +10,32 @@ import { repoRootFromImportMeta } from './lib/repo-root.mjs';
 const REPO = repoRootFromImportMeta(import.meta.url);
 const ECOSYSTEM = dirname(REPO);
 const WRITE = process.argv.includes('--write');
-const REGISTER = join(REPO, 'pm/publish-register.json');
+const REGISTER = [join(REPO, 'machine/publish-register.json'), join(REPO, 'pm/publish-register.json')].find((path) =>
+  existsSync(path),
+);
 const WITNESS = join(REPO, 'audit/evidence/publish-register-latest.json');
 
 function resolveSourcePath(sourcePath) {
   if (!sourcePath) return null;
   if (sourcePath.startsWith('/')) return sourcePath;
-  const sibling = join(ECOSYSTEM, sourcePath);
-  if (existsSync(sibling)) return sibling;
-  const local = join(REPO, sourcePath);
-  if (existsSync(local)) return local;
-  return sibling;
+  const candidates = [
+    join(ECOSYSTEM, sourcePath),
+    sourcePath.startsWith('pm/') ? join(ECOSYSTEM, sourcePath.replace(/^pm\//, 'machine/')) : null,
+    sourcePath.startsWith('ops/') ? join(ECOSYSTEM, sourcePath.replace(/^ops\//, 'operations/')) : null,
+    join(REPO, sourcePath),
+    sourcePath.startsWith('pm/') ? join(REPO, sourcePath.replace(/^pm\//, 'machine/')) : null,
+    sourcePath.startsWith('ops/') ? join(REPO, sourcePath.replace(/^ops\//, 'operations/')) : null,
+  ].filter(Boolean);
+  return candidates.find((candidate) => existsSync(candidate)) ?? candidates[0];
 }
 
 function main() {
   const errors = [];
   const rows = [];
+  if (!REGISTER) {
+    console.error('publish register missing: machine/publish-register.json');
+    process.exit(1);
+  }
   const reg = JSON.parse(readFileSync(REGISTER, 'utf8'));
 
   for (const space of reg.spaces ?? []) {

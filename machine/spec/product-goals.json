@@ -1,0 +1,112 @@
+{
+  "$schema": "gtcx://bridge-os/product-goals/v1",
+  "version": "1.1.0",
+  "repo": "ecosystem-os",
+  "tier": "ai-native-company-operating-system",
+  "updated": "2026-06-27",
+  "fleetRegistry": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json",
+  "vision": {
+    "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
+    "horizon": "2026-2028"
+  },
+  "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
+  "northStarMetric": {
+    "name": "Governed operating loop complete",
+    "target": "Kernel governance + Graph state + Ledger evidence + Surface command trace",
+    "witness": "docs/foundation/narrative/product-architecture.md"
+  },
+  "valueProposition": {
+    "for": "founders, operators, product teams, agent teams, and ecosystem builders",
+    "who": "need to run complex human-agent organizations",
+    "product": "Ecosystem OS",
+    "that": "provides the operating substrate for intelligence, coordination, delivery, services, assurance, human doctrine, innovation, and market expression",
+    "unlike": "standalone PM, RPA, AI-agent, wiki, and workflow tools",
+    "we": "lead Kernel, Graph, Ledger, Surface, Ethos, Venture, and Agency as one company operating platform"
+  },
+  "activeMilestone": {
+    "id": "ECO-OS-SHIP-001",
+    "title": "ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI",
+    "shippableOutcome": "GR-T2 pilot narrative live; Ecosystem OS category in market; fleet eats operating model while markets M4 + gtcx surfaces ship.",
+    "targetDate": "2026-Q3",
+    "programmeId": "PROG-ECOSYSTEM-OS",
+    "prdRefs": [
+      "prd-product-charter"
+    ],
+    "headStoryId": "ECO-OS-SHIP-001",
+    "fleetQuarterPillars": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#quarterPillars",
+    "acceptanceChecks": [
+      {
+        "id": "quarter-ship",
+        "label": "Shipping — markets golden transaction + gtcx surfaces on path",
+        "witness": "../markets-os/audit/evidence/pilot-golden-transaction-latest.json"
+      },
+      {
+        "id": "quarter-surfaces",
+        "label": "Beautiful surfaces — gtcx-os documentation matrix",
+        "witness": "../gtcx-os/pm/ci/documentation-matrix-latest.json"
+      },
+      {
+        "id": "quarter-gtm",
+        "label": "GTM — Ecosystem OS portfolio narrative current",
+        "witness": "docs/business/portfolio/product-portfolio.md"
+      },
+      {
+        "id": "quarter-operational-ai",
+        "label": "AI OS operational — agile-os P22 loop green",
+        "witness": "../agile-os/pm/ci/sprint-authority-check-latest.json"
+      }
+    ],
+    "subMilestones": [
+      {
+        "id": "ECO-OS-001",
+        "title": "Product architecture narrative (doctrine + portfolio)",
+        "witness": "docs/foundation/narrative/ecosystem-os-doctrine.md"
+      }
+    ]
+  },
+  "productGoals": [
+    {
+      "id": "PG1",
+      "title": "Fleet documentation home",
+      "outcome": "Operators find current fleet docs without owner-repo drift",
+      "measure": "ops:check green + publish register current",
+      "witness": "pm/publish-register.json"
+    }
+  ],
+  "gtmGoals": [
+    {
+      "id": "GTM1",
+      "title": "Ecosystem OS portfolio narrative",
+      "outcome": "GR-T2 pilot narrative live in market",
+      "measure": "Portfolio doc current + quarter GTM check",
+      "motion": "Category product"
+    }
+  ],
+  "shippingGoals": {
+    "schema": "gtcx://pm/shipping-goals/v1",
+    "goals": [
+      {
+        "id": "SG1",
+        "label": "Ops health",
+        "target": "pnpm ops:check green",
+        "witness": "pnpm ops:check"
+      }
+    ]
+  },
+  "definitionOfDone": {
+    "story": [
+      "product boundary explicit",
+      "evidence path recorded"
+    ],
+    "milestone": [
+      "quarter pillar acceptance checks pass or explicit waiver"
+    ],
+    "forbidden": [
+      "done on doc-only milestone without ship path"
+    ]
+  },
+  "strategicGoals": {
+    "mirrorOf": "../bridge-os/pm/spec/ecosystem-fleet-goals-registry.json#fleetStrategicGoals",
+    "note": "Do not edit pentad here — update fleet registry fleetStrategicGoals"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates.schema/v1",
+  "title": "Kaleidoscope AI release gates witness",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "date",
+    "repo",
+    "phase",
+    "ok",
+    "releaseDecision",
+    "externalUse",
+    "summary",
+    "gates",
+    "sources"
+  ],
+  "properties": {
+    "schema": { "const": "gtcx://ecosystem-os/kaleidoscope-ai/release-gates/v1" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "date": { "type": "string" },
+    "repo": { "const": "ecosystem-os" },
+    "phase": { "type": "string", "minLength": 1 },
+    "ok": { "type": "boolean" },
+    "releaseDecision": { "enum": ["internal-draft-release-pass", "blocked"] },
+    "externalUse": {
+      "type": "object",
+      "required": ["status", "reason"],
+      "properties": {
+        "status": { "const": "blocked_until_explicit_approval" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": ["gateCount", "passedGates", "failedGates", "blockers"],
+      "additionalProperties": true
+    },
+    "gates": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/gate" }
+    },
+    "sources": {
+      "type": "object",
+      "required": ["query", "decision", "observatory", "signal", "execution", "partnerBrief", "safetyPlan"]
+    }
+  },
+  "$defs": {
+    "citation": {
+      "type": "object",
+      "required": ["path", "sourceDate", "reason"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sourceDate": { "type": "string" },
+        "reason": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    },
+    "gate": {
+      "type": "object",
+      "required": ["id", "label", "passed", "severity", "evidence", "failureMode"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "passed": { "type": "boolean" },
+        "severity": { "enum": ["none", "blocker"] },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/citation" }
+        },
+        "failureMode": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

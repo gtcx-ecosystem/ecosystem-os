@@ -1,0 +1,135 @@
+{
+  "$schema": "gtcx://canon-os/docs-operations-subfolder-contract/v3",
+  "version": "3.0.1",
+  "updated": "2026-06-24",
+  "repo": "ecosystem-os",
+  "role": "ecosystem-os-override",
+  "subfolders": {
+    "runbooks": {
+      "purpose": "One task per file — step-by-step, executable under pressure by someone who didn't build it.",
+      "documentType": "runbook",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{system}-{action}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["operator", "processes", "archive"]
+    },
+    "agent-init": {
+      "purpose": "Agent session entry — repo init (fleet init is AGENT-INIT-CANON in canon-os).",
+      "documentType": "overview",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md", "agent-universal-instructions.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["protocols", "templates", "archive"]
+    },
+    "deployment": {
+      "purpose": "Release + environment narratives.",
+      "documentType": "runbook",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md", "deployment-profile.json"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["environments", "checklists", "archive"]
+    },
+    "remediation": {
+      "purpose": "Remediation runbooks.",
+      "documentType": "runbook",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["archive"]
+    },
+    "coordination": {
+      "purpose": "Cross-repo coordination — inbound/outbound tickets, registers, witnesses.",
+      "documentType": "overview",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["inbound", "outbound", "registers", "witnesses", "archive"]
+    },
+    "repo": {
+      "purpose": "Repo ops — onboarding, repo-level operating procedures.",
+      "documentType": "runbook",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": [
+        "README.md",
+        "code-of-conduct.md",
+        "CODE_OF_CONDUCT.md",
+        "contributing.md",
+        "CONTRIBUTING.md",
+        "security.md",
+        "SECURITY.md",
+        "repo-hygiene-protocol.md",
+        "root-allowlist.json"
+      ],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["onboarding", "archive"]
+    },
+    "workspace": {
+      "purpose": "Workspace layouts and conventions.",
+      "documentType": "runbook",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["layouts", "archive"]
+    },
+    "templates": {
+      "purpose": "Operations templates.",
+      "documentType": "overview",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["agent", "mlops", "coordination", "archive"]
+    },
+    "compliance": {
+      "purpose": "Typed runtime compliance artifacts — platform-runtime profile only.",
+      "documentType": "compliance",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["evaluations", "evidence", "evidence-package", "archive"]
+    },
+    "organization": {
+      "purpose": "Organizational architecture and coalition strategy narratives.",
+      "documentType": "overview",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["decks", "archive"]
+    },
+    "structure": {
+      "purpose": "Ownership bootstrap and hybrid structure narratives.",
+      "documentType": "overview",
+      "requiredFiles": ["README.md"],
+      "allowedRootFiles": ["README.md"],
+      "filePatternRegex": "^[a-z0-9-]+\\.md$",
+      "filePatternHuman": "{slug}.md",
+      "forbidLooseMdAtRoot": false,
+      "allowedChildFolders": ["archive"]
+    }
+  },
+  "fabricContract": {
+    "referenceImplRepo": "baseline-os",
+    "opsFunctionProvider": "fabric-os",
+    "referencePath": "docs/operations/",
+    "machineSoR": "operations/ (repo root)"
+  }
+}

@@ -39,10 +39,14 @@ function listUnknownSubfolders(dir, allowed) {
 }
 
 function loadJsonCandidates(repoRoot, name) {
-  const local = join(repoRoot, 'pm/spec', name);
-  const fleet = join(repoRoot, '../canon-os/pm/spec', name);
-  const path = existsSync(local) ? local : fleet;
-  if (!existsSync(path)) return null;
+  const candidates = [
+    join(repoRoot, 'machine/spec', name),
+    join(repoRoot, 'pm/spec', name),
+    join(repoRoot, '../canon-os/machine/spec', name),
+    join(repoRoot, '../canon-os/pm/spec', name),
+  ];
+  const path = candidates.find((candidate) => existsSync(candidate));
+  if (!path) return null;
   return JSON.parse(readFileSync(path, 'utf8'));
 }
 
@@ -152,8 +156,10 @@ function main() {
   gates.push(
     gate(
       'spec:local-present',
-      !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
-      resolution.localPath ?? 'missing pm/spec/docs-operations-pack.json',
+      !!resolution.localPath ||
+        existsSync(join(REPO, '../canon-os/machine/spec', PACK)) ||
+        existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+      resolution.localPath ?? 'missing machine/spec/docs-operations-pack.json',
     ),
   );
   gates.push(gate('spec:not-stub', !resolution.localIsStub, resolution.localIsStub ? 'upgrade pack' : 'full local pack'));

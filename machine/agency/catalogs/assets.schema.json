@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agency stock/assets catalog",
+  "type": "object",
+  "required": ["version", "updated", "sources"],
+  "properties": {
+    "version": { "type": "string" },
+    "updated": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "types", "license", "commercialUse", "attribution", "urls", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["photo", "video", "audio", "icons", "illustrations", "fonts", "ui-kits", "templates", "mockups", "3d", "textures", "other"]
+            },
+            "minItems": 1
+          },
+          "license": { "type": "string" },
+          "commercialUse": { "type": "string", "enum": ["allowed", "restricted", "unknown"] },
+          "attribution": {
+            "type": "object",
+            "required": ["required"],
+            "properties": {
+              "required": { "type": "boolean" },
+              "template": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "restrictions": { "type": "array", "items": { "type": "string" } },
+          "urls": {
+            "type": "object",
+            "required": ["homepage"],
+            "properties": {
+              "homepage": { "type": "string" },
+              "license": { "type": "string" },
+              "terms": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "status": { "type": "string", "enum": ["recommended", "allowed", "avoid", "deprecated"] },
+          "qualityTier": { "type": "string", "enum": ["world-class", "solid", "utility"] },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

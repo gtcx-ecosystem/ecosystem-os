@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://ecosystem-os/docs-ia-check/v1",
-  "generatedAt": "2026-07-01T16:48:15.825Z",
+  "generatedAt": "2026-07-02T14:25:00.571Z",
   "repo": "ecosystem-os",
   "ok": true,
   "strict": false,
@@ -48,7 +48,7 @@
       "script": "agile-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": "OK absent:docs-agile — absent |  | PASS — 39/39"
+      "detail": "OK absent:docs-agile — absent |  | PASS — 38/38"
     },
     {
       "gateId": "docs:operations:check",

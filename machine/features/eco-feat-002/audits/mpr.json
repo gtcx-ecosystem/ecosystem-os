@@ -1,0 +1,21 @@
+{
+  "schema": "gtcx://ecosystem-os/feature-mpr-audit/v1",
+  "id": "ECO-FEAT-002",
+  "score100": 100,
+  "mpr": {
+    "primary": [
+      "compliance",
+      "technicalExcellence",
+      "craft",
+      "worldClass",
+      "trustAndSafety"
+    ],
+    "evidence": [
+      "docs/onboarding/README.md",
+      "platform/scripts/docs-foundation-check.mjs",
+      "audit/evidence/docs-foundation-latest.json"
+    ]
+  },
+  "notes": "Feature package has source, implementation reference, witness, validation command, and acceptance criteria.",
+  "updated": "2026-07-01"
+}

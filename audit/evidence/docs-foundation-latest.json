@@ -1,10 +1,10 @@
 {
   "schema": "gtcx://canon-os/docs-foundation-check/v2",
   "repo": "ecosystem-os",
-  "at": "2026-07-01T16:48:15.543Z",
+  "at": "2026-07-02T14:25:00.214Z",
   "ok": true,
   "spec": {
-    "localPath": "pm/spec/docs-foundation-pack.json",
+    "localPath": "machine/spec/docs-foundation-pack.json",
     "localIsStub": false,
     "resolvedIsFull": true
   },
@@ -12,7 +12,7 @@
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "pm/spec/docs-foundation-pack.json"
+      "detail": "machine/spec/docs-foundation-pack.json"
     },
     {
       "id": "spec:not-stub",
@@ -87,7 +87,7 @@
     {
       "id": "canon:synthesize:check",
       "ok": true,
-      "detail": "docs -> pm/canon present"
+      "detail": "docs -> machine/canon/registry.json present"
     }
   ]
 }

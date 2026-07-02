@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** @file ops:check for ecosystem-os — P29 + P35 + PM folder R1 */
+/** @file ops:check for ecosystem-os — P29 + P35 + machine/operations folder R1 */
 import { existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -17,14 +17,14 @@ const required = [
   'docs/gitbook/ecosystem/SUMMARY.md',
   'docs/reference/onboarding/README.md',
   'docs/overview/README.md',
-  'pm/publish-register.json',
-  'ops/gtm/fleet-catalog-index.md',
+  'machine/publish-register.json',
+  'operations/gtm/fleet-catalog-index.md',
   'agents/manifest.json',
   'agents/manifest.json',
   'config/ops.manifest.json',
   'config/baseline/baseline.config.json',
   'baseline.config.json',
-  'pm/manifest.json',
+  'machine/manifest.json',
 ];
 
 for (const rel of required) requirePath(rel);
@@ -42,9 +42,9 @@ run(
   process.execPath,
   ['platform/scripts/repo-provision-check.mjs'],
 );
-run('machine:pm-folder:check', process.execPath, [
+run('machine:folder:check', process.execPath, [
   '-e',
-  "const fs=require('fs'); const path=require('path'); const root=process.cwd(); const spec=path.join(root,'pm/spec/pm-folder-requirements.json'); if(!fs.existsSync(spec)){console.error('missing '+spec); process.exit(1)} const j=JSON.parse(fs.readFileSync(spec,'utf8')); const missing=[...(j.required?.files??[]).filter(f=>!fs.existsSync(path.join(root,f.path))).map(f=>f.path), ...(j.required?.directories??[]).filter(d=>!d.optional&&!d.optionalUntilR1&&!fs.existsSync(path.join(root,d.path))).map(d=>d.path+'/')]; if(missing.length){console.error('missing '+missing.join(', ')); process.exit(1)} console.log('machine pm folder ok')",
+  "const fs=require('fs'); const path=require('path'); const root=process.cwd(); const required=['machine/README.md','machine/manifest.json','machine/completion-model.json','machine/shipping-tracks.json','machine/roadmap/initiatives.json','machine/roadmap/sprints/active.json','machine/roadmap/README.md','machine/product','machine/ci','operations/README.md']; const missing=required.filter((rel)=>!fs.existsSync(path.join(root,rel))); if(missing.length){console.error('missing '+missing.join(', ')); process.exit(1)} console.log('machine/operations folders ok')",
 ]);
 run('agent:next-work', process.execPath, [
   'platform/scripts/agent-next-work.mjs',
@@ -62,4 +62,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log('ops:check ok — ecosystem-os P29+P35+PM');
+console.log('ops:check ok — ecosystem-os P29+P35+machine/operations');

@@ -1,0 +1,81 @@
+{
+  "$schema": "gtcx://ecosystem-os/agency-claim-witness-map/v1",
+  "campaignId": "gr-t2-integrator-pilot",
+  "updated": "2026-06-17",
+  "claims": [
+    {
+      "id": "claim-sovereign-substrate",
+      "claim": "GTCX fleet operates a governed sovereign digital substrate with cryptographic verification at the architecture layer.",
+      "surfaces": ["grt2-one-pager", "grt2-hero-deck", "grt2-demo-script"],
+      "witnesses": [
+        {
+          "repo": "canon-os",
+          "path": "docs/business/domain/commodities/gold/origin-story/the-age-of-programmable-trust.md",
+          "type": "canon-narrative"
+        },
+        {
+          "repo": "ecosystem-os",
+          "path": "audit/evidence/five-pillar-latest.json",
+          "type": "audit-witness",
+          "field": "quadrants.technicalExcellence.score100"
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "id": "claim-fleet-docs-provisioned",
+      "claim": "Fleet documentation is provisioned under a single IA contract with machine-verifiable gates.",
+      "surfaces": ["grt2-one-pager"],
+      "witnesses": [
+        {
+          "repo": "bridge-os",
+          "path": "pm/ci/ecosystem-docs-provisioning-latest.json",
+          "type": "fleet-witness"
+        },
+        {
+          "repo": "ecosystem-os",
+          "path": "audit/evidence/docs-foundation-latest.json",
+          "type": "audit-witness"
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "id": "claim-agency-governed-expression",
+      "claim": "Market expression is governed — catalogs, license policy, and agency gates block unknown provenance.",
+      "surfaces": ["grt2-claim-sheet", "grt2-one-pager"],
+      "witnesses": [
+        {
+          "repo": "ecosystem-os",
+          "path": "audit/evidence/agency-check-latest.json",
+          "type": "audit-witness"
+        },
+        {
+          "repo": "ecosystem-os",
+          "path": "docs/gitbook/business/agency/license-governance.md",
+          "type": "policy"
+        }
+      ],
+      "status": "linked"
+    },
+    {
+      "id": "claim-continental-capital-program",
+      "claim": "Continental capital rail programme is registered with markets-os as head owner repo.",
+      "surfaces": ["grt2-hero-deck", "grt2-demo-script"],
+      "witnesses": [
+        {
+          "repo": "bridge-os",
+          "path": "pm/ci/ecosystem-clarity-report-latest.json",
+          "type": "program-registry",
+          "field": "fleetNorthStar.headProgrammeId"
+        },
+        {
+          "repo": "markets-os",
+          "path": "pm/roadmap/initiatives.json",
+          "type": "owner-roadmap"
+        }
+      ],
+      "status": "linked"
+    }
+  ]
+}

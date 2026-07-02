@@ -1,0 +1,40 @@
+{
+  "_generated": true,
+  "_synthesisVersion": "1.1.0",
+  "_source": "docs/foundation/vision.md+docs/foundation/mission.md+docs/foundation/goals.md+docs/foundation/milestones.md+docs/foundation/roadmap.md",
+  "$schema": "gtcx://canon-os/product-canon-strategy/v1",
+  "productId": "ecosystem-os",
+  "repo": "ecosystem-os",
+  "updated": "2026-07-01",
+  "vision": {
+    "statement": "Ecosystem OS — AI-native company operating system (category product + dogfood narrative)",
+    "horizon": "2026-2028"
+  },
+  "mission": "Make proof, coordination, and delivery governable for humans and agents in regulated trade — evidence over vendor trust.",
+  "northStarMetric": {
+    "name": "Governed operating loop complete",
+    "target": "Graph state + Ledger evidence + Assurance score + Surface command trace Witness: docs/foundation/narrative/product-architecture.md",
+    "witness": "docs/foundation/narrative/product-architecture.md"
+  },
+  "goals": [
+    {
+      "id": "G1",
+      "title": "ECO-OS-SHIP-001 — ship · surfaces · GTM · operational AI",
+      "outcome": "GR-T2 pilot narrative live; Ecosystem OS category in market; fleet eats operating model while markets M4 + gtcx surfaces ship.",
+      "measure": "Graph state + Ledger evidence + Assurance score + Surface command trace"
+    },
+    {
+      "id": "G2",
+      "title": "Foundation IA (fleet)",
+      "outcome": "`docs/foundation/` eight-file pack (`INIT-DOCS-FOUNDATION-IA-V1`).",
+      "measure": "`pnpm docs:foundation:check`"
+    }
+  ],
+  "narrativeSources": {
+    "vision": "docs/foundation/vision.md",
+    "mission": "docs/foundation/mission.md",
+    "goals": "docs/foundation/goals.md",
+    "milestones": "docs/foundation/milestones.md",
+    "roadmap": "docs/foundation/roadmap.md"
+  }
+}

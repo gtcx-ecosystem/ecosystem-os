@@ -1,0 +1,111 @@
+{
+  "schema": "gtcx://canon-os/gtm-readiness-check/v1",
+  "generatedAt": "2026-06-27T09:08:15.015Z",
+  "repo": "ecosystem-os",
+  "profile": "product",
+  "ok": false,
+  "composite": 89,
+  "dimensions": [
+    {
+      "id": "pillars11pr",
+      "score": 59,
+      "pass": false,
+      "detail": {
+        "witness": true,
+        "composite": 59,
+        "pillarCount": 0,
+        "docsIaOk": false
+      }
+    },
+    {
+      "id": "roadmapHierarchy",
+      "score": 100,
+      "pass": true,
+      "detail": {
+        "present": true,
+        "initiatives": 4,
+        "features": 15,
+        "stories": 7,
+        "tasks": 0,
+        "uatLinked": 7,
+        "path": "docs/product/roadmap",
+        "referencePass": false
+      }
+    },
+    {
+      "id": "forensicSpecs",
+      "score": 100,
+      "pass": true,
+      "detail": {
+        "charterScore": 100,
+        "registryCount": 22,
+        "charterOk": true,
+        "referencePass": false
+      }
+    },
+    {
+      "id": "readinessStatus",
+      "score": 100,
+      "pass": true,
+      "detail": {
+        "present": true,
+        "path": "audit/evidence/gtm-readiness-latest.json",
+        "status": "pass",
+        "score100": 100
+      }
+    },
+    {
+      "id": "backlogPopulation",
+      "score": 75,
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "gtmTagged": 0,
+        "estimated": 7,
+        "ownerAssigned": 7,
+        "openExecutable": 1,
+        "compiled": true,
+        "backlogClear": true,
+        "referencePass": false
+      }
+    },
+    {
+      "id": "reportsAvailable",
+      "score": 100,
+      "pass": true,
+      "detail": {
+        "total": 3,
+        "found": 3
+      }
+    }
+  ],
+  "roadmap": {
+    "present": true,
+    "initiatives": 4,
+    "features": 15,
+    "stories": 7,
+    "tasks": 0,
+    "uatLinked": 7,
+    "path": "docs/product/roadmap"
+  },
+  "backlog": {
+    "total": 7,
+    "gtmTagged": 0,
+    "estimated": 7,
+    "ownerAssigned": 7,
+    "openExecutable": 1,
+    "compiled": true,
+    "backlogClear": true
+  },
+  "readiness": {
+    "present": true,
+    "path": "audit/evidence/gtm-readiness-latest.json",
+    "status": "pass",
+    "score100": 100
+  },
+  "charter": {
+    "score100": 100,
+    "registryCount": 22
+  },
+  "referenceTier": "fleet"
+}

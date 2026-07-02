@@ -22,6 +22,16 @@ function repoRelative(root, filePath) {
   return rel && !rel.startsWith('..') ? rel : filePath;
 }
 
+function resolveRepoPath(root, rel) {
+  if (!rel) return null;
+  const candidates = [
+    join(root, rel),
+    rel.startsWith('pm/') ? join(root, rel.replace(/^pm\//, 'machine/')) : null,
+    rel.startsWith('ops/') ? join(root, rel.replace(/^ops\//, 'operations/')) : null,
+  ].filter(Boolean);
+  return candidates.find((candidate) => existsSync(candidate)) ?? candidates[0];
+}
+
 function checkCatalog({ id, filePath, items, itemLabel, requiredFields }) {
   const issues = [];
 
@@ -79,9 +89,9 @@ function checkCatalog({ id, filePath, items, itemLabel, requiredFields }) {
 function checkBrandScaffold(root) {
   const issues = [];
   const paths = {
-    tokens: join(root, 'pm/agency/brand/tokens.json'),
-    onePager: join(root, 'pm/agency/templates/one-pager.md'),
-    slides: join(root, 'pm/agency/templates/slides.md'),
+    tokens: resolveRepoPath(root, 'pm/agency/brand/tokens.json'),
+    onePager: resolveRepoPath(root, 'pm/agency/templates/one-pager.md'),
+    slides: resolveRepoPath(root, 'pm/agency/templates/slides.md'),
     workflow: join(root, 'docs/gitbook/business/agency/workflow.md'),
   };
 
@@ -108,7 +118,7 @@ function resolveEcosystemRoot(cwd) {
 }
 
 function checkDeliverables(root) {
-  const filePath = join(root, 'pm/agency/catalogs/deliverables.json');
+  const filePath = resolveRepoPath(root, 'pm/agency/catalogs/deliverables.json');
   const issues = [];
   if (!existsSync(filePath)) {
     return { ok: false, issues: [{ severity: 'error', code: 'missing-catalog', message: 'deliverables: missing catalog' }], filePath };
@@ -125,12 +135,12 @@ function checkDeliverables(root) {
     if (!license || license === 'unknown') {
       issues.push({ severity: 'error', code: 'unknown-license', message: `deliverables: ${it?.id} unknown license` });
     }
-    const deliverablePath = join(root, it.path);
+    const deliverablePath = resolveRepoPath(root, it.path);
     if (!existsSync(deliverablePath)) {
       issues.push({ severity: 'error', code: 'missing-file', message: `deliverables: ${it.id} path missing ${it.path}` });
     }
     if (it.exportHtml) {
-      const exportPath = join(root, it.exportHtml);
+      const exportPath = resolveRepoPath(root, it.exportHtml);
       if (!existsSync(exportPath)) {
         issues.push({ severity: 'error', code: 'missing-export', message: `deliverables: ${it.id} export missing ${it.exportHtml}` });
       }
@@ -140,7 +150,7 @@ function checkDeliverables(root) {
 }
 
 function checkWitnessResolution(root) {
-  const mapPath = join(root, 'pm/agency/packs/gr-t2/claim-witness-map.json');
+  const mapPath = resolveRepoPath(root, 'pm/agency/packs/gr-t2/claim-witness-map.json');
   const issues = [];
   if (!existsSync(mapPath)) {
     return { ok: false, issues: [{ severity: 'error', code: 'missing-map', message: 'witness: missing claim-witness-map.json' }], filePath: mapPath };
@@ -151,7 +161,7 @@ function checkWitnessResolution(root) {
   let resolved = 0;
   for (const claim of claims) {
     for (const w of claim.witnesses ?? []) {
-      const full = join(ecoRoot, w.repo, w.path);
+      const full = resolveRepoPath(join(ecoRoot, w.repo), w.path);
       if (!existsSync(full)) {
         issues.push({
           severity: 'error',
@@ -239,9 +249,9 @@ function summarizeMd({ witness }) {
 const root = process.cwd();
 const write = process.argv.includes('--write');
 
-const toolsPath = join(root, 'pm/agency/catalogs/tools.json');
-const assetsPath = join(root, 'pm/agency/catalogs/assets.json');
-const resourcesPath = join(root, 'pm/agency/catalogs/resources.json');
+const toolsPath = resolveRepoPath(root, 'pm/agency/catalogs/tools.json');
+const assetsPath = resolveRepoPath(root, 'pm/agency/catalogs/assets.json');
+const resourcesPath = resolveRepoPath(root, 'pm/agency/catalogs/resources.json');
 
 const tools = readJson(toolsPath);
 const assets = readJson(assetsPath);
@@ -303,9 +313,9 @@ const witness = {
 
 if (write) {
   ensureDir(join(root, 'audit/evidence'));
-  ensureDir(join(root, 'pm/ci'));
+  ensureDir(join(root, 'machine/ci'));
   writeFileSync(join(root, 'audit/evidence/agency-check-latest.json'), JSON.stringify(witness, null, 2) + '\n');
-  writeFileSync(join(root, 'pm/ci/agency-check-latest.md'), summarizeMd({ witness }) + '\n');
+  writeFileSync(join(root, 'machine/ci/agency-check-latest.md'), summarizeMd({ witness }) + '\n');
 }
 
 if (!witness.ok) {
