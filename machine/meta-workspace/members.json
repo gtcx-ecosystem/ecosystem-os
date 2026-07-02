@@ -20,15 +20,15 @@
     },
     {
       "repo": "baseline-os",
-      "status": "candidate",
+      "status": "verified",
       "provides": ["baselineos", "@baselineos/*"],
-      "note": "AI-OS engine (7-layer pipeline, router, vault). Consumed cross-repo by intelligence/sdk + bridge-os. Verify own install before promoting to 'verified'."
+      "note": "AI-OS engine (7-layer pipeline, router, vault). Installs standalone green after intra-repo deps converted to workspace:*. Membership also resolves gtcx-os intelligence/sdk -> baselineos."
     },
     {
       "repo": "bridge-os",
-      "status": "candidate",
+      "status": "blocked",
       "provides": ["@gtcx/mcp-server", "@gtcx/agents"],
-      "note": "AI command surface (gtcx-baseline MCP + agents) -> depends on baseline-os. Verify own install before promoting."
+      "note": "BLOCKED in this checkout: 4 cross-repo deps target gtcx-intelligence + gtcx-core, which are not present (plus 3 fixable baseline-os link paths using packages/ instead of platform/packages/). Promote once those repos are checked out as members (or those deps are removed/published)."
     }
   ],
   "notes": {
