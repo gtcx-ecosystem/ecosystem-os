@@ -15,6 +15,10 @@
   },
   "type": "module",
   "scripts": {
+    "meta:workspace": "node platform/scripts/meta-workspace/setup.mjs --dry",
+    "meta:workspace:write": "node platform/scripts/meta-workspace/setup.mjs --write",
+    "meta:workspace:check": "node platform/scripts/meta-workspace/setup.mjs --check",
+    "meta:workspace:remove": "node platform/scripts/meta-workspace/setup.mjs --remove",
     "ops:check": "node platform/scripts/ops-check.mjs",
     "operations:check": "pnpm ops:check",
     "operations:consumption:check": "pnpm ops:consumption:check",

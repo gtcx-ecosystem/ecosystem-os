@@ -1,0 +1,39 @@
+{
+  "$schema": "gtcx://ecosystem-os/meta-workspace/v1",
+  "title": "GTCX meta-workspace members",
+  "description": "Member repos for the GTCX meta-workspace (local cross-repo co-development). The root pnpm-workspace.yaml is GENERATED at the ecosystem parent by platform/scripts/meta-workspace/setup.mjs — never hand-edited. Only 'verified' members are included by default; 'candidate' members are added with --include-candidates once they install cleanly on their own.",
+  "date": "2026-07-02",
+  "owner": "ecosystem-os",
+  "excludeDirs": ["node_modules", ".git", "dist", "archive", "_delete", ".turbo"],
+  "members": [
+    {
+      "repo": "gtcx-os",
+      "status": "verified",
+      "provides": ["@gtcx/protocol-*", "@gtcx/protocols-crypto", "@gtcx/validators"],
+      "note": "Globs reconciled to real tree; protocols subtree builds + tests green (vaultmark 470/470)."
+    },
+    {
+      "repo": "ledger-ui",
+      "status": "verified",
+      "provides": ["@gtcx/ui", "@gtcx/desk-shell"],
+      "note": "Installs clean on its own (own workspace, 0 dead globs). Resolves gtcx-os platforms' cross-repo @gtcx/ui dep by membership."
+    },
+    {
+      "repo": "baseline-os",
+      "status": "candidate",
+      "provides": ["baselineos", "@baselineos/*"],
+      "note": "AI-OS engine (7-layer pipeline, router, vault). Consumed cross-repo by intelligence/sdk + bridge-os. Verify own install before promoting to 'verified'."
+    },
+    {
+      "repo": "bridge-os",
+      "status": "candidate",
+      "provides": ["@gtcx/mcp-server", "@gtcx/agents"],
+      "note": "AI command surface (gtcx-baseline MCP + agents) -> depends on baseline-os. Verify own install before promoting."
+    }
+  ],
+  "notes": {
+    "nestedWorkspaces": "Each member keeps its own pnpm-workspace.yaml for STANDALONE use. Run pnpm from a repo for standalone mode; run from the ecosystem parent for META mode. The generated root spans members for cross-repo dev/CI.",
+    "publish": "For CI/release, shared packages (@gtcx/ui, baselineos, @gtcx/protocols-crypto) are published (see ecosystem-os publish registry); the meta-workspace is for local co-development, not release pipelines.",
+    "rollout": "Add a repo as 'candidate', verify `pnpm install` succeeds in it standalone (like gtcx-os + ledger-ui were), then promote to 'verified' so the generator includes it."
+  }
+}
