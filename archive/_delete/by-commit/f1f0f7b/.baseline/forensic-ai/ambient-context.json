@@ -1,0 +1,425 @@
+{
+  "schema": "gtcx://baseline-os/forensic-ambient-context/v1",
+  "discoveredAt": "2026-06-27T10:19:34.362Z",
+  "repoRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
+  "repoId": "ecosystem-os",
+  "filesScanned": 180,
+  "orgCandidates": [
+    {
+      "name": "SIS Inspections",
+      "score": 130,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "context points to \\\"SIS Inspections\\\" — confirm or correct if needed.\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/experience/forensic-solicitation.json",
+          "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"SIS Inspections\", \"score\": 130, \"confidence",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+          "weight": 5
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "Negative Scope This",
+      "score": 15,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"Negative Scope This\", \"score\": 15, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Negative Scope This\\\", \\\"score\\\": 15, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Negative Scope This\\\\\\\", \\\\\\\"score\\\\\\\": 15, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 15, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Negative Scope This\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Commodity Trade",
+      "score": 14,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/definition.json",
+          "snippet": "\", \"industry\": \"Commodity Trade & Verification\", \"size\": \"small\", ",
+          "weight": 6
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"Commodity Trade\", \"score\": 14, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\", \\\"industry\\\": \\\"Commodity Trade & Verification\\\", \\\"size\\\": \\\"small\\\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"Commodity Trade\\\", \\\"score\\\": 14, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\"industry\\\\\\\": \\\\\\\"Commodity Trade & Verification\\\\\\\", \\\\\\\"size\\\\\\\": \\\\\\\"s",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"Commodity Trade\\\\\\\", \\\\\\\"score\\\\\\\": 14, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "ry\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"Commodity Trade & Verification\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"size\\\\\\",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "GTCX Agentic",
+      "score": 14,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Agentic\", \"score\": 14, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Agentic\\\", \\\"score\\\": 14, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Agentic\\\\\\\", \\\\\\\"score\\\\\\\": 14, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 14, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Agentic\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "--- title: 'GTCX Agentic — Enterprise Overview & Stakeholder Gui",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-stakeholder-guide.md",
+          "snippet": "ol-architect --- # GTCX Agentic — Enterprise Overview & Stakeholder Gui",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "GTCX Cloud",
+      "score": 11,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Cloud\", \"score\": 11, \"confidence\"",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Cloud\\\", \\\"score\\\": 11, \\\"confidence\\\"\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Cloud\\\\\\\", \\\\\\\"score\\\\\\\": 11, \\\\\\\"confidence\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "me\\\\\\\\\\\\\\\": \\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\"score\\\\\\\\\\\\\\\": 11, \\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\": \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"score\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"GTCX Cloud\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\", \\\\\\\\\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/frame/catalog.json",
+          "snippet": "ud\", \"name\": \"GTCX Cloud\", \"tier\": \"company\", \"descr",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/frame/catalog.json",
+          "snippet": " \"organization\": \"GTCX Cloud\", \"industry\": \"general\", ",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Negative Scope\n\nThis",
+      "score": 10,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/ai-agents-onboarding.md",
+          "snippet": "* - version 2.0 ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/contributor-guide.md",
+          "snippet": "k for guidance. ## Negative Scope This document does **not** cover: - Topics ",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-onboarding/getting-started-ai-agents.md",
+          "snippet": "* - Version 2.0 ## Negative Scope This guide does **not** cover: - Deep archi",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
+          "snippet": "ring tests --- ## Negative Scope This document does **not** cover: - **Go-to",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/gtm-q2-africa.md",
+          "snippet": "hardcoded. --- ## Negative Scope This document does **not** cover: - **Techn",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
+          "snippet": "path repo. --- ## Negative Scope This document does **not** cover: - **Strat",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
+          "snippet": " platform. --- ## Negative Scope This document does **not** cover: - **Curre",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/product/README.md",
+          "snippet": "t v5 migration. ## Negative Scope This product document does **not** cover: -",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "name": "GTCX Ecosystem",
+      "score": 7,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": " { \"name\": \"GTCX Ecosystem\", \"score\": 7, \"confidence\":",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "t\": \" { \\\"name\\\": \\\"GTCX Ecosystem\\\", \\\"score\\\": 7, \\\"confidence\\\":\", ",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/forensic-ai/ambient-context.json",
+          "snippet": "{ \\\\\\\"name\\\\\\\": \\\\\\\"GTCX Ecosystem\\\\\\\", \\\\\\\"score\\\\\\\": 7, \\\\\\\"confidence\\\\",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/frame/catalog.json",
+          "snippet": "cx\", \"name\": \"GTCX Ecosystem\", \"tier\": \"company\", \"descr",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/ecosystem-integration.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — cross-repo integration architecture *",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/implementation-truth.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — all repos **Method:** Direct codebase",
+          "weight": 1
+        },
+        {
+          "path": ".worktrees/exec-agency/archive/legacy-docs-overview/innovation-opportunities.md",
+          "snippet": "26-03-09 **Scope:** GTCX Ecosystem — strategic blindspots, low-hanging fru",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Principal Platform Architect",
+      "score": 4,
+      "confidence": "inferred",
+      "evidence": [
+        {
+          "path": ".baseline/memory/session-last-start.json",
+          "snippet": "\", \"role\": \"Principal Platform Architect\", \"tone\": \"Systems-oriented, re",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/memory/session-last-start.json",
+          "snippet": "eminder\": \"Embody **Principal Platform Architect** — Platform lead accountable for fleet",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/session/ego-latest.md",
+          "snippet": "velopment **Role:** Principal Platform Architect **Tone:** Systems-oriented, reliability",
+          "weight": 1
+        },
+        {
+          "path": ".baseline/session/ego-latest.md",
+          "snippet": "Architect\" role: \"Principal Platform Architect\" category: \"engineering\" expertise_",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "topOrg": {
+    "name": "SIS Inspections",
+    "score": 130,
+    "confidence": "inferred",
+    "evidence": [
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "context points to \\\"SIS Inspections\\\" — confirm or correct if needed.\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/experience/forensic-solicitation.json",
+        "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": " { \"name\": \"SIS Inspections\", \"score\": 130, \"confidence",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": "ntext points to \\\\\\\"SIS Inspections\\\\\\\" — confirm or correct if needed.\\\", ",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": "t points to \\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\" — confirm or correct if needed.",
+        "weight": 5
+      },
+      {
+        "path": ".baseline/forensic-ai/ambient-context.json",
+        "snippet": " to \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"SIS Inspections\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" — confirm or correct if",
+        "weight": 5
+      }
+    ]
+  },
+  "teamHints": [
+    "demo",
+    "gtcx-docs",
+    "bridge-os",
+    "quality-evidence-lead",
+    "prithvi",
+    "alexander",
+    "ecosystem-os",
+    "canon-os",
+    "protocol-architect",
+    "chief-of-staff",
+    "'product-lead'"
+  ],
+  "projectHints": [
+    "ecosystem-os",
+    "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
+    "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
+    "STORY-DOCS-IA-ECO — Fleet docs IA lift",
+    "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+    "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+    "STORY-VEN-FUNDRAISE-SYNC — fundraising backlog alignment",
+    "STORY-VEN-OS-HANDOFF — venture-os inbound handoff"
+  ],
+  "goalHints": [
+    "to implement Protocol 22-selected work",
+    "Unblock Report — never revert to consultant mode",
+    "** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
+    "** Fleet program office — intake, witness, P22 routing, never product implement",
+    "** Make these tests pass"
+  ],
+  "solicitOrg": false,
+  "confirmationPrompt": "Workspace context points to \"SIS Inspections\" — confirm or correct if needed.",
+  "resolution": "explicit"
+}
