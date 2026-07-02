@@ -13,7 +13,7 @@ version: '0.1.0'
 
 > "We are not selling compliance theater. We are shipping programmable trust — legitimacy that travels with the producer."
 
-**Audience:** integrator pilot stakeholders  
+**Audience:** integrator pilot stakeholders
 **Do not claim** anything not in `claim-witness-map.json`
 
 ## 2:00 — Tension (Act 1)

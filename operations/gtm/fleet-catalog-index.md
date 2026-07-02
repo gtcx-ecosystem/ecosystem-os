@@ -12,7 +12,7 @@ review_cycle: on-change
 
 **Purpose:** Single hub entry for go-to-market artifacts across the fleet — what exists, where it lives, and owner gaps.
 
-**SoR for doc coverage:** [`docs/reference/documentation-fleet-coverage-matrix.md`](../../docs/reference/documentation-fleet-coverage-matrix.md)  
+**SoR for doc coverage:** [`docs/reference/documentation-fleet-coverage-matrix.md`](../../docs/reference/documentation-fleet-coverage-matrix.md)
 **Publish register:** [`pm/publish-register.json`](../../pm/publish-register.json)
 
 ---

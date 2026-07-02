@@ -11,7 +11,7 @@ version: '0.1.0'
 
 # {{HEADLINE}}
 
-**Audience:** {{AUDIENCE}}  
+**Audience:** {{AUDIENCE}}
 **Action:** {{INTENDED_ACTION}}
 
 ## Problem

@@ -11,9 +11,9 @@ review_cycle: 'on-change'
 
 # Executive Brief — GTCX Agentic
 
-> **Status:** Current  
-> **Date:** 2026-05-22  
-> **Owner:** Protocol Architect  
+> **Status:** Current
+> **Date:** 2026-05-22
+> **Owner:** Protocol Architect
 > **Next Review:** On-change or bi-weekly
 
 ## Executive Summary

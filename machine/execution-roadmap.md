@@ -1,6 +1,6 @@
 # Execution roadmap — ecosystem-os
 
-> **Last reconciled:** 2026-06-24 · execute-roadmap session  
+> **Last reconciled:** 2026-06-24 · execute-roadmap session
 > **Sources:** `audit/institutional-readiness-audit-notes-2026-06-24.md`, `docs-ia` + `gtm-readiness` witnesses
 
 ## Active milestone

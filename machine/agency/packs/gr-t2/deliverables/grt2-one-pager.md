@@ -11,7 +11,7 @@ version: '0.1.0'
 
 # Programmable trust for continental commodity rails
 
-**Audience:** Sovereign ministries, DFIs, tier-2 integrators, bank innovation labs  
+**Audience:** Sovereign ministries, DFIs, tier-2 integrators, bank innovation labs
 **Action:** Schedule a sandbox integrator pilot design session with GTCX program office
 
 ## Problem
@@ -28,8 +28,8 @@ Formal compliance theater fails producers and regulators. Paper credentials do n
 
 ## Path forward
 
-1. **Pilot** — sandbox deployment with ministry or bank innovation lab  
-2. **Syndicate** — witness-backed claims across fleet repos (`PROG-CONTINENTAL-CAPITAL` → `markets-os`)  
+1. **Pilot** — sandbox deployment with ministry or bank innovation lab
+2. **Syndicate** — witness-backed claims across fleet repos (`PROG-CONTINENTAL-CAPITAL` → `markets-os`)
 3. **Scale** — continental capital rail with portable, cryptographically verifiable credentials
 
 ## Contact / next step

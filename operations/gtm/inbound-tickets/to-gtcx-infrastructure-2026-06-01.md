@@ -14,8 +14,8 @@ review_cycle: 'on-change'
 
 # Inbound: Protocols GitBook hub sync (v0.4.4)
 
-**To:** gtcx-infrastructure (FYI)  
-**From:** gtcx-protocols / gtcx-docs  
+**To:** gtcx-infrastructure (FYI)
+**From:** gtcx-protocols / gtcx-docs
 **Date:** 2026-06-01
 
 ## Subject

@@ -11,8 +11,8 @@ review_cycle: on-change
 
 # GR-T2 campaign pack
 
-**Tier:** GR-T2 integrator pilot  
-**North star:** Live sovereign substrate + bank innovation pilots + continental capital rail  
+**Tier:** GR-T2 integrator pilot
+**North star:** Live sovereign substrate + bank innovation pilots + continental capital rail
 **Audience:** Sovereign ministries, DFIs, tier-2 integrators, bank innovation labs
 
 ## Narrative arc
@@ -36,7 +36,7 @@ review_cycle: on-change
 
 ## Claim discipline
 
-Every external claim must resolve through `claim-witness-map.json` before publish.  
+Every external claim must resolve through `claim-witness-map.json` before publish.
 Run `pnpm agency:check` before campaign release.
 
 ## SoR
