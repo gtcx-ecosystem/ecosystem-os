@@ -64,6 +64,7 @@
     "product:compile": "node ../canon-os/platform/scripts/product-compile.mjs --write --skip-canon",
     "product:compile:check": "node ../canon-os/platform/scripts/product-compile.mjs --check",
     "machine:sync": "node ../bridge-os/platform/scripts/workspace/pm-sync.mjs",
+    "machine:folder:check": "pnpm repo:provision:check",
     "docs:fractal-mpr:check": "node platform/scripts/docs-fractal-mpr-check.mjs",
     "docs:pack:pillar-contract:check": "node platform/scripts/docs-pack-pillar-contract-check.mjs",
     "docs:ia:check": "node platform/scripts/docs-ia-check.mjs --write",

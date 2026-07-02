@@ -2,7 +2,7 @@
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-07-02T14:25:00.497Z",
+  "at": "2026-07-02T14:27:34.281Z",
   "ok": true,
   "gates": [
     {
