@@ -1,0 +1,59 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1847 >>
+stream
+BT /F1 12 Tf
+72 750 Td (Moat and Alpha — Why BaselineOS) Tj
+72 734 Td ( ) Tj
+72 718 Td (Moat and Alpha — Why BaselineOS) Tj
+72 702 Td (White paper WP-003 · BaselineOS · 2026) Tj
+72 686 Td (Abstract) Tj
+72 670 Td (The AI platform market is filling with broad, shallow agent operating systems and narrow c) Tj
+72 654 Td (1. Category thesis) Tj
+72 638 Td (BaselineOS is an AI operating system for organizations — not a governance product that add) Tj
+72 622 Td (Seven layers compound. Governance is one layer. Autonomy is the destination.) Tj
+72 606 Td (2. Competitive landscape) Tj
+72 590 Td (| Player type | Pattern | BaselineOS contrast |) Tj
+72 574 Td (| ----------- | ------- | ------------------- |) Tj
+72 558 Td (| Big-four agent OS | Broad/shallow orchestration | Narrow/deep sealed pipeline |) Tj
+72 542 Td (| Chat + RAG vendors | Suggestion-tier AI at scale | Production-default with Fidelity AI m) Tj
+72 526 Td (| Governance GRC tools | Post-hoc audit gates | ActiveRecord cascade through OS |) Tj
+72 510 Td (| Model labs | Capability without org context | LLM-agnostic org baseline |) Tj
+72 494 Td (Desk research \(2026-05-17\): PwC Agent OS exemplifies broad/shallow; BaselineOS targets gov) Tj
+72 478 Td (3. Six moat pillars) Tj
+72 462 Td (3.1 Organizational OS architecture) Tj
+72 446 Td (Real layer packages, wired pipeline, npm SDK — not slideware. ~108k LOC runtime, published) Tj
+72 430 Td (3.2 Bundle atom) Tj
+72 414 Td (Every serious output links to a verified bundle — provenance, evidence paths, public verif) Tj
+72 398 Td (3.3 LLM-agnostic baseline) Tj
+72 382 Td (defineBaseline\(\) persists across model swaps. Cost router is ecosystem SoR. Models are int) Tj
+72 366 Td (3.4 Fidelity AI measurement) Tj
+72 350 Td (Unique rubric: realized potential per layer → Autonomy maturity. Buyers can be held accoun) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000232 00000 n 
+0000002131 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2201
+%%EOF
