@@ -1,0 +1,10 @@
+{
+  "$schema": "gtcx://ops/manifest/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-14",
+  "domains": {
+    "gtm": "ops/gtm/manifest.json",
+    "coordination": "ops/coordination/manifest.json",
+    "legal": "ops/legal/manifest.json"
+  }
+}

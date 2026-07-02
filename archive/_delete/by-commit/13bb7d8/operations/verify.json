@@ -1,0 +1,43 @@
+{
+  "$schema": "gtcx://ops/operations-verify/v1",
+  "repo": "ecosystem-os",
+  "updated": "2026-06-22",
+  "commands": [
+    {
+      "id": "ops-check",
+      "command": "pnpm ops:check",
+      "authorityClass": "R",
+      "when": "session-start-external-work"
+    },
+    {
+      "id": "ops-consumption",
+      "command": "pnpm ops:consumption:check",
+      "authorityClass": "R",
+      "when": "fabric-ops-touch"
+    },
+    {
+      "id": "docs-ia",
+      "command": "pnpm docs:ia:check",
+      "authorityClass": "R",
+      "when": "docs-touch"
+    },
+    {
+      "id": "canon-synthesize",
+      "command": "pnpm canon:synthesize:check",
+      "authorityClass": "R",
+      "when": "canon-touch"
+    },
+    {
+      "id": "work-selection-check",
+      "command": "pnpm agent:work-selection:check",
+      "authorityClass": "R",
+      "when": "session-close"
+    },
+    {
+      "id": "fabric-ops-contract",
+      "command": "pnpm --dir ../fabric-os fabric:ops-contracts:check",
+      "authorityClass": "R",
+      "when": "taxonomy-touch"
+    }
+  ]
+}
