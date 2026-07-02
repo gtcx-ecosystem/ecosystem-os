@@ -1,0 +1,15 @@
+{
+  "$schema": "gtcx://baseline-os/frame-active-stack",
+  "company": [
+    "frame:org-ecosystem-os"
+  ],
+  "space": [],
+  "task": [],
+  "deliverable": [],
+  "mergedSnapshot": {
+    "forensicAi": true,
+    "organization": "ecosystem-os",
+    "industry": ""
+  },
+  "updatedAt": "2026-06-27T10:19:34.365Z"
+}
