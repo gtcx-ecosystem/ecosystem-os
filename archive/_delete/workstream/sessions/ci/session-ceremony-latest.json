@@ -1,0 +1,271 @@
+{
+  "schema": "gtcx://agile-os/session-ceremony-eval/v1",
+  "spec": "agile-os/pm/spec/session-ceremony-artifacts-standard.json",
+  "protocol": "P60-session-ceremony-artifacts",
+  "repo": ".",
+  "repoPath": ".",
+  "phase": "close",
+  "generatedAt": "2026-06-26T00:19:46.377Z",
+  "advisory": false,
+  "ok": true,
+  "ledger": {
+    "ok": true,
+    "sessionId": "14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
+    "startedAt": "2026-06-26T00:18:22.678Z",
+    "events": 3,
+    "recordEvents": 1,
+    "hasCompliance": true,
+    "hasStart": true,
+    "gems": 0,
+    "decisions": 1,
+    "ledger": {
+      "schema": "gtcx://baseline-os/session-ledger/v1",
+      "sessionId": "14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
+      "repo": "ecosystem-os",
+      "startedAt": "2026-06-26T00:18:22.678Z",
+      "agentTrace": {
+        "id": "gtcx-agent-14ec6ed6-f1ae-4537-aef0-71e2c1dca772",
+        "header": "x-gtcx-agent-trace-id",
+        "otelAttribute": "gtcx.agent_trace_id",
+        "traceparent": "00-22107d1581e579c48835df9868b08074-9a5834f8ec8329fc-01"
+      },
+      "persona": "platform-architect",
+      "frame": "development",
+      "p22Head": "PLAN-NEXT-ON-CLEAR",
+      "tracking": {
+        "schema": "gtcx://baseline-os/session-tracked-items/v1",
+        "spec": "baseline-os/pm/spec/session-tracked-items.json",
+        "agentReference": "workstream/sessions/TRACKED-ITEMS.md"
+      },
+      "events": [
+        {
+          "id": "f160e4ae-311a-4b93-bbf6-54c4ca0ef56a",
+          "at": "2026-06-26T00:18:23.738Z",
+          "type": "session.start",
+          "source": "hook",
+          "summary": "Session bootstrap — ecosystem-os",
+          "refs": [
+            "PLAN-NEXT-ON-CLEAR"
+          ],
+          "meta": {
+            "ssot": "baseline-os/platform/scripts/agent/session-ledger-init.mjs",
+            "protocol": "51-session-forensic-synthesis"
+          }
+        },
+        {
+          "id": "1f8bcdcd-95cc-479e-998a-9170145027bb",
+          "at": "2026-06-26T00:18:23.738Z",
+          "type": "p22.head",
+          "source": "hook",
+          "summary": "P22 head: PLAN-NEXT-ON-CLEAR",
+          "refs": [
+            "PLAN-NEXT-ON-CLEAR"
+          ],
+          "meta": {
+            "persona": "platform-architect",
+            "frame": "development"
+          }
+        },
+        {
+          "id": "a334337e-e72e-4337-b467-5e166e9dfc5b",
+          "at": "2026-06-26T00:18:23.743Z",
+          "type": "session.compliance",
+          "source": "hook",
+          "summary": "Agent attests P51 forensic capture: session:init active; session:record obligation for gems, bugs, CI insights during work; session:open-items at closure.",
+          "refs": [
+            "PLAN-NEXT-ON-CLEAR"
+          ],
+          "meta": {
+            "protocol": "51-session-forensic-synthesis",
+            "agentObligation": [
+              "session:record during work",
+              "session:open-items at closure"
+            ],
+            "complianceGate": "session:compliance:check"
+          }
+        }
+      ],
+      "lastRecordedAt": "2026-06-26T00:18:23.743Z"
+    }
+  },
+  "trajectory": {
+    "schema": "gtcx://baseline-os/session-trajectory-eval/v1",
+    "initiative": "ADP-S3-TRAJECTORY",
+    "ok": false,
+    "trajectoryScore100": 85,
+    "strict": false,
+    "materialSession": false,
+    "durationMin": 1,
+    "git": {
+      "commits": 0,
+      "available": true
+    },
+    "checks": [
+      {
+        "id": "trajectory.start",
+        "label": "session.start in ledger",
+        "pass": true,
+        "weight": 20
+      },
+      {
+        "id": "trajectory.compliance",
+        "label": "session.compliance attestation",
+        "pass": true,
+        "weight": 15,
+        "severity": "warn"
+      },
+      {
+        "id": "trajectory.recordMin",
+        "label": "≥1 session:record when material session (commits≥1 or duration≥30m)",
+        "pass": true,
+        "weight": 30,
+        "detail": {
+          "commits": 0,
+          "durationMin": 1,
+          "recordEvents": 1,
+          "materialSession": false
+        }
+      },
+      {
+        "id": "trajectory.quality",
+        "label": "gems or decisions when commits≥3",
+        "pass": true,
+        "weight": 10,
+        "severity": "warn",
+        "detail": {
+          "commits": 0,
+          "gems": 0,
+          "decisions": 1
+        }
+      },
+      {
+        "id": "trajectory.retrospective",
+        "label": "retrospective artifact exists",
+        "pass": false,
+        "weight": 15
+      },
+      {
+        "id": "trajectory.openItems",
+        "label": "open-items witness exists",
+        "pass": true,
+        "weight": 10
+      }
+    ],
+    "failures": [
+      "trajectory.retrospective: retrospective artifact exists"
+    ],
+    "warnings": []
+  },
+  "directories": [
+    {
+      "id": "ledger",
+      "path": "workstream/sessions/ledger",
+      "exists": true
+    },
+    {
+      "id": "ci",
+      "path": "workstream/sessions/ci",
+      "exists": true
+    },
+    {
+      "id": "handoffs",
+      "path": "workstream/sessions/handoffs",
+      "exists": true
+    },
+    {
+      "id": "transcripts",
+      "path": "workstream/sessions/transcripts",
+      "exists": true
+    },
+    {
+      "id": "retrospectives",
+      "path": "workstream/sessions/retrospectives",
+      "exists": true
+    },
+    {
+      "id": "innovation",
+      "path": "workstream/sessions/innovation",
+      "exists": true
+    },
+    {
+      "id": "archive",
+      "path": "workstream/sessions/archive",
+      "exists": true
+    },
+    {
+      "id": "closeout",
+      "path": "workstream/sessions/closeout",
+      "exists": true
+    }
+  ],
+  "witnesses": {
+    "forensicCompliance": {
+      "path": "workstream/sessions/ci/session-forensic-compliance-latest.json",
+      "exists": true
+    },
+    "openItems": {
+      "path": "workstream/sessions/ci/session-open-items-latest.json",
+      "exists": false
+    },
+    "openItemsLegacy": {
+      "path": "machine/ci/session-open-items-latest.json",
+      "exists": true
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "trajectory.retrospective: retrospective artifact exists"
+  ],
+  "agentObligation": [
+    "featuresWorked on story switch or commit",
+    "bugs on defect found/fixed",
+    "ciInsights on gate run",
+    "gems on learning",
+    "decisions on architecture/policy",
+    "blockers on hard stop",
+    "intakeItems on new work candidate"
+  ],
+  "commands": {
+    "check": "pnpm ceremony:check",
+    "checkWrite": "pnpm ceremony:check:write",
+    "close": "pnpm ceremony:close:write",
+    "record": "baseline session:record",
+    "openItems": "baseline session:open-items",
+    "cli": [
+      "baseline ceremony check",
+      "baseline ceremony close",
+      "baseline ceremony record",
+      "baseline session:open-items",
+      "baseline session:record"
+    ]
+  },
+  "closeSteps": [
+    {
+      "step": "open-items",
+      "ok": true,
+      "exitCode": 0,
+      "command": "session:open-items --write"
+    },
+    {
+      "step": "retrospective",
+      "ok": true,
+      "exitCode": 0,
+      "command": "ecosystem:session:retrospective:write"
+    },
+    {
+      "step": "critique",
+      "ok": true,
+      "exitCode": 0,
+      "command": "ecosystem:session:critique:write",
+      "verdict": null,
+      "findings": 0
+    },
+    {
+      "step": "innovation-note",
+      "ok": true,
+      "skipped": true,
+      "reason": "no innovation triggers"
+    }
+  ],
+  "closedAt": "2026-06-26T00:19:46.378Z"
+}
