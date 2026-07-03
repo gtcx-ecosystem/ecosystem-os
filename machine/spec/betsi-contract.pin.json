@@ -1,0 +1,57 @@
+{
+  "$schema": "gtcx://fabric-os/betsi-contract/v1",
+  "repo": "ecosystem-os",
+  "frameworkSoR": "../fabric-os/machine/spec/betsi-framework.json",
+  "targetStage": "S1",
+  "updated": "2026-07-03",
+  "note": "ecosystem-os (meta-workspace + fleet ops). Banking (B) + Institutional (I) not applicable (no fund settlement or sovereign-data residency). Technical: own gate self-test + CI. Security: own SECURITY.md + fleet ISMS corpus (fabric-os, Protocol 24 x-ref). Enterprise: fleet corpus.",
+  "domains": {
+    "T": {
+      "stage": "S1",
+      "artifacts": [
+        {
+          "family": "T1",
+          "path": "../fabric-os/docs/governance/regulatory/policies/secure-sdlc-policy.md"
+        },
+        {
+          "family": "T3",
+          "path": "platform/scripts/ops-check.test.mjs"
+        },
+        {
+          "family": "T2",
+          "path": ".github/workflows/ci.yml"
+        }
+      ]
+    },
+    "S": {
+      "stage": "S1",
+      "artifacts": [
+        {
+          "family": "S1",
+          "path": "docs/operations/repo/SECURITY.md"
+        },
+        {
+          "family": "S1",
+          "path": "../fabric-os/docs/governance/regulatory/policies/access-control-policy.md"
+        },
+        {
+          "family": "S2",
+          "path": "../fabric-os/docs/governance/regulatory/policies/encryption-key-management-policy.md"
+        }
+      ]
+    },
+    "E": {
+      "stage": "S1",
+      "artifacts": [
+        {
+          "family": "E2",
+          "path": "../fabric-os/docs/governance/regulatory/policies/vendor-subprocessor-policy.md"
+        }
+      ]
+    }
+  },
+  "notApplicable": {
+    "B": "no fund settlement",
+    "I": "no sovereign-data residency"
+  }
+}
