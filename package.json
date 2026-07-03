@@ -2,7 +2,7 @@
   "name": "ecosystem-os",
   "version": "0.1.0",
   "private": true,
-  "description": "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
+  "description": "Ecosystem OS \u2014 fleet documentation, GitBook, GTM, onboarding, and publish registry",
   "repository": {
     "type": "git",
     "url": "https://github.com/gtcx-ecosystem/ecosystem-os.git"
@@ -142,6 +142,7 @@
     "dslc:check": "pnpm --dir ../fabric-os dslc:release -- --manifest ../ecosystem-os/machine/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json",
     "dslc:check:write": "pnpm --dir ../fabric-os dslc:release:write -- --manifest ../ecosystem-os/machine/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os",
     "ship:check": "pnpm --dir ../fabric-os ship:release -- --manifest ../ecosystem-os/machine/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json",
-    "ship:check:write": "pnpm --dir ../fabric-os ship:release:write -- --manifest ../ecosystem-os/machine/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os"
+    "ship:check:write": "pnpm --dir ../fabric-os ship:release:write -- --manifest ../ecosystem-os/machine/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os",
+    "betsi:check": "node ../fabric-os/platform/scripts/checks/betsi-check.mjs --repo-root . --write"
   }
 }
