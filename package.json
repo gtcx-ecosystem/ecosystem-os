@@ -143,6 +143,7 @@
     "dslc:check:write": "pnpm --dir ../fabric-os dslc:release:write -- --manifest ../ecosystem-os/machine/dslc/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os",
     "ship:check": "pnpm --dir ../fabric-os ship:release -- --manifest ../ecosystem-os/machine/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json",
     "ship:check:write": "pnpm --dir ../fabric-os ship:release:write -- --manifest ../ecosystem-os/machine/ship/releases/REL-ECOSYSTEM-OS-001/manifest.json --output-root ../ecosystem-os",
-    "betsi:check": "node ../fabric-os/platform/scripts/checks/betsi-check.mjs --repo-root . --write"
+    "betsi:check": "node ../fabric-os/platform/scripts/checks/betsi-check.mjs --repo-root . --write",
+    "constitution:read-witness": "node ../baseline-os/platform/scripts/agent/constitution-read-witness.mjs --write"
   }
 }
