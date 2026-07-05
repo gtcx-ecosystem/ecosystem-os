@@ -1,7 +1,7 @@
 {
   "programId": "FORENSIC-AI-001",
   "storyId": "FORENSIC-AI-001",
-  "updatedAt": "2026-06-30T06:11:30.659Z",
+  "updatedAt": "2026-07-03T14:28:19.911Z",
   "companyName": "ecosystem-os",
   "orgSource": "explicit",
   "ambient": {
@@ -53,9 +53,8 @@
       ]
     },
     "teamHints": [
-      "demo",
-      "gtcx-docs",
       "ecosystem-os",
+      "gtcx-docs",
       "canon-os",
       "protocol-architect",
       "chief-of-staff",
@@ -63,21 +62,22 @@
       "'protocol-architect'"
     ],
     "projectHints": [
-      "ecosystem-os",
-      "Ecosystem OS — fleet documentation, GitBook, GTM, onboarding, and publish registry",
       "STORY-AGILE-ZENHUB-CONTRACT — agile delivery + ZenHub contract surface",
       "STORY-DOCS-IA-ECO — Fleet docs IA lift",
       "STORY-ECO-CORE-OWNERSHIP — Kernel Graph Ledger Surface local lead",
       "STORY-ECO-ETHOS-CONTRACT — Ethos local module contract",
       "STORY-ECO-SIGNAL-L3 — establish the governed-loop L3 evidence gate",
-      "STORY-ECO-SIGNAL-L5 — prove generative operating maturity"
+      "STORY-ECO-SIGNAL-L5 — prove generative operating maturity",
+      "STORY-P35-LAYOUT — P35 hub + allowlist reconciliation",
+      "STORY-PM-FOLDER-R1 — product compile + backlog reconciliation",
+      "ecosystem-os"
     ],
     "goalHints": [
+      "trace check failed — P22 next work missing capabilityId, milestoneDoD, or GTM alignment · agile ceremony sync witness missing — run ecosyste",
       "to implement Protocol 22-selected work",
       "Unblock Report — never revert to consultant mode",
-      "** GR-T2 integrator pilot — live sovereign substrate + bank innovation pilots + continental capital rail",
-      "** Fleet program office — intake, witness, P22 routing, never product implement",
-      "ensure completeness and accuracy"
+      "ensure completeness and accuracy",
+      "create missing content based on specifications"
     ],
     "filesScanned": 180,
     "solicitOrg": false
@@ -137,7 +137,7 @@
     },
     {
       "id": "Q-AMBIENT-TEAM-CONFIRM",
-      "prompt": "Confirm team roster inferred from workspace: demo, gtcx-docs, ecosystem-os, canon-os, protocol-architect, chief-of-staff.",
+      "prompt": "Confirm team roster inferred from workspace: ecosystem-os, gtcx-docs, canon-os, protocol-architect, chief-of-staff, 'product-lead'.",
       "gapNodeTypes": [
         "role"
       ],
@@ -167,51 +167,51 @@
     {
       "passId": "FRP-P0-ambient",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     },
     {
       "passId": "FRP-P1-entity",
       "protocolId": "FRP-P1",
-      "completedAt": "2026-06-30T06:11:30.659Z",
+      "completedAt": "2026-07-03T14:28:19.911Z",
       "nodeCount": 1
     },
     {
       "passId": "FRP-P2-vertical",
       "protocolId": "FRP-P2",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     },
     {
       "passId": "FRP-P4-regulatory",
       "protocolId": "FRP-P4",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     },
     {
       "passId": "FRP-P5-org-shape",
       "protocolId": "FRP-P5",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     },
     {
       "passId": "FRP-P6-gaps",
       "protocolId": "FRP-P6",
-      "completedAt": "2026-06-30T06:11:30.659Z",
+      "completedAt": "2026-07-03T14:28:19.911Z",
       "questionCount": 4
     },
     {
       "passId": "FRP-P7-merge",
       "protocolId": "FRP-P7",
-      "completedAt": "2026-06-30T06:11:30.659Z",
+      "completedAt": "2026-07-03T14:28:19.911Z",
       "nodeCount": 1,
       "edgeCount": 0
     },
     {
       "passId": "hydrate-layers",
       "protocolId": "hydrate",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     },
     {
       "passId": "complete",
       "protocolId": "complete",
-      "completedAt": "2026-06-30T06:11:30.659Z"
+      "completedAt": "2026-07-03T14:28:19.911Z"
     }
   ],
   "hydratedPaths": [

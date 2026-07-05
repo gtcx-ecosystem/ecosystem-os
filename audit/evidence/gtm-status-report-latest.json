@@ -1,0 +1,22 @@
+{
+  "schema": "gtcx://canon-os/gtm-status-report/v1",
+  "repo": "ecosystem-os",
+  "generatedAt": "2026-07-03T03:59:14.546Z",
+  "features": [
+    {
+      "featureId": "_rollup",
+      "personaCoverage": "complete",
+      "jtbdLinked": true,
+      "e2eWorkflowId": null,
+      "deployGate": "green",
+      "uatStatus": "pass",
+      "productionReady": true
+    }
+  ],
+  "rollup": {
+    "productionReadyPct": 100,
+    "personaCompletePct": 100,
+    "e2eLinkedPct": 0,
+    "featureCount": 7
+  }
+}

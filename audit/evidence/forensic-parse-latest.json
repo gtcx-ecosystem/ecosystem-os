@@ -1,7 +1,7 @@
 {
   "schema": "gtcx://baseline-os/forensic-parse-artifact/v1",
   "programId": "FORENSIC-PARSE-001",
-  "parsedAt": "2026-06-30T06:11:30.577Z",
+  "parsedAt": "2026-07-03T14:28:19.662Z",
   "repo": "ecosystem-os",
   "corpus": {
     "docs": {
@@ -26,6 +26,7 @@
         "docs/architecture/in-repo/README.md",
         "docs/architecture/integration/FOLDER-SPEC.md",
         "docs/architecture/integration/README.md",
+        "docs/architecture/integration/meta-workspace.md",
         "docs/architecture/integration/narrative/FOLDER-SPEC.md",
         "docs/architecture/integration/narrative/README.md",
         "docs/architecture/integration/narrative/credential-management-ecosystem.md",
@@ -85,8 +86,7 @@
         "docs/business/README.md",
         "docs/business/case-studies/FOLDER-SPEC.md",
         "docs/business/case-studies/README.md",
-        "docs/business/customers/FOLDER-SPEC.md",
-        "docs/business/customers/README.md"
+        "docs/business/customers/FOLDER-SPEC.md"
       ],
       "initiativeIds": [
         "INIT-DOCS-FOUNDATION-IA-V1",
@@ -122,17 +122,14 @@
         "DOC-04",
         "DOC-05",
         "DOC-06",
-        "ECO-OS-001",
-        "INIT-DOC-FLEET-PUBLISH",
-        "DOC-FLEET-PUBLISH",
         "INIT-PRODUCT-DEVELOPMENT-CULTURE",
-        "INIT-BASELINE-MATURITY-LANE-SOR"
+        "DOC-LINK"
       ]
     },
     "sessions": {
-      "ledgerCount": 40,
-      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-baseline-os/agent-transcripts/3577dbe4-16a2-449b-92d4-5f56d9f622ba/3577dbe4-16a2-449b-92d4-5f56d9f622ba.jsonl",
-      "transcriptLines": 417,
+      "ledgerCount": 41,
+      "transcriptPath": "/Users/amanianai/.cursor/projects/Users-amanianai-Sites-gtcx-ecosystem-compliance-os/agent-transcripts/3238ecb0-388a-4913-b3b9-45b36257fd87/3238ecb0-388a-4913-b3b9-45b36257fd87.jsonl",
+      "transcriptLines": 525,
       "userQueryCount": 10
     }
   },
@@ -143,7 +140,7 @@
       "candidates": [
         {
           "personaId": "platform-architect",
-          "weight": 37
+          "weight": 40
         }
       ]
     },
@@ -202,6 +199,15 @@
         "Vault",
         "w2:staging-prereq-check",
         "when",
+        "workspace",
+        "cannot",
+        "meta:workspace",
+        "meta:workspace:write",
+        "meta:workspace:check",
+        "meta:workspace:remove",
+        "install",
+        "from",
+        "resolves",
         "VAULT",
         "agency:check",
         "agency:score",
@@ -218,11 +224,17 @@
         "kaleidoscope:decision-room:write",
         "do",
         "kaleidoscope:execution-studio:write",
-        "kaleidoscope:execution-studio:check",
-        "kaleidoscope:decision-room:check",
         "as",
         "kaleidoscope:graph-rag-mcp:write",
         "witness",
+        "kaleidoscope:graph-rag-mcp:strict",
+        "kaleidoscope:graph-rag-mcp:pin:write",
+        "docs:operations:check",
+        "workspace:check",
+        "test",
+        "kaleidoscope:trace-eval-sink:write",
+        "kaleidoscope:trace-eval-sink:check",
+        "aiops:check",
         "kaleidoscope:graph-snapshot:write",
         "prior",
         "kaleidoscope:query:write",
@@ -230,50 +242,46 @@
         "kaleidoscope:signal:write",
         "kaleidoscope:partner-brief:write",
         "kaleidoscope:release-gates:write",
+        "kaleidoscope:phase-2:write",
+        "kaleidoscope:phase-3-resources:write",
+        "kaleidoscope:phase-3-resource-replay:write",
         "status:",
         "is",
         "enables",
         "and",
         "initialization",
         "file",
+        "kaleidoscope:decision-room:check",
         "kaleidoscope:release-gates:check",
-        "kaleidoscope:partner-brief:check",
-        "configs",
-        "MCP",
-        "config",
-        "owns",
-        "kaleidoscope:query:check",
-        "to",
-        "kaleidoscope:signal:remediation:check",
-        "kaleidoscope:signal:remediation:write",
-        "kaleidoscope:signal:remediation:l3:check",
-        "kaleidoscope:signal:remediation:l5:check",
-        "source:",
-        "org",
-        "machine",
-        "Outputs:",
-        "before",
-        "runtime",
-        "with",
-        "instead",
-        "canon:synthesize"
+        "kaleidoscope:partner-brief:check"
       ],
       "commands": [
         "baseline start",
-        "baseline session",
-        "pnpm script",
-        "baseline files",
-        "baseline directory",
-        "baseline file",
-        "pnpm fleet:ceremony:check:write",
-        "baseline completion",
-        "baseline audit",
-        "baseline shows",
+        "baseline session:",
+        "Baseline session",
+        "pnpm canon:synthesize",
+        "pnpm agent:bootstrap:check",
+        "pnpm docs:ia:check",
+        "pnpm validate:agent",
+        "pnpm check:workspace-root-cleanliness:strict",
+        "pnpm ops:check",
+        "pnpm agent:next-work",
+        "pnpm web:dev",
+        "pnpm --filter",
+        "pnpm --dir",
+        "baseline start:",
+        "pnpm agile:check",
         "pnpm operations:check",
-        "pnpm context",
-        "pnpm invocations",
-        "baseline scores",
-        "pnpm ops:check"
+        "pnpm qasc:",
+        "pnpm persona:read-witness",
+        "pnpm gtm:readiness:check",
+        "pnpm compliance:deploy:witness",
+        "pnpm pilot:ship-ready:witness",
+        "pnpm docs:tree:check",
+        "pnpm docs:check-links",
+        "pnpm docs:feature-spec:check",
+        "pnpm docs:foundation:check",
+        "pnpm canon:synthesize:check"
       ]
     },
     "studio": {
@@ -281,9 +289,7 @@
         "folder-spec",
         "docs-integrity-pack",
         "relocation-report",
-        "docs-integrity",
-        "folder-spec",
-        "deliverable"
+        "folder-spec"
       ],
       "provenanceRequired": true
     },
@@ -300,7 +306,7 @@
       "DOC-04",
       "DOC-05",
       "DOC-06",
-      "DOC-FLEET-PUBLISH",
+      "DOC-LINK",
       "ECO-AGY-001",
       "ECO-AGY-002",
       "ECO-AGY-003",
@@ -312,7 +318,6 @@
       "ECO-DOCS-005",
       "ECO-DOCS-006",
       "ECO-DOCS-007",
-      "ECO-OS-001",
       "ECO-OS-SHIP-001",
       "ECO-SHIP-001",
       "ECO-SHIP-002",
@@ -321,8 +326,6 @@
       "ECO-VEN-003",
       "ECO-VEN-005",
       "ECO-VEN-006",
-      "INIT-BASELINE-MATURITY-LANE-SOR",
-      "INIT-DOC-FLEET-PUBLISH",
       "INIT-DOCS-FOUNDATION-IA-V1",
       "INIT-DOCS-PROVISIONING-V1-W2",
       "INIT-ECOSYSTEM-AGENCY",
@@ -334,8 +337,7 @@
       "XR-510"
     ],
     "tags": [
-      "docs/business",
-      "docs/foundation"
+      "docs/business"
     ]
   },
   "ingestSignals": [
@@ -400,12 +402,12 @@
       "confidence": 0.85
     },
     {
-      "id": "initiative:DOC-FLEET-PUBLISH",
+      "id": "initiative:DOC-LINK",
       "kind": "initiative",
-      "text": "Active initiative reference: DOC-FLEET-PUBLISH",
+      "text": "Active initiative reference: DOC-LINK",
       "source": "docs+sessions",
       "refs": [
-        "DOC-FLEET-PUBLISH"
+        "DOC-LINK"
       ],
       "confidence": 0.85
     },
@@ -550,91 +552,91 @@
       "confidence": 0.7
     },
     {
-      "id": "lang:VAULT",
+      "id": "lang:workspace",
       "kind": "lang",
-      "text": "Lang expression observed: VAULT",
+      "text": "Lang expression observed: workspace",
       "source": "docs",
       "refs": [
-        "VAULT"
+        "workspace"
       ],
       "confidence": 0.7
     },
     {
-      "id": "lang:agency:check",
+      "id": "lang:cannot",
       "kind": "lang",
-      "text": "Lang expression observed: agency:check",
+      "text": "Lang expression observed: cannot",
       "source": "docs",
       "refs": [
-        "agency:check"
+        "cannot"
       ],
       "confidence": 0.7
     },
     {
-      "id": "lang:agency:score",
+      "id": "lang:meta:workspace",
       "kind": "lang",
-      "text": "Lang expression observed: agency:score",
+      "text": "Lang expression observed: meta:workspace",
       "source": "docs",
       "refs": [
-        "agency:score"
+        "meta:workspace"
       ],
       "confidence": 0.7
     },
     {
-      "id": "lang:agent:next-work",
+      "id": "lang:meta:workspace:write",
       "kind": "lang",
-      "text": "Lang expression observed: agent:next-work",
+      "text": "Lang expression observed: meta:workspace:write",
       "source": "docs",
       "refs": [
-        "agent:next-work"
+        "meta:workspace:write"
       ],
       "confidence": 0.7
     },
     {
-      "id": "lang:product:compile",
+      "id": "lang:meta:workspace:check",
       "kind": "lang",
-      "text": "Lang expression observed: product:compile",
+      "text": "Lang expression observed: meta:workspace:check",
       "source": "docs",
       "refs": [
-        "product:compile"
+        "meta:workspace:check"
       ],
       "confidence": 0.7
     },
     {
-      "id": "query:df519545",
+      "id": "query:f0ae30ef",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 3:52 AM (UTC+2)\n\nBriefly inform the user about the task result and perform any follow-up actions (if needed).",
+      "text": "QASC 100/100 Remediation Plan — compliance-os\n\nImplement the plan as specified, it is attached for your reference. Do NOT edit the plan file itself.\n\nTo-do's from the plan have already been created. Do not create them again. Mark them as in",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:df519545",
+      "id": "query:46a566b7",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 3:52 AM (UTC+2)\n\nBriefly inform the user about the task result and perform any follow-up actions (if needed).",
+      "text": "approved",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:46f25638",
+      "id": "query:46a566b7",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 4:56 AM (UTC+2)\n\ncomplete a fresh audit of each repo based on your last audit",
+      "text": "approved",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:91c6ce87",
+      "id": "query:b158f775",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 5:24 AM (UTC+2)\n\nwhat needs to happen next?",
+      "text": "execute",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
     },
     {
-      "id": "query:135bd04e",
+      "id": "query:4eb60472",
       "kind": "operator-intent",
-      "text": "Thursday, Jun 25, 2026, 5:26 AM (UTC+2)\n\non a branch?",
+      "text": "For this repo only: Complete the QASC Protocol Audit",
       "source": "transcript",
       "refs": [],
       "confidence": 0.65
