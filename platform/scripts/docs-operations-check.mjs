@@ -42,8 +42,8 @@ function loadJsonCandidates(repoRoot, name) {
   const candidates = [
     join(repoRoot, 'machine/spec', name),
     join(repoRoot, 'pm/spec', name),
-    join(repoRoot, '../canon-os/machine/spec', name),
-    join(repoRoot, '../canon-os/pm/spec', name),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec', name),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec', name),
   ];
   const path = candidates.find((candidate) => existsSync(candidate));
   if (!path) return null;
@@ -157,8 +157,8 @@ function main() {
     gate(
       'spec:local-present',
       !!resolution.localPath ||
-        existsSync(join(REPO, '../canon-os/machine/spec', PACK)) ||
-        existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+        existsSync(join(REPO, '../../gtcx.infrastructure/canon-os/machine/spec', PACK)) ||
+        existsSync(join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec', PACK)),
       resolution.localPath ?? 'missing machine/spec/docs-operations-pack.json',
     ),
   );

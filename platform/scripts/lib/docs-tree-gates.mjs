@@ -14,8 +14,8 @@ export function loadTreeSpec(repoRoot) {
   const path = [
     join(repoRoot, 'machine/spec/docs-tree-spec.json'),
     join(repoRoot, 'pm/spec/docs-tree-spec.json'),
-    join(repoRoot, '../canon-os/machine/spec/docs-tree-spec.json'),
-    join(repoRoot, '../canon-os/pm/spec/docs-tree-spec.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec/docs-tree-spec.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec/docs-tree-spec.json'),
   ].find((candidate) => existsSync(candidate));
   if (!path) return null;
   return JSON.parse(readFileSync(path, 'utf8'));
@@ -25,8 +25,8 @@ export function loadDocTypes(repoRoot) {
   const path = [
     join(repoRoot, 'machine/spec/docs-document-types.json'),
     join(repoRoot, 'pm/spec/docs-document-types.json'),
-    join(repoRoot, '../canon-os/machine/spec/docs-document-types.json'),
-    join(repoRoot, '../canon-os/pm/spec/docs-document-types.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec/docs-document-types.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec/docs-document-types.json'),
   ].find((candidate) => existsSync(candidate));
   if (!path) return null;
   return JSON.parse(readFileSync(path, 'utf8'));

@@ -17,8 +17,8 @@ function gate(id, ok, detail = null) {
 function loadNest() {
   const candidates = [
     join(REPO, 'machine/spec/docs-operations-compliance-nest.json'),
-    join(REPO, '../canon-os/machine/spec/docs-operations-compliance-nest.json'),
-    join(REPO, '../canon-os/pm/spec/docs-operations-compliance-nest.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/machine/spec/docs-operations-compliance-nest.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-operations-compliance-nest.json'),
   ];
   for (const path of candidates) {
     if (!existsSync(path)) continue;

@@ -2,31 +2,20 @@
 // ============================================================================
 // GTCX meta-workspace setup
 //
-// Generates the root pnpm-workspace.yaml at the ECOSYSTEM PARENT so member
-// repos install as one workspace (cross-repo `workspace:*` deps resolve by
-// membership — e.g. gtcx-os platforms -> ledger-ui @gtcx/ui).
+// Generates the root pnpm-workspace.yaml at the GTCX-ECOSYSTEM workspace root
+// so member repos install as one workspace (cross-repo `workspace:*` deps).
 //
-// The root file is GENERATED from machine/meta-workspace/members.json by
-// scanning each member repo's real package.json locations — never hand-edited.
-// Only `verified` members are included by default (safe, incremental rollout).
-//
-// Usage (from ecosystem-os):
-//   node platform/scripts/meta-workspace/setup.mjs --dry              # print, don't write
-//   node platform/scripts/meta-workspace/setup.mjs --write            # write parent root
-//   node platform/scripts/meta-workspace/setup.mjs --check            # drift check (CI)
-//   node platform/scripts/meta-workspace/setup.mjs --remove           # remove parent root
-//   [...] --include-candidates                                        # also include candidate members
+// Members are declared in machine/meta-workspace/members.json with optional
+// vertical-qualified `path` (post-2026-07-05 reorg).
 // ============================================================================
 
 import { readFileSync, writeFileSync, existsSync, rmSync } from 'node:fs';
-import { join, dirname, relative } from 'node:path';
+import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ECO_OS = join(HERE, '../../..'); // .../ecosystem-os
-const PARENT = dirname(ECO_OS); // .../gtcx-ecosystem  (the meta-workspace root)
 const MEMBERS_PATH = join(ECO_OS, 'machine/meta-workspace/members.json');
-const ROOT_WS = join(PARENT, 'pnpm-workspace.yaml');
 
 const args = new Set(process.argv.slice(2));
 const includeCandidates = args.has('--include-candidates');
@@ -36,26 +25,56 @@ function fail(msg) {
   process.exit(1);
 }
 
+/** Walk up from ecosystem-os to gtcx-ecosystem workspace root (vertical layout). */
+function findMetaWorkspaceRoot(fromDir) {
+  const env = process.env.GTCX_ECOSYSTEM_ROOT;
+  if (
+    env &&
+    existsSync(env) &&
+    existsSync(join(env, 'gtcx.infrastructure')) &&
+    existsSync(join(env, 'gtcx.ecosystem'))
+  ) {
+    return env;
+  }
+
+  let dir = fromDir;
+  for (let i = 0; i < 6; i++) {
+    if (
+      existsSync(join(dir, 'gtcx.infrastructure')) &&
+      existsSync(join(dir, 'gtcx.ecosystem'))
+    ) {
+      return dir;
+    }
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  fail(`could not find gtcx-ecosystem root from ${fromDir}`);
+}
+
+const PARENT = findMetaWorkspaceRoot(ECO_OS);
+const ROOT_WS = join(PARENT, 'pnpm-workspace.yaml');
+
 const spec = JSON.parse(readFileSync(MEMBERS_PATH, 'utf8'));
-const exclude = new Set(spec.excludeDirs ?? ['node_modules', '.git', 'dist', 'archive', '_delete']);
 const members = (spec.members ?? []).filter(
-  (m) => m.status === 'verified' || (includeCandidates && m.status === 'candidate')
+  (m) => m.status === 'verified' || (includeCandidates && m.status === 'candidate'),
 );
 
-// Read a member repo's OWN pnpm-workspace.yaml globs (its authoritative package
-// set), prefixed with the repo dir. Faithful to each repo's own definition —
-// excludes the repo root container and any dirs the repo intentionally omits.
-function memberGlobs(repo) {
-  const wsPath = join(PARENT, repo, 'pnpm-workspace.yaml');
-  if (!existsSync(wsPath)) fail(`member ${repo} has no pnpm-workspace.yaml`);
+function memberRelPath(m) {
+  return m.path ?? m.repo;
+}
+
+function memberGlobs(memberPath) {
+  const wsPath = join(PARENT, memberPath, 'pnpm-workspace.yaml');
+  if (!existsSync(wsPath)) fail(`member ${memberPath} has no pnpm-workspace.yaml`);
   const lines = readFileSync(wsPath, 'utf8').split('\n');
   const out = [];
   for (const line of lines) {
     const m = line.match(/^\s*-\s*'([^']+)'\s*$/) || line.match(/^\s*-\s*"([^"]+)"\s*$/);
     if (!m) continue;
     const g = m[1].trim();
-    if (g === '.') continue; // repo root container is not a meta member
-    out.push(`${repo}/${g}`);
+    if (g === '.') continue;
+    out.push(`${memberPath}/${g}`);
   }
   return out;
 }
@@ -63,19 +82,20 @@ function memberGlobs(repo) {
 const globs = [];
 const summary = [];
 for (const m of members) {
-  const repoRoot = join(PARENT, m.repo);
+  const rel = memberRelPath(m);
+  const repoRoot = join(PARENT, rel);
   if (!existsSync(repoRoot)) fail(`member repo not present: ${m.repo} (expected at ${repoRoot})`);
-  const g = memberGlobs(m.repo);
+  const g = memberGlobs(rel);
   globs.push(...g);
-  summary.push(`${m.repo} (${m.status}): ${g.length} package globs`);
+  summary.push(`${m.repo} → ${rel} (${m.status}): ${g.length} package globs`);
 }
 globs.sort();
 
 const header = [
   '# GENERATED by ecosystem-os/platform/scripts/meta-workspace/setup.mjs — do not hand-edit.',
   '# GTCX meta-workspace: member repos install as one workspace so cross-repo',
-  '# workspace:* deps resolve by membership. Regenerate: pnpm --dir ecosystem-os meta:workspace:write',
-  `# Members: ${members.map((m) => m.repo).join(', ')}`,
+  '# workspace:* deps resolve by membership. Regenerate: pnpm --dir gtcx.ecosystem/ecosystem-os meta:workspace:write',
+  `# Members: ${members.map((m) => `${m.repo}@${memberRelPath(m)}`).join(', ')}`,
   '',
   'packages:',
 ];
@@ -91,6 +111,7 @@ if (args.has('--remove')) {
   process.exit(0);
 }
 
+console.log(`meta-workspace root: ${PARENT}`);
 console.log(`meta-workspace: ${members.length} members, ${globs.length} packages`);
 summary.forEach((s) => console.log(`  - ${s}`));
 
@@ -105,11 +126,10 @@ if (args.has('--check')) {
 if (args.has('--write')) {
   writeFileSync(ROOT_WS, content);
   console.log(`meta-workspace: wrote ${ROOT_WS} (${globs.length} packages)`);
-  console.log('  next: run `pnpm install` from the ecosystem parent for meta mode.');
+  console.log('  next: run `pnpm install` from the gtcx-ecosystem parent for meta mode.');
   process.exit(0);
 }
 
-// default: dry
 console.log('\n--- DRY (no write). Would write to:', ROOT_WS, '---');
 console.log(content.split('\n').slice(0, 12).join('\n'));
 console.log(`  ... (${globs.length} package globs total)`);

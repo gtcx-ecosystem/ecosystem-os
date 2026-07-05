@@ -98,7 +98,7 @@ if (!baselineRoot) {
 const baselineBin = resolveBaselineosBin(baselineRoot, SATELLITE_ROOT);
 if (!existsSync(baselineBin)) {
   console.error(`ERROR: baselineos CLI not built: ${baselineBin}`);
-  console.error('Run: cd ../baseline-os && pnpm --filter baselineos build');
+  console.error('Run: cd ../../gtcx.cloud/baseline-os && pnpm --filter baselineos build');
   process.exit(1);
 }
 

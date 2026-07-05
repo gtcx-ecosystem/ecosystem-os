@@ -50,8 +50,8 @@ const DEFAULT_SEQUENCE = [
 
 function loadGateSequence() {
   const candidates = [
-    join(REPO, '../canon-os/machine/spec/docs-ia-initiative.json'),
-    join(REPO, '../canon-os/pm/spec/docs-ia-initiative.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/machine/spec/docs-ia-initiative.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-ia-initiative.json'),
     join(REPO, 'machine/spec/docs-ia-initiative.json'),
   ];
   for (const path of candidates) {

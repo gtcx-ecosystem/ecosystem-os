@@ -196,6 +196,6 @@ function buildDocsInitiativePayload(repoId, repoRoot, canonRoot, initiative, que
       done: `Documentation initiative queue active — ${storyId}`,
       nextWorkItem: `- **Type:** ${item.type ?? 'Task'}\n- **ID:** \`${storyId}\`\n- **Title:** ${title}\n- **Owner:** ${repoId}\n- **Because:** ${initiative.initiative} · ${reason}`,
     },
-    canonRoot: canonRoot.replace(repoRoot, '.').startsWith('..') ? '../canon-os' : '.',
+    canonRoot: canonRoot.replace(repoRoot, '.').startsWith('..') ? '../../gtcx.infrastructure/canon-os' : '.',
   };
 }

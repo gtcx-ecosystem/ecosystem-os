@@ -31,7 +31,7 @@ function gate(id, ok, detail = null) {
 
 function loadSixPackSpec() {
   const local = join(REPO, 'pm/spec/docs-six-pack.json');
-  const canon = join(REPO, '../canon-os/pm/spec/docs-six-pack.json');
+  const canon = join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-six-pack.json');
   const path = existsSync(local) ? local : canon;
   if (!existsSync(path)) return null;
   return JSON.parse(readFileSync(path, 'utf8'));

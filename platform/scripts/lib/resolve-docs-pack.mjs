@@ -72,8 +72,8 @@ export function resolveDocsPack(repoRoot, packName, options = {}) {
   ];
   const localPath = localPathCandidates.find((candidate) => existsSync(candidate)) ?? localPathCandidates[0];
   const canonPathCandidates = [
-    join(repoRoot, '../canon-os/machine/spec', canonicalName),
-    join(repoRoot, '../canon-os/pm/spec', canonicalName),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec', canonicalName),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec', canonicalName),
   ];
   const canonPath = canonPathCandidates.find((candidate) => existsSync(candidate)) ?? canonPathCandidates[0];
   const pathsTried = [];
