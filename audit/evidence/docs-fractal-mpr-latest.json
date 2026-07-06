@@ -1,6 +1,6 @@
 {
   "schema": "gtcx://canon-os/docs-fractal-mpr-check/v1",
-  "generatedAt": "2026-07-03T14:28:30.262Z",
+  "generatedAt": "2026-07-06T01:46:22.651Z",
   "repo": "ecosystem-os",
   "policyUpdated": "2026-06-19",
   "pass": true,
@@ -38,7 +38,7 @@
     {
       "id": "layer:foundation:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/foundation/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/foundation/scorecard.md"
     },
     {
       "id": "layer:foundation:scorecard-witness-link",
@@ -63,7 +63,7 @@
     {
       "id": "layer:foundation:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-foundation-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-foundation-layer-latest.json"
     },
     {
       "id": "layer:foundation:layer-witness-schema",
@@ -103,7 +103,7 @@
     {
       "id": "layer:business:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/business/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/business/scorecard.md"
     },
     {
       "id": "layer:business:scorecard-witness-link",
@@ -128,7 +128,7 @@
     {
       "id": "layer:business:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-business-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-business-layer-latest.json"
     },
     {
       "id": "layer:business:layer-witness-schema",
@@ -173,7 +173,7 @@
     {
       "id": "layer:architecture:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/architecture/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/architecture/scorecard.md"
     },
     {
       "id": "layer:architecture:scorecard-witness-link",
@@ -198,7 +198,7 @@
     {
       "id": "layer:architecture:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-architecture-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-architecture-layer-latest.json"
     },
     {
       "id": "layer:architecture:layer-witness-schema",
@@ -243,7 +243,7 @@
     {
       "id": "layer:research:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/business/research/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/business/research/scorecard.md"
     },
     {
       "id": "layer:research:scorecard-witness-link",
@@ -268,7 +268,7 @@
     {
       "id": "layer:research:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-research-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-research-layer-latest.json"
     },
     {
       "id": "layer:research:layer-witness-schema",
@@ -308,7 +308,7 @@
     {
       "id": "layer:product:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/product/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/product/scorecard.md"
     },
     {
       "id": "layer:product:scorecard-witness-link",
@@ -333,7 +333,7 @@
     {
       "id": "layer:product:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-product-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-product-layer-latest.json"
     },
     {
       "id": "layer:product:layer-witness-schema",
@@ -373,7 +373,7 @@
     {
       "id": "layer:canon:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/reference/canon/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/reference/canon/scorecard.md"
     },
     {
       "id": "layer:canon:scorecard-witness-link",
@@ -398,7 +398,7 @@
     {
       "id": "layer:canon:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-canon-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-canon-layer-latest.json"
     },
     {
       "id": "layer:canon:layer-witness-schema",
@@ -438,7 +438,7 @@
     {
       "id": "layer:publishing:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/gitbook/publish/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/gitbook/publish/scorecard.md"
     },
     {
       "id": "layer:publishing:scorecard-witness-link",
@@ -463,7 +463,7 @@
     {
       "id": "layer:publishing:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-publishing-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-publishing-layer-latest.json"
     },
     {
       "id": "layer:publishing:layer-witness-schema",
@@ -503,7 +503,7 @@
     {
       "id": "layer:roadmap:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/agile/roadmaps/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/agile/roadmaps/scorecard.md"
     },
     {
       "id": "layer:roadmap:scorecard-witness-link",
@@ -528,7 +528,7 @@
     {
       "id": "layer:roadmap:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-roadmap-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-roadmap-layer-latest.json"
     },
     {
       "id": "layer:roadmap:layer-witness-schema",
@@ -568,7 +568,7 @@
     {
       "id": "layer:agile:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/agile/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/agile/scorecard.md"
     },
     {
       "id": "layer:agile:scorecard-witness-link",
@@ -593,7 +593,7 @@
     {
       "id": "layer:agile:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-agile-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-agile-layer-latest.json"
     },
     {
       "id": "layer:agile:layer-witness-schema",
@@ -633,7 +633,7 @@
     {
       "id": "layer:operations:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/docs/operations/scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/docs/operations/scorecard.md"
     },
     {
       "id": "layer:operations:scorecard-witness-link",
@@ -658,7 +658,7 @@
     {
       "id": "layer:operations:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-operations-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-operations-layer-latest.json"
     },
     {
       "id": "layer:operations:layer-witness-schema",
@@ -698,7 +698,7 @@
     {
       "id": "layer:agents:scorecard-exists",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/agents/pillar-scorecard.md"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/agents/pillar-scorecard.md"
     },
     {
       "id": "layer:agents:scorecard-witness-link",
@@ -723,7 +723,7 @@
     {
       "id": "layer:agents:layer-witness-parse",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/mpr-agents-layer-latest.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/mpr-agents-layer-latest.json"
     },
     {
       "id": "layer:agents:layer-witness-schema",

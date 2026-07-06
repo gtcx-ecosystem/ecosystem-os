@@ -1,47 +1,49 @@
 {
   "schema": "gtcx://ecosystem-os/docs-ia-check/v1",
-  "generatedAt": "2026-07-03T14:28:30.292Z",
+  "generatedAt": "2026-07-06T01:46:23.115Z",
   "repo": "ecosystem-os",
-  "ok": true,
+  "ok": false,
   "strict": false,
   "initiative": "INIT-DOCS-CORE-IA-V1",
   "gateSequenceSource": "canon-os/machine/spec/docs-ia-initiative.json",
-  "failures": [],
+  "failures": [
+    "docs:agents:check"
+  ],
   "steps": [
     {
       "gateId": "docs:foundation:check",
       "script": "docs-foundation-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 16/16 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-foundation-latest.json"
+      "detail": " | PASS — 16/16 | witness: /Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/docs-foundation-latest.json"
     },
     {
       "gateId": "docs:business:check",
       "script": "docs-business-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 44/44 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-business-latest.json"
+      "detail": " | PASS — 44/44 | witness: /Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/docs-business-latest.json"
     },
     {
       "gateId": "docs:architecture:check",
       "script": "docs-architecture-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 25/25 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-architecture-latest.json"
+      "detail": " | PASS — 25/25 | witness: /Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/docs-architecture-latest.json"
     },
     {
       "gateId": "docs:product:check",
       "script": "docs-product-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 21/21 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-product-latest.json"
+      "detail": " | PASS — 21/21 | witness: /Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/docs-product-latest.json"
     },
     {
       "gateId": "docs:roadmap:check",
       "script": "docs-roadmap-check.mjs",
       "ok": true,
       "exit": 0,
-      "detail": " | PASS — 17/17 | witness: /Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/audit/evidence/docs-roadmap-latest.json"
+      "detail": " | PASS — 17/17 | witness: /Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/audit/evidence/docs-roadmap-latest.json"
     },
     {
       "gateId": "docs:agile:check",
@@ -67,9 +69,9 @@
     {
       "gateId": "docs:agents:check",
       "script": "agents-check.mjs",
-      "ok": true,
-      "exit": 0,
-      "detail": "agents:check — PASS (32/32)"
+      "ok": false,
+      "exit": 1,
+      "detail": "agents:check — FAIL (31/32) |   ✗ no-loose-agents-root: .DS_Store"
     },
     {
       "gateId": "docs:fractal-mpr:check",

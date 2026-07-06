@@ -2,19 +2,19 @@
   "schema": "gtcx://canon-os/docs-product-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-07-03T14:28:30.072Z",
+  "at": "2026-07-06T01:46:20.423Z",
   "ok": true,
   "spec": {
-    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-product-pack.json",
+    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/docs-product-pack.json",
     "localIsStub": false,
-    "upstreamPath": "/Users/amanianai/Sites/gtcx-ecosystem/canon-os/machine/spec/docs-product-pack.json",
+    "upstreamPath": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.infrastructure/canon-os/machine/spec/docs-product-pack.json",
     "resolvedIsFull": true
   },
   "gates": [
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-product-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/docs-product-pack.json"
     },
     {
       "id": "spec:not-stub",

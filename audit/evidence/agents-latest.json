@@ -2,13 +2,13 @@
   "schema": "gtcx://canon-os/agents-check/v1",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-07-03T14:28:30.227Z",
-  "ok": true,
+  "at": "2026-07-06T01:46:22.242Z",
+  "ok": false,
   "gates": [
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/agents-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/agents-pack.json"
     },
     {
       "id": "spec:not-stub",
@@ -162,8 +162,8 @@
     },
     {
       "id": "no-loose-agents-root",
-      "ok": true,
-      "detail": "clean"
+      "ok": false,
+      "detail": ".DS_Store"
     }
   ]
 }

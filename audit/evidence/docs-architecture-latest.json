@@ -2,10 +2,10 @@
   "schema": "gtcx://canon-os/docs-architecture-check/v2",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-07-03T14:28:30.042Z",
+  "at": "2026-07-06T01:46:19.897Z",
   "ok": true,
   "spec": {
-    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-architecture-pack.json",
+    "localPath": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/docs-architecture-pack.json",
     "localIsStub": false,
     "resolvedIsFull": true
   },
@@ -13,7 +13,7 @@
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-architecture-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/docs-architecture-pack.json"
     },
     {
       "id": "spec:not-stub",
