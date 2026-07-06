@@ -1,7 +1,7 @@
 # Known Pitfalls
 
 ## Active TODOs / FIXMEs in Code
-**Discovered:** 2026-06-27
+**Discovered:** 2026-07-06
 | File | Line | Issue |
 |------|------|-------|
 | docs/gitbook/business/domain/government/stakeholder-analysis/key-weaknesses-and-red-flags.md | 19 | or malicious attack could halt all operations. Strengthening: Rigorous third-par |
@@ -11,6 +11,6 @@
 > Review and resolve these before they become blockers.
 
 ## Code Quality
-**Discovered:** 2026-06-27
+**Discovered:** 2026-07-06
 - Add pitfalls here as they are discovered
 
