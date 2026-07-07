@@ -2,30 +2,30 @@
   "$schema": "gtcx://ecosystem-os/meta-workspace/v1",
   "title": "GTCX meta-workspace members",
   "description": "Member repos for the GTCX meta-workspace (local cross-repo co-development). The root pnpm-workspace.yaml is GENERATED at the gtcx-ecosystem workspace parent by platform/scripts/meta-workspace/setup.mjs — never hand-edited. Each member may specify a vertical-qualified `path` after the 2026-07-05 reorg.",
-  "date": "2026-07-05",
+  "date": "2026-07-07",
   "owner": "ecosystem-os",
   "excludeDirs": ["node_modules", ".git", "dist", "archive", "_delete", ".turbo"],
   "members": [
     {
       "repo": "gtcx-os",
-      "path": "gtcx.trade/gtcx-os",
+      "path": "gtcx.trade/platforms/gtcx-os",
       "status": "verified",
       "provides": ["@gtcx/protocol-*", "@gtcx/protocols-crypto", "@gtcx/validators"],
       "note": "Globs reconciled to real tree; protocols subtree builds + tests green (vaultmark 470/470)."
     },
     {
       "repo": "ledger-ui",
-      "path": "gtcx.design/ledger-ui",
+      "path": "gtcx.design/platforms/ledger-ui",
       "status": "verified",
       "provides": ["@gtcx/ui", "@gtcx/desk-shell"],
       "note": "Installs clean on its own (own workspace, 0 dead globs). Resolves gtcx-os platforms' cross-repo @gtcx/ui dep by membership."
     },
     {
       "repo": "baseline-os",
-      "path": "gtcx.cloud/baseline-os",
+      "path": "gtcx.ai/platforms/baseline-os",
       "status": "verified",
       "provides": ["baselineos", "@baselineos/*"],
-      "note": "AI-OS engine (7-layer pipeline, router, vault). Canonical home: gtcx.cloud."
+      "note": "AI platform runtime (7-layer pipeline, router, vault). Canonical home: gtcx.ai/platforms/baseline-os (moved 2026-07-07)."
     },
     {
       "repo": "bridge-os",
