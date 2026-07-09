@@ -15,7 +15,7 @@
     },
     {
       "repo": "ledger-ui",
-      "path": "gtcx.design/platforms/ledger-ui",
+      "path": "gtcx.design/systems/ledger-ui",
       "status": "verified",
       "provides": ["@gtcx/ui", "@gtcx/desk-shell"],
       "note": "Installs clean on its own (own workspace, 0 dead globs). Resolves gtcx-os platforms' cross-repo @gtcx/ui dep by membership."
@@ -29,7 +29,7 @@
     },
     {
       "repo": "bridge-os",
-      "path": "gtcx.infrastructure/bridge-os",
+      "path": "gtcx.infrastructure/platforms/bridge-os",
       "status": "verified",
       "provides": ["@gtcx/mcp-server", "@gtcx/agents"],
       "note": "Promoted 2026-07-05 after baseline-os decouple via file:tgz artifacts + vertical paths."
