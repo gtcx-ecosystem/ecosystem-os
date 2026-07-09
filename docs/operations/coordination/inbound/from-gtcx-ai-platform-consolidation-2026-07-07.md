@@ -30,9 +30,9 @@ Vertical shell at `gtcx.ai/` is **polyrepo nogit** per `sor.json` `workspaceNote
 
 Lead runtime repo: `gtcx.ai/platforms/baseline-os` (git). Commit note mirrored in baseline-os inbound.
 
-## gtcx.cloud shell (not in any git repo)
+## gtcx.systems shell (not in any git repo)
 
-`gtcx.cloud/` has no vertical git root. Updated shell files (`sor.json`, `README.md`, `domain/manifest.json`) remain filesystem-only until domain monorepo cutover.
+`gtcx.systems/` has no vertical git root. Updated shell files (`sor.json`, `README.md`, `domain/manifest.json`) remain filesystem-only until domain monorepo cutover.
 
 ## Evidence
 

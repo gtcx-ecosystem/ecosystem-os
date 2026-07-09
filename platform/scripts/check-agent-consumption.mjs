@@ -18,7 +18,7 @@ function findBaselineOsRoot() {
   const candidates = [
     process.env.BASELINE_OS_ROOT,
     process.env.GTCX_ECOSYSTEM_ROOT ? join(process.env.GTCX_ECOSYSTEM_ROOT, 'baseline-os') : '',
-    resolve(REPO, '../../gtcx.cloud/baseline-os'),
+    resolve(REPO, '../../gtcx.ai/platforms/baseline-os'),
   ].filter(Boolean);
   const marker = join('platform', 'scripts', 'ecosystem', 'repo-session-core.mjs');
   for (const root of candidates) {
@@ -66,7 +66,7 @@ function hasLegacyPath(text, legacyFragments, legacyPatterns) {
 function scriptsMatch(key, actual, expected) {
   if (actual === expected) return true;
   if (['session', 'next', 'gates', 'hub', 'mcp', 'serve'].includes(key)) {
-    return actual.includes('../../gtcx.cloud/baseline-os/platform/');
+    return actual.includes('../../gtcx.ai/platforms/baseline-os/platform/');
   }
   return false;
 }

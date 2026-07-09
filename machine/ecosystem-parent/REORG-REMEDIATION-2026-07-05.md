@@ -1,6 +1,6 @@
 # GTCX ecosystem reorg — remediation log (2026-07-05)
 
-Folder-by-folder remediation after the vertical reorg (`gtcx.infrastructure/`, `gtcx.cloud/`, …).
+Folder-by-folder remediation after the vertical reorg (`gtcx.infrastructure/`, `gtcx.systems/`, …).
 Each vertical gets a `REMEDIATION.md` with repo-level status. This file is the **roll-up SoR**.
 
 ## Remediation order (vertical folders)
@@ -9,7 +9,7 @@ Each vertical gets a `REMEDIATION.md` with repo-level status. This file is the *
 |---|--------|------|--------|-------|
 | 1 | `gtcx.infrastructure/` | fleet-spine | **done** | bridge decouple complete; agile migrated; fabric qasc 98/100 |
 | 2 | `gtcx.ecosystem/` | fleet hub | **done** | meta-workspace + WIP reconciled — see `gtcx.ecosystem/REMEDIATION.md` |
-| 3 | `gtcx.cloud/` | consumer-general | **done** | path decouple + husky + scripts — see `gtcx.cloud/REMEDIATION.md` |
+| 3 | `gtcx.systems/` | consumer-general | **done** | path decouple + husky + scripts — see `gtcx.systems/REMEDIATION.md` |
 | 4 | `gtcx.trade/` | trade rail | **done** | path decouple all 5 repos — see `gtcx.trade/REMEDIATION.md` |
 | 5 | `gtcx.markets/` | commodity consumer | **done** | path decouple markets-os, terminal-os, griot-ai — see `gtcx.markets/REMEDIATION.md` |
 | 6 | `gtcx.design/` | design clutch | **done** | ledger-ui decouple + all members 0 dirty — see `gtcx.design/REMEDIATION.md` |
@@ -19,7 +19,7 @@ Each vertical gets a `REMEDIATION.md` with repo-level status. This file is the *
 | 10 | `document-os/` | doc machine | **done** | onboarding R1–R4 + REMEDIATION committed — see `document-os/REMEDIATION.md` |
 | 11 | `gtcx.network/` · `gtcx.protocols/` · `gtcx.research/` | content | low | no git repos; docs-only |
 
-**Cross-cutting P0 (blocks multiple verticals):** root `pnpm-workspace.yaml` and `ecosystem-os` meta-workspace generator still assume **flat sibling layout** (`baseline-os/`, `gtcx-os/` at ecosystem parent). After vertical move, paths must be **vertical-qualified** (`gtcx.cloud/baseline-os`, `gtcx.trade/gtcx-os`, …) or resolved via published `@baselineos/*` packages (bridge decouple path).
+**Cross-cutting P0 (blocks multiple verticals):** root `pnpm-workspace.yaml` and `ecosystem-os` meta-workspace generator still assume **flat sibling layout** (`baseline-os/`, `gtcx-os/` at ecosystem parent). After vertical move, paths must be **vertical-qualified** (`gtcx.ai/platforms/baseline-os`, `gtcx.trade/gtcx-os`, …) or resolved via published `@baselineos/*` packages (bridge decouple path).
 
 ## Per-folder checklist (repeat for each vertical)
 
@@ -57,7 +57,7 @@ Stale `.git/index.lock` cleared; initial commit landed. Remote configured (push-
 Canonical remotes configured locally (`origin → github.com/gtcx-ecosystem/<name>`):
 - gtcx.ai: 10x-ai, jedi-ai, failuremode-ai
 - gtcx.design: fidelity-ai, mona-ai, copycat-ai
-- gtcx.cloud: competence-ai, stratum-os
+- gtcx.systems: competence-ai, stratum-os
 - gtcx.capital: capital-os, sovereign-fx, vault-os
 - gtcx.org properties
 
@@ -84,7 +84,7 @@ Ecosystem platform monorepo; housed in `gtcx.trade/`. Operator decision: keep vs
 |----------|-------|-------------|-------------|
 | gtcx.infrastructure | 7 | 3 | bridge-os (16) |
 | gtcx.ecosystem | 1 | 1 | ecosystem-os (23) |
-| gtcx.cloud | 6 | 2 | baseline-os WIP + sensei-os GTM evidence |
+| gtcx.systems | 6 | 2 | baseline-os WIP + sensei-os GTM evidence |
 | gtcx.markets | 5 | 5 | markets-os (37) |
 | gtcx.trade | 5 | 3 | gtcx-os (53) |
 | gtcx.design | 4 | 3 | copycat-ai (30) |
@@ -102,11 +102,11 @@ Ecosystem platform monorepo; housed in `gtcx.trade/`. Operator decision: keep vs
 
 ## Phase 4 — baseline-os → gtcx.ai (2026-07-07)
 
-**Reversal:** baseline-os moved from `gtcx.cloud/baseline-os` to `gtcx.ai/platforms/baseline-os`.
+**Reversal:** baseline-os moved from `gtcx.ai/platforms/baseline-os` to `gtcx.ai/platforms/baseline-os`.
 
 - gtcx.ai redefined as **ai-platform** vertical (runtime + AI products)
-- gtcx.cloud consumer portfolio no longer hosts baseline-os
+- gtcx.systems consumer portfolio no longer hosts baseline-os
 - All fleet AI consumed via bridge-os (`agent-consumption-contract` v4)
-- Path resolver: `resolve-baseline-os-root.mjs` with gtcx.ai canonical + gtcx.cloud compat
+- Path resolver: `resolve-baseline-os-root.mjs` with gtcx.ai canonical + gtcx.systems compat
 - Evidence: DOJO D7 11/11, `ecosystem:ai-consumption:check` PASS
 - RFC: `gtcx.ai/docs/architecture/ai-platform-vertical-2026-07-07.md`

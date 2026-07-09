@@ -38,10 +38,10 @@
       "index": "gtcx.ecosystem/index.md"
     },
     {
-      "id": "gtcx.cloud",
-      "axis": "consumer-general",
-      "sor": "gtcx.cloud/sor.json",
-      "index": "gtcx.cloud/index.md"
+      "id": "gtcx.systems",
+      "axis": "continental-legibility-system",
+      "sor": "gtcx.systems/sor.json",
+      "index": "gtcx.systems/index.md"
     },
     {
       "id": "gtcx.trade",

@@ -39,13 +39,13 @@ export function fleetRepo(...segments) {
 
 export const canonOsRoot = () => fleetRepo('gtcx.infrastructure', 'canon-os');
 export const bridgeOsRoot = () => fleetRepo('gtcx.infrastructure', 'bridge-os');
-export const baselineOsRoot = () => fleetRepo('gtcx.cloud', 'baseline-os');
+export const baselineOsRoot = () => fleetRepo('gtcx.systems', 'baseline-os');
 export const fabricOsRoot = () => fleetRepo('gtcx.infrastructure', 'fabric-os');
 
 /** From ecosystem-os repo root — legacy `../../gtcx.infrastructure/canon-os` replacement. */
 export const fromEcoOs = {
   canonOs: '../../gtcx.infrastructure/canon-os',
   bridgeOs: '../../gtcx.infrastructure/bridge-os',
-  baselineOs: '../../gtcx.cloud/baseline-os',
+  baselineOs: '../../gtcx.ai/platforms/baseline-os',
   fabricOs: '../../gtcx.infrastructure/fabric-os',
 };
