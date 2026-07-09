@@ -9,7 +9,7 @@
     "reorgCompleted": "2026-07-05",
     "remediationRollUp": "REORG-REMEDIATION-2026-07-05.md",
     "metaWorkspace": {
-      "generator": "gtcx.ecosystem/ecosystem-os",
+      "generator": "gtcx.infrastructure/platforms/ecosystem-os",
       "manifest": "pnpm-workspace.yaml",
       "members": [
         "gtcx-os",

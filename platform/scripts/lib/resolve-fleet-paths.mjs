@@ -44,8 +44,8 @@ export const fabricOsRoot = () => fleetRepo('gtcx.infrastructure', 'fabric-os');
 
 /** From ecosystem-os repo root — legacy `../../gtcx.infrastructure/canon-os` replacement. */
 export const fromEcoOs = {
-  canonOs: '../../gtcx.infrastructure/canon-os',
-  bridgeOs: '../../gtcx.infrastructure/bridge-os',
-  baselineOs: '../../gtcx.ai/platforms/baseline-os',
-  fabricOs: '../../gtcx.infrastructure/fabric-os',
+  canonOs: '../canon-os',
+  bridgeOs: '../bridge-os',
+  baselineOs: '../../../gtcx.ai/platforms/baseline-os',
+  fabricOs: '../fabric-os',
 };
