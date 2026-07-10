@@ -1,8 +1,45 @@
 {
-  "$schema": "gtcx://baseline-os/config/v1",
-  "organization": {
-    "name": "ecosystem-os",
-    "voice": "professional and clear",
-    "formality": "neutral"
-  }
+  "projectRoot": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os",
+  "name": "ecosystem-os",
+  "knowledge": [
+    "./docs",
+    "./docs",
+    "./.agent",
+    "./.cursor",
+    "./README.md",
+    "./AGENTS.md",
+    "./CHANGELOG.md"
+  ],
+  "include": [
+    "**/*.md",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json",
+    "**/*.yml",
+    "**/*.yaml"
+  ],
+  "exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.git/**",
+    "**/.turbo/**",
+    "**/coverage/**",
+    "**/.baseline/data/**",
+    "**/.baseline/index/**",
+    "**/.baseline/checkpoints/**"
+  ],
+  "paths": {
+    "data": ".baseline",
+    "index": ".baseline/index",
+    "checkpoints": ".baseline/checkpoints"
+  },
+  "rag": {
+    "budget": {
+      "maxTokens": 1200
+    }
+  },
+  "workflows": []
 }

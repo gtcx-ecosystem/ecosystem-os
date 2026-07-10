@@ -1,0 +1,684 @@
+{
+  "schema": "gtcx://ecosystem/code-only-scan/v1",
+  "note": "Source code scan only \u2014 no docs/MPR/SIGNAL",
+  "results": [
+    {
+      "repo": "terra-os",
+      "path": "gtcx.systems/terra-os",
+      "code_files": 16624,
+      "test_files": 2369,
+      "test_ratio": 14.3,
+      "loc": 7943817,
+      "langs": {
+        ".rs": 7583583,
+        ".py": 188280,
+        ".tsx": 96812
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "nyota-ai",
+      "path": "gtcx.infrastructure/nyota-ai",
+      "code_files": 693,
+      "test_files": 268,
+      "test_ratio": 38.7,
+      "loc": 981980,
+      "langs": {
+        ".py": 972410,
+        ".mjs": 8167,
+        ".js": 834
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "gtcx-os",
+      "path": "gtcx.trade/gtcx-os",
+      "code_files": 5193,
+      "test_files": 1298,
+      "test_ratio": 25.0,
+      "loc": 791099,
+      "langs": {
+        ".ts": 536560,
+        ".tsx": 152129,
+        ".mjs": 62763
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "gtcx.design",
+      "path": "gtcx.design",
+      "code_files": 5069,
+      "test_files": 440,
+      "test_ratio": 8.7,
+      "loc": 524201,
+      "langs": {
+        ".tsx": 382241,
+        ".js": 66659,
+        ".ts": 56876
+      },
+      "src_roots": [],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "ledger-ui",
+      "path": "gtcx.design/platforms/ledger-ui",
+      "code_files": 5018,
+      "test_files": 440,
+      "test_ratio": 8.8,
+      "loc": 517263,
+      "langs": {
+        ".tsx": 382241,
+        ".js": 63657,
+        ".ts": 56023
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "compliance-os",
+      "path": "gtcx.trade/compliance-os",
+      "code_files": 2340,
+      "test_files": 536,
+      "test_ratio": 22.9,
+      "loc": 457205,
+      "langs": {
+        ".ts": 286537,
+        ".tsx": 114929,
+        ".py": 28110
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "sensei-os",
+      "path": "gtcx.systems/sensei-os",
+      "code_files": 1815,
+      "test_files": 556,
+      "test_ratio": 30.6,
+      "loc": 346532,
+      "langs": {
+        ".ts": 115537,
+        ".py": 115113,
+        ".tsx": 66974
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "baseline-os",
+      "path": "gtcx.ai/platforms/baseline-os",
+      "code_files": 1435,
+      "test_files": 444,
+      "test_ratio": 30.9,
+      "loc": 286057,
+      "langs": {
+        ".ts": 204011,
+        ".mjs": 59979,
+        ".tsx": 19503
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "exploration-os",
+      "path": "gtcx.systems/exploration-os",
+      "code_files": 2391,
+      "test_files": 139,
+      "test_ratio": 5.8,
+      "loc": 265345,
+      "langs": {
+        ".tsx": 185495,
+        ".ts": 57367,
+        ".mjs": 15342
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "markets-os",
+      "path": "gtcx.markets/markets-os",
+      "code_files": 2459,
+      "test_files": 620,
+      "test_ratio": 25.2,
+      "loc": 256598,
+      "langs": {
+        ".tsx": 115538,
+        ".ts": 108886,
+        ".mjs": 31031
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "terminal-os",
+      "path": "gtcx.markets/terminal-os",
+      "code_files": 1624,
+      "test_files": 416,
+      "test_ratio": 25.6,
+      "loc": 182354,
+      "langs": {
+        ".tsx": 91537,
+        ".ts": 68238,
+        ".mjs": 18977
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "bridge-os",
+      "path": "gtcx.infrastructure/bridge-os",
+      "code_files": 828,
+      "test_files": 80,
+      "test_ratio": 9.7,
+      "loc": 113897,
+      "langs": {
+        ".mjs": 89908,
+        ".ts": 23136,
+        ".py": 852
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "fabric-os",
+      "path": "gtcx.infrastructure/fabric-os",
+      "code_files": 520,
+      "test_files": 148,
+      "test_ratio": 28.5,
+      "loc": 75240,
+      "langs": {
+        ".mjs": 73244,
+        ".py": 962,
+        ".js": 917
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "griot-ai",
+      "path": "gtcx.markets/griot-ai",
+      "code_files": 451,
+      "test_files": 147,
+      "test_ratio": 32.6,
+      "loc": 72627,
+      "langs": {
+        ".ts": 57497,
+        ".mjs": 14376,
+        ".py": 753
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "veritas-ai",
+      "path": "gtcx.trade/veritas-ai",
+      "code_files": 247,
+      "test_files": 61,
+      "test_ratio": 24.7,
+      "loc": 34083,
+      "langs": {
+        ".ts": 24061,
+        ".mjs": 9612,
+        ".py": 409
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 100
+    },
+    {
+      "repo": "inspection-os",
+      "path": "gtcx.trade/inspection-os",
+      "code_files": 623,
+      "test_files": 165,
+      "test_ratio": 26.5,
+      "loc": 84966,
+      "langs": {
+        ".tsx": 46301,
+        ".ts": 25894,
+        ".mjs": 9256
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": false,
+      "code_score": 95
+    },
+    {
+      "repo": "canon-os",
+      "path": "gtcx.infrastructure/canon-os",
+      "code_files": 312,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 44809,
+      "langs": {
+        ".mjs": 41443,
+        ".ts": 1731,
+        ".py": 856
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 75
+    },
+    {
+      "repo": "venture-os",
+      "path": "gtcx.infrastructure/venture-os",
+      "code_files": 144,
+      "test_files": 19,
+      "test_ratio": 13.2,
+      "loc": 10526,
+      "langs": {
+        ".mjs": 4731,
+        ".ts": 3317,
+        ".tsx": 2432
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 65
+    },
+    {
+      "repo": "agile-os",
+      "path": "gtcx.infrastructure/agile-os",
+      "code_files": 162,
+      "test_files": 7,
+      "test_ratio": 4.3,
+      "loc": 22168,
+      "langs": {
+        ".mjs": 22168
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 51
+    },
+    {
+      "repo": "ledger-os",
+      "path": "gtcx.trade/ledger-os",
+      "code_files": 133,
+      "test_files": 2,
+      "test_ratio": 1.5,
+      "loc": 13716,
+      "langs": {
+        ".mjs": 8482,
+        ".ts": 2815,
+        ".tsx": 2419
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 47
+    },
+    {
+      "repo": "document-os",
+      "path": "gtcx.markets/document-os",
+      "code_files": 105,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 54510,
+      "langs": {
+        ".js": 39544,
+        ".mjs": 13070,
+        ".py": 1840
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 45
+    },
+    {
+      "repo": "10x-ai",
+      "path": "gtcx.ai/10x-ai",
+      "code_files": 5,
+      "test_files": 2,
+      "test_ratio": 40.0,
+      "loc": 542,
+      "langs": {
+        ".mjs": 334,
+        ".py": 208
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": true,
+      "has_lint": true,
+      "has_build": false,
+      "code_score": 44
+    },
+    {
+      "repo": "ecosystem-os",
+      "path": "gtcx.ecosystem/ecosystem-os",
+      "code_files": 71,
+      "test_files": 2,
+      "test_ratio": 2.8,
+      "loc": 14374,
+      "langs": {
+        ".mjs": 14374
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 33
+    },
+    {
+      "repo": "mona-ai",
+      "path": "gtcx.design/engines/mona-ai",
+      "code_files": 3,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 358,
+      "langs": {
+        ".py": 358
+      },
+      "src_roots": [
+        "packages"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 30
+    },
+    {
+      "repo": "fidelity-ai",
+      "path": "gtcx.design/engines/fidelity-ai",
+      "code_files": 2,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 243,
+      "langs": {
+        ".mjs": 243
+      },
+      "src_roots": [
+        "packages"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": true,
+      "has_build": true,
+      "code_score": 30
+    },
+    {
+      "repo": "failuremode-ai",
+      "path": "gtcx.ai/failuremode-ai",
+      "code_files": 5,
+      "test_files": 2,
+      "test_ratio": 40.0,
+      "loc": 614,
+      "langs": {
+        ".ts": 614
+      },
+      "src_roots": [
+        "core"
+      ],
+      "has_test_script": true,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 19
+    },
+    {
+      "repo": "copycat-ai",
+      "path": "gtcx.design/engines/copycat-ai",
+      "code_files": 44,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 6269,
+      "langs": {
+        ".js": 3002,
+        ".mjs": 2414,
+        ".ts": 853
+      },
+      "src_roots": [
+        "packages"
+      ],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 6
+    },
+    {
+      "repo": "solar-ai",
+      "path": "gtcx.infrastructure/solar-ai",
+      "code_files": 4,
+      "test_files": 1,
+      "test_ratio": 25.0,
+      "loc": 415,
+      "langs": {
+        ".py": 415
+      },
+      "src_roots": [
+        "platform"
+      ],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 2
+    },
+    {
+      "repo": "capital-os",
+      "path": "gtcx.capital/capital-os",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "competence-ai",
+      "path": "gtcx.systems/competence-ai",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "formation-os",
+      "path": "gtcx.markets/formation-os",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "jedi-ai",
+      "path": "gtcx.ai/jedi-ai",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "sovereign-fx",
+      "path": "gtcx.capital/sovereign-fx",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "stratum-os",
+      "path": "gtcx.systems/stratum-os",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    },
+    {
+      "repo": "vault-os",
+      "path": "gtcx.capital/vault-os",
+      "code_files": 0,
+      "test_files": 0,
+      "test_ratio": 0.0,
+      "loc": 0,
+      "langs": {},
+      "src_roots": [],
+      "has_test_script": false,
+      "has_typecheck": false,
+      "has_lint": false,
+      "has_build": false,
+      "code_score": 0
+    }
+  ]
+}

@@ -34,8 +34,8 @@ function loadL1(id) {
   const candidates = [
     join(REPO, `machine/spec/repo-provisioning/${id}.json`),
     join(REPO, `pm/spec/repo-provisioning/${id}.json`),
-    join(REPO, `../canon-os/machine/spec/repo-provisioning/${id}.json`),
-    join(REPO, `../canon-os/pm/spec/repo-provisioning/${id}.json`),
+    join(REPO, `../../gtcx.infrastructure/canon-os/machine/spec/repo-provisioning/${id}.json`),
+    join(REPO, `../../gtcx.infrastructure/canon-os/pm/spec/repo-provisioning/${id}.json`),
   ];
   const path = candidates.find((candidate) => existsSync(candidate));
   if (!path) return null;

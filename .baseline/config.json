@@ -1,8 +1,8 @@
 {
   "version": "ecosystem-init-1",
   "name": "ecosystem-os",
-  "projectRoot": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os",
-  "createdAt": "2026-06-27T16:45:18.000Z",
+  "projectRoot": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os",
+  "createdAt": "2026-07-06T00:39:25.149Z",
   "detection": {
     "runtime": "node",
     "providers": [],
@@ -14,7 +14,6 @@
     "./docs",
     "./docs",
     "./.agent",
-    "./.claude",
     "./.cursor",
     "./README.md",
     "./AGENTS.md",

@@ -32,7 +32,7 @@ function gate(id, ok, detail = null) {
 function loadRootContract() {
   for (const path of [
     join(REPO, 'pm/spec/docs-root-contract.json'),
-    join(REPO, '../canon-os/pm/spec/docs-root-contract.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-root-contract.json'),
   ]) {
     if (existsSync(path)) return JSON.parse(readFileSync(path, 'utf8'));
   }

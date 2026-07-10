@@ -94,7 +94,7 @@ function main() {
   console.log(`\n${ok ? 'PASS' : 'FAIL'} — canon:consumption:check ${gates.length - failed.length}/${gates.length}`);
 
   if (ok) {
-    const contractCheck = join(REPO, '../canon-os/platform/scripts/check-product-canon-contract.mjs');
+    const contractCheck = join(REPO, '../../gtcx.infrastructure/canon-os/platform/scripts/check-product-canon-contract.mjs');
     if (existsSync(contractCheck)) {
       const r = spawnSync(process.execPath, [contractCheck], { cwd: REPO, stdio: 'inherit' });
       if ((r.status ?? 1) !== 0) process.exit(r.status ?? 1);

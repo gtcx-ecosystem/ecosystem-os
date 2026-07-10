@@ -2,13 +2,13 @@
   "schema": "gtcx://canon-os/docs-operations-check/v3",
   "repo": "ecosystem-os",
   "profile": "product",
-  "at": "2026-07-02T14:28:52.926Z",
+  "at": "2026-07-06T01:46:21.660Z",
   "ok": true,
   "gates": [
     {
       "id": "spec:local-present",
       "ok": true,
-      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/ecosystem-os/machine/spec/docs-operations-pack.json"
+      "detail": "/Users/amanianai/Sites/gtcx-ecosystem/gtcx.ecosystem/ecosystem-os/machine/spec/docs-operations-pack.json"
     },
     {
       "id": "spec:not-stub",

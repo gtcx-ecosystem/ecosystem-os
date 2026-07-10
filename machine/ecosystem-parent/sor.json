@@ -1,0 +1,115 @@
+{
+  "$schema": "gtcx://ecosystem/ecosystem-sor/v1",
+  "workspace": "gtcx-ecosystem",
+  "purpose": "Local polyrepo workspace \u2014 audience-axis vertical folders + cross-vertical repos.",
+  "owner": "ecosystem",
+  "updated": "2026-07-07",
+  "layout": {
+    "model": "vertical-folders",
+    "reorgCompleted": "2026-07-05",
+    "remediationRollUp": "REORG-REMEDIATION-2026-07-05.md",
+    "metaWorkspace": {
+      "generator": "gtcx.infrastructure/platforms/ecosystem-os",
+      "manifest": "pnpm-workspace.yaml",
+      "members": [
+        "gtcx-os",
+        "ledger-ui",
+        "baseline-os",
+        "bridge-os"
+      ]
+    },
+    "crossVerticalRules": [
+      "No symlinks for cross-vertical resolution \u2014 use resolveRepoPath, BASELINE_OS_ROOT, or published @baselineos/* packages.",
+      "Vertical folders are filesystem workspaces, not git repos.",
+      "Partial workspaces (one vertical open in Cursor) are supported via bridge-os resolve-ecosystem-root.mjs."
+    ]
+  },
+  "verticals": [
+    {
+      "id": "gtcx.infrastructure",
+      "axis": "fleet-spine",
+      "sor": "gtcx.infrastructure/sor.json",
+      "index": "gtcx.infrastructure/index.md"
+    },
+    {
+      "id": "gtcx.ecosystem",
+      "axis": "fleet-hub",
+      "sor": "gtcx.ecosystem/sor.json",
+      "index": "gtcx.ecosystem/index.md"
+    },
+    {
+      "id": "gtcx.systems",
+      "axis": "continental-legibility-system",
+      "sor": "gtcx.systems/sor.json",
+      "index": "gtcx.systems/index.md"
+    },
+    {
+      "id": "gtcx.trade",
+      "axis": "trade-rail",
+      "sor": "gtcx.trade/sor.json",
+      "index": "gtcx.trade/index.md"
+    },
+    {
+      "id": "gtcx.markets",
+      "axis": "intelligence-terminal",
+      "sor": "gtcx.markets/sor.json",
+      "index": "gtcx.markets/index.md"
+    },
+    {
+      "id": "gtcx.exchange",
+      "axis": "exchange-venue",
+      "sor": "gtcx.exchange/sor.json",
+      "index": "gtcx.exchange/index.md"
+    },
+    {
+      "id": "gtcx.design",
+      "axis": "design",
+      "sor": "gtcx.design/sor.json",
+      "index": "gtcx.design/index.md"
+    },
+    {
+      "id": "gtcx.ai",
+      "axis": "ai-platform",
+      "sor": "gtcx.ai/sor.json",
+      "index": "gtcx.ai/index.md"
+    },
+    {
+      "id": "gtcx.capital",
+      "axis": "capital",
+      "sor": "gtcx.capital/sor.json",
+      "index": "gtcx.capital/index.md"
+    },
+    {
+      "id": "gtcx.org",
+      "axis": "institutional",
+      "sor": "gtcx.org/sor.json",
+      "index": "gtcx.org/index.md"
+    }
+  ],
+  "crossVerticalMembers": [],
+  "consolidationTargets": [
+    {
+      "id": "gtcx-infra-monorepo",
+      "vertical": "gtcx.infrastructure",
+      "spec": "gtcx.infrastructure/docs/architecture/rfc-gtcx-infra-monorepo-2026-07-06.md",
+      "status": "proposed"
+    },
+    {
+      "id": "design-clutch",
+      "vertical": "gtcx.design",
+      "spec": "gtcx.design/sor.json",
+      "status": "complete-2026-07-06"
+    },
+    {
+      "id": "vertical-entity-split",
+      "vertical": "cross-vertical",
+      "spec": "gtcx.ecosystem/docs/architecture/rfc-gtcx-capital-markets-exchange-vertical-split-2026-07-06.md",
+      "status": "phase-1-lift-complete-2026-07-07",
+      "note": "Three git roots: gtcx.markets (griot+terminal), gtcx.capital (banking+document), gtcx.exchange (EIX+regulatory)",
+      "executionStatus": "gtcx.ecosystem/machine/spec/vertical-split-execution-status.json"
+    }
+  ],
+  "openItems": [
+    "Operator queue: OPERATOR-QUEUE.md (GitHub creates, pushes, remote renames)"
+  ]
+}

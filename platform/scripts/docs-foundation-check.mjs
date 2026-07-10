@@ -12,7 +12,7 @@ const REPO = repoRootFromImportMeta(import.meta.url);
 const WRITE = process.argv.includes('--write');
 const WITNESS = join(REPO, 'audit/evidence/docs-foundation-latest.json');
 const PACK = 'docs-foundation-pack.json';
-const CANON_SYNTH = join(REPO, '../canon-os/platform/scripts/synthesize-product-canon.mjs');
+const CANON_SYNTH = join(REPO, '../../gtcx.infrastructure/canon-os/platform/scripts/synthesize-product-canon.mjs');
 
 function gate(id, ok, detail = null) {
   return { id, ok, ...(detail ? { detail } : {}) };
@@ -38,8 +38,8 @@ function main() {
     gate(
       'spec:local-present',
       !!resolution.localPath ||
-        existsSync(join(REPO, '../canon-os/machine/spec', PACK)) ||
-        existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+        existsSync(join(REPO, '../../gtcx.infrastructure/canon-os/machine/spec', PACK)) ||
+        existsSync(join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec', PACK)),
       repoRelative(resolution.localPath) ?? 'missing local pack',
     ),
   );

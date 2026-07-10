@@ -18,7 +18,7 @@ function gate(id, ok, detail = null) {
 
 function loadSpec() {
   const local = join(REPO, 'pm/spec/docs-folders/00-docs-root.json');
-  const canon = join(REPO, '../canon-os/pm/spec/docs-folders/00-docs-root.json');
+  const canon = join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-folders/00-docs-root.json');
   const path = existsSync(local) ? local : canon;
   return JSON.parse(readFileSync(path, 'utf8'));
 }

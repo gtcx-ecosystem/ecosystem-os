@@ -1,20 +1,20 @@
 {
   "schema": "gtcx://canon-os/gtm-readiness-check/v1",
-  "generatedAt": "2026-06-27T09:08:15.015Z",
+  "generatedAt": "2026-07-03T03:59:14.558Z",
   "repo": "ecosystem-os",
   "profile": "product",
-  "ok": false,
+  "ok": true,
   "composite": 89,
   "dimensions": [
     {
       "id": "pillars11pr",
       "score": 59,
-      "pass": false,
+      "pass": true,
       "detail": {
         "witness": true,
         "composite": 59,
         "pillarCount": 0,
-        "docsIaOk": false
+        "docsIaOk": true
       }
     },
     {
@@ -23,11 +23,11 @@
       "pass": true,
       "detail": {
         "present": true,
-        "initiatives": 4,
-        "features": 15,
-        "stories": 7,
+        "initiatives": 7,
+        "features": 18,
+        "stories": 10,
         "tasks": 0,
-        "uatLinked": 7,
+        "uatLinked": 8,
         "path": "docs/product/roadmap",
         "referencePass": false
       }
@@ -38,7 +38,7 @@
       "pass": true,
       "detail": {
         "charterScore": 100,
-        "registryCount": 22,
+        "registryCount": 7,
         "charterOk": true,
         "referencePass": false
       }
@@ -59,13 +59,13 @@
       "score": 75,
       "pass": true,
       "detail": {
-        "total": 7,
+        "total": 10,
         "gtmTagged": 0,
-        "estimated": 7,
-        "ownerAssigned": 7,
-        "openExecutable": 1,
+        "estimated": 10,
+        "ownerAssigned": 10,
+        "openExecutable": 2,
         "compiled": true,
-        "backlogClear": true,
+        "backlogClear": false,
         "referencePass": false
       }
     },
@@ -81,21 +81,21 @@
   ],
   "roadmap": {
     "present": true,
-    "initiatives": 4,
-    "features": 15,
-    "stories": 7,
+    "initiatives": 7,
+    "features": 18,
+    "stories": 10,
     "tasks": 0,
-    "uatLinked": 7,
+    "uatLinked": 8,
     "path": "docs/product/roadmap"
   },
   "backlog": {
-    "total": 7,
+    "total": 10,
     "gtmTagged": 0,
-    "estimated": 7,
-    "ownerAssigned": 7,
-    "openExecutable": 1,
+    "estimated": 10,
+    "ownerAssigned": 10,
+    "openExecutable": 2,
     "compiled": true,
-    "backlogClear": true
+    "backlogClear": false
   },
   "readiness": {
     "present": true,
@@ -105,7 +105,7 @@
   },
   "charter": {
     "score100": 100,
-    "registryCount": 22
+    "registryCount": 7
   },
   "referenceTier": "fleet"
 }

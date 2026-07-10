@@ -24,8 +24,8 @@ function main() {
   const policyPath = firstExisting([
     join(REPO, 'machine/spec/docs-fractal-mpr-policy.json'),
     join(REPO, 'pm/spec/docs-fractal-mpr-policy.json'),
-    join(REPO, '../canon-os/machine/spec/docs-fractal-mpr-policy.json'),
-    join(REPO, '../canon-os/pm/spec/docs-fractal-mpr-policy.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/machine/spec/docs-fractal-mpr-policy.json'),
+    join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec/docs-fractal-mpr-policy.json'),
   ]);
   gates.push(
     gate(

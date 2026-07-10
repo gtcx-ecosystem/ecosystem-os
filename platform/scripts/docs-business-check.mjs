@@ -70,7 +70,7 @@ function main() {
   gates.push(
     gate(
       'spec:local-present',
-      !!resolution.localPath || existsSync(join(REPO, '../canon-os/pm/spec', PACK)),
+      !!resolution.localPath || existsSync(join(REPO, '../../gtcx.infrastructure/canon-os/pm/spec', PACK)),
       resolution.localPath ?? 'missing machine/spec/docs-business-pack.json',
     ),
   );

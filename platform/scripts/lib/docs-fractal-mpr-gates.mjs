@@ -37,8 +37,8 @@ export function loadPolicy(repoRoot) {
   const candidates = [
     join(repoRoot, 'machine/spec/docs-fractal-mpr-policy.json'),
     join(repoRoot, 'pm/spec/docs-fractal-mpr-policy.json'),
-    join(repoRoot, '../canon-os/machine/spec/docs-fractal-mpr-policy.json'),
-    join(repoRoot, '../canon-os/pm/spec/docs-fractal-mpr-policy.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec/docs-fractal-mpr-policy.json'),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec/docs-fractal-mpr-policy.json'),
   ];
   const path = candidates.find((candidate) => existsSync(candidate));
   if (!path) return null;
@@ -52,8 +52,8 @@ export function loadPack(repoRoot, packRel) {
     join(repoRoot, normalizedRel),
     join(repoRoot, 'machine/spec', packName),
     join(repoRoot, 'pm/spec', packName),
-    join(repoRoot, '../canon-os/machine/spec', packName),
-    join(repoRoot, '../canon-os/pm/spec', packName),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/machine/spec', packName),
+    join(repoRoot, '../../gtcx.infrastructure/canon-os/pm/spec', packName),
   ];
   const path = candidates.find((candidate) => existsSync(candidate)) ?? null;
   if (!path) return null;
