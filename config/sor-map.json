@@ -26,7 +26,7 @@
     "legal": "operations/legal/",
     "publishRegister": "machine/publish-register.json",
     "coverageMatrix": "docs/reference/documentation-fleet-coverage-matrix.md",
-    "platformScripts": "platform/scripts/",
+    "platformScripts": "platform/tools/scripts/",
     "opsDomains": "operations/",
     "workstream": "workstream/",
     "sorMap": "config/sor-map.json",
