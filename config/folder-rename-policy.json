@@ -1,9 +1,0 @@
-{
-  "$schema": "gtcx://ecosystem/canon-resolve-pin/v1",
-  "contractId": "CANON-FOLDER-IDENTITY-V1",
-  "sor": "../canon-os/config/folder-rename-policy.json",
-  "localRegistry": "config/folders.json",
-  "localResolver": "platform/scripts/lib/folder-registry.mjs",
-  "writes": false,
-  "acceptedAt": "2026-06-22"
-}
