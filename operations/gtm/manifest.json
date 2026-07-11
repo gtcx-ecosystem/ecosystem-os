@@ -1,7 +1,0 @@
-{
-  "$schema": "gtcx://ops/gtm/manifest/v1",
-  "repo": "ecosystem-os",
-  "updated": "2026-06-14",
-  "catalog": "ops/gtm/fleet-catalog-index.md",
-  "scope": "ops/gtm/scope.json"
-}
