@@ -149,7 +149,7 @@
       },
       "inspection-report": {
         "produces": "inspection-report",
-        "description": "Generate inspection report (SIS Inspections pattern)",
+        "description": "Generate inspection report (industrial inspection pattern)",
         "format": "report",
         "parameters": {
           "asset": {
